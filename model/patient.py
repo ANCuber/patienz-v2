@@ -26,7 +26,7 @@ def create_patient_model(problem: str, patient_instruction_path=PATIENT_INSTRUCT
         }
 
         ss.patient_model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-2.5-flash",
             generation_config=generation_config,
             system_instruction=f"{patient_instruction}{problem}",
         )

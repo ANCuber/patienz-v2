@@ -44,7 +44,7 @@ def create_value_examiner_model(problem: str, method: str, examiner_instruction_
         }
 
         ss.examiner_model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-2.5-flash",
             generation_config=generation_config,
             system_instruction=f"{examiner_instruction}{problem}",
         )
@@ -80,7 +80,7 @@ def create_text_examiner_model(problem: str, method: str, examiner_instruction_p
         }
 
         ss.examiner_model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-2.5-flash",
             generation_config=generation_config,
             system_instruction=f"{examiner_instruction}{problem}",
         )

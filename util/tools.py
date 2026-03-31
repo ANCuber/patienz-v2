@@ -132,7 +132,10 @@ def getPDF(query, output_pdf):
         "download.prompt_for_download": False
     })
 
-    driver = webdriver.Chrome(options=chrome_options) #, service=Service(ChromeDriverManager().install()))
+    driver = webdriver.Chrome(
+        options=chrome_options,
+        service=Service(ChromeDriverManager().install())
+    )
 
     try:
         print(f"Searching for: {query}")

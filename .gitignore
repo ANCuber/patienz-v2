@@ -3,3 +3,4 @@ TODO.txt
 __pycache__/
 data/SSL/
 tmp/
+.DS_Store

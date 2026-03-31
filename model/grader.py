@@ -34,7 +34,7 @@ def create_grader_model(grader_instruction_path: str):
     }
     
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
+        model_name="gemini-2.5-flash",
         generation_config=generation_config,
         system_instruction=grader_instruction,
     )

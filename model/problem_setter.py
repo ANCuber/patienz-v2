@@ -135,7 +135,7 @@ def create_problem_setter_model(problem_instruction_path=PROBLEM_SETTER_INSTRUCT
         problem_setter_instruction = file.read()
 
     ss.problem_setter_model = genai.GenerativeModel(
-        model_name="gemini-2.0-flash-exp",
+        model_name="gemini-2.5-flash",
         generation_config=generation_config,
         system_instruction=problem_setter_instruction,
     )
