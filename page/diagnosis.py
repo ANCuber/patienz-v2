@@ -8,7 +8,7 @@ import util.chat as chat
 # Configure instruction file paths
 ss = st.session_state
 
-util.init(3)
+util.init(4)
 util.note()
 
 column = st.columns([1, 10, 1, 4])

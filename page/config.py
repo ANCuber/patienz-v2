@@ -16,6 +16,7 @@ config = {
     "性別": None,
     "疾病領域": None,
     "疾病": None,
+    "額外要求": None,
 }
 
 major_column = st.columns([2, 8, 2])
@@ -33,11 +34,23 @@ with major_column[1]:
         with minor_column_1[2]:
             config["性別"] = st.radio("性別", ["隨機", "男", "女"], horizontal=True)
 
-        field_options = ["心臟", "胸腔", "腸胃"]
+        field_options = [
+            "心臟內科", "胸腔內科", "腸胃肝膽科", "腎臟內科", "內分泌科",
+            "風濕免疫科", "感染科", "血液腫瘤科", "神經內科", "精神科",
+            "一般外科", "骨科", "泌尿科", "婦產科", "小兒科",
+            "眼科", "耳鼻喉科", "皮膚科", "急診醫學科", "家庭醫學科",
+            "復健科", "麻醉科",
+        ]
 
         config["疾病領域"] = st.selectbox("疾病領域", ["隨機"] + field_options)
 
         config["疾病"] = st.text_input("疾病", "隨機")
+
+        config["額外要求"] = st.text_area(
+            "額外要求（選填）",
+            placeholder="例如：病患有多重共病、非典型表現、急診情境、老年病患...",
+            height=100,
+        ) or None
     elif ss.config_type == "模板題":
         problem_set = os.listdir("data/template_problem_set/")
         problem = st.selectbox("模板題選單", sorted(problem_set), index=None)
@@ -79,7 +92,8 @@ if "problem_setter_model" not in ss:
     create_problem_setter_model()
 
 if "user_config" in ss and "problem" not in ss:
-    config = "\n".join([f"{key}: {value}" for key, value in ss.user_config.items()])
+    config_items = {k: v for k, v in ss.user_config.items() if v is not None}
+    config = "\n".join([f"{key}: {value}" for key, value in config_items.items()])
     ss.problem = ss.problem_setter.send_message(f"請利用以下資訊幫我出題：\n今日日期：{datetime.datetime.now().strftime('%Y/%m')} （年/月）\n{config}").text
 
     print(f"請利用以下資訊幫我出題：\n今日日期：{datetime.datetime.now().strftime('%Y/%m')} （年/月）\n{config}")

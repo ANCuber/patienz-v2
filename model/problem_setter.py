@@ -24,7 +24,7 @@ generation_config = {
   "response_schema": content.Schema(
     type = content.Type.OBJECT,
     enum = [],
-    required = ["基本資訊", "MH", "FH", "SH", "Problem"],
+    required = ["基本資訊", "MH", "FH", "SH", "ROS", "VitalSigns", "Problem"],
     properties = {
       "基本資訊": content.Schema(
         type = content.Type.OBJECT,
@@ -57,8 +57,11 @@ generation_config = {
       "MH": content.Schema(
         type = content.Type.OBJECT,
         enum = [],
-        required = ["既往疾病", "過敏史", "藥物史", "目前病史"],
+        required = ["主訴", "既往疾病", "過敏史", "藥物史", "目前病史"],
         properties = {
+          "主訴": content.Schema(
+            type = content.Type.STRING,
+          ),
           "既往疾病": content.Schema(
             type = content.Type.STRING,
           ),
@@ -98,6 +101,41 @@ generation_config = {
             type = content.Type.STRING,
           ),
           "旅遊史": content.Schema(
+            type = content.Type.STRING,
+          ),
+        },
+      ),
+      "ROS": content.Schema(
+        type = content.Type.OBJECT,
+        enum = [],
+        required = ["全身性症狀", "相關系統症狀"],
+        properties = {
+          "全身性症狀": content.Schema(
+            type = content.Type.STRING,
+          ),
+          "相關系統症狀": content.Schema(
+            type = content.Type.STRING,
+          ),
+        },
+      ),
+      "VitalSigns": content.Schema(
+        type = content.Type.OBJECT,
+        enum = [],
+        required = ["體溫", "血壓", "心跳", "呼吸次數", "血氧飽和度"],
+        properties = {
+          "體溫": content.Schema(
+            type = content.Type.STRING,
+          ),
+          "血壓": content.Schema(
+            type = content.Type.STRING,
+          ),
+          "心跳": content.Schema(
+            type = content.Type.STRING,
+          ),
+          "呼吸次數": content.Schema(
+            type = content.Type.STRING,
+          ),
+          "血氧飽和度": content.Schema(
             type = content.Type.STRING,
           ),
         },

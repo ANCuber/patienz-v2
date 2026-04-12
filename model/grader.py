@@ -9,7 +9,7 @@ def create_grader_model(grader_instruction_path: str):
         grader_instruction = file.read()
 
     generation_config = {
-        "temperature": 1,
+        "temperature": 0.3,
         "top_p": 0.95,
         "top_k": 40,
         "max_output_tokens": 8192,

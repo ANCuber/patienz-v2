@@ -2,6 +2,4 @@
 enableXsrfProtection = false
 enableCORS = false
 headless = true
-sslCertFile = "data/SSL/cert.pem"
-sslKeyFile = "data/SSL/key.pem"
 
