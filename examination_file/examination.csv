@@ -156,3 +156,99 @@ pO2,,23.0~48.0,mmHg
 SO2,,60.0~85.0,%
 HCO3-,,22.0~29.0,mmol/L
 Base excess,,-2.0~3.0,mmol/L
+
+腎功能檢查,,,
+BUN,血液尿素氮,6~24,mg/dL
+Creatinine (Serum),肌酸酐（血清）,男：0.7~1.3；女：0.5~1.1,mg/dL
+eGFR,腎絲球過濾率,> 90,mL/min/1.73m²
+Uric Acid,尿酸,男：3.4~7.0；女：2.4~5.7,mg/dL
+Cystatin C,胱抑素C,0.56~0.98,mg/L
+BUN/Creatinine Ratio,尿素氮/肌酸酐比值,10~20,
+
+凝血功能檢查,,,
+Fibrinogen,纖維蛋白原,200~400,mg/dL
+Thrombin Time (TT),凝血酶時間,14~21,sec
+Bleeding Time (BT),出血時間,2~7,min
+FDP,纖維蛋白降解產物,< 5,μg/mL
+
+免疫學檢查,,,
+ANA,抗核抗體,（-）,
+RF,類風濕因子,< 14,IU/mL
+Anti-CCP,抗環瓜氨酸肽抗體,< 17,U/mL
+Complement C3,補體C3,90~180,mg/dL
+Complement C4,補體C4,10~40,mg/dL
+IgG,免疫球蛋白G,700~1600,mg/dL
+IgA,免疫球蛋白A,70~400,mg/dL
+IgM,免疫球蛋白M,40~230,mg/dL
+
+糞便檢查,,,
+Stool OB,糞便潛血,（-）,
+Stool WBC,糞便白血球,0~5,/HPF
+Stool RBC,糞便紅血球,（-）,/HPF
+Ova & Parasites,蟲卵及寄生蟲,（-）,
+Stool Culture,糞便培養,No pathogen growth,
+
+腦脊髓液檢查,,,
+CSF Opening Pressure,腦脊髓液開放壓力,60~200,mmH2O
+CSF Appearance,腦脊髓液外觀,"Clear, colorless",
+CSF Cell Count (WBC),腦脊髓液白血球計數,0~5,/μL
+CSF WBC Differential,腦脊髓液白血球分類,Lymphocyte predominant,
+CSF Protein,腦脊髓液蛋白質,15~45,mg/dL
+CSF Glucose,腦脊髓液葡萄糖,50~80,mg/dL
+CSF Gram Stain,腦脊髓液革蘭氏染色,No organism seen,
+CSF Culture,腦脊髓液培養,No growth,
+
+培養/微生物學,,,
+Blood Culture,血液培養,No growth,
+Urine Culture,尿液培養,No significant growth,
+Sputum Culture,痰液培養,Normal flora,
+Wound Culture,傷口培養,No pathogen growth,
+Gram Stain,革蘭氏染色,No organism seen,
+AFB Stain,耐酸性桿菌染色,（-）,
+
+Chest X-ray,胸部X光,,
+Abdominal X-ray,腹部X光,,
+Extremity X-ray,四肢X光,,
+Spine X-ray,脊椎X光,,
+KUB,腎臟輸尿管膀胱X光,,
+
+Echocardiography,心臟超音波,,
+Abdominal Ultrasonography,腹部超音波,,
+Thyroid Ultrasound,甲狀腺超音波,,
+Renal Ultrasound,腎臟超音波,,
+Carotid Ultrasound,頸動脈超音波,,
+Doppler Ultrasound,都卜勒超音波,,
+
+Chest CT,胸部CT,,
+Abdominal CT,腹部CT,,
+Head CT,頭部CT,,
+Spine CT,脊椎CT,,
+CT Angiography (CTA),CT血管攝影,,
+
+Brain MRI,頭部磁振造影,,
+Spine MRI,脊椎磁振造影,,
+Abdominal MRI,腹部磁振造影,,
+Cardiac MRI,心臟磁振造影,,
+MSK MRI,肌肉骨骼磁振造影,,
+MRA,磁振血管攝影,,
+
+Bone Scan,骨骼掃描,,
+PET Scan,正子斷層掃描,,
+
+Electrocardiography,心電圖,,
+
+Pulmonary Function Test (PFT),肺功能檢查,,
+EEG,腦波檢查,,
+EMG/NCV,肌電圖/神經傳導檢查,,
+
+Upper GI Endoscopy,上消化道內視鏡,,
+Colonoscopy,大腸鏡,,
+
+Influenza Rapid Test (A),流感快篩（A）,,
+Influenza Rapid Test (B),流感快篩（B）,,
+COVID-19 Rapid Test,COVID快篩,,
+RSV Rapid Test,呼吸道融合病毒,,
+hMPV Rapid Test,人類間質肺炎病毒,,
+GAS Rapid Test,A型鏈球菌,,
+Mycoplasma Rapid Test,黴漿菌,,
+Adenovirus Rapid Test,腺病毒,,
