@@ -7,6 +7,8 @@ from googlesearch import search
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import datetime
 import base64
@@ -134,7 +136,10 @@ def getPDF(query, output_pdf):
         "download.prompt_for_download": False
     })
 
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(
+        service=Service(ChromeDriverManager().install()), 
+        options=chrome_options
+    )
 
     try:
         print(f"Searching for: {query}")
