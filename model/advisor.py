@@ -24,11 +24,19 @@ def create_advisor_model(advisor_instruction_path: str):
         system_instruction=f"{advisor_instruction}",
     )
 
+    pdf_part = ss.symptom_pdf_file if "symptom_pdf_file" in ss else genai.upload_file("tmp/symptom.pdf", mime_type="application/pdf")
+
+    parts = []
+    if ss.get("grader_v2_response"):
+        parts.append(f"## OSCE 評分結果（v2）\n{ss.grader_v2_response}")
+    parts.append(pdf_part)
+    parts.append("\n".join([f"{msg['role']}：{msg['content']}" for msg in ss.diagnostic_messages]))
+
     ss.advisor = ss.advisor_model.start_chat(
         history=[
             {
                 "role": "user",
-                "parts": [res for res in ss.grading_responses] + [genai.upload_file("tmp/symptom.pdf", mime_type="application/pdf"), "\n".join([f"{msg['role']}：{msg['content']}" for msg in ss.diagnostic_messages])],
+                "parts": parts,
             }
         ],
     )

@@ -1,0 +1,276 @@
+{
+  "milestone_source": "hematologyandmedicaloncologymilestones.pdf",
+  "specialty": "Hematology and Medical Oncology",
+  "version": "ACGME Milestones (auto-extracted from PDF)",
+  "language_levels": "en",
+  "language_names_zh": "zh-TW",
+  "disclaimer": "本檔由 PDF 自動萃取，levels 為 ACGME 英文原文；name_zh 由內建翻譯表提供，未匹配項目以英文呈現，可後續人工校對補上中譯。",
+  "subcompetencies": [
+    {
+      "id": "PC2",
+      "domain": "PC",
+      "name_en": "Diagnoses and Assigns Stage and Severity of Hematology and Oncology Disorders",
+      "name_zh": "Diagnoses and Assigns Stage and Severity of Hematology and Oncology Disorders",
+      "levels": {
+        "1": "Generates a differential diagnosis expected of a graduating internal medicine resident Orders testing without specialty-specific differential diagnosis",
+        "2": "Interprets initial diagnostic studies to generate a specialty-specific differential diagnosis Determines stage of disorder",
+        "3": "Orders advanced diagnostic studies for common disorders when appropriate Determines clinical comorbidities",
+        "4": "Diagnoses uncommon disorders and determines disease severity using evidence-based studies",
+        "5": "Role models the assignments of stage and disease severity, informed by evidence-based studies and guidelines for specialty disorders"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC3",
+      "domain": "PC",
+      "name_en": "Formulates the Management Plan",
+      "name_zh": "Formulates the Management Plan",
+      "levels": {
+        "1": "Formulates a management plan for patients without comorbidities, with assistance",
+        "2": "Formulates a management plan using decision-support tools for patients without comorbidities",
+        "3": "Formulates a management plan with consideration of disease and patient factors and enrollment in clinical trials",
+        "4": "Consistently formulates management plans that include consideration of clinical trial enrollment and conforms to patient preferences and goals of care",
+        "5": "Serves as an expert in formulating management plans"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC4",
+      "domain": "PC",
+      "name_en": "Adjusts Management Plans for Acute and Chronic Issues",
+      "name_zh": "Adjusts Management Plans for Acute and Chronic Issues",
+      "levels": {
+        "1": "Adjusts management plans according to standard guidelines and toxicities, with assistance",
+        "2": "Adjusts management plans according to standard guidelines and toxicities",
+        "3": "Adjusts management plans based on response to treatment, side effects of the treatment, and comorbidities",
+        "4": "Adjusts management plans based on anticipation and recognition of subtle toxicities and long-term sequelae and/or changes in patient preferences and goals",
+        "5": "Serves as an expert in developing and implementing pathways that influence management plans"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK2",
+      "domain": "MK",
+      "name_en": "Malignant Hematology (includes Pathophysiology, Diagnostics, Prognostic Information, and Treatment)",
+      "name_zh": "Malignant Hematology (includes Pathophysiology, Diagnostics, Prognostic Information, and Treatment)",
+      "levels": {
+        "1": "Demonstrates basic knowledge of specialty disorders",
+        "2": "Demonstrates expanding knowledge of specialty disorders and development of clinical reasoning",
+        "3": "Demonstrates sufficient knowledge of specialty disorders and clinical reasoning skills to determine evidence-based interventions",
+        "4": "Synthesizes advanced knowledge of specialty disorders and uses clinical reasoning skills to develop personalized interventions",
+        "5": "Serves as a subject matter expert"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK3",
+      "domain": "MK",
+      "name_en": "Solid Tumor Oncology (includes Pathophysiology, Diagnostics, Prognostic Information, and Treatment)",
+      "name_zh": "Solid Tumor Oncology (includes Pathophysiology, Diagnostics, Prognostic Information, and Treatment)",
+      "levels": {
+        "1": "Demonstrates basic knowledge of specialty disorders",
+        "2": "Demonstrates expanding knowledge of specialty disorders and development of clinical reasoning",
+        "3": "Demonstrates sufficient knowledge of specialty disorders and clinical reasoning skills to determine evidence-based interventions",
+        "4": "Synthesizes advanced knowledge of specialty disorders and uses clinical reasoning skills to develop personalized interventions",
+        "5": "Serves as a subject matter expert"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK4",
+      "domain": "MK",
+      "name_en": "Scholarly Activity",
+      "name_zh": "Scholarly Activity",
+      "levels": {
+        "1": "Identifies areas worthy of scholarly investigation",
+        "2": "Formulates a scholarly plan under supervision of a mentor",
+        "3": "Presents products of scholarly activity at local meetings",
+        "4": "Disseminates products of scholarly activity at regional or national meetings, and/or submits an abstract to regional, state, or national meetings",
+        "5": "Publication of independent research that has generated new medical knowledge, educational programs, or process improvement"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP1",
+      "domain": "SBP",
+      "name_en": "Patient Safety",
+      "name_zh": "Patient Safety",
+      "levels": {
+        "1": "Demonstrates knowledge of common patient safety events Demonstrates knowledge of how to report patient safety events",
+        "2": "Identifies system factors that lead to patient safety events Reports patient safety events through institutional reporting systems (simulated or actual)",
+        "3": "Participates in the analysis of patient safety events Participates in disclosure of patient safety events to patients and families (simulated or actual)",
+        "4": "Conducts analysis of patient safety events and offers error prevention strategies Leads disclosure of patient safety events to patients and families with documentation (simulated or actual)",
+        "5": "Actively engages teams and processes to modify systems to prevent patient safety events Role models or mentors others in the disclosure of patient safety events"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP2",
+      "domain": "SBP",
+      "name_en": "Quality Improvement",
+      "name_zh": "Quality Improvement",
+      "levels": {
+        "1": "Demonstrates knowledge of basic quality improvement methodologies and metrics",
+        "2": "Describes local quality improvement initiatives",
+        "3": "Participates in local quality improvement initiatives",
+        "4": "Demonstrates the skills required to identify, develop, implement, and analyze a quality improvement project",
+        "5": "Creates, implements, and assesses quality improvement initiatives at the institutional or community level"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP3",
+      "domain": "SBP",
+      "name_en": "System Navigation for Patient-Centered Care: Coordination and Transitions of Care",
+      "name_zh": "System Navigation for Patient-Centered Care: Coordination and Transitions of Care",
+      "levels": {
+        "1": "Demonstrates knowledge of care coordination Identifies key elements for safe and effective transitions of care and hand-offs",
+        "2": "Coordinates care of patients in routine clinical situations effectively using the roles of their interprofessional teams Performs safe and effective transitions of care/hand-offs in routine clinical situations",
+        "3": "Coordinates care of patients in complex clinical situations effectively using the roles of their interprofessional teams Performs safe and effective transitions of care/hand-offs in complex clinical situations",
+        "4": "Role models effective coordination of patient-centered care among different disciplines and specialties Role models and advocates for safe and effective transitions of care/hand-offs within and across health care delivery systems, including outpatient settings",
+        "5": "Analyzes the process of care coordination and leads in the design and implementation of improvements Improves quality of transitions of care within and across health care delivery systems to optimize patient outcomes"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP4",
+      "domain": "SBP",
+      "name_en": "System Navigation for Patient-Centered Care: Population Health",
+      "name_zh": "System Navigation for Patient-Centered Care: Population Health",
+      "levels": {
+        "1": "Demonstrates knowledge of population and community health care needs",
+        "2": "Identifies specific population and community health care needs",
+        "3": "Identifies local resources to meet community health care needs",
+        "4": "Adapts practice to provide for the needs of specific populations",
+        "5": "Leads innovations and advocates for populations and communities with specific health care needs"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP5",
+      "domain": "SBP",
+      "name_en": "Physician Role in Health Care Systems",
+      "name_zh": "醫師於醫療體系中的角色",
+      "levels": {
+        "1": "Identifies basic financial barriers for individual patients and basic financial components of the health care system Identifies key components of the complex health care system",
+        "2": "Considers financial barriers and quality of care when ordering diagnostic or therapeutic interventions Describes how components of a complex health care system are inter-related, and how this impacts ordering therapeutic interventions",
+        "3": "Incorporates value (quality/costs) into shared decision making, with interprofessional team input Discusses how individual practice and the broader system affect each other",
+        "4": "Manages financial factors that affect a patient's access to care and decision making Manages various components of the complex health care system to provide efficient and effective patient care",
+        "5": "Role models and teaches patients and interprofessional team members to consider value when making diagnostic and therapeutic recommendations Advocates for or leads systems change that enhances high-value, efficient, and effective patient care"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PBLI1",
+      "domain": "PBLI",
+      "name_en": "Evidence-Based and Informed Practice",
+      "name_zh": "實證導向實踐",
+      "levels": {
+        "1": "With assistance, accesses available evidence and practice guidelines for patient care",
+        "2": "Independently identifies available evidence and practice guidelines for patient care",
+        "3": "Critically appraises evidence and applies to patient care",
+        "4": "Applies best available evidence, even in the face of insufficient and/or conflicting information",
+        "5": "Serves as a role model to critically appraise and apply evidence to patient care"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PBLI2",
+      "domain": "PBLI",
+      "name_en": "Reflective Practice and Commitment to Personal Growth",
+      "name_zh": "反思實踐與個人成長承諾",
+      "levels": {
+        "1": "Identifies gaps in knowledge and performance Actively seeks opportunities to improve",
+        "2": "Reflects on the factors which contribute to gaps between expectations and actual performance Designs and implements a learning plan, with assistance",
+        "3": "Institutes changes to narrow the gaps between expectations and actual performance Independently creates and implements a learning plan",
+        "4": "Intentionally seeks performance data to narrow the gaps between expectations and actual performance Measures the effectiveness of the learning plan and makes appropriate changes",
+        "5": "Role models reflective practice Facilitates the design and implementation of learning plans for others"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PROF1",
+      "domain": "PROF",
+      "name_en": "Professional Behavior and Ethical Principles",
+      "name_zh": "Professional Behavior and Ethical Principles",
+      "levels": {
+        "1": "Demonstrates knowledge of common ethical principles and potential triggers for professionalism lapses Describes when and how to appropriately report professionalism lapses",
+        "2": "Analyzes straightforward situations using ethical principles Recognizes and takes responsibility for own professionalism lapses",
+        "3": "Manages and resolves complex ethical situations, including personal lapses, with assistance",
+        "4": "Intervenes and uses appropriate resources to prevent and manage professionalism lapses and dilemmas in self and others",
+        "5": "Coaches others when their behavior fails to meet professional expectations"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF2",
+      "domain": "PROF",
+      "name_en": "Accountability/Conscientiousness",
+      "name_zh": "責任感與謹慎態度",
+      "levels": {
+        "1": "Takes responsibility for failure to complete tasks",
+        "2": "Performs tasks in a timely manner or provides notification when unable to complete tasks",
+        "3": "Performs tasks in a timely manner with appropriate attention to detail in complex or stressful situations",
+        "4": "Takes responsibility in situations that impact the ability of team members to complete tasks and responsibilities in a timely manner",
+        "5": "Exceeds expectations for supporting team responsibilities"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF3",
+      "domain": "PROF",
+      "name_en": "Fellow Well-Being",
+      "name_zh": "Fellow Well-Being",
+      "levels": {
+        "1": "Recognizes status of personal and professional well-being, with assistance",
+        "2": "Independently recognizes status of personal and professional well-being",
+        "3": "With assistance, proposes a plan to optimize personal and professional well-being",
+        "4": "Independently develops a plan to optimize personal and professional well-being",
+        "5": "Role models the continual ability to monitor and address personal and professional well-being Advocates for institutional changes to support well-being"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS1",
+      "domain": "ICS",
+      "name_en": "Patient- and Family-Centered Communication",
+      "name_zh": "以病人與家屬為中心之溝通",
+      "levels": {
+        "1": "Identifies common barriers to effective communication Recognizes the need to adjust communication strategies based on context",
+        "2": "Identifies complex barriers to effective communication Verifies patient/ family understanding of the clinical situation to optimize effective communication",
+        "3": "Reflects on biases while attempting to minimize communication barriers With guidance, uses shared decision making to align patient/family values, goals, and preferences with treatment options to make a personalized care plan",
+        "4": "Proactively improves communication by addressing barriers and biases Independently, uses shared decision making to make a personalized care plan",
+        "5": "Role models communication that addresses barriers Role models shared decision making in patient/family communication, including those with a high degree of uncertainty/conflict"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "ICS2",
+      "domain": "ICS",
+      "name_en": "Interprofessional and Team Communication",
+      "name_zh": "跨專業與團隊溝通",
+      "levels": {
+        "1": "Uses respectful communication (verbal, non-verbal) with all members of the health care team Demonstrates openness to feedback",
+        "2": "Communicates effectively within and across all health care teams Responsive to feedback",
+        "3": "Adapts communication style within and across all health care teams to ensure mutual understanding Seeks and provides performance feedback",
+        "4": "Coordinates recommendations from different members of the health care team to optimize patient care Uses feedback to improve own performance and provides actionable feedback to team members",
+        "5": "Role models flexible communication strategies that solicits and values input from all health care team members, resolving conflict when needed Role models giving and receiving of feedback"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS3",
+      "domain": "ICS",
+      "name_en": "Communication within Health Care Systems",
+      "name_zh": "於醫療體系內之溝通",
+      "levels": {
+        "1": "Accurately records information in the patient record Safeguards patient personal health information in communications",
+        "2": "Demonstrates organized diagnostic and medical reasoning through notes in the patient record Appropriately selects forms of communication based on context",
+        "3": "Documentation reflects level of complexity and severity of disease Communication includes key stakeholders",
+        "4": "Documentation reflects medical reasoning, patient preferences, and management recommendations and plans Achieves written or verbal communication that is exemplary",
+        "5": "Role models optimal documentation Guides departmental or institutional communication policies"
+      },
+      "applicable_in_osce": true
+    }
+  ]
+}

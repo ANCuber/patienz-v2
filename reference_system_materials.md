@@ -12,7 +12,6 @@
 | `mark_scheme_setter_instruction.txt` | 評分表生成 | 依病例生成 OSCE 評分表：6 大類別、25-40 題、40-60 分 |
 | `grader_v2_instruction.txt` | 評分官 (v2) | 全面評分指令：二元/三元計分、各類別評分準則、JSON 輸出 |
 | `advisor_instruction.txt` | 教學顧問 | Pendleton 回饋模式、鷹架策略、鼓勵性回饋 |
-| `grader_inst_A.txt` ~ `grader_inst_E.txt` | 評分官 (v1 legacy) | 舊版分維度評分（A-E 五大面向） |
 
 ---
 

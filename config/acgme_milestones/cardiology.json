@@ -1,0 +1,248 @@
+{
+  "milestone_source": "cardiovasculardiseasemilestones.pdf",
+  "specialty": "Cardiovascular Disease",
+  "version": "ACGME Milestones (auto-extracted from PDF)",
+  "language_levels": "en",
+  "language_names_zh": "zh-TW",
+  "disclaimer": "本檔由 PDF 自動萃取，levels 為 ACGME 英文原文；name_zh 由內建翻譯表提供，未匹配項目以英文呈現，可後續人工校對補上中譯。",
+  "subcompetencies": [
+    {
+      "id": "PC1",
+      "domain": "PC",
+      "name_en": "Invasive Cardiovascular Testing",
+      "name_zh": "Invasive Cardiovascular Testing",
+      "levels": {
+        "1": "Discusses the key steps and anatomy relevant to the procedure",
+        "2": "Obtains and manages vascular access, with direct supervision Recognizes normal coronary anatomy and standard angiographic views",
+        "3": "Performs some elements of diagnostic cardiac catheterization, with direct supervision Performs some elements of selected common procedures, with direct supervision Interprets angiographic and hemodynamic data, with supervision",
+        "4": "Performs diagnostic cardiac catheterization, with direct supervision Independently performs selected common procedures (e.g., pulmonary artery catheter, temporary pacing wire, arterial and venous access) Independently interprets angiographic and hemodynamic data and integrates with other clinical findings for common clinical conditions",
+        "5": "Independently performs diagnostic cardiac catheterization Independently interprets angiographic and hemodynamic data and integrates with other clinical findings for complex clinical conditions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC2",
+      "domain": "PC",
+      "name_en": "Non-Invasive Testing",
+      "name_zh": "Non-Invasive Testing",
+      "levels": {
+        "1": "Discusses the key steps of the test Interprets electrocardiogram (ECG) patterns for common clinical conditions",
+        "2": "Obtains and identifies standard views for transthoracic echocardiography Participates in selected common tests, with direct supervision Interprets ECG and ambulatory ECG; performs and interprets stress testing, with guidance",
+        "3": "Performs and interprets a complete transthoracic echocardiography, with guidance Integrates data from selected common tests (e.g., nuclear, computed tomography [CT], magnetic resonance imaging [MRI], vascular ultrasound), with guidance Interprets complex ECG, ambulatory ECG, and stress testing, with guidance",
+        "4": "Independently performs and interprets transthoracic echocardiography in common clinical conditions Independently integrates the data from selected common tests (e.g., nuclear, CT, MRI, vascular ultrasound) Independently interprets ECG and ambulatory ECG; independently performs and interprets stress testing",
+        "5": "Independently performs and interprets transthoracic echocardiography in complex clinical conditions Independently performs, interprets, and integrates selected common tests (e.g., nuclear, CT, MRI, vascular ultrasound)"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC3",
+      "domain": "PC",
+      "name_en": "Acute Care",
+      "name_zh": "Acute Care",
+      "levels": {
+        "1": "Identifies patients with acute cardiac conditions (e.g., acute coronary syndromes, cardiogenic shock, decompensated heart failure, arrhythmias)",
+        "2": "Manages patients with acute cardiac conditions (e.g., acute coronary syndromes, cardiogenic shock, decompensated heart failure, and arrhythmias), with direct supervision Performs inpatient cardiovascular consultation, with direct supervision Identifies options available for advanced therapies",
+        "3": "Manages patients with acute cardiac conditions (e.g., acute coronary syndromes, cardiogenic shock, decompensated heart failure, and arrhythmias), with indirect supervision Performs inpatient cardiovascular consultation, with indirect supervision Identifies patients appropriate for advanced therapies and when to initiate end-of-life care",
+        "4": "Manages independently patients with acute cardiac conditions (e.g., acute coronary syndromes, cardiogenic shock, decompensated heart failure, and arrhythmias) Effectively performs inpatient cardiovascular consultation Coordinates advanced therapies and end-of-life care",
+        "5": "Functions as an exceptional team leader in the acute care setting Advances quality of clinical practice in the treatment strategies for acute cardiovascular conditions Effectively develops team-based care models in management of acute cardiovascular conditions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC4",
+      "domain": "PC",
+      "name_en": "Chronic Care for Cardiovascular Conditions",
+      "name_zh": "Chronic Care for Cardiovascular Conditions",
+      "levels": {
+        "1": "Recognizes clinical signs and symptoms of common chronic cardiovascular conditions Discusses the treatment strategies for common cardiovascular conditions",
+        "2": "Diagnoses and monitors for complications or changes related to common chronic cardiovascular conditions, with direct supervision Develops treatment strategies for common chronic cardiovascular conditions, with direct supervision Effectively participates in team-based care in management of common chronic cardiovascular conditions, with direct supervision",
+        "3": "Diagnoses and monitors for complications or changes related to common chronic cardiovascular conditions, with indirect supervision Develops treatment strategies for common chronic cardiovascular conditions, with indirect supervision Effectively participates in team-based care in management of common chronic cardiovascular conditions, with indirect supervision",
+        "4": "Diagnoses and monitors for complications or changes related to complex chronic cardiovascular conditions Develops treatment strategies for complex chronic cardiovascular conditions Effectively participates in team-based care in management of complex chronic cardiovascular conditions",
+        "5": "Functions as an exceptional team leader in the chronic care setting Advances quality of clinical practice in the treatment strategies for chronic cardiovascular conditions Effectively develops and implements team-based care models in management of chronic cardiovascular conditions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK1",
+      "domain": "MK",
+      "name_en": "Cardiovascular Testing",
+      "name_zh": "Cardiovascular Testing",
+      "levels": {
+        "1": "Knows available cardiovascular tests",
+        "2": "Demonstrates knowledge of indications and contraindications for cardiovascular testing Knows the basic measurements obtained from the various cardiovascular testing modalities",
+        "3": "Demonstrates knowledge of appropriate selection and use of cardiovascular testing for patients with common cardiovascular disorders Identifies key test findings in common cardiovascular disorders",
+        "4": "Applies knowledge of appropriate selection and use of cardiovascular testing for patients with complex cardiovascular disorders Identifies key test findings in complex cardiovascular disorders",
+        "5": "Advances knowledge in indications, contraindications, and appropriate use for cardiovascular testing Advances knowledge in defining the role of cardiovascular testing"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK2",
+      "domain": "MK",
+      "name_en": "Critical Thinking for Diagnosis and Therapy",
+      "name_zh": "Critical Thinking for Diagnosis and Therapy",
+      "levels": {
+        "1": "Lists a differential diagnosis for common clinical presentations Lists therapeutic options for common clinical presentations",
+        "2": "Provides a comprehensive differential diagnosis for a wide range of clinical presentations Explains advantages and drawbacks of standard therapeutic options",
+        "3": "Provides a focused differential diagnosis based on individual patient presentation Justifies optimal therapeutic option based on individual patient presentation",
+        "4": "Diagnoses patients with challenging presentations and uncommon disorders Develops therapeutic plan for patients with challenging presentations and uncommon disorders",
+        "5": "Disseminates knowledge of challenging presentations and uncommon disorders"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP1",
+      "domain": "SBP",
+      "name_en": "Patient Safety and Quality Improvement",
+      "name_zh": "病人安全與品質改善",
+      "levels": {
+        "1": "Demonstrates knowledge of common patient safety events Demonstrates knowledge of how to report patient safety events Demonstrates knowledge of basic quality improvement methodologies and metrics",
+        "2": "Identifies system factors that lead to patient safety events Reports patient safety events through institutional reporting systems (simulated or actual) Describes quality improvement initiatives at the institutional or departmental level",
+        "3": "Participates in analysis of patient safety events (simulated or actual) Participates in disclosure of patient safety events to patients and families (simulated or actual) Participates in quality improvement initiatives at the institutional or departmental level",
+        "4": "Conducts analysis of patient safety events and offers error prevention strategies (simulated or actual) Discloses patient safety events to patients and families (simulated or actual) Demonstrates the skills required to identify, develop, implement, and analyze a quality improvement project",
+        "5": "Actively engages teams and processes to modify systems to prevent patient safety events Role models or mentors others in the disclosure of patient safety events Creates, implements, and assesses quality improvement initiatives at the institutional or community level"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP2",
+      "domain": "SBP",
+      "name_en": "System Navigation for Patient-Centered Care",
+      "name_zh": "以病人為中心的系統導航",
+      "levels": {
+        "1": "Demonstrates knowledge of care coordination Identifies key elements for effective transitions of care",
+        "2": "Coordinates care of patients in routine clinical situations, effectively using the roles of the interprofessional teams Performs effective transitions of care in routine clinical situations Demonstrates general knowledge of barriers to adherence of care",
+        "3": "Coordinates care of patients in complex clinical situations, effectively using the roles of their interprofessional teams Performs effective transitions of care in complex clinical situations Identifies barriers to adherence of care to specific populations",
+        "4": "Role models effective coordination of patient-centered care among different disciplines and specialties Role models and advocates for effective transitions of care within and across health care delivery systems Adapts practice to address barriers to adherence of care",
+        "5": "Analyzes the process of care coordination and leads in the design and implementation of improvements Improves quality of transitions of care within and across healthcare delivery systems to optimize patient outcomes Leads innovations and advocates for populations and communities with specific health care needs"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP3",
+      "domain": "SBP",
+      "name_en": "Physician Role in Health Care Systems",
+      "name_zh": "醫師於醫療體系中的角色",
+      "levels": {
+        "1": "Identifies key components of the health care system (e.g., hospital, skilled nursing facility, finance, personnel, technology) Describes basic health payment systems, (e.g., government, private, public, uninsured care) and practice models",
+        "2": "Describes how components of a complex health care system are interrelated, and how this impacts patient care Delivers care with consideration of each patient’s payment model (e.g., insurance type) Demonstrates essential skills for documentation required for independent practice (e.g., electronic health record, documentation required for billing and coding)",
+        "3": "Discusses how individual practice affects the broader system (e.g., length of stay, readmission rates, clinical efficiency) Engages with patients in shared decision making, informed by each patient’s payment models Seeks knowledge in non-clinical topics needed for independent practice (e.g., malpractice insurance, government regulation, compliance)",
+        "4": "Manages various components of the complex health care system to provide efficient and effective patient care and transition of care Advocates for patient care needs (e.g., community resources, patient assistance resources) with consideration of the limitations of each patient’s payment model Applies knowledge in non-clinical topics needed for independent practice",
+        "5": "Advocates for or leads systems change that enhances high-value, efficient and effective patient care and transition of care Participates in health policy advocacy activities Educates others in non-clinical topics to prepare them for independent practice"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PBLI1",
+      "domain": "PBLI",
+      "name_en": "Evidence-Based and Informed Practice",
+      "name_zh": "實證導向實踐",
+      "levels": {
+        "1": "Demonstrates how to access and use available evidence to manage a patient with cardiac disease",
+        "2": "Articulates clinical questions and elicits patient preferences to guide evidence-based care",
+        "3": "Locates and applies the best available evidence to the care of patients with complex cardiac disease while integrating patient preference",
+        "4": "Critically appraises and applies available, potentially conflicting evidence to guide care of an individual patient",
+        "5": "Develops initiatives to educate others to critically appraise and apply evidence for complex patients and/or participates in the development of guidelines"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PBLI2",
+      "domain": "PBLI",
+      "name_en": "Reflective Practice and Commitment to Personal Growth",
+      "name_zh": "反思實踐與個人成長承諾",
+      "levels": {
+        "1": "Accepts responsibility for personal and professional development by establishing goals Acknowledges limits and gaps between expectations and performance; demonstrates self-awareness",
+        "2": "Demonstrates openness to feedback and performance data in order to form goals Analyzes the factors which contribute to limits and gaps; demonstrates appropriate help-seeking behaviors",
+        "3": "Occasionally seeks feedback and performance data with adaptability and humility Creates and implements a learning plan",
+        "4": "Systematically seeks feedback and performance data with adaptability and humility Uses performance data to assess learning plan and improves it when necessary",
+        "5": "Coaches others to seek feedback and performance data Facilitates the design and implementation of learning plans for others"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PROF1",
+      "domain": "PROF",
+      "name_en": "Professional Behavior and Ethical Principles",
+      "name_zh": "Professional Behavior and Ethical Principles",
+      "levels": {
+        "1": "Identifies and describes potential triggers for professionalism lapses Demonstrates knowledge of ethical principles (e.g., informed consent, advance directives, confidentiality, patient autonomy)",
+        "2": "Demonstrates insight into professional behavior in routine situations Applies knowledge of ethical principles to routine situations",
+        "3": "Demonstrates professional behavior in complex or stressful situations Recognizes need to seek help in managing and resolving complex ethical situations",
+        "4": "Recognizes situations that may trigger professionalism lapses and intervenes to prevent lapses in self and others Uses appropriate resources for managing and resolving ethical dilemmas (e.g., ethics consultations, risk management)",
+        "5": "Coaches others when their behavior fails to meet professional expectations Identifies and seeks to address system-level factors that induce or exacerbate ethical problems or impede their resolution"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF2",
+      "domain": "PROF",
+      "name_en": "Accountability",
+      "name_zh": "Accountability",
+      "levels": {
+        "1": "Takes responsibility for failure to complete tasks and responsibilities, identifies potential contributing factors, and describes strategies for ensuring timely task completion in the future Recognizes the principles of conflict of interest in relationships with industry and other entities",
+        "2": "Performs tasks and responsibilities in a timely manner with appropriate attention to detail in routine situations Recognizes personal potential conflicts with industry",
+        "3": "Performs tasks and responsibilities in a timely manner with appropriate attention to detail in complex or stressful situations Seeks assistance in managing personal relationships with industry and other entities to minimize bias and undue influence in practice",
+        "4": "Recognizes situations that may impact others’ ability to complete tasks and responsibilities in a timely manner Identifies, discloses, and manages relationships with industry and other entities to minimize bias and undue influence in practice",
+        "5": "Engages with the system to improve outcomes"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF3",
+      "domain": "PROF",
+      "name_en": "Self-Awareness and Well-Being",
+      "name_zh": "Self-Awareness and Well-Being",
+      "levels": {
+        "1": "Recognizes the importance of personal and professional well-being",
+        "2": "Independently recognizes status of personal and professional well-being",
+        "3": "With assistance, proposes a plan to optimize personal and professional well-being",
+        "4": "Independently develops a plan to optimize personal and professional well-being",
+        "5": "Participates in a system change to improve well-being in self and others"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS1",
+      "domain": "ICS",
+      "name_en": "Patient and Family-Centered Communication",
+      "name_zh": "Patient and Family-Centered Communication",
+      "levels": {
+        "1": "Demonstrates respect and establishes rapport in patient encounters Knows barriers to effective communication (e.g., language, disability, health literacy, bias) Identifies the need to adjust communication strategies to achieve shared decision making",
+        "2": "Establishes a therapeutic relationship in routine patient encounters Identifies barriers to effective communication in patient encounters Organizes and initiates communication with patient/family to facilitate shared decision making",
+        "3": "Establishes a therapeutic relationship in challenging patient encounters, with guidance Attempts to minimize communication barriers, including reflection on any biases Uses shared decision making to implement a personalized care plan, under guidance",
+        "4": "Independently establishes a therapeutic relationship in challenging patient encounters Proactively minimizes communication barriers and independently manages biases Independently, uses shared decision making to implement a personalized care plan",
+        "5": "Mentors others in situational awareness and critical self-reflection to consistently develop positive therapeutic relationships Role models self-awareness to minimize communication barriers Role models shared decision making"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "ICS2",
+      "domain": "ICS",
+      "name_en": "Interprofessional and Team Communication",
+      "name_zh": "跨專業與團隊溝通",
+      "levels": {
+        "1": "Respectfully receives a consultation request Uses language that values all members of the health care team",
+        "2": "Respectfully and thoroughly completes consultations with effective documentation and communication in common cases, with direct supervision Communicates information effectively with all health care team members Participates in team-based discussions to optimize team performance",
+        "3": "Completes consultations with effective documentation and communication in common cases, with indirect supervision Adapts communication style to fit team needs Initiates team-based discussions to optimize team performance",
+        "4": "Completes consultations with effective documentation and communication in complex cases Coordinates recommendations from different members of the health care team to optimize patient care Facilitates team-based discussions to optimize team performance",
+        "5": "Role models flexible communication strategies that value input from all health care team members, resolving conflict when needed Facilitates regular health care team-based feedback in complex situations"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS3",
+      "domain": "ICS",
+      "name_en": "Communication within Health Care Systems",
+      "name_zh": "於醫療體系內之溝通",
+      "levels": {
+        "1": "Accurately records information in the patient record and safeguards patient personal health information",
+        "2": "Demonstrates organized diagnostic and therapeutic reasoning through notes in the patient record Identifies appropriate communication channels (e.g., cell phone/ pager usage, medical record, email) as required by institutional policy",
+        "3": "Concisely reports diagnostic and therapeutic reasoning in the patient record Respectfully communicates concerns about the system",
+        "4": "Independently communicates timely information in a written format and verbally when appropriate Uses appropriate channels to offer clear and constructive suggestions to improve the system",
+        "5": "Models written communication to improve others’ performance Guides departmental or institutional communication around policies and procedures"
+      },
+      "applicable_in_osce": true
+    }
+  ]
+}

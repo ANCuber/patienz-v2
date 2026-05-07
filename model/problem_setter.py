@@ -168,12 +168,13 @@ generation_config = {
 }
 
 
-def create_problem_setter_model(problem_instruction_path=PROBLEM_SETTER_INSTRUCTION):
+def create_problem_setter_model(problem_instruction_path=PROBLEM_SETTER_INSTRUCTION,
+                                model_name="gemini-2.5-flash-lite"):
     with open(problem_instruction_path, 'r', encoding='utf-8') as file:
         problem_setter_instruction = file.read()
 
     ss.problem_setter_model = genai.GenerativeModel(
-        model_name="gemini-2.5-flash",
+        model_name=model_name,
         generation_config=generation_config,
         system_instruction=problem_setter_instruction,
     )

@@ -1,0 +1,304 @@
+{
+  "milestone_source": "internalmedicinemilestones.pdf",
+  "specialty": "Internal Medicine",
+  "version": "ACGME Milestones (auto-extracted from PDF)",
+  "language_levels": "en",
+  "language_names_zh": "zh-TW",
+  "disclaimer": "本檔由 PDF 自動萃取，levels 為 ACGME 英文原文；name_zh 由內建翻譯表提供，未匹配項目以英文呈現，可後續人工校對補上中譯。",
+  "subcompetencies": [
+    {
+      "id": "PC1",
+      "domain": "PC",
+      "name_en": "History",
+      "name_zh": "病史採集",
+      "levels": {
+        "1": "Elicits and reports a comprehensive history for common patient presentations, with guidance Seeks data from secondary sources, with guidance",
+        "2": "Elicits and concisely reports a hypothesis-driven patient history for common patient presentations Independently obtains data from secondary sources",
+        "3": "Elicits and concisely reports a hypothesis-driven patient history for complex patient presentations Reconciles current data with secondary sources",
+        "4": "Efficiently elicits and concisely reports a patient history, incorporating pertinent psychosocial and other determinants of health Uses history and secondary data to guide the need for further diagnostic testing",
+        "5": "Efficiently and effectively tailors the history taking, including relevant historical subtleties, based on patient, family, and system needs Models effective use of history to guide the need for further diagnostic testing"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC2",
+      "domain": "PC",
+      "name_en": "Physical Examination",
+      "name_zh": "理學檢查",
+      "levels": {
+        "1": "Performs a general physical examination while attending to patient comfort and safety Identifies common abnormal findings",
+        "2": "Performs a hypothesis-driven physical examination for a common patient presentation Interprets common abnormal findings",
+        "3": "Performs a hypothesis-driven physical examination for a complex patient presentation Identifies and interprets uncommon and complex abnormal findings",
+        "4": "Uses advanced maneuvers to elicit subtle findings Integrates subtle physical examination findings to guide diagnosis and management",
+        "5": "Models effective evidence-based physical examination technique Teaches the predictive values of the examination findings to guide diagnosis and management"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC3",
+      "domain": "PC",
+      "name_en": "Clinical Reasoning",
+      "name_zh": "臨床推理",
+      "levels": {
+        "1": "Organizes and accurately summarizes information obtained from the patient evaluation to develop a clinical impression",
+        "2": "Integrates information from all sources to develop a basic differential diagnosis for common patient presentations Identifies clinical reasoning errors within patient care, with guidance",
+        "3": "Develops a thorough and prioritized differential diagnosis for common patient presentations Retrospectively applies clinical reasoning principles to identify errors",
+        "4": "Develops prioritized differential diagnoses in complex patient presentations and incorporates subtle, unusual, or conflicting findings Continually re-appraises one’s own clinical reasoning to improve patient care in real time",
+        "5": "Coaches others to develop prioritized differential diagnoses in complex patient presentations Models how to recognize errors and reflect upon one’s own clinical reasoning"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC4",
+      "domain": "PC",
+      "name_en": "Patient Management – Inpatient",
+      "name_zh": "住院病人管理",
+      "levels": {
+        "1": "Formulates management plans for common conditions, with guidance Identifies opportunities to maintain and promote health",
+        "2": "Develops and implements management plans for common conditions, recognizing acuity, and modifies based on the clinical course Develops and implements management plans to maintain and promote health, with guidance",
+        "3": "Develops and implements value-based (high value) management plans for patients with multisystem disease and comorbid conditions; modifies based on the clinical course Independently develops and implements plans to maintain and promote health, incorporating pertinent psychosocial and other determinants of health",
+        "4": "Uses shared decision making to develop and implement value-based (high value) comprehensive management plans for patients with comorbid and multisystem disease, including those patients requiring critical care Independently develops and implements comprehensive plans to maintain and promote health, incorporating pertinent psychosocial and other determinants of health",
+        "5": "Develops and implements comprehensive management plans for patients with rare or ambiguous presentations or unusual comorbid conditions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC5",
+      "domain": "PC",
+      "name_en": "Patient Management – Outpatient",
+      "name_zh": "門診病人管理",
+      "levels": {
+        "1": "Identifies opportunities to maintain and promote health Formulates management plans for a common chronic condition, with guidance Formulates management plans for acute common conditions, with guidance",
+        "2": "Develops and implements management plans to maintain and promote health Develops and implements management plans for common chronic conditions Develops and implements management plans for common acute conditions",
+        "3": "Develops and implements plans to maintain and promote health, incorporating pertinent psychosocial and other determinants of health Develops and implements management plans for multiple chronic conditions Develops and implements an initial management plan for patients with urgent or emergent conditions in the setting of chronic comorbidities",
+        "4": "Develops and implements value-based (high-value) comprehensive plans to maintain and promote health Develops and implements value-based (high value) comprehensive management plans for multiple chronic conditions, incorporating pertinent psychosocial and other determinants of health Develops and implements value-based (high value) management plans for patients with acute conditions",
+        "5": "Creates and leads a comprehensive patient-centered management plan for the patient with highly complex chronic conditions, integrating recommendations from multiple disciplines Develops and implements management plans for patients with subtle presentations, including rare or ambiguous conditions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC6",
+      "domain": "PC",
+      "name_en": "Digital Health",
+      "name_zh": "數位健康",
+      "levels": {
+        "1": "Uses electronic health record (EHR) for routine patient care activities Identifies the required components for a telehealth visit",
+        "2": "Expands use of EHR to include and reconcile secondary data sources in patient care activities Performs assigned telehealth visits using approved technology",
+        "3": "Effectively uses EHR capabilities in managing acute and chronic care of patients Identifies clinical situations that can be managed through a telehealth visit",
+        "4": "Uses EHR to facilitate achievement of quality targets for patient panels Integrates telehealth effectively into clinical practice for the management of acute and chronic illness",
+        "5": "Leads improvements to the EHR Develops and innovates new ways to use emerging technologies to augment telehealth visits"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "MK1",
+      "domain": "MK",
+      "name_en": "Applied Foundational Sciences",
+      "name_zh": "應用基礎科學",
+      "levels": {
+        "1": "Explains the scientific knowledge (e.g., physiology, social sciences, mechanism of disease) for normal function and common medical conditions",
+        "2": "Explains the scientific knowledge for complex medical conditions",
+        "3": "Integrates scientific knowledge to address comorbid conditions within the context of multisystem disease",
+        "4": "Integrates scientific knowledge to address uncommon, atypical, or complex comorbid conditions within the context of multisystem disease",
+        "5": "Demonstrates a nuanced understanding of the scientific knowledge related to uncommon, atypical, or complex conditions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK2",
+      "domain": "MK",
+      "name_en": "Therapeutic Knowledge",
+      "name_zh": "治療知識",
+      "levels": {
+        "1": "Explains the scientific basis for common therapies",
+        "2": "Explains the indications, contraindications, risks, and benefits of common therapies",
+        "3": "Integrates knowledge of therapeutic options in patients with comorbid conditions, multisystem disease, or uncertain diagnosis",
+        "4": "Integrates knowledge of therapeutic options within the clinical and psychosocial context of the patient to formulate treatment options",
+        "5": "Demonstrates a nuanced understanding of emerging, atypical, or complex therapeutic options"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK3",
+      "domain": "MK",
+      "name_en": "Knowledge of Diagnostic Testing",
+      "name_zh": "診斷檢驗知識",
+      "levels": {
+        "1": "Explains the rationale, risks, and benefits for common diagnostic testing Interprets results of common diagnostic tests",
+        "2": "Explains the rationale, risks, and benefits for complex diagnostic testing Interprets complex diagnostic data",
+        "3": "Integrates value and test characteristics of various diagnostic strategies in patients with common diseases Integrates complex diagnostic data accurately to reach high-probability diagnoses",
+        "4": "Integrates value and test characteristics of various diagnostic strategies in patients with comorbid conditions or multisystem disease Anticipates and accounts for limitations when interpreting diagnostic data",
+        "5": "Demonstrates a nuanced understanding of emerging diagnostic tests and procedures"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP1",
+      "domain": "SBP",
+      "name_en": "Patient Safety and Quality Improvement",
+      "name_zh": "病人安全與品質改善",
+      "levels": {
+        "1": "Demonstrates knowledge of common patient safety events Demonstrates knowledge of how to report patient safety events Demonstrates knowledge of basic quality improvement methodologies and metrics",
+        "2": "Identifies system factors that lead to patient safety events Reports patient safety events through institutional reporting systems (actual or simulated) Describes local quality improvement initiatives (e.g., community vaccination rate, infection rate, smoking cessation)",
+        "3": "Contributes to the analysis of patient safety events (simulated or actual) Participates in disclosure of patient safety events to patients and families (simulated or actual) Contributes to local quality improvement initiatives",
+        "4": "Conducts analysis of patient safety events and offers error prevention strategies (simulated or actual) Discloses patient safety events to patients and families (simulated or actual) Demonstrates the skills required to identify, develop, implement, and analyze a quality improvement project",
+        "5": "Leads teams and processes to modify systems to prevent patient safety events Models the disclosure of patient safety events Creates, implements, and assesses sustainable quality improvement initiatives at the institutional or community level"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP2",
+      "domain": "SBP",
+      "name_en": "System Navigation for Patient-Centered Care",
+      "name_zh": "以病人為中心的系統導航",
+      "levels": {
+        "1": "Demonstrates knowledge of care coordination Identifies key elements for safe and effective transitions of care and hand-offs Demonstrates knowledge of population and community health needs",
+        "2": "Coordinates care of patients by effectively engaging interprofessional teams in routine clinical situations Performs safe and effective transitions of care/hand-offs in routine clinical situations Identifies specific population and community health needs for the local population",
+        "3": "Coordinates care of patients by effectively engaging interprofessional teams in complex clinical situations Performs safe and effective transitions of care/hand-offs in complex clinical situations Uses local resources effectively to meet the needs of a patient population and community",
+        "4": "Models effective coordination of patient-centered care among different disciplines and specialties Models and advocates for safe and effective transitions of care/hand-offs within and across health care delivery systems, including outpatient settings Participates in changing and adapting practice to provide for the needs of specific populations",
+        "5": "Analyzes the process of care coordination and leads in the design and implementation of improvements Improves quality of transitions of care within and across health care delivery systems to optimize patient outcomes Leads innovations and advocates for populations and communities with health care needs"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP3",
+      "domain": "SBP",
+      "name_en": "Physician Role in Health Care Systems",
+      "name_zh": "醫師於醫療體系中的角色",
+      "levels": {
+        "1": "Identifies key components of the health care system Describes basic health payment systems",
+        "2": "Describes how components of a complex health care system are interrelated, and how this impacts patient care Delivers care with consideration of each patient’s payment model",
+        "3": "Discusses how individual practice affects the regional and national health care system Engages with patients in shared decision making, informed by each patient’s payment models",
+        "4": "Manages various components of the complex health care system to provide efficient and effective patient care Advocates for patient care needs with consideration of the limitations of each patient’s payment model",
+        "5": "Advocates for or leads systems change that enhances high-value, efficient, and effective patient care Actively engaged in influencing health policy through advocacy activities at the local, regional, or national level"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PBLI1",
+      "domain": "PBLI",
+      "name_en": "Evidence-Based and Informed Practice",
+      "name_zh": "實證導向實踐",
+      "levels": {
+        "1": "Demonstrates how to access, categorize, and analyze clinical evidence, with guidance",
+        "2": "Articulates clinical questions and elicits patient preferences and values to guide evidence-based care",
+        "3": "Critically appraises and applies the best available evidence, integrated with patient preference, to the care of complex patients",
+        "4": "Applies evidence, even in the face of uncertainty and conflicting evidence, to guide care, tailored to the individual patient",
+        "5": "Coaches others to critically appraise and apply evidence to patient care"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PBLI2",
+      "domain": "PBLI",
+      "name_en": "Reflective Practice and Commitment to Personal Growth",
+      "name_zh": "反思實踐與個人成長承諾",
+      "levels": {
+        "1": "Accepts responsibility for personal and professional development by establishing goals Identifies the factors that contribute to gap(s) between ideal and actual performance, with guidance",
+        "2": "Demonstrates openness to performance data (feedback and other input) to inform goals Analyzes and reflects on the factors which contribute to gap(s) between ideal and actual performance, with guidance Actively seeks opportunities to improve",
+        "3": "Seeks performance data episodically, with adaptability, and humility Institutes behavioral change(s) to narrow the gap(s) between ideal and actual performance Designs and implements an individualized learning plan, with prompting",
+        "4": "Seeks performance data consistently with adaptability, and humility Challenges one’s own assumptions and considers alternatives in narrowing the gap(s) between ideal and actual performance Independently creates and implements an individualized learning plan",
+        "5": "Models consistently seeking performance data with adaptability and humility Coaches others on reflective practice Uses performance data to measure the effectiveness of the individualized learning plan and when necessary, improves it"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PROF1",
+      "domain": "PROF",
+      "name_en": "Professional Behavior",
+      "name_zh": "專業行為",
+      "levels": {
+        "1": "Demonstrates professional behavior in routine situations",
+        "2": "Identifies potential triggers for professionalism lapses and accepts responsibility for one’s own professionalism lapses",
+        "3": "Demonstrates a pattern of professional behavior in complex or stressful situations",
+        "4": "Recognizes situations that may trigger professionalism lapses and intervenes to prevent lapses in oneself and others",
+        "5": "Coaches others when their behavior fails to meet professional expectations"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF2",
+      "domain": "PROF",
+      "name_en": "Ethical Principles",
+      "name_zh": "倫理原則",
+      "levels": {
+        "1": "Demonstrates knowledge of basic ethical principles",
+        "2": "Applies basic principles to address straightforward ethical situations",
+        "3": "Analyzes complex situations using ethical principles and identifies the need to seek help in addressing complex ethical situations",
+        "4": "Analyzes complex situations and engages with appropriate resources for managing and addressing ethical dilemmas as needed",
+        "5": "Identifies and seeks to address system-level factors that induce or exacerbate ethical problems or impede their resolution"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF3",
+      "domain": "PROF",
+      "name_en": "Accountability/Conscientiousness",
+      "name_zh": "責任感與謹慎態度",
+      "levels": {
+        "1": "Performs administrative tasks and patient care responsibilities, with prompting",
+        "2": "Performs administrative tasks and patient care responsibilities in a timely manner in routine situations",
+        "3": "Performs administrative tasks and patient care responsibilities in a timely manner in complex or stressful situations",
+        "4": "Proactively implements strategies to ensure that the needs of patients, teams, and systems are met",
+        "5": "Creates strategies to enhance other’s ability to efficiently complete administrative tasks and patient care responsibilities"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF4",
+      "domain": "PROF",
+      "name_en": "Knowledge of Systemic and Individual Factors of Well-Being",
+      "name_zh": "個人與系統層面身心健康因素之認識",
+      "levels": {
+        "1": "Recognizes the importance of getting help when needed to address personal and professional well-being",
+        "2": "Lists resources to support personal and professional well-being Recognizes that institutional factors affect well-being",
+        "3": "With prompting, reflects on how personal and professional well-being may impact one’s clinical practice Describes institutional factors that affect well-being",
+        "4": "Reflects on actions in real time to proactively respond to the inherent emotional challenges of physician work Suggests potential solutions to institutional factors that affect well-being",
+        "5": "Participates in institutional changes to promote personal and professional well-being"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS1",
+      "domain": "ICS",
+      "name_en": "Patient- and Family-Centered Communication",
+      "name_zh": "以病人與家屬為中心之溝通",
+      "levels": {
+        "1": "Uses language and non-verbal behavior to demonstrate respect and establish rapport",
+        "2": "Establishes and maintains a therapeutic relationship using effective communication behaviors in straightforward encounters Identifies common barriers to effective communication",
+        "3": "Establishes and maintains a therapeutic relationship using effective communication behaviors in challenging patient encounters Identifies complex barriers to effective communication",
+        "4": "Establishes and maintains therapeutic relationships using shared decision making, regardless of complexity Mitigates communication barriers",
+        "5": "Coaches others in developing and maintaining therapeutic relationships and mitigating communication barriers Models the mitigation of communication barriers"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "ICS2",
+      "domain": "ICS",
+      "name_en": "Interprofessional and Team Communication",
+      "name_zh": "跨專業與團隊溝通",
+      "levels": {
+        "1": "Respectfully requests and responds to a consultation Uses verbal and non-verbal communication that values all members of the interprofessional team",
+        "2": "Clearly and concisely requests and responds to a consultation Communicates information, including basic feedback with all interprofessional team members",
+        "3": "Checks own and others’ understanding of recommendations when providing or receiving consultation Facilitates interprofessional team communication to reconcile conflict and provides difficult feedback",
+        "4": "Coordinates recommendations from different consultants to optimize patient care Adapts communication style to fit interprofessional team needs and maximizes impact of feedback to the team",
+        "5": "Facilitates conflict resolution between and amongst consultants when disagreement exists Models flexible communication strategies that facilitate excellence in interprofessional teamwork"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS3",
+      "domain": "ICS",
+      "name_en": "Communication within Health Care Systems",
+      "name_zh": "於醫療體系內之溝通",
+      "levels": {
+        "1": "Accurately documents comprehensive and current information Communicates using formats specified by institutional policy to safeguard patient personal health information",
+        "2": "Documents clinical encounter, including reasoning, through organized notes Selects direct (e.g., telephone, in-person) and indirect (e.g., progress notes, text messages) forms of communication based on context, with assistance",
+        "3": "Documents clinical encounter through concise and thorough notes Appropriately selects direct and indirect forms of communication based on context",
+        "4": "Documents clinical encounter clearly, concisely, timely, and in an organized form, including anticipatory guidance Models effective written and verbal communication",
+        "5": "Guides departmental or institutional communication policies and procedures"
+      },
+      "applicable_in_osce": true
+    }
+  ]
+}

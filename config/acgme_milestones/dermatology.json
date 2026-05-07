@@ -1,0 +1,304 @@
+{
+  "milestone_source": "dermatologymilestones.pdf",
+  "specialty": "Dermatology",
+  "version": "ACGME Milestones (auto-extracted from PDF)",
+  "language_levels": "en",
+  "language_names_zh": "zh-TW",
+  "disclaimer": "本檔由 PDF 自動萃取，levels 為 ACGME 英文原文；name_zh 由內建翻譯表提供，未匹配項目以英文呈現，可後續人工校對補上中譯。",
+  "subcompetencies": [
+    {
+      "id": "PC1",
+      "domain": "PC",
+      "name_en": "Medical Dermatology",
+      "name_zh": "Medical Dermatology",
+      "levels": {
+        "1": "Obtains basic dermatologic history and physical exam Identifies management options for common dermatologic conditions",
+        "2": "Evaluates patients with common dermatologic conditions, with assistance Manages patients with common dermatologic conditions, with assistance",
+        "3": "Independently evaluates patients with common dermatologic conditions Independently manages patients with common dermatologic conditions",
+        "4": "Independently evaluates patients with complex dermatologic conditions Independently manages patients with complex dermatologic conditions and/or comorbidities",
+        "5": "Independently evaluates and manages patients with rare, atypical, or refractory dermatologic conditions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC2",
+      "domain": "PC",
+      "name_en": "Pediatric Dermatology",
+      "name_zh": "Pediatric Dermatology",
+      "levels": {
+        "1": "Obtains basic dermatologic history and physical exam in a pediatric patient Identifies management options for common pediatric dermatologic conditions Describes the challenges of procedures on pediatric patients",
+        "2": "Evaluates patients with common pediatric dermatologic conditions, with assistance Manages patients with common pediatric dermatologic conditions, with attention to age, weight, and psychosocial considerations, with assistance Assists in procedures on pediatric patients",
+        "3": "Independently evaluates patients with common pediatric dermatologic conditions Independently manages patients with common pediatric dermatologic conditions with attention to age, weight, and psychosocial considerations Performs basic procedures on pediatric patients with assistance using patient comfort strategies",
+        "4": "Independently evaluates patients with complex pediatric dermatologic conditions Independently manages patients with complex pediatric dermatologic conditions and/or comorbidities, with attention to age, weight, and psychosocial considerations Independently performs basic procedures on pediatric patients using patient comfort strategies",
+        "5": "Independently evaluates and manages pediatric patients with rare, atypical, or refractory dermatologic conditions Independently performs a range of procedures in pediatric patients using patient comfort strategies"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC3",
+      "domain": "PC",
+      "name_en": "Dermatologic Procedures and Surgery",
+      "name_zh": "Dermatologic Procedures and Surgery",
+      "levels": {
+        "1": "Performs pre-operative assessment for basic procedures, with guidance Performs basic procedures, with guidance Provides basic wound care instructions",
+        "2": "Performs pre-operative assessment for basic procedures Performs basic procedures Provides anticipatory guidance for procedural outcomes",
+        "3": "Performs pre-operative assessment and counseling of risk for excisions and layered closures, with guidance Performs excisions and layered closures, with guidance Identifies and manages procedural complications, with guidance",
+        "4": "Performs pre-operative assessment and counseling of risk for complex procedures Performs excisions with layered closures; designs flaps and grafts where indicated Identifies and manages procedural complications",
+        "5": "Performs flaps and grafts, micrographic surgery, or other advanced procedures"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC4",
+      "domain": "PC",
+      "name_en": "Dermatopathology",
+      "name_zh": "Dermatopathology",
+      "levels": {
+        "1": "Identifies key structural and cellular components of the skin, hair, and nails Reviews reported histologic findings",
+        "2": "Identifies microscopic features of common neoplasms and inflammatory reaction patterns Performs clinicopathologic correlation, with guidance",
+        "3": "Interprets microscopic features of common disorders of the skin, hair, and nails, with guidance Independently performs clinicopathologic correlation for straightforward presentations",
+        "4": "Independently interprets microscopic features of common and uncommon disorders of the skin, hair, and nails Independently performs clinicopathologic correlation for atypical or complex presentations",
+        "5": "Independently interprets atypical or subtle microscopic features of disorders of the skin, hair, and nails"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC5",
+      "domain": "PC",
+      "name_en": "Cosmetic Care",
+      "name_zh": "Cosmetic Care",
+      "levels": {
+        "1": "Identifies patients with a cosmetic concern",
+        "2": "Gathers patient data, including cosmetic and relevant medical history Describes available cosmetic treatments",
+        "3": "Evaluates patient and recommends interventions to meet patient goals for cosmetic care, with assistance Selects cosmetic treatment, with assistance",
+        "4": "Independently evaluates routine patient and recommends interventions to meet patient goals for cosmetic care Delivers cosmetic treatment and manages complications, with assistance",
+        "5": "Independently evaluates and counsels the patient with complex cosmetic concerns Delivers cosmetic treatment and manages complications"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC6",
+      "domain": "PC",
+      "name_en": "Diagnostics",
+      "name_zh": "Diagnostics",
+      "levels": {
+        "1": "Describes indications and steps involved in in-office testing Describes laboratory, imaging, and other diagnostic testing used in dermatology",
+        "2": "Selects and performs in-office tests, with assistance Selects laboratory, imaging, and other diagnostic tests for common presentations, with assistance",
+        "3": "Independently selects and performs in-office test; interprets in-office diagnostic tests, with assistance Independently interprets laboratory, imaging, and other diagnostic tests for common presentations",
+        "4": "Independently selects, performs, and interprets a full spectrum of in-office tests Independently interprets laboratory, imaging, and other diagnostic tests for complex or rare presentations",
+        "5": "Evaluates the application of novel and emerging diagnostic tests"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC7",
+      "domain": "PC",
+      "name_en": "Critical Thinking/Differential Diagnosis",
+      "name_zh": "Critical Thinking/Differential Diagnosis",
+      "levels": {
+        "1": "Develops a differential diagnosis for common presentations, with guidance",
+        "2": "Independently develops a differential diagnosis for common presentations",
+        "3": "Develops a prioritized differential diagnosis for complex presentations and identifies clinical reasoning errors",
+        "4": "Pursues and synthesizes additional information to reach high-probability diagnoses with continuous re-appraisal",
+        "5": "Integrates additional data and coaches others to minimize clinical reasoning errors"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC8",
+      "domain": "PC",
+      "name_en": "Therapeutics Management",
+      "name_zh": "Therapeutics Management",
+      "levels": {
+        "1": "Identifies patients who are candidates for topical and systemic therapy Identifies available treatment options for common skin disorders Identifies therapeutic agents which require laboratory monitoring",
+        "2": "Provides appropriate counseling regarding adverse effects and reasonable risks Selects treatment options for common skin disorders, with guidance Selects appropriate laboratory monitoring for systemic treatments, with guidance",
+        "3": "Consistently evaluates treatment response and counsels patients on expectations of therapy With guidance, selects therapeutic modalities for common and uncommon skin disorders while balancing risks and benefits Selects appropriate laboratory monitoring and manages adverse effects, with guidance",
+        "4": "Consistently identifies refractory disease and independently escalates therapy as necessary Independently selects therapeutic modalities for common and uncommon skin disorders based on stepwise therapeutic ladders Independently orders appropriate laboratory monitoring and manages adverse effects",
+        "5": "Independently manages rare and complex diseases based on emerging evidence Evaluates the application of novel and emerging therapeutic modalities or unique applications of existing drugs Develops systems for safety monitoring"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK1",
+      "domain": "MK",
+      "name_en": "Knowledge of Dermatologic Disease",
+      "name_zh": "Knowledge of Dermatologic Disease",
+      "levels": {
+        "1": "Describes fundamental cutaneous anatomy and physiology Demonstrates knowledge of the clinical features of common dermatologic disorders",
+        "2": "Describes pathophysiology of common skin disorders Demonstrates knowledge of the clinical features, associations, treatments, and expected course of common dermatologic disorders",
+        "3": "Demonstrates knowledge of the pathophysiology of complex skin disorders Demonstrates knowledge of the clinical features, associations, treatments, and expected course of uncommon and complex dermatologic disorders",
+        "4": "Synthesizes knowledge of pathophysiology of skin disorders from multiple sources Demonstrates comprehensive knowledge of the clinical features, associations, treatments, and expected course of common, uncommon, and complex dermatologic disorders",
+        "5": "Teaches emerging concepts in cutaneous pathophysiology Teaches emerging concepts in clinical features, associations, treatments, or expected course of common, uncommon, and complex dermatologic disorders"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK2",
+      "domain": "MK",
+      "name_en": "Visual Recognition",
+      "name_zh": "Visual Recognition",
+      "levels": {
+        "1": "Identifies common diseases with characteristic findings Defines primary lesions and secondary features",
+        "2": "Identifies uncommon diseases with characteristic findings Describes morphology, with assistance",
+        "3": "Identifies variable presentations of common disease Describes morphology with fluency Integrates visual diagnostic tools (e.g., dermoscopy), with assistance",
+        "4": "Identifies variable presentations of uncommon and rare disease Identifies subtle morphologic variability Independently integrates visual diagnostic tools",
+        "5": "Integrates visual diagnostic tools for a wide range of diagnoses of the skin, hair, and nails"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP1",
+      "domain": "SBP",
+      "name_en": "Patient Safety and Quality Improvement",
+      "name_zh": "病人安全與品質改善",
+      "levels": {
+        "1": "Demonstrates knowledge of common safety events Demonstrates knowledge of how to report patient safety events Demonstrates knowledge of basic quality improvement methodologies and metrics",
+        "2": "Identifies system factors that lead to safety events Reports patient safety events through institutional reporting systems Describes local quality improvement initiatives (e.g., handwashing, needle stick prevention, wrong site surgery prevention)",
+        "3": "Participates in analysis of safety events (simulated or actual) Participates in disclosure of patient safety events to patients and families (simulated or actual) Participates in local quality improvement initiatives",
+        "4": "Conducts analysis of safety events and offers error prevention strategies (simulated or actual) Discloses patient safety events to patients and families (simulated or actual) Demonstrates the skills required to identify, develop, implement, and analyze a quality improvement project",
+        "5": "Actively engages teams and processes to modify systems to prevent safety events Mentors others in the disclosure of patient safety events Creates, implements, and assesses quality improvement initiatives at the institutional or community level"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP2",
+      "domain": "SBP",
+      "name_en": "System Navigation for Patient-Centered Care",
+      "name_zh": "以病人為中心的系統導航",
+      "levels": {
+        "1": "Demonstrates knowledge of care coordination Identifies key elements for safe and effective transitions of care and hand-offs Demonstrates knowledge of population and community health needs",
+        "2": "Coordinates care of patients in routine clinical situations effectively using the roles of the interprofessional teams Performs safe and effective transitions of care/hand-offs in routine clinical situations Identifies specific population and community health needs for their local population",
+        "3": "Coordinates care of patients in complex clinical situations effectively using the roles of their interprofessional teams Performs safe and effective transitions of care/hand-offs in complex clinical situations Uses local resources effectively to meet the needs of a patient population and community",
+        "4": "Leads effective coordination of patient-centered care among different disciplines and specialties Advocates for safe and effective transitions of care/hand-offs within and across health care delivery systems including outpatient settings Participates in changing and adapting practice to provide for the needs of specific populations",
+        "5": "Analyzes the process of care coordination and leads in the design and implementation of improvements Improves quality of transitions of care within and across health care delivery systems to optimize patient outcomes Leads innovations and advocates for populations and communities with health care needs"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP3",
+      "domain": "SBP",
+      "name_en": "Physician Role in Health Care Systems",
+      "name_zh": "醫師於醫療體系中的角色",
+      "levels": {
+        "1": "Identifies key components of the complex health care system Describes basic health payment systems and practice models Identifies basic practice management knowledge domains for effective transition to practice",
+        "2": "Describes how components of a complex health care system are interrelated, and how this impacts patient care Delivers care with consideration of each patient’s payment model Describes core administrative knowledge needed for transition to practice",
+        "3": "Discusses how individual practice affects the broader system Engages with patients in shared-decision making, informed by each patient’s payment models Demonstrates use of information technology required for medical practice",
+        "4": "Manages various components of the complex health care system to provide efficient and effective patient care Advocates for patient care needs with consideration of the limitations of each patient’s payment model Analyzes individual practice patterns and professional requirements in preparation for practice",
+        "5": "Advocates for or leads systems change that enhances high-value, efficient, and effective patient care Participates in health policy advocacy activities Educates others to prepare them for transition to practice"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PBLI1",
+      "domain": "PBLI",
+      "name_en": "Evidence-Based and Informed Practice",
+      "name_zh": "實證導向實踐",
+      "levels": {
+        "1": "Demonstrates how to access and use available evidence, and incorporate patient preferences and values in order to take care of a routine patient",
+        "2": "Articulates clinical questions and elicits patient preferences and values in order to guide evidence-based care",
+        "3": "Locates and applies the best available evidence, integrated with patient preference, to the care of complex patients",
+        "4": "Critically appraises and applies evidence even in the face of uncertainty and conflicting evidence to guide care, tailored to the individual patient",
+        "5": "Coaches others to critically appraise and apply evidence for complex patients; and/or participates in the development of guidelines"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PBLI2",
+      "domain": "PBLI",
+      "name_en": "Reflective Practice and Commitment to Personal Growth",
+      "name_zh": "反思實踐與個人成長承諾",
+      "levels": {
+        "1": "Accepts responsibility for personal and professional development by establishing goals Identifies the factors which contribute to gap(s) between expectations and actual performance Actively seeks opportunities to improve",
+        "2": "Demonstrates openness to performance data (feedback and other input) in order to inform goals Analyzes and reflects on the factors which contribute to gap(s) between expectations and actual performance Designs and implements a learning plan, with prompting",
+        "3": "Seeks performance data episodically, with adaptability and humility Analyzes, reflects on, and institutes behavioral change(s) to narrow the gap(s) between expectations and actual performance Independently creates and implements a learning plan",
+        "4": "Intentionally seeks performance data consistently with adaptability and humility Challenges own assumptions and considers alternatives in narrowing the gap(s) between expectations and actual performance Uses performance data to measure the effectiveness of the learning plan and when necessary, improves it",
+        "5": "Role models consistently seeking performance data with adaptability and humility Coaches others on reflective practice Facilitates the design and implementing learning plans for others"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PROF1",
+      "domain": "PROF",
+      "name_en": "Professional Behavior and Ethical Principles",
+      "name_zh": "Professional Behavior and Ethical Principles",
+      "levels": {
+        "1": "Identifies and describes potential triggers for professionalism lapses Describes when and how to appropriately report professionalism lapses, including strategies for addressing common barriers Demonstrates knowledge of medical ethical principles",
+        "2": "Demonstrates insight into professional behavior in routine situations Takes responsibility for own professionalism lapses Analyzes straightforward situations using ethical principles",
+        "3": "Demonstrates professional behavior in complex or stressful situations Recognizes need to seek help in managing and resolving complex ethical situations Analyzes complex situations using ethical principles",
+        "4": "Recognizes situations that may trigger professionalism lapses and intervenes to prevent lapses in self and others Recognizes and uses appropriate resources for managing and resolving ethical dilemmas, as needed",
+        "5": "Coaches others when their behavior fails to meet professional expectations Identifies and seeks to address system-level factors that induce or exacerbate ethical problems or impede their resolution Serves as resource for colleagues who face ethical dilemmas"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF2",
+      "domain": "PROF",
+      "name_en": "Accountability/Conscientiousness",
+      "name_zh": "責任感與謹慎態度",
+      "levels": {
+        "1": "Responds promptly to requests or reminders to complete tasks Takes responsibility for failure to complete tasks and responsibilities",
+        "2": "Performs tasks and responsibilities in a timely manner with appropriate attention to detail in routine situations Recognizes situations that may impact own ability to complete tasks and responsibilities in a timely manner",
+        "3": "Performs tasks and responsibilities in a timely manner with appropriate attention to detail in complex or stressful situations Proactively ensures that the needs of patients are met",
+        "4": "Mitigates situations that may impact others’ ability to complete tasks and responsibilities in a timely manner Implements strategies to enhance accountability of team members involved in patient care",
+        "5": "Takes ownership of system outcomes and revises systems to enhance accountability"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF3",
+      "domain": "PROF",
+      "name_en": "Self-Awareness and Help-Seeking",
+      "name_zh": "自我覺察與求助行為",
+      "levels": {
+        "1": "Recognizes status of personal and professional well-being, with assistance Recognizes limits in one’s own knowledge/ skills, with assistance",
+        "2": "Independently recognizes status of personal and professional well-being Independently recognizes limits in one’s own knowledge/skills and seeks help when appropriate",
+        "3": "Proposes a plan to optimize personal and professional well-being, with assistance Proposes a plan to remediate or improve limits in one’s own knowledge/skills, with assistance",
+        "4": "Independently develops a plan to optimize personal and professional well-being Independently develops a plan to remediate or improve limits in one’s own knowledge/skills",
+        "5": "Coaches others to optimize personal and professional well-being"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS1",
+      "domain": "ICS",
+      "name_en": "Patient- and Family-Centered Communication",
+      "name_zh": "以病人與家屬為中心之溝通",
+      "levels": {
+        "1": "Uses language and nonverbal behavior to demonstrate respect and establish rapport Identifies common barriers (e.g., language) to effective communication Identifies the importance of engaging in shared decision making",
+        "2": "Establishes a therapeutic relationship in straightforward encounters using active listening and clear language Identifies complex barriers (e.g., health literacy) to effective communication Identifies elements of shared decision making",
+        "3": "Establishes a therapeutic relationship in challenging patient encounters, with guidance When prompted, reflects on biases while attempting to minimize communication barriers Uses shared decision making to make a personalized care plan, with guidance",
+        "4": "Independently establishes a therapeutic relationship in challenging patient encounters Independently recognizes biases while attempting to proactively minimize communication barriers Independently uses shared decision making to make a personalized care plan",
+        "5": "Mentors others in situational awareness and critical self-reflection to consistently develop positive therapeutic relationships Independently uses shared decision making to make a personalized care plan when there is a high degree of uncertainty"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "ICS2",
+      "domain": "ICS",
+      "name_en": "Interprofessional and Team Communication",
+      "name_zh": "跨專業與團隊溝通",
+      "levels": {
+        "1": "Respectfully requests a consultation Respectfully receives a consultation request Uses language that values all members of the health care team",
+        "2": "Clearly and concisely requests a consultation Clearly and concisely responds to a consultation request Solicits feedback on performance as a member of the health care team",
+        "3": "Checks own understanding of consultant recommendations Checks understanding of recommendations when providing consultation Communicates concerns and provides feedback to peers and learners",
+        "4": "Coordinates recommendations from different members of the health care team to optimize patient care Communicates feedback and constructive criticism to superiors",
+        "5": "Role models flexible communication strategies that value input from all health care team members, resolving conflict when needed Facilitates regular health care team-based feedback in complex situations"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS3",
+      "domain": "ICS",
+      "name_en": "Communication within Health Care Systems",
+      "name_zh": "於醫療體系內之溝通",
+      "levels": {
+        "1": "Accurately records information in the electronic health record (EHR) in a timely manner Safeguards protected health information by using appropriate communication channels",
+        "2": "Demonstrates organized diagnostic and therapeutic reasoning through notes in the EHR Uses documentation tools and short cuts (e.g., copy/paste) accurately and appropriately, per institutional policy",
+        "3": "Concisely reports diagnostic and therapeutic reasoning in the EHR Appropriately selects and uses direct (e.g., telephone, in-person) and indirect (e.g., progress notes, text and inbox messages) forms of communication based on context",
+        "4": "Communicates clearly, concisely, and in an organized written form, including anticipatory guidance Achieves written or verbal communication (e.g., patient notes, email) that serves as an example for others to follow",
+        "5": "Coaches others to improve written communication Guides departmental or institutional communication around policies and procedures"
+      },
+      "applicable_in_osce": true
+    }
+  ]
+}

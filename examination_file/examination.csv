@@ -58,6 +58,11 @@ CEA (RIA)(CIA),癌胚胎抗原/臨床意義：大腸直腸胃等,< 5.0,ng/mL
 CA 125,癌症抗原 125/臨床意義：卵巢腸胃癌,< 35.0,U/mL
 CA 199 (RIA)(CIA),CA19-9 腫瘤標記 /癌症抗原 CA19-9 臨床意義：胰臟膽囊癌,< 37.0,U/mL
 PSA,前列腺特異抗原臨床意義：攝護腺特異抗原（癌）,40-49 歲 : < 2.5 ; 50-59 歲 : < 3.5 ; 60-69 歲 : < 4.5 ; 70-79 歲 : < 6.5,ng/mL
+CA 15-3,癌症抗原 15-3/臨床意義：乳癌追蹤指標,< 25.0,U/mL
+CA 72-4,癌症抗原 72-4/臨床意義：胃癌、卵巢癌,< 6.9,U/mL
+SCC,鱗狀上皮細胞癌抗原/臨床意義：肺鱗癌、子宮頸癌、頭頸癌,< 2.0,ng/mL
+NSE,神經元特異性烯醇酶/臨床意義：小細胞肺癌、神經內分泌腫瘤,< 16.3,ng/mL
+β-HCG,β絨毛膜促性腺激素/臨床意義：絨毛膜癌、生殖細胞腫瘤,< 5.0,mIU/mL
 甲狀腺功能檢查,,,
 T3 (RIA),三碘甲狀腺素,78.0–182.0,ng/dL
 T4 (RIA),四碘甲狀腺素,4.6-12.4,μg/dL
@@ -180,6 +185,22 @@ Complement C4,補體C4,10~40,mg/dL
 IgG,免疫球蛋白G,700~1600,mg/dL
 IgA,免疫球蛋白A,70~400,mg/dL
 IgM,免疫球蛋白M,40~230,mg/dL
+Anti-dsDNA,抗雙股DNA抗體/臨床意義：SLE 特異性,< 30,IU/mL
+Anti-Sm,抗 Sm 抗體/臨床意義：SLE 高度特異性,（-）,
+Anti-Ro/SSA,抗 SSA 抗體/臨床意義：薛格連症候群、SLE,（-）,
+Anti-La/SSB,抗 SSB 抗體/臨床意義：薛格連症候群,（-）,
+Anti-RNP,抗 RNP 抗體/臨床意義：MCTD,（-）,
+Anti-Scl-70,抗 Scl-70 抗體/臨床意義：系統性硬化症,（-）,
+Anti-Centromere,抗中節抗體/臨床意義：CREST 症候群,（-）,
+Anti-Jo-1,抗 Jo-1 抗體/臨床意義：多發性肌炎,（-）,
+ANCA (c-ANCA),細胞質型 ANCA/臨床意義：肉芽腫多血管炎,（-）,
+ANCA (p-ANCA),核周圍型 ANCA/臨床意義：顯微多血管炎,（-）,
+Anti-MPO,抗 MPO 抗體/臨床意義：p-ANCA 相關血管炎,< 20,U/mL
+Anti-PR3,抗 PR3 抗體/臨床意義：c-ANCA 相關血管炎,< 20,U/mL
+ESR,紅血球沉降速率/臨床意義：發炎指標,男 < 15、女 < 20,mm/hr
+hsCRP,高敏感 C 反應蛋白/臨床意義：發炎/心血管風險,< 0.5,mg/dL
+HLA-B27,人類白血球抗原 B27/臨床意義：僵直性脊椎炎,（-）,
+Cryoglobulin,冷凝球蛋白/臨床意義：冷凝球蛋白血症,（-）,
 
 糞便檢查,,,
 Stool OB,糞便潛血,（-）,
@@ -218,6 +239,12 @@ Thyroid Ultrasound,甲狀腺超音波,,
 Renal Ultrasound,腎臟超音波,,
 Carotid Ultrasound,頸動脈超音波,,
 Doppler Ultrasound,都卜勒超音波,,
+Pelvic Ultrasound,骨盆腔超音波/婦科超音波（經腹部）,,
+Transvaginal Ultrasound,經陰道超音波,,
+Obstetric Ultrasound,產科超音波/胎兒檢查,,
+Scrotal Ultrasound,陰囊超音波,,
+Breast Ultrasound,乳房超音波,,
+Soft Tissue Ultrasound,軟組織超音波,,
 
 Chest CT,胸部CT,,
 Abdominal CT,腹部CT,,

@@ -12,7 +12,7 @@ def create_mark_scheme_setter_model():
         "temperature": 0.5,
         "top_p": 0.95,
         "top_k": 40,
-        "max_output_tokens": 65536,
+        "max_output_tokens": 16384,
         "response_schema": content.Schema(
             type=content.Type.ARRAY,
             items=content.Schema(

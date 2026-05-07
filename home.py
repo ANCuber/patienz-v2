@@ -8,5 +8,5 @@ init_all()
 
 pages = [st.Page(f"page/{const.section_name[i]}.py", title=f"{const.noun[i]}區", icon=const.icon[i]) for i in range(len(const.noun))]
 
-page = st.navigation(pages)
+page = st.navigation(pages, position="hidden")
 page.run()

@@ -1,0 +1,388 @@
+{
+  "milestone_source": "neurologymilestones.pdf",
+  "specialty": "Neurology",
+  "version": "ACGME Milestones (auto-extracted from PDF)",
+  "language_levels": "en",
+  "language_names_zh": "zh-TW",
+  "disclaimer": "本檔由 PDF 自動萃取，levels 為 ACGME 英文原文；name_zh 由內建翻譯表提供，未匹配項目以英文呈現，可後續人工校對補上中譯。",
+  "subcompetencies": [
+    {
+      "id": "PC1",
+      "domain": "PC",
+      "name_en": "History",
+      "name_zh": "病史採集",
+      "levels": {
+        "1": "Obtains a basic neurologic history",
+        "2": "Obtains a complete and relevant neurologic history",
+        "3": "Obtains an organized neurologic history, including collateral information as appropriate",
+        "4": "Efficiently obtains an organized hypothesis-driven neurologic history",
+        "5": "Serves as a role model in obtaining a hypothesis-driven neurologic history"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC2",
+      "domain": "PC",
+      "name_en": "Neurologic Exam",
+      "name_zh": "Neurologic Exam",
+      "levels": {
+        "1": "Performs some components of a neurologic exam",
+        "2": "Performs a standard neurologic exam accurately",
+        "3": "Performs a relevant neurologic exam incorporating additional appropriate maneuvers",
+        "4": "Performs a hypothesis-driven neurologic exam",
+        "5": "Serves as a role model for performing a hypothesis-driven, complete, relevant, and organized neurologic exam"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC3",
+      "domain": "PC",
+      "name_en": "Formulation",
+      "name_zh": "Formulation",
+      "levels": {
+        "1": "Summarizes history and exam findings",
+        "2": "Generates a broad differential diagnosis based on history, exam, and localization",
+        "3": "Synthesizes relevant information to focus and prioritize diagnostic possibilities",
+        "4": "Continuously reconsiders diagnosis in response to changes in clinical circumstances and available data",
+        "5": "Serves as a role model for clinical reasoning by demonstrating sophisticated formulation in complex presentations"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC4",
+      "domain": "PC",
+      "name_en": "Diagnosis and Management of Neurologic Disorders in the Outpatient Setting",
+      "name_zh": "Diagnosis and Management of Neurologic Disorders in the Outpatient Setting",
+      "levels": {
+        "1": "Identifies typical presentations of commonly encountered neurologic conditions",
+        "2": "Diagnoses commonly encountered neurologic conditions Develops an initial treatment plan for commonly encountered neurologic disorders",
+        "3": "Identifies atypical presentations of commonly encountered neurologic conditions Individualizes management and follow-up plan for commonly encountered neurologic disorders, considering risks, benefits, and non-pharmacologic strategies",
+        "4": "Diagnoses uncommon neurologic conditions Adapts management plan based upon patient response and complications of therapy; identifies when to change acuity of care",
+        "5": "Identifies atypical presentations of uncommon neurologic conditions Longitudinally manages uncommon neurologic conditions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC5",
+      "domain": "PC",
+      "name_en": "Diagnosis and Management of Neurologic Disorders in the Inpatient Setting",
+      "name_zh": "Diagnosis and Management of Neurologic Disorders in the Inpatient Setting",
+      "levels": {
+        "1": "Identifies typical presentations of commonly encountered neurologic conditions",
+        "2": "Diagnoses commonly encountered neurologic conditions Develops an initial treatment plan for commonly encountered neurologic disorders",
+        "3": "Identifies atypical presentations of commonly encountered neurologic conditions Individualizes management plan, ensuring the appropriate level of care throughout hospitalization and upon discharge",
+        "4": "Diagnoses uncommon neurologic conditions Adapts management plan based upon treatment response, disease progression, and complications of therapy",
+        "5": "Identifies atypical presentations of uncommon neurologic conditions Leads the management of patients with complex and uncommon neurologic conditions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC6",
+      "domain": "PC",
+      "name_en": "Diagnosis and Management of Neurologic Emergencies",
+      "name_zh": "Diagnosis and Management of Neurologic Emergencies",
+      "levels": {
+        "1": "Describes the typical presentation of neurologic emergencies Seeks assistance and conveys pertinent details during a neurologic emergency",
+        "2": "Recognizes when a patient’s presentation is a neurologic emergency Initiates management for a neurologic emergency",
+        "3": "Diagnoses neurologic emergencies, using appropriate diagnostic testing Manages patients with common neurologic emergencies",
+        "4": "Re-appraises diagnostic considerations based on treatment response, disease progression, and complications of therapy Manages complex neurologic emergencies",
+        "5": "Serves as a role model for management of neurologic emergencies"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC7",
+      "domain": "PC",
+      "name_en": "Determination of Death by Neurologic Criteria",
+      "name_zh": "Determination of Death by Neurologic Criteria",
+      "levels": {
+        "1": "Demonstrates knowledge of medical and legal significance of death by neurologic criteria",
+        "2": "Lists the components for determining death by neurologic criteria",
+        "3": "Describes supplemental testing used to determine death by neurologic criteria",
+        "4": "Accurately performs determination of death by neurologic criteria",
+        "5": "Educates others in the determination of death by neurologic criteria, including appropriate use of supplemental testing, as well as controversies"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC8",
+      "domain": "PC",
+      "name_en": "Interpretation of Neuroimaging",
+      "name_zh": "Interpretation of Neuroimaging",
+      "levels": {
+        "1": "Identifies basic neuroanatomy on brain and vascular anatomy of the head and neck magnetic resonance (MR) and computed tomography (CT)",
+        "2": "Identifies major abnormalities of the brain and cerebrovascular system on MR and CT Identifies basic anatomy of the spine and spinal cord on MR and CT",
+        "3": "Interprets typical abnormalities of the brain and cerebrovascular system on MR and CT Identifies abnormalities of the spine and spinal cord on MR and CT",
+        "4": "Interprets subtle abnormalities of brain and cerebrovascular system on MR and CT Interprets MR and CT of the spine",
+        "5": "Interprets advanced neuroimaging"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC9",
+      "domain": "PC",
+      "name_en": "Electroencephalogram (EEG)",
+      "name_zh": "Electroencephalogram (EEG)",
+      "levels": {
+        "1": "Identifies patients for whom EEG is appropriate",
+        "2": "Recognizes normal EEG features, including common artifacts, in children and adults",
+        "3": "Recognizes patterns of status epilepticus, normal EEG variants, and common abnormalities in children and adults",
+        "4": "Interprets common EEG abnormalities and patterns that could represent status epilepticus",
+        "5": "Interprets uncommon EEG abnormalities and creates a report"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC10",
+      "domain": "PC",
+      "name_en": "Nerve Conduction Study/Electromyogram (NCS/EMG)",
+      "name_zh": "Nerve Conduction Study/Electromyogram (NCS/EMG)",
+      "levels": {
+        "1": "Identifies patients for whom NCS/EMG is appropriate",
+        "2": "Identifies NCS/EMG findings for common disorders",
+        "3": "Correlates NCS/EMG results to patient presentation, including identification of potential study limitations",
+        "4": "Formulates basic NCS/EMG plan and interprets data for common clinical presentations",
+        "5": "Performs, interprets, and creates a report for NCS/EMG"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC11",
+      "domain": "PC",
+      "name_en": "Lumbar Puncture",
+      "name_zh": "Lumbar Puncture",
+      "levels": {
+        "1": "Lists the indications, contraindications, and complications for lumbar puncture",
+        "2": "Performs lumbar puncture under direct supervision",
+        "3": "Performs lumbar puncture without direct supervision and manages complications",
+        "4": "Performs lumbar puncture on patients with challenging anatomy",
+        "5": "Performs lumbar puncture using image guidance"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC12",
+      "domain": "PC",
+      "name_en": "Psychiatric and Functional Aspects of Neurology",
+      "name_zh": "Psychiatric and Functional Aspects of Neurology",
+      "levels": {
+        "1": "Recognizes contributions of common psychiatric disorders and their treatment to neurologic diseases",
+        "2": "Develops a treatment plan that considers psychiatric comorbidities and side effects of psychiatric medications",
+        "3": "Accurately differentiates psychiatric or functional contributions to neurologic symptoms",
+        "4": "Leads a discussion with a patient and/or caregiver that explains the psychiatric or functional contribution to the patient’s neurologic symptoms",
+        "5": "Develops a shared management plan that addresses the psychiatric or functional contribution to neurologic symptoms"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK1",
+      "domain": "MK",
+      "name_en": "Localization",
+      "name_zh": "Localization",
+      "levels": {
+        "1": "Recognizes the role of localization in neurologic diagnosis",
+        "2": "Localizes lesions to general regions of the nervous system",
+        "3": "Localizes lesions to specific regions of the nervous system",
+        "4": "Localizes lesions to discrete structures of the nervous system",
+        "5": "Consistently demonstrates sophisticated and detailed knowledge of neuroanatomy in localizing lesions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK2",
+      "domain": "MK",
+      "name_en": "Diagnostic Investigation",
+      "name_zh": "Diagnostic Investigation",
+      "levels": {
+        "1": "Discusses a general diagnostic approach appropriate to clinical presentation",
+        "2": "Lists indications, contraindications, risks, and benefits of diagnostic testing",
+        "3": "Prioritizes and interprets diagnostic tests appropriate to clinical urgency and complexity",
+        "4": "Uses complex diagnostic approaches in uncommon situations",
+        "5": "Demonstrates sophisticated knowledge of diagnostic testing and controversies"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP1",
+      "domain": "SBP",
+      "name_en": "Patient Safety",
+      "name_zh": "Patient Safety",
+      "levels": {
+        "1": "Demonstrates knowledge of commonly reported patient safety events Demonstrates knowledge of how to report patient safety events",
+        "2": "Identifies system factors that lead to patient safety events Reports patient safety events through institutional reporting systems",
+        "3": "Participates in analysis of patient safety events Participates in disclosure of patient safety events to patients and patients’ families",
+        "4": "Conducts analysis of patient safety events and offers error prevention strategies Discloses patient safety events to patients and patients’ families",
+        "5": "Actively engages teams and processes to modify systems to prevent patient safety events Role models or mentors others in the disclosure of patient safety events"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP2",
+      "domain": "SBP",
+      "name_en": "Quality Improvement",
+      "name_zh": "Quality Improvement",
+      "levels": {
+        "1": "Demonstrates knowledge of basic quality improvement methodologies and metrics",
+        "2": "Describes local quality improvement initiatives (e.g., community vaccination rate, infection rate, smoking cessation)",
+        "3": "Participates in local quality improvement initiatives",
+        "4": "Demonstrates the skills required to identify, develop, implement, and analyze a quality improvement project",
+        "5": "Creates, implements, and assesses quality improvement initiatives at the institutional or community level"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP3",
+      "domain": "SBP",
+      "name_en": "System Navigation for Patient-Centered Care",
+      "name_zh": "以病人為中心的系統導航",
+      "levels": {
+        "1": "Demonstrates knowledge of care coordination Performs safe and effective transitions of care/hand-offs in routine clinical situations Demonstrates knowledge of population and community health needs",
+        "2": "Coordinates care of patients in routine clinical situations effectively using the roles of the interprofessional team members Performs safe and effective transitions of care/hand-offs in complex clinical situations Identifies specific population and community health needs for the local population and community",
+        "3": "Coordinates care of patients in complex clinical situations effectively using the roles of the interprofessional team members Supervises transitions of care by other team members Effectively uses local resources to meet the needs of a patient population and community",
+        "4": "Role models effective coordination of patient-centered care among different disciplines and specialties Role models safe and effective transitions of care/hand-offs within and across health care delivery systems, including outpatient settings Adapts practice to provide for the needs of specific populations",
+        "5": "Improves quality of transitions of care within and across health care delivery systems to optimize patient outcomes Leads innovations in adapting practice and systems for populations and communities with health care needs"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP4",
+      "domain": "SBP",
+      "name_en": "Physician Role in Health Care Systems",
+      "name_zh": "醫師於醫療體系中的角色",
+      "levels": {
+        "1": "Describes basic health care payment systems, (e.g., government, private, public, uninsured care) and practice models Identifies basic knowledge domains for effective transition to practice (e.g., information technology, legal, billing and coding, financial, personnel)",
+        "2": "Delivers patient-centered care, considering the patient’s economic constraints Demonstrates use of information technology required for medical practice (e.g., electronic health record, documentation required for billing and coding)",
+        "3": "Engages with patients in shared decision making, informed by each patient’s payment models Consistently demonstrates timely and accurate documentation, including coding and billing requirements",
+        "4": "Uses available resources to promote optimal patient care (e.g., community resources, patient assistance resources) considering each patient’s payment model Implements changes in individual practice patterns in response to professional requirements and in preparation for practice",
+        "5": "Advocates for systems change that enhances high-value, efficient, and effective patient care Educates others to prepare them for transition to practice"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PBLI1",
+      "domain": "PBLI",
+      "name_en": "Evidence-Based and Informed Practice",
+      "name_zh": "實證導向實踐",
+      "levels": {
+        "1": "Demonstrates how to access and use available evidence, and to incorporate patient preferences and values to care for a routine patient",
+        "2": "Articulates clinical questions and elicits patient preferences and values to guide evidence-based care",
+        "3": "Locates and applies the best available evidence, integrated with patient preference, to the care of complex patients",
+        "4": "Critically appraises and applies evidence, even in the face of uncertainty, and interprets conflicting evidence to guide care, tailored to the individual patient",
+        "5": "Coaches others to critically appraise and apply evidence for complex patients, and/or participates in the development of guidelines"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PBLI2",
+      "domain": "PBLI",
+      "name_en": "Reflective Practice and Commitment to Personal Growth",
+      "name_zh": "反思實踐與個人成長承諾",
+      "levels": {
+        "1": "Accepts responsibility for personal and professional development by establishing goals Identifies the factors that contribute to gap(s) between expectations and actual performance Actively seeks opportunities to improve",
+        "2": "Demonstrates openness to performance data (feedback and other input) to inform goals Analyzes and reflects on the factors that contribute to gap(s) between expectations and actual performance Designs and implements a learning plan, with prompting",
+        "3": "Seeks performance data sporadically, with adaptability and humility Institutes behavioral change(s) to narrow the gap(s) between expectations and actual performance Independently creates and implements a learning plan",
+        "4": "Seeks performance data consistently Challenges assumptions and considers alternatives in narrowing the gap(s) between expectations and actual performance Uses performance data to measure the effectiveness of the learning plan, and, when necessary, improves it",
+        "5": "Role models seeking performance data, with adaptability and humility Coaches others on reflective practice Facilitates the design and implementation of learning plans for others"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PROF1",
+      "domain": "PROF",
+      "name_en": "Professional Behavior and Ethical Principles",
+      "name_zh": "Professional Behavior and Ethical Principles",
+      "levels": {
+        "1": "Identifies and describes potential triggers for professionalism lapses and how to report Demonstrates knowledge of ethical principles related to patient care",
+        "2": "Demonstrates insight into professional behavior in routine situations and takes responsibility Analyzes straightforward situations using ethical principles",
+        "3": "Demonstrates professional behavior in complex or stressful situations Analyzes complex situations using ethical principles",
+        "4": "Intervenes to prevent professionalism lapses in oneself and others Recognizes and uses appropriate resources for managing and resolving ethical dilemmas as needed",
+        "5": "Coaches others when their behavior fails to meet professional expectations Identifies and seeks to address system-level factors that induce or exacerbate ethical problems or impede their resolution"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF2",
+      "domain": "PROF",
+      "name_en": "Accountability/Conscientiousness",
+      "name_zh": "責任感與謹慎態度",
+      "levels": {
+        "1": "Takes responsibility for failure to complete tasks and responsibilities, identifies potential contributing factors, and describes strategies for ensuring timely task completion in the future Responds promptly to requests or reminders to complete tasks and responsibilities",
+        "2": "Performs tasks and responsibilities in a timely manner with appropriate attention to detail in routine situations Recognizes situations that may impact own ability to complete tasks and responsibilities in a timely manner",
+        "3": "Performs tasks and responsibilities in a timely manner with appropriate attention to detail in complex or stressful situations Proactively implements strategies to ensure that the needs of patients, teams, and systems are met",
+        "4": "Recognizes situations in which one’s own behavior may impact others’ ability to complete tasks and responsibilities in a timely manner",
+        "5": "Develops or implements strategies to improve system-wide problems to improve ability for oneself and others to complete tasks and responsibilities in a timely fashion"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF3",
+      "domain": "PROF",
+      "name_en": "Well-Being",
+      "name_zh": "Well-Being",
+      "levels": {
+        "1": "Recognizes sense of personal and professional well-being, with assistance",
+        "2": "Independently recognizes status of personal and professional well-being",
+        "3": "With assistance, proposes a plan to optimize personal and professional well-being",
+        "4": "Independently develops a plan to optimize personal and professional well-being",
+        "5": "Coaches others when emotional responses or limitations in knowledge/ skills do not meet professional expectations"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS1",
+      "domain": "ICS",
+      "name_en": "Patient- and Family-Centered Communication",
+      "name_zh": "以病人與家屬為中心之溝通",
+      "levels": {
+        "1": "Uses language and non-verbal behavior to demonstrate respect and establish rapport Identifies the need to individualize communication strategies based on the patient’s/patient’s family’s expectations and understanding",
+        "2": "Establishes a therapeutic relationship in straightforward encounters using active listening and clear language Communicates compassionately with the patient/patient’s family to clarify expectations and verify understanding of the clinical situation",
+        "3": "Establishes a therapeutic relationship in challenging patient encounters Communicates medical information in the context of the patient’s/patient’s family’s values, uncertainty and conflict",
+        "4": "Easily establishes therapeutic relationships, with attention to the patient’s/patient’s family’s concerns and context, regardless of complexity Uses shared decision making to align the patient’s/patient’s family’s values, goals, and preferences with treatment options",
+        "5": "Mentors others in situational awareness and critical self-reflection to consistently develop positive therapeutic relationships Role models shared decision making in the context of the patient’s/patient’s family’s values, uncertainty and conflict"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "ICS2",
+      "domain": "ICS",
+      "name_en": "Barrier and Bias Mitigation",
+      "name_zh": "Barrier and Bias Mitigation",
+      "levels": {
+        "1": "Identifies common barriers to effective patient care (e.g., language, disability)",
+        "2": "Identifies complex barriers to effective patient care (e.g., health literacy)",
+        "3": "Recognizes biases and mitigates barriers to optimize patient care, when prompted",
+        "4": "Recognizes biases and proactively mitigates barriers to optimize patient care",
+        "5": "Mentors others on recognition of bias and mitigation of barriers to optimize patient care"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "ICS3",
+      "domain": "ICS",
+      "name_en": "Interprofessional and Team Communication",
+      "name_zh": "跨專業與團隊溝通",
+      "levels": {
+        "1": "Respectfully requests a consultation Recognizes the role of a neurology consultant Uses language that values all members of the health care team",
+        "2": "Confirms understanding of consultant recommendations Respectfully accepts a consultation request Communicates information effectively with all health care team members",
+        "3": "Clearly and concisely formulates a consultation request Clearly and concisely responds to a consultation request Uses active listening to adapt communication style to fit team needs",
+        "4": "Coordinates recommendations from different members of the health care team to optimize patient care Solicits and communicates feedback to other members of the health care team",
+        "5": "Role models and facilitates flexible communication strategies that value input from all health care team members, resolving conflict when needed"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS4",
+      "domain": "ICS",
+      "name_en": "Communication within Health Care Systems",
+      "name_zh": "於醫療體系內之溝通",
+      "levels": {
+        "1": "Documents accurate and up-to-date patient information Communicates in a way that safeguards patient information",
+        "2": "Demonstrates diagnostic reasoning through organized and timely notes Communicates through appropriate channels as required by institutional policy",
+        "3": "Communicates the diagnostic and therapeutic reasoning Selects optimal mode of communication based on clinical context",
+        "4": "Demonstrates concise, organized written and verbal communication, including anticipatory guidance",
+        "5": "Guides departmental or institutional communication policies and procedures"
+      },
+      "applicable_in_osce": true
+    }
+  ]
+}
