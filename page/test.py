@@ -20,16 +20,21 @@ with column[1]:
 
     chat.update(chat_area, msgs=ss.diagnostic_messages, height=200, show_all=ss.show_all)
 
-    if ss.current_progress == 1 and "patient_model" not in ss:
-        create_patient_model(ss.problem)
+    if "patient_model" not in ss and "problem" in ss:
+        create_patient_model(ss.problem, prior_messages=ss.diagnostic_messages)
 
-    if audio := st.audio_input("語音輸入"):
+    if "chat_input_counter" not in ss:
+        ss.chat_input_counter = 0
+    input_key = f"chat_input_{ss.chat_input_counter}"
+    audio_key = f"audio_input_{ss.chat_input_counter}"
+
+    if audio := st.audio_input("語音輸入", key=audio_key):
         ss.audio = audio
         ss.prompt = process_audio(audio)
-        ss.prompt = st.text_area("請輸入您的對話內容", value=ss.prompt)
+        ss.prompt = st.text_area("請輸入您的對話內容", value=ss.prompt, key=input_key)
 
     if "audio" not in ss:
-        ss.prompt = st.text_area("請輸入您的對話內容")
+        ss.prompt = st.text_area("請輸入您的對話內容", key=input_key)
 
     if st.button("送出對話", use_container_width=True) and util.check_progress():
         if ss.prompt != "":
@@ -38,13 +43,18 @@ with column[1]:
 
             chat.append(ss.diagnostic_messages, "doctor", ss.prompt)
             chat.update(chat_area, msgs=ss.diagnostic_messages, height=200, show_all=ss.show_all)
-            
+
             response = ss.patient.send_message(f"醫學生：{ss.prompt} （請作為病人回答）")
             formatted_response = response.text.replace("(", "（").replace(")", "）")
             util.record(ss.log, f"Patient: {response.text}")
 
-            chat.append(ss.diagnostic_messages, "patient", formatted_response) 
-            chat.update(chat_area, msgs=ss.diagnostic_messages, height=200, show_all=ss.show_all)
+            chat.append(ss.diagnostic_messages, "patient", formatted_response)
+
+            ss.chat_input_counter += 1
+            ss.prompt = ""
+            if "audio" in ss:
+                del ss.audio
+            st.rerun()
 
 # Add a confirm answer button outside the input container
     button_container = st.container()

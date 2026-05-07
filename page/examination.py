@@ -1,6 +1,7 @@
 import streamlit as st
 from model.examiner import create_text_examiner_model
 from model.examiner import create_value_examiner_model
+from model.lab_advisor import request_lab_feedback
 import util.dialog as dialog
 import util.tools as util
 import util.constants as const
@@ -10,9 +11,17 @@ import pandas as pd
 import json
 import time
 
+
+def _request_lab_feedback(entry):
+    try:
+        return request_lab_feedback(ss.problem, entry)
+    except Exception as e:
+        print(f"Lab advisor error: {e}")
+        return ""
+
 ss = st.session_state
 
-util.init(3)
+util.init(4)
 util.note()
 
 # 文字型檢查（使用 text examiner 生成敘述性結果）
@@ -21,10 +30,24 @@ TEXT_TYPE_EXAMS = {"X光", "超音波", "CT", "MRI", "其他影像", "心電圖"
 # 自訂 CSS：異常值標記樣式
 st.markdown("""
 <style>
-.abnormal-high { color: #dc3545; font-weight: bold; }
-.abnormal-low { color: #0d6efd; font-weight: bold; }
-.critical { color: #dc3545; font-weight: bold; background-color: #fff3cd; padding: 2px 4px; border-radius: 3px; }
-.normal { color: #212529; }
+.abnormal-high { color: #ff5c5c; font-weight: bold; }
+.abnormal-low { color: #5c9eff; font-weight: bold; }
+.critical { color: #ffffff; font-weight: bold; background-color: #dc3545; padding: 2px 4px; border-radius: 3px; }
+.normal { color: #ffffff; }
+.text-abnormal { color: #ff5c5c; font-weight: bold; }
+/* 強制檢查結果表格所有欄位（含未個別標記的名稱、單位、參考值）顯示白色 */
+#examination-results,
+#examination-results td,
+#examination-results th {
+    color: #ffffff !important;
+}
+/* 表格內的異常標記仍保留各自顏色（覆蓋上方白色強制） */
+#examination-results td .abnormal-high,
+#examination-results td .abnormal-high * { color: #ff5c5c !important; }
+#examination-results td .abnormal-low,
+#examination-results td .abnormal-low * { color: #5c9eff !important; }
+#examination-results td .critical,
+#examination-results td .critical * { color: #ffffff !important; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -167,10 +190,28 @@ with column[1]:
                         height=100,
                         placeholder="例如：血紅素偏低，白血球升高，懷疑感染合併貧血..."
                     )
+
+                    target_ddx_value = []
+                    if ss.preliminary_ddx:
+                        ddx_options = [item["name"] for item in ss.preliminary_ddx]
+                        target_ddx_value = st.multiselect(
+                            "此檢查欲鑑別/排除哪些初步鑑別？（選填）",
+                            options=ddx_options,
+                            key=f"target_ddx_{latest['order_number']}",
+                        )
+
                     if st.button("儲存判讀", key=f"save_interp_{latest['order_number']}"):
                         latest["interpretation"] = interp
+                        latest["target_ddx"] = target_ddx_value
+                        if interp.strip():
+                            ai_feedback = _request_lab_feedback(latest)
+                            if ai_feedback:
+                                latest["ai_feedback"] = ai_feedback
                         st.success("判讀已儲存")
                         st.rerun()
+                elif latest.get("ai_feedback"):
+                    with st.expander("💡 AI 判讀提示（點擊查看）", expanded=False):
+                        st.info(latest["ai_feedback"])
 
     with button_container:
         st.container(height=50, border=False)
@@ -245,6 +286,16 @@ with column[1]:
 with column[3]:
     util.show_patient_profile()
 
+    # 初步鑑別清單摘要
+    if ss.preliminary_ddx:
+        st.subheader("初步鑑別清單")
+        with st.container(border=True):
+            for i, item in enumerate(ss.preliminary_ddx, 1):
+                st.markdown(f"**{i}. {item['name']}** （{item.get('likelihood', '中')}）")
+                reason = item.get("reason") or item.get("plan") or ""
+                if reason:
+                    st.caption(f"支持理由：{reason}")
+
     # 檢查歷史摘要
     if ss.examination_history:
         st.header("已開立檢查")
@@ -262,5 +313,9 @@ with column[3]:
                     if len(entry['items_chinese']) > 5:
                         items_display += f"...等{len(entry['items_chinese'])}項"
                     st.caption(f"項目：{items_display}")
+                    if entry.get("target_ddx"):
+                        st.caption(f"目標鑑別：{'、'.join(entry['target_ddx'])}")
                     if entry.get("interpretation"):
                         st.info(f"判讀：{entry['interpretation']}")
+                    if entry.get("ai_feedback"):
+                        st.success(f"AI 回饋：{entry['ai_feedback']}")

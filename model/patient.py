@@ -8,12 +8,14 @@ PATIENT_INSTRUCTION = "instruction_file/patient_instruction.txt"
 
 ss = st.session_state
 
-def create_patient_model(problem: str, patient_instruction_path=PATIENT_INSTRUCTION):
-    with st.spinner("正在搜尋病症特徵..."):
-        keyword = ss.data["Problem"]["englishDiseaseName"]
-        getPDF(f"{keyword} uptodate clinical features", f"tmp/{ss.sid}_symptoms.pdf")
+def create_patient_model(problem: str, patient_instruction_path=PATIENT_INSTRUCTION, prior_messages=None):
+    pdf_path = f"tmp/{ss.sid}_symptoms.pdf"
+    if not os.path.exists(pdf_path):
+        with st.spinner("正在搜尋病症特徵..."):
+            keyword = ss.data["Problem"]["englishDiseaseName"]
+            getPDF(f"{keyword} uptodate clinical features", pdf_path)
 
-    with st.spinner("正在建立病人模型..."): 
+    with st.spinner("正在建立病人模型..."):
         with open(patient_instruction_path, 'r', encoding='utf-8') as file:
             patient_instruction = file.read()
 
@@ -31,15 +33,23 @@ def create_patient_model(problem: str, patient_instruction_path=PATIENT_INSTRUCT
             system_instruction=f"{patient_instruction}{problem}",
         )
 
-        ss.patient = ss.patient_model.start_chat(
-            history=[
-                {
-                    "role": "user",
-                    "parts": [
-                       genai.upload_file(f"tmp/{ss.sid}_symptoms.pdf", mime_type="application/pdf"),
-                       "請參照這份文件回答以下的問診。"
-                    ]
-                }
-            ],
-        )
+        if "symptom_pdf_file" not in ss:
+            ss.symptom_pdf_file = genai.upload_file(pdf_path, mime_type="application/pdf")
+
+        history = [
+            {
+                "role": "user",
+                "parts": [
+                   ss.symptom_pdf_file,
+                   "請參照這份文件回答以下的問診。"
+                ]
+            }
+        ]
+
+        if prior_messages:
+            for msg in prior_messages:
+                role = "user" if msg["role"] == "doctor" else "model"
+                history.append({"role": role, "parts": [msg["content"]]})
+
+        ss.patient = ss.patient_model.start_chat(history=history)
     

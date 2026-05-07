@@ -14,12 +14,17 @@ import base64
 import streamlit as st
 import util.constants as const
 import util.dialog as dialog
+import util.save_load as save_load
 
 ss = st.session_state 
 
 def next_page():
-    ss.current_progress = (ss.current_progress + 1) % len(const.section_name)
-    st.switch_page(f"page/{const.section_name[ss.current_progress]}.py")
+    if ss.page_id == ss.current_progress:
+        ss.current_progress = (ss.current_progress + 1) % len(const.section_name)
+        target = ss.current_progress
+    else:
+        target = min(ss.page_id + 1, len(const.section_name) - 1)
+    st.switch_page(f"page/{const.section_name[target]}.py")
 
 def init_all():
     if "sid" not in ss:
@@ -39,6 +44,10 @@ def init_all():
         ss.examination_history = []
         ss.ordered_exam_set = set()
         ss.advice_messages = []
+        ss.preliminary_ddx = []
+        ss.preliminary_ddx_locked = False
+        ss.comorbidities = ""
+        ss.final_ddx_status = {}
 
         ss.start_time = [None for _ in range(len(const.section_name))]
         ss.cur_show_all, ss.show_all = False, False
@@ -59,20 +68,22 @@ def init(page_id: int):
 
 @st.fragment(run_every=1)
 def show_time():
-    for i in range(1, min(4, max(ss.page_id, ss.current_progress)) + 1):
+    grade_idx = len(const.section_name) - 1
+    last_active = grade_idx - 1
+    for i in range(1, min(last_active, max(ss.page_id, ss.current_progress)) + 1):
         if ss.current_progress < i:
             continue
         if ss.current_progress == i:
             elapsed_time = int(time.time() - ss.start_time[i])
-        else: 
+        else:
             elapsed_time = int(ss.start_time[i + 1] - ss.start_time[i])
         st.write(f"{const.noun[i]}時間：{elapsed_time // 60}:{elapsed_time % 60:02d}")
-    
+
     if ss.current_progress > 0:
-        if ss.current_progress < 5:
+        if ss.current_progress < grade_idx:
             elapsed_time = int(time.time() - ss.start_time[1])
         else:
-            elapsed_time = int(ss.start_time[5] - ss.start_time[1])
+            elapsed_time = int(ss.start_time[grade_idx] - ss.start_time[1])
 
         st.write(f"總時間：{elapsed_time // 60}:{elapsed_time % 60:02d}")
 
@@ -87,8 +98,33 @@ def note():
         ss.note = ""
 
     with st.sidebar:
+        st.header("看診進度")
+        for i, n in enumerate(const.noun):
+            label = f"{const.icon[i]} {n}區"
+            if i < ss.current_progress:
+                if st.button(f"↩ {label}", key=f"navback_{i}", use_container_width=True):
+                    st.switch_page(f"page/{const.section_name[i]}.py")
+            elif i == ss.current_progress:
+                if i == ss.page_id:
+                    st.markdown(f"**▶ {label}**（進行中）")
+                else:
+                    if st.button(f"▶ {label}（進行中）", key=f"navcur_{i}", use_container_width=True):
+                        st.switch_page(f"page/{const.section_name[i]}.py")
+            else:
+                st.caption(f"🔒 {label}")
+
+        st.divider()
         st.header("筆記區")
-        ss.note = st.text_area("在此輸入您看診時的記錄，不計分", height=350, value=ss.note)
+        ss.note = st.text_area("在此輸入您看診時的記錄，不計分", height=250, value=ss.note)
+
+        st.divider()
+        st.header("進度存檔")
+        if st.button("💾 立即存檔", use_container_width=True, key="save_progress_btn"):
+            file_name = save_load.save_progress()
+            ss.last_save_file = file_name
+            st.success(f"已存檔：{file_name}")
+        if ss.get("last_save_file"):
+            st.caption(f"最近存檔：{ss.last_save_file}")
 
 def show_patient_profile():
     st.header("病人資料")
@@ -106,7 +142,7 @@ def show_patient_profile():
 
 
 def check_progress():
-    if ss.current_progress != ss.page_id:
+    if ss.page_id > ss.current_progress:
         dialog.page_error(ss.page_id, ss.current_progress)
         return False
 

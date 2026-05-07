@@ -1,0 +1,290 @@
+{
+  "milestone_source": "rheumatologymilestones.pdf",
+  "specialty": "Rheumatology",
+  "version": "ACGME Milestones (auto-extracted from PDF)",
+  "language_levels": "en",
+  "language_names_zh": "zh-TW",
+  "disclaimer": "本檔由 PDF 自動萃取，levels 為 ACGME 英文原文；name_zh 由內建翻譯表提供，未匹配項目以英文呈現，可後續人工校對補上中譯。",
+  "subcompetencies": [
+    {
+      "id": "PC1",
+      "domain": "PC",
+      "name_en": "Gathers an Essential and Accurate Patient History",
+      "name_zh": "Gathers an Essential and Accurate Patient History",
+      "levels": {
+        "1": "Acquires a basic rheumatic history Reviews available medical records",
+        "2": "Integrates a rheumatic history with a comprehensive medical history, including functional aspects Identifies relevant findings in the medical record",
+        "3": "Acquires a tailored comprehensive rheumatic history, including historical subtleties and psychosocial aspects Independently requests additional information to supplement available medical records",
+        "4": "Integrates the current patient history with the complete medical record, supplemental information, and disease activity measures",
+        "5": "Identified as a role model in interpreting subtleties and resolving ambiguities in the patient history"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC2",
+      "domain": "PC",
+      "name_en": "Physical Examination",
+      "name_zh": "理學檢查",
+      "levels": {
+        "1": "Identifies the elements of a comprehensive physical examination Identifies the elements of a musculoskeletal examination",
+        "2": "Performs all elements of a comprehensive physical examination Performs all elements of a musculoskeletal examination",
+        "3": "Performs a tailored comprehensive physical examination including advanced techniques, when applicable Performs a tailored comprehensive musculoskeletal examination including advanced techniques, when applicable",
+        "4": "Performs a tailored comprehensive physical examination that elicits subtle findings Performs a tailored comprehensive musculoskeletal examination that elicits subtle findings",
+        "5": "Identified as a role model for performing and interpreting a comprehensive, accurate physical and musculoskeletal examination"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC3",
+      "domain": "PC",
+      "name_en": "Comprehensive Management Plan Development",
+      "name_zh": "Comprehensive Management Plan Development",
+      "levels": {
+        "1": "With supervision, formulates a differential diagnosis for a patient Demonstrates an awareness of disease activity measures With supervision, develops a management plan",
+        "2": "Independently formulates a broad differential diagnosis for typical disease presentations Identifies applicable disease activity measures Independently develops a management plan for a patient with common disease presentations",
+        "3": "Independently formulates a prioritized differential diagnosis for typical disease presentations Incorporates and interprets the results of disease activity measures Independently recognizes disease acuity, and with supervision, develops a prioritized management plan",
+        "4": "Independently formulates a prioritized differential diagnosis with consideration of typical and atypical disease presentations Independently develops and implements a prioritized management plan with consideration of acuity and complexity of disease presentation",
+        "5": "Independently formulates a prioritized differential diagnosis with consideration of newly recognized and emerging conditions Identified as an expert resource for management of a focused disease area"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC4",
+      "domain": "PC",
+      "name_en": "Therapeutics, including Immunomodulatory Agents",
+      "name_zh": "Therapeutics, including Immunomodulatory Agents",
+      "levels": {
+        "1": "Identifies indications and adverse effects of medications used to treat patients with common rheumatic conditions",
+        "2": "Prescribes and monitors medications used in patients with common rheumatic conditions Evaluates for comorbidities that may alter therapeutic recommendations",
+        "3": "Prescribes, monitors, and assesses the response to pharmacotherapy used in the management of patients with common rheumatic conditions Modifies treatment plans to address comorbidities, with supervision",
+        "4": "Integrates best available evidence to prescribe, monitor, and assess the response to pharmacotherapy used in the management of patients with common and complex rheumatic conditions Independently modifies treatment plans to address comorbidities",
+        "5": "Develops a clinical practice pathway for management of patients with rheumatic conditions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC5",
+      "domain": "PC",
+      "name_en": "Procedures",
+      "name_zh": "程序操作",
+      "levels": {
+        "1": "Identifies indications for joint and soft tissue aspirations and injections, and discusses principles of informed consent",
+        "2": "Performs common joint and soft tissue injections and aspirations with direct supervision, including independently discussing risks and benefits, obtaining informed consent, identifying anatomic landmarks, and demonstrating aseptic technique Recognizes the role of musculoskeletal ultrasound in the diagnosis and treatment of patients with rheumatic conditions",
+        "3": "Performs common joint and soft tissue aspirations and injections with indirect supervision Interprets the findings of musculoskeletal ultrasound for common conditions with supervision",
+        "4": "Independently performs common joint and soft tissue aspirations and injections Independently interprets the findings of musculoskeletal ultrasound for common conditions, and recognizes the role of ultrasound in non-musculoskeletal rheumatic conditions",
+        "5": "Independently performs complex joint and soft tissue aspirations or injections, including unusual sites, anatomic abnormalities, or incorporating imaging guidance Independently performs and interprets point-of-care diagnostic ultrasound and uses ultrasound to guide invasive procedures"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC6",
+      "domain": "PC",
+      "name_en": "Provides Consultative Care",
+      "name_zh": "Provides Consultative Care",
+      "levels": {
+        "1": "Respectfully receives a consultation request With supervision, recognizes disease acuity",
+        "2": "Clearly and concisely responds to a consultation request Independently recognizes disease acuity",
+        "3": "Verifies understanding of recommendations with the primary team when providing consultation Recognizes disease acuity and prioritizes management steps",
+        "4": "Integrates recommendations from different members of the health care team and effectively conveys consultative assessment and rationale to all health care team members Mobilizes resources to provide care in high-acuity situations",
+        "5": "Identified as a role model for the provision of consultative care across the spectrum of disease complexity and acuity"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK1",
+      "domain": "MK",
+      "name_en": "Possesses Clinical Knowledge",
+      "name_zh": "Possesses Clinical Knowledge",
+      "levels": {
+        "1": "Identifies key features of common rheumatic conditions Demonstrates basic knowledge of anatomy, physiology, and other basic sciences",
+        "2": "Demonstrates broad knowledge of common rheumatic conditions Demonstrates basic knowledge of anatomy, genetics, immunology, metabolism, and other basic sciences pertaining to rheumatic conditions",
+        "3": "Demonstrates knowledge of less common rheumatic conditions as well as common rheumatic conditions associated with higher complexity Demonstrates in-depth knowledge of anatomy, genetics, immunology, metabolism, and other basic sciences pertaining to rheumatic conditions",
+        "4": "Integrates knowledge of the pathogenesis, epidemiology, clinical expression, treatments, and prognosis of a broad range of rheumatic conditions Integrates knowledge of anatomy, genetics, immunology, metabolism, and other basic sciences pertaining to a broad range of rheumatic conditions",
+        "5": "Identified as a subject matter expert in basic and/or clinical science of rheumatic conditions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK2",
+      "domain": "MK",
+      "name_en": "Knowledge of Diagnostic Testing",
+      "name_zh": "診斷檢驗知識",
+      "levels": {
+        "1": "Explains the rationale, risks, and benefits for common diagnostic testing in patients being evaluated for rheumatic conditions",
+        "2": "Integrates value and test characteristics into diagnostic strategies in patients with uncomplicated rheumatic conditions",
+        "3": "Integrates value and test characteristics into diagnostic strategies in patients with complex rheumatic conditions",
+        "4": "Integrates and reconciles information, including non-specific and/or conflicting diagnostic test results to form a cohesive evaluation",
+        "5": "Identified as an expert in testing strategies and in the selection and interpretation of complex, new, or emerging tests"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK3",
+      "domain": "MK",
+      "name_en": "Scholarly Activity",
+      "name_zh": "Scholarly Activity",
+      "levels": {
+        "1": "Identifies areas worthy of scholarly investigation, with supervision",
+        "2": "Designs a scholarly activity with a mentor(s)",
+        "3": "Engages in scholarly work, incorporates feedback, and participates in critical appraisal and analysis of project data",
+        "4": "Produces scholarly work suitable for dissemination as an abstract or presentation",
+        "5": "Dissemination of independent scholarly work that has generated new medical knowledge, educational programs, or process improvement"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP1",
+      "domain": "SBP",
+      "name_en": "Patient Safety and Quality Improvement",
+      "name_zh": "病人安全與品質改善",
+      "levels": {
+        "1": "Demonstrates knowledge of common patient safety events Demonstrates knowledge of how to report patient safety events Demonstrates knowledge of basic quality improvement methodologies and metrics",
+        "2": "Identifies system factors that lead to patient safety events Reports patient safety events through institutional reporting systems (actual or simulated) Describes quality improvement initiatives relevant to rheumatology practice",
+        "3": "Participates in analysis of patient safety events (simulated or actual) Participates in disclosure of patient safety events to patients and families (simulated or actual) Participates in quality improvement initiatives relevant to rheumatology practice",
+        "4": "Conducts analysis of patient safety events and offers error prevention strategies (simulated or actual) Discloses patient safety events to patients and families (simulated or actual) Demonstrates the skills required to identify, develop, implement, and analyze a quality improvement project",
+        "5": "Actively engages teams and processes to modify systems to prevent patient safety events Role models or mentors others in the disclosure of patient safety events Creates, implements, and assesses quality improvement initiatives at the institutional or community level"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP2",
+      "domain": "SBP",
+      "name_en": "System Navigation for Patient-Centered Care",
+      "name_zh": "以病人為中心的系統導航",
+      "levels": {
+        "1": "Demonstrates knowledge of care coordination Identifies key elements for safe and effective transitions of care and hand-offs Demonstrates knowledge of population and community health needs",
+        "2": "Coordinates care of patients in routine clinical situations effectively using the roles of the interprofessional teams Performs safe and effective transitions of care/hand-offs in routine clinical situations Identifies specific population and community health needs for their local population",
+        "3": "Coordinates care of patients in complex clinical situations effectively using the roles of their interprofessional teams Performs safe and effective transitions of care/hand-offs in complex clinical situations Uses local resources effectively to meet the needs of a patient population and community",
+        "4": "Role models effective coordination of patient-centered care among different disciplines and specialties Role models and advocates for safe and effective transitions of care/hand-offs within and across health care delivery systems including outpatient settings Participates in changing and adapting practice to provide for the needs of specific populations",
+        "5": "Leads in the design and implementation of improvements to the care coordination process Improves quality of transitions of care within and across health care delivery systems to optimize patient outcomes Leads innovations and advocates for populations and communities with health care needs"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP3",
+      "domain": "SBP",
+      "name_en": "Physician Role in Health Care Systems",
+      "name_zh": "醫師於醫療體系中的角色",
+      "levels": {
+        "1": "Identifies key components of the complex health care system (e.g., hospital, skilled nursing facility, finance, personnel, technology) Recognizes the impact of cost and patient payment model on care decisions",
+        "2": "Describes how components of a complex health care system are interrelated, and how this impacts patient care Identify the principles of high-value care and delivers care with consideration of each patient’s payment model Demonstrates use of information technology (e.g., electronic health record) needed for clinical practice",
+        "3": "Discusses how individual practice affects the broader system (e.g., length of stay, readmission rates, clinical efficiency) Engages with patients in shared decision making and incorporates principles of high-value care into management plans Demonstrates knowledge of current evaluation and management billing practices",
+        "4": "Manages various components of the complex health care system to provide efficient and effective patient care and transition of care Advocates for individual patient care needs to provide high-value care Independently completes proper documentation and coding for a patient encounter",
+        "5": "Advocates for or leads systems change that enhances high-value, efficient, and effective patient care and transition of care Participates in health policy advocacy activities Educates others on proper documentation, billing, and coding practices"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PBLI1",
+      "domain": "PBLI",
+      "name_en": "Evidence-Based and Informed Practice",
+      "name_zh": "實證導向實踐",
+      "levels": {
+        "1": "Formulates clinical questions and elicits patient preferences to inform care",
+        "2": "Locates available evidence and incorporates patient preferences to inform patient care",
+        "3": "Evaluates and applies best available evidence and incorporates patient preferences and values in order to provide care tailored to individual patients",
+        "4": "Critically appraises and applies evidence, and recognizes gaps and conflicting evidence to guide care tailored to individual patients",
+        "5": "Coaches others to critically appraise and apply evidence for complex patients; and/or participates in the development of guidelines"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PBLI2",
+      "domain": "PBLI",
+      "name_en": "Commitment to Reflective Practice and Personal Growth",
+      "name_zh": "Commitment to Reflective Practice and Personal Growth",
+      "levels": {
+        "1": "Establishes personal and professional goals, identifying gap(s) between goals and current performance",
+        "2": "Demonstrates receptiveness to feedback, analyzing and reflecting on factors contributing to gap(s) between goals and current performance Designs and implements a learning plan, with prompting",
+        "3": "Seeks feedback episodically, and institutes behavioral change(s) when necessary Independently creates and implements an individualized learning plan",
+        "4": "Seeks feedback consistently, and sustains behavioral change as necessary Uses data and feedback from multiple sources to measure the effectiveness of the learning plan and when necessary, improves it",
+        "5": "Role models consistently seeking performance data with adaptability and humility, and coaches others on reflective practice Facilitates the design and the implementation of learning plans for others"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PROF1",
+      "domain": "PROF",
+      "name_en": "Professional Behavior",
+      "name_zh": "專業行為",
+      "levels": {
+        "1": "Describes when and how to appropriately report professionalism lapses, including strategies for addressing common barriers",
+        "2": "Identifies and describes triggers for professionalism lapses and takes responsibility for own professional behavior",
+        "3": "Proactively recognizes situations that may trigger professionalism lapses",
+        "4": "Demonstrates professional behavior in complex or stressful situations and intervenes to prevent lapses in self and others",
+        "5": "Coaches others when behavior fails to meet professional expectations"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF3",
+      "domain": "PROF",
+      "name_en": "Accountability/Conscientiousness",
+      "name_zh": "責任感與謹慎態度",
+      "levels": {
+        "1": "Performs tasks and responsibilities, with prompting Takes responsibility for failure to complete tasks and responsibilities",
+        "2": "Performs tasks and responsibilities in a timely manner with attention to detail in routine situations Recognizes situations that may impact own ability to complete tasks and responsibilities in a timely manner",
+        "3": "Performs tasks and responsibilities in a timely manner with attention to detail in complex or stressful situations Recognizes situations that may impact others’ ability to complete tasks and responsibilities in a timely manner",
+        "4": "Demonstrates leadership to ensure tasks and responsibilities are completed in a timely manner with attention to detail in complex or stressful situations Proactively implements strategies to ensure that the needs of patients, teams, and systems are met",
+        "5": "Creates strategies to enhance others’ ability to efficiently complete tasks and responsibilities"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF4",
+      "domain": "PROF",
+      "name_en": "Self-Awareness and Help-Seeking",
+      "name_zh": "自我覺察與求助行為",
+      "levels": {
+        "1": "Recognizes status of own and others’ well-being, with assistance With assistance recognizes personal gaps in knowledge, skills, and attitudes",
+        "2": "Independently recognizes status of own and others’ well-being, and asks for help when needed Independently recognizes limits in personal knowledge, skills, and attitudes",
+        "3": "Recognizes the impact of own and others’ well-being on the patient and team, with assistance With assistance, develops a plan to improve personal knowledge, skills, and attitudes",
+        "4": "Independently recognizes the impact of own and others’ well-being on the patient and team, and asks for help when needed Independently implements a plan to improve personal knowledge, skills, and attitudes",
+        "5": "Leads initiatives to improve wellness at the program or institutional level Coaches others when limitations in knowledge, skills, and attitudes do not meet professional expectations"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS1",
+      "domain": "ICS",
+      "name_en": "Patient- and Family-Centered Communication",
+      "name_zh": "以病人與家屬為中心之溝通",
+      "levels": {
+        "1": "Uses language and nonverbal behavior to demonstrate respect and establish rapport Recognizes common barriers to effective communication (e.g., language, disability) while accurately communicating own role within the health care system",
+        "2": "Establishes a therapeutic relationship with the patient in uncomplicated clinical encounters using active listening and clear language Recognizes complex barriers to effective communication (e.g., health literacy)",
+        "3": "Establishes a therapeutic relationship with the patient in challenging clinical encounters Adjusts communication strategies based on identified barriers, incorporating patient and caregiver expectations and goals of care",
+        "4": "Consistently establishes and maintains therapeutic relationships using shared decision making Uses self-reflection to proactively minimize communication barriers",
+        "5": "Serves as a role model in establishing respectful, culturally sensitive therapeutic relationships while mitigating communication barriers"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "ICS2",
+      "domain": "ICS",
+      "name_en": "Interprofessional and Team Communication",
+      "name_zh": "跨專業與團隊溝通",
+      "levels": {
+        "1": "Uses language that is respectful and values all members of the health care team Accepts feedback from team members",
+        "2": "Communicates basic information effectively with all health care team members Solicits feedback on performance as a member of the health care team",
+        "3": "Communicates highly complex information effectively with all health care team members Provides feedback to peers and other learners on the team",
+        "4": "Optimizes flexible communication strategies using input from all team members to build consensus and resolve conflicts, as needed Communicates detailed and effective feedback to any member of the health care team",
+        "5": "Demonstrates leadership in promoting open and safe communication within and between teams Educates others in providing effective feedback"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS3",
+      "domain": "ICS",
+      "name_en": "Patient-Centered Interprofessional Communication within Health Care Systems",
+      "name_zh": "Patient-Centered Interprofessional Communication within Health Care Systems",
+      "levels": {
+        "1": "Accurately records information in the patient record Safeguards patient personal health information in direct (e.g., telephone, in-person) and indirect (e.g., progress notes, text messages) communications",
+        "2": "Demonstrates organized diagnostic and therapeutic reasoning through notes in the patient record Accurate and timely documentation with appropriate use of documentation tools",
+        "3": "Concisely reports diagnostic and therapeutic reasoning in the patient record Appropriately selects direct and indirect forms of communication based on context",
+        "4": "Communicates clearly, concisely, timely, and in an organized written form, including anticipatory guidance Produces written or verbal communication (e.g., patient notes, email) that could serve as an example for others to follow",
+        "5": "Participates in establishing communication tools or policies for the division, department, or institution"
+      },
+      "applicable_in_osce": true
+    }
+  ]
+}

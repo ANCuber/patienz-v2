@@ -1,0 +1,276 @@
+{
+  "milestone_source": "endocrinologydiabetesandmetabolismmilestones.pdf",
+  "specialty": "Endocrinology, Diabetes, and Metabolism",
+  "version": "ACGME Milestones (auto-extracted from PDF)",
+  "language_levels": "en",
+  "language_names_zh": "zh-TW",
+  "disclaimer": "本檔由 PDF 自動萃取，levels 為 ACGME 英文原文；name_zh 由內建翻譯表提供，未匹配項目以英文呈現，可後續人工校對補上中譯。",
+  "subcompetencies": [
+    {
+      "id": "PC1",
+      "domain": "PC",
+      "name_en": "History and Physical Exam",
+      "name_zh": "History and Physical Exam",
+      "levels": {
+        "1": "Elicits and reports the basic elements of an endocrine-specific history for common presentations Performs and reports the basic elements of an endocrine-specific physical exam for common presentations",
+        "2": "Elicits and concisely reports a thorough endocrine-specific history for common presentations Performs and concisely reports an endocrine-specific physical exam for common presentations",
+        "3": "Efficiently elicits and concisely reports an endocrine-specific history for complex presentations Performs and concisely reports an endocrine-specific physical exam for complex presentations",
+        "4": "Efficiently elicits and concisely reports an endocrine-specific history for rare endocrine presentations Performs and concisely reports an endocrine-specific exam for rare endocrine presentations",
+        "5": "Elicits and reports atypical history or physical exam findings which deviate from usual presentations of common, complex, and rare endocrine disorders"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC2",
+      "domain": "PC",
+      "name_en": "Diagnostic Testing, including Labs, Imaging, and Dynamic Testing",
+      "name_zh": "Diagnostic Testing, including Labs, Imaging, and Dynamic Testing",
+      "levels": {
+        "1": "Orders basic tests for patients with common endocrine conditions Interprets basic endocrine test results",
+        "2": "Orders targeted tests for patients with common endocrine conditions using medical evidence Independently interprets targeted tests for common endocrine conditions",
+        "3": "Orders targeted tests for patients with complex endocrine conditions Interprets targeted tests for patients with complex endocrine conditions, with assistance, and identifies incongruencies",
+        "4": "Develops individualized cost-effective testing strategies to evaluate patients with complex endocrine conditions and avoids unnecessary testing Independently interprets targeted tests for patients with complex endocrine conditions and resolves incongruencies",
+        "5": "Identifies, critically evaluates, and selectively uses emerging and investigational tests or procedures; questions and reports unknown and unexplained discrepancies"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC3",
+      "domain": "PC",
+      "name_en": "Therapeutics (Behavioral, Medications, Technology, Radiopharmaceuticals)",
+      "name_zh": "Therapeutics (Behavioral, Medications, Technology, Radiopharmaceuticals)",
+      "levels": {
+        "1": "Prescribes basic endocrine therapeutics and describes their indications and adverse effects or reactions",
+        "2": "Prescribes and monitors therapeutics used in patients with common endocrine conditions, based on patient factors",
+        "3": "Prescribes and monitors the response to pharmacotherapy used in the management of patients with complex endocrine conditions",
+        "4": "Integrates the best available evidence to prescribe, monitor, and assess the response to pharmacotherapy used in the management of patients with common, complex, and rare endocrine conditions",
+        "5": "Identifies targeted or experimental therapies for complex and rare clinical scenarios"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC4",
+      "domain": "PC",
+      "name_en": "Procedures",
+      "name_zh": "程序操作",
+      "levels": {
+        "1": "Observes and describes endocrine procedures",
+        "2": "Performs procedures, with significant supervision",
+        "3": "Performs more complex procedures, with moderate supervision",
+        "4": "Independently performs procedures",
+        "5": "Independently performs complex procedures"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC5",
+      "domain": "PC",
+      "name_en": "Provides Clinical Consultation",
+      "name_zh": "Provides Clinical Consultation",
+      "levels": {
+        "1": "Respectfully receives consultation requests and responds with assistance Recognizes disease acuity, with supervision",
+        "2": "Clearly and concisely provides consultation Independently recognizes disease acuity",
+        "3": "Verifies understanding of recommendations with the primary team when providing consultation Recognizes disease acuity and prioritizes management steps",
+        "4": "Effectively conveys consultative assessment, rationale, and contingency plans to all health care team members Mobilizes resources to provide care in high-acuity situations",
+        "5": "Is identified as a role model for the provision of consultative care across the spectrum of disease complexity and acuity"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC6",
+      "domain": "PC",
+      "name_en": "Requests Clinical Consultation",
+      "name_zh": "Requests Clinical Consultation",
+      "levels": {
+        "1": "Identifies the need to request a consultation",
+        "2": "Clearly articulates the reason for requesting a consultation",
+        "3": "Checks one’s own understanding of recommendations when receiving consultation",
+        "4": "Coordinates recommendations from different consultants to optimize patient care",
+        "5": "Facilitates conflict resolution between and among consultants when disagreement exists"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK1",
+      "domain": "MK",
+      "name_en": "Integration of Pathophysiology and Clinical Reasoning",
+      "name_zh": "Integration of Pathophysiology and Clinical Reasoning",
+      "levels": {
+        "1": "Demonstrates knowledge of pathophysiology of common endocrine conditions and develops a differential diagnosis",
+        "2": "Applies knowledge of pathophysiology to explain common presentations and prioritizes the differential diagnoses and therapeutic options",
+        "3": "Applies knowledge of pathophysiology to explain complex presentations and critically assesses diagnostic assumptions and therapeutic options",
+        "4": "Integrates advanced knowledge of pathophysiology to recognize and explain the clinical presentations of and therapeutic options for a rare condition",
+        "5": "Integrates knowledge of nuanced aspects of pathophysiology toward individualized diagnostic and therapeutic approaches, while challenging conventional ideas"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK2",
+      "domain": "MK",
+      "name_en": "Scholarly Activity",
+      "name_zh": "Scholarly Activity",
+      "levels": {
+        "1": "Identifies areas worthy of scholarly investigation, with supervision",
+        "2": "Designs a scholarly project, with supervision",
+        "3": "Implements a scholarly project, with supervision",
+        "4": "Produces scholarly work suitable for dissemination",
+        "5": "Publishes original scholarly work that has generated new medical knowledge, enduring educational materials, or process improvement"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP1",
+      "domain": "SBP",
+      "name_en": "Patient Safety and Quality Improvement",
+      "name_zh": "病人安全與品質改善",
+      "levels": {
+        "1": "Identifies and reports patient safety events using the institutional reporting system and discloses them to leadership, patients, and patients’ family members Demonstrates basic knowledge of quality improvement methodologies and metrics",
+        "2": "Analyzes the factors that contributed to a patient safety event Identifies opportunities for quality improvement projects",
+        "3": "Offers prevention strategies to mitigate patient safety events Participates in quality improvement projects",
+        "4": "Participates in efforts to modify systems to prevent patient safety events Demonstrates the skills required to identify, develop, implement, and analyze a quality improvement project",
+        "5": "Leads efforts to modify systems to prevent patient safety events Leads quality improvement projects"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP2",
+      "domain": "SBP",
+      "name_en": "Coordination and Transitions of Care",
+      "name_zh": "Coordination and Transitions of Care",
+      "levels": {
+        "1": "Identifies the important elements of transitions and coordination of care",
+        "2": "Safely and effectively transitions and coordinates care of patients in routine clinical situations",
+        "3": "Effectively transitions and coordinates care of patients utilizing interprofessional teams in complex clinical situations",
+        "4": "Role models effective coordination and transition of care",
+        "5": "Leads in the design and implementation of improvements to the care coordination process"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP3",
+      "domain": "SBP",
+      "name_en": "Physician Role in Health Care Systems and Community Health",
+      "name_zh": "Physician Role in Health Care Systems and Community Health",
+      "levels": {
+        "1": "Identifies key components of the health care and payment systems; identifies health care needs in the community",
+        "2": "Describes how complex health care and payment systems impact patient care and contribute to health care barriers",
+        "3": "Advocates within the health care system and payor to provide cost-effective, patient-centered care and reduce barriers",
+        "4": "Advocates for adapting local practices to provide for the needs of specific populations and communities with health care needs",
+        "5": "Adapts local practices to provide for the needs of specific populations and communities with health care needs Advocates for health policy changes"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PBLI1",
+      "domain": "PBLI",
+      "name_en": "Evidence-Based and Informed Practice",
+      "name_zh": "實證導向實踐",
+      "levels": {
+        "1": "Articulates clinical questions to guide evidence-based care",
+        "2": "Locates and applies the best available evidence, integrated with patient values and preferences, to the care of patients with common conditions",
+        "3": "Locates and applies the best available evidence, integrated with patient values and preference, to the care of patients with complex and rare conditions",
+        "4": "Critically appraises conflicting or ambiguous evidence to guide individualized patient care",
+        "5": "Mentors others to critically appraise and apply evidence"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PBLI2",
+      "domain": "PBLI",
+      "name_en": "Reflective Practice and Commitment to Personal Growth",
+      "name_zh": "反思實踐與個人成長承諾",
+      "levels": {
+        "1": "Demonstrates receptiveness to feedback",
+        "2": "Modifies behavior based on feedback and establishes personal and professional goals based on gaps in knowledge and skills",
+        "3": "Seeks feedback; creates and implements an individualized learning plan",
+        "4": "Uses performance data to assess the effectiveness of the learning plan, and improves it when necessary",
+        "5": "Role models consistently seeking performance data with adaptability, and mentors others on reflective practice"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PROF1",
+      "domain": "PROF",
+      "name_en": "Professional Behavior",
+      "name_zh": "專業行為",
+      "levels": {
+        "1": "Demonstrates professional/ethical behavior in routine situations",
+        "2": "Demonstrates a pattern of professional/ethical behavior in routine situations and takes responsibility when there are lapses",
+        "3": "Demonstrates a pattern of professional/ethical behavior in complex or stressful situations",
+        "4": "Recognizes situations that may cause professional/ethical lapses in others and intervenes to prevent lapses in oneself and others",
+        "5": "Mentors others when their behavior fails to meet professional expectations"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF2",
+      "domain": "PROF",
+      "name_en": "Accountability/Conscientiousness",
+      "name_zh": "責任感與謹慎態度",
+      "levels": {
+        "1": "Performs tasks and responsibilities with prompting",
+        "2": "Performs tasks and responsibilities in a timely manner with attention to detail in routine situations",
+        "3": "Performs tasks and responsibilities in a timely manner with attention to detail in complex or stressful situations",
+        "4": "Proactively implements strategies to ensure that the needs of patients, teams, and systems are met",
+        "5": "Creates strategies to enhance others’ ability to efficiently complete tasks and responsibilities"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF3",
+      "domain": "PROF",
+      "name_en": "Personal and Professional Well-Being",
+      "name_zh": "Personal and Professional Well-Being",
+      "levels": {
+        "1": "Identifies elements of well-being",
+        "2": "Describes resources that are meant to promote well-being",
+        "3": "Recognizes status of well-being in oneself or peers and knows how to report concerns to appropriate personnel",
+        "4": "Develops a plan to improve well-being of oneself or peers, including use of institutional or external resources",
+        "5": "Creates institutional-level interventions that promote colleagues’ well-being"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS1",
+      "domain": "ICS",
+      "name_en": "Patient- and Family-Centered Communication",
+      "name_zh": "以病人與家屬為中心之溝通",
+      "levels": {
+        "1": "Uses clear language and non-verbal behavior to demonstrate respect and establish rapport Recognizes common barriers to effective communication (e.g., language, disability)",
+        "2": "Establishes a therapeutic relationship with patients using active listening and clear language in straightforward encounters Recognizes complex barriers to effective communication (e.g., health literacy)",
+        "3": "Establishes a therapeutic relationship with patients’ and their families in challenging patient encounters Adjusts communication strategies based on identified barriers, incorporating patient and caregiver expectations and goals of care",
+        "4": "Independently uses shared decision making to make a personalized care plan Proactively improves communication by addressing barriers and biases",
+        "5": "Serves as a role model in establishing respectful, culturally sensitive, therapeutic relationships while mitigating communication barriers"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "ICS2",
+      "domain": "ICS",
+      "name_en": "Interprofessional and Team Communication",
+      "name_zh": "跨專業與團隊溝通",
+      "levels": {
+        "1": "Uses language that is respectful and values all members of the health care team",
+        "2": "Communicates basic information and provides feedback to all health care team members",
+        "3": "Communicates complex information and provides difficult feedback to all health care team members",
+        "4": "Optimizes communication strategies using input from all team members to build consensus and resolve conflicts as needed",
+        "5": "Demonstrates leadership in promoting open and safe communication within and between teams"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS3",
+      "domain": "ICS",
+      "name_en": "Communication within Health Care Systems",
+      "name_zh": "於醫療體系內之溝通",
+      "levels": {
+        "1": "Verifies and accurately records current and relevant information in the patient's chart",
+        "2": "Concisely documents diagnostic and therapeutic reasoning, accurately reflecting patient course for common conditions",
+        "3": "Concisely documents diagnostic and therapeutic reasoning, accurately reflecting patient course for complex conditions",
+        "4": "Concisely documents diagnostic and therapeutic reasoning, accurately reflecting patient course for all conditions while satisfying institutional billing needs and compliance",
+        "5": "Mentors others in in documenting diagnostic and therapeutic reasoning, accurately reflecting patient course Guides departmental or institutional documentation policy and procedures"
+      },
+      "applicable_in_osce": true
+    }
+  ]
+}

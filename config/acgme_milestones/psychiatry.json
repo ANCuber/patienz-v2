@@ -1,0 +1,276 @@
+{
+  "milestone_source": "psychiatrymilestones.pdf",
+  "specialty": "Psychiatry",
+  "version": "ACGME Milestones (auto-extracted from PDF)",
+  "language_levels": "en",
+  "language_names_zh": "zh-TW",
+  "disclaimer": "本檔由 PDF 自動萃取，levels 為 ACGME 英文原文；name_zh 由內建翻譯表提供，未匹配項目以英文呈現，可後續人工校對補上中譯。",
+  "subcompetencies": [
+    {
+      "id": "PC1",
+      "domain": "PC",
+      "name_en": "Psychiatric Evaluation",
+      "name_zh": "Psychiatric Evaluation",
+      "levels": {
+        "1": "Collects general medical and psychiatric history and completes a mental status examination Collects relevant information from collateral sources Screens for risk of harm to self, to others, or by others",
+        "2": "Efficiently acquires an accurate and relevant history and performs a targeted examination customized to the patient's presentation Selects appropriate laboratory and diagnostic tests Engages in a basic risk assessment and basic safety planning",
+        "3": "Uses hypothesis-driven information gathering to obtain complete, accurate, and relevant history Interprets collateral information and test results to determine necessary additional steps Incorporates risk and protective factors into the assessment of imminent, short, and long-term patient safety and the safety of others",
+        "4": "Elicits and observes subtle and unusual findings Interprets collateral information and test results to determine necessary additional steps in the evaluation of complex conditions Incorporates risk and protective factors into the assessment of complex patient presentations, including eliciting information not readily offered by the patient",
+        "5": "Serves as a role model for gathering subtle and accurate findings from the patient and collateral sources Serves as a role model for risk assessment"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC2",
+      "domain": "PC",
+      "name_en": "Psychiatric Formulation and Differential Diagnosis",
+      "name_zh": "Psychiatric Formulation and Differential Diagnosis",
+      "levels": {
+        "1": "Organizes and accurately summarizes information obtained from the patient evaluation to develop a clinical impression Recognizes that biological, psychosocial, and developmental/life cycle factors play a role in a patient’s presentation Recognizes that clinicians have emotional responses to patients",
+        "2": "Integrates information from the most relevant sources to develop a basic differential diagnosis for common patient presentations Identifies the biological, psychosocial, and developmental/life cycle factors that contribute to a patient’s presentation Recognizes that clinicians’ emotional responses have diagnostic value",
+        "3": "Develops a thorough and prioritized differential diagnosis while avoiding premature closure for a range of patient presentations Synthesizes all information into a concise but comprehensive formulation, taking into account biological, psychosocial, and developmental/life cycle factors Begins to use the clinician's emotional responses to the patient to aid formulation",
+        "4": "Develops differential diagnoses in complex cases and incorporates subtle, unusual, or conflicting findings Develops formulations based on multiple conceptual models Integrates clinician’s and patient’s emotional responses into the diagnosis and formulation",
+        "5": "Serves as a role model in the development of accurate and complete differential diagnoses and formulations"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC3",
+      "domain": "PC",
+      "name_en": "Treatment Planning and Management",
+      "name_zh": "Treatment Planning and Management",
+      "levels": {
+        "1": "Identifies potential biopsychosocial treatment options Recognizes that acuity affects level of care and treatment monitoring Gives examples of community resources",
+        "2": "Engages the patient in the selection of evidence-based biopsychosocial treatment, recognizing that comorbid conditions and side effects impact treatment Selects the most appropriate level of care based on acuity and monitors treatment adherence and response Coordinates care with community resources",
+        "3": "Applies an understanding of psychiatric, neurologic, and medical comorbidities in the management of common presentations Selects the most appropriate interventions, treatments, and adjustments in treatment in common presentations based on consideration of patient factors and acuity Incorporates support and advocacy groups in treatment planning",
+        "4": "Devises individualized treatment plan for complex presentations; integrates multiple modalities and providers in a comprehensive approach Selects the most appropriate interventions, treatments, and adjustments in treatment in complex presentations based on consideration of patient factors and acuity Locates and connects patients to community resources in complex and difficult situations",
+        "5": "Supervises treatment planning of other learners and multidisciplinary providers Participates in the creation or administration of community-based programs"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC4",
+      "domain": "PC",
+      "name_en": "Psychotherapy",
+      "name_zh": "Psychotherapy",
+      "levels": {
+        "1": "Establishes a working relationship with patients demonstrating interest and empathy Lists the three core psychotherapies Accurately identifies patient emotions, particularly sadness, anger, and fear",
+        "2": "Establishes a bounded therapeutic alliance with patients with uncomplicated problems Uses the common factors of psychotherapy in providing supportive therapy to patients Identifies and reflects the core feelings and key issues for the patient during the session",
+        "3": "Establishes and maintains a therapeutic alliance with patients with uncomplicated problems, and can recognize and avoid boundary violations Provides selected psychotherapies (including supportive, psychodynamic, and cognitive-behavioral), sets goals and integrates therapy with other treatment modalities Identifies and reflects the core feelings, key issues and what the issues mean to the patient during the session, while managing the emotional content and feelings elicited",
+        "4": "Establishes and maintains therapeutic alliance with patients with complicated problems, and can anticipate and appropriately manage boundary violations Selects appropriate psychotherapeutic modality based on case formulation, tailors the therapy to the patient, and provides psychotherapy (at least supportive and one of psychodynamic or cognitive-behavioral) to complex patients Identifies and reflects the core feelings, key issues, and what the issues mean to the patient within and across sessions",
+        "5": "Assesses and can help repair troubled alliances and/or boundary difficulties between junior residents and their patients Tailors psychotherapeutic treatment based on awareness of own skill sets, strengths, and limitations Links feelings, recurrent/central themes/schemas and their meaning to the patient as they shift within and across sessions"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC5",
+      "domain": "PC",
+      "name_en": "Somatic Therapies (including Psychopharmacology and Neurostimulation Therapies)",
+      "name_zh": "Somatic Therapies (including Psychopharmacology and Neurostimulation Therapies)",
+      "levels": {
+        "1": "Lists commonly used somatic therapies and their indications to target specific psychiatric symptoms Reviews with the patient general indications and common adverse effects for commonly prescribed drugs and other somatic treatments Lists key baseline assessments necessary before initiating somatic treatments to ensure patient safety",
+        "2": "Appropriately prescribes commonly used somatic therapies and understands their mechanism of action Appropriately uses educational and other resources to support the patient and optimize understanding and adherence Obtains baseline assessments necessary before initiating treatment with commonly used somatic therapies",
+        "3": "Researches, cites, and starts to apply the evidence base when developing treatment plans that include somatic therapies Explains mechanisms of action and the body’s response to commonly prescribed drugs and other somatic treatments (including drug metabolism) to patients/families Monitors relevant assessments and adverse effects throughout treatment and incorporates findings from the literature into treatment strategy",
+        "4": "Consistently applies the evidence base when developing treatment plans that include somatic therapies, including with complex or treatment-refractory cases Explains less common somatic treatment choices to patients/families in terms of proposed mechanisms of action, potential risks and benefits, and the evidence base Manages adverse effects and safety concerns in complex or treatment refractory cases",
+        "5": "Manages complex combinations of somatic therapies and considers novel approaches Leads the development of novel patient educational processes or materials Incorporates new developments in the evidence base into treatment to optimize safety, minimize adverse effects, and improve response"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC6",
+      "domain": "PC",
+      "name_en": "Clinical Consultation",
+      "name_zh": "Clinical Consultation",
+      "levels": {
+        "1": "Respectfully requests a consultation Respectfully receives a consultation request",
+        "2": "Clearly and concisely requests a consultation Clearly and concisely responds to a consultation request Demonstrates understanding of the consultation model, including liaison function",
+        "3": "Applies consultant recommendations judiciously to patient care Assists consulting team in identifying unrecognized clinical care issues and provides relevant recommendations, checking for understanding Demonstrates understanding of models of integrated multidisciplinary mental health and primary care",
+        "4": "Critically appraises and integrates diverse recommendations Manages complicated and challenging consultation requests Collaborates skillfully with practitioners from other disciplines in medical settings",
+        "5": "Contributes to identifying and rectifying flaws of consultation system Leads consultation-liaison psychiatry teams Serves as a leader of integrated care teams or implementation projects"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK1",
+      "domain": "MK",
+      "name_en": "Development through the Life Cycle (including the Impact of Psychopathology on the Trajectory of",
+      "name_zh": "Development through the Life Cycle (including the Impact of Psychopathology on the Trajectory of",
+      "levels": {
+        "1": "Conceptualizes development as occurring in stages throughout the life cycle Recognizes major deviations from typical development",
+        "2": "Describes the basic stages of typical biological, sociocultural, sexual, and cognitive development throughout the life cycle Gives examples of biological, psychological, sociocultural, cognitive, and sexual factors that contribute to a shift towards an atypical developmental trajectory",
+        "3": "Explains developmental tasks and transitions throughout the life cycle, using multiple conceptual models Describes the influence of biological, psychological, sociocultural, cognitive, and sexual factors on atypical personality development and psychopathology",
+        "4": "Articulates an integrated understanding of typical development Describes how acquiring and losing specific capacities can influence the expression of psychopathology",
+        "5": "Incorporates new knowledge into own understanding of typical and atypical development"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK2",
+      "domain": "MK",
+      "name_en": "Psychopathology (includes Knowledge of Diagnostic Criteria, Epidemiology, Pathophysiology, Course",
+      "name_zh": "Psychopathology (includes Knowledge of Diagnostic Criteria, Epidemiology, Pathophysiology, Course",
+      "levels": {
+        "1": "Identifies the major psychiatric diagnostic categories Gives examples of interactions between medical and psychiatric symptoms and disorders",
+        "2": "Demonstrates sufficient knowledge to identify and assess common psychiatric conditions Demonstrates sufficient knowledge to identify common medical conditions in psychiatric patients",
+        "3": "Demonstrates sufficient knowledge to identify and treat common psychiatric conditions throughout the life cycle Applies knowledge to identify and treat common psychiatric symptoms due to other medical illness",
+        "4": "Demonstrates sufficient knowledge to identify and treat atypical and complex psychiatric conditions throughout the life cycle Applies knowledge to identify and treat a wide range of psychiatric conditions in patients with comorbid medical disorders and ensures treatment of medical conditions in psychiatric patients",
+        "5": "Applies knowledge to identify and manage uncommon conditions at the interface of psychiatry and medicine"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP1",
+      "domain": "SBP",
+      "name_en": "Patient Safety and Quality Improvement",
+      "name_zh": "病人安全與品質改善",
+      "levels": {
+        "1": "Demonstrates knowledge of common patient safety events Demonstrates knowledge of how to report patient safety events Demonstrates knowledge of basic quality improvement methodologies and metrics",
+        "2": "Identifies system factors that lead to patient safety events Reports patient safety events through institutional reporting systems (simulated or actual) Describes local quality improvement initiatives (e.g., reduced restraint rates, falls risk, suicide rates)",
+        "3": "Participates in analysis of patient safety events (simulated or actual) Participates in disclosure of patient safety events to patients and families (simulated or actual) Participates in local quality improvement initiatives",
+        "4": "Conducts analysis of patient safety events and offers error prevention strategies (simulated or actual) Discloses patient safety events to patients and families (simulated or actual) Demonstrates the skills required to identify, develop, implement, and analyze a quality improvement project",
+        "5": "Actively engages teams and processes to improve systems to prevent patient safety events Role models or mentors others in the disclosure of patient safety events Creates, implements, and assesses quality improvement initiatives at the institutional or community level"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP2",
+      "domain": "SBP",
+      "name_en": "System Navigation for Patient-Centered Care",
+      "name_zh": "以病人為中心的系統導航",
+      "levels": {
+        "1": "Demonstrates knowledge of care coordination Identifies key elements for safe and effective transitions of care and hand-offs Demonstrates knowledge of population and community health needs",
+        "2": "Coordinates care of patients in routine clinical situations effectively using the roles of the interprofessional teams Performs safe and effective transitions of care/hand-offs in routine clinical situations Identifies specific population and community health needs for their local population",
+        "3": "Coordinates care of patients in complex clinical situations effectively using the roles of their interprofessional teams Performs safe and effective transitions of care/hand-offs in complex clinical situations Uses local resources effectively to meet the needs of a patient population and community",
+        "4": "Role models effective coordination of patient-centered care among different disciplines and specialties Role models and serves as a patient advocate for safe and effective transitions of care/hand-offs within and across health care delivery systems including outpatient settings Participates in changing and adapting practice to provide for the needs of specific populations",
+        "5": "Analyzes the process of care coordination and leads in the design and implementation of improvements Improves quality of transitions of care within and across health care delivery systems to optimize patient outcomes Leads innovations and advocates for populations and communities with health care needs"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP3",
+      "domain": "SBP",
+      "name_en": "Physician Role in Health Care Systems",
+      "name_zh": "醫師於醫療體系中的角色",
+      "levels": {
+        "1": "Identifies key components of the complex health care system Describes practice models and basic mental health payment systems Identifies basic knowledge domains for effective transition to residency",
+        "2": "Describes how components of a complex health care system are interrelated, and how this impacts patient care Identifies barriers to care in different health care systems Demonstrates use of information technology and documentation required for medical practice",
+        "3": "Discusses how individual practice affects the broader system Engages with patients in shared decision making and advocates for appropriate care and parity Describes core administrative knowledge needed for transition to practice",
+        "4": "Manages various components of the complex health care system to provide high-value, efficient, and effective patient care and transition of care Advocates for patient care needs including mobilizing community resources Analyzes individual practice patterns and professional requirements in preparation for practice",
+        "5": "Advocates for or leads systems change that enhances high-value, efficient, and effective patient care and transition of care Participates in advocacy activities for access to care in mental health and reimbursement Educates others to prepare them for transition to practice"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PBLI1",
+      "domain": "PBLI",
+      "name_en": "Evidence-Based and Informed Practice",
+      "name_zh": "實證導向實踐",
+      "levels": {
+        "1": "Demonstrates how to access and summarize available evidence for routine conditions",
+        "2": "Articulates clinical questions and initiates literature searches to provide evidence-based care",
+        "3": "Locates and applies the best available evidence to the care of patients applying a hierarchy of evidence",
+        "4": "Critically appraises and applies evidence even in the face of uncertainty and conflicting evidence to guide care, tailored to the individual patient",
+        "5": "Coaches others to critically appraise and apply evidence for complex patients; and/or participates in the development of guidelines"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PBLI2",
+      "domain": "PBLI",
+      "name_en": "Reflective Practice and Commitment to Personal Growth",
+      "name_zh": "反思實踐與個人成長承諾",
+      "levels": {
+        "1": "Accepts responsibility for personal and professional development by establishing goals Identifies the factors which contribute to gap(s) between one’s expected and actual performance Actively seeks opportunities to improve",
+        "2": "Demonstrates openness to performance data (feedback and other input) in order to inform goals Analyzes and reflects on the factors which contribute to gap(s) between one’s expected and actual performance Designs and implements a learning plan, with prompting",
+        "3": "Seeks performance data episodically, with openness and humility Analyzes, reflects on, and institutes behavioral change(s) to narrow the gap(s) between one’s expected and actual performance Independently creates and implements a learning plan",
+        "4": "Intentionally seeks performance data consistently with openness and humility Challenges one’s own assumptions and considers alternatives in narrowing the gap(s) between their expected and actual performance Uses performance data to measure the effectiveness of the learning plan and when necessary, improves it",
+        "5": "Role models consistently seeking performance data with openness and humility Coaches others on reflective practice Facilitates the design and implementation of learning plans for others"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PROF1",
+      "domain": "PROF",
+      "name_en": "Professional Behavior and Ethical Principles",
+      "name_zh": "Professional Behavior and Ethical Principles",
+      "levels": {
+        "1": "Identifies and describes core professional behavior Recognizes that one’s behavior in professional settings affects others Demonstrates knowledge of core ethical principles",
+        "2": "Demonstrates professional behavior in routine situations Takes responsibility for own professionalism lapses and responds appropriately Analyzes straightforward situations using ethical principles",
+        "3": "Demonstrates professional behavior in complex or stressful situations Describes when and how to appropriately report professionalism lapses in others, including strategies for addressing common barriers to reporting Analyzes complex situations using ethical principles and recognizes when help is needed",
+        "4": "Recognizes situations that may trigger professionalism lapses and intervenes to prevent lapses in self and others Responds appropriately to professionalism lapses of colleagues Recognizes and uses appropriate resources for managing and resolving ethical dilemmas as needed. (e.g., ethics consultations, literature review, risk management/legal consultation)",
+        "5": "Role models professional behavior and ethical principles Identifies and seeks to address system-level factors that induce or exacerbate ethical problems or impede their resolution"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF2",
+      "domain": "PROF",
+      "name_en": "Accountability/Conscientiousness",
+      "name_zh": "責任感與謹慎態度",
+      "levels": {
+        "1": "Takes responsibility to complete tasks and responsibilities, identifies potential contributing factors for lapses, and describes strategies for ensuring timely task completion in the future Introduces self as patient’s resident physician",
+        "2": "Performs tasks and responsibilities in a timely manner with appropriate attention to detail in routine situations Accepts the role of the patient’s physician and takes responsibility (under supervision) for ensuring that the patient receives the best possible care",
+        "3": "Performs tasks and responsibilities in a timely manner with appropriate attention to detail in complex or stressful situations Is recognized by self, patient, patient’s family, and medical staff members as the patient’s primary psychiatric provider",
+        "4": "Recognizes when others are unable to complete tasks and responsibilities in a timely manner and assists in problem solving Displays increasing autonomy and leadership in taking responsibility for ensuring the patients receive the best possible care",
+        "5": "Takes ownership of system outcomes Serves as a role model in demonstrating responsibility for ensuring that patients receive the best possible care"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF3",
+      "domain": "PROF",
+      "name_en": "Well-Being",
+      "name_zh": "Well-Being",
+      "levels": {
+        "1": "Recognizes the importance of addressing personal and professional well-being",
+        "2": "Lists available resources for personal and professional well-being Describes institutional resources designed to promote well-being",
+        "3": "With assistance, proposes a plan to promote personal and professional well-being Recognizes which institutional factors affect well-being",
+        "4": "Independently develops a plan to promote personal and professional well-being Describes institutional factors that positively and/or negatively affect well-being",
+        "5": "Creates institutional level interventions that promote colleagues’ well-being Describes institutional programs designed to examine systemic contributors to burnout"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS1",
+      "domain": "ICS",
+      "name_en": "Patient- and Family-Centered Communication",
+      "name_zh": "以病人與家屬為中心之溝通",
+      "levels": {
+        "1": "Uses language and nonverbal communication to demonstrate empathic curiosity, respect, and to establish rapport Identifies common barriers to effective communication; accurately communicates own role within the health care system Recognizes communication strategies may need to be adjusted based on clinical context",
+        "2": "Establishes a therapeutic relationship in straightforward encounters using active listening and clear language Identifies complex barriers to effective communication Organizes and initiates communication with patient/family by introducing stakeholders, setting the agenda, clarifying expectations, and verifying understanding of the clinical situation",
+        "3": "Establishes a therapeutic relationship in challenging patient encounters; uses nonverbal communication skills effectively When prompted, reflects on biases that may contribute to communication barriers With guidance, sensitively and compassionately delivers medical information, elicits patient/family values, goals and preferences; acknowledges uncertainty and conflict",
+        "4": "Effectively establishes and sustains therapeutic relationships, with attention to patient/family concerns and context, regardless of complexity Independently recognizes biases and attempts to proactively minimize their contribution to communication barriers Independently, uses shared decision making to align patient/family values, goals, and preferences with treatment options to make a personalized care plan",
+        "5": "Mentors others in situational awareness and critical self-reflection to consistently develop positive therapeutic relationships Role models self-awareness practice while identifying and teaching a contextual approach to minimize communication barriers Role models shared decision making in patient/family communication including those with a high degree of uncertainty/conflict"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "ICS2",
+      "domain": "ICS",
+      "name_en": "Interprofessional and Team Communication",
+      "name_zh": "跨專業與團隊溝通",
+      "levels": {
+        "1": "Uses language that values all members of the health care team Recognizes the need for ongoing feedback with the health care team",
+        "2": "Communicates information effectively with all health care team members Solicits feedback on performance as a member of the health care team",
+        "3": "Uses active listening to adapt communication style to fit team needs Communicates concerns and provides feedback to peers and learners",
+        "4": "Coordinates recommendations from different members of the health care team to optimize patient care Respectfully communicates feedback and constructive criticism to superiors",
+        "5": "Role models flexible communication strategies that value input from all health care team members, resolving conflict when needed Facilitates regular health care team-based feedback in complex situations"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS3",
+      "domain": "ICS",
+      "name_en": "Communication within Health Care Systems",
+      "name_zh": "於醫療體系內之溝通",
+      "levels": {
+        "1": "Accurately records information in the patient record Safeguards patient personal health information Communicates about administrative issues through appropriate channels, as required by institutional policy",
+        "2": "Demonstrates organized diagnostic and therapeutic reasoning through notes in the patient record Uses documentation shortcuts accurately and appropriately to enhance efficiency of communication Respectfully communicates concerns about the system",
+        "3": "Concisely reports diagnostic and therapeutic reasoning in the patient record Appropriately selects forms of communication based on context Uses appropriate channels to offer clear and constructive suggestions to improve the system",
+        "4": "Communicates clearly and concisely, in an organized written form, including anticipatory guidance Achieves written or verbal communication that serves as an example for others to follow Initiates difficult conversations with appropriate stakeholders to improve the system",
+        "5": "Contributes to departmental or organizational initiatives to improve communication systems Facilitates dialogue regarding systems issues among larger community stakeholders"
+      },
+      "applicable_in_osce": true
+    }
+  ]
+}

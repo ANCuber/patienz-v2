@@ -14,7 +14,7 @@ def create_grader_v2_model(mark_scheme_text: str):
         "temperature": 0.3,
         "top_p": 0.95,
         "top_k": 40,
-        "max_output_tokens": 65536,
+        "max_output_tokens": 16384,
         "response_schema": content.Schema(
             type=content.Type.ARRAY,
             items=content.Schema(

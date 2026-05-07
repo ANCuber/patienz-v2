@@ -1,0 +1,318 @@
+{
+  "milestone_source": "nephrologymilestones.pdf",
+  "specialty": "Nephrology",
+  "version": "ACGME Milestones (auto-extracted from PDF)",
+  "language_levels": "en",
+  "language_names_zh": "zh-TW",
+  "disclaimer": "本檔由 PDF 自動萃取，levels 為 ACGME 英文原文；name_zh 由內建翻譯表提供，未匹配項目以英文呈現，可後續人工校對補上中譯。",
+  "subcompetencies": [
+    {
+      "id": "PC1",
+      "domain": "PC",
+      "name_en": "Acute Kidney Injury",
+      "name_zh": "Acute Kidney Injury",
+      "levels": {
+        "1": "Creates a basic differential diagnosis for patients with acute kidney injury using the history and physical exam Develops a basic diagnostic plan Develops a basic management plan",
+        "2": "Formulates a comprehensive differential diagnosis for patients with acute kidney injury using a focused history and physical exam Recommends diagnostic testing to inform the differential diagnosis Identifies patients who need urgent treatment, including dialysis and medication adjustment",
+        "3": "Formulates a prioritized differential diagnosis for patients with acute kidney injury Interprets diagnostic test results, including evaluation of urine sediment, laboratory and imaging studies, and kidney biopsy Develops and implements a management plan, including dialysis modality selection and/or disease-specific treatment",
+        "4": "Independently formulates a prioritized differential diagnosis for patients with common and uncommon causes of acute kidney injury Independently interprets and integrates diagnostic test results Independently develops and implements a management plan with consideration of patient acuity and complexity",
+        "5": "Independently formulates a prioritized differential diagnosis with consideration of rare or newly recognized causes of acute kidney injury Identifies indications for ordering advanced diagnostic studies Formulates a management plan incorporating novel therapies"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC2",
+      "domain": "PC",
+      "name_en": "Chronic Dialysis Therapy",
+      "name_zh": "Chronic Dialysis Therapy",
+      "levels": {
+        "1": "Lists the indication(s) for initiation of chronic dialysis Lists common complications in patients on chronic dialysis Identifies types of dialysis access and common access complications",
+        "2": "Selects appropriate dialysis modality and writes patient-specific hemodialysis and peritoneal dialysis prescriptions Assesses for common complications of chronic dialysis Performs basic assessment of dialysis accesses",
+        "3": "Modifies a dialysis prescription based on patient assessment Treats common complications of chronic dialysis Develops a diagnostic and therapeutic plan for management of common access complications",
+        "4": "Independently manages patients receiving dialysis Independently anticipates and manages common and uncommon complications of chronic dialysis Develops a diagnostic and therapeutic plan for management of uncommon access complications",
+        "5": "Identifies the complexities of providing quality care to a population of patients receiving dialysis Anticipates and manages the breadth of comorbid medical and technical complications in the patient on dialysis, including when dialysis is not appropriate"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC3",
+      "domain": "PC",
+      "name_en": "Chronic Kidney Disease",
+      "name_zh": "Chronic Kidney Disease",
+      "levels": {
+        "1": "Develops a differential diagnosis of causes of chronic kidney disease Develops a basic diagnostic plan for patients with chronic kidney disease Identifies stages of chronic kidney disease and how it relates to patient prognosis",
+        "2": "Expands the differential diagnosis based on specific history/physical information Modifies the diagnostic plan based on evolving clinical data for patients with chronic kidney disease Develops a management plan to slow chronic kidney disease progression",
+        "3": "Reformulates the differential diagnosis as necessary for atypical disease presentations Identifies patients with chronic kidney disease who require more evaluation, including kidney biopsy Develops a management plan for chronic kidney disease complications and discusses treatment options",
+        "4": "Independently diagnoses common and uncommon causes of chronic kidney disease Identifies indications for ordering advanced or novel diagnostic studies Independently leads the preparation for the next steps in management of progressive chronic kidney disease and integrates patient-specific goals of care",
+        "5": "Independently recognizes rare and newly described causes of chronic kidney disease Identifies candidates for enrollment in research and novel and emerging therapies"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC4",
+      "domain": "PC",
+      "name_en": "Transplant",
+      "name_zh": "Transplant",
+      "levels": {
+        "1": "Discusses indications and contraindications for kidney transplantation Identifies the presence of kidney allograft dysfunction Lists indications for common kidney transplant immunosuppressive medications",
+        "2": "Identifies and counsels patients and families regarding kidney transplant candidacy and the evaluation process Generates a differential diagnosis for common causes of kidney allograft dysfunction Identifies common and uncommon complications of immunosuppressive medications",
+        "3": "Manages stable ambulatory post-transplant patients Generates a differential diagnosis for uncommon causes of kidney allograft dysfunction and an initial management plan for common causes of kidney allograft dysfunction Manages immunosuppressive medications, including common complications and drug interactions",
+        "4": "Independently manages stable and unstable post-transplant patients Independently generates a differential diagnosis and management plan for uncommon causes of kidney allograft dysfunction Independently manages immunosuppressive medications, including patients with allograft dysfunction and failure",
+        "5": "Identifies opportunities to improve kidney transplantation access and outcomes Identifies novel and emerging therapies for immunosuppression and transplant dysfunction"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC5",
+      "domain": "PC",
+      "name_en": "Fluid and Electrolytes",
+      "name_zh": "Fluid and Electrolytes",
+      "levels": {
+        "1": "Creates a differential diagnosis and initial management plan",
+        "2": "Develops a comprehensive differential diagnosis, recommends initial diagnostic testing, and identifies patients who require urgent treatment",
+        "3": "Develops a prioritized differential diagnosis, interprets diagnostic test results, and implements a comprehensive management plan",
+        "4": "Independently formulates a differential diagnosis, including common and uncommon causes, and adjusts management plan based on patient response",
+        "5": "Independently and effectively manages unusual, rare, or complex fluid and/or electrolyte disorder(s)"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC6",
+      "domain": "PC",
+      "name_en": "Hypertension",
+      "name_zh": "Hypertension",
+      "levels": {
+        "1": "Diagnoses and manages hypertension, proposes initial evaluation for secondary causes, and recognizes hypertensive emergencies",
+        "2": "Develops a differential diagnosis, evaluates causes of secondary and resistant hypertension, and proposes a management plan",
+        "3": "Interprets the results of specialized testing for secondary and resistant hypertension, and adjusts management plan based on treatment results and patient comorbidity",
+        "4": "Independently develops and implements a management plan for secondary and resistant hypertension, and adjusts therapy based on patient acuity and complexity",
+        "5": "Independently and effectively manages unusual, rare, or complex presentations of hypertension"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC7",
+      "domain": "PC",
+      "name_en": "Competence in Procedures",
+      "name_zh": "Competence in Procedures",
+      "levels": {
+        "1": "Discusses the indications for and assists with all procedures Discusses potential procedural complications",
+        "2": "Performs procedures, with direct supervision Recognizes complications of procedures and enlists help",
+        "3": "Competently performs procedures, with indirect supervision Manages complications of procedures, with supervision",
+        "4": "Proficiently and independently performs procedures Anticipates and independently manages complications of procedures",
+        "5": "Serves as an educational resource for procedures and their complications"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK1",
+      "domain": "MK",
+      "name_en": "Physiology and Pathophysiology",
+      "name_zh": "Physiology and Pathophysiology",
+      "levels": {
+        "1": "Identifies key clinical physiological and pathophysiological concepts Identifies key basic science concepts (e.g., histopathology, immunology, genetics, molecular biology)",
+        "2": "Demonstrates knowledge of more complex clinical physiology and pathophysiology Demonstrates knowledge of more complex basic science concepts",
+        "3": "Applies knowledge of common clinical pathophysiology to diagnosis and management Applies knowledge of basic science concepts of common diseases to diagnosis and management",
+        "4": "Integrates knowledge of advanced clinical pathophysiology with diagnosis and management Integrates knowledge of advanced basic science concepts of less common diseases with diagnosis and management",
+        "5": "Researches newly described and emerging clinical physiology and pathophysiology concepts Researches newly described and emerging basic science concepts"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK2",
+      "domain": "MK",
+      "name_en": "Pharmacology and Therapeutics",
+      "name_zh": "Pharmacology and Therapeutics",
+      "levels": {
+        "1": "Demonstrates knowledge of pharmacology Recognizes kidney toxicity of common medications and effects of intoxicants",
+        "2": "Recognizes the effect of kidney disease on pharmacokinetics of medications Employs strategies to minimize drug toxicity in common scenarios",
+        "3": "Monitors and adjusts the choice and dosing of common medications Employs strategies to minimize drug toxicity in complex scenarios",
+        "4": "Monitors and adjusts the choice and dosing of uncommon medications Identifies strategies to manage drug toxicities and acute intoxications",
+        "5": "Demonstrates advanced knowledge of pharmacology of novel therapeutic agents"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK3",
+      "domain": "MK",
+      "name_en": "Diagnostic Testing in Kidney Disease",
+      "name_zh": "Diagnostic Testing in Kidney Disease",
+      "levels": {
+        "1": "Recognizes indications, risks, and benefits for basic diagnostic testing",
+        "2": "Provides interpretation of basic diagnostic testing results",
+        "3": "Recognizes indications, risks, and benefits for advanced diagnostic testing",
+        "4": "Independently interprets advanced diagnostic testing",
+        "5": "Recognizes emerging applications of novel diagnostic testing technologies"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP1",
+      "domain": "SBP",
+      "name_en": "Patient Safety and Quality Improvement",
+      "name_zh": "病人安全與品質改善",
+      "levels": {
+        "1": "Demonstrates knowledge of common patient safety events Understands the importance of reporting patient safety events Demonstrates knowledge of basic quality improvement methodologies and metrics",
+        "2": "Identifies system factors that lead to patient safety events Demonstrates knowledge of how to report patient safety events through institutional reporting systems (simulated or actual) Describes local quality improvement initiatives",
+        "3": "Participates in analysis of patient safety events (simulated or actual) Participates in disclosure of patient safety events to patients and families (simulated or actual) Participates in local quality improvement initiatives",
+        "4": "Conducts analysis of patient safety events and offers error prevention strategies (simulated or actual) Empathically discloses patient safety events to patients and families (simulated or actual) Demonstrates the skills required to implement and analyze a quality improvement project, including in dialysis management",
+        "5": "Actively engages teams and processes to monitor systems to prevent patient safety events Role models or mentors others in the disclosure of patient safety events Creates, implements, and assesses quality improvement initiatives at the institutional or community level"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP2",
+      "domain": "SBP",
+      "name_en": "System Navigation for Patient-Centered Care",
+      "name_zh": "以病人為中心的系統導航",
+      "levels": {
+        "1": "Demonstrates knowledge of care coordination Identifies key elements for safe and effective transitions of care/hand-offs",
+        "2": "Coordinates care of patients in routine clinical situations effectively using the roles of interprofessional teams within nephrology Performs safe and effective transitions of care/hand-offs in routine clinical situations",
+        "3": "Coordinates care of patients in complex clinical situations effectively using the roles of interprofessional teams within nephrology Performs safe and effective transitions of care/hand-offs in complex clinical situations",
+        "4": "Demonstrates effective coordination of patient-centered care across different disciplines and specialties Advocates for safe and effective transitions of care/hand-offs within and across health care delivery systems, including outpatient settings",
+        "5": "Analyzes the process of care coordination and leads in the design and implementation of improvements Advances quality of transitions of care within and across health care delivery systems to optimize patient outcomes"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP3",
+      "domain": "SBP",
+      "name_en": "Population Health",
+      "name_zh": "Population Health",
+      "levels": {
+        "1": "Demonstrates knowledge of population and community health needs",
+        "2": "Identifies specific population and community health needs for their local population",
+        "3": "Uses local resources effectively to meet the needs of a patient population and community",
+        "4": "Participates in changing and adapting practice to provide for the needs of specific populations",
+        "5": "Leads innovations and advocates for populations and communities with specific health care needs"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP4",
+      "domain": "SBP",
+      "name_en": "Physician Role in Health Care Systems",
+      "name_zh": "醫師於醫療體系中的角色",
+      "levels": {
+        "1": "Identifies key components of the complex health care system Describes basic health payment systems, including practice models",
+        "2": "Describes how components of a complex health care system are interrelated, and how this impacts patient care Delivers care with consideration of each patient’s payment model",
+        "3": "Discusses how individual practice affects the broader system Engages with patients in shared decision making, informed by each patient’s payment models",
+        "4": "Manages various components of the complex health care system to provide efficient and effective patient care and transitions of care Advocates for patient care needs with consideration of the limitations of each patient’s payment model",
+        "5": "Advocates for or leads systems change that enhances high-value, efficient, and effective patient care and transitions of care Participates in health policy advocacy activities"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PBLI1",
+      "domain": "PBLI",
+      "name_en": "Evidence-Based and Informed Practice",
+      "name_zh": "實證導向實踐",
+      "levels": {
+        "1": "Demonstrates how to access and use available evidence, and incorporates patient preferences and values in order to care for a routine patient",
+        "2": "Articulates clinical questions and elicits patient preferences and values in order to guide evidence-based care",
+        "3": "Locates and applies the best available evidence, integrated with patient preference, to the care of complex patients",
+        "4": "Critically appraises and applies evidence even in the face of uncertainty and conflicting evidence to guide care, tailored to the individual patient",
+        "5": "Coaches others to critically appraise and apply evidence for complex patients and/or participates in the development of guidelines"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PBLI2",
+      "domain": "PBLI",
+      "name_en": "Reflective Practice and Commitment to Personal Growth",
+      "name_zh": "反思實踐與個人成長承諾",
+      "levels": {
+        "1": "Accepts responsibility for personal and professional development by establishing goals Identifies the factors that contribute to gap(s) between expectations and performance Actively seeks opportunities to improve",
+        "2": "Demonstrates openness to performance data (feedback and other input) in order to inform goals Analyzes and reflects on the factors that contribute to gap(s) between expectations and performance Designs and implements a learning plan, with prompting",
+        "3": "Seeks and incorporates performance data episodically into practice, with adaptability and insight Analyzes, reflects on, and institutes behavioral change(s) to narrow the gap(s) between expectations and performance Independently creates and implements a learning plan",
+        "4": "Seeks and incorporates performance data consistently into practice, with adaptability and insight Challenges assumptions and considers alternatives in narrowing the gap(s) between expectations and performance Uses performance data to measure the effectiveness of the learning plan, and when necessary, improves it",
+        "5": "Role models consistently seeking performance data, with adaptability and insight Coaches others on reflective practice Facilitates the design and implementation of learning plans for others"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PROF1",
+      "domain": "PROF",
+      "name_en": "Professional Behavior and Ethical Principles",
+      "name_zh": "Professional Behavior and Ethical Principles",
+      "levels": {
+        "1": "Demonstrates professional behavior in routine situations Demonstrates use of the ethical principles underlying informed consent, surrogate decision making, advance directives, and confidentiality",
+        "2": "Demonstrates professional behavior in complex or stressful situations Uses ethical principles to address error disclosure and stewardship of limited resources",
+        "3": "Recognizes potential triggers and takes responsibility for professionalism lapses Analyzes complex situations using ethical principles, and seeks help when necessary",
+        "4": "Recognizes situations that may trigger professionalism lapses and intervenes to prevent lapses in self and others Recognizes and uses appropriate resources for managing and resolving ethical dilemmas (e.g., ethics consultations, literature review, risk management/legal consultation)",
+        "5": "Coaches others when their behavior fails to meet professional expectations Serves as a resource for others to help work through complex ethical situations"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF2",
+      "domain": "PROF",
+      "name_en": "Accountability/Conscientiousness",
+      "name_zh": "責任感與謹慎態度",
+      "levels": {
+        "1": "Takes responsibility for failure to complete tasks and responsibilities, identifies potential contributing factors, and describes strategies for ensuring timely task completion in the future Responds promptly to requests or reminders to complete tasks and responsibilities",
+        "2": "Performs tasks and responsibilities in a timely manner with appropriate attention to detail in routine situations Recognizes situations that may impact own ability to complete tasks and responsibilities in a timely manner",
+        "3": "Performs tasks and responsibilities in a timely manner with appropriate attention to detail in complex or stressful situations Proactively implements strategies to ensure that training requirements are met as assigned",
+        "4": "Recognizes situations that may impact others’ ability to complete tasks and responsibilities in a timely manner and offers to help",
+        "5": "Offers and implements strategies to make systems-level care responsibilities more efficient"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF3",
+      "domain": "PROF",
+      "name_en": "Self-Awareness and Well-Being",
+      "name_zh": "Self-Awareness and Well-Being",
+      "levels": {
+        "1": "With assistance, recognizes status of personal and professional well-being",
+        "2": "Independently recognizes status of personal and professional well-being and seeks help when needed",
+        "3": "With assistance, proposes a plan to optimize personal and professional well-being",
+        "4": "Independently develops a plan to optimize personal and professional well-being (well-being survey, fatigue assessment)",
+        "5": "Coaches others when emotional responses or limitations in knowledge/skills do not meet professional expectations"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS1",
+      "domain": "ICS",
+      "name_en": "Patient- and Family-Centered Communication",
+      "name_zh": "以病人與家屬為中心之溝通",
+      "levels": {
+        "1": "Uses language and nonverbal behavior to demonstrate respect and establish rapport Identifies common barriers to effective communication (e.g., language, disability) while accurately communicating own role within the health care system Participates with stakeholders in setting the agenda, clarifying expectations, and verifying understanding of the clinical situation for shared decision making",
+        "2": "Establishes a therapeutic relationship in straightforward encounters using active listening and clear language Identifies complex barriers to effective communication (e.g., health literacy, cultural) With guidance, sensitively and compassionately delivers medical information, elicits patient/family values, goals and preferences, and acknowledges uncertainty and conflict",
+        "3": "Establishes a therapeutic relationship in challenging patient encounters When prompted, reflects on biases while attempting to minimize communication barriers Adjusts communication strategies based on assessment of patient/family expectations and understanding of their health status and treatment options",
+        "4": "Easily establishes therapeutic relationships, with attention to patient/family concerns and context, regardless of complexity Independently recognizes biases while attempting to proactively minimize communication barriers Independently uses shared decision making to align patient/family values, goals, and preferences with treatment options to make a personalized care plan",
+        "5": "Mentors others in situational awareness and critical self-reflection to consistently develop positive therapeutic relationships Role models self-awareness while identifying a contextual approach to minimize communication barriers Role models shared decision making in patient/family communication including those with a high degree of uncertainty/conflict"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "ICS2",
+      "domain": "ICS",
+      "name_en": "Interprofessional and Team Communication",
+      "name_zh": "跨專業與團隊溝通",
+      "levels": {
+        "1": "Respectfully requests and/or receives a consultation request Communicates basic information with primary consulting service",
+        "2": "Clearly and concisely requests and/or responds to a consultation request Communicates basic information effectively with the health care team",
+        "3": "Checks own understanding of consultant recommendations and/or understanding of recommendations when providing consultation Adapts communication style to fit team needs and uses language that values all members of the health care team",
+        "4": "Coordinates recommendations from different members of the health care team to optimize patient care Communicates complex information effectively with the primary consulting service and other members of the health care team",
+        "5": "Role models flexible communication strategies that value input from all health care team members, resolving conflict when needed"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS3",
+      "domain": "ICS",
+      "name_en": "Communication within Health Care Systems",
+      "name_zh": "於醫療體系內之溝通",
+      "levels": {
+        "1": "Accurately and professionally records information in the patient record Safeguards patient personal health information",
+        "2": "Documents diagnostic and therapeutic reasoning in the patient record in a timely manner Appropriately selects and uses direct (e.g., telephone, in-person) and indirect (e.g., progress notes, text messages) forms of communication based on context",
+        "3": "Demonstrates advanced diagnostic and therapeutic reasoning in the patient record Demonstrates effective use of direct (e.g., telephone, in-person) and indirect (e.g., progress notes, text messages) forms of communication based on context",
+        "4": "Communicates clearly, concisely, in a timely manner, and in an organized written form, including anticipatory guidance Achieves written and/or verbal communication (patient notes, email, etc.) that serves as an example for others to follow",
+        "5": "Models feedback to improve others’ written communication Guides departmental or institutional communication around policies and procedures"
+      },
+      "applicable_in_osce": true
+    }
+  ]
+}

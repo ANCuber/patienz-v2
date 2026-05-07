@@ -1,0 +1,290 @@
+{
+  "milestone_source": "hospiceandpalliativemedicinemilestones.pdf",
+  "specialty": "Hospice and Palliative Medicine",
+  "version": "ACGME Milestones (auto-extracted from PDF)",
+  "language_levels": "en",
+  "language_names_zh": "zh-TW",
+  "disclaimer": "本檔由 PDF 自動萃取，levels 為 ACGME 英文原文；name_zh 由內建翻譯表提供，未匹配項目以英文呈現，可後續人工校對補上中譯。",
+  "subcompetencies": [
+    {
+      "id": "PC1",
+      "domain": "PC",
+      "name_en": "Comprehensive Whole Patient Assessment",
+      "name_zh": "Comprehensive Whole Patient Assessment",
+      "levels": {
+        "1": "Performs a general history and physical Performs a general psychosocial history",
+        "2": "Performs a symptom-focused history and physical Identifies potential supports and stressors for patients and their families/caregivers including psychological, spiritual, social, developmental stage, financial, and cultural factors",
+        "3": "Performs a detailed symptom assessment using developmentally appropriate symptom assessment tools Performs a detailed psychosocial and spiritual assessment using developmentally appropriate assessment tools",
+        "4": "Performs a comprehensive symptom assessment using developmentally appropriate symptom assessment tools in collaboration with the interdisciplinary team Performs a comprehensive psychosocial and spiritual assessment using developmentally appropriate assessment tools in collaboration with the interdisciplinary team",
+        "5": "Promotes comprehensive symptom assessment across care teams Promotes comprehensive psychosocial and spiritual assessment across care teams"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC2",
+      "domain": "PC",
+      "name_en": "Addressing Suffering and Distress",
+      "name_zh": "Addressing Suffering and Distress",
+      "levels": {
+        "1": "Manages common physical symptoms with basic treatment options Acknowledges psychosocial and spiritual distress Identifies palliative emergencies",
+        "2": "Manages common physical symptoms with a range of treatment options Refers to interdisciplinary team to address psychosocial and spiritual distress Initiates medical management for emergencies",
+        "3": "Manages complex physical symptoms with a comprehensive range of treatment options Collaborates with the interdisciplinary team to manage psychosocial and spiritual distress Mobilizes the interdisciplinary team and manages an emergency using comprehensive treatments consistent with patient goals",
+        "4": "Manages refractory symptoms across care settings Provides comprehensive management for complex psychosocial and spiritual distress in collaboration with community resources across care settings Consistently manages and provides anticipatory coaching across care settings",
+        "5": "Manages physical symptoms with innovative and advanced treatment options Maintains a therapeutic presence for a patient with intractable suffering and assists families and teams Participates in systems improvement opportunities to address patient care emergencies"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC3",
+      "domain": "PC",
+      "name_en": "Withholding and/or Withdrawal of Life-Sustaining Therapies (LST)",
+      "name_zh": "Withholding and/or Withdrawal of Life-Sustaining Therapies (LST)",
+      "levels": {
+        "1": "Identifies distress associated with withholding or withdrawing artificial nutrition or hydration (ANH) Identifies distress associated with withholding or withdrawing LST",
+        "2": "Identifies ethical, legal, institutional, cultural, and religious perspectives to withholding or withdrawing ANH Identifies ethical, legal, institutional, cultural, and religious perspectives to withholding or withdrawing LST",
+        "3": "Develops a care plan considering burdens and benefits of withholding or withdrawing ANH in specific clinical scenarios Manages withdrawal of LST and manages symptoms before, during, and after withdrawal or in lieu of withholding LST",
+        "4": "Facilitates shared decision making; plans for withholding or withdrawal of ANH; provides support to family/caregivers and teams Facilitates shared decision making; plans for withholding or withdrawal of LST; provides support to family/caregivers and teams",
+        "5": "Promotes best practices in withholding or withdrawal of ANH or LST at the system level"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PC4",
+      "domain": "PC",
+      "name_en": "Care of the Imminently Dying",
+      "name_zh": "Care of the Imminently Dying",
+      "levels": {
+        "1": "Identifies signs and symptoms of imminent dying Identifies patients and families/caregivers in distress",
+        "2": "Identifies risk of and manages common symptoms for the imminently dying Assesses the etiology of psychosocial and spiritual distress in patients and families/caregivers and uses the interdisciplinary team to provide basic support",
+        "3": "Manages evolving symptoms in the context of declining organ function for the imminently dying Provides anticipatory planning for patients, families/caregivers and teams",
+        "4": "Manages distressing symptoms of imminent death, including complex and refractory symptoms, across care settings Provides culturally sensitive and developmentally appropriate psychosocial and spiritual support to distressed patients and families/caregivers, and identifies families at risk for complex bereavement",
+        "5": "Promotes best practices in care of the imminently dying at the system level"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK1",
+      "domain": "MK",
+      "name_en": "Disease Trajectories and Formulation of Prognosis in Serious Illness",
+      "name_zh": "Disease Trajectories and Formulation of Prognosis in Serious Illness",
+      "levels": {
+        "1": "Recognizes common illness trajectories Identifies prognostic formulation as a key element for shared decision making",
+        "2": "Identifies illness trajectory of less common disease and recognizes prognostic uncertainty Identifies and describes prognostic factors, tools, and models",
+        "3": "Identifies potential impact of treatment on the illness trajectory Formulates a prognosis by integrating prognostic factors, tools, and models, recognizing limitations",
+        "4": "Integrates modifying factors on the illness trajectory including multi-morbidity, psychosocial factors, and functional status Facilitates consensus on prognosis in collaboration with other care providers",
+        "5": "Advances knowledge of application or prognostication in serious illness"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK2",
+      "domain": "MK",
+      "name_en": "Palliative Management of Pain Symptoms",
+      "name_zh": "Palliative Management of Pain Symptoms",
+      "levels": {
+        "1": "Lists commonly available opioid and non-opioid analgesics Lists non-pharmacologic interventions for pain Lists procedural interventions for pain",
+        "2": "Describes indications and use of opioid and non-opioid analgesics Describes indications of use of non-pharmacologic interventions for pain Describes indications for some procedural and advanced interventions to address pain",
+        "3": "Demonstrates knowledge of mechanism of action, metabolism, adverse effects, interactions, and conversions of opioid and non-opioid analgesics Describes locally available non-pharmacologic interventions of pain Describes referral criteria for locally available procedural and advanced interventions to address pain",
+        "4": "Demonstrates detailed knowledge of pharmacology of opioid and non-opioid analgesics with risks and benefits related to specific patient characteristics Demonstrates evidence-based knowledge of non-pharmacologic interventions Demonstrates detailed knowledge of appropriate procedural and advanced interventions to address pain in specific patients",
+        "5": "Advances knowledge about pain management for palliative patients"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "MK3",
+      "domain": "MK",
+      "name_en": "Palliative Management of Non-Pain Symptoms",
+      "name_zh": "Palliative Management of Non-Pain Symptoms",
+      "levels": {
+        "1": "Lists commonly available medications for non-pain symptoms Lists non-pharmacologic interventions for non-pain symptoms Lists procedural interventions for non-pain symptoms",
+        "2": "Descries indications and use of medications for non-pain symptoms Describes indications and use non-pharmacologic interventions for non-pain symptoms Describes indications for some procedural and advanced interventions to address non-pain symptoms",
+        "3": "Demonstrates knowledge of mechanism of action, metabolism, adverse effects, interactions, and conversions (if applicable) of medications for non-pain symptoms Describes locally available non-pharmacologic interventions for non-pain symptoms Describes referral criteria for locally available procedural and advanced interventions to address non-pain symptoms",
+        "4": "Demonstrates detailed knowledge of pharmacology of medications for non-pain symptoms with risks and benefits related to specific patient characteristics Demonstrates evidence-based knowledge of non-pharmacologic interventions for non-pain symptoms Demonstrates detailed knowledge of appropriate procedural and advanced interventions to address non-pain symptoms in specific patients",
+        "5": "Advances knowledge about management for non-pain symptoms for palliative patients"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP1",
+      "domain": "SBP",
+      "name_en": "Patient Safety and Quality Improvement",
+      "name_zh": "病人安全與品質改善",
+      "levels": {
+        "1": "Demonstrates knowledge of common patient safety events Demonstrates knowledge of how to report patient safety events Demonstrates knowledge of basic quality improvement methodologies and metrics",
+        "2": "Identifies system factors that lead to patient safety events Reports patient safety events through institutional reporting systems (actual or simulated) Describes local quality improvement initiatives (e.g., advance directives, hospice length stay)",
+        "3": "Participates in analysis of patient safety events (simulated or actual) Participates in disclosure of patient safety events to patients and families (simulated or actual) Participates in local quality improvement initiatives",
+        "4": "Conducts analysis of patient safety events and offers error prevention strategies (simulated or actual) Discloses patient safety events to patients and families (simulated or actual) Demonstrates the skills required to identify, develop, implement, and analyze a quality improvement project",
+        "5": "Actively engages teams and processes to modify systems to prevent patient safety events Role models or mentors others in the disclosure of patient safety events Creates, implements, and assesses quality improvement initiatives at the institutional or community level"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP2",
+      "domain": "SBP",
+      "name_en": "System Navigation for Patient-Centered Care",
+      "name_zh": "以病人為中心的系統導航",
+      "levels": {
+        "1": "Demonstrates knowledge of care coordination Identifies key elements for safe and effective transitions of care and hand-offs Demonstrates knowledge of population and community health needs",
+        "2": "Coordinates care of patients in routine clinical situations effectively using the roles of the interprofessional teams Performs safe and effective transitions of care/hand-offs in routine clinical situations Identifies specific population and community health needs for the local population",
+        "3": "Coordinates care of patients in complex clinical situations effectively incorporating patient and family goals, illness trajectory, and available resources Performs safe and effective transitions of care/hand-offs in complex clinical situations Uses local resources effectively to meet the needs of a patient population and community",
+        "4": "Role models effective coordination of patient-centered care among different disciplines and specialties Role models and advocates for safe and effective transitions of care/hand-offs within and across health care delivery systems, including outpatient settings Participates in changing and adapting practice to provide for the needs of specific populations",
+        "5": "Analyses the process of care coordination and leads in the design and implementation of improvements Improves quality of transitions of care within and across health care delivery systems to optimize patient outcomes Leads innovations and advocates for specific populations and communities with health care needs"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "SBP3",
+      "domain": "SBP",
+      "name_en": "Physician Role within Health Care Systems",
+      "name_zh": "Physician Role within Health Care Systems",
+      "levels": {
+        "1": "Identifies components of the complex health care system Describes basic health payment systems, including government, private, public, and uninsured care, as well as different practice models",
+        "2": "Describes the physician’s role and how the interrelated components of the complex health care system impact patient care Describes payment model for serious illness (e.g., hospice, palliative care, rehab, concurrent care) Describes models of hospice and palliative care practice",
+        "3": "Analyzes how personal practice affects the system (e.g., length of stay, readmission rates, prescribing patterns) Uses shared decision making in patient care, taking into consideration payment models Identifies resources for transition to independent practice",
+        "4": "Manages the interrelated components of the complex health care systems for patient- and family-centered, efficient, and effective patient care Advocates for patient care, understanding the limitations of each patient’s payment model (e.g., community resources, patient assistance resources) Describes resources for leadership and program development and effectively plans for transition to independent practice",
+        "5": "Advocates for or leads change to enhance systems for patient- and family-centered, high value, efficient, and effective patient care Participates in advocacy activities for health policy to better align payment systems with high-value care"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "SBP4",
+      "domain": "SBP",
+      "name_en": "Hospice",
+      "name_zh": "Hospice",
+      "levels": {
+        "1": "Identifies the hospice physician as having a specific clinical role in the hospice interdisciplinary team Identifies general eligibility guidelines for hospice care",
+        "2": "Describes key domains of clinical competence for hospice physicians including interdisciplinary teamwork, management of physical symptoms, and use of the hospice formulary Describes major regulatory requirements and guidelines for hospice care including eligibility, levels of care, and scope of mandated services",
+        "3": "Demonstrates clinical competence in the role of hospice physician including interdisciplinary teamwork, management of physical symptoms, and use of the hospice formulary, with supervision Demonstrates compliance with regulatory requirements and guidelines for hospice care, including documentation, visits, interdisciplinary team oversight, and institutional policy implementation, with supervision",
+        "4": "Demonstrates clinical competence in the role of hospice physician across all hospice settings Demonstrates compliance with regulatory requirements and guidelines in the role of hospice physician across all hospice settings",
+        "5": "Teaches and role models hospice care to non-hospice physicians across settings Advocates locally, regionally, or nationally for the hospice model of care"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PBLI1",
+      "domain": "PBLI",
+      "name_en": "Evidence-Based and Informed Practice",
+      "name_zh": "實證導向實踐",
+      "levels": {
+        "1": "Demonstrates how to access and use available evidence in routine patient care",
+        "2": "Articulates clinical questions and elicits patient preferences and values in order to guide evidence-based care",
+        "3": "Locates and applies the best available evidence, integrated with patient preferences and values to guide patient care",
+        "4": "Critically appraises and applies evidence, even in the face of uncertainty and conflicting evidence, to guide care tailored to the individual patient",
+        "5": "Coaches others to critically appraise and apply evidence and patient preferences and values into clinical care, and/or participates in the developing guidelines"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PBLI2",
+      "domain": "PBLI",
+      "name_en": "Reflective Practice and Commitment to Personal Growth",
+      "name_zh": "反思實踐與個人成長承諾",
+      "levels": {
+        "1": "Accepts responsibility for personal and professional development by establishing goals Identifies gap(s) between expectations and actual performance Actively seeks opportunities to improve",
+        "2": "Demonstrates openness to performance data (feedback and other input) in order to inform goals Analyzes and reflects on the factors that contribute to gap(s) between expectations and actual performance Designs and implements a learning plan, with prompting",
+        "3": "Seeks performance data episodically, with adaptability and humility Analyzes, reflects on, and institutes behavioral change(s) to narrow the gap(s) between expectations and actual performance, with guidance Independently creates and implements a learning plan",
+        "4": "Intentionally seeks performance data consistently, with adaptability and humility Independently analyzes, reflects on, and institutes behavioral change(s) to narrow the gap(s) between expectations and actual performance Uses performance data to measure the effectiveness of the learning plan and, when necessary, improves it",
+        "5": "Role models consistently seeking performance data, with adaptability and humility Coaches others on reflective practice Facilitates the design and implementation of learning plans for others"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "PROF1",
+      "domain": "PROF",
+      "name_en": "Professional Behavior and Ethical Principles",
+      "name_zh": "Professional Behavior and Ethical Principles",
+      "levels": {
+        "1": "Identifies and describes potential triggers and reporting processes for professionalism lapses Demonstrates knowledge of the ethical principles underlying informed consent, surrogate decision making, advance directives, confidentiality, error disclosure, stewardship of limited resources, and related topics",
+        "2": "Takes responsibility for own professionalism lapses Demonstrates knowledge of the ethical principles underlying hospice and palliative medicine issues",
+        "3": "Demonstrates professional behavior in complex stressful situations Analyzes and seeks help in managing and resolving complex ethical situations",
+        "4": "Recognizes and intervenes in situations that may trigger professionalism lapses in self and others Collaborates with and uses appropriate resources for managing and resolving ethical dilemmas as needed (e.g., ethics consultations, literature review, risk management/legal consultation)",
+        "5": "Coaches others when their behavior fails to meet professional expectations Identifies and seeks to address system-level factors that induce or exacerbate ethical problems or impede their resolution"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF2",
+      "domain": "PROF",
+      "name_en": "Accountability/Conscientiousness",
+      "name_zh": "責任感與謹慎態度",
+      "levels": {
+        "1": "Responds promptly to requests or reminders to complete tasks and responsibilities",
+        "2": "Performs tasks and responsibilities in a timely manner with appropriate attention to detail in routine situations",
+        "3": "Performs tasks and responsibilities in collaboration with the interdisciplinary team",
+        "4": "Addresses situations that impacts the interdisciplinary team’s ability to complete tasks and responsibilities in a timely manner",
+        "5": "Proactively implements strategies to ensure that the needs of patients, teams, and systems are met"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "PROF3",
+      "domain": "PROF",
+      "name_en": "Self-Awareness and Help Seeking",
+      "name_zh": "Self-Awareness and Help Seeking",
+      "levels": {
+        "1": "Recognizes status of personal and professional well-being, with assistance Recognizes limits in the knowledge/skills of self or team and values feedback, with assistance",
+        "2": "Independently recognizes status of personal and professional well-being Independently recognizes limits in the knowledge/skills of self or team and welcomes feedback",
+        "3": "Proposes a plan to optimize personal and professional well-being, with assistance Receives and integrates feedback into a plan to remediate or improve limits in the knowledge/skills of self or team, with assistance",
+        "4": "Independently develops a plan to optimize personal and professional well-being Independently seeks, receives, and integrates feedback and develops a plan to remediate or improve limits in the knowledge/skills of self or team",
+        "5": "Coaches others when emotional responses or limitations in knowledge/skills do not meet professional expectations"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS1",
+      "domain": "ICS",
+      "name_en": "Patient- and Family-Centered Communication",
+      "name_zh": "以病人與家屬為中心之溝通",
+      "levels": {
+        "1": "Uses language and non-verbal behavior to demonstrate respect and establish rapport Identifies common barriers to effective communication (e.g., language, disability) while accurately communicating own role within the health care system",
+        "2": "Establishes a therapeutic relationship in straightforward encounters using active listening and clear language Identifies complex barriers to effective communication (e.g., developmental stage, health literacy)",
+        "3": "Establishes a therapeutic relationship in challenging patient/family encounters Reflects on biases and modifies approach to minimize communication barriers",
+        "4": "Easily establishes therapeutic relationships, with attention to patient/family concerns and context, regardless of complexity Consistently recognizes biases while attempting to proactively minimize communication barriers",
+        "5": "Mentors others in situational awareness and critical self-reflection to consistently develop positive therapeutic relationships Mentors self-awareness practice and educates others to use a contextual approach to minimize communication barriers"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "ICS2",
+      "domain": "ICS",
+      "name_en": "Interprofessional and Team Communication",
+      "name_zh": "跨專業與團隊溝通",
+      "levels": {
+        "1": "Respectfully receives a consultation request Understands and respects the role and function of interdisciplinary team members Understands and respects the role and function of other health care teams",
+        "2": "Clearly and concisely responds to a consultation request Solicits insights from and uses language that values all interdisciplinary team members Solicits insights from other health care teams using language that values all members",
+        "3": "Checks understanding of recommendations when providing consultation Integrates contributions from the interdisciplinary team members into the care plan Integrates contributions from other health care team members into the care plan",
+        "4": "Integrates recommendations from different members of the health care team to optimize patient care Prevents and mediates conflict and distress among the interdisciplinary team members Addresses conflict and distress among other health care team members in complex patient situations",
+        "5": "Role models flexible communication strategies that value input from all health care team members, resolving conflict when needed Fosters a culture of open communication and effective teamwork within the interdisciplinary team Attends to individual and team distress and promotes resilience among other health care teams"
+      },
+      "applicable_in_osce": false
+    },
+    {
+      "id": "ICS3",
+      "domain": "ICS",
+      "name_en": "Communication with Health Care Systems",
+      "name_zh": "Communication with Health Care Systems",
+      "levels": {
+        "1": "Accurately records information in the patient record Safeguards patient personal health information Communicates through appropriate channels as required by institution policy (e.g., patient safety reports, cell phone/pager usage)",
+        "2": "Demonstrates organized diagnostic and therapeutic reasoning through notes in the patient record Demonstrates accurate, timely, and appropriate use of documentation shortcuts Documents required data in formats specified by institutional policy",
+        "3": "Concisely reports diagnostic and therapeutic reasoning and physician-patient communications in the patient record, including goals of care and advance care planning Appropriately selects direct (e.g., telephone, in-person) and indirect (e.g., progress notes, text messages) forms of communication based on context Uses appropriate channels to offer clear and constructive suggestions to improve the system",
+        "4": "Communicates clearly, concisely, in a timely manner, and in an organized written form, including anticipatory guidance Produces written or verbal communication (e.g., patient notes, e-mail, etc.) that serves as an example for others to follow Collaborates with the interdisciplinary team to initiate difficult conversations with appropriate stakeholders to improve the system",
+        "5": "Advocates for a systems approach for consistent documentation of palliative care plan within or across care settings Guides departmental or institutional communication around policies and procedures Facilitates dialogue regarding systems issues among larger community stakeholders (e.g., institution, health care system, field)"
+      },
+      "applicable_in_osce": true
+    },
+    {
+      "id": "ICS4",
+      "domain": "ICS",
+      "name_en": "Complex Communication Around Serious Illness",
+      "name_zh": "Complex Communication Around Serious Illness",
+      "levels": {
+        "1": "Identifies prognostic communication as a key element for shared decision making Identifies the need to assess patient/family expectations and understanding of their health status and treatment options",
+        "2": "Assesses the patient’s families/caregivers’ prognostic awareness and identifies preferences for receiving prognostic information Facilitates communication with patient/family by introducing stakeholders, setting the agenda, clarifying expectations, and verifying an understanding of the clinical situation",
+        "3": "Delivers basic prognostic information and attends to emotional responses of patient and families/caregivers Sensitively and compassionately delivers medical information; elicits patient/family values, goals and preferences; and acknowledges uncertainty and conflict, with guidance",
+        "4": "Tailors communication of prognosis according to disease characteristics and trajectory, patient consent, family needs, and medical uncertainty, and is able to address intense emotional response Independently uses shared decision making to align patient/family values, goals, and preferences with treatment options to make a personalized care plan in situations with a high degree of uncertainty and conflict",
+        "5": "Coaches others in the communication of prognostic information Coaches shared decision making in patient/family communication"
+      },
+      "applicable_in_osce": true
+    }
+  ]
+}

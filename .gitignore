@@ -10,4 +10,6 @@ tmp/
 .env.production
 knoledge_base/
 data/log/
+data/save/
+data/grading_results/
 *.tmp.*

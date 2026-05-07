@@ -50,9 +50,13 @@ with column[1]:
                 items_str = f"{category} - {subcategory}: {', '.join(selected_items)}"
                 create_pe_examiner_model(ss.problem, items_str)
                 with st.spinner("進行理學檢查中..."):
-                    result = ss.pe_examiner.send_message(
-                        f"Please provide the physical examination findings for the following: {items_str}"
-                    ).text
+                    strict_prompt = (
+                        f"使用者僅請求進行子類別「{subcategory}」（屬於「{category}」），"
+                        f"請僅回報此子類別對應手法的發現，不可主動列出其他手法的所見。"
+                        f"具體細項：{', '.join(selected_items)}。"
+                        f"請依系統指令的「各子類別對應的手法」嚴格遵守。"
+                    )
+                    result = ss.pe_examiner.send_message(strict_prompt).text
                     ss.pe_result.append((f"{category} - {subcategory}", result))
 
                 st.rerun()
