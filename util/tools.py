@@ -3,10 +3,10 @@ import os
 # import requests
 # import concurrent.futures
 # import pdfkit
-from googlesearch import search 
-
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+# NOTE: selenium / googlesearch are imported lazily inside getPDF() only.
+# Runtime patient/examiner grounding no longer scrapes the web, so the app no
+# longer requires these heavy/fragile dependencies to start (this also fixes
+# "公用網路無法使用此系統"). getPDF() remains as an opt-in offline tool.
 import time
 import datetime
 import base64
@@ -50,7 +50,9 @@ def init_all():
         ss.final_ddx_status = {}
 
         ss.start_time = [None for _ in range(len(const.section_name))]
-        ss.cur_show_all, ss.show_all = False, False
+        # Full conversation history is now shown by default (UX-2). show_all=True
+        # means the whole transcript is rendered in the scrollable container.
+        ss.cur_show_all, ss.show_all = True, True
 
 def init(page_id: int):
     ss.page_id = page_id
@@ -88,7 +90,10 @@ def show_time():
         st.write(f"總時間：{elapsed_time // 60}:{elapsed_time % 60:02d}")
 
 def peek_chat():
-    ss.show_all = st.checkbox("偷看對話紀錄", ss.show_all)
+    # Full history is shown by default now; this checkbox lets the student
+    # collapse the view down to just the latest exchange if they prefer.
+    compact = st.checkbox("只顯示最新對話", not ss.show_all)
+    ss.show_all = not compact
     if ss.show_all != ss.cur_show_all:
         ss.cur_show_all = ss.show_all
         st.rerun()
@@ -156,6 +161,12 @@ def getPDF(query, output_pdf):
     :param query: The search query string.
     :param output_pdf: The name of the output PDF file.
     """
+    # Lazy imports: these are optional dependencies used only by this offline tool.
+    from googlesearch import search
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.chrome.service import Service
+    from webdriver_manager.chrome import ChromeDriverManager
 
     chrome_options = Options()
     chrome_options.add_argument("--headless=new")  # Use the updated headless mode syntax
@@ -170,7 +181,10 @@ def getPDF(query, output_pdf):
         "download.prompt_for_download": False
     })
 
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(
+        service=Service(ChromeDriverManager().install()),
+        options=chrome_options,
+    )
 
     try:
         print(f"Searching for: {query}")

@@ -1,196 +1,105 @@
-"""
-Install an additional SDK for JSON schema support Google AI Python SDK
-
-$ pip install google.ai.generativelanguage
-"""
-
-import os
-import google.generativeai as genai
 import streamlit as st
-from google.ai.generativelanguage_v1beta.types import content
-
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+import util.llm as llm
 
 ss = st.session_state
 
 PROBLEM_SETTER_INSTRUCTION = "instruction_file/problem_setter_instruction.txt"
 
-# Create the model
-generation_config = {
-  "temperature": 1,
-  "top_p": 0.95,
-  "top_k": 40,
-  "max_output_tokens": 8192,
-  "response_schema": content.Schema(
-    type = content.Type.OBJECT,
-    enum = [],
-    required = ["基本資訊", "MH", "FH", "SH", "ROS", "VitalSigns", "Problem"],
-    properties = {
-      "基本資訊": content.Schema(
-        type = content.Type.OBJECT,
-        enum = [],
-        required = ["姓名", "年齡", "身高", "體重", "性別", "職業", "生日"],
-        properties = {
-          "姓名": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "年齡": content.Schema(
-            type = content.Type.INTEGER,
-          ),
-          "身高": content.Schema(
-            type = content.Type.INTEGER,
-          ),
-          "體重": content.Schema(
-            type = content.Type.NUMBER,
-          ),
-          "性別": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "生日": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "職業": content.Schema(
-            type = content.Type.STRING,
-          ),
-        },
-      ),
-      "MH": content.Schema(
-        type = content.Type.OBJECT,
-        enum = [],
-        required = ["主訴", "既往疾病", "過敏史", "藥物史", "目前病史"],
-        properties = {
-          "主訴": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "既往疾病": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "目前病史": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "過敏史": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "藥物史": content.Schema(
-            type = content.Type.STRING,
-          ),
-        },
-      ),
-      "FH": content.Schema(
-        type = content.Type.OBJECT,
-        enum = [],
-        required = ["直系血親疾病"],
-        properties = {
-          "直系血親疾病": content.Schema(
-            type = content.Type.STRING,
-          ),
-        },
-      ),
-      "SH": content.Schema(
-        type = content.Type.OBJECT,
-        enum = [],
-        required = ["生活習慣", "飲食", "菸酒", "旅遊史"],
-        properties = {
-          "生活習慣": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "飲食": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "菸酒": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "旅遊史": content.Schema(
-            type = content.Type.STRING,
-          ),
-        },
-      ),
-      "ROS": content.Schema(
-        type = content.Type.OBJECT,
-        enum = [],
-        required = ["全身性症狀", "相關系統症狀"],
-        properties = {
-          "全身性症狀": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "相關系統症狀": content.Schema(
-            type = content.Type.STRING,
-          ),
-        },
-      ),
-      "VitalSigns": content.Schema(
-        type = content.Type.OBJECT,
-        enum = [],
-        required = ["體溫", "血壓", "心跳", "呼吸次數", "血氧飽和度"],
-        properties = {
-          "體溫": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "血壓": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "心跳": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "呼吸次數": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "血氧飽和度": content.Schema(
-            type = content.Type.STRING,
-          ),
-        },
-      ),
-      "Problem": content.Schema(
-        type = content.Type.OBJECT,
-        enum = [],
-        required = ["疾病", "排除可能疾病之診斷", "確認正確疾病之診斷", "處置方式", "englishDiseaseName"],
-        properties = {
-          "疾病": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "排除可能疾病之診斷": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "確認正確疾病之診斷": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "處置方式": content.Schema(
-            type = content.Type.STRING,
-          ),
-          "englishDiseaseName": content.Schema(
-            type = content.Type.STRING,
-          ),
-        },
-      ),
+# 完整病例 JSON 結構（與原本一致；改用 google-genai 的 Schema 型別）
+_RESPONSE_SCHEMA = llm.Schema(
+    type=llm.Type.OBJECT,
+    required=["基本資訊", "MH", "FH", "SH", "ROS", "VitalSigns", "Problem"],
+    properties={
+        "基本資訊": llm.Schema(
+            type=llm.Type.OBJECT,
+            required=["姓名", "年齡", "身高", "體重", "性別", "職業", "生日"],
+            properties={
+                "姓名": llm.Schema(type=llm.Type.STRING),
+                "年齡": llm.Schema(type=llm.Type.INTEGER),
+                "身高": llm.Schema(type=llm.Type.INTEGER),
+                "體重": llm.Schema(type=llm.Type.NUMBER),
+                "性別": llm.Schema(type=llm.Type.STRING),
+                "生日": llm.Schema(type=llm.Type.STRING),
+                "職業": llm.Schema(type=llm.Type.STRING),
+            },
+        ),
+        "MH": llm.Schema(
+            type=llm.Type.OBJECT,
+            required=["主訴", "既往疾病", "過敏史", "藥物史", "目前病史"],
+            properties={
+                "主訴": llm.Schema(type=llm.Type.STRING),
+                "既往疾病": llm.Schema(type=llm.Type.STRING),
+                "目前病史": llm.Schema(type=llm.Type.STRING),
+                "過敏史": llm.Schema(type=llm.Type.STRING),
+                "藥物史": llm.Schema(type=llm.Type.STRING),
+            },
+        ),
+        "FH": llm.Schema(
+            type=llm.Type.OBJECT,
+            required=["直系血親疾病"],
+            properties={
+                "直系血親疾病": llm.Schema(type=llm.Type.STRING),
+            },
+        ),
+        "SH": llm.Schema(
+            type=llm.Type.OBJECT,
+            required=["生活習慣", "飲食", "菸酒", "旅遊史"],
+            properties={
+                "生活習慣": llm.Schema(type=llm.Type.STRING),
+                "飲食": llm.Schema(type=llm.Type.STRING),
+                "菸酒": llm.Schema(type=llm.Type.STRING),
+                "旅遊史": llm.Schema(type=llm.Type.STRING),
+            },
+        ),
+        "ROS": llm.Schema(
+            type=llm.Type.OBJECT,
+            required=["全身性症狀", "相關系統症狀"],
+            properties={
+                "全身性症狀": llm.Schema(type=llm.Type.STRING),
+                "相關系統症狀": llm.Schema(type=llm.Type.STRING),
+            },
+        ),
+        "VitalSigns": llm.Schema(
+            type=llm.Type.OBJECT,
+            required=["體溫", "血壓", "心跳", "呼吸次數", "血氧飽和度"],
+            properties={
+                "體溫": llm.Schema(type=llm.Type.STRING),
+                "血壓": llm.Schema(type=llm.Type.STRING),
+                "心跳": llm.Schema(type=llm.Type.STRING),
+                "呼吸次數": llm.Schema(type=llm.Type.STRING),
+                "血氧飽和度": llm.Schema(type=llm.Type.STRING),
+            },
+        ),
+        "Problem": llm.Schema(
+            type=llm.Type.OBJECT,
+            required=["疾病", "排除可能疾病之診斷", "確認正確疾病之診斷", "處置方式", "englishDiseaseName"],
+            properties={
+                "疾病": llm.Schema(type=llm.Type.STRING),
+                "排除可能疾病之診斷": llm.Schema(type=llm.Type.STRING),
+                "確認正確疾病之診斷": llm.Schema(type=llm.Type.STRING),
+                "處置方式": llm.Schema(type=llm.Type.STRING),
+                "englishDiseaseName": llm.Schema(type=llm.Type.STRING),
+            },
+        ),
     },
-  ),
-  "response_mime_type": "application/json",
-}
+)
 
 
 def create_problem_setter_model(problem_instruction_path=PROBLEM_SETTER_INSTRUCTION,
                                 model_name="gemini-2.5-flash-lite"):
-    with open(problem_instruction_path, 'r', encoding='utf-8') as file:
+    with open(problem_instruction_path, "r", encoding="utf-8") as file:
         problem_setter_instruction = file.read()
 
-    ss.problem_setter_model = genai.GenerativeModel(
-        model_name=model_name,
-        generation_config=generation_config,
+    config = llm.build_config(
         system_instruction=problem_setter_instruction,
+        temperature=1,
+        top_p=0.95,
+        top_k=40,
+        max_output_tokens=8192,
+        response_schema=_RESPONSE_SCHEMA,
+        response_mime_type="application/json",
+        thinking_budget=llm.THINK_LIGHT,
     )
 
-    ss.problem_setter = ss.problem_setter_model.start_chat() # history=[
-#         {
-#             "role": "user",
-#             "parts": ["請回答以下問題，以協助醫生診斷。",]
-#         },
-#         {
-#             "role": "model",
-#             "parts": ["請提供您的基本資訊。",]
-#         },
-#         {
-#             "role": "user",
-#             "parts": [],
-#         }
-#     ])
-
+    ss.problem_setter = llm.start_chat(model_name, config)
+    ss.problem_setter_model = True  # sentinel: presence gates re-creation in config page

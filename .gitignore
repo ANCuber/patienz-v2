@@ -13,3 +13,5 @@ data/log/
 data/save/
 data/grading_results/
 *.tmp.*
+.claude/
+test_feeback/

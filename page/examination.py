@@ -5,7 +5,7 @@ from model.lab_advisor import request_lab_feedback
 import util.dialog as dialog
 import util.tools as util
 import util.constants as const
-from util.reference_parser import parse_reference, is_abnormal, is_critical
+from util.reference_parser import parse_reference, is_abnormal, is_critical, is_implausible
 import csv
 import pandas as pd
 import json
@@ -26,6 +26,10 @@ util.note()
 
 # 文字型檢查（使用 text examiner 生成敘述性結果）
 TEXT_TYPE_EXAMS = {"X光", "超音波", "CT", "MRI", "其他影像", "心電圖", "功能檢查", "內視鏡"}
+
+# 檢查單（exam cart）：累積跨子類別的待開立檢查細項
+if "exam_cart" not in ss:
+    ss.exam_cart = []
 
 # 自訂 CSS：異常值標記樣式
 st.markdown("""
@@ -52,6 +56,33 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+# examination.csv 欄位順序（與 sheet[0] 一致）：英文名、中文名、參考值、單位
+CSV_HEADER = ["englishName", "chineseName", "referenceValue", "unit"]
+
+
+def parse_text_result(result_text):
+    """解析文字型檢查報告結尾的機器可讀標記 [NORMAL]/[ABNORMAL]。
+
+    回傳 (顯示用報告文字, has_abnormal)。
+    - 找到 [ABNORMAL] → has_abnormal = True
+    - 找到 [NORMAL]   → has_abnormal = False
+    - 兩者皆無（模型未遵守）→ 保守起見視為異常 True
+    顯示文字會移除該標記行。
+    """
+    text = result_text or ""
+    has_abnormal = True
+    upper = text.upper()
+    if "[ABNORMAL]" in upper:
+        has_abnormal = True
+    elif "[NORMAL]" in upper:
+        has_abnormal = False
+    # 移除標記（不分大小寫）後回傳乾淨報告
+    import re as _re
+    cleaned = _re.sub(r'\[\s*(NORMAL|ABNORMAL)\s*\]', '', text, flags=_re.IGNORECASE)
+    cleaned = cleaned.rstrip()
+    return cleaned, has_abnormal
+
+
 def process_examination_result(full_items, result_json):
     """處理數值型檢查結果，加入異常值標記。"""
     examination_result = json.loads(result_json)
@@ -69,6 +100,11 @@ def process_examination_result(full_items, result_json):
     has_abnormal = False
 
     for data in examination_result['value_type_item']:
+        # 合併送單時單一 examiner 回傳會涵蓋多個 subcategory 的項目；
+        # 此處僅處理屬於當前 subcategory（full_items_dict）的項目，其餘安靜略過，
+        # 避免以例外驅動過濾而產生誤導性的 [Error processing] 日誌。
+        if data.get('englishName') not in full_items_dict:
+            continue
         try:
             item_info = full_items_dict[data['englishName']]
             ref_str = item_info['reference_value']
@@ -78,6 +114,28 @@ def process_examination_result(full_items, result_json):
             ref_parsed = parse_reference(ref_str)
             abnormal, direction = is_abnormal(value_str, ref_parsed, gender)
             critical = is_critical(value_str, data['englishName'])
+            implausible = is_implausible(value_str, data['englishName'])
+
+            # 偵測到生理上不可能的值：明顯標記並記錄（最小變體：偵測、標記、記錄）
+            if implausible:
+                has_abnormal = True
+                warn_msg = (
+                    f"[EXAM] implausible value detected: {data['englishName']}="
+                    f"{value_str} (unit={item_info['unit']}, ref={ref_str})"
+                )
+                print(warn_msg)
+                try:
+                    util.record(ss.log, warn_msg)
+                except Exception:
+                    pass
+                rows.append({
+                    "檢驗項目": data['englishName'],
+                    "中文名稱": item_info['chinese_name'],
+                    "參考值": ref_str,
+                    "檢測值": f'<span class="critical">⚠ {value_str}（數值異常，疑似生成錯誤）</span>',
+                    "單位": item_info['unit'],
+                })
+                continue
 
             # 格式化檢測值顯示
             if critical:
@@ -136,6 +194,35 @@ with column[1]:
 
         category = st.radio("檢查領域", examination_choice.keys(), horizontal=True)
 
+        # 自由輸入逃生口：標準清單未涵蓋的檢查（如 RF、Creatinine、Stool OB、KUB、
+        # 四肢 X 光…）仍可開立，避免「想做的檢查沒有」導致案例無法收斂。
+        with st.expander("🔎 找不到想做的檢查？自由輸入其他檢查／影像", expanded=False):
+            custom_name = st.text_input(
+                "檢查名稱（中文或英文皆可）",
+                key="custom_exam_name",
+                placeholder="例如：Rheumatoid factor (RF)、Stool occult blood、手部 X 光",
+            )
+            if st.button("加入自訂檢查", use_container_width=True, key="add_custom_exam"):
+                name = (custom_name or "").strip()
+                if not name:
+                    st.warning("請輸入檢查名稱")
+                elif any(c["eng"] == name for c in ss.exam_cart):
+                    st.info("此自訂檢查已在檢查單中")
+                else:
+                    ss.exam_cart.append({
+                        "category": "自訂",
+                        "subcategory": "其他檢查",
+                        "display": name,
+                        "eng": name,
+                        "chinese": name,
+                        "reference": "",
+                        "unit": "",
+                        "result_type": "text",  # 以敘述方式生成結果
+                    })
+                    st.success(f"已加入自訂檢查：{name}")
+                    st.rerun()
+            st.caption("自訂檢查結果以敘述方式生成，協助你在標準清單未涵蓋時仍能完成必要檢查。")
+
         if category != None:
 
             examination = st.radio("檢查項目", examination_choice[category].keys(), horizontal=True)
@@ -167,6 +254,53 @@ with column[1]:
 
                 # 轉換回原始名稱
                 item_names = [marked_to_original[m] for m in item_names_marked]
+
+                if st.button("加入檢查單", use_container_width=True):
+                    if not item_names:
+                        st.warning("請先選擇至少一個檢查細項")
+                    else:
+                        added = 0
+                        for item in item_names:
+                            row = full_options[item]
+                            eng = row[0]
+                            # 跨子類別累積；避免在檢查單內重複加入同一細項
+                            if any(c["eng"] == eng for c in ss.exam_cart):
+                                continue
+                            ss.exam_cart.append({
+                                "category": category,
+                                "subcategory": examination,
+                                "display": item,
+                                "eng": eng,
+                                "chinese": row[1],
+                                "reference": row[2] if len(row) > 2 else "",
+                                "unit": row[3] if len(row) > 3 else "",
+                                "result_type": "text" if examination in TEXT_TYPE_EXAMS else "value",
+                            })
+                            added += 1
+                        if added:
+                            st.success(f"已加入 {added} 項檢查至檢查單")
+                            st.rerun()
+                        else:
+                            st.info("所選細項皆已在檢查單中")
+
+    def render_cart():
+        """渲染檢查單內容，提供逐項移除與清空功能。"""
+        with selection_container:
+            if not ss.exam_cart:
+                return
+            st.subheader("檢查單")
+            with st.container(border=True):
+                for idx, c in enumerate(ss.exam_cart):
+                    cols = st.columns([8, 2])
+                    with cols[0]:
+                        st.markdown(f"**{c['chinese']}** （{c['subcategory']}）`{c['eng']}`")
+                    with cols[1]:
+                        if st.button("移除", key=f"cart_rm_{idx}", use_container_width=True):
+                            ss.exam_cart.pop(idx)
+                            st.rerun()
+                if st.button("清空檢查單", use_container_width=True):
+                    ss.exam_cart = []
+                    st.rerun()
 
     def render_result():
         with result_container:
@@ -217,69 +351,106 @@ with column[1]:
         st.container(height=50, border=False)
 
         if st.button("開始檢查", use_container_width=True) and util.check_progress():
-            # 檢查重複開立
-            duplicate_items = []
-            new_items = []
-            for item in item_names:
-                eng_name = full_options[item][0]
-                if eng_name in ss.ordered_exam_set:
-                    duplicate_items.append(item)
-                else:
-                    new_items.append(item)
-
-            if duplicate_items and not ss.get("confirm_duplicate", False):
-                st.warning(f"以下檢查已做過：{'、'.join(duplicate_items)}。如需重複開立，請再次點擊「開始檢查」。")
-                ss.confirm_duplicate = True
+            if not ss.exam_cart:
+                st.warning("檢查單為空，請先以「加入檢查單」選擇檢查項目")
             else:
-                ss.confirm_duplicate = False
+                # 檢查重複開立（跨整個檢查單）
+                duplicate_items = [c["chinese"] for c in ss.exam_cart if c["eng"] in ss.ordered_exam_set]
 
-                # 記錄已開立項目
-                for item in item_names:
-                    ss.ordered_exam_set.add(full_options[item][0])
-
-                full_items = [sheet[0]]
-                full_items += [full_options[item] for item in item_names]
-
-                items_english = [full_options[item][0] for item in item_names]
-                items_chinese = [full_options[item][1] for item in item_names]
-
-                if examination in TEXT_TYPE_EXAMS:
-                    create_text_examiner_model(ss.problem, ", ".join([item[0] for item in full_items]))
-                    with st.spinner("進行檢查中..."):
-                        result_text = ss.examiner.send_message(
-                            f"Please provide the examination findings for the following: {full_items}"
-                        ).text
-                        result_html = result_text
-                        has_abnormal = True  # 文字型預設標記
-
-                    ss.examination_result.append(("、".join(items_chinese), result_html))
-
+                if duplicate_items and not ss.get("confirm_duplicate", False):
+                    st.warning(f"以下檢查已做過：{'、'.join(duplicate_items)}。如需重複開立，請再次點擊「開始檢查」。")
+                    ss.confirm_duplicate = True
                 else:
-                    create_value_examiner_model(ss.problem, ", ".join([item[0] for item in full_items]))
-                    with st.spinner("進行檢查中..."):
-                        raw_result = ss.examiner.send_message(f"{full_items}").text
-                        result_html, has_abnormal = process_examination_result(full_items, raw_result)
+                    ss.confirm_duplicate = False
 
-                    ss.examination_result.append((examination, result_html))
+                    # 記錄已開立項目
+                    for c in ss.exam_cart:
+                        ss.ordered_exam_set.add(c["eng"])
 
-                # 記錄到 examination_history
-                ss.examination_history.append({
-                    "order_number": len(ss.examination_history) + 1,
-                    "category": category,
-                    "subcategory": examination,
-                    "items": items_english,
-                    "items_chinese": items_chinese,
-                    "result_type": "text" if examination in TEXT_TYPE_EXAMS else "value",
-                    "result_html": result_html,
-                    "has_abnormal": has_abnormal,
-                    "interpretation": "",
-                })
+                    value_cart = [c for c in ss.exam_cart if c["result_type"] == "value"]
+                    text_cart = [c for c in ss.exam_cart if c["result_type"] == "text"]
 
-                st.rerun()
+                    # === 數值型：合併成單一 examiner 呼叫以節省 token ===
+                    if value_cart:
+                        create_value_examiner_model(ss.problem)
+                        # full_items 為 [header, row, row, ...]；row = [eng, chinese, ref, unit]
+                        merged_full_items = [CSV_HEADER] + [
+                            [c["eng"], c["chinese"], c["reference"], c["unit"]] for c in value_cart
+                        ]
+                        with st.spinner("進行檢查中..."):
+                            raw_result = ss.value_examiner.send_message(
+                                f"請為以下檢驗項目生成檢驗結果（每項皆須輸出）：{merged_full_items}"
+                            ).text
+
+                        # 依子類別分組，逐組產生一筆 examination_history（沿用既有寫入邏輯）
+                        seen_order = []
+                        groups = {}
+                        for c in value_cart:
+                            if c["subcategory"] not in groups:
+                                groups[c["subcategory"]] = []
+                                seen_order.append(c["subcategory"])
+                            groups[c["subcategory"]].append(c)
+
+                        for subcat in seen_order:
+                            items = groups[subcat]
+                            sub_full_items = [CSV_HEADER] + [
+                                [c["eng"], c["chinese"], c["reference"], c["unit"]] for c in items
+                            ]
+                            result_html, has_abnormal = process_examination_result(sub_full_items, raw_result)
+                            ss.examination_result.append((subcat, result_html))
+                            ss.examination_history.append({
+                                "order_number": len(ss.examination_history) + 1,
+                                "category": items[0]["category"],
+                                "subcategory": subcat,
+                                "items": [c["eng"] for c in items],
+                                "items_chinese": [c["chinese"] for c in items],
+                                "result_type": "value",
+                                "result_html": result_html,
+                                "has_abnormal": has_abnormal,
+                                "interpretation": "",
+                            })
+
+                    # === 文字型：每個子類別各自一次 text examiner 呼叫 ===
+                    if text_cart:
+                        create_text_examiner_model(ss.problem)
+                        seen_order = []
+                        groups = {}
+                        for c in text_cart:
+                            if c["subcategory"] not in groups:
+                                groups[c["subcategory"]] = []
+                                seen_order.append(c["subcategory"])
+                            groups[c["subcategory"]].append(c)
+
+                        for subcat in seen_order:
+                            items = groups[subcat]
+                            items_chinese = [c["chinese"] for c in items]
+                            item_payload = [[c["eng"], c["chinese"]] for c in items]
+                            with st.spinner("進行檢查中..."):
+                                result_text = ss.text_examiner.send_message(
+                                    f"Please provide the examination findings for the following ({subcat}): {item_payload}"
+                                ).text
+                            result_html, has_abnormal = parse_text_result(result_text)
+                            ss.examination_result.append(("、".join(items_chinese), result_html))
+                            ss.examination_history.append({
+                                "order_number": len(ss.examination_history) + 1,
+                                "category": items[0]["category"],
+                                "subcategory": subcat,
+                                "items": [c["eng"] for c in items],
+                                "items_chinese": items_chinese,
+                                "result_type": "text",
+                                "result_html": result_html,
+                                "has_abnormal": has_abnormal,
+                                "interpretation": "",
+                            })
+
+                    # 清空檢查單
+                    ss.exam_cart = []
+                    st.rerun()
 
         if st.button("完成檢查", use_container_width=True) and util.check_progress():
             util.next_page()
 
+    render_cart()
     render_result()
     render_interpretation()
 

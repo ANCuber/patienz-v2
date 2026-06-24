@@ -4,6 +4,7 @@ import util.dialog as dialog
 import util.tools as util
 import util.save_load as save_load
 import util.constants as const
+import util.demographics as demographics
 import os
 import random
 import json
@@ -59,6 +60,8 @@ def serialize_config(cfg):
         clinical.append(f"難度：{cfg['難度']}")
     if cfg.get("就診情境"):
         clinical.append(f"就診情境：{cfg['就診情境']}")
+    if cfg.get("看診時間"):
+        clinical.append(f"看診時間：{cfg['看診時間']}")
     if cfg.get("急性度"):
         clinical.append(f"急性度：{cfg['急性度']}")
     if cfg.get("共病程度"):
@@ -92,6 +95,7 @@ config = {
     "主訴症狀": None,
     "難度": None,
     "就診情境": None,
+    "看診時間": None,
     "急性度": None,
     "共病程度": None,
     "主訴提示風格": None,
@@ -136,6 +140,28 @@ with major_column[1]:
         st.caption(
             f"預期 Level：**{chosen['level_low']}–{chosen['level_high']}** ｜ {chosen['description']}"
         )
+
+    # === 評分模式（從一開始分流，避免每次都跑兩套評分而拉長等待） ===
+    GRADING_MODE_OPTIONS = {
+        "OSCE + ACGME（完整）": "both",
+        "僅 OSCE（較快）": "osce",
+        "僅 ACGME": "acgme",
+    }
+    _gm_labels = list(GRADING_MODE_OPTIONS.keys())
+    _gm_default = 0
+    if ss.get("grading_mode"):
+        _gm_default = next(
+            (i for i, lab in enumerate(_gm_labels) if GRADING_MODE_OPTIONS[lab] == ss.grading_mode),
+            0,
+        )
+    _gm_label = st.selectbox(
+        "評分模式",
+        _gm_labels,
+        index=_gm_default,
+        help="OSCE 為逐項配分的考官評分；ACGME 為六大核心能力 Milestone 評級。"
+             "只選一套可顯著縮短評分等待時間。",
+    )
+    ss.grading_mode = GRADING_MODE_OPTIONS[_gm_label]
 
     ss.config_type = st.radio("選擇設定方式", ["模板題", "輸入參數", "題目存檔", "進度存檔"], horizontal=True)
 
@@ -187,6 +213,15 @@ with major_column[1]:
             )
             config["指定鑑別診斷清單"] = parse_lines(ddx_text) or None
 
+        st.subheader("就診情境")
+        setting_column = st.columns([10, 1, 10])
+        with setting_column[0]:
+            setting = st.selectbox("就診情境", OPTS["setting_options"])
+            config["就診情境"] = setting if setting != "隨機" else None
+        with setting_column[2]:
+            visit_time = st.selectbox("看診時間", OPTS["visit_time_options"])
+            config["看診時間"] = visit_time if visit_time != "隨機" else None
+
         with st.expander("進階選項（選填）", expanded=False):
             adv_col_1 = st.columns([10, 1, 10])
             with adv_col_1[0]:
@@ -198,9 +233,6 @@ with major_column[1]:
 
             adv_col_2 = st.columns([10, 1, 10])
             with adv_col_2[0]:
-                setting = st.selectbox("就診情境", OPTS["setting_options"])
-                config["就診情境"] = setting if setting != "隨機" else None
-            with adv_col_2[2]:
                 acuity = st.selectbox("急性度", OPTS["acuity_options"])
                 config["急性度"] = acuity if acuity != "隨機" else None
 
@@ -281,9 +313,11 @@ if "user_config" in ss and "problem" not in ss:
         create_problem_setter_model()
 
     config_str = serialize_config(ss.user_config)
+    # 看診時間已由 serialize_config 寫入【臨床情境】，此處不再重複注入。
     prompt = (
         f"請利用以下資訊幫我出題：\n"
-        f"今日日期：{datetime.datetime.now().strftime('%Y/%m')} （年/月）\n\n"
+        f"今日日期：{datetime.datetime.now().strftime('%Y/%m')} （年/月）\n"
+        f"\n"
         f"{config_str}"
     )
     _t0 = time.perf_counter()
@@ -292,6 +326,7 @@ if "user_config" in ss and "problem" not in ss:
     util.record(ss.log, f"[PERF] case_gen={_dt:.2f}s")
 
     ss.data = json.loads(ss.problem)
+    demographics.validate_demographics(ss.data)
 
     # Validate englishDiseaseName (used downstream for PDF lookup); fallback to flash if invalid
     eng_name = ss.data.get("Problem", {}).get("englishDiseaseName")
@@ -305,6 +340,7 @@ if "user_config" in ss and "problem" not in ss:
         _dt = time.perf_counter() - _t0
         util.record(ss.log, f"[PERF] case_gen_fallback={_dt:.2f}s")
         ss.data = json.loads(ss.problem)
+        demographics.validate_demographics(ss.data)
 
     print(prompt)
     util.record(ss.log, prompt)
