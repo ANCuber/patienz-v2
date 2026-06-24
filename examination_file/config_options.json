@@ -24,6 +24,7 @@
   ],
   "difficulty_options": ["簡單", "中等", "困難"],
   "setting_options": ["隨機", "門診 OPD", "急診 ER", "住院 Ward", "健檢"],
+  "visit_time_options": ["隨機", "上午", "下午", "傍晚", "夜間", "凌晨"],
   "acuity_options": ["隨機", "急性", "亞急性", "慢性"],
   "comorbidity_options": ["健康", "一般", "多重共病"],
   "complaint_style_options": ["隨機", "典型主訴", "非典型主訴", "模糊主訴"],

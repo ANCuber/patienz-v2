@@ -47,8 +47,7 @@ with column[1]:
             if not selected_items:
                 st.warning("請至少選擇一個檢查細項")
             else:
-                items_str = f"{category} - {subcategory}: {', '.join(selected_items)}"
-                create_pe_examiner_model(ss.problem, items_str)
+                create_pe_examiner_model(ss.problem)
                 with st.spinner("進行理學檢查中..."):
                     strict_prompt = (
                         f"使用者僅請求進行子類別「{subcategory}」（屬於「{category}」），"
