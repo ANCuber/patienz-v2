@@ -163,6 +163,24 @@ with major_column[1]:
     )
     ss.grading_mode = GRADING_MODE_OPTIONS[_gm_label]
 
+    # === 病人個性／情緒（訓練不同應對方式；不影響病情事實） ===
+    persona_options = OPTS.get("patient_persona_options", [])
+    if persona_options:
+        _persona_labels = [p["label"] for p in persona_options]
+        _persona_default = 0
+        if ss.get("patient_persona"):
+            _persona_default = next(
+                (i for i, p in enumerate(persona_options) if p["id"] == ss.patient_persona.get("id")),
+                0,
+            )
+        _persona_label = st.selectbox(
+            "病人個性／情緒（選填）",
+            _persona_labels,
+            index=_persona_default,
+            help="讓虛擬病人表現出不同個性（焦慮、不耐煩、話少…），訓練不同的醫病溝通應對；病情事實不受影響。",
+        )
+        ss.patient_persona = next(p for p in persona_options if p["label"] == _persona_label)
+
     ss.config_type = st.radio("選擇設定方式", ["模板題", "輸入參數", "題目存檔", "進度存檔"], horizontal=True)
 
     if ss.config_type == "輸入參數":

@@ -117,4 +117,25 @@ git checkout -- util/ model/ page/ requirements.txt
 ```
 （新增檔 `util/llm.py`、`util/grading_*.py`、`util/demographics.py`、`tests/` 可直接刪除。）
 
-**建議下一步（P1）**：Enter/Ctrl+Enter 送出、檢查組套一鍵全選、真實影像庫（PTB-XL/NIH CXR）導入。
+---
+
+## E. P1 批次（已完成，接續於同一分支/PR）
+
+| # | 升級 | 對應回饋／會議 | 檔案 |
+|---|---|---|---|
+| §9-A | **評分表重用快取** | 「scheme consistent」「存 grading scheme 資料庫，相似就拿」＋加速 | `util/mark_scheme_cache.py`、`page/grade.py` |
+| §3-A | **一鍵組套（檢查套餐）** | 「要一個一個點/可以設定組套」「CBC/DC 不應逐項點」 | `util/exam_panels.py`、`examination_file/exam_panels.json`、`page/examination.py` |
+| §5-A | **病人不再「只說不舒服而拒答」** | 「持續顯示不舒服無法回答」 | `instruction_file/patient_instruction.txt` |
+| §5-B | **可選病人個性／情緒** | 「設定個性機車一點／焦慮的病人」 | `config_options.json`、`page/config.py`、`model/patient.py` |
+
+**已確認既有 prompt 已涵蓋、未重複實作**：§4-A 行為即證據、§4-B 語意等價（DMARD≡DMARDs、x光≡x-ray）、§4-C 不重複計分、§5 病人擬真（繁中／不主動揭露／不背 LQQOPPERA／情緒語氣）。
+
+**驗證**：新增 `tests/test_mark_scheme_cache.py`、`tests/test_exam_panels.py` 及 persona 測試；全套 **33 passed**；變更檔 py_compile 通過。已對本批做對抗式審查（14 項 → 保留 3 項），修復 2 項真實 robustness（快取原子寫入、版本失效），並具理由駁回 1 項 high 誤報（評分表只依「病例」非「學生表現」，故重用正確；把病例內容塞進 key 反而會破壞 §9-A 的跨病人重用）。
+
+### P1 手動驗證
+- **組套**：檢查區 →「⚡ 一鍵組套」→ 點「常規入院抽血」→ 檢查單一次加入多項。
+- **重用快取**：同一疾病/身份/難度連續出兩題並評分；第二題 `data/log/<SID>.txt` 應出現 `[PERF] mark_scheme=…s cache=True`（命中、幾乎 0 秒）。改 `instruction_file/mark_scheme_setter_instruction.txt` 後想強制重生，可刪 `data/mark_scheme_cache/` 或將 `SCHEME_CACHE_VERSION` +1。
+- **病人個性**：設定區選「焦慮緊張」→ 問診時病人語氣明顯焦慮、會追問嚴重性；病情事實不變。
+- **不舒服不再卡死**：問診時病人即使表達不適也會回答問題，不再只回「我很不舒服」。
+
+**建議下一步（P1 剩餘 / P2）**：§1-C Gemini context caching（再降延遲，需金鑰實測）、§7 流程彈性（問診/理學/檢查自由交錯）、§6 真實影像庫（PTB-XL/NIH CXR，需取得資料集授權）、Enter 送出已由 `st.chat_input` 內建。

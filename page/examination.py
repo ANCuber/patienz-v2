@@ -5,6 +5,7 @@ from model.lab_advisor import request_lab_feedback
 import util.dialog as dialog
 import util.tools as util
 import util.constants as const
+import util.exam_panels as exam_panels
 from util.reference_parser import parse_reference, is_abnormal, is_critical, is_implausible
 import csv
 import pandas as pd
@@ -193,6 +194,32 @@ with column[1]:
             examination_choice = json.load(f)
 
         category = st.radio("檢查領域", examination_choice.keys(), horizontal=True)
+
+        # 一鍵組套：常見檢查套餐，一次加入多項，免去逐項點選。
+        with st.expander("⚡ 一鍵組套（常見檢查套餐）", expanded=False):
+            try:
+                with open("examination_file/exam_panels.json", "r", encoding="utf-8") as pf:
+                    _panels = json.load(pf)
+            except (OSError, ValueError):
+                _panels = {}
+            with open("examination_file/examination.csv", "r", encoding="utf-8") as cf:
+                _panel_csv_rows = list(csv.reader(cf))
+            _pcols = st.columns(2)
+            for _pi, (_pname, _psubs) in enumerate(_panels.items()):
+                with _pcols[_pi % 2]:
+                    if st.button(f"＋ {_pname}", key=f"panel_{_pi}", use_container_width=True):
+                        _entries = exam_panels.expand_panels(
+                            _psubs, examination_choice, _panel_csv_rows, TEXT_TYPE_EXAMS
+                        )
+                        _added = 0
+                        for _e in _entries:
+                            if any(c["eng"] == _e["eng"] for c in ss.exam_cart):
+                                continue
+                            ss.exam_cart.append(_e)
+                            _added += 1
+                        st.success(f"已加入 {_added} 項（{_pname}）")
+                        st.rerun()
+            st.caption("組套會將該套餐涵蓋的檢查項目一次加入檢查單，可再於下方調整或移除。")
 
         # 自由輸入逃生口：標準清單未涵蓋的檢查（如 RF、Creatinine、Stool OB、KUB、
         # 四肢 X 光…）仍可開立，避免「想做的檢查沒有」導致案例無法收斂。

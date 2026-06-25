@@ -36,6 +36,7 @@ SAVE_KEYS = [
     "config_type",
     "acgme_learner_role",
     "grading_mode",
+    "patient_persona",
 ]
 
 

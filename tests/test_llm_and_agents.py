@@ -95,6 +95,18 @@ def test_pediatric_note_added_for_minor(monkeypatch):
     assert patient._pediatric_note() == ""
 
 
+def test_persona_note_applied_when_set():
+    import model.patient as patient
+    st.session_state.patient_persona = {"id": "anxious", "note": "你非常焦慮、容易往壞處想。"}
+    note = patient._persona_note()
+    assert "焦慮" in note
+    # default / empty persona adds nothing
+    st.session_state.patient_persona = {"id": "default", "note": ""}
+    assert patient._persona_note() == ""
+    del st.session_state["patient_persona"]
+    assert patient._persona_note() == ""
+
+
 def test_value_examiner_thinking_off_and_schema(monkeypatch):
     import model.examiner as examiner
     captured = {}

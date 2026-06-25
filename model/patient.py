@@ -25,6 +25,20 @@ def _pediatric_note() -> str:
     return ""
 
 
+def _persona_note() -> str:
+    """Inject a configurable personality/emotion (anxious, irritable, taciturn…)
+    so students can practice different communication styles. Personality affects
+    tone/interaction only — the clinical facts still follow the case JSON."""
+    persona = ss.get("patient_persona")
+    note = persona.get("note") if isinstance(persona, dict) else None
+    if note:
+        return (
+            f"\n\n## 病人個性／情緒設定\n{note}\n"
+            f"（此設定只影響你的語氣與互動風格；你的病情事實仍須與上方病情描述完全一致。）"
+        )
+    return ""
+
+
 def create_patient_model(problem: str, patient_instruction_path=PATIENT_INSTRUCTION, prior_messages=None):
     """Build (and cache) the virtual-patient chat.
 
@@ -39,7 +53,7 @@ def create_patient_model(problem: str, patient_instruction_path=PATIENT_INSTRUCT
         with open(patient_instruction_path, "r", encoding="utf-8") as file:
             patient_instruction = file.read()
 
-        system_instruction = f"{patient_instruction}{problem}{_pediatric_note()}"
+        system_instruction = f"{patient_instruction}{problem}{_pediatric_note()}{_persona_note()}"
 
         config = llm.build_config(
             system_instruction=system_instruction,

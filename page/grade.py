@@ -13,6 +13,7 @@ import util.acgme_selector as acgme_selector
 import util.acgme_aggregator as acgme_aggregator
 import util.grading_pipeline as grading_pipeline
 import util.grading_normalize as grading_normalize
+import util.mark_scheme_cache as mark_scheme_cache
 import util.save_load as save_load
 import datetime
 import json
@@ -505,11 +506,20 @@ if (need_osce or need_acgme) and "problem" in ss:
     student_data = collect_student_data()
     patient_setup_str = f"## 虛擬病人設定\n{json.dumps(ss.data, ensure_ascii=False, indent=2)}"
     mark_scheme_prompt = f"請根據以下虛擬病人設定，設計一份OSCE評分表：\n\n{patient_setup_str}"
+    # 評分表重用簽章（疾病+身份+教學重點+難度）：相似案例直接重用，省一次 LLM 呼叫並提升一致性。
+    ms_sig, _ms_raw = mark_scheme_cache.signature(
+        ss.data, ss.get("acgme_learner_role"), ss.get("user_config")
+    )
 
     def _task_osce():
-        ms_model = create_mark_scheme_setter_model()
+        def _gen_mark_scheme():
+            ms_model = create_mark_scheme_setter_model()
+            txt = _grading_response_text(ms_model.start_chat().send_message(mark_scheme_prompt))
+            json.loads(txt)  # validate before caching; raise on malformed output
+            return txt
+
         _t0 = time.perf_counter()
-        ms_text = _grading_response_text(ms_model.start_chat().send_message(mark_scheme_prompt))
+        ms_text, ms_from_cache = mark_scheme_cache.get_or_create(ms_sig, _gen_mark_scheme)
         t_ms = time.perf_counter() - _t0
         g_model = create_grader_v2_model(ms_text)
         _t1 = time.perf_counter()
@@ -518,7 +528,7 @@ if (need_osce or need_acgme) and "problem" in ss:
                 f"請根據評分表，對以下學生的臨床表現進行逐項評分：\n\n{student_data}"
             )
         )
-        return {"mark_scheme": ms_text, "grading": g_text,
+        return {"mark_scheme": ms_text, "grading": g_text, "ms_from_cache": ms_from_cache,
                 "t_ms": t_ms, "t_g": time.perf_counter() - _t1}
 
     # ACGME milestone 選擇為純檔案 IO，於主執行緒先做好。
@@ -572,7 +582,7 @@ if (need_osce or need_acgme) and "problem" in ss:
                 st.stop()
             ss.mark_scheme_raw = r["mark_scheme"]
             ss.grader_v2_response = r["grading"]
-            util.record(ss.log, f"[PERF] mark_scheme={r['t_ms']:.2f}s")
+            util.record(ss.log, f"[PERF] mark_scheme={r['t_ms']:.2f}s cache={r.get('ms_from_cache')}")
             util.record(ss.log, f"[PERF] grader_v2={r['t_g']:.2f}s")
             util.record(ss.log, f"[V2] Mark Scheme: {ss.mark_scheme_raw}")
             util.record(ss.log, f"[V2] Grading Result: {ss.grader_v2_response}")
