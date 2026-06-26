@@ -37,6 +37,7 @@ SAVE_KEYS = [
     "acgme_learner_role",
     "grading_mode",
     "patient_persona",
+    "free_navigation",
 ]
 
 

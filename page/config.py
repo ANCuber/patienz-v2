@@ -181,6 +181,14 @@ with major_column[1]:
         )
         ss.patient_persona = next(p for p in persona_options if p["label"] == _persona_label)
 
+    # === 流程模式（§7 流程彈性） ===
+    ss.free_navigation = st.checkbox(
+        "自由探索模式（可自由切換問診／理學／檢查等階段，不強制順序）",
+        value=ss.get("free_navigation", False),
+        help="開啟後可在各看診階段間自由前進／返回，貼近真實臨床的交錯流程（如先做篩檢、檢查後再補問診）。"
+             "關閉則維持標準 OSCE 逐步順序，評分會評估你提出鑑別診斷的時機。",
+    )
+
     ss.config_type = st.radio("選擇設定方式", ["模板題", "輸入參數", "題目存檔", "進度存檔"], horizontal=True)
 
     if ss.config_type == "輸入參數":

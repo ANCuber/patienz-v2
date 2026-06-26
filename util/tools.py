@@ -14,6 +14,7 @@ import base64
 import streamlit as st
 import util.constants as const
 import util.dialog as dialog
+import util.navigation as navigation
 import util.save_load as save_load
 
 ss = st.session_state 
@@ -48,6 +49,11 @@ def init_all():
         ss.preliminary_ddx_locked = False
         ss.comorbidities = ""
         ss.final_ddx_status = {}
+        # Defaults so grading degrades gracefully if a free-exploration student
+        # reaches 評分 without visiting 診斷 (diagnosis.py normally assigns these).
+        ss.diagnosis = ""
+        ss.ddx = ""
+        ss.treatment = ""
 
         ss.start_time = [None for _ in range(len(const.section_name))]
         # Full conversation history is now shown by default (UX-2). show_all=True
@@ -56,6 +62,11 @@ def init_all():
 
 def init(page_id: int):
     ss.page_id = page_id
+
+    # Free-exploration mode (§7): visiting a phase ahead of the frontier unlocks
+    # it. Any phases skipped over keep start_time=None (tolerated by show_time).
+    if ss.get("free_navigation") and ss.page_id > ss.current_progress and not ss.first_entry[0]:
+        ss.current_progress = ss.page_id
 
     if ss.start_time[ss.page_id] is None and ss.current_progress == ss.page_id:
         ss.start_time[ss.page_id] = time.time()
@@ -75,14 +86,20 @@ def show_time():
     for i in range(1, min(last_active, max(ss.page_id, ss.current_progress)) + 1):
         if ss.current_progress < i:
             continue
+        # In free-exploration mode a phase may have been skipped (start_time None);
+        # skip its timer rather than crash on arithmetic with None.
+        if ss.start_time[i] is None:
+            continue
         if ss.current_progress == i:
             elapsed_time = int(time.time() - ss.start_time[i])
         else:
+            if ss.start_time[i + 1] is None:
+                continue
             elapsed_time = int(ss.start_time[i + 1] - ss.start_time[i])
         st.write(f"{const.noun[i]}時間：{elapsed_time // 60}:{elapsed_time % 60:02d}")
 
-    if ss.current_progress > 0:
-        if ss.current_progress < grade_idx:
+    if ss.current_progress > 0 and ss.start_time[1] is not None:
+        if ss.current_progress < grade_idx or ss.start_time[grade_idx] is None:
             elapsed_time = int(time.time() - ss.start_time[1])
         else:
             elapsed_time = int(ss.start_time[grade_idx] - ss.start_time[1])
@@ -116,7 +133,14 @@ def note():
                     if st.button(f"▶ {label}（進行中）", key=f"navcur_{i}", use_container_width=True):
                         st.switch_page(f"page/{const.section_name[i]}.py")
             else:
-                st.caption(f"🔒 {label}")
+                if ss.get("free_navigation"):
+                    if st.button(f"→ {label}", key=f"navfwd_{i}", use_container_width=True):
+                        st.switch_page(f"page/{const.section_name[i]}.py")
+                else:
+                    st.caption(f"🔒 {label}")
+
+        if ss.get("free_navigation"):
+            st.caption("🧭 自由探索模式：可任意切換各階段")
 
         st.divider()
         st.header("筆記區")
@@ -147,11 +171,10 @@ def show_patient_profile():
 
 
 def check_progress():
-    if ss.page_id > ss.current_progress:
-        dialog.page_error(ss.page_id, ss.current_progress)
-        return False
-
-    return True
+    if navigation.can_visit(ss.page_id, ss.current_progress, ss.get("free_navigation")):
+        return True
+    dialog.page_error(ss.page_id, ss.current_progress)
+    return False
 
 
 def getPDF(query, output_pdf):
