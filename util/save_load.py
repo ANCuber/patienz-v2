@@ -38,6 +38,7 @@ SAVE_KEYS = [
     "grading_mode",
     "patient_persona",
     "free_navigation",
+    "flow_mode",
 ]
 
 

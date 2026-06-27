@@ -181,13 +181,30 @@ with major_column[1]:
         )
         ss.patient_persona = next(p for p in persona_options if p["label"] == _persona_label)
 
-    # === 流程模式（§7 流程彈性） ===
-    ss.free_navigation = st.checkbox(
-        "自由探索模式（可自由切換問診／理學／檢查等階段，不強制順序）",
-        value=ss.get("free_navigation", False),
-        help="開啟後可在各看診階段間自由前進／返回，貼近真實臨床的交錯流程（如先做篩檢、檢查後再補問診）。"
-             "關閉則維持標準 OSCE 逐步順序，評分會評估你提出鑑別診斷的時機。",
+    # === 流程模式（§7 流程彈性 / §7-B 闖關） ===
+    FLOW_MODE_OPTIONS = {
+        "標準 OSCE 逐步流程": "standard",
+        "自由探索（任意切換階段）": "free",
+        "闖關模式（分階段引導，著重 thinking process）": "quest",
+    }
+    _fm_labels = list(FLOW_MODE_OPTIONS.keys())
+    _fm_default = 0
+    if ss.get("flow_mode"):
+        _fm_default = next(
+            (i for i, lab in enumerate(_fm_labels) if FLOW_MODE_OPTIONS[lab] == ss.flow_mode),
+            0,
+        )
+    _fm_label = st.selectbox(
+        "流程模式",
+        _fm_labels,
+        index=_fm_default,
+        help="標準：逐步 OSCE 順序（評分會評估鑑別診斷提出的時機）。"
+             "自由探索：各階段任意前進／返回，貼近真實臨床交錯流程。"
+             "闖關：以「臆斷→篩檢→再鑑別→確診」分關卡引導，側欄顯示闖關進度。",
     )
+    ss.flow_mode = FLOW_MODE_OPTIONS[_fm_label]
+    # 自由導覽僅在「自由探索」開啟；闖關沿用標準逐步 gating，僅加上闖關引導 UI。
+    ss.free_navigation = (ss.flow_mode == "free")
 
     ss.config_type = st.radio("選擇設定方式", ["模板題", "輸入參數", "題目存檔", "進度存檔"], horizontal=True)
 

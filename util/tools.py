@@ -15,6 +15,7 @@ import streamlit as st
 import util.constants as const
 import util.dialog as dialog
 import util.navigation as navigation
+import util.stages as stages
 import util.save_load as save_load
 
 ss = st.session_state 
@@ -115,6 +116,26 @@ def peek_chat():
         ss.cur_show_all = ss.show_all
         st.rerun()
 
+def _render_quest_tracker():
+    """闖關模式側欄進度（§7-B）。呈現臆斷→篩檢→再鑑別→確診各關卡的完成狀態。
+    必須在 `with st.sidebar:` 區塊內呼叫，st.* 才會渲染到側欄。"""
+    snapshot = {
+        "history_turns": sum(1 for m in ss.get("diagnostic_messages", []) if m.get("role") == "doctor"),
+        "has_tentative": bool(ss.get("preliminary_ddx")),
+        "exams_ordered": len(ss.get("examination_history", [])),
+        "has_diagnosis": bool(ss.get("diagnosis")),
+    }
+    st.divider()
+    st.header("闖關進度")
+    icons = {"done": "✅", "current": "▶", "locked": "🔒"}
+    for s in stages.stage_status(snapshot):
+        st.markdown(f"{icons[s['state']]} {s['title']}")
+        if s["state"] == "current":
+            st.caption(f"🎯 {s['goal']}")
+    if stages.all_cleared(snapshot):
+        st.success("🏆 已完成所有關卡，可前往評分區")
+
+
 def note():
     if "note" not in ss:
         ss.note = ""
@@ -141,6 +162,9 @@ def note():
 
         if ss.get("free_navigation"):
             st.caption("🧭 自由探索模式：可任意切換各階段")
+
+        if ss.get("flow_mode") == "quest":
+            _render_quest_tracker()
 
         st.divider()
         st.header("筆記區")
