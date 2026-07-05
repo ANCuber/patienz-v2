@@ -3,12 +3,10 @@ import os
 # import requests
 # import concurrent.futures
 # import pdfkit
-from googlesearch import search 
-
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+# NOTE: selenium / googlesearch are imported lazily inside getPDF() only.
+# Runtime patient/examiner grounding no longer scrapes the web, so the app no
+# longer requires these heavy/fragile dependencies to start (this also fixes
+# "公用網路無法使用此系統"). getPDF() remains as an opt-in offline tool.
 import time
 import datetime
 import base64
@@ -16,6 +14,8 @@ import base64
 import streamlit as st
 import util.constants as const
 import util.dialog as dialog
+import util.navigation as navigation
+import util.stages as stages
 import util.save_load as save_load
 
 ss = st.session_state 
@@ -50,12 +50,24 @@ def init_all():
         ss.preliminary_ddx_locked = False
         ss.comorbidities = ""
         ss.final_ddx_status = {}
+        # Defaults so grading degrades gracefully if a free-exploration student
+        # reaches 評分 without visiting 診斷 (diagnosis.py normally assigns these).
+        ss.diagnosis = ""
+        ss.ddx = ""
+        ss.treatment = ""
 
         ss.start_time = [None for _ in range(len(const.section_name))]
-        ss.cur_show_all, ss.show_all = False, False
+        # Full conversation history is now shown by default (UX-2). show_all=True
+        # means the whole transcript is rendered in the scrollable container.
+        ss.cur_show_all, ss.show_all = True, True
 
 def init(page_id: int):
     ss.page_id = page_id
+
+    # Free-exploration mode (§7): visiting a phase ahead of the frontier unlocks
+    # it. Any phases skipped over keep start_time=None (tolerated by show_time).
+    if ss.get("free_navigation") and ss.page_id > ss.current_progress and not ss.first_entry[0]:
+        ss.current_progress = ss.page_id
 
     if ss.start_time[ss.page_id] is None and ss.current_progress == ss.page_id:
         ss.start_time[ss.page_id] = time.time()
@@ -75,14 +87,20 @@ def show_time():
     for i in range(1, min(last_active, max(ss.page_id, ss.current_progress)) + 1):
         if ss.current_progress < i:
             continue
+        # In free-exploration mode a phase may have been skipped (start_time None);
+        # skip its timer rather than crash on arithmetic with None.
+        if ss.start_time[i] is None:
+            continue
         if ss.current_progress == i:
             elapsed_time = int(time.time() - ss.start_time[i])
         else:
+            if ss.start_time[i + 1] is None:
+                continue
             elapsed_time = int(ss.start_time[i + 1] - ss.start_time[i])
         st.write(f"{const.noun[i]}時間：{elapsed_time // 60}:{elapsed_time % 60:02d}")
 
-    if ss.current_progress > 0:
-        if ss.current_progress < grade_idx:
+    if ss.current_progress > 0 and ss.start_time[1] is not None:
+        if ss.current_progress < grade_idx or ss.start_time[grade_idx] is None:
             elapsed_time = int(time.time() - ss.start_time[1])
         else:
             elapsed_time = int(ss.start_time[grade_idx] - ss.start_time[1])
@@ -90,10 +108,33 @@ def show_time():
         st.write(f"總時間：{elapsed_time // 60}:{elapsed_time % 60:02d}")
 
 def peek_chat():
-    ss.show_all = st.checkbox("偷看對話紀錄", ss.show_all)
+    # Full history is shown by default now; this checkbox lets the student
+    # collapse the view down to just the latest exchange if they prefer.
+    compact = st.checkbox("只顯示最新對話", not ss.show_all)
+    ss.show_all = not compact
     if ss.show_all != ss.cur_show_all:
         ss.cur_show_all = ss.show_all
         st.rerun()
+
+def _render_quest_tracker():
+    """闖關模式側欄進度（§7-B）。呈現臆斷→篩檢→再鑑別→確診各關卡的完成狀態。
+    必須在 `with st.sidebar:` 區塊內呼叫，st.* 才會渲染到側欄。"""
+    snapshot = {
+        "history_turns": sum(1 for m in ss.get("diagnostic_messages", []) if m.get("role") == "doctor"),
+        "has_tentative": bool(ss.get("preliminary_ddx")),
+        "exams_ordered": len(ss.get("examination_history", [])),
+        "has_diagnosis": bool(ss.get("diagnosis")),
+    }
+    st.divider()
+    st.header("闖關進度")
+    icons = {"done": "✅", "current": "▶", "locked": "🔒"}
+    for s in stages.stage_status(snapshot):
+        st.markdown(f"{icons[s['state']]} {s['title']}")
+        if s["state"] == "current":
+            st.caption(f"🎯 {s['goal']}")
+    if stages.all_cleared(snapshot):
+        st.success("🏆 已完成所有關卡，可前往評分區")
+
 
 def note():
     if "note" not in ss:
@@ -113,7 +154,17 @@ def note():
                     if st.button(f"▶ {label}（進行中）", key=f"navcur_{i}", use_container_width=True):
                         st.switch_page(f"page/{const.section_name[i]}.py")
             else:
-                st.caption(f"🔒 {label}")
+                if ss.get("free_navigation"):
+                    if st.button(f"→ {label}", key=f"navfwd_{i}", use_container_width=True):
+                        st.switch_page(f"page/{const.section_name[i]}.py")
+                else:
+                    st.caption(f"🔒 {label}")
+
+        if ss.get("free_navigation"):
+            st.caption("🧭 自由探索模式：可任意切換各階段")
+
+        if ss.get("flow_mode") == "quest":
+            _render_quest_tracker()
 
         st.divider()
         st.header("筆記區")
@@ -144,11 +195,10 @@ def show_patient_profile():
 
 
 def check_progress():
-    if ss.page_id > ss.current_progress:
-        dialog.page_error(ss.page_id, ss.current_progress)
-        return False
-
-    return True
+    if navigation.can_visit(ss.page_id, ss.current_progress, ss.get("free_navigation")):
+        return True
+    dialog.page_error(ss.page_id, ss.current_progress)
+    return False
 
 
 def getPDF(query, output_pdf):
@@ -158,6 +208,12 @@ def getPDF(query, output_pdf):
     :param query: The search query string.
     :param output_pdf: The name of the output PDF file.
     """
+    # Lazy imports: these are optional dependencies used only by this offline tool.
+    from googlesearch import search
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.chrome.service import Service
+    from webdriver_manager.chrome import ChromeDriverManager
 
     chrome_options = Options()
     chrome_options.add_argument("--headless=new")  # Use the updated headless mode syntax
@@ -173,8 +229,8 @@ def getPDF(query, output_pdf):
     })
 
     driver = webdriver.Chrome(
-        service=Service(ChromeDriverManager().install()), 
-        options=chrome_options
+        service=Service(ChromeDriverManager().install()),
+        options=chrome_options,
     )
 
     try:

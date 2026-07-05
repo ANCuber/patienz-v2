@@ -11,6 +11,64 @@ ss = st.session_state
 util.init(5)
 util.note()
 
+CHAT_HEIGHT = 400
+
+
+def send_to_patient(prompt: str, chat_area):
+    """Shared send handler for the病情解釋 chat: record the doctor's message,
+    get a hardened patient reply, and append it. Returns True on success."""
+    prompt = prompt.rstrip("\n")
+    if prompt == "":
+        return False
+
+    util.record(ss.log, f"Doctor: {prompt}")
+    chat.append(ss.diagnostic_messages, "doctor", prompt)
+    chat.update(chat_area, msgs=ss.diagnostic_messages, height=CHAT_HEIGHT, show_all=ss.show_all)
+
+    # UX-3 / PERF-3: harden the patient generation call so a capped/blocked
+    # candidate never reaches response.text and crashes the page.
+    try:
+        response = ss.patient.send_message(f"醫學生：{prompt}")
+    except Exception as e:
+        util.record(ss.log, f"[PATIENT] send_message error: {e}")
+        st.warning("病人沒聽清楚，請再說一次")
+        return False
+
+    finish_reason = None
+    candidate = None
+    try:
+        if response.candidates:
+            candidate = response.candidates[0]
+            finish_reason = candidate.finish_reason
+    except Exception:
+        candidate = None
+
+    blocked = False
+    try:
+        if response.prompt_feedback and response.prompt_feedback.block_reason:
+            blocked = True
+    except Exception:
+        blocked = False
+
+    reply_text = ""
+    if candidate is not None and not blocked:
+        try:
+            reply_text = response.text
+        except Exception as e:
+            util.record(ss.log, f"[PATIENT] response.text unavailable (finish_reason={finish_reason}): {e}")
+            reply_text = ""
+
+    formatted_response = reply_text.replace("(", "（").replace(")", "）").strip()
+
+    if blocked or candidate is None or formatted_response == "":
+        util.record(ss.log, f"[PATIENT] empty/blocked response (finish_reason={finish_reason}, blocked={blocked})")
+        st.warning("病人沒聽清楚，請再說一次")
+        return False
+
+    util.record(ss.log, f"Patient: {reply_text}")
+    chat.append(ss.diagnostic_messages, "patient", formatted_response)
+    return True
+
 
 def list_input(state_key, label, help=None, placeholder=None, multiline=False, height=90):
     """Render a dynamic list of inputs with add/delete-row buttons.
@@ -78,39 +136,18 @@ with column[1]:
     if "patient_model" not in ss and "problem" in ss:
         create_patient_model(ss.problem, prior_messages=ss.diagnostic_messages)
 
-    if "chat_input_counter" not in ss:
-        ss.chat_input_counter = 0
-    input_key = f"chat_input_{ss.chat_input_counter}"
-    audio_key = f"audio_input2_{ss.chat_input_counter}"
+    chat.update(chat_area, msgs=ss.diagnostic_messages, height=CHAT_HEIGHT, show_all=ss.show_all)
 
-    if audio := st.audio_input("語音輸入", key=audio_key):
-        ss.audio2 = audio
-        ss.prompt = process_audio(audio)
-        ss.prompt = st.text_area("請輸入您的對話內容", value=ss.prompt, key=input_key)
-
-    chat.update(chat_area, msgs=ss.diagnostic_messages, height=200, show_all=ss.show_all)
-
-    if "audio2" not in ss:
-        ss.prompt = st.text_area("請輸入您的對話內容", key=input_key)
-
-    if st.button("送出對話", use_container_width=True) and util.check_progress():
-        if ss.prompt != "":
-            ss.prompt = ss.prompt.rstrip("\n")
-            util.record(ss.log, f"Doctor: {ss.prompt}")
-
-            chat.append(ss.diagnostic_messages, "doctor", ss.prompt)
-            chat.update(chat_area, msgs=ss.diagnostic_messages, height=200, show_all=ss.show_all)
-
-            response = ss.patient.send_message(f"醫學生：{ss.prompt}")
-            formatted_response = response.text.replace("(", "（").replace(")", "）")
-            util.record(ss.log, f"Patient: {response.text}")
-            chat.append(ss.diagnostic_messages, "patient", formatted_response)
-
-            ss.chat_input_counter += 1
-            ss.prompt = ""
-            if "audio2" in ss:
-                del ss.audio2
-            st.rerun()
+    # 語音輸入：轉成文字後走與文字輸入相同的送出流程。
+    # st.audio_input 在 rerun 後仍會保留錄音，故以內容雜湊去重，避免重複送出。
+    if audio := st.audio_input("語音輸入", key="audio_input2"):
+        audio_bytes = audio.getvalue()
+        audio_id = hash(audio_bytes)
+        if ss.get("last_audio_id2") != audio_id and util.check_progress():
+            ss.last_audio_id2 = audio_id
+            transcript = process_audio(audio)
+            if transcript and send_to_patient(transcript, chat_area):
+                st.rerun()
 
     ss.diagnosis = st.text_input("主診斷")
 
@@ -178,4 +215,11 @@ with column[3]:
     with st.container(border=True):
         util.peek_chat()
         # util.show_time()
+
+# st.chat_input must live at the app's top level (it cannot sit inside
+# st.columns). Enter submits and the widget clears itself automatically.
+if prompt := st.chat_input("請輸入您的對話內容"):
+    if util.check_progress():
+        if send_to_patient(prompt, chat_area):
+            st.rerun()
 

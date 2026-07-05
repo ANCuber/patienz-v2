@@ -35,6 +35,10 @@ SAVE_KEYS = [
     "show_all", "cur_show_all",
     "config_type",
     "acgme_learner_role",
+    "grading_mode",
+    "patient_persona",
+    "free_navigation",
+    "flow_mode",
 ]
 
 
@@ -128,9 +132,18 @@ def load_progress(file_name: str):
         if key not in ss:
             ss[key] = default
 
-    # Drop transient model handles so pages recreate them with restored history.
-    for key in ("patient", "patient_model", "examiner", "pe_examiner",
-                "advisor", "audio", "audio2", "prompt"):
+    # Drop transient chat/model handles so pages recreate them (with restored
+    # history) on next use. These are google-genai chat objects / sentinels and
+    # are never serialized, so they must be cleared from a live session that is
+    # being overwritten by a load.
+    for key in ("patient", "patient_model",
+                "examiner",
+                "value_examiner", "value_examiner_model",
+                "text_examiner", "text_examiner_model",
+                "pe_examiner", "pe_examiner_model",
+                "problem_setter", "problem_setter_model",
+                "advisor", "advisor_model",
+                "audio", "audio2", "prompt"):
         if key in ss:
             del ss[key]
 

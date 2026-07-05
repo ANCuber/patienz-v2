@@ -1,7 +1,4 @@
-import os
-import google.generativeai as genai
-
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+import util.llm as llm
 
 LAB_ADVISOR_INSTRUCTION = """你是一位資深臨床顧問，負責對醫學生剛完成的單次輔助檢查及其判讀提供即時、簡短的回饋。
 
@@ -22,21 +19,16 @@ LAB_ADVISOR_INSTRUCTION = """你是一位資深臨床顧問，負責對醫學生
 
 
 def create_lab_advisor_model(problem: str):
-    # max_output_tokens 必須足夠涵蓋 Gemini 2.5 Flash 的 thinking tokens + 實際輸出，
-    # 否則回饋會在輸出中途被截斷。80 字回饋本身僅需約 200 tokens，但 thinking 可能再用上千 tokens。
-    generation_config = {
-        "temperature": 0.7,
-        "top_p": 0.95,
-        "top_k": 40,
-        "max_output_tokens": 2048,
-        "response_mime_type": "text/plain",
-    }
-
-    return genai.GenerativeModel(
-        model_name="gemini-2.5-flash-lite",
-        generation_config=generation_config,
+    config = llm.build_config(
         system_instruction=f"{LAB_ADVISOR_INSTRUCTION}\n\n病人設定：\n{problem}",
+        temperature=0.7,
+        top_p=0.95,
+        top_k=40,
+        max_output_tokens=2048,
+        response_mime_type="text/plain",
+        thinking_budget=llm.THINK_OFF,
     )
+    return llm.ModelHandle("gemini-2.5-flash-lite", config)
 
 
 def request_lab_feedback(problem: str, exam_entry: dict) -> str:

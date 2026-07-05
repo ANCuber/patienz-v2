@@ -32,6 +32,37 @@ CRITICAL_VALUES = {
 }
 
 
+# 生理學硬性邊界（physiologic hard bounds）：
+# 比參考範圍寬得多，僅用於攔截「生理上不可能」的值（例如 Hb 116.72 g/dL）。
+# 落在邊界之外即視為模型生成錯誤，而非真正的危急值。
+PLAUSIBLE_BOUNDS = {
+    "Hb": {"low": 1.0, "high": 25.0},          # g/dL
+    "Hct": {"low": 5.0, "high": 75.0},          # %
+    "WBC": {"low": 0.0, "high": 200.0},         # 10^3/uL
+    "Platelet": {"low": 0.0, "high": 2000.0},   # 10^3/uL
+    "RBC": {"low": 0.5, "high": 10.0},          # 10^6/uL
+    "MCV": {"low": 40.0, "high": 160.0},        # fL
+    "Potassium, K": {"low": 1.0, "high": 12.0},     # mmol/L
+    "Sodium, Na": {"low": 90.0, "high": 200.0},      # mmol/L
+    "Chloride, Cl": {"low": 60.0, "high": 160.0},    # mmol/L
+    "Calcium, Ca": {"low": 0.5, "high": 6.0},        # mmol/L
+    "Glucose (A.C.)": {"low": 5.0, "high": 2000.0},  # mg/dL
+    "Glucose (P.C.)": {"low": 5.0, "high": 2000.0},  # mg/dL
+    "HbA1c": {"low": 2.0, "high": 25.0},        # %
+    "BUN": {"low": 1.0, "high": 400.0},         # mg/dL
+    "Creatinine (Serum)": {"low": 0.1, "high": 40.0},  # mg/dL
+    "Total bilirubin": {"low": 0.0, "high": 60.0},     # mg/dL
+    "pH": {"low": 6.5, "high": 8.0},
+    "pCO2": {"low": 5.0, "high": 150.0},        # mmHg
+    "pO2": {"low": 10.0, "high": 700.0},        # mmHg
+    "HCO3-": {"low": 2.0, "high": 60.0},        # mmol/L
+    "INR": {"low": 0.5, "high": 20.0},
+    "aPTT": {"low": 10.0, "high": 300.0},       # sec
+    "Ammonia": {"low": 0.0, "high": 1000.0},    # ug/dL
+    "Lactic acid (Lactate)": {"low": 0.0, "high": 40.0},  # mmol/L
+}
+
+
 def _try_float(s: str):
     """嘗試將字串轉為浮點數，失敗返回 None。"""
     try:
@@ -202,6 +233,37 @@ def is_critical(value: str, exam_name: str) -> bool:
     if "high" in crit and num_val > crit["high"]:
         return True
 
+    return False
+
+
+def is_implausible(value: str, exam_name: str) -> bool:
+    """
+    判斷檢測值是否「生理上不可能」（超出粗略的生理硬性邊界）。
+
+    這比參考範圍寬得多，僅用於攔截模型生成的明顯錯誤值
+    （例如 Hb 116.72 g/dL）。未列於 PLAUSIBLE_BOUNDS 的項目一律視為合理。
+
+    Args:
+        value: 檢測值字串
+        exam_name: 檢查項目英文名
+
+    Returns:
+        True 表示該值生理上不可能
+    """
+    if exam_name not in PLAUSIBLE_BOUNDS:
+        return False
+
+    num_val = _extract_numeric(value)
+    if num_val is None:
+        return False
+
+    bounds = PLAUSIBLE_BOUNDS[exam_name]
+    low = bounds.get("low")
+    high = bounds.get("high")
+    if low is not None and num_val < low:
+        return True
+    if high is not None and num_val > high:
+        return True
     return False
 
 

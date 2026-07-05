@@ -11,6 +11,9 @@ import util.tools as util
 import util.chat as chat
 import util.acgme_selector as acgme_selector
 import util.acgme_aggregator as acgme_aggregator
+import util.grading_pipeline as grading_pipeline
+import util.grading_normalize as grading_normalize
+import util.mark_scheme_cache as mark_scheme_cache
 import util.save_load as save_load
 import datetime
 import json
@@ -160,10 +163,30 @@ st.markdown(
 
 
 # Helper function to run grading models
+def _grading_response_text(response):
+    """安全取出評分模型回應文字；若 candidate 為空（MAX_TOKENS／安全阻擋）則
+    拋出帶診斷資訊的 RuntimeError，避免直接存取 response.text 造成頁面崩潰。"""
+    finish = None
+    block = None
+    if getattr(response, "candidates", None):
+        finish = getattr(response.candidates[0], "finish_reason", None)
+    if getattr(response, "prompt_feedback", None):
+        block = getattr(response.prompt_feedback, "block_reason", None)
+    try:
+        text = response.text
+    except Exception:
+        text = None
+    if not text or not text.strip():
+        raise RuntimeError(
+            f"評分模型回傳空白內容 (finish_reason={finish}, block_reason={block})"
+        )
+    return text
+
+
 def get_grading_result_sync(current_model, messages_for_grading):
     grader = current_model.start_chat()
     response = grader.send_message(messages_for_grading)
-    return response.text
+    return _grading_response_text(response)
 
 
 # === Collect all student data for v2 grading ===
@@ -239,6 +262,36 @@ STANDARD_CATEGORIES = [
     '臨床推理與鑑別診斷', '疾病處置與治療計畫', '整體專業表現', '全域評級',
 ]
 
+GLOBAL_RATING_CATEGORY = '全域評級'
+
+# 安全預設：當無法對應到任何標準類別時，歸入整體專業表現而非保留外來字串
+DEFAULT_CATEGORY = '整體專業表現'
+
+# 英文（或英文夾雜）類別名稱 → 標準中文類別的別名對照表
+# key 為已小寫且去除空白/底線後的字串
+_ENGLISH_CATEGORY_ALIASES = {
+    'globalrating': '全域評級',
+    'overallrating': '全域評級',
+    'historytaking': '病史詢問',
+    'history': '病史詢問',
+    'communicationskills': '溝通技巧',
+    'communication': '溝通技巧',
+    'physicalexamination': '身體檢查與檢驗判讀',
+    'physicalexaminationinvestigation': '身體檢查與檢驗判讀',
+    'physicalexam': '身體檢查與檢驗判讀',
+    'investigation': '身體檢查與檢驗判讀',
+    'clinicalreasoning': '臨床推理與鑑別診斷',
+    'clinicalreasoningdifferentialdiagnosis': '臨床推理與鑑別診斷',
+    'differentialdiagnosis': '臨床推理與鑑別診斷',
+    'management': '疾病處置與治療計畫',
+    'managementtreatmentplan': '疾病處置與治療計畫',
+    'treatment': '疾病處置與治療計畫',
+    'treatmentplan': '疾病處置與治療計畫',
+    'overallprofessionalperformance': '整體專業表現',
+    'professionalperformance': '整體專業表現',
+    'professionalism': '整體專業表現',
+}
+
 
 def _normalize_category(cat):
     if cat in STANDARD_CATEGORIES:
@@ -246,11 +299,20 @@ def _normalize_category(cat):
     cleaned = cat.replace('_', '').replace(' ', '')
     if cleaned in STANDARD_CATEGORIES:
         return cleaned
-    best, best_score = cat, 0
+    # 英文/英文夾雜別名比對（在字元重疊啟發式之前）
+    # 只保留英數字後比對，容忍 & / 括號 等標點（如 "Physical Examination & Investigation"）
+    alias_key = ''.join(ch for ch in cat.lower() if ch.isalnum())
+    alias = _ENGLISH_CATEGORY_ALIASES.get(cleaned.lower()) or _ENGLISH_CATEGORY_ALIASES.get(alias_key)
+    if alias:
+        return alias
+    best, best_score = DEFAULT_CATEGORY, 0
     for std in STANDARD_CATEGORIES:
         score = sum(1 for ch in cleaned if ch in std)
         if score > best_score:
             best, best_score = std, score
+    # 完全無法對應（如純英文字串無中文重疊）時，歸入安全預設類別
+    if best_score == 0:
+        return DEFAULT_CATEGORY
     return best
 
 
@@ -261,8 +323,8 @@ def process_v2_grading_result(input_json):
     for item in sorted_result:
         item['category'] = _normalize_category(item['category'])
 
-    regular_items = [item for item in sorted_result if item['category'] != '全域評級']
-    global_rating = [item for item in sorted_result if item['category'] == '全域評級']
+    regular_items = [item for item in sorted_result if item['category'] != GLOBAL_RATING_CATEGORY]
+    global_rating = [item for item in sorted_result if item['category'] == GLOBAL_RATING_CATEGORY]
 
     categories = {}
     for item in regular_items:
@@ -431,122 +493,157 @@ def reset_grading():
 # 2) v2 grader 依評分表逐項評分
 # 3) advisor 以 v2 結果為 priming 建立對話
 # ========================================
-if "mark_scheme_raw" not in ss and "problem" in ss:
-    mark_scheme_model = create_mark_scheme_setter_model()
+# 評分模式分流：both = OSCE + ACGME；osce = 只跑 OSCE（較快、簡易）。
+_grading_mode = ss.get("grading_mode", "both")
+want_osce = _grading_mode in ("both", "osce")
+want_acgme = _grading_mode in ("both", "acgme")
+
+need_osce = want_osce and "grader_v2_response" not in ss
+need_acgme = want_acgme and "acgme_grader_response" not in ss and not ss.get("acgme_error")
+
+if (need_osce or need_acgme) and "problem" in ss:
+    # 主執行緒先備妥所有輸入；task 內僅做 LLM 呼叫、不碰 st/session_state。
+    student_data = collect_student_data()
     patient_setup_str = f"## 虛擬病人設定\n{json.dumps(ss.data, ensure_ascii=False, indent=2)}"
     mark_scheme_prompt = f"請根據以下虛擬病人設定，設計一份OSCE評分表：\n\n{patient_setup_str}"
+    # 評分表重用簽章（疾病+身份+教學重點+難度）：相似案例直接重用，省一次 LLM 呼叫並提升一致性。
+    ms_sig, _ms_raw = mark_scheme_cache.signature(
+        ss.data, ss.get("acgme_learner_role"), ss.get("user_config")
+    )
 
-    with st.spinner("生成評分表中..."):
-        _t0 = time.perf_counter()
-        ss.mark_scheme_raw = get_grading_result_sync(mark_scheme_model, mark_scheme_prompt)
-        util.record(ss.log, f"[PERF] mark_scheme={time.perf_counter() - _t0:.2f}s")
-        util.record(ss.log, f"[V2] Mark Scheme: {ss.mark_scheme_raw}")
+    def _task_osce():
+        def _gen_mark_scheme():
+            ms_model = create_mark_scheme_setter_model()
+            txt = _grading_response_text(ms_model.start_chat().send_message(mark_scheme_prompt))
+            json.loads(txt)  # validate before caching; raise on malformed output
+            return txt
 
-if "mark_scheme_raw" in ss and "grader_v2_response" not in ss:
-    student_data = collect_student_data()
-    with st.spinner("AI考官評分中..."):
         _t0 = time.perf_counter()
-        grader_v2_model = create_grader_v2_model(ss.mark_scheme_raw)
-        grader_v2_chat = grader_v2_model.start_chat()
-        grader_v2_response = grader_v2_chat.send_message(
-            f"請根據評分表，對以下學生的臨床表現進行逐項評分：\n\n{student_data}"
+        ms_text, ms_from_cache = mark_scheme_cache.get_or_create(ms_sig, _gen_mark_scheme)
+        t_ms = time.perf_counter() - _t0
+        g_model = create_grader_v2_model(ms_text)
+        _t1 = time.perf_counter()
+        g_text = _grading_response_text(
+            g_model.start_chat().send_message(
+                f"請根據評分表，對以下學生的臨床表現進行逐項評分：\n\n{student_data}"
+            )
         )
-        ss.grader_v2_response = grader_v2_response.text
-        util.record(ss.log, f"[PERF] grader_v2={time.perf_counter() - _t0:.2f}s")
-        util.record(ss.log, f"[V2] Grading Result: {ss.grader_v2_response}")
+        return {"mark_scheme": ms_text, "grading": g_text, "ms_from_cache": ms_from_cache,
+                "t_ms": t_ms, "t_g": time.perf_counter() - _t1}
 
-if "advisor" not in ss and "grader_v2_response" in ss:
+    # ACGME milestone 選擇為純檔案 IO，於主執行緒先做好。
+    acgme_ctx = None
+    if need_acgme:
+        try:
+            _problem = ss.data.get("Problem", {}) if isinstance(ss.get("data"), dict) else {}
+            _disease = _problem.get("疾病", "")
+            _symptoms = _problem.get("症狀", "")
+            _selection = acgme_selector.select_milestone(_disease, _symptoms)
+            _acgme_input = (
+                f"## 病例資訊\n疾病：{_disease}\n症狀：{_symptoms}\n\n"
+                f"## 學員完整表現\n{student_data}\n\n"
+                f"請對提供的每一個 ACGME 子能力逐項評定 Milestone Level，並引用學員具體表現作為佐證。"
+            )
+            acgme_ctx = {
+                "selection": _selection,
+                "learner_role": ss.get("acgme_learner_role"),
+                "input": _acgme_input,
+            }
+        except Exception as e:
+            ss.acgme_error = True
+            util.record(ss.log, f"[ACGME] milestone selection failed: {e}")
+            need_acgme = False
+
+    def _task_acgme():
+        sel = acgme_ctx["selection"]
+        model = create_acgme_grader_model(sel["milestone_data"], acgme_ctx["learner_role"])
+        _t0 = time.perf_counter()
+        # Use the hardened extractor so MAX_TOKENS / safety-block failures carry
+        # finish_reason/block_reason diagnostics (same as the OSCE chain).
+        text = _grading_response_text(model.start_chat().send_message(acgme_ctx["input"]))
+        return {"acgme": text, "t": time.perf_counter() - _t0}
+
+    tasks = {}
+    if need_osce:
+        tasks["osce"] = _task_osce
+    if need_acgme and acgme_ctx is not None:
+        tasks["acgme"] = _task_acgme
+
+    if tasks:
+        with st.spinner("AI 考官評分中…（OSCE／ACGME 並行）"):
+            results = grading_pipeline.run_parallel(tasks)
+
+        # --- 寫回 OSCE 結果（主執行緒）---
+        if "osce" in results:
+            r = results["osce"]
+            if isinstance(r, Exception):
+                util.record(ss.log, f"[V2] Grading FAILED: {r}")
+                st.error("AI 評分失敗，請重新整理頁面再試一次。")
+                st.stop()
+            ss.mark_scheme_raw = r["mark_scheme"]
+            ss.grader_v2_response = r["grading"]
+            util.record(ss.log, f"[PERF] mark_scheme={r['t_ms']:.2f}s cache={r.get('ms_from_cache')}")
+            util.record(ss.log, f"[PERF] grader_v2={r['t_g']:.2f}s")
+            util.record(ss.log, f"[V2] Mark Scheme: {ss.mark_scheme_raw}")
+            util.record(ss.log, f"[V2] Grading Result: {ss.grader_v2_response}")
+
+        # --- 寫回 ACGME 結果 + 彙總（主執行緒）---
+        if "acgme" in results:
+            r = results["acgme"]
+            if isinstance(r, Exception):
+                ss.acgme_error = True
+                util.record(ss.log, f"[ACGME] grader failed: {r}")
+            else:
+                sel = acgme_ctx["selection"]
+                ss.acgme_milestone_data = sel["milestone_data"]
+                ss.acgme_milestone_used = sel["milestone_name"]
+                ss.acgme_selection_meta = {
+                    "selection_reason": sel["selection_reason"],
+                    "matched_key": sel["matched_key"],
+                    "fallback_reason": sel["fallback_reason"],
+                    "excluded_subcompetencies": sel.get("excluded_subcompetencies", []),
+                }
+                ss.acgme_grader_response = r["acgme"]
+                util.record(ss.log, f"[PERF] acgme_grader={r['t']:.2f}s")
+                util.record(ss.log, f"[ACGME] milestone={ss.acgme_milestone_used} "
+                                    f"reason={sel['selection_reason']} matched={sel['matched_key']!r} "
+                                    f"fallback={sel['fallback_reason']}")
+                util.record(ss.log, f"[ACGME] Grading Result: {ss.acgme_grader_response}")
+                try:
+                    parsed = json.loads(ss.acgme_grader_response)
+                    parsed = acgme_aggregator.reconcile_missing_subcompetencies(
+                        parsed, ss.acgme_milestone_data
+                    )
+                    ss.acgme_domain_summary = acgme_aggregator.aggregate_to_domains(
+                        parsed, ss.acgme_milestone_data
+                    )
+                    ss.acgme_grader_parsed = parsed
+                    util.record(
+                        ss.log,
+                        "[ACGME] domain_summary=" + json.dumps(
+                            {d: {"avg": v["average_level"], "n": v["assessed_count"]}
+                             for d, v in ss.acgme_domain_summary.items()},
+                            ensure_ascii=False,
+                        ),
+                    )
+                except Exception as e:
+                    ss.acgme_error = True
+                    util.record(ss.log, f"[ACGME] aggregator failed: {e}")
+
+# Advisor priming（OSCE 或 ACGME 任一完成即可建立）
+if "advisor" not in ss and ("grader_v2_response" in ss or "acgme_grader_response" in ss):
     _t0 = time.perf_counter()
     create_advisor_model(f"{INSTRUCTION_FOLDER}advisor_instruction.txt")
     util.record(ss.log, f"[PERF] advisor_setup={time.perf_counter() - _t0:.2f}s")
 
 
 # ========================================
-# ACGME 核心能力評核（接 grader_v2 之後）
-# ========================================
-if "grader_v2_response" in ss and "acgme_grader_response" not in ss and not ss.get("acgme_error"):
-    try:
-        problem = ss.data.get("Problem", {}) if isinstance(ss.get("data"), dict) else {}
-        disease = problem.get("疾病", "")
-        symptoms = problem.get("症狀", "")
-
-        selection = acgme_selector.select_milestone(disease, symptoms)
-        ss.acgme_milestone_data = selection["milestone_data"]
-        ss.acgme_milestone_used = selection["milestone_name"]
-        ss.acgme_selection_meta = {
-            "selection_reason": selection["selection_reason"],
-            "matched_key": selection["matched_key"],
-            "fallback_reason": selection["fallback_reason"],
-            "excluded_subcompetencies": selection.get("excluded_subcompetencies", []),
-        }
-        util.record(ss.log, f"[ACGME] milestone={ss.acgme_milestone_used} "
-                            f"reason={selection['selection_reason']} "
-                            f"matched={selection['matched_key']!r} "
-                            f"fallback={selection['fallback_reason']}")
-        excluded = selection.get("excluded_subcompetencies", [])
-        if excluded:
-            excluded_brief = ", ".join(
-                f"{e['id']}({e['domain']}:{e.get('name_en','')})" for e in excluded
-            )
-            util.record(ss.log, f"[ACGME] excluded_subcompetencies={excluded_brief}")
-
-        student_data = collect_student_data()
-        v2_summary = ss.grader_v2_response
-        acgme_input = (
-            f"## 病例資訊\n疾病：{disease}\n症狀：{symptoms}\n\n"
-            f"## 學員完整表現\n{student_data}\n\n"
-            f"## OSCE Grader v2 評分結果（供參考，請勿直接複製其分數判定 ACGME Level）\n{v2_summary}\n\n"
-            f"請對提供的每一個 ACGME 子能力逐項評定 Milestone Level，並引用學員具體表現作為佐證。"
-        )
-
-        learner_role = ss.get("acgme_learner_role")
-        util.record(ss.log, f"[ACGME] learner_role={learner_role.get('id') if learner_role else 'default(pgy1)'}")
-        with st.spinner("ACGME 核心能力評核中..."):
-            _t0 = time.perf_counter()
-            acgme_model = create_acgme_grader_model(ss.acgme_milestone_data, learner_role)
-            acgme_chat = acgme_model.start_chat()
-            acgme_response = acgme_chat.send_message(acgme_input)
-            ss.acgme_grader_response = acgme_response.text
-            util.record(ss.log, f"[PERF] acgme_grader={time.perf_counter() - _t0:.2f}s")
-            util.record(ss.log, f"[ACGME] Grading Result: {ss.acgme_grader_response}")
-
-        # 彙總到 6 domain
-        try:
-            parsed = json.loads(ss.acgme_grader_response)
-            parsed = acgme_aggregator.reconcile_missing_subcompetencies(
-                parsed, ss.acgme_milestone_data
-            )
-            ss.acgme_domain_summary = acgme_aggregator.aggregate_to_domains(
-                parsed, ss.acgme_milestone_data
-            )
-            ss.acgme_grader_parsed = parsed
-            util.record(
-                ss.log,
-                "[ACGME] domain_summary=" + json.dumps(
-                    {d: {"avg": v["average_level"], "n": v["assessed_count"]}
-                     for d, v in ss.acgme_domain_summary.items()},
-                    ensure_ascii=False,
-                ),
-            )
-        except Exception as e:
-            ss.acgme_error = True
-            util.record(ss.log, f"[ACGME] aggregator failed: {e}")
-    except FileNotFoundError as e:
-        ss.acgme_error = True
-        util.record(ss.log, f"[ACGME] milestone file missing: {e}")
-    except Exception as e:
-        ss.acgme_error = True
-        util.record(ss.log, f"[ACGME] grader failed: {e}")
-
-
-# ========================================
 # 自動存檔：V2 完成且 ACGME 已完成或已失敗時觸發一次
 # ========================================
-if (
-    "grader_v2_response" in ss
-    and not ss.get("grading_result_saved")
-    and ("acgme_grader_response" in ss or ss.get("acgme_error"))
-):
+_osce_done = (not want_osce) or ("grader_v2_response" in ss)
+_acgme_done = (not want_acgme) or ("acgme_grader_response" in ss) or ss.get("acgme_error")
+_any_grading = ("grader_v2_response" in ss) or ("acgme_grader_response" in ss) or ss.get("acgme_error")
+if _any_grading and not ss.get("grading_result_saved") and _osce_done and _acgme_done:
     try:
         ss.grading_result_file = save_load.save_grading_result()
         ss.grading_result_saved = True
@@ -558,8 +655,9 @@ if (
 # ========================================
 # Layout - Summary dashboard + V2 primary
 # ========================================
-st.header("📋 OSCE 評分結果")
-st.caption("根據 OSCE 國際標準，動態生成專屬於本次案例的評分表，並由 AI 考官逐項評分。")
+if want_osce:
+    st.header("📋 OSCE 評分結果")
+    st.caption("根據 OSCE 國際標準，動態生成專屬於本次案例的評分表，並由 AI 考官逐項評分。")
 if ss.get("grading_result_file"):
     st.caption(f"✅ 本次評分結果已自動存檔：`data/grading_results/{ss.grading_result_file}`")
 
@@ -599,6 +697,27 @@ if "grader_v2_response" in ss:
         if global_rating:
             st.info(f"**考官綜合評語：** {global_rating[0]['feedback']}")
 
+    # === 各類別配分權重透明化（display-only，不影響計分）===
+    with st.expander("📊 各類別配分權重明細", expanded=False):
+        weight_rows = []
+        for cat_name, items in categories.items():
+            cat_max = sum(int(it['max_score']) for it in items)
+            cat_score = sum(int(it['score']) for it in items)
+            weight_share = round(cat_max / total_max * 100, 1) if total_max else 0
+            weight_rows.append({
+                "類別": cat_name,
+                "得分": cat_score,
+                "配分": cat_max,
+                "權重佔比": f"{weight_share}%",
+            })
+        weight_df = pd.DataFrame(weight_rows)
+        st.dataframe(weight_df, use_container_width=True, hide_index=True)
+        st.caption(
+            "說明：整體得分率為各項目「配分」加權後的總和"
+            "（總得分 ÷ 總配分），並非各類別百分比的平均。"
+            "其中「病史詢問」類別配分最高，對整體得分率影響最大。"
+        )
+
     # === V2 detail tabs ===
     category_names = list(categories.keys())
     if category_names:
@@ -633,9 +752,34 @@ if "grader_v2_response" in ss:
 
 
 # ========================================
+# 📖 解答與標準作法（詳解）— 回應多筆「希望結束後提供正確答案與詳解」的回饋
+# ========================================
+if isinstance(ss.get("data"), dict):
+    _ans = ss.data.get("Problem", {})
+    with st.expander("📖 解答與標準作法（詳解）", expanded=True):
+        st.markdown(f"**正確主診斷：** {_ans.get('確認正確疾病之診斷') or _ans.get('疾病', '—')}")
+        if _ans.get('排除可能疾病之診斷'):
+            st.markdown(f"**應納入考量／需排除的鑑別：** {_ans['排除可能疾病之診斷']}")
+        st.markdown(f"**標準處置：** {_ans.get('處置方式', '—')}")
+        st.divider()
+        st.markdown("**你的作答對照**")
+        st.markdown(f"- 你的主診斷：{ss.get('diagnosis') or '（未填）'}")
+        st.markdown(f"- 你的鑑別：{ss.get('ddx') or '（未填）'}")
+        _cover = grading_normalize.match_against_standard(ss.get('treatment', ''), _ans.get('處置方式', ''))
+        if _cover:
+            st.markdown("**處置覆蓋對照**（採同義詞／單複數／中英文容忍比對）")
+            for _c in _cover:
+                _mark = "✅" if _c["covered"] else "⬜"
+                _diff = _c["matched_by"].strip().lower() != _c["standard"].strip().lower()
+                _via = f"（你寫：{_c['matched_by']}）" if _c["covered"] and _diff else ""
+                st.markdown(f"- {_mark} {_c['standard']} {_via}")
+        st.caption("此對照僅供了解作答涵蓋程度（同義詞／單複數／中英文視為相同）；實際分數以上方考官評分為準。")
+
+
+# ========================================
 # 🎯 ACGME 核心能力評估區塊
 # ========================================
-if "grader_v2_response" in ss:
+if want_acgme and ("acgme_grader_response" in ss or ss.get("acgme_error")):
     st.divider()
     st.subheader("🎯 ACGME 核心能力評估")
 
@@ -920,12 +1064,13 @@ _problem = ss.data.get("Problem", {}) if isinstance(ss.get("data"), dict) else {
 _disease = _problem.get("疾病", "—")
 _treatment = _problem.get("處置方式", "—")
 _score_pct_v2 = ss.get("v2_score_percentage", 0)
+_summary_rows = []
+if want_osce and "grader_v2_response" in ss:
+    _summary_rows.append(("📊", "本次得分率", f"{_score_pct_v2}%"))
+_summary_rows.append(("🩺", "病人疾病", _disease))
+_summary_rows.append(("💊", "標準處置", _treatment))
 with st.container(border=True):
-    for icon, label, value in (
-        ("📊", "本次得分率", f"{_score_pct_v2}%"),
-        ("🩺", "病人疾病", _disease),
-        ("💊", "標準處置", _treatment),
-    ):
+    for icon, label, value in _summary_rows:
         label_col, value_col = st.columns([1, 4])
         with label_col:
             st.markdown(f"**{icon} {label}**")

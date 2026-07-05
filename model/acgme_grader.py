@@ -1,9 +1,29 @@
-import os
-import json
-import google.generativeai as genai
-from google.ai.generativelanguage_v1beta.types import content
+import util.llm as llm
 
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+_RESPONSE_SCHEMA = llm.Schema(
+    type=llm.Type.ARRAY,
+    items=llm.Schema(
+        type=llm.Type.OBJECT,
+        required=[
+            "subcompetency_id",
+            "subcompetency_name",
+            "domain",
+            "level",
+            "level_rationale",
+            "evidence",
+            "improvement",
+        ],
+        properties={
+            "subcompetency_id": llm.Schema(type=llm.Type.STRING),
+            "subcompetency_name": llm.Schema(type=llm.Type.STRING),
+            "domain": llm.Schema(type=llm.Type.STRING),
+            "level": llm.Schema(type=llm.Type.INTEGER),
+            "level_rationale": llm.Schema(type=llm.Type.STRING),
+            "evidence": llm.Schema(type=llm.Type.STRING),
+            "improvement": llm.Schema(type=llm.Type.STRING),
+        },
+    ),
+)
 
 
 def create_acgme_grader_model(milestone_data: dict, learner_role: dict = None):
@@ -18,10 +38,10 @@ def create_acgme_grader_model(milestone_data: dict, learner_role: dict = None):
 
     # 把 milestone 的子能力 + Level 描述塞進 system instruction
     sub_block_lines = [
-        f"## 本次評核採用之 ACGME 子能力清單",
+        "## 本次評核採用之 ACGME 子能力清單",
         f"來源：{milestone_data.get('milestone_source', 'unknown')}",
         f"版本：{milestone_data.get('version', 'unknown')}",
-        f"註：清單已預先排除 OSCE 單次模擬不適用之子能力（如 Digital Health、Interprofessional Team、Reflective Practice、Wellness、Physician Role in Health Care Systems）；不需也不應對未列於下方的 ACGME 子能力評級。",
+        "註：清單已預先排除 OSCE 單次模擬不適用之子能力（如 Digital Health、Interprofessional Team、Reflective Practice、Wellness、Physician Role in Health Care Systems）；不需也不應對未列於下方的 ACGME 子能力評級。",
         "",
     ]
     for sub in milestone_data.get("subcompetencies", []):
@@ -58,43 +78,14 @@ def create_acgme_grader_model(milestone_data: dict, learner_role: dict = None):
         + "\n\n" + "\n".join(sub_block_lines)
     )
 
-    generation_config = {
-        "temperature": 0.3,
-        "top_p": 0.95,
-        "top_k": 40,
-        "max_output_tokens": 16384,
-        "response_schema": content.Schema(
-            type=content.Type.ARRAY,
-            items=content.Schema(
-                type=content.Type.OBJECT,
-                enum=[],
-                required=[
-                    "subcompetency_id",
-                    "subcompetency_name",
-                    "domain",
-                    "level",
-                    "level_rationale",
-                    "evidence",
-                    "improvement",
-                ],
-                properties={
-                    "subcompetency_id": content.Schema(type=content.Type.STRING),
-                    "subcompetency_name": content.Schema(type=content.Type.STRING),
-                    "domain": content.Schema(type=content.Type.STRING),
-                    "level": content.Schema(type=content.Type.INTEGER),
-                    "level_rationale": content.Schema(type=content.Type.STRING),
-                    "evidence": content.Schema(type=content.Type.STRING),
-                    "improvement": content.Schema(type=content.Type.STRING),
-                },
-            ),
-        ),
-        "response_mime_type": "application/json",
-    }
-
-    model = genai.GenerativeModel(
-        model_name="gemini-2.5-flash",
-        generation_config=generation_config,
+    config = llm.build_config(
         system_instruction=full_instruction,
+        temperature=0.3,
+        top_p=0.95,
+        top_k=40,
+        max_output_tokens=12288,
+        response_schema=_RESPONSE_SCHEMA,
+        response_mime_type="application/json",
+        thinking_budget=llm.THINK_GRADER,
     )
-
-    return model
+    return llm.ModelHandle("gemini-2.5-flash", config)

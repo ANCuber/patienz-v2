@@ -24,11 +24,20 @@
   ],
   "difficulty_options": ["簡單", "中等", "困難"],
   "setting_options": ["隨機", "門診 OPD", "急診 ER", "住院 Ward", "健檢"],
+  "visit_time_options": ["隨機", "上午", "下午", "傍晚", "夜間", "凌晨"],
   "acuity_options": ["隨機", "急性", "亞急性", "慢性"],
   "comorbidity_options": ["健康", "一般", "多重共病"],
   "complaint_style_options": ["隨機", "典型主訴", "非典型主訴", "模糊主訴"],
   "grade_options": ["不指定", "醫學系四年級", "醫學系五年級", "醫學系六年級（PGY）"],
   "teaching_focus_options": ["病史詢問", "鑑別診斷思考", "危險徵象辨識", "共病管理", "紅旗症狀（red flag）"],
+  "patient_persona_options": [
+    {"id": "default", "label": "預設（依病情自然表現）", "note": ""},
+    {"id": "anxious", "label": "焦慮緊張", "note": "你非常焦慮、容易往壞處想，常追問「會不會很嚴重」「是不是癌症」，需要醫生安撫才會稍微放心。"},
+    {"id": "irritable", "label": "不耐煩／易怒", "note": "你今天很煩躁、沒耐心，回答偏簡短、偶爾抱怨等很久或問題太多；但被醫生同理後會稍微軟化。"},
+    {"id": "taciturn", "label": "話少寡言", "note": "你話很少、很被動，常常只用幾個字回答，需要醫生主動且具體地一步步引導才會多說一點。"},
+    {"id": "talkative", "label": "多話離題", "note": "你很愛講話、容易離題聊生活瑣事，需要醫生把話題拉回病情；但攸關診斷的關鍵症狀仍與病情描述一致。"},
+    {"id": "worried_family", "label": "擔憂的家屬陪同", "note": "有家屬陪同且很擔心，偶爾替你補充或插話；涉及細節時家屬會幫忙回答。"}
+  ],
   "learner_role_options": [
     {
       "id": "pre_clerk",

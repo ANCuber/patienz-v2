@@ -12,4 +12,7 @@ knoledge_base/
 data/log/
 data/save/
 data/grading_results/
+data/mark_scheme_cache/
 *.tmp.*
+.claude/
+test_feeback/

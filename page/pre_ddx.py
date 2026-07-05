@@ -35,8 +35,11 @@ column = st.columns([1, 10, 1, 4])
 with column[1]:
     st.header("初步鑑別診斷")
     st.caption(
-        "根據目前已蒐集的問診與理學檢查資訊，列出您懷疑的鑑別診斷與支持該鑑別診斷之理由。"
-        "送出後此清單將鎖定，不可再修改，作為後續輔助檢查與評分的依據。"
+        "根據目前已蒐集的問診與理學檢查資訊，列出您懷疑的「多個」鑑別診斷（建議列出 3 至 5 個），"
+        "並填寫每個診斷的支持理由與可能性等級（低／中／高）。"
+        "可按「新增一列」加入更多鑑別診斷。"
+        "您填寫的可能性等級與支持理由會作為後續輔助檢查（檢查開立）的依據，並提供給評分系統參考，"
+        "因此請盡量完整列出。送出後將鎖定為評分依據；必要時仍可按「重新編輯清單」回頭修改。"
     )
 
     if not ss.preliminary_ddx_locked:
@@ -115,8 +118,16 @@ with column[1]:
                 if reason_text:
                     st.caption(f"支持理由：{reason_text}")
 
-        if util.check_progress() and st.button("進入輔助檢查區", use_container_width=True, type="primary"):
-            util.next_page()
+        action_cols = st.columns(2)
+        with action_cols[0]:
+            if st.button("✏️ 重新編輯清單", use_container_width=True):
+                ss.preliminary_ddx_locked = False
+                # restore the editable row count to the saved list length
+                ss._preddx_count = max(1, len(ss.preliminary_ddx))
+                st.rerun()
+        with action_cols[1]:
+            if util.check_progress() and st.button("進入輔助檢查區", use_container_width=True, type="primary"):
+                util.next_page()
 
 with column[3]:
     util.show_patient_profile()
