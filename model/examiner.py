@@ -1,5 +1,6 @@
 import streamlit as st
 import util.llm as llm
+import util.context_cache as ccache
 
 ss = st.session_state
 EXAMINER_INSTRUCTION_TXT = "instruction_file/examiner_instruction_text.txt"
@@ -35,8 +36,10 @@ def create_value_examiner_model(problem: str, examiner_instruction_path=EXAMINER
 
         gender = ss.data["基本資訊"]["性別"]
 
-        config = llm.build_config(
+        ss.value_examiner = ccache.start_cached_chat(
+            "gemini-2.5-flash",
             system_instruction=f"{examiner_instruction}\n病人性別：{gender}\n\n病人資料：\n{problem}",
+            display_name=f"patienz-examval-{ss.get('sid', 'nosid')}",
             temperature=0.4,
             top_p=0.95,
             top_k=40,
@@ -45,7 +48,6 @@ def create_value_examiner_model(problem: str, examiner_instruction_path=EXAMINER
             response_mime_type="application/json",
             thinking_budget=llm.THINK_OFF,
         )
-        ss.value_examiner = llm.start_chat("gemini-2.5-flash", config)
         ss.value_examiner_model = True
 
 
@@ -60,8 +62,10 @@ def create_text_examiner_model(problem: str, examiner_instruction_path=EXAMINER_
 
         gender = ss.data["基本資訊"]["性別"]
 
-        config = llm.build_config(
+        ss.text_examiner = ccache.start_cached_chat(
+            "gemini-2.5-flash",
             system_instruction=f"{examiner_instruction}\n病人性別：{gender}\n\n病人資料：\n{problem}",
+            display_name=f"patienz-examtext-{ss.get('sid', 'nosid')}",
             temperature=1,
             top_p=0.95,
             top_k=40,
@@ -69,7 +73,6 @@ def create_text_examiner_model(problem: str, examiner_instruction_path=EXAMINER_
             response_mime_type="text/plain",
             thinking_budget=llm.THINK_OFF,
         )
-        ss.text_examiner = llm.start_chat("gemini-2.5-flash", config)
         ss.text_examiner_model = True
 
 
@@ -82,8 +85,10 @@ def create_pe_examiner_model(problem: str, pe_instruction_path=PE_INSTRUCTION):
         with open(pe_instruction_path, "r", encoding="utf-8") as file:
             pe_instruction = file.read()
 
-        config = llm.build_config(
+        ss.pe_examiner = ccache.start_cached_chat(
+            "gemini-2.5-flash",
             system_instruction=f"{pe_instruction}{problem}",
+            display_name=f"patienz-pe-{ss.get('sid', 'nosid')}",
             temperature=1,
             top_p=0.95,
             top_k=40,
@@ -91,5 +96,4 @@ def create_pe_examiner_model(problem: str, pe_instruction_path=PE_INSTRUCTION):
             response_mime_type="text/plain",
             thinking_budget=llm.THINK_OFF,
         )
-        ss.pe_examiner = llm.start_chat("gemini-2.5-flash", config)
         ss.pe_examiner_model = True

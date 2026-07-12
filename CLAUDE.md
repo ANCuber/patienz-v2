@@ -10,6 +10,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 All Gemini access goes through `util/llm.py` (single client, `build_config()` with **thinking-budget control**, `start_chat()`, and `ModelHandle` for the legacy `model.start_chat()` shape). Interactive/examiner paths run with `thinking_budget=0`; graders use a small budget.
 
+The four interactive chats (patient + value/text/PE examiners) serve their fixed instruction+case prefix from an **explicit Gemini context cache** via `util/context_cache.py` (`start_cached_chat()`): cache-creation failure falls back to the plain path, a mid-session cache expiry self-heals by rebuilding the chat uncached (history preserved) and retrying once. Opt out with `PATIENZ_DISABLE_CONTEXT_CACHE=1`; TTL via `PATIENZ_CACHE_TTL_SECONDS` (default 7200).
+
 ## Setup & Running
 
 ```bash

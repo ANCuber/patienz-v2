@@ -66,9 +66,18 @@ def safety_block_only_high():
 
 def build_config(*, system_instruction=None, temperature=None, top_p=None, top_k=None,
                  max_output_tokens=None, response_schema=None, response_mime_type=None,
-                 safety_settings=None, thinking_budget=None):
+                 safety_settings=None, thinking_budget=None, cached_content=None):
     """Build a GenerateContentConfig. ``thinking_budget`` is in output tokens;
-    pass ``THINK_OFF`` (0) to disable thinking. ``None`` leaves a field unset."""
+    pass ``THINK_OFF`` (0) to disable thinking. ``None`` leaves a field unset.
+
+    ``cached_content`` is an explicit context-cache resource name (§1-C, see
+    :mod:`util.context_cache`). The Gemini API rejects requests that set both a
+    cache and a system instruction (the cache already contains it), so passing
+    both is a programming error we surface immediately.
+    """
+    if cached_content is not None and system_instruction is not None:
+        raise ValueError("pass either cached_content or system_instruction, not both "
+                         "(the explicit cache already embeds the system instruction)")
     thinking = None
     if thinking_budget is not None:
         thinking = gtypes.ThinkingConfig(thinking_budget=thinking_budget)
@@ -82,6 +91,7 @@ def build_config(*, system_instruction=None, temperature=None, top_p=None, top_k
         response_mime_type=response_mime_type,
         safety_settings=safety_settings,
         thinking_config=thinking,
+        cached_content=cached_content,
     )
 
 

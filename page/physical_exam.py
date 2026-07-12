@@ -55,10 +55,19 @@ with column[1]:
                         f"具體細項：{', '.join(selected_items)}。"
                         f"請依系統指令的「各子類別對應的手法」嚴格遵守。"
                     )
-                    result = ss.pe_examiner.send_message(strict_prompt).text
-                    ss.pe_result.append((f"{category} - {subcategory}", result))
+                    # A transient API error (429/5xx/連線) must show a retry
+                    # hint, not a raw traceback page.
+                    try:
+                        result = ss.pe_examiner.send_message(strict_prompt).text
+                    except Exception as e:
+                        util.record(ss.log, f"[PE] send_message error: {e}")
+                        result = None
 
-                st.rerun()
+                if result:
+                    ss.pe_result.append((f"{category} - {subcategory}", result))
+                    st.rerun()
+                else:
+                    st.warning("理學檢查暫時無法取得結果（系統忙碌或連線問題），請再試一次")
 
         if st.button("完成理學檢查", use_container_width=True) and util.check_progress():
             util.next_page()

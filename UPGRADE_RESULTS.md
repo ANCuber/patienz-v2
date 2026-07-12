@@ -169,4 +169,32 @@ git checkout -- util/ model/ page/ requirements.txt
 - 設定區「流程模式」選「闖關模式」→ 側欄出現「闖關進度」，隨問診/臆斷/檢查/診斷推進，關卡依序 ✅。
 - 選「標準」或「自由探索」→ 不顯示闖關進度，行為與先前一致。
 
-**建議下一步（P2）**：§1-C Gemini context caching（再降延遲，需金鑰實測）、§6 真實影像庫（PTB-XL/NIH CXR，需取得資料集授權且須以真實影像而非生成影像）。（Enter 送出已由 `st.chat_input` 內建。）
+## H. §1-C Gemini 顯式 Context Caching（已完成）
+
+| 項目 | 內容 | 檔案 |
+|---|---|---|
+| §1-C | 病人＋三個檢查官（數值/文字/PE）這四條互動熱路徑，每一輪都重送「agent 指令＋完整病例 JSON」的固定前綴（數千 tokens）。現改為以 **Gemini 顯式 context cache**（`client.caches.create`）上傳一次、之後每輪以名稱引用 → 前綴不必每輪重新處理（**降低每輪延遲**），且快取 tokens 以折扣計價（**降低成本**）。 | `util/context_cache.py`（新）、`util/llm.py`、`model/patient.py`、`model/examiner.py` |
+
+**安全設計（任何失敗都不影響功能）**：
+- **建立失敗即退回**：前綴低於模型最低門檻（2.5 Flash 為 1,024 tokens）、配額、網路等任何錯誤 → 自動走原本「每輪帶 system_instruction」路徑，行為與 §1-C 之前完全相同。建立呼叫帶 **10 秒逾時**，受限網路（如公用網路）不會卡在「正在建立模型」。
+- **執行中自癒（只認快取死亡）**：快取過期/失效（API 回 400/403/404）時，代理層**以原 system_instruction 重建對話（歷史保留）並自動重試一次**，同時刪除死快取；**瞬時錯誤（429/5xx/連線）直接上拋**由頁面顯示「請再試一次」，不會因一次抖動就永久放棄健康的快取。
+- **不留計費孤兒**：讀取進度存檔重建模型時，舊對話的伺服器端快取會**主動刪除**（顯式快取按 token-小時計儲存費，不刪只能等 TTL 到期）。
+- **可關閉**：`PATIENZ_DISABLE_CONTEXT_CACHE=1` 完全停用；`PATIENZ_CACHE_TTL_SECONDS` 可調 TTL（預設 7200）。
+- **不動評分器**：graders 為一次性呼叫，快取無益，維持原路徑。advisor 的大宗上下文在對話歷史（primer）而非 system instruction，且為低頻問答，暫不納入。
+
+**連帶強化（審查發現的既有弱點，一併修復）**：
+- `page/physical_exam.py`／`page/examination.py` 的檢查官呼叫原本**沒有錯誤處理**——任何 API 錯誤都會讓學生看到英文 traceback。現改為與問診頁相同的中文警告＋重試提示。
+- `page/examination.py` 原本在**送出前**就把整張檢查單標記為「已做過」——中途失敗會讓未完成的檢查被重複開立檢查誤判鎖住。現改為**交易式**：成功取得結果的項目才標記並移出檢查單，失敗項目保留供重試。
+
+**對抗式審查**：3 視角 × 逐項反駁驗證（13 agents）→ 10 項原始發現、9 項確認（2M+2H+5L，其中 3 項為同一快取洩漏問題的不同面向）、1 項駁回；**全部修復**並各自補上單元測試（瞬時錯誤不觸發回退、回退時刪快取、建立逾時、conftest 硬性斷網）。
+
+**驗證（無金鑰、自動化）**：新增 `tests/test_context_cache.py`（15 tests：env 開關、TTL、建立成功/失敗/逾時參數、`build_config` 互斥防呆、快取聊天保留 generation 設定與 response_schema、過期自癒重試一次、不無限重試、429/5xx/連線錯誤不放棄快取、刪除快取容錯、病人/檢查官整合）→ 全套 **58 passed**；py_compile 全數通過。
+
+### §1-C 手動驗證（需 `GEMINI_API_KEY`）
+1. `streamlit run home.py` → 建立病例、進入問診。伺服器 console 應出現 `` [CACHE] created cachedContents/… (patienz-patient-<SID>) ``。
+2. 問診多輪，對話正常；到檢查區下檢查時應再看到 `patienz-examval-…`／`patienz-examtext-…`／`patienz-pe-…` 的 `[CACHE] created` 行。
+3. 用量核對（可選）：`python -c "from google import genai,os; [print(c.name, c.display_name) for c in genai.Client().caches.list()]"` 應列出本 session 的快取。
+4. 回退驗證：`PATIENZ_DISABLE_CONTEXT_CACHE=1 streamlit run home.py` → console 無 `[CACHE]` 行，一切行為與先前版本相同。
+5. 延遲比較（可選）：同一病例分別在開/關快取下問診 5 輪，比較回覆時間；快取路徑的第 2 輪起應明顯較快（前綴越大差距越明顯）。
+
+**剩餘建議（P2）**：§6 真實影像庫（PTB-XL/NIH CXR，需取得資料集授權且須以真實影像而非生成影像）。（Enter 送出已由 `st.chat_input` 內建。）

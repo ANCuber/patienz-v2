@@ -9,6 +9,11 @@ import types
 import contextlib
 
 os.environ.setdefault("GEMINI_API_KEY", "DUMMY")
+# Explicit context caching (§1-C) does a real network call at cache creation;
+# force it off in tests (hard assignment — an enabling value inherited from the
+# developer's shell must not turn the no-network suite into real HTTPS calls).
+# Cache-specific tests re-enable per-test with a monkeypatched client.
+os.environ["PATIENZ_DISABLE_CONTEXT_CACHE"] = "1"
 
 # Ensure the project root is importable as the package root (util.*, model.*).
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

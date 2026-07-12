@@ -390,12 +390,14 @@ with column[1]:
                 else:
                     ss.confirm_duplicate = False
 
-                    # 記錄已開立項目
-                    for c in ss.exam_cart:
-                        ss.ordered_exam_set.add(c["eng"])
-
                     value_cart = [c for c in ss.exam_cart if c["result_type"] == "value"]
                     text_cart = [c for c in ss.exam_cart if c["result_type"] == "text"]
+
+                    # 交易式開單：成功取得結果的項目才標記「已開立」並移出檢查單；
+                    # 失敗（429/5xx/連線）的項目保留在檢查單供重試，不會被重複開立
+                    # 檢查誤判成「已做過」。
+                    completed = set()
+                    exam_failed = False
 
                     # === 數值型：合併成單一 examiner 呼叫以節省 token ===
                     if value_cart:
@@ -405,40 +407,50 @@ with column[1]:
                             [c["eng"], c["chinese"], c["reference"], c["unit"]] for c in value_cart
                         ]
                         with st.spinner("進行檢查中..."):
-                            raw_result = ss.value_examiner.send_message(
-                                f"請為以下檢驗項目生成檢驗結果（每項皆須輸出）：{merged_full_items}"
-                            ).text
+                            try:
+                                raw_result = ss.value_examiner.send_message(
+                                    f"請為以下檢驗項目生成檢驗結果（每項皆須輸出）：{merged_full_items}"
+                                ).text
+                            except Exception as e:
+                                util.record(ss.log, f"[EXAM] value examiner error: {e}")
+                                raw_result = None
 
-                        # 依子類別分組，逐組產生一筆 examination_history（沿用既有寫入邏輯）
-                        seen_order = []
-                        groups = {}
-                        for c in value_cart:
-                            if c["subcategory"] not in groups:
-                                groups[c["subcategory"]] = []
-                                seen_order.append(c["subcategory"])
-                            groups[c["subcategory"]].append(c)
+                        if not raw_result:
+                            exam_failed = True
+                        else:
+                            # 依子類別分組，逐組產生一筆 examination_history（沿用既有寫入邏輯）
+                            seen_order = []
+                            groups = {}
+                            for c in value_cart:
+                                if c["subcategory"] not in groups:
+                                    groups[c["subcategory"]] = []
+                                    seen_order.append(c["subcategory"])
+                                groups[c["subcategory"]].append(c)
 
-                        for subcat in seen_order:
-                            items = groups[subcat]
-                            sub_full_items = [CSV_HEADER] + [
-                                [c["eng"], c["chinese"], c["reference"], c["unit"]] for c in items
-                            ]
-                            result_html, has_abnormal = process_examination_result(sub_full_items, raw_result)
-                            ss.examination_result.append((subcat, result_html))
-                            ss.examination_history.append({
-                                "order_number": len(ss.examination_history) + 1,
-                                "category": items[0]["category"],
-                                "subcategory": subcat,
-                                "items": [c["eng"] for c in items],
-                                "items_chinese": [c["chinese"] for c in items],
-                                "result_type": "value",
-                                "result_html": result_html,
-                                "has_abnormal": has_abnormal,
-                                "interpretation": "",
-                            })
+                            for subcat in seen_order:
+                                items = groups[subcat]
+                                sub_full_items = [CSV_HEADER] + [
+                                    [c["eng"], c["chinese"], c["reference"], c["unit"]] for c in items
+                                ]
+                                result_html, has_abnormal = process_examination_result(sub_full_items, raw_result)
+                                ss.examination_result.append((subcat, result_html))
+                                ss.examination_history.append({
+                                    "order_number": len(ss.examination_history) + 1,
+                                    "category": items[0]["category"],
+                                    "subcategory": subcat,
+                                    "items": [c["eng"] for c in items],
+                                    "items_chinese": [c["chinese"] for c in items],
+                                    "result_type": "value",
+                                    "result_html": result_html,
+                                    "has_abnormal": has_abnormal,
+                                    "interpretation": "",
+                                })
+                            for c in value_cart:
+                                ss.ordered_exam_set.add(c["eng"])
+                                completed.add(c["eng"])
 
                     # === 文字型：每個子類別各自一次 text examiner 呼叫 ===
-                    if text_cart:
+                    if text_cart and not exam_failed:
                         create_text_examiner_model(ss.problem)
                         seen_order = []
                         groups = {}
@@ -453,9 +465,16 @@ with column[1]:
                             items_chinese = [c["chinese"] for c in items]
                             item_payload = [[c["eng"], c["chinese"]] for c in items]
                             with st.spinner("進行檢查中..."):
-                                result_text = ss.text_examiner.send_message(
-                                    f"Please provide the examination findings for the following ({subcat}): {item_payload}"
-                                ).text
+                                try:
+                                    result_text = ss.text_examiner.send_message(
+                                        f"Please provide the examination findings for the following ({subcat}): {item_payload}"
+                                    ).text
+                                except Exception as e:
+                                    util.record(ss.log, f"[EXAM] text examiner error ({subcat}): {e}")
+                                    result_text = None
+                            if not result_text:
+                                exam_failed = True
+                                break
                             result_html, has_abnormal = parse_text_result(result_text)
                             ss.examination_result.append(("、".join(items_chinese), result_html))
                             ss.examination_history.append({
@@ -469,10 +488,17 @@ with column[1]:
                                 "has_abnormal": has_abnormal,
                                 "interpretation": "",
                             })
+                            for c in items:
+                                ss.ordered_exam_set.add(c["eng"])
+                                completed.add(c["eng"])
 
-                    # 清空檢查單
-                    ss.exam_cart = []
-                    st.rerun()
+                    # 完成的項目移出檢查單；失敗的保留供重試
+                    ss.exam_cart = [c for c in ss.exam_cart if c["eng"] not in completed]
+                    if exam_failed:
+                        st.warning("部分檢查暫時無法取得結果（系統忙碌或連線問題），"
+                                   "未完成的項目仍在檢查單中，請稍後再點一次「開始檢查」。")
+                    else:
+                        st.rerun()
 
         if st.button("完成檢查", use_container_width=True) and util.check_progress():
             util.next_page()

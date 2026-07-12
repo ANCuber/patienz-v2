@@ -135,7 +135,10 @@ def load_progress(file_name: str):
     # Drop transient chat/model handles so pages recreate them (with restored
     # history) on next use. These are google-genai chat objects / sentinels and
     # are never serialized, so they must be cleared from a live session that is
-    # being overwritten by a load.
+    # being overwritten by a load. Cache-backed chats carry a cache_name —
+    # delete the server-side cache too, since the rebuild will mint a new one
+    # and the old one would otherwise bill storage until TTL expiry.
+    import util.context_cache as ccache
     for key in ("patient", "patient_model",
                 "examiner",
                 "value_examiner", "value_examiner_model",
@@ -145,6 +148,7 @@ def load_progress(file_name: str):
                 "advisor", "advisor_model",
                 "audio", "audio2", "prompt"):
         if key in ss:
+            ccache.delete_cache(getattr(ss[key], "cache_name", None))
             del ss[key]
 
 

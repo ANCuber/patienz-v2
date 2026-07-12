@@ -1,5 +1,6 @@
 import streamlit as st
 import util.llm as llm
+import util.context_cache as ccache
 
 PATIENT_INSTRUCTION = "instruction_file/patient_instruction.txt"
 
@@ -55,8 +56,20 @@ def create_patient_model(problem: str, patient_instruction_path=PATIENT_INSTRUCT
 
         system_instruction = f"{patient_instruction}{problem}{_pediatric_note()}{_persona_note()}"
 
-        config = llm.build_config(
+        history = []
+        if prior_messages:
+            for msg in prior_messages:
+                role = "user" if msg["role"] == "doctor" else "model"
+                history.append({"role": role, "parts": [{"text": msg["content"]}]})
+
+        # §1-C: the instruction+case prefix (several k tokens) is identical on
+        # every turn → serve it from an explicit context cache when possible.
+        # Falls back transparently to the plain path on any cache failure.
+        ss.patient = ccache.start_cached_chat(
+            "gemini-2.5-flash",
             system_instruction=system_instruction,
+            display_name=f"patienz-patient-{ss.get('sid', 'nosid')}",
+            history=history,
             temperature=1,
             top_p=0.95,
             top_k=40,
@@ -65,12 +78,4 @@ def create_patient_model(problem: str, patient_instruction_path=PATIENT_INSTRUCT
             safety_settings=llm.safety_block_only_high(),
             thinking_budget=llm.THINK_OFF,  # interactive turn → no hidden thinking latency
         )
-
-        history = []
-        if prior_messages:
-            for msg in prior_messages:
-                role = "user" if msg["role"] == "doctor" else "model"
-                history.append({"role": role, "parts": [{"text": msg["content"]}]})
-
-        ss.patient = llm.start_chat("gemini-2.5-flash", config, history=history)
         ss.patient_model = True  # sentinel: presence gates re-creation in pages
