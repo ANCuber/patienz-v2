@@ -2,6 +2,7 @@ import json
 import os
 import datetime
 import streamlit as st
+import util.db_store as db_store
 
 ss = st.session_state
 
@@ -46,6 +47,10 @@ def _ensure_dir():
     os.makedirs(SAVE_DIR, exist_ok=True)
 
 
+def _ensure_grading_dir():
+    os.makedirs(GRADING_DIR, exist_ok=True)
+
+
 def _serialize(value):
     if isinstance(value, set):
         return {"__set__": [_serialize(v) for v in value]}
@@ -67,7 +72,7 @@ def _deserialize(value):
 
 
 def save_progress() -> str:
-    """將目前進度存成 JSON 檔，回傳檔名。"""
+    """將目前進度存檔（DB 為主，JSON 為相容備援），回傳檔名。"""
     _ensure_dir()
 
     save_data = {}
@@ -92,6 +97,20 @@ def save_progress() -> str:
     timestamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     file_name = f"{timestamp}_{name}_{progress_label}.json"
 
+    # Phase 1: write-through to DB first for stronger data control.
+    try:
+        db_store.init_db()
+        db_store.upsert_progress_save(
+            save_name=file_name,
+            sid=ss.get("sid"),
+            patient_name=name,
+            progress_label=progress_label,
+            progress_index=progress_idx,
+            payload=save_data,
+        )
+    except Exception as e:
+        print(f"[DB] save_progress failed, fallback to file only: {e}")
+
     with open(os.path.join(SAVE_DIR, file_name), "w", encoding="utf-8") as f:
         json.dump(save_data, f, ensure_ascii=False, indent=2)
 
@@ -100,17 +119,43 @@ def save_progress() -> str:
 
 def list_saves():
     _ensure_dir()
-    return sorted(
+
+    db_names = []
+    try:
+        db_store.init_db()
+        db_names = db_store.list_progress_save_names()
+    except Exception as e:
+        print(f"[DB] list_saves failed, fallback to file list: {e}")
+
+    file_names = sorted(
         [f for f in os.listdir(SAVE_DIR) if f.endswith(".json")],
         reverse=True,
     )
+
+    # Prefer DB ordering while keeping file-only legacy entries visible.
+    merged = []
+    seen = set()
+    for name in db_names + file_names:
+        if name not in seen:
+            seen.add(name)
+            merged.append(name)
+    return merged
 
 
 def load_progress(file_name: str):
     """從存檔還原 session state。AI 模型於使用時延遲重建。"""
     import util.constants as const
-    with open(os.path.join(SAVE_DIR, file_name), "r", encoding="utf-8") as f:
-        save_data = json.load(f)
+
+    save_data = None
+    try:
+        db_store.init_db()
+        save_data = db_store.get_progress_payload(file_name)
+    except Exception as e:
+        print(f"[DB] load_progress lookup failed, trying file: {e}")
+
+    if save_data is None:
+        with open(os.path.join(SAVE_DIR, file_name), "r", encoding="utf-8") as f:
+            save_data = json.load(f)
 
     for key, value in save_data.items():
         ss[key] = _deserialize(value)
@@ -149,6 +194,12 @@ def load_progress(file_name: str):
 
 
 def delete_save(file_name: str):
+    try:
+        db_store.init_db()
+        db_store.delete_progress_save(file_name)
+    except Exception as e:
+        print(f"[DB] delete_save failed for {file_name}: {e}")
+
     path = os.path.join(SAVE_DIR, file_name)
     if os.path.exists(path):
         os.remove(path)
@@ -162,8 +213,8 @@ def _safe_json_loads(text):
 
 
 def save_grading_result() -> str:
-    """評分完成後自動存檔，回傳檔名。以 SID 為主檔名，重新評分時會覆蓋。"""
-    os.makedirs(GRADING_DIR, exist_ok=True)
+    """評分完成後自動存檔（DB 為主，JSON 為相容備援），回傳檔名。"""
+    _ensure_grading_dir()
 
     sid = ss.get("sid") or datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 
@@ -224,6 +275,20 @@ def save_grading_result() -> str:
         record["acgme_error"] = True
 
     file_name = f"{sid}_{name}_{disease}.json"
+
+    try:
+        db_store.init_db()
+        db_store.upsert_grading_result(
+            record_name=file_name,
+            sid=sid,
+            patient_name=name,
+            disease=disease,
+            score_v2_percentage=ss.get("v2_score_percentage"),
+            payload=record,
+        )
+    except Exception as e:
+        print(f"[DB] save_grading_result failed, fallback to file only: {e}")
+
     path = os.path.join(GRADING_DIR, file_name)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(record, f, ensure_ascii=False, indent=2, default=str)

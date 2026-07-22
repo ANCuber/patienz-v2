@@ -1,4 +1,5 @@
-venv/
+.venv/
+.streamlit/
 TODO.txt
 __pycache__/
 data/SSL/
@@ -13,6 +14,10 @@ data/log/
 data/save/
 data/grading_results/
 data/mark_scheme_cache/
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+data/log_db/
 *.tmp.*
 .claude/
 test_feeback/

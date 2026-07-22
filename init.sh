@@ -1,9 +1,9 @@
 #!/bin/zsh
 
 echo Initializing virtual environment...
-python -m venv venv
+python -m venv .venv
 
-source venv/bin/activate
+source .venv/bin/activate
 
 echo Installing required packages...
 # Install the required packages

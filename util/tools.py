@@ -17,6 +17,7 @@ import util.dialog as dialog
 import util.navigation as navigation
 import util.stages as stages
 import util.save_load as save_load
+import util.db_store as db_store
 
 ss = st.session_state 
 
@@ -29,6 +30,11 @@ def next_page():
     st.switch_page(f"page/{const.section_name[target]}.py")
 
 def init_all():
+    try:
+        db_store.init_db()
+    except Exception as e:
+        print(f"[DB] init failed: {e}")
+
     if "sid" not in ss:
         ss.sid = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
         ss.log = f"data/log/{ss.sid}.txt"
@@ -276,8 +282,15 @@ def record(file, text):
     :param file: The file to write to.
     :param text: The text to write.
     """
+    os.makedirs(os.path.dirname(file), exist_ok=True)
     with open(file, "a", encoding="utf-8") as f:
         f.write(text + "\n")
+
+    try:
+        if ss.get("sid"):
+            db_store.append_log(ss.sid, text)
+    except Exception as e:
+        print(f"[DB] append_log failed: {e}")
 
     print(f"Recorded: {text}")
 
