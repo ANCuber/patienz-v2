@@ -5,7 +5,6 @@ This script is non-destructive by design: it never edits or deletes source files
 """
 
 import argparse
-import os
 from pathlib import Path
 import sys
 
