@@ -15,6 +15,7 @@ import util.navigation as navigation
 import util.stages as stages
 import util.save_load as save_load
 import util.db_store as db_store
+import util.auth as auth
 
 ss = st.session_state 
 
@@ -28,13 +29,19 @@ def next_page():
 
 def init_all():
     try:
+        auth.init_auth()
         db_store.init_db()
     except Exception as e:
         print(f"[DB] init failed: {e}")
 
+    if not auth.is_authenticated():
+        return
+
     if "sid" not in ss:
+        username = auth.current_username() or "anonymous"
+        safe_user = "".join(ch for ch in username if ch.isalnum() or ch in ("-", "_")) or "anonymous"
         ss.sid = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-        ss.log = f"data/log/{ss.sid}.txt"
+        ss.log = f"data/log/{safe_user}/{ss.sid}.txt"
         print(f"Session ID: {ss.sid}")
         print(f"Log file: {ss.log}")
 
@@ -65,6 +72,12 @@ def init_all():
         ss.cur_show_all, ss.show_all = True, True
 
 def init(page_id: int):
+    auth.init_auth()
+    if not auth.is_authenticated():
+        st.warning("請先登入")
+        st.rerun()
+        st.stop()
+
     ss.page_id = page_id
 
     # Free-exploration mode (§7): visiting a phase ahead of the frontier unlocks
@@ -140,10 +153,19 @@ def _render_quest_tracker():
 
 
 def note():
+    auth.init_auth()
+    auth.require_login()
+
     if "note" not in ss:
         ss.note = ""
 
     with st.sidebar:
+        st.caption(f"使用者：{auth.current_username()} ({auth.current_role()})")
+        if st.button("登出", use_container_width=True, key="logout_btn"):
+            auth.logout()
+            st.rerun()
+            st.stop()
+
         st.header("看診進度")
         for i, n in enumerate(const.noun):
             label = f"{const.icon[i]} {n}區"

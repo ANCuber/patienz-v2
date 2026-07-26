@@ -3,6 +3,7 @@ import os
 import datetime
 import streamlit as st
 import util.db_store as db_store
+import util.auth as auth
 
 ss = st.session_state
 
@@ -49,6 +50,29 @@ def _ensure_dir():
 
 def _ensure_grading_dir():
     os.makedirs(GRADING_DIR, exist_ok=True)
+
+
+def _safe_user_segment(username):
+    allowed = []
+    for ch in (username or "anonymous"):
+        if ch.isalnum() or ch in ("-", "_"):
+            allowed.append(ch)
+    text = "".join(allowed).strip("_")
+    return text or "anonymous"
+
+
+def _user_save_dir():
+    _ensure_dir()
+    user_dir = os.path.join(SAVE_DIR, _safe_user_segment(auth.current_username()))
+    os.makedirs(user_dir, exist_ok=True)
+    return user_dir
+
+
+def _user_grading_dir():
+    _ensure_grading_dir()
+    user_dir = os.path.join(GRADING_DIR, _safe_user_segment(auth.current_username()))
+    os.makedirs(user_dir, exist_ok=True)
+    return user_dir
 
 
 def _serialize(value):
@@ -107,28 +131,29 @@ def save_progress() -> str:
             progress_label=progress_label,
             progress_index=progress_idx,
             payload=save_data,
+            user_id=auth.current_user_id(),
         )
     except Exception as e:
         print(f"[DB] save_progress failed, fallback to file only: {e}")
 
-    with open(os.path.join(SAVE_DIR, file_name), "w", encoding="utf-8") as f:
+    with open(os.path.join(_user_save_dir(), file_name), "w", encoding="utf-8") as f:
         json.dump(save_data, f, ensure_ascii=False, indent=2)
 
     return file_name
 
 
 def list_saves():
-    _ensure_dir()
+    user_dir = _user_save_dir()
 
     db_names = []
     try:
         db_store.init_db()
-        db_names = db_store.list_progress_save_names()
+        db_names = db_store.list_progress_save_names(user_id=auth.current_user_id())
     except Exception as e:
         print(f"[DB] list_saves failed, fallback to file list: {e}")
 
     file_names = sorted(
-        [f for f in os.listdir(SAVE_DIR) if f.endswith(".json")],
+        [f for f in os.listdir(user_dir) if f.endswith(".json")],
         reverse=True,
     )
 
@@ -149,12 +174,12 @@ def load_progress(file_name: str):
     save_data = None
     try:
         db_store.init_db()
-        save_data = db_store.get_progress_payload(file_name)
+        save_data = db_store.get_progress_payload(file_name, user_id=auth.current_user_id())
     except Exception as e:
         print(f"[DB] load_progress lookup failed, trying file: {e}")
 
     if save_data is None:
-        with open(os.path.join(SAVE_DIR, file_name), "r", encoding="utf-8") as f:
+        with open(os.path.join(_user_save_dir(), file_name), "r", encoding="utf-8") as f:
             save_data = json.load(f)
 
     for key, value in save_data.items():
@@ -196,11 +221,11 @@ def load_progress(file_name: str):
 def delete_save(file_name: str):
     try:
         db_store.init_db()
-        db_store.delete_progress_save(file_name)
+        db_store.delete_progress_save(file_name, user_id=auth.current_user_id())
     except Exception as e:
         print(f"[DB] delete_save failed for {file_name}: {e}")
 
-    path = os.path.join(SAVE_DIR, file_name)
+    path = os.path.join(_user_save_dir(), file_name)
     if os.path.exists(path):
         os.remove(path)
 
@@ -285,11 +310,12 @@ def save_grading_result() -> str:
             disease=disease,
             score_v2_percentage=ss.get("v2_score_percentage"),
             payload=record,
+            user_id=auth.current_user_id(),
         )
     except Exception as e:
         print(f"[DB] save_grading_result failed, fallback to file only: {e}")
 
-    path = os.path.join(GRADING_DIR, file_name)
+    path = os.path.join(_user_grading_dir(), file_name)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(record, f, ensure_ascii=False, indent=2, default=str)
 

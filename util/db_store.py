@@ -81,8 +81,38 @@ def _ensure_log_schema(conn):
     )
 
 
+def _column_exists(conn, table_name, column_name):
+    rows = conn.execute(f"PRAGMA table_info({table_name})").fetchall()
+    return any(row[1] == column_name for row in rows)
+
+
+def _ensure_column(conn, table_name, column_name, column_sql):
+    if not _column_exists(conn, table_name, column_name):
+        conn.execute(f"ALTER TABLE {table_name} ADD COLUMN {column_sql}")
+
+
 def init_db():
     with _connect_main() as conn:
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                username TEXT NOT NULL UNIQUE,
+                password_hash TEXT NOT NULL,
+                role TEXT NOT NULL DEFAULT 'user',
+                is_active INTEGER NOT NULL DEFAULT 1,
+                created_at TEXT NOT NULL,
+                updated_at TEXT NOT NULL
+            )
+            """
+        )
+        conn.execute(
+            """
+            CREATE INDEX IF NOT EXISTS idx_users_role_active
+            ON users (role, is_active)
+            """
+        )
+
         conn.execute(
             """
             CREATE TABLE IF NOT EXISTS progress_saves (
@@ -98,10 +128,17 @@ def init_db():
             )
             """
         )
+        _ensure_column(conn, "progress_saves", "user_id", "user_id INTEGER")
         conn.execute(
             """
             CREATE INDEX IF NOT EXISTS idx_progress_saves_sid
             ON progress_saves (sid)
+            """
+        )
+        conn.execute(
+            """
+            CREATE INDEX IF NOT EXISTS idx_progress_saves_user_id
+            ON progress_saves (user_id)
             """
         )
 
@@ -120,10 +157,17 @@ def init_db():
             )
             """
         )
+        _ensure_column(conn, "grading_results", "user_id", "user_id INTEGER")
         conn.execute(
             """
             CREATE INDEX IF NOT EXISTS idx_grading_results_sid
             ON grading_results (sid)
+            """
+        )
+        conn.execute(
+            """
+            CREATE INDEX IF NOT EXISTS idx_grading_results_user_id
+            ON grading_results (user_id)
             """
         )
 
@@ -136,17 +180,18 @@ def _now():
     return datetime.datetime.now().isoformat(timespec="seconds")
 
 
-def upsert_progress_save(save_name, sid, patient_name, progress_label, progress_index, payload):
+def upsert_progress_save(save_name, sid, patient_name, progress_label, progress_index, payload, user_id=None):
     payload_json = json.dumps(payload, ensure_ascii=False)
     now = _now()
     with _connect_main() as conn:
         conn.execute(
             """
             INSERT INTO progress_saves (
-                save_name, sid, patient_name, progress_label,
+                save_name, user_id, sid, patient_name, progress_label,
                 progress_index, payload_json, created_at, updated_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(save_name) DO UPDATE SET
+                user_id=excluded.user_id,
                 sid=excluded.sid,
                 patient_name=excluded.patient_name,
                 progress_label=excluded.progress_label,
@@ -156,6 +201,7 @@ def upsert_progress_save(save_name, sid, patient_name, progress_label, progress_
             """,
             (
                 save_name,
+                user_id,
                 sid,
                 patient_name,
                 progress_label,
@@ -167,55 +213,86 @@ def upsert_progress_save(save_name, sid, patient_name, progress_label, progress_
         )
 
 
-def list_progress_save_names():
+def list_progress_save_names(user_id=None):
     with _connect_main() as conn:
-        rows = conn.execute(
-            """
-            SELECT save_name
-            FROM progress_saves
-            ORDER BY updated_at DESC, id DESC
-            """
-        ).fetchall()
+        if user_id is None:
+            rows = conn.execute(
+                """
+                SELECT save_name
+                FROM progress_saves
+                ORDER BY updated_at DESC, id DESC
+                """
+            ).fetchall()
+        else:
+            rows = conn.execute(
+                """
+                SELECT save_name
+                FROM progress_saves
+                WHERE user_id = ?
+                ORDER BY updated_at DESC, id DESC
+                """,
+                (user_id,),
+            ).fetchall()
     return [row["save_name"] for row in rows]
 
 
-def get_progress_payload(save_name):
+def get_progress_payload(save_name, user_id=None):
     with _connect_main() as conn:
-        row = conn.execute(
-            """
-            SELECT payload_json
-            FROM progress_saves
-            WHERE save_name = ?
-            """,
-            (save_name,),
-        ).fetchone()
+        if user_id is None:
+            row = conn.execute(
+                """
+                SELECT payload_json
+                FROM progress_saves
+                WHERE save_name = ?
+                """,
+                (save_name,),
+            ).fetchone()
+        else:
+            row = conn.execute(
+                """
+                SELECT payload_json
+                FROM progress_saves
+                WHERE save_name = ? AND user_id = ?
+                """,
+                (save_name, user_id),
+            ).fetchone()
     if not row:
         return None
     return json.loads(row["payload_json"])
 
 
-def delete_progress_save(save_name):
+def delete_progress_save(save_name, user_id=None):
     with _connect_main() as conn:
-        conn.execute(
-            """
-            DELETE FROM progress_saves
-            WHERE save_name = ?
-            """,
-            (save_name,),
-        )
+        if user_id is None:
+            conn.execute(
+                """
+                DELETE FROM progress_saves
+                WHERE save_name = ?
+                """,
+                (save_name,),
+            )
+        else:
+            conn.execute(
+                """
+                DELETE FROM progress_saves
+                WHERE save_name = ? AND user_id = ?
+                """,
+                (save_name, user_id),
+            )
 
 
-def upsert_grading_result(record_name, sid, patient_name, disease, score_v2_percentage, payload):
+def upsert_grading_result(record_name, sid, patient_name, disease, score_v2_percentage, payload, user_id=None):
     payload_json = json.dumps(payload, ensure_ascii=False, default=str)
     now = _now()
     with _connect_main() as conn:
         conn.execute(
             """
             INSERT INTO grading_results (
-                record_name, sid, patient_name, disease,
+                record_name, user_id, sid, patient_name, disease,
                 score_v2_percentage, payload_json, created_at, updated_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(record_name) DO UPDATE SET
+                user_id=excluded.user_id,
                 sid=excluded.sid,
                 patient_name=excluded.patient_name,
                 disease=excluded.disease,
@@ -225,6 +302,7 @@ def upsert_grading_result(record_name, sid, patient_name, disease, score_v2_perc
             """,
             (
                 record_name,
+                user_id,
                 sid,
                 patient_name,
                 disease,
@@ -233,6 +311,91 @@ def upsert_grading_result(record_name, sid, patient_name, disease, score_v2_perc
                 now,
                 now,
             ),
+        )
+
+
+def get_user_by_username(username):
+    with _connect_main() as conn:
+        row = conn.execute(
+            """
+            SELECT id, username, password_hash, role, is_active, created_at, updated_at
+            FROM users
+            WHERE username = ?
+            """,
+            (username,),
+        ).fetchone()
+    if not row:
+        return None
+    return dict(row)
+
+
+def create_user(username, password_hash, role="user"):
+    now = _now()
+    with _connect_main() as conn:
+        conn.execute(
+            """
+            INSERT INTO users (username, password_hash, role, is_active, created_at, updated_at)
+            VALUES (?, ?, ?, 1, ?, ?)
+            """,
+            (username, password_hash, role, now, now),
+        )
+
+
+def upsert_user(username, password_hash, role="user", is_active=1):
+    now = _now()
+    with _connect_main() as conn:
+        conn.execute(
+            """
+            INSERT INTO users (username, password_hash, role, is_active, created_at, updated_at)
+            VALUES (?, ?, ?, ?, ?, ?)
+            ON CONFLICT(username) DO UPDATE SET
+                password_hash=excluded.password_hash,
+                role=excluded.role,
+                is_active=excluded.is_active,
+                updated_at=excluded.updated_at
+            """,
+            (username, password_hash, role, int(is_active), now, now),
+        )
+
+
+def list_users():
+    with _connect_main() as conn:
+        rows = conn.execute(
+            """
+            SELECT id, username, role, is_active, created_at, updated_at
+            FROM users
+            ORDER BY username ASC
+            """
+        ).fetchall()
+    return [dict(row) for row in rows]
+
+
+def count_users():
+    with _connect_main() as conn:
+        row = conn.execute("SELECT COUNT(*) AS n FROM users").fetchone()
+    return int(row["n"])
+
+
+def count_admin_users():
+    with _connect_main() as conn:
+        row = conn.execute(
+            """
+            SELECT COUNT(*) AS n
+            FROM users
+            WHERE role = 'admin' AND is_active = 1
+            """
+        ).fetchone()
+    return int(row["n"])
+
+
+def delete_user_by_username(username):
+    with _connect_main() as conn:
+        conn.execute(
+            """
+            DELETE FROM users
+            WHERE username = ?
+            """,
+            (username,),
         )
 
 

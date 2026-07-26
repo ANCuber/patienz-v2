@@ -15,6 +15,7 @@ import util.grading_pipeline as grading_pipeline
 import util.grading_normalize as grading_normalize
 import util.mark_scheme_cache as mark_scheme_cache
 import util.save_load as save_load
+import util.auth as auth
 import datetime
 import json
 import time
@@ -659,7 +660,9 @@ if want_osce:
     st.header("📋 OSCE 評分結果")
     st.caption("根據 OSCE 國際標準，動態生成專屬於本次案例的評分表，並由 AI 考官逐項評分。")
 if ss.get("grading_result_file"):
-    st.caption(f"✅ 本次評分結果已自動存檔：`data/grading_results/{ss.grading_result_file}`")
+    st.caption(
+        f"✅ 本次評分結果已自動存檔：`data/grading_results/{auth.current_username()}/{ss.grading_result_file}`"
+    )
 
 if "grader_v2_response" in ss:
     categories, global_rating = process_v2_grading_result(ss.grader_v2_response)
