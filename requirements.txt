@@ -5,3 +5,4 @@ pdfkit
 SpeechRecognition
 webdriver-manager
 selenium
+psycopg[binary]
