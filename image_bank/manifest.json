@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "_comment": "Catalog of REAL de-identified diagnostic images for read-practice (proposal §6-A). Image binaries are NOT committed (see .gitignore); populate with tools/fetch_image_bank.py or by ingesting PTB-XL / NIH ChestX-ray14 / Open-i locally (docs/image_bank.md). Each entry: {id, file(relative to this dir), modality(ECG|CXR|XR|US|ECHO|CT|MRI|ENDO|NM), normality(normal|abnormal), findings[], disease_keywords[], source, source_url, license, attribution, deidentified, synthetic, caption}. The app skips any entry whose file is missing on disk, so a manifest may safely list images not yet fetched.",
+  "entries": []
+}

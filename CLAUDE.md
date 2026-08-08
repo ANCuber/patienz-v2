@@ -12,6 +12,8 @@ All Gemini access goes through `util/llm.py` (single client, `build_config()` wi
 
 The four interactive chats (patient + value/text/PE examiners) serve their fixed instruction+case prefix from an **explicit Gemini context cache** via `util/context_cache.py` (`start_cached_chat()`): cache-creation failure falls back to the plain path, a mid-session cache expiry self-heals by rebuilding the chat uncached (history preserved) and retrying once. Opt out with `PATIENZ_DISABLE_CONTEXT_CACHE=1`; TTL via `PATIENZ_CACHE_TTL_SECONDS` (default 7200).
 
+Imaging exam reports (ECG/CXR/CT/MRI/US…) can be paired with a **real de-identified image** for read-practice via `util/image_bank.py` (`find_image()`), catalogued by `image_bank/manifest.json` (image binaries are git-ignored, populated locally by `tools/fetch_image_bank.py` / `tools/ingest_local_images.py`). Diagnostic images are **real, never AI-generated**. Retrieval never shows a possibly-misleading image — an image displays only if it is human-`verified`, modality-matched, and (abnormal) its own `findings` are evidenced in *that exam's report text*, or (normal, multi-anatomy) its region matches the order; otherwise it returns `None` and the page shows text only, re-validating the gate at render time. Opt out with `PATIENZ_DISABLE_IMAGE_BANK=1`; dir via `PATIENZ_IMAGE_BANK_DIR`. See `docs/image_bank.md`.
+
 ## Setup & Running
 
 ```bash

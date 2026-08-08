@@ -197,4 +197,61 @@ git checkout -- util/ model/ page/ requirements.txt
 4. 回退驗證：`PATIENZ_DISABLE_CONTEXT_CACHE=1 streamlit run home.py` → console 無 `[CACHE]` 行，一切行為與先前版本相同。
 5. 延遲比較（可選）：同一病例分別在開/關快取下問診 5 輪，比較回覆時間；快取路徑的第 2 輪起應明顯較快（前綴越大差距越明顯）。
 
-**剩餘建議（P2）**：§6 真實影像庫（PTB-XL/NIH CXR，需取得資料集授權且須以真實影像而非生成影像）。（Enter 送出已由 `st.chat_input` 內建。）
+**剩餘建議（P2）**：（Enter 送出已由 `st.chat_input` 內建。）
+
+## I. §6-A 真實影像庫（已完成）
+
+| 項目 | 內容 | 檔案 |
+|---|---|---|
+| §6-A | 回饋一再要求「心電圖、X 光放**真實圖片**練習判讀」。在檢查區的影像報告（ECG／X 光／CT／MRI／超音波…）旁，附上一張**真實、去識別化**的示範影像。**診斷影像一律用真實影像庫檢索，不用 AI 生成**（放射科醫師辨識合成 CXR 正確率僅約 62–78%，生成模型會幻覺出病灶——用生成影像等於教學生讀「捏造的病灶」）。影像二進位不進版控，由你在本機以工具填充；影像庫為空時 App 自動純文字降級。 | `util/image_bank.py`（新，檢索核心）、`page/examination.py`（整合）、`util/grading_normalize.py`（`surface_forms`）、`tools/fetch_image_bank.py`＋`tools/ingest_local_images.py`（新，填充工具）、`docs/image_bank.md`（新，完整說明）、`image_bank/manifest.json`（空編目）|
+
+**安全設計（絕不顯示可能誤導的影像；任一關卡不過 → 回傳 None、只顯示文字報告）**：
+- **人工審核閘門**：只顯示 `verified:true` 的影像。自動抓取一律 `verified:false`，在你逐張確認前**對學生完全不顯示**——被誤標的 Commons 圖不可能外洩。
+- **modality 硬性比對**：開心電圖不會回傳 X 光。
+- **異常影像綁「本次報告的所見」**：該片**自身的 ground-truth `findings` 必須出現在這次的報告文字中**（而非本案主診斷）。所以「缺血性中風」報告叫不出「腦出血」片、ECG 報「心房顫動」叫不出「STEMI」片。以 `surface_forms` 做「受控詞彙→敘述」的中英/同義比對，不會用子字串把兩個不相干概念硬湊。
+- **正常影像**：單一部位 modality（ECG/CXR/ECHO）視為安全示範；多部位（US/XR/CT/MRI/ENDO/NM）**必須與開單部位相符**，「正常腹部超音波」不會配「頸動脈超音波」開單。
+- **正異常未知不猜**：報告未附 `[NORMAL]`/`[ABNORMAL]` 標記時不顯示影像。
+- **顯示前以當下 manifest 重跑安全關卡**：即使日後原地改標、或載入舊存檔，也不會把報告配到已不相符的片子。
+- 影像皆標示為「該所見的**真實範例影像**（非本虛擬病人本人，供判讀練習）」＋來源／授權，屬誠實判讀練習。
+
+**對抗式審查（multi-agent workflow）**：5 視角 finder → 去重 → 逐項對抗式驗證（13 agents）→ 14 項原始發現、**7 項確認、1 項駁回**（`stroke⊂heatstroke` 的子字串瑕疵在評分路徑實為 display-only、不影響分數，正確駁回）。**7 項全部修復**：
+- （H）異常片原本比對「本案主診斷」而非「本次報告所見」→ 缺血/出血、AFib/STEMI 錯配 → 改為報告所見比對。
+- （H）正常片跳過 overlap 閘門 → 多部位 modality 會拿錯部位正常片 → 改為多部位需部位相符。
+- （H）`terms_match` 子字串比對讓 `_overlap` 誤判重疊 → 改用 `surface_forms` 受控詞彙比對。
+- （H）自動抓取的 `verified:false` 從未被強制 → 改為未審核不顯示。
+- （M→H）examiner 漏標記時 `has_abnormal` 預設 True 會顯示異常片 → 新增 `normality_known` 關卡。
+- （M→H）render 只用存下的 id、不重跑安全閘門 → 改為顯示前重跑並比對 id。
+- （M）`_license_ok` 子字串會誤收 `CC BY-NC/ND`（不可再散布）→ 明確排除 NC/ND。
+
+**驗證（無金鑰、自動化）**：新增/改寫 `tests/test_image_bank.py`（46 tests，含每項確認發現的具名迴歸：缺血≠出血片、AFib≠STEMI、頸動脈≠腹部超音波、未審核不顯示、正異常未知不猜、NC/ND 授權拒收、報告所見中英雙語比對、最高證據勝出）→ 全套 **104 passed**；`util/image_bank.py`／`page/examination.py`／兩支工具 py_compile 全數通過。
+
+### §6-A 手動驗證與影像填充（需你在本機操作、需網路）
+
+**A. 抓開放授權起始集（最快，先看效果）**
+```bash
+python tools/fetch_image_bank.py --dry-run      # 先預覽會抓到哪些（不下載）
+python tools/fetch_image_bank.py --max 2        # 實際下載（ECG/CXR/XR/CT/US）
+```
+- 只保留 PD/CC0/CC-BY/CC-BY-SA（已排除 NC/ND）；來源、授權、作者自動寫入 `image_bank/manifest.json`。
+- **啟用**：打開 `image_bank/manifest.json`，逐張確認影像確實符合其 `findings`，把該筆 `"verified"` 改成 `true`（正常與異常都要確認）。未確認的維持純文字、不顯示。
+
+**B. 以標註可靠的大型開放資料集擴充（異常影像建議走這條）**
+- **ECG**：PTB-XL（PhysioNet，CC-BY，需註冊同意條款）；波形渲染成 PNG 後分類。
+- **CXR**：NIH ChestX-ray14（開放）；依 `Finding Labels` 分資料夾。
+- 下載、分好資料夾後用 `ingest_local_images.py` 批次註冊（`--verified` 會直接標為已確認），例如肺炎：
+  ```bash
+  python tools/ingest_local_images.py ./nih/Pneumonia \
+    --modality CXR --normality abnormal \
+    --findings pneumonia consolidation --disease-keywords pneumonia \
+    --source "NIH ChestX-ray14" --license "NIH open access" \
+    --attribution "NIH Clinical Center" --verified
+  ```
+- MIMIC-CXR / CheXpert 標註最佳但需 credentialing；取得授權後同樣以 `ingest_local_images.py` 註冊，**切勿 commit 進公開 repo**。詳見 `docs/image_bank.md`。
+
+**C. 在 App 內確認**
+1. 填充並把要用的項目設為 `verified:true` 後，`streamlit run home.py`。
+2. 建立一個對應病例（如 englishDiseaseName 為 pneumonia），進到檢查區開「Chest X-ray」。
+3. 報告下方應出現一張真實 CXR，標「🩻 真實去識別化影像範例（非本虛擬病人本人，供判讀練習）」＋來源／授權；報告文字未提到該所見、或該片未 `verified` 時，應**只有文字、無影像**。
+4. 停用測試：`PATIENZ_DISABLE_IMAGE_BANK=1 streamlit run home.py` → 一律純文字。
+
+> 需要我幫忙的部分：資料集下載多半需要你以個人帳號註冊／同意授權（PhysioNet、NIH、MIMIC 等），這一步請由你操作；分好資料夾後的 `ingest_local_images.py` 參數我可以依你的資料集逐一幫你寫好。

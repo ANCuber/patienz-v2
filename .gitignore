@@ -16,3 +16,11 @@ data/mark_scheme_cache/
 *.tmp.*
 .claude/
 test_feeback/
+# §6-A image bank: the manifest + docs are tracked, but the downloaded image
+# binaries are not (size + per-file licensing is decided by whoever fetches
+# them). Populate locally with tools/fetch_image_bank.py.
+image_bank/**/*.png
+image_bank/**/*.jpg
+image_bank/**/*.jpeg
+image_bank/**/*.webp
+image_bank/**/*.gif

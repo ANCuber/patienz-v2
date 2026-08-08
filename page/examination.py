@@ -6,6 +6,7 @@ import util.dialog as dialog
 import util.tools as util
 import util.constants as const
 import util.exam_panels as exam_panels
+import util.image_bank as image_bank
 from util.reference_parser import parse_reference, is_abnormal, is_critical, is_implausible
 import csv
 import pandas as pd
@@ -179,6 +180,45 @@ def process_examination_result(full_items, result_json):
     return html_table, has_abnormal
 
 
+def _image_query(hist, manifest=None):
+    """Derive the (safety-gated) find_image inputs from a text-imaging history
+    entry, so attach-time and render-time apply the *same* gate."""
+    modality = hist.get("image_modality") or image_bank.resolve_modality(
+        hist.get("subcategory", ""),
+        " ".join(hist.get("items") or []),
+        " ".join(hist.get("items_chinese") or []),
+    )
+    if not modality:
+        return None
+    return image_bank.find_image(
+        modality,
+        has_abnormal=hist.get("has_abnormal", False),
+        report_text=hist.get("result_html", "") or "",
+        item_terms=(hist.get("items") or []) + (hist.get("items_chinese") or []),
+        manifest=manifest,
+    ), modality
+
+
+def _attach_image_ref(entry):
+    """For an imaging (text-type) history entry, resolve a real bank image and
+    store its manifest id on the entry (persisted; re-validated at render). No-op
+    for non-imaging exams, when the examiner's normal/abnormal verdict is unknown
+    (we never guess), or when nothing safe matches."""
+    try:
+        # Normality unknown (examiner omitted the tag) → never guess an image.
+        if not entry.get("normality_known"):
+            return
+        resolved = _image_query(entry)
+        if not resolved:
+            return
+        match, modality = resolved
+        if match:
+            entry["image_ref"] = match.get("id")
+            entry["image_modality"] = modality
+    except Exception as e:  # image bank must never break the exam flow
+        print(f"[IMAGE] attach failed: {e}")
+
+
 column = st.columns([1, 10, 1, 4])
 
 with column[1]:
@@ -338,6 +378,35 @@ with column[1]:
                     st.subheader(name)
                     st.markdown(res, unsafe_allow_html=True)
 
+                # §6-A: show the real de-identified image paired with each
+                # imaging report so students can practice reading actual films.
+                # We re-run the full safety gate against the CURRENT manifest and
+                # only show the image if it still resolves to the persisted id —
+                # so a re-curated/relabelled bank or a reloaded session can never
+                # pair a report with a now-mismatched film.
+                man = image_bank.load_manifest()
+                for h in ss.examination_history:
+                    ref = h.get("image_ref")
+                    if not ref or not h.get("normality_known"):
+                        continue
+                    resolved = _image_query(h, manifest=man)
+                    if not resolved:
+                        continue
+                    match, _modality = resolved
+                    if not match or match.get("id") != ref:
+                        continue  # binding no longer clears the safety bar → text only
+                    meta = image_bank.describe(match)
+                    if not meta["path"]:
+                        continue
+                    st.markdown(f"**{'、'.join(h.get('items_chinese') or [])} — 影像判讀**")
+                    st.image(meta["path"], caption=meta["caption"], use_container_width=True)
+                    st.caption(meta["badge"])
+                    if meta["provenance"]:
+                        line = f"來源：{meta['provenance']}"
+                        if meta["source_url"]:
+                            line += f"（[原始連結]({meta['source_url']})）"
+                        st.caption(line)
+
     # 結果判讀區
     def render_interpretation():
         with interpretation_container:
@@ -476,8 +545,13 @@ with column[1]:
                                 exam_failed = True
                                 break
                             result_html, has_abnormal = parse_text_result(result_text)
+                            # Did the examiner emit an explicit normal/abnormal tag?
+                            # If not, has_abnormal is only a conservative default and
+                            # must NOT drive image retrieval (§6-A never guesses).
+                            _upper = result_text.upper()
+                            normality_known = ("[NORMAL]" in _upper) or ("[ABNORMAL]" in _upper)
                             ss.examination_result.append(("、".join(items_chinese), result_html))
-                            ss.examination_history.append({
+                            hist_entry = {
                                 "order_number": len(ss.examination_history) + 1,
                                 "category": items[0]["category"],
                                 "subcategory": subcat,
@@ -486,8 +560,12 @@ with column[1]:
                                 "result_type": "text",
                                 "result_html": result_html,
                                 "has_abnormal": has_abnormal,
+                                "normality_known": normality_known,
                                 "interpretation": "",
-                            })
+                            }
+                            # §6-A: pair imaging reports with a real bank image.
+                            _attach_image_ref(hist_entry)
+                            ss.examination_history.append(hist_entry)
                             for c in items:
                                 ss.ordered_exam_set.add(c["eng"])
                                 completed.add(c["eng"])

@@ -30,6 +30,17 @@ _SYNONYM_GROUPS = {
     "ppi": {"ppi", "protonpumpinhibitor", "質子幫浦抑制劑"},
     "creatinine": {"creatinine", "cr", "肌酸酐", "肌酐"},
     "crp": {"crp", "creactiveprotein", "c反應蛋白"},
+    # Common imaging-diagnosis concepts. Serve double duty: grading (student
+    # writes 肺炎, standard says pneumonia) and §6-A image retrieval (case
+    # englishDiseaseName ↔ image bank disease_keywords, 中英 tolerant).
+    "pneumonia": {"pneumonia", "肺炎", "肺部感染"},
+    "pneumothorax": {"pneumothorax", "氣胸"},
+    "pleural-effusion": {"pleuraleffusion", "肋膜積水", "肋膜積液", "胸腔積液", "胸水"},
+    "fracture": {"fracture", "骨折"},
+    "atrial-fibrillation": {"atrialfibrillation", "afib", "心房顫動", "心房纖維顫動"},
+    "stroke": {"stroke", "cva", "cerebrovascularaccident", "中風", "腦中風"},
+    "intracranial-hemorrhage": {"intracranialhemorrhage", "intracerebralhemorrhage",
+                                "ich", "腦出血", "顱內出血", "腦溢血"},
 }
 
 # build reverse lookup: surface key -> canonical concept
@@ -71,6 +82,22 @@ def canonical(term: str) -> str:
     if dk in _REVERSE:
         return _REVERSE[dk]
     return dk
+
+
+def surface_forms(term: str):
+    """Accepted surface forms for a term's concept (its synonym group), or
+    ``[term]`` when it maps to no group.
+
+    Used by the §6-A image bank to look a curated finding (e.g. an image's
+    ground-truth ``氣胸`` / ``pneumothorax``) up inside a free-text examination
+    report — the *controlled-vocabulary-into-narrative* direction, which is safe
+    from the substring false-positives that a term-vs-term compare would have.
+    """
+    c = canonical(term)
+    grp = _SYNONYM_GROUPS.get(c)
+    if grp:
+        return sorted(grp)
+    return [term] if term else []
 
 
 def terms_match(a: str, b: str) -> bool:
