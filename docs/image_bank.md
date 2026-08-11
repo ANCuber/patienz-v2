@@ -60,22 +60,26 @@ python tools/fetch_image_bank.py --only ECG CXR
 Commons 起始集適合正常影像與少量示範；**異常影像要「標註可靠、規模夠」，建議用下列
 開放資料集**，下載後用 `tools/ingest_local_images.py` 批次註冊。
 
-### PTB-XL（心電圖，PhysioNet，開放）
+### PTB-XL（心電圖，PhysioNet，**開放存取 CC BY 4.0，免帳號／免 DUA**）
 
-1. 下載：<https://physionet.org/content/ptb-xl/>（CC-BY 4.0；需在 PhysioNet 建立帳號並同意條款）。
-2. PTB-XL 是波形資料（WFDB），需先渲染成 PNG（用其 `ptbxl_database.csv` 的 `scp_codes`
-   分類，配合 `wfdb` 套件把 12 導程畫成影像）。把同一診斷（如 `MI`、`AFIB`、`NORM`）的
-   PNG 放到各自資料夾。
-3. 註冊，例如 STEMI：
-   ```bash
-   python tools/ingest_local_images.py ./ptbxl_png/MI \
-     --modality ECG --normality abnormal \
-     --findings "ST elevation" "myocardial infarction" \
-     --disease-keywords "acute coronary syndrome" "STEMI" "myocardial infarction" \
-     --source "PTB-XL (PhysioNet)" \
-     --source-url https://physionet.org/content/ptb-xl/ \
-     --license "CC BY 4.0" --attribution "Wagner et al., PTB-XL" --verified
-   ```
+PTB-XL 是**波形資料（WFDB），不是影像**，要先渲染成 12 導程 PNG。已提供
+`tools/render_ptbxl_ecg.py` 自動處理：讀 `ptbxl_database.csv` → 挑選各類別**標註品質最高**
+（優先人工驗證的 fold 9/10、高信心 likelihood）的紀錄 → 渲染成臨床 3×4＋節律條的 ECG
+（25 mm/s、10 mm/mV）→ 印出對應的 `ingest_local_images.py` 指令。可**只串流所需的少數幾筆**，
+不必下載整包 1.7 GB。
+
+```bash
+pip install wfdb                       # 其餘（pandas/numpy/matplotlib）多半已裝
+# 只抓標註 CSV（開放存取，免登入）
+curl -L -o ptbxl_database.csv https://physionet.org/files/ptb-xl/1.0.3/ptbxl_database.csv
+# 各類別渲染 4 張（直接向 PhysioNet 串流所選紀錄）
+python tools/render_ptbxl_ecg.py --db ptbxl_database.csv \
+    --out ./ptbxl_png --classes NORM AFIB MI --per-class 4
+```
+
+渲染完先**逐張看過** `./ptbxl_png/<CLASS>/*.png`（這就是「人工確認」那一步），再執行工具**印出的**
+`ingest_local_images.py` 指令（已帶 `--verified`，會複製進 `image_bank/ecg/` 並寫入 manifest）。
+若你已把整包資料集解壓在本機，改用 `--source-dir /path/to/ptb-xl` 從本機讀取即可。
 
 ### NIH ChestX-ray14（胸部 X 光，開放）
 
