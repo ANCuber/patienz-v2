@@ -290,3 +290,41 @@ def _lic(short):
 def test_license_filter_rejects_nc_nd(short, ok):
     fetch = _load_fetch_module()
     assert fetch._license_ok(_lic(short)) is ok
+
+
+# ---------- demographic-proximity tiebreak (all candidates already safe) ----------
+def _pna(id, age, sex):
+    return dict(_pneumonia_cxr(id), age=age, sex=sex)
+
+
+def test_demographic_tiebreak_prefers_closer(tmp_path):
+    d = _write_bank(tmp_path, [_pna("cxr-a", 52, "M"), _pna("cxr-b", 80, "F")])
+    rep = "Patchy consolidation, consistent with pneumonia."
+    # patient near A (男 -> M, age 50)
+    m = ib.find_image("CXR", has_abnormal=True, report_text=rep,
+                      patient_age=50, patient_sex="男", directory=d)
+    assert m["id"] == "cxr-a"
+    # patient near B (女 -> F, age 78)
+    m2 = ib.find_image("CXR", has_abnormal=True, report_text=rep,
+                       patient_age=78, patient_sex="女", directory=d)
+    assert m2["id"] == "cxr-b"
+
+
+def test_no_demographics_is_deterministic_by_id(tmp_path):
+    d = _write_bank(tmp_path, [_pna("cxr-b", 80, "F"), _pna("cxr-a", 52, "M")])
+    m = ib.find_image("CXR", has_abnormal=True,
+                      report_text="pneumonia with consolidation", directory=d)
+    assert m["id"] == "cxr-a"  # demo distance 0 for all → id tiebreak
+
+
+def test_evidence_score_beats_demographic_proximity(tmp_path):
+    near = {"id": "cxr-near", "file": "cxr/cxr-near.png", "modality": "CXR",
+            "normality": "abnormal", "findings": ["consolidation"], "verified": True,
+            "age": 50, "sex": "M"}
+    far = {"id": "cxr-far", "file": "cxr/cxr-far.png", "modality": "CXR",
+           "normality": "abnormal", "findings": ["pneumonia", "consolidation"],
+           "verified": True, "age": 85, "sex": "F"}
+    d = _write_bank(tmp_path, [near, far])
+    m = ib.find_image("CXR", has_abnormal=True, report_text="pneumonia with consolidation",
+                      patient_age=50, patient_sex="M", directory=d)
+    assert m["id"] == "cxr-far"  # 2 evidenced findings > 1, despite worse demographics

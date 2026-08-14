@@ -24,3 +24,10 @@ image_bank/**/*.jpg
 image_bank/**/*.jpeg
 image_bank/**/*.webp
 image_bank/**/*.gif
+# generated per-build coverage report (not source)
+image_bank/ptbxl_coverage.md
+# PTB-XL raw metadata + rendered scratch (downloaded/produced locally, not tracked)
+/ptbxl_database.csv
+/scp_statements.csv
+/ptbxl_png/
+docs/PTB-XLwebtext.txt

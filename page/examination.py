@@ -180,6 +180,21 @@ def process_examination_result(full_items, result_json):
     return html_table, has_abnormal
 
 
+def _patient_demo():
+    """Virtual patient (age, sex) for demographic-proximity image ranking; either
+    may be None. Sex is passed through verbatim (image_bank normalizes 男/女)."""
+    try:
+        bi = ss.data.get("基本資訊", {}) or {}
+    except (AttributeError, TypeError):
+        return None, None
+    age = bi.get("年齡")
+    try:
+        age = int(age) if age is not None and str(age).strip() != "" else None
+    except (TypeError, ValueError):
+        age = None
+    return age, bi.get("性別")
+
+
 def _image_query(hist, manifest=None):
     """Derive the (safety-gated) find_image inputs from a text-imaging history
     entry, so attach-time and render-time apply the *same* gate."""
@@ -190,11 +205,14 @@ def _image_query(hist, manifest=None):
     )
     if not modality:
         return None
+    age, sex = _patient_demo()
     return image_bank.find_image(
         modality,
         has_abnormal=hist.get("has_abnormal", False),
         report_text=hist.get("result_html", "") or "",
         item_terms=(hist.get("items") or []) + (hist.get("items_chinese") or []),
+        patient_age=age,
+        patient_sex=sex,
         manifest=manifest,
     ), modality
 

@@ -212,8 +212,49 @@ def _region_score(entry, item_terms) -> int:
     return n
 
 
+def _norm_sex(s):
+    if not s:
+        return None
+    s = str(s).strip().upper()
+    if s.startswith("M") or s.startswith("男") or s == "0":
+        return "M"
+    if s.startswith("F") or s.startswith("W") or s.startswith("女") or s == "1":
+        return "F"
+    return None
+
+
+_SEX_PENALTY = 40.0        # a sex mismatch ~ 40 "years" of age distance
+_MISSING_DEMO_PENALTY = 20.0
+
+
+def _demo_distance(entry, patient_age, patient_sex):
+    """Secondary ranking distance between an entry and the virtual patient.
+
+    Purely a *tiebreak* over candidates that already cleared every safety gate —
+    it can reorder equally-safe films toward a demographically-closer one but can
+    never make an unsafe film eligible. Returns 0 for all entries when no patient
+    demographics are supplied, so behaviour is unchanged in that case.
+    """
+    if patient_age is None and patient_sex is None:
+        return 0.0
+    d = 0.0
+    ps = _norm_sex(patient_sex)
+    if ps:
+        es = _norm_sex(entry.get("sex"))
+        if es is None:
+            d += _MISSING_DEMO_PENALTY
+        elif es != ps:
+            d += _SEX_PENALTY
+    if patient_age is not None:
+        try:
+            d += abs(float(entry.get("age")) - float(patient_age))
+        except (TypeError, ValueError):
+            d += _MISSING_DEMO_PENALTY
+    return d
+
+
 def find_image(modality, has_abnormal, *, report_text=None, item_terms=None,
-               directory=None, manifest=None):
+               patient_age=None, patient_sex=None, directory=None, manifest=None):
     """Best real image for an exam result, or ``None`` if none clears the bar.
 
     Args:
@@ -225,6 +266,8 @@ def find_image(modality, has_abnormal, *, report_text=None, item_terms=None,
             chosen film's own ``findings`` must be evidenced here.
         item_terms: the ordered study's item names (English + Chinese), used to
             region-match *normal* multi-anatomy studies.
+        patient_age, patient_sex: the virtual patient's demographics; used ONLY
+            as a tiebreak among already-safe candidates (prefer a closer age/sex).
     """
     if not modality or not enabled():
         return None
@@ -263,8 +306,10 @@ def find_image(modality, has_abnormal, *, report_text=None, item_terms=None,
 
     if not scored:
         return None
-    # Highest evidence/region score wins; deterministic tiebreak by id.
-    scored.sort(key=lambda t: (-t[0], str(t[1].get("id", ""))))
+    # Highest evidence/region score wins; then the demographically-closest film;
+    # then a deterministic tiebreak by id.
+    scored.sort(key=lambda t: (-t[0], _demo_distance(t[1], patient_age, patient_sex),
+                               str(t[1].get("id", ""))))
     return scored[0][1]
 
 

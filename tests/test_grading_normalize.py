@@ -44,3 +44,35 @@ def test_match_against_standard_reports_coverage():
     assert by_std["NSAID"]["covered"] is True
     assert by_std["DMARDs"]["covered"] is True
     assert by_std["Methotrexate"]["covered"] is False
+
+
+# ---- §6-A ECG-diagnosis synonym groups (dual-use with the image bank) ----
+import pytest
+from util.grading_normalize import surface_forms
+
+
+@pytest.mark.parametrize("a,b", [
+    ("心房撲動", "atrial flutter"),
+    ("左束支傳導阻滯", "left bundle branch block"),
+    ("右束支傳導阻滯", "right bundle branch block"),
+    ("竇性心搏過速", "sinus tachycardia"),
+    ("竇性心搏過緩", "sinus bradycardia"),
+    ("房室傳導阻滯", "AV block"),
+    ("左心室肥厚", "left ventricular hypertrophy"),
+    ("預激症候群", "WPW"),
+    ("心肌缺血", "myocardial ischemia"),
+])
+def test_ecg_synonyms_match(a, b):
+    assert terms_match(a, b)
+
+
+def test_ischemia_is_not_infarction():
+    # ischemia and infarction are distinct concepts and must not collapse
+    assert not terms_match("myocardial ischemia", "myocardial infarction")
+    assert not terms_match("心肌缺血", "心肌梗塞")
+
+
+def test_surface_forms_include_chinese_ecg_terms():
+    assert "左束支傳導阻滯" in surface_forms("left bundle branch block")
+    assert "心房撲動" in surface_forms("atrial flutter")
+    assert "房室阻滯" in surface_forms("AV block")

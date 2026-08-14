@@ -41,6 +41,34 @@ _SYNONYM_GROUPS = {
     "stroke": {"stroke", "cva", "cerebrovascularaccident", "中風", "腦中風"},
     "intracranial-hemorrhage": {"intracranialhemorrhage", "intracerebralhemorrhage",
                                 "ich", "腦出血", "顱內出血", "腦溢血"},
+    # ECG-diagnosis concepts (§6-A PTB-XL image bank). Same double duty: they let
+    # a Chinese examiner report ("左束支傳導阻滯"/"心房撲動"…) evidence a real ECG's
+    # ground-truth finding, and give the grading 詳解 panel 中英/同義 tolerance.
+    "myocardial-ischemia": {"myocardialischemia", "ischemia", "ischemic", "ischaemia",
+                            "心肌缺血", "缺血"},
+    "left-bundle-branch-block": {"leftbundlebranchblock", "lbbb", "左束支傳導阻滯",
+                                 "左束支阻滯", "完全性左束支傳導阻滯"},
+    "right-bundle-branch-block": {"rightbundlebranchblock", "rbbb", "右束支傳導阻滯",
+                                  "右束支阻滯", "完全性右束支傳導阻滯"},
+    "av-block": {"avblock", "atrioventricularblock", "房室傳導阻滯", "房室阻滯", "房室傳導障礙"},
+    "left-ventricular-hypertrophy": {"leftventricularhypertrophy", "lvh", "左心室肥厚", "左室肥厚"},
+    "right-ventricular-hypertrophy": {"rightventricularhypertrophy", "rvh", "右心室肥厚", "右室肥厚"},
+    "atrial-flutter": {"atrialflutter", "心房撲動", "心房拍動"},
+    "sinus-tachycardia": {"sinustachycardia", "竇性心搏過速", "竇性心動過速", "竇速"},
+    "sinus-bradycardia": {"sinusbradycardia", "竇性心搏過緩", "竇性心動過緩", "竇緩"},
+    "st-elevation": {"stelevation", "stsegmentelevation", "st段上升", "st段抬高", "st上升"},
+    "st-depression": {"stdepression", "stsegmentdepression", "st段壓低", "st段下降", "st下降"},
+    "premature-ventricular-complex": {"prematureventricularcomplex", "ventricularprematurecomplex",
+                                      "pvc", "心室早期收縮", "室性早搏", "心室期外收縮"},
+    "atrial-premature-complex": {"atrialprematurecomplex", "pac", "心房早期收縮", "房性早搏",
+                                 "心房期外收縮"},
+    "wolff-parkinson-white": {"wolffparkinsonwhite", "wpw", "預激症候群", "沃夫巴金森懷特症候群"},
+    "long-qt": {"longqt", "longqtinterval", "qt間期延長", "qt延長", "長qt"},
+    "paced-rhythm": {"pacedrhythm", "artificialpacemaker", "節律器心律", "心臟節律器", "節律器"},
+    "left-atrial-enlargement": {"leftatrialenlargement", "leftatrialoverload", "左心房擴大",
+                                "左房擴大", "左心房肥大"},
+    "right-atrial-enlargement": {"rightatrialenlargement", "rightatrialoverload", "右心房擴大",
+                                 "右房擴大", "右心房肥大"},
 }
 
 # build reverse lookup: surface key -> canonical concept

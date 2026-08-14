@@ -62,24 +62,39 @@ Commons 起始集適合正常影像與少量示範；**異常影像要「標註�
 
 ### PTB-XL（心電圖，PhysioNet，**開放存取 CC BY 4.0，免帳號／免 DUA**）
 
-PTB-XL 是**波形資料（WFDB），不是影像**，要先渲染成 12 導程 PNG。已提供
-`tools/render_ptbxl_ecg.py` 自動處理：讀 `ptbxl_database.csv` → 挑選各類別**標註品質最高**
-（優先人工驗證的 fold 9/10、高信心 likelihood）的紀錄 → 渲染成臨床 3×4＋節律條的 ECG
-（25 mm/s、10 mm/mV）→ 印出對應的 `ingest_local_images.py` 指令。可**只串流所需的少數幾筆**，
-不必下載整包 1.7 GB。
+PTB-XL 是**波形資料（WFDB），不是影像**，要先渲染成 12 導程 PNG。共有兩支工具：
+
+**（A）`tools/build_ptbxl_bank.py` — 一次建立廣覆蓋、跨人口學分層的 ECG 影像庫（推薦）**
+
+讀 `ptbxl_database.csv`＋`scp_statements.csv` → 對 **全部 71 個 SCP statements**（含 23 個診斷子類別）
+在資料允許範圍內，於 **性別 × 年齡帶** 各 cell 各挑一張**人工複核**的最佳紀錄 → 渲染成臨床 12 導程 ECG
+→ 直接寫入 `image_bank/manifest.json`（含 `age`/`sex`/`statement_code`/`diagnostic_subclass`）→
+產出 **覆蓋報告** `image_bank/ptbxl_coverage.md`。可**只串流所需紀錄**，不必下載整包 1.7 GB。
 
 ```bash
 pip install wfdb                       # 其餘（pandas/numpy/matplotlib）多半已裝
-# 只抓標註 CSV（開放存取，免登入）
 curl -L -o ptbxl_database.csv https://physionet.org/files/ptb-xl/1.0.3/ptbxl_database.csv
-# 各類別渲染 4 張（直接向 PhysioNet 串流所選紀錄）
-python tools/render_ptbxl_ecg.py --db ptbxl_database.csv \
-    --out ./ptbxl_png --classes NORM AFIB MI --per-class 4
+curl -L -o scp_statements.csv https://physionet.org/files/ptb-xl/1.0.3/scp_statements.csv
+python tools/build_ptbxl_bank.py --db ptbxl_database.csv --scp scp_statements.csv --list-only   # 先看覆蓋（不下載/不渲染）
+python tools/build_ptbxl_bank.py --db ptbxl_database.csv --scp scp_statements.csv               # 正式建（預設每 cell 1 張，約 350+ 張）
 ```
 
-渲染完先**逐張看過** `./ptbxl_png/<CLASS>/*.png`（這就是「人工確認」那一步），再執行工具**印出的**
-`ingest_local_images.py` 指令（已帶 `--verified`，會複製進 `image_bank/ecg/` 並寫入 manifest）。
-若你已把整包資料集解壓在本機，改用 `--source-dir /path/to/ptb-xl` 從本機讀取即可。
+- 分層：預設性別(2) × 年齡帶(`--age-bands 0,40,60`) = 6 個 cell/statement；`--per-cell` 調每 cell 張數。
+- 稀有 statement（如 PMI、2AVB 全庫僅十餘筆）會標為 `partial/none`——這是 PTB-XL 資料本身的上限，非工具缺陷；
+  覆蓋報告會誠實列出哪些覆蓋、哪些資料不足。
+- 條目寫 `verified: true`（PTB-XL 為心臟科醫師標註且經人工複核）；異常影像仍須「報告文字提到該所見」才會顯示。
+  想自行複核再啟用，加 `--unverified`（寫 `verified:false`，你確認後再改 `true`）。
+- App 端會用病人的年齡/性別，在同一 finding 的多張候選中**優先挑人口學相近者**（僅作排序，先過安全關卡）。
+
+**（B）`tools/render_ptbxl_ecg.py` — 快速產少量特定類別（NORM/AFIB/MI）**
+
+只想先看幾張效果時用它：挑各類別標註品質最高者渲染，並印出 `ingest_local_images.py` 指令。
+
+```bash
+python tools/render_ptbxl_ecg.py --db ptbxl_database.csv --out ./ptbxl_png --classes NORM AFIB MI --per-class 4
+```
+
+兩支都可用 `--source-dir /path/to/ptb-xl` 改從本機解壓的資料集讀取（不串流）。
 
 ### NIH ChestX-ray14（胸部 X 光，開放）
 
@@ -140,6 +155,10 @@ python tools/render_ptbxl_ecg.py --db ptbxl_database.csv \
 - 對**多部位 modality 的正常**影像（US/XR/CT/MRI/ENDO/NM），請在 `findings` 或 `caption` 放入
   **與檢查項目名稱相符的部位詞**（例如腹部超音波放 `abdominal`），App 才能把它對到正確的開單部位；
   單一部位 modality（ECG/CXR/ECHO）則不需要。
+- `age`（整數）／`sex`（`M`/`F`）：**選填**。填了之後，同一 finding 有多張候選影像時，App 會**優先挑
+  年齡/性別最接近本虛擬病人者**（純排序 tiebreak，發生在所有安全關卡之後，不會讓不安全的影像出現）。
+  `build_ptbxl_bank.py` 會自動寫入這兩欄；手動或其他來源的條目沒填也無妨（不影響選圖安全性）。
+- `statement_code`／`diagnostic_subclass`／`statement_category`（選填）：PTB-XL 建庫時記錄，供覆蓋報告與追溯用。
 
 ## 設定與停用
 

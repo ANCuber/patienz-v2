@@ -255,3 +255,19 @@ python tools/fetch_image_bank.py --max 2        # 實際下載（ECG/CXR/XR/CT/U
 4. 停用測試：`PATIENZ_DISABLE_IMAGE_BANK=1 streamlit run home.py` → 一律純文字。
 
 > 需要我幫忙的部分：資料集下載多半需要你以個人帳號註冊／同意授權（PhysioNet、NIH、MIMIC 等），這一步請由你操作；分好資料夾後的 `ingest_local_images.py` 參數我可以依你的資料集逐一幫你寫好。
+
+### §6-A 擴充：PTB-XL 廣覆蓋 ECG 影像庫＋人口學相近檢索（已完成）
+
+需求：「每個(身高×體重×年齡×性別)分層 × 71 statements/23 子類別 至少一張」——已用實際 CSV 證明**數學上不可能**（需 463 分層 × 71 = 32,873 格，齊全人口學的人工複核紀錄僅 6,748 筆、上界約 20,650 格；且 PMI 全庫僅 17 筆等稀有類別根本不足）。改採可行方案：**盡量覆蓋全 71 statements、在資料允許時跨性別/年齡帶分散、產出覆蓋報告、並加入人口學相近優先檢索**。
+
+| 產出 | 內容 | 檔案 |
+|---|---|---|
+| 建庫工具 | 對 71 個 SCP statements，在 性別×年齡帶 各 cell 挑一張人工複核最佳紀錄 → 渲染臨床 12 導程 ECG → 寫 manifest（含 age/sex/statement）→ 產覆蓋報告。單次掃描反向索引（O(rows)，6 秒完成選取）。 | `tools/build_ptbxl_bank.py`（新） |
+| 人口學相近檢索 | `find_image` 新增 `patient_age/patient_sex`：同一 finding 多張候選時，於**通過所有安全關卡後**優先挑年齡/性別接近病人者（純 tiebreak，不影響安全）。 | `util/image_bank.py`、`page/examination.py`（傳入病人年齡/性別） |
+| ECG 同義詞 | 新增 18 組 ECG 診斷中英同義（束支阻滯/房室阻滯/心室肥厚/心房撲動/竇速竇緩/ST 上升下降/PVC/PAC/WPW/長 QT/缺血…），讓中文 ECG 報告能對到影像所見。雙用於評分詳解。 | `util/grading_normalize.py` |
+
+**用實際資料驗證（無金鑰）**：`build_ptbxl_bank.py --list-only` 對真實 21,799 筆跑出 **71/71 statements 皆有影像、23/23 診斷子類別覆蓋、37/71 完整覆蓋 6 個 cell**；每 cell 1 張時共約 **358 張**。修掉一個真實 bug：form/rhythm statements 的 likelihood 多為 0（未知），原本 `>=80` 門檻誤殺（SR/STE_/STACH 顯示 0 筆）→ 改為門檻只套用於 diagnostic，form/rhythm 以「出現＋人工複核」為準。
+
+**測試**：新增 `tests/test_build_ptbxl_bank.py`（19 tests：分層/年齡帶/性別/clean-normal/門檻/cell 分桶/覆蓋狀態/findings 映射）、image bank 人口學 tiebreak 3 tests、grading ECG 同義 12 tests → 全套 **139 passed**；所有新檔 py_compile 通過。
+
+**你要操作的**：下載兩個 CSV（開放存取免登入）後跑 `build_ptbxl_bank.py`（見 `docs/image_bank.md` A 節）。渲染需 `pip install wfdb`。`--list-only` 可先看覆蓋不下載。
