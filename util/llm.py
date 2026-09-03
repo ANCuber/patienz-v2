@@ -21,6 +21,7 @@ examiner paths and allow only a small budget on the one-shot grading paths where
 reasoning quality matters and the latency is hidden behind a single spinner.
 """
 import os
+from functools import lru_cache
 
 from google import genai
 from google.genai import types as gtypes
@@ -38,6 +39,13 @@ THINK_LIGHT = 512
 THINK_GRADER = 2048
 
 _client = None
+
+
+@lru_cache(maxsize=256)
+def read_text_file(path):
+    """Read instruction/config text once and reuse it across reruns."""
+    with open(path, "r", encoding="utf-8") as fh:
+        return fh.read()
 
 
 def get_client():

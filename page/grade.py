@@ -33,6 +33,16 @@ DOMAIN_ORDER = ["PC", "MK", "PBLI", "ICS", "PROF", "SBP"]
 
 ss = st.session_state
 
+
+def _grading_job_key():
+    data = ss.get("data") if isinstance(ss.get("data"), dict) else {}
+    problem = data.get("Problem", {}) if isinstance(data.get("Problem", {}), dict) else {}
+    disease = problem.get("疾病", "")
+    learner = ss.get("acgme_learner_role") or ""
+    sid = ss.get("sid") or "anon"
+    return f"{auth.current_user_id()}:{sid}:{disease}:{learner}"
+
+
 util.init(6)
 util.note()
 
@@ -503,133 +513,144 @@ need_osce = want_osce and "grader_v2_response" not in ss
 need_acgme = want_acgme and "acgme_grader_response" not in ss and not ss.get("acgme_error")
 
 if (need_osce or need_acgme) and "problem" in ss:
-    # 主執行緒先備妥所有輸入；task 內僅做 LLM 呼叫、不碰 st/session_state。
-    student_data = collect_student_data()
-    patient_setup_str = f"## 虛擬病人設定\n{json.dumps(ss.data, ensure_ascii=False, indent=2)}"
-    mark_scheme_prompt = f"請根據以下虛擬病人設定，設計一份OSCE評分表：\n\n{patient_setup_str}"
-    # 評分表重用簽章（疾病+身份+教學重點+難度）：相似案例直接重用，省一次 LLM 呼叫並提升一致性。
-    ms_sig, _ms_raw = mark_scheme_cache.signature(
-        ss.data, ss.get("acgme_learner_role"), ss.get("user_config")
-    )
+    job_key = _grading_job_key()
+    if ss.get("grading_in_flight") and ss.get("grading_job_key") == job_key:
+        st.info("評分已在處理中，請稍候…")
+        st.stop()
 
-    def _task_osce():
-        def _gen_mark_scheme():
-            ms_model = create_mark_scheme_setter_model()
-            txt = _grading_response_text(ms_model.start_chat().send_message(mark_scheme_prompt))
-            json.loads(txt)  # validate before caching; raise on malformed output
-            return txt
-
-        _t0 = time.perf_counter()
-        ms_text, ms_from_cache = mark_scheme_cache.get_or_create(ms_sig, _gen_mark_scheme)
-        t_ms = time.perf_counter() - _t0
-        g_model = create_grader_v2_model(ms_text)
-        _t1 = time.perf_counter()
-        g_text = _grading_response_text(
-            g_model.start_chat().send_message(
-                f"請根據評分表，對以下學生的臨床表現進行逐項評分：\n\n{student_data}"
-            )
+    ss.grading_job_key = job_key
+    ss.grading_in_flight = True
+    try:
+        # 主執行緒先備妥所有輸入；task 內僅做 LLM 呼叫、不碰 st/session_state。
+        student_data = collect_student_data()
+        patient_setup_str = f"## 虛擬病人設定\n{json.dumps(ss.data, ensure_ascii=False, indent=2)}"
+        mark_scheme_prompt = f"請根據以下虛擬病人設定，設計一份OSCE評分表：\n\n{patient_setup_str}"
+        # 評分表重用簽章（疾病+身份+教學重點+難度）：相似案例直接重用，省一次 LLM 呼叫並提升一致性。
+        ms_sig, _ms_raw = mark_scheme_cache.signature(
+            ss.data, ss.get("acgme_learner_role"), ss.get("user_config")
         )
-        return {"mark_scheme": ms_text, "grading": g_text, "ms_from_cache": ms_from_cache,
-                "t_ms": t_ms, "t_g": time.perf_counter() - _t1}
 
-    # ACGME milestone 選擇為純檔案 IO，於主執行緒先做好。
-    acgme_ctx = None
-    if need_acgme:
-        try:
-            _problem = ss.data.get("Problem", {}) if isinstance(ss.get("data"), dict) else {}
-            _disease = _problem.get("疾病", "")
-            _symptoms = _problem.get("症狀", "")
-            _selection = acgme_selector.select_milestone(_disease, _symptoms)
-            _acgme_input = (
-                f"## 病例資訊\n疾病：{_disease}\n症狀：{_symptoms}\n\n"
-                f"## 學員完整表現\n{student_data}\n\n"
-                f"請對提供的每一個 ACGME 子能力逐項評定 Milestone Level，並引用學員具體表現作為佐證。"
+        def _task_osce():
+            def _gen_mark_scheme():
+                ms_model = create_mark_scheme_setter_model()
+                txt = _grading_response_text(ms_model.start_chat().send_message(mark_scheme_prompt))
+                json.loads(txt)  # validate before caching; raise on malformed output
+                return txt
+
+            _t0 = time.perf_counter()
+            ms_text, ms_from_cache = mark_scheme_cache.get_or_create(ms_sig, _gen_mark_scheme)
+            t_ms = time.perf_counter() - _t0
+            g_model = create_grader_v2_model(ms_text)
+            _t1 = time.perf_counter()
+            g_text = _grading_response_text(
+                g_model.start_chat().send_message(
+                    f"請根據評分表，對以下學生的臨床表現進行逐項評分：\n\n{student_data}"
+                )
             )
-            acgme_ctx = {
-                "selection": _selection,
-                "learner_role": ss.get("acgme_learner_role"),
-                "input": _acgme_input,
-            }
-        except Exception as e:
-            ss.acgme_error = True
-            util.record(ss.log, f"[ACGME] milestone selection failed: {e}")
-            need_acgme = False
+            return {"mark_scheme": ms_text, "grading": g_text, "ms_from_cache": ms_from_cache,
+                    "t_ms": t_ms, "t_g": time.perf_counter() - _t1}
 
-    def _task_acgme():
-        sel = acgme_ctx["selection"]
-        model = create_acgme_grader_model(sel["milestone_data"], acgme_ctx["learner_role"])
-        _t0 = time.perf_counter()
-        # Use the hardened extractor so MAX_TOKENS / safety-block failures carry
-        # finish_reason/block_reason diagnostics (same as the OSCE chain).
-        text = _grading_response_text(model.start_chat().send_message(acgme_ctx["input"]))
-        return {"acgme": text, "t": time.perf_counter() - _t0}
-
-    tasks = {}
-    if need_osce:
-        tasks["osce"] = _task_osce
-    if need_acgme and acgme_ctx is not None:
-        tasks["acgme"] = _task_acgme
-
-    if tasks:
-        with st.spinner("AI 考官評分中…（OSCE／ACGME 並行）"):
-            results = grading_pipeline.run_parallel(tasks)
-
-        # --- 寫回 OSCE 結果（主執行緒）---
-        if "osce" in results:
-            r = results["osce"]
-            if isinstance(r, Exception):
-                util.record(ss.log, f"[V2] Grading FAILED: {r}")
-                st.error("AI 評分失敗，請重新整理頁面再試一次。")
-                st.stop()
-            ss.mark_scheme_raw = r["mark_scheme"]
-            ss.grader_v2_response = r["grading"]
-            util.record(ss.log, f"[PERF] mark_scheme={r['t_ms']:.2f}s cache={r.get('ms_from_cache')}")
-            util.record(ss.log, f"[PERF] grader_v2={r['t_g']:.2f}s")
-            util.record(ss.log, f"[V2] Mark Scheme: {ss.mark_scheme_raw}")
-            util.record(ss.log, f"[V2] Grading Result: {ss.grader_v2_response}")
-
-        # --- 寫回 ACGME 結果 + 彙總（主執行緒）---
-        if "acgme" in results:
-            r = results["acgme"]
-            if isinstance(r, Exception):
-                ss.acgme_error = True
-                util.record(ss.log, f"[ACGME] grader failed: {r}")
-            else:
-                sel = acgme_ctx["selection"]
-                ss.acgme_milestone_data = sel["milestone_data"]
-                ss.acgme_milestone_used = sel["milestone_name"]
-                ss.acgme_selection_meta = {
-                    "selection_reason": sel["selection_reason"],
-                    "matched_key": sel["matched_key"],
-                    "fallback_reason": sel["fallback_reason"],
-                    "excluded_subcompetencies": sel.get("excluded_subcompetencies", []),
+        # ACGME milestone 選擇為純檔案 IO，於主執行緒先做好。
+        acgme_ctx = None
+        if need_acgme:
+            try:
+                _problem = ss.data.get("Problem", {}) if isinstance(ss.get("data"), dict) else {}
+                _disease = _problem.get("疾病", "")
+                _symptoms = _problem.get("症狀", "")
+                _selection = acgme_selector.select_milestone(_disease, _symptoms)
+                _acgme_input = (
+                    f"## 病例資訊\n疾病：{_disease}\n症狀：{_symptoms}\n\n"
+                    f"## 學員完整表現\n{student_data}\n\n"
+                    f"請對提供的每一個 ACGME 子能力逐項評定 Milestone Level，並引用學員具體表現作為佐證。"
+                )
+                acgme_ctx = {
+                    "selection": _selection,
+                    "learner_role": ss.get("acgme_learner_role"),
+                    "input": _acgme_input,
                 }
-                ss.acgme_grader_response = r["acgme"]
-                util.record(ss.log, f"[PERF] acgme_grader={r['t']:.2f}s")
-                util.record(ss.log, f"[ACGME] milestone={ss.acgme_milestone_used} "
-                                    f"reason={sel['selection_reason']} matched={sel['matched_key']!r} "
-                                    f"fallback={sel['fallback_reason']}")
-                util.record(ss.log, f"[ACGME] Grading Result: {ss.acgme_grader_response}")
-                try:
-                    parsed = json.loads(ss.acgme_grader_response)
-                    parsed = acgme_aggregator.reconcile_missing_subcompetencies(
-                        parsed, ss.acgme_milestone_data
-                    )
-                    ss.acgme_domain_summary = acgme_aggregator.aggregate_to_domains(
-                        parsed, ss.acgme_milestone_data
-                    )
-                    ss.acgme_grader_parsed = parsed
-                    util.record(
-                        ss.log,
-                        "[ACGME] domain_summary=" + json.dumps(
-                            {d: {"avg": v["average_level"], "n": v["assessed_count"]}
-                             for d, v in ss.acgme_domain_summary.items()},
-                            ensure_ascii=False,
-                        ),
-                    )
-                except Exception as e:
+            except Exception as e:
+                ss.acgme_error = True
+                util.record(ss.log, f"[ACGME] milestone selection failed: {e}")
+                need_acgme = False
+
+        def _task_acgme():
+            sel = acgme_ctx["selection"]
+            model = create_acgme_grader_model(sel["milestone_data"], acgme_ctx["learner_role"])
+            _t0 = time.perf_counter()
+            # Use the hardened extractor so MAX_TOKENS / safety-block failures carry
+            # finish_reason/block_reason diagnostics (same as the OSCE chain).
+            text = _grading_response_text(model.start_chat().send_message(acgme_ctx["input"]))
+            return {"acgme": text, "t": time.perf_counter() - _t0}
+
+        tasks = {}
+        if need_osce:
+            tasks["osce"] = _task_osce
+        if need_acgme and acgme_ctx is not None:
+            tasks["acgme"] = _task_acgme
+
+        if tasks:
+            with st.spinner("AI 考官評分中…（OSCE／ACGME 並行）"):
+                results = grading_pipeline.run_parallel(tasks)
+
+            # --- 寫回 OSCE 結果（主執行緒）---
+            if "osce" in results:
+                r = results["osce"]
+                if isinstance(r, Exception):
+                    util.record(ss.log, f"[V2] Grading FAILED: {r}")
+                    st.error("AI 評分失敗，請重新整理頁面再試一次。")
+                    st.stop()
+                ss.mark_scheme_raw = r["mark_scheme"]
+                ss.grader_v2_response = r["grading"]
+                util.record(ss.log, f"[PERF] mark_scheme={r['t_ms']:.2f}s cache={r.get('ms_from_cache')}")
+                util.record(ss.log, f"[PERF] grader_v2={r['t_g']:.2f}s")
+                util.record(ss.log, f"[V2] Mark Scheme: {ss.mark_scheme_raw}")
+                util.record(ss.log, f"[V2] Grading Result: {ss.grader_v2_response}")
+
+            # --- 寫回 ACGME 結果 + 彙總（主執行緒）---
+            if "acgme" in results:
+                r = results["acgme"]
+                if isinstance(r, Exception):
                     ss.acgme_error = True
-                    util.record(ss.log, f"[ACGME] aggregator failed: {e}")
+                    util.record(ss.log, f"[ACGME] grader failed: {r}")
+                else:
+                    sel = acgme_ctx["selection"]
+                    ss.acgme_milestone_data = sel["milestone_data"]
+                    ss.acgme_milestone_used = sel["milestone_name"]
+                    ss.acgme_selection_meta = {
+                        "selection_reason": sel["selection_reason"],
+                        "matched_key": sel["matched_key"],
+                        "fallback_reason": sel["fallback_reason"],
+                        "excluded_subcompetencies": sel.get("excluded_subcompetencies", []),
+                    }
+                    ss.acgme_grader_response = r["acgme"]
+                    util.record(ss.log, f"[PERF] acgme_grader={r['t']:.2f}s")
+                    util.record(ss.log, f"[ACGME] milestone={ss.acgme_milestone_used} "
+                                        f"reason={sel['selection_reason']} matched={sel['matched_key']!r} "
+                                        f"fallback={sel['fallback_reason']}")
+                    util.record(ss.log, f"[ACGME] Grading Result: {ss.acgme_grader_response}")
+                    try:
+                        parsed = json.loads(ss.acgme_grader_response)
+                        parsed = acgme_aggregator.reconcile_missing_subcompetencies(
+                            parsed, ss.acgme_milestone_data
+                        )
+                        ss.acgme_domain_summary = acgme_aggregator.aggregate_to_domains(
+                            parsed, ss.acgme_milestone_data
+                        )
+                        ss.acgme_grader_parsed = parsed
+                        util.record(
+                            ss.log,
+                            "[ACGME] domain_summary=" + json.dumps(
+                                {d: {"avg": v["average_level"], "n": v["assessed_count"]}
+                                 for d, v in ss.acgme_domain_summary.items()},
+                                ensure_ascii=False,
+                            ),
+                        )
+                    except Exception as e:
+                        ss.acgme_error = True
+                        util.record(ss.log, f"[ACGME] aggregator failed: {e}")
+    finally:
+        if ss.get("grading_job_key") == job_key:
+            ss.grading_in_flight = False
 
 # Advisor priming（OSCE 或 ACGME 任一完成即可建立）
 if "advisor" not in ss and ("grader_v2_response" in ss or "acgme_grader_response" in ss):

@@ -7,6 +7,7 @@ import os
 import time
 import datetime
 import base64
+import uuid
 
 import streamlit as st
 import util.constants as const
@@ -40,7 +41,9 @@ def init_all():
     if "sid" not in ss:
         username = auth.current_username() or "anonymous"
         safe_user = "".join(ch for ch in username if ch.isalnum() or ch in ("-", "_")) or "anonymous"
-        ss.sid = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+        user_key = auth.current_user_id() if auth.current_user_id() is not None else "anon"
+        ts = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+        ss.sid = f"{user_key}-{ts}-{uuid.uuid4().hex[:12]}"
         ss.log = f"data/log/{safe_user}/{ss.sid}.txt"
         print(f"Session ID: {ss.sid}")
         print(f"Log file: {ss.log}")

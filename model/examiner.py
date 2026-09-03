@@ -30,8 +30,7 @@ def create_value_examiner_model(problem: str, examiner_instruction_path=EXAMINER
         return
 
     with st.spinner("正在建立檢查模型..."):
-        with open(examiner_instruction_path, "r", encoding="utf-8") as file:
-            examiner_instruction = file.read()
+        examiner_instruction = llm.read_text_file(examiner_instruction_path)
 
         gender = ss.data["基本資訊"]["性別"]
 
@@ -55,8 +54,7 @@ def create_text_examiner_model(problem: str, examiner_instruction_path=EXAMINER_
         return
 
     with st.spinner("正在建立檢查模型..."):
-        with open(examiner_instruction_path, "r", encoding="utf-8") as file:
-            examiner_instruction = file.read()
+        examiner_instruction = llm.read_text_file(examiner_instruction_path)
 
         gender = ss.data["基本資訊"]["性別"]
 
@@ -79,8 +77,7 @@ def create_pe_examiner_model(problem: str, pe_instruction_path=PE_INSTRUCTION):
         return
 
     with st.spinner("正在建立理學檢查模型..."):
-        with open(pe_instruction_path, "r", encoding="utf-8") as file:
-            pe_instruction = file.read()
+        pe_instruction = llm.read_text_file(pe_instruction_path)
 
         config = llm.build_config(
             system_instruction=f"{pe_instruction}{problem}",

@@ -317,6 +317,8 @@ with major_column[1]:
                 save_load.load_progress(save_file)
                 target_progress = ss.get("current_progress", 0)
                 st.switch_page(f"page/{const.section_name[target_progress]}.py")
+        elif ss.config_type in {"模板題", "題目存檔"} and not problem:
+            dialog.error("請先選擇題目")
         elif "problem" in ss:
             dialog.error("請先完成目前的題目", "test")
             pass
@@ -331,14 +333,22 @@ with major_column[1]:
 
             ss.user_config = config
         elif ss.config_type == "模板題":
-            with open(f"data/template_problem_set/{problem}", "r") as f:
+            problem_path = os.path.join("data/template_problem_set", problem)
+            if os.path.dirname(problem_path) != "data/template_problem_set":
+                dialog.error("題目檔案無效")
+                st.stop()
+            with open(problem_path, "r", encoding="utf-8") as f:
                 ss.problem = f.read()
             print(f"Problem: {problem}")
             ss.data = json.loads(ss.problem)
 
             util.next_page()
         else:
-            with open(f"data/problem_set/{problem}", "r") as f:
+            problem_path = os.path.join("data/problem_set", problem)
+            if os.path.dirname(problem_path) != "data/problem_set":
+                dialog.error("題目檔案無效")
+                st.stop()
+            with open(problem_path, "r", encoding="utf-8") as f:
                 ss.problem = f.read()
             print(f"Problem: {problem}")
             ss.data = json.loads(ss.problem)

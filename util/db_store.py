@@ -199,6 +199,95 @@ def _ensure_column(conn, table_name, column_name, column_sql):
         _execute(conn, f"ALTER TABLE {table_name} ADD COLUMN {column_sql}")
 
 
+def _sqlite_unique_sets(conn, table_name):
+    rows = _execute(conn, f"PRAGMA index_list('{table_name}')").fetchall()
+    result = []
+    for row in rows:
+        if row["unique"] != 1:
+            continue
+        info_rows = _execute(conn, f"PRAGMA index_info('{row['name']}')").fetchall()
+        result.append({col["name"] for col in info_rows})
+    return result
+
+
+def _migrate_user_scoped_table(conn, table_name, key_column):
+    if _is_postgres():
+        return
+
+    unique_sets = _sqlite_unique_sets(conn, table_name)
+    if not any(set({key_column}) == cols for cols in unique_sets):
+        return
+
+    legacy_table = f"{table_name}_legacy"
+    if table_name == "progress_saves":
+        col_names = [
+            "id", "save_name", "sid", "patient_name", "progress_label",
+            "progress_index", "payload_json", "created_at", "updated_at", "user_id",
+        ]
+        create_sql = """
+            CREATE TABLE progress_saves (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                save_name TEXT NOT NULL,
+                sid TEXT,
+                patient_name TEXT,
+                progress_label TEXT,
+                progress_index INTEGER,
+                payload_json TEXT NOT NULL,
+                created_at TEXT NOT NULL,
+                updated_at TEXT NOT NULL,
+                user_id BIGINT
+            )
+        """
+    else:
+        col_names = [
+            "id", "record_name", "sid", "patient_name", "disease",
+            "score_v2_percentage", "payload_json", "created_at", "updated_at", "user_id",
+        ]
+        create_sql = """
+            CREATE TABLE grading_results (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                record_name TEXT NOT NULL,
+                sid TEXT,
+                patient_name TEXT,
+                disease TEXT,
+                score_v2_percentage REAL,
+                payload_json TEXT NOT NULL,
+                created_at TEXT NOT NULL,
+                updated_at TEXT NOT NULL,
+                user_id BIGINT
+            )
+        """
+
+    _execute(conn, f"ALTER TABLE {table_name} RENAME TO {legacy_table}")
+    _execute(conn, create_sql)
+    columns_sql = ", ".join(col_names)
+    _execute(
+        conn,
+        f"INSERT INTO {table_name} ({columns_sql}) SELECT {columns_sql} FROM {legacy_table}",
+    )
+    _execute(conn, f"DROP TABLE {legacy_table}")
+
+
+def _ensure_user_scoped_unique_index(conn, table_name, columns):
+    columns_sql = ", ".join(columns)
+    index_name = f"idx_{table_name}_{'_'.join(columns)}_u"
+    if _is_postgres():
+        _execute(
+            conn,
+            f"CREATE UNIQUE INDEX IF NOT EXISTS {index_name} ON {table_name} ({columns_sql})",
+        )
+        return
+
+    unique_sets = _sqlite_unique_sets(conn, table_name)
+    if any(set(columns) == cols for cols in unique_sets):
+        return
+
+    _execute(
+        conn,
+        f"CREATE UNIQUE INDEX IF NOT EXISTS {index_name} ON {table_name} ({columns_sql})",
+    )
+
+
 def init_db():
     with _connect_main() as conn:
         if _is_postgres():
@@ -245,7 +334,7 @@ def init_db():
                 """
                 CREATE TABLE IF NOT EXISTS progress_saves (
                     id BIGSERIAL PRIMARY KEY,
-                    save_name TEXT NOT NULL UNIQUE,
+                    save_name TEXT NOT NULL,
                     sid TEXT,
                     patient_name TEXT,
                     progress_label TEXT,
@@ -262,7 +351,7 @@ def init_db():
                 """
                 CREATE TABLE IF NOT EXISTS progress_saves (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    save_name TEXT NOT NULL UNIQUE,
+                    save_name TEXT NOT NULL,
                     sid TEXT,
                     patient_name TEXT,
                     progress_label TEXT,
@@ -274,6 +363,7 @@ def init_db():
                 """,
             )
         _ensure_column(conn, "progress_saves", "user_id", "user_id BIGINT")
+        _migrate_user_scoped_table(conn, "progress_saves", "save_name")
         _execute(
             conn,
             """
@@ -288,6 +378,7 @@ def init_db():
             ON progress_saves (user_id)
             """
         )
+        _ensure_user_scoped_unique_index(conn, "progress_saves", ("user_id", "save_name"))
 
         if _is_postgres():
             _execute(
@@ -295,7 +386,7 @@ def init_db():
                 """
                 CREATE TABLE IF NOT EXISTS grading_results (
                     id BIGSERIAL PRIMARY KEY,
-                    record_name TEXT NOT NULL UNIQUE,
+                    record_name TEXT NOT NULL,
                     sid TEXT,
                     patient_name TEXT,
                     disease TEXT,
@@ -312,7 +403,7 @@ def init_db():
                 """
                 CREATE TABLE IF NOT EXISTS grading_results (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    record_name TEXT NOT NULL UNIQUE,
+                    record_name TEXT NOT NULL,
                     sid TEXT,
                     patient_name TEXT,
                     disease TEXT,
@@ -324,6 +415,7 @@ def init_db():
                 """,
             )
         _ensure_column(conn, "grading_results", "user_id", "user_id BIGINT")
+        _migrate_user_scoped_table(conn, "grading_results", "record_name")
         _execute(
             conn,
             """
@@ -338,6 +430,7 @@ def init_db():
             ON grading_results (user_id)
             """
         )
+        _ensure_user_scoped_unique_index(conn, "grading_results", ("user_id", "record_name"))
 
         if _is_postgres():
             # Create current-month log shard table on startup.
@@ -364,8 +457,7 @@ def upsert_progress_save(save_name, sid, patient_name, progress_label, progress_
                 save_name, user_id, sid, patient_name, progress_label,
                 progress_index, payload_json, created_at, updated_at
             ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-            ON CONFLICT(save_name) DO UPDATE SET
-                user_id=excluded.user_id,
+            ON CONFLICT(user_id, save_name) DO UPDATE SET
                 sid=excluded.sid,
                 patient_name=excluded.patient_name,
                 progress_label=excluded.progress_label,
@@ -472,8 +564,7 @@ def upsert_grading_result(record_name, sid, patient_name, disease, score_v2_perc
                 record_name, user_id, sid, patient_name, disease,
                 score_v2_percentage, payload_json, created_at, updated_at
             ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-            ON CONFLICT(record_name) DO UPDATE SET
-                user_id=excluded.user_id,
+            ON CONFLICT(user_id, record_name) DO UPDATE SET
                 sid=excluded.sid,
                 patient_name=excluded.patient_name,
                 disease=excluded.disease,

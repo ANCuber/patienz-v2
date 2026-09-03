@@ -18,7 +18,14 @@ main thread.
 result value, and if the thread pool itself cannot be used the tasks are run
 sequentially so grading always completes.
 """
+import os
+import threading
 from concurrent.futures import ThreadPoolExecutor
+
+
+MAX_CONCURRENT_GRADING = max(1, int(os.getenv("PATIENZ_MAX_CONCURRENT_GRADING", "2")))
+GRADING_QUEUE_TIMEOUT = max(1, int(os.getenv("PATIENZ_GRADING_QUEUE_TIMEOUT", "300")))
+_grading_slots = threading.BoundedSemaphore(MAX_CONCURRENT_GRADING)
 
 
 def run_parallel(tasks: dict) -> dict:
@@ -29,20 +36,31 @@ def run_parallel(tasks: dict) -> dict:
     results = {}
     if not tasks:
         return results
+
+    acquired = _grading_slots.acquire(timeout=GRADING_QUEUE_TIMEOUT)
+    if not acquired:
+        error = TimeoutError(
+            "Grading queue is full. Please retry after the current grading jobs finish."
+        )
+        return {name: error for name in tasks}
+
     try:
-        with ThreadPoolExecutor(max_workers=max(1, len(tasks))) as ex:
-            futures = {name: ex.submit(fn) for name, fn in tasks.items()}
-            for name, fut in futures.items():
+        try:
+            with ThreadPoolExecutor(max_workers=max(1, len(tasks))) as ex:
+                futures = {name: ex.submit(fn) for name, fn in tasks.items()}
+                for name, fut in futures.items():
+                    try:
+                        results[name] = fut.result()
+                    except Exception as e:  # noqa: BLE001 - capture per-task failure
+                        results[name] = e
+            return results
+        except Exception:  # noqa: BLE001 - thread pool unusable → sequential fallback
+            results = {}
+            for name, fn in tasks.items():
                 try:
-                    results[name] = fut.result()
-                except Exception as e:  # noqa: BLE001 - capture per-task failure
+                    results[name] = fn()
+                except Exception as e:  # noqa: BLE001
                     results[name] = e
-        return results
-    except Exception:  # noqa: BLE001 - thread pool unusable → sequential fallback
-        results = {}
-        for name, fn in tasks.items():
-            try:
-                results[name] = fn()
-            except Exception as e:  # noqa: BLE001
-                results[name] = e
-        return results
+            return results
+    finally:
+        _grading_slots.release()
