@@ -11,17 +11,26 @@ if not auth.is_admin():
     st.error("僅限 admin 使用")
     st.stop()
 
+with st.sidebar:
+    st.caption(f"目前登入：{auth.current_username()} (admin)")
+    if st.button("返回看診", use_container_width=True, key="admin_back_btn"):
+        st.switch_page("page/config.py")
+    if st.button("登出", use_container_width=True, key="admin_logout_btn"):
+        auth.logout()
+        st.rerun()
+
 st.title("使用者管理")
-st.caption("新增或刪除使用者帳號。")
+st.caption("新增、修改或刪除使用者帳號。")
 st.info(
     "操作說明：\n"
     "1. 左側輸入帳號、密碼與角色後按「新增」。\n"
-    "2. 右側選擇帳號後按「刪除使用者」。\n"
-    "3. 安全限制：不可刪除目前登入帳號，且系統至少保留一位 admin。\n"
-    "4. 你也可直接編輯 config/users.json，系統啟動時會自動同步。"
+    "2. 中間選擇帳號後可修改帳號、密碼、角色與啟用狀態。\n"
+    "3. 右側選擇帳號後按「刪除使用者」。\n"
+    "4. 安全限制：不可刪除或停用目前登入帳號，且系統至少保留一位啟用中的 admin。\n"
+    "5. 使用者資料以資料庫為準；新增或修改後不需要編輯其他檔案。"
 )
 
-left, right = st.columns([1, 1])
+left, middle, right = st.columns([1, 1.2, 1])
 
 with left:
     st.subheader("新增使用者")
@@ -38,6 +47,41 @@ with left:
             st.rerun()
         else:
             st.error(msg)
+
+with middle:
+    st.subheader("修改使用者")
+    users = auth.list_users()
+    user_labels = [u["username"] for u in users]
+
+    if user_labels:
+        to_edit = st.selectbox("選擇帳號", user_labels, key="edit_user")
+        selected = next(user for user in users if user["username"] == to_edit)
+        with st.form("edit_user_form", clear_on_submit=False):
+            edited_username = st.text_input("帳號", value=selected["username"])
+            edited_password = st.text_input("新密碼（留空則不修改）", type="password")
+            edited_role = st.selectbox(
+                "角色",
+                ["user", "admin"],
+                index=0 if selected["role"] == "user" else 1,
+            )
+            edited_active = st.checkbox("啟用帳號", value=int(selected["is_active"]) == 1)
+            edit_submitted = st.form_submit_button("儲存修改", use_container_width=True)
+
+        if edit_submitted:
+            ok, msg = auth.update_user(
+                old_username=to_edit,
+                username=edited_username,
+                password=edited_password,
+                role=edited_role,
+                is_active=edited_active,
+            )
+            if ok:
+                st.success(msg)
+                st.rerun()
+            else:
+                st.error(msg)
+    else:
+        st.info("目前沒有可修改的使用者")
 
 with right:
     st.subheader("刪除使用者")

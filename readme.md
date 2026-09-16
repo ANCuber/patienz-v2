@@ -35,7 +35,11 @@ Notes:
 
 ## Users configuration
 
-The service can bootstrap users from `config/users.json`.
+Users can register their own accounts from the `註冊帳號` tab on the login screen.
+Self-registered accounts are stored in the configured database and are created as
+regular `user` accounts.
 
-- On startup, users in that file are synced into the database.
-- If the file is missing or invalid, default admin bootstrap still applies.
+The database is the source of truth for users. On a new database, the service
+creates the admin account from `PATIENZ_ADMIN_USERNAME` and
+`PATIENZ_ADMIN_PASSWORD` (default: `admin` / `admin123`). Manage all other
+accounts from the admin page; `config/users.json` is no longer read at startup.

@@ -602,6 +602,22 @@ def get_user_by_username(username):
     return dict(row)
 
 
+def get_user_by_id(user_id):
+    with _connect_main() as conn:
+        row = _execute(
+            conn,
+            """
+            SELECT id, username, password_hash, role, is_active, created_at, updated_at
+            FROM users
+            WHERE id = ?
+            """,
+            (user_id,),
+        ).fetchone()
+    if not row:
+        return None
+    return dict(row)
+
+
 def create_user(username, password_hash, role="user"):
     now = _now()
     with _connect_main() as conn:
@@ -613,6 +629,28 @@ def create_user(username, password_hash, role="user"):
             """,
             (username, password_hash, role, now, now),
         )
+
+
+def update_user_by_username(old_username, username, password_hash=None, role="user", is_active=1):
+    now = _now()
+    if password_hash is None:
+        sql = """
+            UPDATE users
+            SET username = ?, role = ?, is_active = ?, updated_at = ?
+            WHERE username = ?
+        """
+        params = (username, role, int(is_active), now, old_username)
+    else:
+        sql = """
+            UPDATE users
+            SET username = ?, password_hash = ?, role = ?, is_active = ?, updated_at = ?
+            WHERE username = ?
+        """
+        params = (username, password_hash, role, int(is_active), now, old_username)
+
+    with _connect_main() as conn:
+        cursor = _execute(conn, sql, params)
+        return cursor.rowcount > 0
 
 
 def upsert_user(username, password_hash, role="user", is_active=1):

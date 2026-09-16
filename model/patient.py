@@ -72,5 +72,5 @@ def create_patient_model(problem: str, patient_instruction_path=PATIENT_INSTRUCT
                 role = "user" if msg["role"] == "doctor" else "model"
                 history.append({"role": role, "parts": [{"text": msg["content"]}]})
 
-        ss.patient = llm.start_chat("gemini-2.5-flash", config, history=history)
+        ss.patient = llm.start_chat(llm.DEFAULT_GEMINI_MODEL, config, history=history)
         ss.patient_model = True  # sentinel: presence gates re-creation in pages

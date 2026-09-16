@@ -384,10 +384,10 @@ if "user_config" in ss and "problem" not in ss:
     # Validate englishDiseaseName (used downstream for PDF lookup); fallback to flash if invalid
     eng_name = ss.data.get("Problem", {}).get("englishDiseaseName")
     if not _is_valid_english_disease_name(eng_name):
-        util.record(ss.log, f"[FALLBACK] invalid englishDiseaseName={eng_name!r}, retry with gemini-2.5-flash")
+        util.record(ss.log, f"[FALLBACK] invalid englishDiseaseName={eng_name!r}, retry with {util.llm.DEFAULT_GEMINI_MODEL if hasattr(util, 'llm') else 'gemini-3.5-flash'}")
         del ss.problem_setter_model
         del ss.problem_setter
-        create_problem_setter_model(model_name="gemini-2.5-flash")
+        create_problem_setter_model(model_name=util.llm.DEFAULT_GEMINI_MODEL if hasattr(util, 'llm') else "gemini-3.5-flash")
         _t0 = time.perf_counter()
         ss.problem = ss.problem_setter.send_message(prompt).text
         _dt = time.perf_counter() - _t0

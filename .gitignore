@@ -21,3 +21,5 @@ data/log_db/
 *.tmp.*
 .claude/
 test_feeback/
+database_schema
+patienz-database-schema.tar.gz

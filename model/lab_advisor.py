@@ -28,7 +28,7 @@ def create_lab_advisor_model(problem: str):
         response_mime_type="text/plain",
         thinking_budget=llm.THINK_OFF,
     )
-    return llm.ModelHandle("gemini-2.5-flash-lite", config)
+    return llm.ModelHandle(llm.DEFAULT_GEMINI_MODEL, config)
 
 
 def request_lab_feedback(problem: str, exam_entry: dict) -> str:

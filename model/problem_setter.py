@@ -86,7 +86,9 @@ _RESPONSE_SCHEMA = llm.Schema(
 
 
 def create_problem_setter_model(problem_instruction_path=PROBLEM_SETTER_INSTRUCTION,
-                                model_name="gemini-2.5-flash-lite"):
+                                model_name=None):
+    if model_name is None:
+        model_name = llm.DEFAULT_GEMINI_LITE_MODEL
     with open(problem_instruction_path, "r", encoding="utf-8") as file:
         problem_setter_instruction = file.read()
 

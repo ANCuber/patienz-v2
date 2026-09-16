@@ -169,6 +169,9 @@ def note():
             st.rerun()
             st.stop()
 
+        if auth.is_admin() and st.button("🛠️ 使用者管理", use_container_width=True, key="admin_users_btn"):
+            st.switch_page("page/admin.py")
+
         st.header("看診進度")
         for i, n in enumerate(const.noun):
             label = f"{const.icon[i]} {n}區"

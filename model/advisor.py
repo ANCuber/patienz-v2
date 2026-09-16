@@ -29,5 +29,5 @@ def create_advisor_model(advisor_instruction_path: str):
 
     history = [{"role": "user", "parts": [{"text": primer}]}] if primer else []
 
-    ss.advisor = llm.start_chat("gemini-2.5-flash", config, history=history)
+    ss.advisor = llm.start_chat(llm.DEFAULT_GEMINI_MODEL, config, history=history)
     ss.advisor_model = True

@@ -30,4 +30,4 @@ def create_mark_scheme_setter_model():
         response_mime_type="application/json",
         thinking_budget=llm.THINK_LIGHT,
     )
-    return llm.ModelHandle("gemini-2.5-flash", config)
+    return llm.ModelHandle(llm.DEFAULT_GEMINI_MODEL, config)

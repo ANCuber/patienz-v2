@@ -39,10 +39,43 @@ def test_model_handle_starts_chat_with_its_config(monkeypatch):
 
     monkeypatch.setattr(llm, "start_chat", fake_start_chat)
     cfg = llm.build_config(temperature=0.3, thinking_budget=2048)
-    h = llm.ModelHandle("gemini-2.5-flash", cfg)
+    h = llm.ModelHandle("gemini-3.5-flash", cfg)
     assert h.start_chat() == "CHAT"
-    assert captured["model"] == "gemini-2.5-flash"
+    assert captured["model"] == "gemini-3.5-flash"
     assert captured["config"] is cfg
+
+
+def test_retry_chat_falls_back_when_model_invalid(monkeypatch):
+    calls = []
+
+    class FakeChat:
+        def __init__(self, model):
+            self.model = model
+            self.sent = []
+
+        def send_message(self, text):
+            calls.append((self.model, text))
+            if self.model == "gemini-3.5-flash":
+                raise ValueError("Request contains an invalid argument. model not found")
+            return type("Resp", (), {"text": f"ok:{self.model}"})()
+
+    class FakeChats:
+        def __init__(self):
+            self.created = []
+
+        def create(self, model, config, history=None):
+            self.created.append((model, config, history))
+            return FakeChat(model)
+
+    fake_client = type("Client", (), {"chats": FakeChats()})()
+    monkeypatch.setattr(llm, "get_client", lambda: fake_client)
+
+    chat = llm.start_chat("gemini-3.5-flash", llm.build_config(temperature=0.3))
+    result = chat.send_message("hello")
+
+    assert result.text == "ok:gemini-3.5-flash-lite"
+    assert calls[0][0] == "gemini-3.5-flash"
+    assert calls[1][0] == "gemini-3.5-flash-lite"
 
 
 # ---------- agent thinking budgets ----------

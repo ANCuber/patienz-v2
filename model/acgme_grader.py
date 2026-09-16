@@ -88,4 +88,4 @@ def create_acgme_grader_model(milestone_data: dict, learner_role: dict = None):
         response_mime_type="application/json",
         thinking_budget=llm.THINK_GRADER,
     )
-    return llm.ModelHandle("gemini-2.5-flash", config)
+    return llm.ModelHandle(llm.DEFAULT_GEMINI_MODEL, config)

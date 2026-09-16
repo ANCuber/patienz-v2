@@ -44,7 +44,7 @@ def create_value_examiner_model(problem: str, examiner_instruction_path=EXAMINER
             response_mime_type="application/json",
             thinking_budget=llm.THINK_OFF,
         )
-        ss.value_examiner = llm.start_chat("gemini-2.5-flash", config)
+        ss.value_examiner = llm.start_chat(llm.DEFAULT_GEMINI_MODEL, config)
         ss.value_examiner_model = True
 
 
@@ -67,7 +67,7 @@ def create_text_examiner_model(problem: str, examiner_instruction_path=EXAMINER_
             response_mime_type="text/plain",
             thinking_budget=llm.THINK_OFF,
         )
-        ss.text_examiner = llm.start_chat("gemini-2.5-flash", config)
+        ss.text_examiner = llm.start_chat(llm.DEFAULT_GEMINI_MODEL, config)
         ss.text_examiner_model = True
 
 
@@ -88,5 +88,5 @@ def create_pe_examiner_model(problem: str, pe_instruction_path=PE_INSTRUCTION):
             response_mime_type="text/plain",
             thinking_budget=llm.THINK_OFF,
         )
-        ss.pe_examiner = llm.start_chat("gemini-2.5-flash", config)
+        ss.pe_examiner = llm.start_chat(llm.DEFAULT_GEMINI_MODEL, config)
         ss.pe_examiner_model = True

@@ -33,4 +33,4 @@ def create_grader_v2_model(mark_scheme_text: str):
         response_mime_type="application/json",
         thinking_budget=llm.THINK_GRADER,
     )
-    return llm.ModelHandle("gemini-2.5-flash", config)
+    return llm.ModelHandle(llm.DEFAULT_GEMINI_MODEL, config)
