@@ -52,25 +52,16 @@ def _ensure_grading_dir():
     os.makedirs(GRADING_DIR, exist_ok=True)
 
 
-def _safe_user_segment(username):
-    allowed = []
-    for ch in (username or "anonymous"):
-        if ch.isalnum() or ch in ("-", "_"):
-            allowed.append(ch)
-    text = "".join(allowed).strip("_")
-    return text or "anonymous"
-
-
 def _user_save_dir():
     _ensure_dir()
-    user_dir = os.path.join(SAVE_DIR, _safe_user_segment(auth.current_username()))
+    user_dir = os.path.join(SAVE_DIR, auth.safe_user_segment(auth.current_username()))
     os.makedirs(user_dir, exist_ok=True)
     return user_dir
 
 
 def _user_grading_dir():
     _ensure_grading_dir()
-    user_dir = os.path.join(GRADING_DIR, _safe_user_segment(auth.current_username()))
+    user_dir = os.path.join(GRADING_DIR, auth.safe_user_segment(auth.current_username()))
     os.makedirs(user_dir, exist_ok=True)
     return user_dir
 

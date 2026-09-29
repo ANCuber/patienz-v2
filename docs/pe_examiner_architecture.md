@@ -1,5 +1,9 @@
 # PE Examiner 系統架構圖
 
+> 注意：此文件中的 `getPDF`／Selenium 網路搜尋流程已從 app 執行期移除
+> （examiner 與 patient 現在只依據病例 JSON 與對話紀錄）。原程式保留在
+> `tools/get_pdf.py` 作為離線工具。其餘流程仍然適用。
+
 ## 完整資料流與系統互動
 
 ```mermaid

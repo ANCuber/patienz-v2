@@ -2,7 +2,6 @@ import streamlit as st
 from model.examiner import create_text_examiner_model
 from model.examiner import create_value_examiner_model
 from model.lab_advisor import request_lab_feedback
-import util.dialog as dialog
 import util.tools as util
 import util.constants as const
 import util.exam_panels as exam_panels
@@ -10,7 +9,6 @@ from util.reference_parser import parse_reference, is_abnormal, is_critical, is_
 import csv
 import pandas as pd
 import json
-import time
 
 
 def _request_lab_feedback(entry):

@@ -254,7 +254,7 @@ def collect_student_data():
         for name, result in ss.examination_result:
             data_parts.append(f"### {name}\n{result}")
 
-    data_parts.append(f"## 診斷紀錄")
+    data_parts.append("## 診斷紀錄")
     data_parts.append(f"主診斷：{ss.diagnosis}")
     data_parts.append(f"鑑別診斷（最終保留+新增）：{ss.ddx}")
     if ss.final_ddx_status:
@@ -1034,7 +1034,7 @@ if want_acgme and ("acgme_grader_response" in ss or ss.get("acgme_error")):
                                         f"background:rgba(124,58,237,0.08);"
                                         f"border-left:3px solid {LEVEL_COLORS[int(ll)]['bg']};"
                                         if is_current else
-                                        f"border-left:3px solid rgba(255,255,255,0.06);"
+                                        "border-left:3px solid rgba(255,255,255,0.06);"
                                     )
                                     st.markdown(
                                         f"<div style='{bg}padding:6px 10px;margin:4px 0;"

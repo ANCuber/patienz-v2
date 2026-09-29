@@ -1,3 +1,0 @@
-Doctor: hello
-Patient: 不好意思，我聽不懂您在說什麼。
-

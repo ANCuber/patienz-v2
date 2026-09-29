@@ -1,4 +1,0 @@
-Doctor: fdsg
-Patient: 不好意思，我聽不懂你在說什麼。
-
-

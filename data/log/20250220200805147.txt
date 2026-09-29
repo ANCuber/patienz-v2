@@ -1,3 +1,0 @@
-Doctor: hello
-Patient: (假裝聽不懂英文) 請問有什麼事嗎？
-

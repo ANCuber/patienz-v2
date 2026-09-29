@@ -1,3 +1,0 @@
-Doctor: $
-Patient: 醫生您好。
-

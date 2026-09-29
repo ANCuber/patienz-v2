@@ -1,3 +1,0 @@
-Doctor: Hello
-Patient: 醫生您好，我身體不太舒服，想請您幫我看看。
-

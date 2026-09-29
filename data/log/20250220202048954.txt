@@ -1,3 +1,0 @@
-Doctor: jhiho
-Patient: 您好，醫生。我最近身體不太舒服。
-

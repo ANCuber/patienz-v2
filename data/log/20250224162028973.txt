@@ -1,3 +1,0 @@
-Doctor: test
-Patient: 聽不懂。
-

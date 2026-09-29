@@ -5,6 +5,7 @@ import util.tools as util
 import util.save_load as save_load
 import util.constants as const
 import util.demographics as demographics
+import util.llm as llm
 import os
 import random
 import json
@@ -320,8 +321,7 @@ with major_column[1]:
         elif ss.config_type in {"模板題", "題目存檔"} and not problem:
             dialog.error("請先選擇題目")
         elif "problem" in ss:
-            dialog.error("請先完成目前的題目", "test")
-            pass
+            dialog.error("請先完成目前的題目", const.section_name[1])
         elif ss.config_type == "輸入參數":
             config["年齡"] = random.randint(config["年齡"][0], config["年齡"][1])
 
@@ -381,13 +381,13 @@ if "user_config" in ss and "problem" not in ss:
     ss.data = json.loads(ss.problem)
     demographics.validate_demographics(ss.data)
 
-    # Validate englishDiseaseName (used downstream for PDF lookup); fallback to flash if invalid
+    # Validate englishDiseaseName; retry once with the default (non-lite) model if invalid
     eng_name = ss.data.get("Problem", {}).get("englishDiseaseName")
     if not _is_valid_english_disease_name(eng_name):
-        util.record(ss.log, f"[FALLBACK] invalid englishDiseaseName={eng_name!r}, retry with {util.llm.DEFAULT_GEMINI_MODEL if hasattr(util, 'llm') else 'gemini-3.5-flash'}")
+        util.record(ss.log, f"[FALLBACK] invalid englishDiseaseName={eng_name!r}, retry with {llm.DEFAULT_GEMINI_MODEL}")
         del ss.problem_setter_model
         del ss.problem_setter
-        create_problem_setter_model(model_name=util.llm.DEFAULT_GEMINI_MODEL if hasattr(util, 'llm') else "gemini-3.5-flash")
+        create_problem_setter_model(model_name=llm.DEFAULT_GEMINI_MODEL)
         _t0 = time.perf_counter()
         ss.problem = ss.problem_setter.send_message(prompt).text
         _dt = time.perf_counter() - _t0

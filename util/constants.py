@@ -1,5 +1,5 @@
 noun = ["病患設定", "問診", "理學檢查", "初步鑑別", "檢查", "診斷", "評分"]
-section_name = ["config", "test", "physical_exam", "pre_ddx", "examination", "diagnosis", "grade"]
+section_name = ["config", "history", "physical_exam", "pre_ddx", "examination", "diagnosis", "grade"]
 icon = ["🩺", "📝", "🏥", "🧠", "🔬", "💊", "📚"]
 
 intro = [

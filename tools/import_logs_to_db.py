@@ -5,6 +5,7 @@ This script is non-destructive by design: it never edits or deletes source files
 """
 
 import argparse
+import re
 from pathlib import Path
 import sys
 
@@ -15,18 +16,19 @@ if str(ROOT) not in sys.path:
 from util import db_store
 
 
+_SID_RE = re.compile(r"^(\d{8,}|\d+-\d{14}-[0-9a-f]+)$")
+
+
 def _sid_from_filename(path: Path):
-    # Expected filenames: 20250212110342.txt
+    # Legacy: 20250212110342.txt   Current: <user_id>-YYYYMMDDHHMMSS-<hex>.txt
     stem = path.stem
-    if stem.isdigit() and len(stem) >= 8:
-        return stem
-    return None
+    return stem if _SID_RE.match(stem) else None
 
 
 def main():
     parser = argparse.ArgumentParser(description="Import data/log text files into SQLite log shards")
     parser.add_argument("--log-dir", default="data/log", help="Directory containing log .txt files")
-    parser.add_argument("--glob", default="*.txt", help="Glob for log files")
+    parser.add_argument("--glob", default="**/*.txt", help="Glob for log files (recursive by default)")
     parser.add_argument("--dry-run", action="store_true", help="Scan and report only, no DB writes")
     args = parser.parse_args()
 

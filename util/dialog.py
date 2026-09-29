@@ -32,7 +32,7 @@ def error(e, dest=None):
 
 @st.dialog("存檔成功 ✅")
 def config_saved(file_name: str):
-    st.write(f"本次病患之設定已儲存為：")
+    st.write("本次病患之設定已儲存為：")
     st.write(file_name)
     if st.button("確認"):
         st.switch_page("page/grade.py")

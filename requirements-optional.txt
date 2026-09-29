@@ -1,0 +1,4 @@
+# Only needed for tools/get_pdf.py (offline web-to-PDF helper). Not used by the app.
+googlesearch-python
+selenium
+webdriver-manager
