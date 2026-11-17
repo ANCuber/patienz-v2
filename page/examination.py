@@ -36,15 +36,9 @@ st.markdown("""
 .abnormal-high { color: #ff5c5c; font-weight: bold; }
 .abnormal-low { color: #5c9eff; font-weight: bold; }
 .critical { color: #ffffff; font-weight: bold; background-color: #dc3545; padding: 2px 4px; border-radius: 3px; }
-.normal { color: #ffffff; }
+.normal { color: inherit; }
 .text-abnormal { color: #ff5c5c; font-weight: bold; }
-/* 強制檢查結果表格所有欄位（含未個別標記的名稱、單位、參考值）顯示白色 */
-#examination-results,
-#examination-results td,
-#examination-results th {
-    color: #ffffff !important;
-}
-/* 表格內的異常標記仍保留各自顏色（覆蓋上方白色強制） */
+/* 一般欄位沿用 Streamlit 主題文字色（淺色／深色主題皆可讀）；僅異常標記使用固定顏色 */
 #examination-results td .abnormal-high,
 #examination-results td .abnormal-high * { color: #ff5c5c !important; }
 #examination-results td .abnormal-low,
