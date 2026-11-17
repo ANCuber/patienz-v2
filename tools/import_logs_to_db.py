@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Phase 1.5 log migration: ingest data/log/*.txt into DB shards.
 
+Each file goes to the log database of the group its user belongs to (the user
+id is the SID prefix); legacy SIDs without one go to the default group.
+
 This script is non-destructive by design: it never edits or deletes source files.
 """
 
@@ -71,9 +74,11 @@ def main():
             continue
 
         inserted = db_store.ingest_log_lines(
+            group_id=db_store.group_id_for_sid(sid),
             sid=sid,
             lines=lines,
             source_file=str(path),
+            user_id=db_store._user_id_from_sid(sid),
         )
         total_inserted += inserted
         print(f"[OK] {path.name}: inserted {inserted}/{line_count}")

@@ -116,13 +116,14 @@ def save_progress() -> str:
     try:
         db_store.init_db()
         db_store.upsert_progress_save(
+            group_id=auth.current_group_id(),
+            user_id=auth.current_user_id(),
             save_name=file_name,
             sid=ss.get("sid"),
             patient_name=name,
             progress_label=progress_label,
             progress_index=progress_idx,
             payload=save_data,
-            user_id=auth.current_user_id(),
         )
     except Exception as e:
         print(f"[DB] save_progress failed, fallback to file only: {e}")
@@ -139,7 +140,7 @@ def list_saves():
     db_names = []
     try:
         db_store.init_db()
-        db_names = db_store.list_progress_save_names(user_id=auth.current_user_id())
+        db_names = db_store.list_progress_save_names(auth.current_group_id(), auth.current_user_id())
     except Exception as e:
         print(f"[DB] list_saves failed, fallback to file list: {e}")
 
@@ -165,7 +166,7 @@ def load_progress(file_name: str):
     save_data = None
     try:
         db_store.init_db()
-        save_data = db_store.get_progress_payload(file_name, user_id=auth.current_user_id())
+        save_data = db_store.get_progress_payload(auth.current_group_id(), auth.current_user_id(), file_name)
     except Exception as e:
         print(f"[DB] load_progress lookup failed, trying file: {e}")
 
@@ -212,7 +213,7 @@ def load_progress(file_name: str):
 def delete_save(file_name: str):
     try:
         db_store.init_db()
-        db_store.delete_progress_save(file_name, user_id=auth.current_user_id())
+        db_store.delete_progress_save(auth.current_group_id(), auth.current_user_id(), file_name)
     except Exception as e:
         print(f"[DB] delete_save failed for {file_name}: {e}")
 
@@ -295,13 +296,14 @@ def save_grading_result() -> str:
     try:
         db_store.init_db()
         db_store.upsert_grading_result(
+            group_id=auth.current_group_id(),
+            user_id=auth.current_user_id(),
             record_name=file_name,
             sid=sid,
             patient_name=name,
             disease=disease,
             score_v2_percentage=ss.get("v2_score_percentage"),
             payload=record,
-            user_id=auth.current_user_id(),
         )
     except Exception as e:
         print(f"[DB] save_grading_result failed, fallback to file only: {e}")

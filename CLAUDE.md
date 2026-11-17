@@ -20,13 +20,15 @@ uv run --with pyflakes pyflakes home.py page util model tools tests
 | Path | Role |
 |---|---|
 | `home.py` | Entry point: init session, login gate, builds `st.navigation` from `util/constants.py`. |
-| `page/*.py` | One Streamlit page per stage, in the order of `const.section_name`: config → history → physical_exam → pre_ddx → examination → diagnosis → grade. `admin.py` is admin-only. |
+| `page/*.py` | One Streamlit page per stage, in the order of `const.section_name`: config → history → physical_exam → pre_ddx → examination → diagnosis → grade. `admin.py` is for the root admin and group admins. |
 | `model/*.py` | One factory per LLM role (patient, examiner, advisor, lab_advisor, problem_setter, mark_scheme_setter, grader_v2, acgme_grader). Each loads its prompt from `instruction_file/`. |
 | `util/llm.py` | Gemini client wrapper (`RetryChat`, model fallback chain, `DEFAULT_GEMINI_MODEL`). All model calls go through here. |
 | `util/tools.py` | Session bootstrap (`init_all`, `init`), sidebar (`note`), timers, `record` (log line to file + DB). |
 | `util/chat.py` | Chat transcript rendering plus the shared `send_to_patient` / voice-input helpers used by the history and diagnosis pages. |
-| `util/auth.py` | Users, password hashing, revocable URL token login, login throttling, `safe_user_segment` (per-user folder names). |
-| `util/db_store.py` | SQLite persistence (WAL, busy timeout, one short-lived connection per call): users, progress saves, grading results, monthly log shards. `init_db()` is idempotent and thread-safe. |
+| `util/access.py` | Role policy (root / group_admin / user): pure functions deciding who may manage which user and which group's data. |
+| `util/auth.py` | Users and groups, password hashing, revocable URL token login, login throttling, `safe_user_segment` (per-user folder names). Management functions check `access` against the live session user. |
+| `util/admin_data.py` | Permission-checked browsing/deleting of a group's saves and grading results for the admin page. |
+| `util/db_store.py` | SQLite persistence (WAL, busy timeout, one short-lived connection per call). System DB `data/app.db` holds users and groups; each group has its own `data/groups/g<id>/` (saves, grading results, monthly log shards; `root/` for the root admin). `init_db()` is idempotent and thread-safe and migrates the old single-DB layout. |
 | `util/save_load.py` | Progress save/load (DB write-through with JSON file fallback under `data/save/<user>/`). |
 | `util/acgme_*.py`, `config/acgme_milestones/` | ACGME milestone selection and aggregation for grading. |
 | `examination_file/` | Static exam catalogues and UI option lists (JSON/CSV). |
@@ -49,8 +51,16 @@ uv run --with pyflakes pyflakes home.py page util model tools tests
   state without a lock, never touch `st.*` or session state from worker threads,
   and go through `db_store` for all persistence (it handles locking and retries).
 - SQLite only. Do not reintroduce a second backend; there is no ORM and no
-  migration tool, schema changes go in `db_store._init_main_schema` guarded by
-  `_ensure_column` / `_ensure_unique_index`.
+  migration tool, schema changes go in `db_store._init_main_schema` (system DB)
+  or `_ensure_group_schema` / `_ensure_log_schema` (group DBs) guarded by
+  `_ensure_column` / `_ensure_unique_index`. Keep the SQL PostgreSQL-compatible
+  (`ON CONFLICT`, no `INSERT OR IGNORE` / `REPLACE`).
+- Tenancy: one root admin, groups with at most one group admin. User data never
+  goes in the system DB. Every `db_store` data function takes `group_id` first
+  (`None` = root's store); in a session use `auth.current_group_id()`, and for
+  any access to someone else's data go through `util/admin_data.py` or an
+  `auth` management function so `util/access.py` is checked. Never call
+  `db_store` data functions with a group id taken from user input unchecked.
 - Keep heavy optional deps (selenium etc.) out of `requirements.txt`; they live in
   `requirements-optional.txt` and are imported lazily by `tools/` scripts only.
 - Add new dependencies to `requirements.txt` and dev-only ones to `requirements-dev.txt`.

@@ -6,16 +6,6 @@ import pytest
 from util import auth, db_store
 
 
-def _reset(tmp_path, monkeypatch):
-    db_store.MAIN_DB_PATH = str(tmp_path / "app.db")
-    db_store.LOG_DB_DIR = str(tmp_path / "log_db")
-    db_store.init_db()
-    auth._failed_logins.clear()
-    auth.ss.auth_user = None
-    auth.ss.auth_checked_at = 0
-    monkeypatch.setattr(auth.st, "query_params", {}, raising=False)
-
-
 def _restore_from(token):
     auth.st.query_params[auth.AUTH_TOKEN_PARAM] = token
     auth.ss.auth_user = None
@@ -23,9 +13,15 @@ def _restore_from(token):
     return auth.is_authenticated()
 
 
-def test_logout_revokes_url_token(tmp_path, monkeypatch):
-    _reset(tmp_path, monkeypatch)
-    auth.create_user("student_1", "password123")
+def _add_student(env, name="student_1"):
+    env.act_as(env.root)
+    assert auth.create_user(name, "password123")[0]
+    env.act_as(None)
+    return db_store.get_user_by_username(name)
+
+
+def test_logout_revokes_url_token(env):
+    _add_student(env)
     ok, _ = auth.login("student_1", "password123")
     assert ok
     token = auth.st.query_params[auth.AUTH_TOKEN_PARAM]
@@ -35,39 +31,47 @@ def test_logout_revokes_url_token(tmp_path, monkeypatch):
     assert not _restore_from(token)
 
 
-def test_password_change_revokes_url_token(tmp_path, monkeypatch):
-    _reset(tmp_path, monkeypatch)
-    auth.create_user("student_1", "password123")
-    user = db_store.get_user_by_username("student_1")
+def test_password_change_revokes_url_token(env):
+    user = _add_student(env)
     token = auth._auth_token(user["id"])
     assert _restore_from(token)
 
-    auth.ss.auth_user = None
-    auth.update_user("student_1", "student_1", "newpassword1", "user", True)
+    env.act_as(env.root)
+    assert auth.update_user("student_1", "student_1", "newpassword1", "user", True)[0]
     assert not _restore_from(token)
     assert auth.login("student_1", "newpassword1")[0]
 
 
-def test_deactivated_user_session_is_dropped_on_recheck(tmp_path, monkeypatch):
-    _reset(tmp_path, monkeypatch)
-    auth.create_user("admin_1", "password123", role="admin")
-    auth.create_user("student_1", "password123")
+def test_deactivated_user_session_is_dropped_on_recheck(env):
+    _add_student(env)
     assert auth.login("student_1", "password123")[0]
 
-    auth.ss.auth_user = {"id": db_store.get_user_by_username("admin_1")["id"],
-                         "username": "admin_1", "role": "admin", "token_version": 0}
-    auth.update_user("student_1", "student_1", "", "user", False)
+    env.act_as(env.root)
+    assert auth.update_user("student_1", "student_1", "", "user", False)[0]
 
-    student = db_store.get_user_by_username("student_1")
-    auth.ss.auth_user = {"id": student["id"], "username": "student_1", "role": "user", "token_version": 0}
+    env.act_as("student_1")
     auth.ss.auth_checked_at = 0
     auth.init_auth()
     assert not auth.is_authenticated()
 
 
-def test_login_lockout_after_repeated_failures(tmp_path, monkeypatch):
-    _reset(tmp_path, monkeypatch)
-    auth.create_user("student_1", "password123")
+def test_session_picks_up_role_and_group_changes_on_recheck(env):
+    gid = env.make_group("cardio")
+    _add_student(env)
+    env.act_as(env.root)
+    assert auth.update_user("student_1", "student_1", "", "group_admin", True, group_id=gid)[0]
+
+    student = db_store.get_user_by_username("student_1")
+    auth.ss.auth_user = {"id": student["id"], "username": "student_1", "role": "user",
+                         "group_id": env.default_group, "token_version": 0}
+    auth.ss.auth_checked_at = 0
+    auth.init_auth()
+    assert auth.is_group_admin()
+    assert auth.current_group_id() == gid
+
+
+def test_login_lockout_after_repeated_failures(env):
+    _add_student(env)
     for _ in range(auth.MAX_FAILED_LOGINS):
         ok, msg = auth.login("student_1", "wrong-password")
         assert not ok
@@ -77,38 +81,37 @@ def test_login_lockout_after_repeated_failures(tmp_path, monkeypatch):
     assert "登入失敗次數過多" in msg
 
 
-def test_unknown_and_wrong_password_share_one_message(tmp_path, monkeypatch):
-    _reset(tmp_path, monkeypatch)
-    auth.create_user("student_1", "password123")
+def test_unknown_and_wrong_password_share_one_message(env):
+    _add_student(env)
     assert auth.login("nobody", "password123")[1] == auth.login("student_1", "nope")[1]
 
 
-def test_delete_user_removes_their_saves_and_results(tmp_path, monkeypatch):
-    _reset(tmp_path, monkeypatch)
-    auth.create_user("admin_1", "password123", role="admin")
-    auth.create_user("student_1", "password123")
-    uid = db_store.get_user_by_username("student_1")["id"]
-    db_store.upsert_progress_save("s.json", "sid", "P", "問診", 1, {"a": 1}, user_id=uid)
-    db_store.upsert_grading_result("g.json", "sid", "P", "D", 50.0, {"b": 2}, user_id=uid)
+def test_delete_user_removes_their_saves_and_results(env):
+    user = _add_student(env)
+    uid, gid = user["id"], user["group_id"]
+    db_store.upsert_progress_save(gid, uid, "s.json", "sid", "P", "問診", 1, {"a": 1})
+    db_store.upsert_grading_result(gid, uid, "g.json", "sid", "P", "D", 50.0, {"b": 2})
 
-    auth.ss.auth_user = {"id": 999, "username": "admin_1", "role": "admin", "token_version": 0}
+    env.act_as(env.root)
     ok, _ = auth.delete_user("student_1")
     assert ok
     assert db_store.get_user_by_username("student_1") is None
-    assert db_store.list_progress_save_names(user_id=uid) == []
+    assert db_store.list_progress_save_names(gid, uid) == []
+    assert db_store.list_grading_results(gid, uid) == []
 
 
-def test_concurrent_sessions_write_without_lock_errors(tmp_path, monkeypatch):
-    _reset(tmp_path, monkeypatch)
+def test_concurrent_sessions_write_without_lock_errors(env):
+    groups = [env.default_group, env.make_group("g_a"), env.make_group("g_b")]
     errors = []
 
     def session(i):
         try:
+            gid = groups[i % len(groups)]
             sid = f"{i}-20260921000000-{i:04x}"
             for t in range(30):
-                db_store.append_log(sid, f"turn {t}")
+                db_store.append_log(gid, sid, f"turn {t}", user_id=i)
                 if t % 10 == 0:
-                    db_store.upsert_progress_save(f"s{i}-{t}.json", sid, "P", "問診", 1, {"t": t}, user_id=i)
+                    db_store.upsert_progress_save(gid, i, f"s{i}-{t}.json", sid, "P", "問診", 1, {"t": t})
         except Exception as e:  # noqa: BLE001
             errors.append(e)
 
@@ -118,7 +121,8 @@ def test_concurrent_sessions_write_without_lock_errors(tmp_path, monkeypatch):
     for th in threads:
         th.join()
     assert errors == []
-    assert len(db_store.list_progress_save_names(user_id=3)) == 3
+    assert len(db_store.list_progress_save_names(groups[0], 3)) == 3
+    assert sum(db_store.count_log_rows(g) for g in groups) == 40 * 30
 
 
 @pytest.mark.parametrize("sid, expected", [

@@ -21,6 +21,7 @@ import time
 
 import streamlit as st
 
+import util.access as access
 import util.db_store as db_store
 
 ss = st.session_state
@@ -44,6 +45,7 @@ _secret_lock = threading.Lock()
 _failed_logins = {}          # username -> [failure_count, first_failure_ts, locked_until_ts]
 _failed_logins_lock = threading.Lock()
 _bootstrapped_for = None
+_bootstrap_lock = threading.Lock()
 
 
 # ---------------------------------------------------------------------------
@@ -140,6 +142,7 @@ def _session_user_dict(user):
         "id": user["id"],
         "username": user["username"],
         "role": user["role"],
+        "group_id": user.get("group_id"),
         "token_version": int(user.get("token_version", 0)),
     }
 
@@ -197,34 +200,45 @@ def _recheck_session_user():
 # Bootstrap / session helpers
 # ---------------------------------------------------------------------------
 
-def _bootstrap_default_admin():
+def _bootstrap_root_admin():
+    """Make sure the single root admin exists (new database, or an old one
+    that had no admin to promote)."""
     global _bootstrapped_for
     target = os.path.abspath(db_store.MAIN_DB_PATH)
     if _bootstrapped_for == target:
         return
-    if db_store.count_users() == 0:
-        password = DEFAULT_ADMIN_PASSWORD
-        generated = password is None
-        if generated:
-            password = secrets.token_urlsafe(12)
-        db_store.create_user(
-            username=DEFAULT_ADMIN_USERNAME,
-            password_hash=_hash_password(password),
-            role="admin",
-        )
-        if generated:
-            print(
-                f"[AUTH] Created admin '{DEFAULT_ADMIN_USERNAME}' with a generated password: {password}\n"
-                "[AUTH] This is printed only once. Log in and change it from the admin page."
+    with _bootstrap_lock:
+        if _bootstrapped_for == target:
+            return
+        if db_store.get_root_user() is None:
+            username = DEFAULT_ADMIN_USERNAME
+            suffix = 0
+            while db_store.get_user_by_username(username):
+                suffix += 1
+                username = f"{DEFAULT_ADMIN_USERNAME}_root{suffix if suffix > 1 else ''}"
+            password = DEFAULT_ADMIN_PASSWORD
+            generated = password is None
+            if generated:
+                password = secrets.token_urlsafe(12)
+            db_store.create_user(
+                username=username,
+                password_hash=_hash_password(password),
+                role=access.ROLE_ROOT,
+                group_id=None,
             )
-        else:
-            print(f"[AUTH] Created admin '{DEFAULT_ADMIN_USERNAME}' from PATIENZ_ADMIN_PASSWORD.")
-    _bootstrapped_for = target
+            if generated:
+                print(
+                    f"[AUTH] Created root admin '{username}' with a generated password: {password}\n"
+                    "[AUTH] This is printed only once. Log in and change it from the admin page."
+                )
+            else:
+                print(f"[AUTH] Created root admin '{username}' from PATIENZ_ADMIN_PASSWORD.")
+        _bootstrapped_for = target
 
 
 def init_auth():
     db_store.init_db()
-    _bootstrap_default_admin()
+    _bootstrap_root_admin()
     if "auth_user" not in ss:
         ss.auth_user = None
     if is_authenticated():
@@ -264,8 +278,28 @@ def current_role():
     return user.get("role")
 
 
+def current_group_id():
+    """Group whose databases hold the current user's data (None for root)."""
+    user = ss.get("auth_user") or {}
+    return user.get("group_id")
+
+
+def is_root():
+    return access.is_root(ss.get("auth_user"))
+
+
+def is_group_admin():
+    return access.is_group_admin(ss.get("auth_user"))
+
+
 def is_admin():
-    return current_role() == "admin"
+    """Root or group admin: may open the admin page."""
+    return access.can_administer(ss.get("auth_user"))
+
+
+def role_label(role=None):
+    role = role or current_role()
+    return access.ROLE_LABELS.get(role, role or "")
 
 
 # ---------------------------------------------------------------------------
@@ -364,7 +398,7 @@ def render_login_form():
         return
 
     with register_tab:
-        st.caption("註冊後即可直接登入，新增帳號預設為一般使用者。")
+        st.caption("註冊後即可直接登入，新增帳號預設為一般使用者（預設群組）。")
         with st.form("register_form", clear_on_submit=True):
             register_username = st.text_input("新帳號")
             register_password = st.text_input("密碼（至少 8 碼）", type="password")
@@ -392,37 +426,87 @@ def require_login():
 
 
 # ---------------------------------------------------------------------------
-# User management (admin page + self-registration)
+# User and group management (admin page + self-registration)
+#
+# Every function below resolves the acting user from the live session, reloads
+# it from the database and checks util/access.py before touching anything, so
+# the admin page cannot be used to reach outside the actor's own group.
 # ---------------------------------------------------------------------------
 
 USERNAME_RE = re.compile(r"[A-Za-z0-9_][A-Za-z0-9_.-]{2,31}")
 USERNAME_RULE = "帳號需為 3-32 碼，且只能包含英數字、底線、句點或連字號"
+GROUP_NAME_MAX = 64
+NO_PERMISSION = "權限不足"
 
 
-def create_user(username, password, role="user"):
-    username = (username or "").strip()
+def current_actor():
+    """The logged-in user, freshly loaded from the database (None if the
+    session is gone or the account was deactivated)."""
+    user_id = current_user_id()
+    if user_id is None:
+        return None
+    user = db_store.get_user_by_id(user_id)
+    if not user or int(user.get("is_active", 0)) != 1:
+        return None
+    return user
+
+
+def _check_credentials(username, password):
     if not username:
-        return False, "帳號不可為空"
+        return "帳號不可為空"
     if not USERNAME_RE.fullmatch(username):
-        return False, USERNAME_RULE
+        return USERNAME_RULE
     if len(password or "") < 8:
-        return False, "密碼至少需要 8 個字元"
-    if role not in {"admin", "user"}:
-        return False, "角色不合法"
+        return "密碼至少需要 8 個字元"
+    return None
 
+
+def _insert_user(username, password, role, group_id):
     if db_store.get_user_by_username(username):
         return False, "帳號已存在"
-
     try:
-        db_store.create_user(username, _hash_password(password), role=role)
-    except Exception as e:  # e.g. UNIQUE race between two concurrent registrations
-        if "unique" in str(e).lower():
+        db_store.create_user(username, _hash_password(password), role=role, group_id=group_id)
+    except Exception as e:  # UNIQUE race between two concurrent requests
+        text = str(e).lower()
+        if "unique" in text and "group_id" in text:
+            return False, "該群組已有群組管理員"
+        if "unique" in text:
             return False, "帳號已存在"
         raise
     return True, "已新增使用者"
 
 
+def create_user(username, password, role="user", group_id=None):
+    """Create an account. Root may create ordinary users and group admins in
+    any group (default group when ``group_id`` is omitted); a group admin may
+    only create ordinary users in its own group."""
+    actor = current_actor()
+    if not access.can_administer(actor):
+        return False, NO_PERMISSION
+    username = (username or "").strip()
+    error = _check_credentials(username, password)
+    if error:
+        return False, error
+    if role not in access.assignable_roles(actor):
+        return False, "角色不合法" if role not in db_store.ROLES else NO_PERMISSION
+
+    if access.is_root(actor):
+        if group_id is None:
+            group_id = db_store.default_group_id()
+    else:
+        if group_id is not None and group_id != actor["group_id"]:
+            return False, NO_PERMISSION
+        group_id = actor["group_id"]
+
+    if not db_store.get_group(group_id):
+        return False, "找不到群組"
+    if role == access.ROLE_GROUP_ADMIN and db_store.get_group_admin(group_id):
+        return False, "該群組已有群組管理員"
+    return _insert_user(username, password, role, group_id)
+
+
 def register_user(username, password, password_confirmation):
+    """Self-registration: always an ordinary user in the default group."""
     if not ALLOW_REGISTRATION:
         return False, "目前不開放自行註冊，請聯絡管理員"
     username = (username or "").strip()
@@ -430,71 +514,192 @@ def register_user(username, password, password_confirmation):
         return False, USERNAME_RULE
     if password != password_confirmation:
         return False, "兩次輸入的密碼不一致"
-    return create_user(username, password, role="user")
+    error = _check_credentials(username, password)
+    if error:
+        return False, error
+    return _insert_user(username, password, access.ROLE_USER, db_store.default_group_id())
 
 
 def list_users():
-    return db_store.list_users()
+    """Accounts the current user may see: all (root) or own group (group admin)."""
+    actor = current_actor()
+    if access.is_root(actor):
+        return db_store.list_users()
+    if access.is_group_admin(actor):
+        return db_store.list_users(group_id=actor["group_id"])
+    return []
 
 
-def update_user(old_username, username, password, role, is_active):
+def list_groups():
+    """Groups the current user may administer."""
+    actor = current_actor()
+    if access.is_root(actor):
+        return db_store.list_groups()
+    if access.is_group_admin(actor):
+        group = db_store.get_group(actor["group_id"])
+        return [group] if group else []
+    return []
+
+
+def update_user(old_username, username, password, role, is_active, group_id=None):
+    """Edit an account. ``group_id`` None keeps the account's current group;
+    only root may change role or group (moving a user carries its data along)."""
+    actor = current_actor()
+    if not access.can_administer(actor):
+        return False, NO_PERMISSION
     old_username = (old_username or "").strip()
     username = (username or "").strip()
     if not old_username:
         return False, "請選擇使用者"
+
+    user = db_store.get_user_by_username(old_username)
+    # A group admin gets the same answer for "does not exist" and "exists in
+    # another group", so it cannot probe for accounts outside its group.
+    is_self = bool(user) and user["id"] == actor["id"]
+    if not user or not (is_self or access.can_manage_user(actor, user)):
+        return False, "找不到使用者" if access.is_root(actor) else NO_PERMISSION
+
     if not USERNAME_RE.fullmatch(username):
         return False, USERNAME_RULE
     if password and len(password) < 8:
         return False, "密碼至少需要 8 個字元"
-    if role not in {"admin", "user"}:
+    if role not in db_store.ROLES:
         return False, "角色不合法"
+    if group_id is None:
+        group_id = user["group_id"]
 
-    user = db_store.get_user_by_username(old_username)
-    if not user:
-        return False, "找不到使用者"
+    if user["role"] == access.ROLE_ROOT:
+        if role != access.ROLE_ROOT or not is_active:
+            return False, "Root 管理員不可降級或停用"
+        group_id = None
+    else:
+        if role == access.ROLE_ROOT:
+            return False, "系統只能有一位 Root 管理員"
+        if is_self and not is_active:
+            return False, "不可停用目前登入中的帳號"
+        if not access.is_root(actor) and (role != user["role"] or group_id != user["group_id"]):
+            return False, NO_PERMISSION
+        if not db_store.get_group(group_id):
+            return False, "找不到群組"
+        if role == access.ROLE_GROUP_ADMIN:
+            holder = db_store.get_group_admin(group_id)
+            if holder and holder["id"] != user["id"]:
+                return False, "該群組已有群組管理員"
+
     existing = db_store.get_user_by_username(username)
     if existing and existing["id"] != user["id"]:
         return False, "帳號已存在"
-    if old_username == current_username() and not is_active:
-        return False, "不可停用目前登入中的帳號"
-    if user["role"] == "admin" and db_store.count_admin_users() <= 1:
-        if role != "admin" or not is_active:
-            return False, "系統至少需要保留一位啟用中的 admin"
 
     password_hash = _hash_password(password) if password else None
-    updated = db_store.update_user_by_username(
-        old_username=old_username,
-        username=username,
-        password_hash=password_hash,
-        role=role,
-        is_active=1 if is_active else 0,
-    )
+    try:
+        updated = db_store.update_user(
+            user_id=user["id"],
+            username=username,
+            password_hash=password_hash,
+            role=role,
+            is_active=1 if is_active else 0,
+            group_id=group_id,
+        )
+    except Exception as e:  # UNIQUE race
+        text = str(e).lower()
+        if "unique" in text and "group_id" in text:
+            return False, "該群組已有群組管理員"
+        if "unique" in text:
+            return False, "帳號已存在"
+        raise
     if not updated:
         return False, "使用者更新失敗"
 
-    if old_username == current_username():
+    message = "使用者資料已更新"
+    if group_id != user["group_id"]:
+        try:
+            db_store.move_user_data(user["id"], user["group_id"], group_id)
+        except Exception as e:
+            print(f"[AUTH] moving data of user {user['id']} failed: {e}")
+            message = "使用者已移至新群組，但資料搬移失敗，請查看伺服器紀錄"
+
+    if is_self:
         refreshed = db_store.get_user_by_id(user["id"])
         ss.auth_user = _session_user_dict(refreshed)
         ss.auth_checked_at = time.time()
         if password_hash is not None:
             _set_query_token(_auth_token(user["id"], ss.auth_user["token_version"]))
-    return True, "使用者資料已更新"
+    return True, message
 
 
 def delete_user(username):
+    actor = current_actor()
+    if not access.can_administer(actor):
+        return False, NO_PERMISSION
     username = (username or "").strip()
     if not username:
         return False, "請選擇使用者"
 
     user = db_store.get_user_by_username(username)
-    if not user:
-        return False, "找不到使用者"
-
-    if username == current_username():
+    if user and user["id"] == actor["id"]:
         return False, "不可刪除目前登入中的帳號"
+    if not user or not access.can_manage_user(actor, user):
+        return False, "找不到使用者" if access.is_root(actor) else NO_PERMISSION
+    if user["role"] == access.ROLE_ROOT:
+        return False, "不可刪除 Root 管理員"
 
-    if user["role"] == "admin" and db_store.count_admin_users() <= 1:
-        return False, "系統至少需要保留一位 admin"
-
-    db_store.delete_user_by_username(username)
+    db_store.delete_user(user["id"])
     return True, "已刪除使用者"
+
+
+def _check_group_name(name):
+    if not name:
+        return "群組名稱不可為空"
+    if len(name) > GROUP_NAME_MAX:
+        return f"群組名稱不可超過 {GROUP_NAME_MAX} 個字元"
+    return None
+
+
+def create_group(name):
+    """Root only. The group starts empty; appoint its admin separately."""
+    if not access.can_manage_groups(current_actor()):
+        return False, NO_PERMISSION
+    name = (name or "").strip()
+    error = _check_group_name(name)
+    if error:
+        return False, error
+    if db_store.get_group_by_name(name):
+        return False, "群組名稱已存在"
+    try:
+        db_store.create_group(name)
+    except Exception as e:
+        if "unique" in str(e).lower():
+            return False, "群組名稱已存在"
+        raise
+    return True, "已新增群組"
+
+
+def rename_group(group_id, name):
+    if not access.can_manage_groups(current_actor()):
+        return False, NO_PERMISSION
+    name = (name or "").strip()
+    error = _check_group_name(name)
+    if error:
+        return False, error
+    existing = db_store.get_group_by_name(name)
+    if existing and existing["id"] != group_id:
+        return False, "群組名稱已存在"
+    if not db_store.rename_group(group_id, name):
+        return False, "找不到群組"
+    return True, "群組名稱已更新"
+
+
+def delete_group(group_id):
+    """Root only, and only for an empty, non-default group."""
+    if not access.can_manage_groups(current_actor()):
+        return False, NO_PERMISSION
+    group = db_store.get_group(group_id)
+    if not group:
+        return False, "找不到群組"
+    if group_id == db_store.default_group_id():
+        return False, "不可刪除預設群組"
+    if group["member_count"]:
+        return False, "群組內仍有使用者，請先移出或刪除"
+    if not db_store.delete_group(group_id):
+        return False, "群組內仍有使用者，請先移出或刪除"
+    return True, "已刪除群組"

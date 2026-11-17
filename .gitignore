@@ -19,6 +19,9 @@ data/mark_scheme_cache/
 data/*.db
 data/*.sqlite
 data/*.sqlite3
+data/*.db-wal
+data/*.db-shm
+data/groups/
 data/log_db/
 *.tmp.*
 .claude/

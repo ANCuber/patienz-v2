@@ -155,13 +155,13 @@ def note():
         ss.note = ""
 
     with st.sidebar:
-        st.caption(f"使用者：{auth.current_username()} ({auth.current_role()})")
+        st.caption(f"使用者：{auth.current_username()}（{auth.role_label()}）")
         if st.button("登出", use_container_width=True, key="logout_btn"):
             auth.logout()
             st.rerun()
             st.stop()
 
-        if auth.is_admin() and st.button("🛠️ 使用者管理", use_container_width=True, key="admin_users_btn"):
+        if auth.is_admin() and st.button("🛠️ 管理後台", use_container_width=True, key="admin_users_btn"):
             st.switch_page("page/admin.py")
 
         st.header("看診進度")
@@ -237,7 +237,7 @@ def record(file, text):
 
     try:
         if ss.get("sid"):
-            db_store.append_log(ss.sid, text)
+            db_store.append_log(auth.current_group_id(), ss.sid, text, user_id=auth.current_user_id())
     except Exception as e:
         print(f"[DB] append_log failed: {e}")
 
