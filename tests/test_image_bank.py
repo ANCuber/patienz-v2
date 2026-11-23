@@ -102,8 +102,9 @@ def test_surface_forms_expands_concepts():
     assert "肺炎" in gn.surface_forms("pneumonia")
     assert "腦出血" in gn.surface_forms("intracranial hemorrhage")
     assert "心房顫動" in gn.surface_forms("atrial fibrillation")
+    assert "肺實變" in gn.surface_forms("consolidation")   # §6-A NIH CXR group
     # a term with no synonym group falls back to itself
-    assert gn.surface_forms("consolidation") == ["consolidation"]
+    assert gn.surface_forms("splenomegaly") == ["splenomegaly"]
 
 
 # ---------- find_image: hard filters ----------
@@ -328,3 +329,156 @@ def test_evidence_score_beats_demographic_proximity(tmp_path):
     m = ib.find_image("CXR", has_abnormal=True, report_text="pneumonia with consolidation",
                       patient_age=50, patient_sex="M", directory=d)
     assert m["id"] == "cxr-far"  # 2 evidenced findings > 1, despite worse demographics
+
+
+# ---------- §6-A NIH ChestX-ray14 entries, end-to-end ----------
+# These use entries produced by the real builder (not hand-written fixtures), so
+# they fail if the builder and the retrieval gate ever drift apart.
+import sys  # noqa: E402
+
+sys.path.insert(0, os.path.join(_ROOT, "tools"))
+import build_nih_cxr_bank as nih  # noqa: E402
+
+
+def _nih_entry(label, *, boxed=True, age=60.0, sex="M", image="00000001_000.png",
+               labels=None, verify="bbox"):
+    sel = {"rec": {"image": image, "labels": set(labels or [label]), "follow_up": 0,
+                   "patient": "1", "age": age, "sex": sex, "view": "PA"},
+           "cell": ("M", 3), "bbox_verified": boxed}
+    return nih.make_entry(label, sel, verify)
+
+
+@pytest.mark.parametrize("label,report", [
+    ("Effusion", "胸部X光：右側肋膜積水，肋膜肋膈角變鈍。"),
+    ("Pneumothorax", "胸部X光顯示左側氣胸，肺尖可見臟層肋膜線。"),
+    ("Cardiomegaly", "心影擴大，心胸比大於 0.5。"),
+    ("Edema", "兩側肺門周圍浸潤性變化，符合肺水腫表現。"),
+    ("Nodule", "右上肺野可見一 1.5 公分肺結節。"),
+    ("Atelectasis", "左下肺葉肺不張，橫膈上抬。"),
+])
+def test_nih_entry_is_evidenced_by_a_chinese_report(tmp_path, label, report):
+    d = _write_bank(tmp_path, [_nih_entry(label)])
+    m = ib.find_image("CXR", has_abnormal=True, report_text=report, directory=d)
+    assert m is not None and m["nih_label"] == label
+
+
+def test_nih_entry_is_not_shown_for_an_unrelated_report(tmp_path):
+    d = _write_bank(tmp_path, [_nih_entry("Pneumothorax")])
+    assert ib.find_image("CXR", has_abnormal=True,
+                         report_text="兩側肺野清晰，未見肋膜積水。", directory=d) is None
+
+
+def test_nih_pulmonary_mass_not_surfaced_by_massive_effusion(tmp_path):
+    # the substring trap the curated synonym groups exist to close
+    d = _write_bank(tmp_path, [_nih_entry("Mass")])
+    assert ib.find_image("CXR", has_abnormal=True,
+                         report_text="massive pleural effusion on the right",
+                         directory=d) is None
+
+
+def test_nih_pleural_effusion_not_surfaced_by_pericardial_effusion(tmp_path):
+    d = _write_bank(tmp_path, [_nih_entry("Effusion")])
+    assert ib.find_image("CXR", has_abnormal=True,
+                         report_text="心包積液 (pericardial effusion) 增加。",
+                         directory=d) is None
+
+
+def test_nih_unverified_entry_is_invisible(tmp_path):
+    # the default --verify bbox policy: an NLP-only label stays hidden
+    d = _write_bank(tmp_path, [_nih_entry("Effusion", boxed=False)])
+    assert ib.find_image("CXR", has_abnormal=True,
+                         report_text="右側肋膜積水。", directory=d) is None
+
+
+def test_nih_co_label_cannot_surface_the_film(tmp_path):
+    # boxed for Mass, NLP co-label Effusion — the unconfirmed co-label must not
+    # make this film retrievable for an effusion report.
+    d = _write_bank(tmp_path, [_nih_entry("Mass", labels=["Mass", "Effusion"])])
+    assert ib.find_image("CXR", has_abnormal=True,
+                         report_text="右側肋膜積水，未見腫瘤。", directory=d) is None
+    assert ib.find_image("CXR", has_abnormal=True,
+                         report_text="右上肺野 4 公分肺腫塊。", directory=d) is not None
+
+
+def test_nih_normal_film_serves_a_normal_chest_result(tmp_path):
+    # CXR is a single-region modality, so a normal film needs no region match
+    d = _write_bank(tmp_path, [_nih_entry(nih.NO_FINDING, boxed=False, verify="all")])
+    m = ib.find_image("CXR", has_abnormal=False, item_terms=["Chest X-ray", "胸部X光"],
+                      directory=d)
+    assert m is not None and m["normality"] == "normal"
+
+
+def test_nih_normal_and_abnormal_never_cross(tmp_path):
+    d = _write_bank(tmp_path, [_nih_entry(nih.NO_FINDING, boxed=False, verify="all"),
+                               _nih_entry("Effusion", image="00000002_000.png")])
+    assert ib.find_image("CXR", has_abnormal=False, directory=d)["normality"] == "normal"
+    assert ib.find_image("CXR", has_abnormal=True, report_text="右側肋膜積水。",
+                         directory=d)["normality"] == "abnormal"
+
+
+def test_nih_demographic_tiebreak_across_the_five_bands(tmp_path):
+    entries = [_nih_entry("Effusion", age=a, sex=s, image="%03d_%s.png" % (a, s))
+               for a, s in [(10, "M"), (30, "F"), (50, "M"), (70, "F"), (88, "M")]]
+    d = _write_bank(tmp_path, entries)
+    rep = "右側肋膜積水。"
+    assert ib.find_image("CXR", True, report_text=rep, patient_age=72,
+                         patient_sex="女", directory=d)["age"] == 70
+    assert ib.find_image("CXR", True, report_text=rep, patient_age=12,
+                         patient_sex="男", directory=d)["age"] == 10
+
+
+def test_nih_provenance_is_shown_as_real_not_synthetic(tmp_path):
+    e = _nih_entry("Effusion")
+    d = _write_bank(tmp_path, [e])
+    info = ib.describe(e, directory=d)
+    assert "真實" in info["badge"]
+    assert "NIH ChestX-ray14" in info["provenance"]
+    assert "Wang et al." in info["provenance"]
+    assert info["synthetic"] is False
+
+
+# ---------- negated findings are not evidence ----------
+def _ecg_af(id="ecg-af"):
+    return {"id": id, "file": "ecg/%s.png" % id, "modality": "ECG", "normality": "abnormal",
+            "findings": ["atrial fibrillation"], "disease_keywords": [], "verified": True}
+
+
+@pytest.mark.parametrize("report", [
+    "胸部X光：心臟肥大，肺野未見浸潤。",
+    "胸部X光：無肺浸潤。",
+    "胸部X光：已排除肺浸潤。",
+    "Chest X-ray: no pulmonary infiltrate.",
+    "Chest X-ray: cardiomegaly, without pulmonary infiltrate.",
+    "Chest X-ray: lungs are clear; absence of pulmonary infiltrate.",
+])
+def test_a_finding_named_only_in_a_negated_clause_is_not_evidence(tmp_path, report):
+    d = _write_bank(tmp_path, [_nih_entry("Infiltration")])
+    assert ib.find_image("CXR", has_abnormal=True, report_text=report, directory=d) is None
+
+
+def test_negation_does_not_suppress_a_positive_clause_in_the_same_report(tmp_path):
+    # 「心臟肥大」 is asserted, 「浸潤」 is denied — the cardiomegaly film must win
+    # rather than the infiltrate film that merely shares a demographic cell.
+    d = _write_bank(tmp_path, [_nih_entry("Infiltration", image="00000001_000.png"),
+                               _nih_entry("Cardiomegaly", image="00000002_000.png")])
+    m = ib.find_image("CXR", has_abnormal=True, patient_age=66, patient_sex="M",
+                      report_text="胸部X光：心臟肥大，心胸比約 0.58，肺野未見浸潤。", directory=d)
+    assert m is not None and m["findings"] == ["cardiomegaly"]
+
+
+def test_negated_ecg_finding_is_not_evidence(tmp_path):
+    d = _write_bank(tmp_path, [_ecg_af()])
+    assert ib.find_image("ECG", has_abnormal=True, directory=d,
+                         report_text="心電圖：竇性心律，未見心房顫動。") is None
+    assert ib.find_image("ECG", has_abnormal=True, directory=d,
+                         report_text="心電圖：心房顫動，心室率 110 次/分。") is not None
+
+
+def test_non_specific_findings_are_not_mistaken_for_negations(tmp_path):
+    # 「非」 and a bare "negative" describe findings; treating them as negation
+    # cues would hide legitimate films.
+    e = {"id": "ecg-ns", "file": "ecg/ecg-ns.png", "modality": "ECG", "normality": "abnormal",
+         "findings": ["non-specific ST changes"], "disease_keywords": [], "verified": True}
+    d = _write_bank(tmp_path, [e])
+    assert ib.find_image("ECG", has_abnormal=True, directory=d,
+                         report_text="心電圖：non-specific ST changes。") is not None

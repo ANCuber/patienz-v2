@@ -76,3 +76,53 @@ def test_surface_forms_include_chinese_ecg_terms():
     assert "左束支傳導阻滯" in surface_forms("left bundle branch block")
     assert "心房撲動" in surface_forms("atrial flutter")
     assert "房室阻滯" in surface_forms("AV block")
+
+
+# ---- §6-A CXR-finding synonym groups (NIH ChestX-ray14 image bank) ----
+@pytest.mark.parametrize("zh,en", [
+    ("肺不張", "atelectasis"),
+    ("心臟肥大", "cardiomegaly"),
+    ("肺實變", "consolidation"),
+    ("肺水腫", "pulmonary edema"),
+    ("肋膜積水", "pleural effusion"),
+    ("肺氣腫", "pulmonary emphysema"),
+    ("肺纖維化", "pulmonary fibrosis"),
+    ("橫膈疝", "diaphragmatic hernia"),
+    ("肺浸潤", "pulmonary infiltrate"),
+    ("肺腫塊", "pulmonary mass"),
+    ("肺結節", "pulmonary nodule"),
+    ("肋膜增厚", "pleural thickening"),
+    ("氣胸", "pneumothorax"),
+    ("肺炎", "pneumonia"),
+])
+def test_cxr_synonyms_match(zh, en):
+    assert terms_match(zh, en)
+
+
+def test_cxr_surface_forms_reach_the_chinese_report():
+    # image retrieval evidences a film by looking its finding's surface forms up
+    # inside the (Chinese) examiner report, so the zh form must be in the group.
+    assert "肺水腫" in surface_forms("pulmonary edema")
+    assert "肋膜積水" in surface_forms("pleural effusion")
+    assert "肺結節" in surface_forms("pulmonary nodule")
+
+
+@pytest.mark.parametrize("risky", ["mass", "effusion", "emphysema", "hernia", "edema"])
+def test_bare_ambiguous_english_is_not_a_cxr_surface_form(risky):
+    # Retrieval does substring lookup, so a bare "mass" would fire on "massive
+    # effusion", "effusion" on "pericardial effusion", "emphysema" on
+    # "subcutaneous emphysema", "hernia" on "inguinal hernia" — each a
+    # clinically different thing that must not surface a chest film.
+    for concept in ("pulmonary mass", "pleural effusion", "pulmonary emphysema",
+                    "diaphragmatic hernia", "pulmonary edema"):
+        assert risky not in surface_forms(concept)
+
+
+def test_pleural_and_pericardial_effusion_do_not_collapse():
+    assert not terms_match("pleural effusion", "pericardial effusion")
+
+
+def test_cxr_distinct_concepts_stay_distinct():
+    assert not terms_match("pulmonary nodule", "pulmonary mass")
+    assert not terms_match("consolidation", "atelectasis")
+    assert not terms_match("pulmonary edema", "pulmonary emphysema")

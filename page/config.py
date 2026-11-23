@@ -5,6 +5,7 @@ import util.tools as util
 import util.save_load as save_load
 import util.constants as const
 import util.demographics as demographics
+import util.case_imaging as case_imaging
 import os
 import random
 import json
@@ -331,14 +332,21 @@ with major_column[1]:
 
             ss.user_config = config
         elif ss.config_type == "模板題":
-            with open(f"data/template_problem_set/{problem}", "r") as f:
+            # Case files are UTF-8; without an explicit encoding Windows opens
+            # them as cp950 and every template fails with UnicodeDecodeError.
+            with open(f"data/template_problem_set/{problem}", "r", encoding="utf-8") as f:
                 ss.problem = f.read()
             print(f"Problem: {problem}")
             ss.data = json.loads(ss.problem)
+            # Image-bank templates carry "_template_meta" (which film the case
+            # was written against, how its side was determined). Bookkeeping
+            # like that is for tests and maintainers, not for the prompts.
+            if isinstance(ss.data, dict):
+                ss.problem = case_imaging.prompt_json(ss.data)
 
             util.next_page()
         else:
-            with open(f"data/problem_set/{problem}", "r") as f:
+            with open(f"data/problem_set/{problem}", "r", encoding="utf-8") as f:
                 ss.problem = f.read()
             print(f"Problem: {problem}")
             ss.data = json.loads(ss.problem)
@@ -384,6 +392,26 @@ if "user_config" in ss and "problem" not in ss:
         util.record(ss.log, f"[PERF] case_gen_fallback={_dt:.2f}s")
         ss.data = json.loads(ss.problem)
         demographics.validate_demographics(ss.data)
+
+    # §6-A image-first: bind the generated case's fixed imaging reports to real
+    # films and rewrite them to what those films actually show, so the report
+    # the student reads is the report of the image they see. Never blocks a
+    # case: with no film / no key / a failed rewrite the original text stands.
+    _t0 = time.perf_counter()
+    try:
+        rewriter = case_imaging.gemini_rewriter()
+    except Exception:  # noqa: BLE001 - no client available
+        rewriter = None
+    try:
+        binding = case_imaging.bind_case_to_films(
+            ss.data, rewrite=rewriter, log=lambda m: util.record(ss.log, m))
+    except Exception as e:  # noqa: BLE001 - binding is best-effort
+        util.record(ss.log, f"[IMAGE-BIND] skipped: {e}")
+        binding = {}
+    util.record(ss.log, f"[PERF] image_bind={time.perf_counter() - _t0:.2f}s bound="
+                        f"{sum(1 for b in binding.values() if b.get('target_id'))}/{len(binding)}")
+    # the prompts must see the (possibly rewritten) reports, not the bookkeeping
+    ss.problem = case_imaging.prompt_json(ss.data)
 
     print(prompt)
     util.record(ss.log, prompt)

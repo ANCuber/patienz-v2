@@ -13,6 +13,7 @@ import util.acgme_selector as acgme_selector
 import util.acgme_aggregator as acgme_aggregator
 import util.grading_pipeline as grading_pipeline
 import util.grading_normalize as grading_normalize
+import util.case_imaging as case_imaging
 import util.mark_scheme_cache as mark_scheme_cache
 import util.save_load as save_load
 import datetime
@@ -194,7 +195,10 @@ def collect_student_data():
     """Collect all student performance data for mark scheme generation and grading."""
     data_parts = []
 
-    data_parts.append(f"## 虛擬病人設定\n{json.dumps(ss.data, ensure_ascii=False, indent=2)}")
+    # case_imaging.prompt_json strips "_"-prefixed bookkeeping (_template_meta,
+    # _image_binding): the target film id and its expected report text must not
+    # reach the mark-scheme or grading prompts.
+    data_parts.append(f"## 虛擬病人設定\n{case_imaging.prompt_json(ss.data)}")
 
     data_parts.append("## 問診紀錄")
     for msg in ss.diagnostic_messages:
@@ -504,7 +508,7 @@ need_acgme = want_acgme and "acgme_grader_response" not in ss and not ss.get("ac
 if (need_osce or need_acgme) and "problem" in ss:
     # 主執行緒先備妥所有輸入；task 內僅做 LLM 呼叫、不碰 st/session_state。
     student_data = collect_student_data()
-    patient_setup_str = f"## 虛擬病人設定\n{json.dumps(ss.data, ensure_ascii=False, indent=2)}"
+    patient_setup_str = f"## 虛擬病人設定\n{case_imaging.prompt_json(ss.data)}"
     mark_scheme_prompt = f"請根據以下虛擬病人設定，設計一份OSCE評分表：\n\n{patient_setup_str}"
     # 評分表重用簽章（疾病+身份+教學重點+難度）：相似案例直接重用，省一次 LLM 呼叫並提升一致性。
     ms_sig, _ms_raw = mark_scheme_cache.signature(

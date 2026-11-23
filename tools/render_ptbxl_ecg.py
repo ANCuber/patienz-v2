@@ -168,6 +168,18 @@ def _draw_grid(ax, width_mm, height_mm):
         ax.axhline(y, color="#e88f8f", lw=0.6, zorder=0)
 
 
+def neutral_title(ecg_id):
+    """Film caption that identifies the record without giving away the reading.
+
+    The bank's first build printed "PTB-XL #4166 — IMI (inferior myocardial
+    infarction)" across the top of every film — the diagnosis on the image a
+    student is asked to interpret. Only the record id and the scale belong there;
+    the statement lives in the manifest and is shown as the caption *after* the
+    student has read the tracing.
+    """
+    return f"PTB-XL #{ecg_id}"
+
+
 def render(record, out_path, title):
     _need("matplotlib", "pip install matplotlib")
     import matplotlib
@@ -288,7 +300,7 @@ def main():
                 if rec is None:
                     print(f"  ! {ecg_id}: no waveform path")
                     continue
-                render(rec, out_path, f"PTB-XL #{ecg_id} — {cls}")
+                render(rec, out_path, neutral_title(ecg_id))
                 ok += 1
                 print(f"  ✓ {out_path}")
             except Exception as e:

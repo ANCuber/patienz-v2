@@ -43,6 +43,27 @@ def test_age_band_missing():
     assert b.age_band("n/a", [0, 40, 60]) is None
 
 
+# The shipped default: developmental/physiologic ECG strata
+# 0-18 / 19-35 / 36-50 / 51-65 / 66+.
+DEFAULT_BOUNDS = [0, 19, 36, 51, 66]
+
+
+def test_default_bands_are_the_five_physiologic_strata():
+    assert b.parse_bands("0,19,36,51,66") == DEFAULT_BOUNDS
+
+
+@pytest.mark.parametrize("age,band", [
+    (2, 0), (18, 0),        # 成長發育期
+    (19, 1), (35, 1),       # 青年黃金區間
+    (36, 2), (50, 2),       # 壯年 (LVH 初現)
+    (51, 3), (65, 3),       # 中年 (CAD/缺血)
+    (66, 4), (89, 4),       # 初老+高齡
+    (300, 4),               # PTB-XL 把 >89 歲去識別化為 300 -> 必須併入 66+，不可自成一帶
+])
+def test_default_band_boundaries(age, band):
+    assert b.age_band(age, DEFAULT_BOUNDS) == band
+
+
 @pytest.mark.parametrize("v,mf", [("0", "M"), ("1", "F"), ("M", "M"), ("female", "F"),
                                   ("2", None), ("", None)])
 def test_sex_mf(v, mf):
@@ -109,7 +130,16 @@ def test_coverage_status():
 def test_findings_umbrella_terms():
     imi = b.findings_for("IMI", DX_IMI)
     assert imi["normality"] == "abnormal"
-    assert "myocardial infarction" in imi["findings"]      # umbrella so 心肌梗塞 matches
+    # The claim and the umbrella live in separate fields: the caption shows the
+    # claim, while the umbrella only widens recall so a report written
+    # 「心肌梗塞」 can still reach this film. Packing both into ``findings``
+    # is what let a generic report surface a wall-specific film.
+    assert imi["findings"] == ["inferior myocardial infarction"]
+    assert imi["umbrella_terms"] == ["myocardial infarction"]
+    assert imi["attributes"] == {"territory": ["inferior"], "completeness": None,
+                                 "lesion": "infarction", "laterality": None}
+    # an umbrella identical to the claim adds nothing and is dropped
+    assert b.findings_for("AFIB", RHY_AFIB)["umbrella_terms"] == []
     assert b.findings_for("NORM", NORM)["normality"] == "normal"
     assert b.umbrella_terms("AFIB", "", "atrial fibrillation") == ["atrial fibrillation"]
     assert "left bundle branch block" in b.umbrella_terms("CLBBB", "CLBBB",
