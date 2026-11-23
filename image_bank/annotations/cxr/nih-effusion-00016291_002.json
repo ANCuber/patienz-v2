@@ -1,0 +1,48 @@
+{
+ "id": "nih-effusion-00016291_002",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (recorded PA; scapulae partly overlie the upper lateral lung fields, so AP not excluded)",
+ "technical_quality": "Adequate: fair-to-good inspiration, minimal rotation (medial clavicles roughly symmetric), adequate penetration; apices and both costophrenic angles included, upper abdomen partly included; partial L marker at image upper right (patient's left) confirms conventional orientation; scapulae project over the upper lateral lung zones.",
+ "target": {
+  "finding": "pleural effusion",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 3,
+  "confidence": 0.75
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Tunneled peritoneovenous shunt (Denver/LeVeen-type) tubing: hairpin loop at the right medial clavicle / 1st rib; venous limb descends along the right mediastinal border (SVC course) to about the right atrial level; subcutaneous limb runs inferolaterally over the right hemithorax, crosses the right hemidiaphragm into the right upper abdomen where it appears doubled/coiled and exits the film inferiorly. Not a chest tube or pleural drain.",
+   "location": "Right hemithorax (loop at right medial clavicle/1st rib; medial limb paramediastinal to right atrium level; lateral limb over right lung) continuing into the right upper abdomen",
+   "zh": "右側隧道式腹腔靜脈分流管（Denver/LeVeen 型）：於右鎖骨內側/第一肋高度呈髮夾狀迴圈，靜脈支沿右縱膈邊緣（上腔靜脈走向）下行至約右心房高度，皮下支沿右側胸壁向下跨越右橫膈進入右上腹並呈重疊盤繞；非胸管或肋膜引流管"
+  },
+  {
+   "type": "External L side marker (partial)",
+   "location": "Image upper right corner, over the patient's left shoulder region",
+   "zh": "外部 L 側別標記（部分顯示），位於影像右上角（病人左側）"
+  },
+  {
+   "type": "Possible tiny metallic clip / foreign body (uncertain; reported by one reader, not confidently confirmed by the adjudicator)",
+   "location": "Right upper abdomen near the inferior film edge, medial to the shunt tubing",
+   "zh": "右上腹近影像下緣、分流管內側之疑似微小金屬夾/異物（不確定）"
+  }
+ ],
+ "other_findings": [
+  "左下肺野基底淡霧狀陰影，鄰近積液，可能為被動性/基底肺塌陷",
+  "雙側頸部、鎖骨上窩、肩部及腋窩軟組織多發小圓形/卵圓形鈣化影（鑑別：鈣化淋巴結或軟組織囊蟲鈣化）",
+  "上腹部密度均勻增加、未見明顯腸氣，須考慮腹水（與腹腔靜脈分流管相符）"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標的左側少量肋膜積液可見，且未見胸管、肋膜引流管或豬尾巴導管等針對積液之治療器材；但右側可見腹腔靜脈分流管並疑有腹水，顯示病人已有已知之慢性頑固性腹水（如肝硬化或惡性腹水）並曾接受介入治療，此積液極可能為肝性胸水等續發性表現，與「首次因肋膜積液就診」之情境不符；另雙側軟組織多發鈣化亦為易干擾之額外發現。",
+ "description_zh": "胸部正面（記錄為 PA，肩胛骨部分重疊肺野）X 光片，吸氣尚可、無明顯旋轉、穿透度適當。左側肋膈角變鈍並可見外側半月形液面，左側橫膈外側輪廓部分模糊，合併左下肺野基底淡霧狀陰影，符合少量（高度約 3 公分）左側下肺野肋膜積液併鄰近基底肺塌陷；右肺野清晰、右肋膈角銳利，心臟大小正常或正常上限，氣管與縱膈居中。右側可見一條隧道式分流管：於右鎖骨內側/第一肋高度呈髮夾狀迴圈，一支沿右縱膈邊緣（上腔靜脈走向）下行至約右心房高度，另一支沿右側胸壁向下跨越右橫膈進入右上腹並呈重疊盤繞，型態最符合腹腔靜脈分流管（Denver/LeVeen 型），未見胸管、肋膜引流管或豬尾巴導管。另於雙側頸部、鎖骨上窩、肩部及腋窩軟組織可見多發小圓形/卵圓形鈣化影（鑑別為鈣化淋巴結或軟組織囊蟲鈣化），上腹部密度均勻增加且無明顯腸氣，須考慮腹水。影像右上角可見 L 側別標記，骨骼未見急性骨折。",
+ "label_concern": ""
+}

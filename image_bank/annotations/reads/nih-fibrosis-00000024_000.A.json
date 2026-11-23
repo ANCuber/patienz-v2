@@ -1,0 +1,39 @@
+{
+ "view": "PA (frontal), L marker at image upper-right confirming conventional orientation",
+ "technical_quality": "Adequate: full lung fields and both costophrenic angles included, adequate inspiration (~9-10 posterior ribs), midline trachea, minimal rotation, penetration acceptable; no cropping of relevance.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "外置鉛製側別標記「L」（含小字標籤）",
+   "location": "影像右上角，病人左肩外側軟組織區，胸廓外"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "瀰漫性粗糙網狀／網狀結節狀間質陰影，以周邊及中下肺野為主，符合肺纖維化（標記所指之病灶）",
+   "laterality": "bilateral",
+   "zone": "middle and lower (multiple)"
+  },
+  {
+   "finding": "數個薄壁囊狀／大泡狀透亮區，疑纖維囊性變化或局部肺氣腫",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "雙側肺門紋理增粗、略顯突出",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "主動脈弓略顯突出／延展",
+   "laterality": "left (mediastinal)",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "正面胸部X光片，吸氣量尚可，氣管與縱膈居中，影像右上角可見外置「L」側別標記。雙側肺野可見瀰漫性粗糙網狀及網狀結節狀陰影，以雙側中下肺野及周邊肺野為主，雙側肺門紋理增粗，右上肺野另見數個薄壁囊狀透亮區，整體影像符合肺纖維化伴纖維囊性變化。心臟大小正常，主動脈弓略顯突出；雙側橫膈輪廓及肋膈角尚清晰，未見明顯肋膜積液或氣胸。未見任何導管、引流管、手術夾或植入裝置，無已治療之證據。"
+}

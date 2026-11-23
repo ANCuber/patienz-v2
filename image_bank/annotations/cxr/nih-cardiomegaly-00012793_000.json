@@ -1,0 +1,42 @@
+{
+  "id": "nih-cardiomegaly-00012793_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate penetration (thoracic spine visible through the heart) and centring, minimal rotation. Shallow inspiration with bilaterally elevated hemidiaphragms (right dome ~8th posterior rib, right higher than left by ~2-3 cm) - low lung volumes crowd the perihilar vessels and exaggerate the cardiac silhouette, so cardiac size must be judged with caution. Scapulae partially overlap the lateral upper lung fields. Apices and both costophrenic angles included. Large body habitus. External 'M2' film marker in the upper-right image corner; no L/R side marker, conventional orientation assumed.",
+  "target": {
+    "finding": "cardiomegaly",
+    "visible": "yes",
+    "laterality": "none",
+    "zone": "lower",
+    "size_cm": 16,
+    "confidence": 0.65
+  },
+  "laterality_sources": {
+    "bbox": "patient-left (box centroid; 494x404 px box over the whole cardiac silhouette, middle zone)",
+    "reader_a": "bilateral, lower zone (label-aware; target 'uncertain', borderline/mild, CTR ~0.48-0.50)",
+    "reader_b": "bilateral, lower zone (blind; independently reported borderline-to-mild cardiomegaly, CTR ~0.48-0.50)",
+    "adjudicator": "none (midline finding), lower zone; transverse cardiac diameter ~400 px vs inner thoracic ~775 px, CTR ~0.50-0.52 - mild cardiomegaly, partly accentuated by shallow inspiration"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "External radiographic film marker ('M2'-style technique marker, not a patient device; no line, tube, drain, pacemaker or surgical clip on the film)",
+      "location": "Upper-right corner of the image, over the patient's left shoulder region, outside the lung field",
+      "zh": "外部鉛字標記（M2 樣式技術標記，非病人身上裝置；全片無任何管路、導線、引流管、節律器或手術夾）"
+    }
+  ],
+  "other_findings": [
+    "主動脈結突出、略呈迂曲（unfolded aortic knob），上縱膈輕度增寬，考慮胸主動脈迂曲/擴張並受低肺容積放大（左側，上肺野）",
+    "吸氣不足、雙側橫膈上抬（低肺容積），右側橫膈較左側高約 2-3 公分，屬體位/吸氣不足所致，無局部輪廓異常（雙側，下肺野）",
+    "雙側肺門周圍支氣管血管紋理增加，右側肺門較明顯，考慮低肺容積血管擁擠；無 Kerley 線、無間質性或肺泡性肺水腫、無實質化、腫塊或結節（雙側，中肺野）",
+    "雙側肋膈角銳利，無肋膜積液；無氣胸（雙側，下肺野）",
+    "左橫膈下可見正常胃泡（正常變異）",
+    "肩胛骨部分重疊於上肺野外側；體型壯碩、上腹密度高（技術性）",
+    "骨骼結構未見明顯異常"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標籤病灶（輕度心臟擴大，心胸比約 0.50-0.52）於片中可辨識；全片無胸管、引流管、節律器或任何治療性裝置，亦無手術後變化、肺水腫或肋膜積液等與初次就診相矛盾的影像。惟心臟擴大程度輕微且部分受吸氣不足放大，適合作為初次就診之輕度心臟擴大教學片，出題時宜以「臨界至輕度」描述。",
+  "description_zh": "PA 站立胸部正面片，吸氣不足、雙側橫膈上抬（右側較左側高約 2-3 公分），肩胛骨部分重疊於上肺野外側，影像右上角可見外部鉛字標記，全片未見任何導管、引流管、節律器或手術夾。心影呈橫位、輪廓略呈球形，橫徑約 16 公分，心胸比約 0.50-0.52，屬輕度心臟擴大（居中、位於下肺野區域，心影主體偏向左側），部分可能因吸氣不足而放大。主動脈結突出、略呈迂曲，上縱膈輕度增寬。雙側肺門周圍支氣管血管紋理增加（右側較明顯），考慮為低肺容積血管擁擠所致，未見 Kerley 線、實質化、結節或肺水腫。雙側肋膈角銳利，無肋膜積液或氣胸；左橫膈下可見正常胃泡，骨骼結構未見明顯異常。",
+  "label_concern": "心影僅臨界至輕度擴大（CTR 約 0.50-0.52），且吸氣不足會放大心影；標籤方向正確但程度輕微，建議人工確認。"
+}

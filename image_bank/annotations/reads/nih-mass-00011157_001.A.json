@@ -1,0 +1,52 @@
+{
+ "view": "PA (frontal), L marker over patient's left shoulder confirms conventional orientation",
+ "technical_quality": "Adequate inspiration, mild rotation, acceptable penetration; both costophrenic angles included; lungs, hila and mediastinum well displayed. Bony thorax and left supraclavicular region partly overlapped by external label/marker.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "L side marker (external)",
+   "location": "upper right corner of image, projected over patient's left shoulder/clavicle"
+  },
+  {
+   "type": "cluster of small linear metallic densities, probable surgical clips (post lymph node biopsy) - external artifact not fully excluded",
+   "location": "patient's left supraclavicular region, just above the left clavicle"
+  },
+  {
+   "type": "rectangular film label / identifier marker with ring emblem (external)",
+   "location": "upper right corner of image, patient's left shoulder"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Well-defined oval pulmonary mass abutting the lateral chest wall, approx 3.5-4.5 cm (largest lesion)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Well-defined round pulmonary mass lateral to the hilum, approx 3 cm",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Additional smaller pulmonary nodules (approx 1 cm) - right mid zone and perihilar/lower zone on the left; picture of multiple bilateral masses/nodules (metastases to be excluded in this age group)",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Bilateral lobulated hilar enlargement with widened mediastinal contour, suspicious for hilar and mediastinal lymphadenopathy",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "No pleural effusion or pneumothorax; costophrenic angles sharp; no chest tube",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.8,
+ "description_zh": "正面胸部X光片，患者左側可見 L 標記，方向為傳統擺位。雙側肺野可見多發性邊界清楚的圓形／橢圓形腫塊：右下肺野外側貼近胸壁處最大一顆約 4 公分，左中肺野肺門外側另一顆約 3 公分，另於右中肺野及左肺門周圍可見數個約 1 公分的較小結節。雙側肺門增大且呈分葉狀，縱膈腔輪廓亦增寬，疑合併肺門與縱膈淋巴結腫大。左鎖骨上區可見成簇的細小金屬密度影，疑為手術夾（淋巴結切片術後）；未見胸管或引流管，無明顯肋膜積液或氣胸。"
+}

@@ -1,0 +1,59 @@
+{
+ "view": "Frontal chest radiograph, recorded PA (L side marker with technologist initials on image right confirms conventional orientation); external ECG leads/tubing suggest a bedside-style exposure",
+ "technical_quality": "Suboptimal: patient markedly rotated to the right, poor inspiration/low lung volumes, lower half of the film obscured by dense diaphragm/abdominal opacity and overlying external tubing and lead wires; cardiac borders and left hemidiaphragm not clearly evaluable",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "patient right lateral chest, mid-lower zone"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "patient left lateral chest, mid zone"
+  },
+  {
+   "type": "ECG lead wires (multiple)",
+   "location": "crossing both hemithoraces and upper abdomen, with a small connector below the L marker at patient left lower lateral chest wall"
+  },
+  {
+   "type": "external double-lumen tubing (likely oxygen/nasal cannula tubing), hairpin loop with connector",
+   "location": "draped over patient right upper chest and right arm, descending along right paramediastinal region to a loop at the right cardiophrenic angle; external, not intravascular"
+  },
+  {
+   "type": "multiple small surgical clips",
+   "location": "patient right paratracheal / upper mediastinum, upper zone"
+  },
+  {
+   "type": "L side marker with technologist initials (JMS)",
+   "location": "image right lateral, patient left side"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "relative hyperlucency with sparse vascular markings, no discrete bulla, no diaphragm flattening - emphysema not convincingly demonstrated on this degraded film",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "hazy increased opacity with ill-defined hemidiaphragm and costophrenic angle - possible small effusion/basal atelectasis vs overlying soft tissue and rotation",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "elevated hemidiaphragm with reduced lung volume - likely positional/poor inspiration, volume loss not excluded",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "cardiomediastinal contour obscured by rotation and overlying tubing; mediastinum appears shifted toward the right, probably rotational",
+   "laterality": "bilateral",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.25,
+ "description_zh": "正面胸部X光，病人明顯向右旋轉且吸氣不足，下半部影像被橫膈/腹部緻密影及重疊的外在管線遮蔽，心臟與縱膈輪廓無法清楚判讀。兩側胸壁可見心電圖電極貼片與多條導線，右胸另有外接管路（疑為氧氣管）盤繞投影於右上胸至右心膈角，右側氣管旁/上縱膈可見多枚小型手術夾，影像右側有「L」側標記，未見胸管或引流管。左上肺野相對透亮、血管紋理稀疏，但未見明確肺大泡或橫膈平坦，以本片品質無法確認肺氣腫，建議結合臨床或CT評估。左下肺野呈霧狀密度增加、左側橫膈及肋膈角顯示不清，右側橫膈位置偏高、右肺容積偏小，可能為體位所致，少量積液或肺塌陷無法排除。"
+}

@@ -1,0 +1,42 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration, minimal rotation (clavicles roughly symmetric about spinous processes), adequate penetration with thoracic spine visible through the heart; chin/cervical spine included at top; narrow black collimation band at the far image-left edge.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "Lead side marker (L / 'CA' letters) with paper clip on round adhesive tab - external technologist marker",
+   "location": "image upper right, projected over patient's left shoulder / axilla soft tissue, outside the thorax"
+  },
+  {
+   "type": "Small ring-shaped metallic density, likely earring / jewelry - external",
+   "location": "top edge of image, patient's left, lateral to mandible / neck"
+  },
+  {
+   "type": "Collimation / film-edge black band (image artifact)",
+   "location": "far image-left edge (patient's right), upper third"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Elevated right hemidiaphragm, dome about 3 cm higher than the left (could reflect right lower-lobe volume loss, subpulmonic effusion or eventration/hepatomegaly)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Subtle hazy increased opacity in the medial right lower zone (paracardiac, above the elevated diaphragm) with slightly blurred vessels; right heart border and right costophrenic angle remain visible - possible early consolidation vs breast-shadow / atelectasis, indeterminate",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Few tiny (3-4 mm) nodular densities in the right perihilar / mid-lower zone, most likely end-on vessels or calcified granulomas",
+   "laterality": "right",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.4,
+ "description_zh": "PA 胸部正面片，吸氣量尚可、無明顯旋轉，心臟大小與縱膈輪廓正常，氣管居中。右側橫膈明顯抬高（約高於左側 3 公分），右下肺野內側、心右緣旁可見輕微模糊之密度增加並伴血管影略為模糊，但心右緣與右側肋膈角仍可辨識，是否為實質化（consolidation）尚難確定；右肺門旁另見數個 3-4 mm 小結節影，多為血管端面或鈣化肉芽腫。左肺清晰，左側肋膈角銳利。影像右上方見鉛字側標記（L/CA）與迴紋針、頸部左側上緣見小環狀金屬影（疑似耳環），皆為體外物；未見胸管、引流管或其他治療痕跡。"
+}

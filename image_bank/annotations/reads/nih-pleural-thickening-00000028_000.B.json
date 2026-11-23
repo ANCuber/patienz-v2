@@ -1,0 +1,52 @@
+{
+ "view": "PA (frontal) chest radiograph, upright",
+ "technical_quality": "Adequate. Upright PA projection with an L side marker at the patient's left shoulder (conventional orientation). Adequate inspiration (right hemidiaphragm at about the 6th anterior rib), no significant rotation (clavicular heads roughly equidistant from the spinous processes), adequate penetration (vertebral bodies visible through the cardiac silhouette). Apices and both costophrenic angles included; no motion blur.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "Punctate round metallic density, likely external nipple marker / skin artifact (not a line or tube)",
+   "location": "Right lower zone, lateral, projecting over about the 7th posterior rib"
+  },
+  {
+   "type": "Punctate round metallic density, likely external nipple marker / skin artifact (not a line or tube)",
+   "location": "Left lower zone, lateral, projecting over about the 6th-7th posterior rib"
+  },
+  {
+   "type": "External 'L' side marker with circular dot",
+   "location": "Image upper right, over the patient's left shoulder soft tissues"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Blunting of the costophrenic angle with a smooth band of lateral pleural thickening along the lower lateral chest wall (no meniscus, no lung nodule or consolidation)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Subtle smooth soft-tissue stripe along the lateral chest wall inside the ribs, suggesting mild pleural/extrapleural thickening (or extrapleural fat)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild apical pleural capping (hazy apical density above the clavicle); low confidence, partly overlapped by first rib/clavicle",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly prominent / unfolded aortic knob, likely age-related; trachea midline, no mediastinal widening",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Left hemidiaphragm projects slightly higher than the right (subtle, ~1 cm), with gastric fundal gas beneath; may be within normal variation",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面站立胸部X光片，吸氣深度足夠、無明顯旋轉，左側標記顯示為常規方位。左側肋膈角變鈍，左下側胸壁可見平滑的肋膜增厚帶，未見明顯積液半月徵；右側側胸壁及右肺尖亦疑有輕微肋膜增厚，雙肺野未見明確浸潤、結節或氣胸。心臟大小正常，氣管居中，主動脈弓略為突出，符合年齡相關變化；左橫膈稍高於右側，下方見胃泡。雙下肺野各見一點狀金屬影，應為體外標記（如乳頭標記），未見胸管、引流管或其他導管。"
+}

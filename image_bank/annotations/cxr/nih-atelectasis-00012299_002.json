@@ -1,0 +1,48 @@
+{
+ "id": "nih-atelectasis-00012299_002",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (as recorded); frontal erect film. 'L' side marker with technologist initials in the upper right corner of the image confirms conventional orientation (image left = patient right). Scapulae partly projected over the upper lateral lung fields.",
+ "technical_quality": "Adequate: good inspiration (about 9-10 posterior ribs visible), no significant rotation (spinous processes midway between the medial clavicles), adequate penetration (vertebral bodies visible through the mediastinum), both apices and both costophrenic angles included. High-contrast post-processing with dark collimation corners at the top of the film.",
+ "target": {
+  "finding": "atelectasis",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "lower",
+  "size_cm": 4,
+  "confidence": 0.7
+ },
+ "laterality_sources": {
+  "bbox": "bilateral-lower (raw NIH box x195-854, y576-656 is a horizontal band spanning both lung bases just above the diaphragms and encloses the right basal finding; its centroid is only marginally patient-left, which the manifest converted to 'left, middle')",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External thin radiopaque wire / monitoring lead (ECG-type cable) projected over the left hemithorax. Adjudicated as external rather than a chest drain: sub-millimetre uniform calibre with no tube wall or lumen visible against aerated lung, no sentinel-eye break and no pigtail curl at the upper end, smooth un-kinked course passing out of the rib cage and continuing along the flank skin surface, and no pleural process to drain. (Reader B had read this line as a small-bore left chest tube; Reader A as an external wire.)",
+   "location": "Begins at the left upper paramediastinal region (about the left 2nd rib level), runs inferolaterally along the left mediastinal border, across the left hilum and left lower zone, over the lower lateral left chest wall, then down the left flank soft tissues ending at the skin surface at about upper-lumbar level",
+   "zh": "體外心電圖／監測導線（投影於左側胸腔，非胸管）"
+  },
+  {
+   "type": "Side marker 'L' with technologist initials",
+   "location": "Upper right corner of the image (patient's left shoulder region)",
+   "zh": "左側（L）標記"
+  },
+  {
+   "type": "Faint dark tapering linear shadow - skin fold or edge of external tubing (artifact, not an implanted device)",
+   "location": "Left supraclavicular / lower neck soft tissues, above the left clavicle",
+   "zh": "左鎖骨上方皮膚皺褶／體外管線邊緣陰影（偽影）"
+  }
+ ],
+ "other_findings": [
+  "左下肺野心緣旁、左橫膈上方有輕微、界線不清的模糊密度增加（亦位於放射科醫師標註框內），可能為輕微左基底肺擴張不全，或僅為前肋端與心尖重疊；左心緣與左橫膈輪廓保留，信心度低",
+  "右下肺野內側沿右心緣帶狀密度略增、右心緣局部略模糊，可能為基底血管與心包脂肪墊重疊，或為右基底盤狀肺擴張不全的內側延伸；無肺葉體積減少徵象（氣管居中、雙側橫膈高度正常、肺門位置正常）",
+  "雙側肺尖及外周未見氣胸線，無肋膜積液，雙側肋膈角銳利；心臟大小正常（CTR 約 0.4），縱膈不寬，氣管居中，骨骼與軟組織無明顯異常，左橫膈下方胃泡位置正常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "右下肺野右橫膈上方可見約4公分、與橫膈平行的盤狀（板狀）肺擴張不全，位於放射科醫師標註框內，且盲讀讀片員亦獨立辨識出相同位置的病灶。影像上沒有胸管、肋膜引流管或引流後變化——左側的細線經放大檢視為口徑極細、無管壁、走向平順且延伸至體表的體外監測導線，並非胸管；亦無氣胸、肋膜積液或其他需先行治療的病灶，與首次就診的表現相符。",
+ "description_zh": "胸部正面（PA）直立X光，吸氣充分（約9–10後肋）、無明顯旋轉、穿透度適當，影像右上角可見 L 標記。右下肺野外側、右橫膈上方約1–2公分處可見一條與橫膈平行、長約4公分的細線狀（盤狀／板狀）陰影，符合右基底次節段性盤狀肺擴張不全；右心緣旁內側下肺野另有輕微帶狀密度略增，可能為基底血管與心包脂肪墊重疊，左下肺野心緣旁、左橫膈上方亦有輕微模糊密度增加，不排除輕微左基底肺擴張不全，但左心緣及橫膈輪廓保留。未見肺葉體積減少徵象：氣管居中、雙側橫膈高度正常、肺門位置正常；心臟大小正常（CTR 約 0.4），縱膈不寬，雙側肋膈角銳利，無肋膜積液，雙側肺尖及外周未見氣胸線。另見一條極細的不透X光線狀影自左上縱膈旁沿左縱膈緣向外下斜行，越過左肺門及左下肺野後延伸至左側胸壁外並沿左側腰部軟組織向下至體表，口徑細小均勻、無管壁及引流孔、走向平順無轉折，判斷為體外心電圖／監測導線之投影而非胸管；左鎖骨上方軟組織內另有一細長暗線影，為皮膚皺褶或體外管線邊緣之偽影。影像上無胸管或其他治療性裝置。",
+ "label_concern": ""
+}

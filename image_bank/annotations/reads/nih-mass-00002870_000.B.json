@@ -1,0 +1,53 @@
+{
+ "view": "PA/AP frontal chest radiograph (erect, L marker at the left shoulder confirming conventional orientation)",
+ "technical_quality": "Adequate. Good inspiration (about 9-10 posterior ribs visible), no significant rotation (spinous processes midway between the clavicular heads), adequate penetration with the thoracic spine faintly visible through the cardiac shadow. Lung apices and both costophrenic angles are included; the left shoulder is included in the field of view.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 4.5,
+ "devices": [
+  {
+   "type": "Left shoulder hemiarthroplasty (metallic humeral head prosthesis with stem into the humeral shaft)",
+   "location": "left shoulder / proximal left humerus, outside the thorax"
+  },
+  {
+   "type": "Radiographic side marker (L)",
+   "location": "over the left shoulder / left clavicle region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Rounded, lobulated, well-defined hilar/perihilar opacity about 4-5 cm, projecting over and enlarging the right hilum, adjacent to the right heart border - right hilar mass or bulky right hilar lymphadenopathy (primary bronchogenic carcinoma to be considered in an 84-year-old)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, unfolded aortic knob with tortuous/ectatic thoracic aorta (age-related)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mild right paratracheal / upper mediastinal fullness, probably vascular (tortuous brachiocephalic vessels) but mediastinal nodal enlargement not excluded",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Borderline cardiothoracic ratio (approximately 0.47-0.50), heart not definitely enlarged",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left shoulder hemiarthroplasty (postoperative, not a lung abnormality)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Degenerative changes of the right glenohumeral joint / acromioclavicular region and thoracic spine (osteophytes), consistent with age",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.8,
+ "description_zh": "正面胸部X光，吸氣充足、無明顯旋轉，左肩可見L側別標記。右側肺門處可見一約4-5公分、邊緣清楚且呈分葉狀的圓形高密度影，使右肺門明顯增大並緊鄰右心緣，需考慮右肺門腫塊或肺門淋巴結腫大（原發性肺癌不能排除）；右上縱隔／氣管旁略顯飽滿，可能為迂曲血管，但縱隔淋巴結腫大亦不能完全排除。主動脈弓突出且迂曲，屬年齡相關變化；心臟大小約在正常上限，氣管居中，雙側肺野其餘部分清晰，無實質浸潤、無氣胸，雙側肋膈角銳利、無肋膜積液，橫膈輪廓平滑。左肩可見人工肱骨頭半關節置換植入物，雙肩及胸椎有退化性變化，未見胸管或引流管等治療裝置。"
+}

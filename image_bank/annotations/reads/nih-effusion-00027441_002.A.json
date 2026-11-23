@@ -1,0 +1,64 @@
+{
+ "view": "AP portable (supine/semi-erect) frontal chest radiograph; L marker and up-arrow at image top right confirm conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate but limited: portable AP with the patient/cassette tilted a few degrees (image rotated counter-clockwise), mild rotation, adequate inspiration (about 8 posterior ribs), upper abdomen included. Numerous external tubes/lines drape across both hemithoraces, shoulders and arms and partially obscure the lung fields.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 10,
+ "devices": [
+  {
+   "type": "Probable central venous catheter (right neck / internal jugular approach), radiopaque hub over the right supraclavicular region",
+   "location": "Right neck/upper mediastinum, coursing down the right paratracheal region with tip projecting over the lower SVC / cavoatrial junction"
+  },
+  {
+   "type": "External tubing (IV / oxygen / monitoring tubing) forming loops",
+   "location": "Over the right shoulder, right axilla and right upper arm (patient's right, image left), continuing down along the right lateral chest wall"
+  },
+  {
+   "type": "External tube with radiopaque connector end",
+   "location": "Overlying the right mid zone near the right hilum (patient's right)"
+  },
+  {
+   "type": "Round radiopaque connector/electrode-type disc with attached tubing (looped tubing above it)",
+   "location": "Overlying the left mid zone / left anterior chest wall (patient's left, image right)"
+  },
+  {
+   "type": "External tubing running down the lateral chest wall with two radiopaque connector ends",
+   "location": "Left lateral chest wall to left upper abdomen / left flank, outside the rib cage (patient's left)"
+  },
+  {
+   "type": "Radiographic orientation markers (L marker and up-arrow) and AP/PORTABLE text labels",
+   "location": "Image top-right corner and top-left/top-right text"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Homogeneous increased opacity of the right lower zone with obscuration of the right hemidiaphragm and right heart border (silhouette sign) and blunting/obliteration of the right costophrenic angle, consistent with right pleural effusion layering posteriorly on the supine film",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Diffuse veil-like reduced transparency of the entire right hemithorax compared with the left (layering effusion), extending into the right middle zone",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Possible underlying right lower lobe atelectasis/consolidation within the dense right basal opacity (cannot be separated from effusion on this single view)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiomediastinal silhouette appears prominent but cannot be reliably assessed on rotated portable AP projection; trachea midline; no endotracheal or nasogastric tube seen",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Left lung essentially clear; left hemidiaphragm and gastric air bubble preserved; no definite left effusion or pneumothorax",
+   "laterality": "left",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "攜帶式 AP 胸部 X 光，病人略有旋轉，胸壁上多條外在管路交錯投影於兩側胸部、肩部及上臂，影響判讀。右下肺野呈均質性密度增加，右側橫膈及右心緣模糊（silhouette sign），右側肋膈角消失，且整個右側胸廓透明度較左側減低，符合仰臥位右側肋膜積液呈層狀分布，範圍約 10 公分，不排除合併右下葉肺塌陷或實變。左肺大致清晰，左側橫膈與胃泡可見，未見明顯左側積液或氣胸。右頸部見疑似中心靜脈導管，尖端投影於上腔靜脈與右心房交界附近；未見胸管、肋膜引流管或氣管內管。"
+}

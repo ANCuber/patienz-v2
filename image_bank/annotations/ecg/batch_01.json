@@ -1,0 +1,333 @@
+[
+ {
+  "id": "ptbxl-DIG-1798",
+  "ecg_id": "1798",
+  "selected_code": "DIG",
+  "language": "en",
+  "source_report": "atrial fibrillation with rapid ventricular response. voltages are high in chest leads suggesting lvh. st segments are depressed in i, ii, avf, v4,5,6. t waves are low or flat in limb leads and v4,5,6. findings are likely to be due to ischaemic heart  dise",
+  "source_report_zh": "心房顫動合併快速心室反應。胸前導程電壓增高，疑左心室肥厚。I、II、aVF、V4–V6 導程 ST 段壓低；肢體導程及 V4–V6 導程 T 波低平。上述變化可能為缺血性心臟病所致。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 50.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"},
+   {"code": "DIG", "likelihood": 100.0, "kind": "diagnostic", "zh": "毛地黃效應"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-DIG-5606",
+  "ecg_id": "5606",
+  "selected_code": "DIG",
+  "language": "de",
+  "source_report": "vorhoftachykardie mittellagetyp vollstÄndiger linksschenkelblock st-hebung in v1,v2 path. repol. bei lsbb digitalisverÄnderung gelegentlich kontroll-ekg path. ekg",
+  "source_report_zh": "心房性心搏過速，中間電軸，完全性左束支傳導阻滯。V1、V2 導程 ST 段上升，為左束支傳導阻滯伴隨之病理性再極化。毛地黃效應。建議擇期追蹤心電圖。異常心電圖。",
+  "statements_zh": [
+   {"code": "CLBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "完全性左束支傳導阻滯"},
+   {"code": "DIG", "likelihood": 100.0, "kind": "diagnostic", "zh": "毛地黃效應"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LNGQT-39",
+  "ecg_id": "39",
+  "selected_code": "LNGQT",
+  "language": "de",
+  "source_report": "sinusrhythmus linkstyp qrs(t) abnormal    inferiorer myokardschaden nicht auszuschliessen qt-verlÄngerung cordichin: 2-1-1 jetzt konstant sinusrhythmus g novodigal 0,2  1x1 tensobon :12,5 mg (chnidinspiegel:3,4(2,0-5,0),digoxinspiegel:0,62(0,5-2) 2x unter",
+  "source_report_zh": "竇性心律，電軸左偏，QRS(T) 型態異常，無法排除下壁心肌損傷，QT 間期延長。（臨床註記：Cordichin 2-1-1，目前維持竇性心律；Novodigal 0.2 每日一次；Tensobon 12.5 mg；奎尼丁血中濃度 3.4（2.0–5.0），地高辛血中濃度 0.62（0.5–2）。）",
+  "statements_zh": [
+   {"code": "LNGQT", "likelihood": 100.0, "kind": "diagnostic", "zh": "QT 間期延長"},
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"},
+   {"code": "DIG", "likelihood": 100.0, "kind": "diagnostic", "zh": "毛地黃效應"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "修正：「digoxinspiegel」譯為「地高辛血中濃度」（原譯「毛地黃血中濃度」，digoxin 為特定藥物，宜與 DIG 代碼之「毛地黃效應」區分）。「chnidinspiegel」為 Chinidinspiegel（奎尼丁血中濃度）之錯字，譯法正確。原文末尾「2x unter」為截斷片段，語意不完整，翻譯中省略。代碼 IMI 可能性 15（<50）與報告「無法排除下壁心肌損傷」相符。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-LNGQT-260",
+  "ecg_id": "260",
+  "selected_code": "LNGQT",
+  "language": "en",
+  "source_report": "sinus rhythm. abnormal left axis deviation. prolonged qt.",
+  "source_report_zh": "竇性心律，電軸極度左偏，QT 間期延長。",
+  "statements_zh": [
+   {"code": "LNGQT", "likelihood": 100.0, "kind": "diagnostic", "zh": "QT 間期延長"},
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"}
+  ],
+  "axis_zh": "電軸極度左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LNGQT-13321",
+  "ecg_id": "13321",
+  "selected_code": "LNGQT",
+  "language": "de",
+  "source_report": "ventrikulÄre extrasystole(n) supraventrikulÄre extrasystole(n) sinusrhythmus p-verbreiterung linkstyp unspezifischer intraventrikulÄrer block",
+  "source_report_zh": "竇性心律，伴心室早期收縮及心房早期收縮。P 波增寬，電軸左偏，非特異性心室內傳導阻滯。",
+  "statements_zh": [
+   {"code": "LNGQT", "likelihood": 100.0, "kind": "diagnostic", "zh": "QT 間期延長"},
+   {"code": "PVC", "likelihood": 100.0, "kind": "form", "zh": "心室早期收縮"},
+   {"code": "IVCD", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性心室內傳導障礙（阻滯）"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "註：報告原文未提及 QT 間期延長，但代碼 LNGQT 可能性 100 且為本筆選定代碼；屬省略而非矛盾。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LNGQT-2221",
+  "ecg_id": "2221",
+  "selected_code": "LNGQT",
+  "language": "en",
+  "source_report": "sinus rhythm. t waves are inverted in avl, v2,3,4. t waves are flat in ii, v5,6. findings are likely to be due to ischaemic heart    disease. the age of the changes is uncertain. prolonged qt, this may be due to a drug effect or an    electrolyte disturba",
+  "source_report_zh": "竇性心律。aVL、V2–V4 導程 T 波倒置，II、V5、V6 導程 T 波低平，可能為缺血性心臟病所致，變化之時期不明。QT 間期延長，可能與藥物作用或電解質異常有關。",
+  "statements_zh": [
+   {"code": "ILMI", "likelihood": 50.0, "kind": "diagnostic", "zh": "下側壁心肌梗塞"},
+   {"code": "LNGQT", "likelihood": 100.0, "kind": "diagnostic", "zh": "QT 間期延長"},
+   {"code": "EL", "likelihood": 100.0, "kind": "diagnostic", "zh": "電解質異常或藥物作用"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LNGQT-2381",
+  "ecg_id": "2381",
+  "selected_code": "LNGQT",
+  "language": "de",
+  "source_report": "supraventrikulÄre extrasystole(n) sinusrhythmus lagetyp normal",
+  "source_report_zh": "竇性心律，伴心房早期收縮，電軸正常。",
+  "statements_zh": [
+   {"code": "LNGQT", "likelihood": 100.0, "kind": "diagnostic", "zh": "QT 間期延長"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "註：報告原文未提及 QT 間期延長，但代碼 LNGQT 可能性 100 且為本筆選定代碼；屬省略而非矛盾。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LNGQT-11916",
+  "ecg_id": "11916",
+  "selected_code": "LNGQT",
+  "language": "sv",
+  "source_report": "sinusrytm qt fÖrlÄngd",
+  "source_report_zh": "竇性心律，QT 間期延長。",
+  "statements_zh": [
+   {"code": "LNGQT", "likelihood": 100.0, "kind": "diagnostic", "zh": "QT 間期延長"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LNGQT-6225",
+  "ecg_id": "6225",
+  "selected_code": "LNGQT",
+  "language": "de",
+  "source_report": "sinusrhythmus linkstyp qt-verlÄngerung",
+  "source_report_zh": "竇性心律，電軸左偏，QT 間期延長。",
+  "statements_zh": [
+   {"code": "LNGQT", "likelihood": 100.0, "kind": "diagnostic", "zh": "QT 間期延長"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LNGQT-16378",
+  "ecg_id": "16378",
+  "selected_code": "LNGQT",
+  "language": "en",
+  "source_report": "sinus rhythm. prolonged qt, this may be due to a drug effect or an    electrolyte disturbance.",
+  "source_report_zh": "竇性心律，QT 間期延長，可能與藥物作用或電解質異常有關。",
+  "statements_zh": [
+   {"code": "LNGQT", "likelihood": 100.0, "kind": "diagnostic", "zh": "QT 間期延長"},
+   {"code": "EL", "likelihood": 50.0, "kind": "diagnostic", "zh": "電解質異常或藥物作用"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NORM-262",
+  "ecg_id": "262",
+  "selected_code": "NORM",
+  "language": "en",
+  "source_report": "sinus rhythm. normal ecg.",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NORM-57",
+  "ecg_id": "57",
+  "selected_code": "NORM",
+  "language": "de",
+  "source_report": "sinusrhythmus normales ekg",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NORM-51",
+  "ecg_id": "51",
+  "selected_code": "NORM",
+  "language": "de",
+  "source_report": "sinusrhythmus normales ekg",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NORM-10",
+  "ecg_id": "10",
+  "selected_code": "NORM",
+  "language": "de",
+  "source_report": "sinusrhythmus normales ekg",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NORM-115",
+  "ecg_id": "115",
+  "selected_code": "NORM",
+  "language": "de",
+  "source_report": "sinusrhythmus normales ekg",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NORM-9",
+  "ecg_id": "9",
+  "selected_code": "NORM",
+  "language": "de",
+  "source_report": "sinusrhythmus normales ekg",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NORM-38",
+  "ecg_id": "38",
+  "selected_code": "NORM",
+  "language": "de",
+  "source_report": "sinusrhythmus schwierig bestimmbare qrs-achse",
+  "source_report_zh": "竇性心律，QRS 電軸難以判定。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NORM-151",
+  "ecg_id": "151",
+  "selected_code": "NORM",
+  "language": "sv",
+  "source_report": "sinus arytmi avvikande qrs(t) fÖrlopp    hÖg lateral myokardskada bÖr ÖvervÄgas",
+  "source_report_zh": "竇性心律不整，QRS(T) 型態異常，應考慮高側壁心肌損傷。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "翻譯忠實，但報告內容與代碼矛盾：報告指出「QRS(T) 型態異常，應考慮高側壁心肌損傷」，而代碼僅有 NORM（正常心電圖）可能性 100，無任何梗塞或 QRS 異常代碼。此類瑞典語「bör övervägas」敘述常為機器判讀建議、經心臟科醫師覆核後改判為正常，但作為 NORM 教學範例時，報告文字仍會誤導學習者，建議人工檢視或更換樣本。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NORM-334",
+  "ecg_id": "334",
+  "selected_code": "NORM",
+  "language": "en",
+  "source_report": "sinus rhythm. no definite pathology.",
+  "source_report_zh": "竇性心律，無明確異常。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NORM-368",
+  "ecg_id": "368",
+  "selected_code": "NORM",
+  "language": "de",
+  "source_report": "sinusrhythmus normales ekg",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ }
+]

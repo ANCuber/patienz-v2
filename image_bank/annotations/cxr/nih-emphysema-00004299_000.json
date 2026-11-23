@@ -1,0 +1,49 @@
+{
+  "id": "nih-emphysema-00004299_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect PA film: apices, full lung fields and both costophrenic angles included; deep inspiration (>10 posterior ribs, hyperinflated), minimal rotation, adequate penetration (vertebral bodies visible through the heart). External 'L' side marker with technologist tag at image upper right confirms conventional orientation (image-left = patient-right).",
+  "target": {
+    "finding": "Pulmonary emphysema: bilateral hyperinflation with increased lucency and attenuated peripheral vascular markings, upper-zone predominant, flattened hemidiaphragms (left more than right) and narrow vertical heart",
+    "visible": "yes",
+    "laterality": "bilateral",
+    "zone": "upper",
+    "size_cm": -1,
+    "confidence": 0.65
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "bilateral",
+    "reader_b": "bilateral",
+    "adjudicator": "bilateral"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "external L side marker with technologist initials (DG)",
+      "location": "image upper right corner, projected over the left shoulder region (external, not on patient)",
+      "zh": "外部左側（L）標記及技師識別標籤（影像右上角，投影於左肩區域）"
+    },
+    {
+      "type": "small linear metallic density (~0.5-0.8 cm), probable surgical clip",
+      "location": "left upper abdomen, medial wall of the gastric fundal air bubble, below the left hemidiaphragm",
+      "zh": "左上腹疑似手術夾（小型線狀金屬密度影，位於左橫膈下胃底氣泡內側壁）"
+    }
+  ],
+  "other_findings": [
+    "雙側肺門突出（右側較顯著），疑為血管性或慢性支氣管炎變化，未見明確腫塊或結節",
+    "雙下肺野及肺門周圍支氣管血管紋理粗糙增加、支氣管壁增厚，呈慢性支氣管炎型態",
+    "右上肺內側少許網狀／線狀纖維條索（疑舊有疤痕），可能伴小型薄壁肺大皰（不確定）",
+    "主動脈弓突出、胸主動脈迂曲延展並向左側彎曲（老年性主動脈迂曲／動脈硬化），氣管居中",
+    "心影狹長垂直，心胸比未增大",
+    "雙側橫膈變平，左側較明顯",
+    "左橫膈下大型胃底氣泡，內含斑駁內容物（疑食物殘渣，偶然發現），無膈下游離氣體",
+    "雙側肩關節（盂肱及肩鎖關節）退化性變化，肩峰肱骨間距變窄（右側較明顯）",
+    "未見肋膜積液、氣胸、實變或急性肋骨骨折"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標的病灶（雙側、以上肺野為主之肺氣腫變化：過度充氣、透亮度增加、血管紋理稀疏、橫膈變平）清楚可見；片上無胸管、引流管、氧氣管路或其他針對此病灶之治療裝置。左上腹疑似手術夾為與胸部無關之陳舊腹部手術痕跡，不影響以慢性呼吸困難初次就診之情境。",
+  "description_zh": "PA 胸部X光，吸氣充分、無明顯旋轉、穿透度適當，影像右上角可見外部 L 側標記及技師識別標籤。雙側肺野過度充氣、透亮度增加，以雙上肺野最為明顯，周邊肺血管紋理稀疏，橫膈變平（左側較明顯），心影狹長垂直、心胸比未增大，整體符合肺氣腫（COPD）之瀰漫性變化，未見明確氣胸或大型肺大皰。雙側肺門突出（右側較顯著），雙下肺野及肺門周圍支氣管血管紋理粗糙增加並有支氣管壁增厚，呈慢性支氣管炎型態，右上肺內側另見少許網狀纖維條索（疑舊有疤痕）；未見實變、腫塊或肋膜積液，雙側肋膈角銳利。主動脈弓突出、胸主動脈迂曲延展，氣管居中。左橫膈下可見大型胃底氣泡，其內側壁見一約 0.5–0.8 cm 之小型線狀金屬密度影（疑為手術夾），雙側肩關節退化性變化；未見胸管、引流管、中心靜脈導管或心律調節器等治療性裝置。",
+  "label_concern": ""
+}

@@ -1,0 +1,87 @@
+{
+ "view": "AP portable frontal chest radiograph (marked \"L\" on image right and \"AP PORTABLE\"); conventional orientation",
+ "technical_quality": "Suboptimal: the patient's chin/head is superimposed on the upper mediastinum and both apices; low lung volumes (poor inspiration), rotation to the right, and AP magnification. Costophrenic angles included but the right one is obscured. No ET tube, NG tube, central line, or pacemaker.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 14,
+ "devices": [
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "right upper/mid chest (right parasternal, ~3rd-4th anterior rib)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "left upper chest, lateral (~2nd-3rd anterior rib)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "right lower chest at the right heart border / above the right hemidiaphragm"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "right lower chest wall / upper abdomen (below the right costophrenic region)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "left lower chest wall / upper abdomen"
+  },
+  {
+   "type": "ECG lead wires (multiple, external)",
+   "location": "crossing the right neck/shoulder, left shoulder, and lower chest"
+  },
+  {
+   "type": "Surgical clips (cluster of ~10 small metallic clips)",
+   "location": "projected over the left upper zone, lateral (prior left thoracic/axillary surgery)"
+  },
+  {
+   "type": "Side marker 'L'",
+   "location": "image right, patient's left, mid zone"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large, well-defined, dome-shaped homogeneous opacity occupying the right lower hemithorax, most consistent with marked elevation of the right hemidiaphragm (eventration / phrenic palsy); subpulmonic effusion or hepatomegaly not excluded. Right costophrenic angle obscured.",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Bilateral perihilar and diffuse interstitial reticular opacities with prominent hila, pulmonary vascular congestion and peribronchial cuffing, consistent with pulmonary edema / vascular congestion",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Enlarged cardiomediastinal silhouette (cardiomegaly, partly exaggerated by AP portable magnification; right heart border obscured by the elevated right hemidiaphragm)",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Widened superior mediastinum with probable unfolded/tortuous aorta; assessment limited by superimposed chin and AP technique",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Bilateral elevation of the hemidiaphragms with low lung volumes (right more than left); gastric/colonic gas beneath the left hemidiaphragm",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cluster of surgical clips projected over the left upper zone indicating prior surgery (thoracic or axillary)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Diffuse osteopenia with degenerative changes of both glenohumeral joints; no acute fracture identified",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Chin and head superimposed on the upper mediastinum and both lung apices, limiting evaluation of the apices and trachea (technical)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "AP 前後位攜帶式胸部 X 光，患者下巴／頭部重疊於上縱膈及雙肺尖，吸氣不足且輕度旋轉，影像品質受限；可見多枚心電圖電極片與導線，左上肺野投影處有一簇手術夾，未見氣管內管、鼻胃管、中央靜脈導管或胸管。右下肺野見一大片邊緣光滑、圓頂狀的均質緻密影（約 14 cm），最符合右側橫膈明顯上抬（膈膨升／膈神經麻痺），惟次肺性肋膜積液或肝腫大無法完全排除，右側肋膈角受遮蔽。雙側肺門周圍及瀰漫性間質網狀模糊影，併肺血管充血及支氣管周圍套袖徵，符合肺水腫／肺血管淤血；心縱膈影增寬（心臟擴大，AP 投影放大效應），雙側橫膈上抬、肺容積低。骨質疏鬆併雙側肩關節退化性變化，未見氣胸或急性骨折。"
+}

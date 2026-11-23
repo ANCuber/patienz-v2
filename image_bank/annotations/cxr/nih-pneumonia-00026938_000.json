@@ -1,0 +1,55 @@
+{
+ "id": "nih-pneumonia-00026938_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "Frontal chest radiograph, recorded PA; an 'L' side marker at the image upper-right corner (patient's left) confirms conventional orientation. Scapulae partly overlap the upper lateral lung fields, so an AP projection cannot be fully excluded.",
+ "technical_quality": "Adequate: inspiration about 9 posterior ribs, trachea midline with minimal rotation, penetration adequate (spine visible through the heart), both apices and costophrenic angles included. Metallic hardware projects over the right shoulder / proximal humerus at the image edge; lateral chest walls partly clipped; upper abdomen partly included.",
+ "target": {
+  "finding": "pneumonia",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "lower",
+  "size_cm": 5,
+  "confidence": 0.55
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Transvenous cardiac pacing lead (single lead); no pulse generator within the field of view (temporary wire or abandoned lead not excluded)",
+   "location": "Enters via the left subclavian vein, courses through the SVC and right atrium into the right ventricle; tip projects at the RV apex over the inferior heart at the level of the left hemidiaphragm, superimposed on the gastric fundus",
+   "zh": "經靜脈心律調節導線（單條，視野內未見脈衝產生器）"
+  },
+  {
+   "type": "Metallic plate with screws (orthopedic fixation plate of the proximal humerus vs external immobilizer hardware)",
+   "location": "Right shoulder / proximal right humerus (image left edge), extending off the image",
+   "zh": "右肩／右肱骨近端金屬骨板與螺釘"
+  },
+  {
+   "type": "Radiographic side marker (L)",
+   "location": "Image upper-right corner, over the left shoulder soft tissues",
+   "zh": "左側（L）放射標記"
+  }
+ ],
+ "other_findings": [
+  "右肺門飽滿，浸潤影由肺門向下內側延伸；肺門腫塊或淋巴結腫大無法完全排除",
+  "右下肺野粗糙網狀結節狀紋理，支氣管血管紋理增加",
+  "胸主動脈迂曲、主動脈弓突出且呈圓形（老年性主動脈擴張，動脈瘤未能排除），上縱膈輪廓略寬",
+  "心影大小在正常範圍（心胸比約0.4–0.45），未見明顯心臟擴大",
+  "兩側肺門血管略為突出",
+  "右側橫膈較左側略高（在正常變異範圍內）",
+  "左下肺野心緣外側有極輕微朦朧密度增加，可疑但不確定（另一位讀片者認為左肺清晰）",
+  "左橫膈下胃泡膨脹並含斑駁食物／糞便樣內容物",
+  "胸椎與肩關節退化性變化",
+  "無氣胸、無明顯肋膜積液，兩側肋膈角銳利"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "右下肺野內側可見與肺炎相符之浸潤影，且無胸管或引流管等治療器材；但視野內有心律調節導線卻未見脈衝產生器（可能為暫時性經靜脈心律調節或廢棄導線，暗示住院中或共病複雜之病人），另有右肱骨金屬固定物，加上右肺門飽滿、腫塊或淋巴結腫大無法排除，作為『首次就診肺炎』之乾淨教學片並不理想。若個案設計納入心律調節器與肱骨手術病史，經人工審核後仍可考慮使用。",
+ "description_zh": "正面胸部X光（記錄為PA，右上角L標記位於病人左側），吸氣度尚可（約9根後肋），氣管居中、無明顯旋轉，心胸比在正常範圍。右側肺門區域及肺門下方、右下肺野內側（右心緣旁、橫膈上方）可見邊緣模糊的片狀浸潤影，核心約2.5×4公分、含條狀延伸約5–6公分，右肺門顯得飽滿並伴粗糙網狀結節狀紋理，以右下肺葉肺炎為優先考量，惟肺門腫塊或淋巴結腫大無法完全排除；左肺大致清晰，僅左下肺野心緣外側有極輕微可疑之密度增加。主動脈弓突出、胸主動脈迂曲擴張，兩側肺門血管略為突出，右側橫膈略高於左側。器材方面，可見一條單一經靜脈心律調節導線自左鎖骨下靜脈進入，經上腔靜脈、右心房進入右心室，末端投影於右心室心尖位置（約在左橫膈高度並與胃底重疊），視野內未見脈衝產生器；右肩／右肱骨近端投影有金屬骨板與螺釘（骨科固定板或體外固定器材），左肩軟組織上方有L放射標記。左橫膈下胃泡膨脹並含斑駁內容物；未見胸管或引流管，無氣胸，兩側肋膈角銳利、無明顯肋膜積液。",
+ "label_concern": "標籤大致合理（右下肺野內側浸潤，兩位讀片者及審核者一致），但此為NLP探勘標籤且右肺門飽滿，肺門腫塊／淋巴結腫大或節段性肺塌陷為鑑別診斷，建議人工確認。"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "nih-consolidation-00003873_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Diagnostic. Digitised paediatric film with slight overall image tilt and a black cassette/collimation bar along the image upper-left edge (outside the patient); rotated L marker at image upper right confirms conventional orientation. Adequate inspiration and penetration; mild patient rotation possible; scapulae partially overlap the upper lateral lung fields. No motion blur.",
+  "target": {
+    "finding": "consolidation",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 7,
+    "confidence": 0.8
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Radiographic side marker (L), external artifact - not an in-patient device",
+      "location": "Image upper-right corner, over the patient's left shoulder soft tissue, outside the lung fields",
+      "zh": "L側標記（外部標記，非體內裝置）"
+    },
+    {
+      "type": "Film/cassette edge artifact (black rectangular bar), external artifact - not an in-patient device",
+      "location": "Image upper-left edge, outside the patient",
+      "zh": "膠片邊緣黑色矩形偽影（外部偽影，非體內裝置）"
+    }
+  ],
+  "other_findings": [
+    "右心緣下段部分模糊（silhouette sign），提示右中葉受累",
+    "右肺門略顯緻密／突出，與實變影相連，無法排除肺門淋巴結腫大",
+    "右側肋膈角及右橫膈輪廓保留，未見體積縮小或空洞",
+    "左肺野清晰，雙側肋膈角銳利，未見肋膜積液或氣胸",
+    "心臟大小及縱膈正常，氣管居中；左橫膈下可見正常胃泡",
+    "骨骼與軟組織未見明顯異常"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標記之右下肺實變在片上清楚可見，且三位判讀者（含盲讀）均獨立於同側同區發現；片上無任何胸管、引流管、導管或植入裝置，亦無術後或治療後變化，符合11歲男童以肺炎首次就診之情境。",
+  "description_zh": "胸部正面X光片（PA，11歲男童），數位化膠片略有傾斜，影像左上緣有黑色片框偽影、右上角有L側標記，吸氣及穿透度足夠。右下肺野內側、緊鄰右心緣處可見片狀、邊緣不清之肺實質浸潤陰影，自右肺門向下延伸至右橫膈上方，範圍約7公分，右心緣下段部分模糊（silhouette sign），符合右中葉／右下葉內側之肺實變，未見體積縮小或空洞；右肺門略顯緻密，與實變影相連。右側肋膈角及橫膈輪廓保留，左肺野清晰，雙側肋膈角銳利，未見肋膜積液或氣胸。心臟大小及縱膈正常，氣管居中，左橫膈下可見胃泡，骨骼與軟組織無明顯異常。未見任何導管、引流管、導線或體內裝置。",
+  "label_concern": ""
+}

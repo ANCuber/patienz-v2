@@ -1,0 +1,39 @@
+{
+ "id": "nih-nodule-00013674_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate: PA frontal projection with L marker at image upper right (conventional orientation), good inspiration (about 9-10 posterior ribs), no significant rotation, adequate penetration (vertebral bodies visible through the heart), scapulae partly projected over the upper lateral lung fields; both apices and both costophrenic angles included.",
+ "target": {
+  "finding": "pulmonary nodule",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "upper",
+  "size_cm": 1.0,
+  "confidence": 0.6
+ },
+ "laterality_sources": {
+  "bbox": "right",
+  "reader_a": "left",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "partial",
+ "devices": [],
+ "other_findings": [
+  "左肺門旁（左上葉支氣管環狀影上方、主動脈弓下方）約 0.6 cm 圓形小密度，較可能為端面血管影而非真正結節",
+  "右下肺野內側近肺門處約 0.4 cm 邊緣清楚之小圓形緻密影，考慮端面血管或微小肉芽腫",
+  "兩側肺門周圍及左中肺野可見數個 2–3 mm 點狀密度，符合端面血管或微小鈣化肉芽腫",
+  "左肺門較右側略顯飽滿，較可能為正常血管影，無明確肺門腫大",
+  "主動脈弓略為突出／延展，符合年齡相關變化；縱膈無變寬，氣管居中",
+  "心影大小正常（CTR 約 0.45）",
+  "兩側肋膈角銳利，無肋膜積液或氣胸",
+  "左橫膈下可見胃泡",
+  "肩胛骨部分重疊於兩側上肺野外側；骨骼及軟組織無明顯異常",
+  "影像右上角可見 L 側別標記（含技師縮寫），為攝影標記而非病人身上之裝置"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "放射科醫師框選處（右上肺野外側、第3前肋與後肋交會處）於放大及局部對比強化後可辨識一約 1 cm 之淡薄、邊緣不清之圓形結節影，位置與框選中心一致；片上無任何胸管、引流管或其他治療裝置，亦無手術痕跡或其他與初次就診相矛盾之表現，適合作為初次發現肺結節之案例。惟該結節相當細微且部分被肋骨重疊遮蔽，兩位獨立判讀者皆未察覺，用於教學時宜提示為「細微／易漏診之結節」。",
+ "description_zh": "PA 正面胸部X光，吸氣充分、無明顯旋轉、曝光適當，影像右上角可見 L 側別標記，未見任何導管、引流管、心律調節器或其他植入物。右上肺野外側（約第3前肋與後肋交會處、鎖骨下方）可見一約 1 cm 之淡薄、邊緣不清之圓形結節影，部分被肋骨重疊遮蔽，需仔細觀察方能辨識；其餘兩側肺野大致清晰，僅於左肺門旁（左上葉支氣管環狀影上方）及右下肺野內側近肺門處各見一約 0.4–0.6 cm 之小圓形密度，並於兩側肺門周圍散在數個 2–3 mm 點狀密度，多考慮為端面血管或微小鈣化肉芽腫。心影大小正常（CTR 約 0.45），主動脈弓略為突出／延展（年齡相關），縱膈無變寬，氣管居中，左肺門略顯飽滿但無明確腫大。兩側肋膈角銳利，無肋膜積液或氣胸，左橫膈下可見胃泡，骨骼及軟組織無明顯異常。",
+ "label_concern": ""
+}

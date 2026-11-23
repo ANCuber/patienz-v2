@@ -1,0 +1,73 @@
+{
+ "view": "AP portable (marked \"AP PORTABLE\", L marker on image right), pediatric frontal chest",
+ "technical_quality": "Portable AP film with marked tilt/rotation of the image (film obliquely oriented), adequate penetration, moderate inspiration; arms down; overlying ECG electrodes and wires degrade evaluation of the lung bases",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": 10,
+ "devices": [
+  {
+   "type": "Tracheostomy tube (round flange seen en face, cannula projecting over the trachea)",
+   "location": "Midline neck / upper mediastinum, tip around the thoracic inlet"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Right upper chest / right shoulder region (image left)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Right lower lateral chest (image left, near right costophrenic region)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Left mid chest, over left mid zone (image right)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Left lower lateral chest near left hemidiaphragm (image right)"
+  },
+  {
+   "type": "Linear tubular density, possible central venous catheter vs external lead wire (uncertain)",
+   "location": "From right neck/shoulder coursing medially and descending along the right mediastinal border"
+  },
+  {
+   "type": "Small rectangular radiopaque snap/clip (external artifact, e.g. tracheostomy tie fastener or clothing snap)",
+   "location": "Left base of neck / left supraclavicular region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy reticular and airspace opacity (infiltrate), most conspicuous, with partial obscuration of the hemidiaphragm",
+   "laterality": "right",
+   "zone": "middle and lower"
+  },
+  {
+   "finding": "Perihilar and basal hazy infiltrate, less dense than the right side",
+   "laterality": "left",
+   "zone": "lower (extending to middle)"
+  },
+  {
+   "finding": "Prominent/enlarged cardiomediastinal silhouette (likely exaggerated by AP projection and rotation; possible cardiomegaly)",
+   "laterality": "bilateral",
+   "zone": "middle-lower (mediastinum)"
+  },
+  {
+   "finding": "Bilateral hilar prominence",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Possible small right pleural effusion / blunted right costophrenic angle (uncertain, obscured by electrode)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Gracile, osteopenic-appearing long bones and ribs suggesting chronic illness",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "AP portable 胸部X光，影像明顯傾斜旋轉，可見氣切管位於中線頸部並向下延伸至氣管入口。雙側中下肺野可見斑片狀、網狀之浸潤性混濁，以右側中下肺野較為明顯，右側橫膈邊緣部分模糊；左側肺門周圍及左下肺野亦有較淡之浸潤。心縱膈影於AP投照及旋轉下顯得偏大，雙側肺門略為突出。胸壁有多個心電圖電極及導線，右頸/肩部另見一線狀影沿右側縱膈緣下行（中央靜脈導管或導線不確定），未見胸管或肋膜引流管。"
+}

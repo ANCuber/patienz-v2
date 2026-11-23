@@ -1,0 +1,54 @@
+{
+  "id": "nih-pneumothorax-00002176_005",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA（直立正面）。常規方位由解剖構造確認（右橫膈較高、心尖與主動脈弓在左、胃泡在左橫膈下）；右肩處之 R 側標記字樣呈鏡像，為鉛字標記放置反向所致，非影像左右翻轉。",
+  "technical_quality": "尚可：吸氣深度足夠（約 9 後肋），曝光適當（脊椎可透過心影辨識），無明顯旋轉。兩側肩胛骨部分重疊上外側肺野；雙側大面積乳房陰影遮蔽下肺野並部分遮蔽右側肋膈角，影響肺底評估。",
+  "target": {
+    "finding": "pneumothorax",
+    "visible": "no",
+    "laterality": "right",
+    "zone": "upper",
+    "size_cm": -1,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "right, upper zone (box 187x156 px at x 260-447 / y 89-245 of the 1024 px image: right apex, lateral to and above the drain tip)",
+    "reader_a": "right (label-aware); zone uncertain; no visceral pleural line seen; inferred a treated right pneumothorax from the drain",
+    "reader_b": "not identified (blind read found no pneumothorax and read the line as an external lead)",
+    "adjudicator": "right, upper zone, per bbox and apical drain-tip position; no visceral pleural line demonstrable in the boxed region on this film"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "Right small-bore pleural drainage catheter (chest drain): uniform ~1 mm radiopaque stripe with a straight tapered tip and no electrode/snap, and a crisp ~8-10 mm collinear break in the stripe at hilar level about 8 cm from the tip (sentinel-eye marker); this favours a chest drain over an ECG/monitoring lead, although a single view cannot exclude an overlying external line with absolute certainty",
+      "location": "Enters at the right lower lateral chest wall near the costophrenic angle level, courses superomedially across the right lower and middle zones and the right hilum, tip at the medial right apex / right paratracheal region at about T3-T4; the external segment continues over the right breast and right flank and leaves the image at the lower-left corner",
+      "zh": "右側肋膜引流管（細口徑胸管），末端位於右肺尖內側／右氣管旁約 T3–T4，肺門高度可見側孔標記中斷"
+    },
+    {
+      "type": "Lead side marker 'R' with technologist initials (JFC), lettering mirror-imaged (marker placed backwards)",
+      "location": "Right shoulder region (image upper left), over the acromioclavicular area",
+      "zh": "R 側標記（含技術員縮寫，字樣鏡像）"
+    },
+    {
+      "type": "One short (~1.5 cm) vertical linear metallic density plus one punctate metallic density, external artifact (skin clip/staple-like), indeterminate",
+      "location": "Right flank / right lateral upper abdominal wall soft tissue, below the right costal margin, lateral to the rib cage",
+      "zh": "右側腰部皮下短線狀及點狀金屬影（體外物）"
+    }
+  ],
+  "other_findings": [
+    "右上肺野（放射科標註框處）及兩側肺野皆未見明確臟層肋膜線，肺紋理延伸至胸壁；本片無法辨識明確殘餘氣胸",
+    "雙側大面積乳房陰影遮蔽下肺野，並部分遮蔽右側肋膈角",
+    "兩側肩胛骨部分重疊上外側肺野",
+    "主動脈弓輕度突出／伸展，與年齡相符",
+    "右側橫膈略高於左側（約 2 公分），右下肺野血管紋理略為擁擠，屬正常變異範圍上緣",
+    "右肺門陰影稍顯緻密，為血管與引流管重疊所致，未見明確腫塊",
+    "心臟大小正常（CTR < 0.5），氣管與縱膈居中，無縱膈偏移",
+    "未見肺實變、肋膜積液或肺水腫；兩側肋膈角銳利；未見肋骨骨折",
+    "左橫膈下可見胃泡氣體"
+  ],
+  "treatment_evidence": true,
+  "first_presentation_suitable": false,
+  "suitability_reason": "右側胸腔已有肋膜引流管（胸管）在位、末端位於右肺尖內側，屬引流治療後之影像；且標註之右側氣胸於本片無法辨識（右上肺野未見臟層肋膜線），既有治療器材又無法示範病灶，不適合作為氣胸初次就診之教學影像。",
+  "description_zh": "PA 直立胸部X光，吸氣與曝光尚可、無明顯旋轉，右肩處之 R 側標記字樣呈鏡像（為標記放置反向，解剖構造證實為常規方位），兩側肩胛骨部分重疊上肺野，雙側大面積乳房陰影遮蔽下肺野並部分遮蔽右側肋膈角。右側胸腔可見一條細長（約 1 mm）不透射線線影，自右下側胸壁進入，斜向上內穿越右下與中肺野及右肺門，於肺門高度有約 8–10 mm 的線影中斷（側孔標記），末端呈尖細狀止於右肺尖內側／右氣管旁約 T3–T4 高度，型態與位置符合右側細口徑肋膜引流管（胸管），體外段延續於右乳房與右側腹壁外緣至影像左下角。兩側肺紋理皆延伸至胸壁，右上肺野（放射科標註框位置，右肺尖外側）未見明確臟層肋膜線，本片無法辨識明確殘餘氣胸（大小無法估計）；未見肺實變、肋膜積液或肺水腫，兩側肋膈角銳利。心臟大小正常、氣管與縱膈居中，主動脈弓稍顯突出（與年齡相符），右側橫膈略高於左側約 2 公分，右肺門陰影稍顯緻密（血管與引流管重疊）。右側腰部皮下另見一短線狀及一點狀金屬密度影，疑為體外物。",
+  "label_concern": "放射科標註框位於右上肺野（右肺尖外側），但三位判讀者皆未見明確臟層肋膜線；右側胸管在位，本片可能為引流後已復張或僅殘餘微量氣胸。『氣胸』標籤於本片無法直接示範，建議不作為氣胸初次表現之教學影像。"
+}

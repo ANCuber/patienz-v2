@@ -1,0 +1,45 @@
+{
+ "view": "PA (recorded); frontal chest radiograph of a child with arms abducted, L marker on image right confirming conventional orientation",
+ "technical_quality": "Adequate penetration; no significant rotation (medial clavicle ends roughly equidistant from the spinous processes). Inspiration slightly shallow (about 6 anterior ribs above the right hemidiaphragm), which may mildly exaggerate cardiac size. Mandible and teeth project above the thoracic inlet without obscuring the apices. Field is collimated with unexposed (white) borders laterally and superiorly; earrings were not removed. Small dark rectangular strip at the far upper-left image corner is a film/scan edge artifact.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 19,
+ "devices": [
+  {
+   "type": "Metallic earring (lever-back / hoop type)",
+   "location": "Patient's right ear lobe, projected over the right upper neck / mandibular angle region, outside the thorax (image upper left)"
+  },
+  {
+   "type": "Metallic earring (lever-back / hoop type)",
+   "location": "Patient's left ear lobe, projected over the left upper neck / mandibular angle region, outside the thorax (image upper right)"
+  },
+  {
+   "type": "Laterality side marker 'L' with technologist initials 'DG'",
+   "location": "Patient's left, upper corner of the exposed field, outside the body (image upper right)"
+  },
+  {
+   "type": "Circular radiopaque marker disc (part of the marker set)",
+   "location": "Immediately above the L marker, patient's left upper corner of the field, outside the body"
+  },
+  {
+   "type": "Collimation / unexposed film borders (external artifact)",
+   "location": "Both lateral edges and the superior edge of the image; dark rectangular strip at far upper-left image corner"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Cardiomegaly: globular enlarged cardiac silhouette, transverse cardiac diameter ~330 px vs inner thoracic width ~615 px (CTR ~0.54, abnormal for age 7), left heart border bulging toward the left lower chest wall; no pulmonary edema or effusion",
+   "laterality": "bilateral (central, left-predominant)",
+   "zone": "lower (extending into middle zone)"
+  },
+  {
+   "finding": "Mildly prominent / widened superior mediastinal contour, likely positional (shallow inspiration, AP-like projection) or residual thymus; uncertain significance",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "7 歲女童正面胸部 X 光（記錄為 PA），雙臂外展，吸氣稍淺，無明顯旋轉。心影呈球狀擴大，最大橫徑以胸廓寬 35 cm 推估約 19 cm，心胸比約 0.54，左心緣向左下方膨出，主要位於中下肺野中央並偏向左側；上縱膈輪廓亦略寬，可能與吸氣不足或投照角度有關。雙側肺野清晰，未見實質浸潤、肺水腫或肋膜積液，雙側肋膈角銳利，氣管居中，骨骼結構無明顯異常。雙側耳垂各見一金屬耳環，影像右上角（病人左側）可見 L 側標記（DG）及一圓形不透光標記盤，未見任何導管、引流管、胸管或心律調節器，無已接受治療之證據。"
+}

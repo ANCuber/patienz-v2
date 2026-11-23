@@ -1,0 +1,34 @@
+{
+ "view": "PA (frontal, erect); \"L\" side marker at image upper right confirms conventional orientation (patient's right on image left)",
+ "technical_quality": "Adequate. Good inspiration (about 9-10 posterior ribs visible), no significant rotation (medial clavicular ends roughly symmetric about the spinous processes), penetration adequate (thoracic spine visible through the cardiac shadow). Scapular medial borders project over the lateral upper lung fields bilaterally, which slightly limits assessment of the lateral upper zones. Costophrenic angles and both hemidiaphragms are fully included.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "External radiographic side marker (\"L\" with technologist initials \"DG\") - not a patient device",
+   "location": "Image upper right corner, over the patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined, hazy reticulonodular / patchy opacity in the right perihilar region extending into the middle zone, with the right hilum appearing more prominent and denser than the left; roughly 5 cm in extent. This is the most likely correlate of the 'infiltration' label. No air bronchogram or lobar consolidation is evident.",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, somewhat tortuous/unfolded aortic knob (age-related unfolding of the thoracic aorta); no definite mediastinal widening.",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Relatively lucent lung fields with a narrow, vertical cardiac silhouette and an elongated thorax, suggesting possible mild hyperinflation; diaphragms are still dome-shaped so this is a soft finding.",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "胸部正位（PA）X光片，吸氣程度適當，無明顯旋轉，僅兩側肩胛骨內緣略投影於上外側肺野。右側肺門周圍至右中肺野可見邊界不清之網狀結節樣斑片狀浸潤影，範圍約5公分，右肺門較左側顯得突出且密度增加；左肺野相對清晰，未見明顯實質病灶。心臟大小正常但呈狹長垂直型，主動脈弓略顯突出迂曲（與年齡相符），兩側肺野相對透亮、疑有輕度過度充氣。兩側橫膈輪廓平滑、肋膈角銳利，未見肋膜積液或氣胸；影像上未見任何導管、導線、引流管或植入裝置，僅右上角有「L」側別標記。"
+}

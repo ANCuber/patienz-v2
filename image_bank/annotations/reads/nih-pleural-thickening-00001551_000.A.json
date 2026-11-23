@@ -1,0 +1,28 @@
+{
+ "view": "PA (frontal, upright); L side marker plate at the upper right of the image confirms conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate. Pediatric (12 y) frontal film, good inspiration (about 8-9 posterior ribs), minimal rotation, adequate penetration, both apices and both costophrenic angles included; film is slightly tilted/cropped at the bottom edge but no diagnostic area is cut off.",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External artifact: metallic snap fastener / press-stud (clothing or gown), ring-shaped with lucent centre, approx 1.5 cm",
+   "location": "Projected over the lateral left mid zone (patient's left, image right) at about the anterior 4th-5th rib level, outside the lung parenchyma"
+  },
+  {
+   "type": "Radiographic side marker plate with lead 'L' letter",
+   "location": "Upper right corner of the image, over the patient's left shoulder soft tissues (external)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Subtle rounding/blunting of the lateral costophrenic angle with a faint thin soft-tissue stripe along the inner lateral lower chest wall; possible minimal pleural thickening, but not conclusive and could be normal chest-wall soft tissue",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.35,
+ "description_zh": "胸部正面（PA）X光，吸氣充分、旋轉輕微。雙側肺野清晰，肺尖無明顯胸膜帽狀增厚，心臟大小及縱膈輪廓在正常範圍，氣管居中，橫膈下腸氣為正常分布。左側外側肋膈角略呈鈍化，沿左下側胸壁內緣隱約可見一薄層軟組織密度帶，疑似輕微胸膜增厚，但影像上並不明確，需與正常胸壁軟組織鑑別；右側肋膈角銳利。左側中肺野外側投影一環狀金屬異物（衣物按扣），為體外偽影；未見胸管、引流管或其他治療痕跡。"
+}

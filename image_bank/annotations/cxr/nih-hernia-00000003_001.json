@@ -1,0 +1,49 @@
+{
+  "id": "nih-hernia-00000003_001",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect PA film; L marker in image upper-right corner confirms conventional orientation; good inspiration (about 9 posterior ribs), adequate penetration (spine visible behind heart), no significant rotation; right shoulder abducted with right humeral head and scapula overlapping the right upper lateral chest wall; costophrenic angles included.",
+  "target": {
+    "finding": "diaphragmatic hernia (hiatal hernia)",
+    "visible": "uncertain",
+    "laterality": "left",
+    "zone": "lower",
+    "size_cm": 2,
+    "confidence": 0.35
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "left",
+    "reader_b": "none",
+    "adjudicator": "left"
+  },
+  "agreement": "conflict",
+  "devices": [
+    {
+      "type": "surgical clips (approx. 12, curvilinear chain)",
+      "location": "right axilla / right upper lateral chest wall, projecting over and lateral to the right upper zone at the level of the 2nd-4th ribs (prior axillary lymph node dissection)",
+      "zh": "右腋下金屬手術夾（約12枚，弧形排列）"
+    },
+    {
+      "type": "external side marker 'L'",
+      "location": "image upper-right corner, over the patient's left shoulder",
+      "zh": "外置左側標記（L）"
+    },
+    {
+      "type": "external technologist label '8H'",
+      "location": "image upper-right corner, below the L marker",
+      "zh": "外置技師註記標籤（8H）"
+    }
+  ],
+  "other_findings": [
+    "右側乳房陰影消失，右側胸腔（尤以下胸部）透亮度較左側增加，符合右側乳房切除術後變化",
+    "右腋下及右上外側胸壁約12枚金屬手術夾呈弧形排列，符合腋下淋巴結廓清術後",
+    "胸主動脈迂曲、主動脈弓突出，屬年齡相關變化（可能伴輕微弓部鈣化）",
+    "右肩外展，右側肱骨頭及肩胛骨部分重疊於右上胸壁（體位性，非病灶）"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標記之橫膈疝氣（食道裂孔疝氣）在本片上僅為心影後方左橫膈內側一處約2公分之不明確小透亮區，未見典型心後方含氣液平面之腫塊；盲讀者判定為橫膈下正常胃泡，無法確認病灶存在。此外影像另有右側乳房切除及腋下淋巴結廓清術後變化，需於病史中一併交代。故不適合作為該診斷之初次就診影像。",
+  "description_zh": "站立後前位胸部X光，L標記位於影像右上角，投照方位正常，吸氣程度與曝光尚可，無明顯旋轉；右肩外展，右側肱骨頭與肩胛骨部分重疊於右上胸壁。右側腋下及右上外側胸壁可見約12枚金屬手術夾呈弧形排列，右側乳房陰影消失、右側胸腔（尤以下胸部）透亮度較左側增加，符合右側乳房切除併腋下淋巴結廓清術後變化；未見胸管、引流管或其他導管。心影後方、左側脊柱旁靠近左橫膈內側處可見一約2公分之小型含氣透亮區，疑似小型食道裂孔疝氣，惟影像上並不明確，無法與橫膈下之正常胃底氣體區分，且未見明確之心後方軟組織腫塊或氣液平面。胸主動脈迂曲、主動脈弓突出，屬年齡相關變化；心臟大小正常，氣管居中。雙肺野清晰，未見實質化、結節或氣胸，兩側肋膈角銳利，無肋膜積液，骨骼未見急性異常。",
+  "label_concern": "NLP標籤「橫膈疝氣」在此PA片上未能確認：心後方左橫膈內側僅見一約2公分之不明確小透亮區，可能為橫膈下正常胃底氣體，未見典型心後方含氣液平面之腫塊；盲讀者（Reader B）未發現疝氣，且無放射科醫師標記框。需側面片或CT佐證，建議此片勿作為疝氣之教學範例。"
+}

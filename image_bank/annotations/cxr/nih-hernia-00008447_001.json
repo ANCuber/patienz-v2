@@ -1,0 +1,28 @@
+{
+ "id": "nih-hernia-00008447_001",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate: erect PA frontal film, good inspiration (~9 posterior ribs), no significant rotation (medial clavicles symmetric about the spinous processes), adequate penetration (thoracic spine visible through the cardiac shadow). Scapulae partly project over the upper lateral chest; bilateral breast shadows overlie the lower zones; whole thorax and both costophrenic angles included. Lead 'L' side marker with technologist initials at image top right (patient's left), outside the thorax.",
+ "target": {
+  "finding": "diaphragmatic hernia",
+  "visible": "no",
+  "laterality": "none",
+  "zone": "none",
+  "size_cm": -1,
+  "confidence": 0.7
+ },
+ "laterality_sources": {
+  "bbox": "n/a",
+  "reader_a": "none",
+  "reader_b": "none",
+  "adjudicator": "none"
+ },
+ "agreement": "full",
+ "devices": [],
+ "other_findings": [],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "本片標記為橫膈疝氣，但兩位判讀者（含未被告知標籤的盲讀者）與仲裁者皆未在片中辨識出食道裂孔疝氣或其他橫膈疝氣的徵象：無心後方氣液面、無心後軟組織腫塊、無橫膈上方之腸胃道氣體影，兩側橫膈輪廓平滑且胃泡位置正常，整體判讀為正常胸部X光。片中雖無任何治療裝置，但因標記病灶不可見，不適合作為「橫膈疝氣」初次就診的教學影像；若人工核對後改歸類為正常片，則可作為正常對照片使用。",
+ "description_zh": "站立正面 PA 胸部X光，16 歲女性，吸氣深度足夠、無明顯旋轉、穿透度適中，兩側肩胛骨部分重疊於上外側胸廓，兩側乳房陰影重疊於下肺野，屬正常軟組織影。雙側肺野各區清晰，未見實質浸潤、結節、氣胸或肋膜積液，雙側肋膈角銳利。心臟大小正常，縱膈與氣管居中且未增寬，肺門形態正常；雙側橫膈輪廓平滑、高度相近，左橫膈下可見位置正常的胃泡，胃泡與左肺底間軟組織厚度正常，心臟後方未見氣液面、軟組織腫塊或橫膈上方之腸胃道氣體影，故資料庫標記之橫膈疝氣於本片無法辨識（無側別、無可量測大小）。骨骼未見骨折或破壞性病灶。影像右上角（病人左側）僅見「L」側別鉛字標記，未見任何管路、導線、引流管或植入物，無治療證據。",
+ "label_concern": "標記之橫膈疝氣於本片不可見：無心後方氣液面、心後腫塊或橫膈上方腸胃道氣體影，兩位判讀者（含盲讀）皆判為正常胸部X光。此標籤為 NLP 自報告擷取，無放射科醫師框選，可能為報告中提及但正面片不顯影的小型食道裂孔疝氣，或為擷取錯誤；建議人工核對原始報告，或改歸類為正常片。"
+}

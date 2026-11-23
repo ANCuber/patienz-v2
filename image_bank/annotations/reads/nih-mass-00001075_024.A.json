@@ -1,0 +1,39 @@
+{
+ "view": "PA (frontal; \"L\" marker at image upper right confirms conventional orientation)",
+ "technical_quality": "Adequate inspiration, no significant rotation, adequate penetration; both costophrenic angles included; mildly under-penetrated upper abdomen.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 3.5,
+ "devices": [
+  {
+   "type": "L side marker (external, radiographic)",
+   "location": "image upper right corner, patient's left"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined round nodular opacity abutting the right heart border, infrahilar/medial lower zone, ~3-4 cm (labelled mass)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Elevated right hemidiaphragm relative to the left, smooth contour",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent hila bilaterally (vascular vs. adenopathy, indeterminate)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Large, dense upper abdomen with bilateral diaphragmatic elevation (body habitus / hepatomegaly not excluded); normal gastric fundus gas on the left",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "PA 正面胸部X光，吸氣尚可，無明顯旋轉，右上角可見「L」側別標記。右肺下野內側、右肺門下方緊鄰右心緣處可見一邊界略模糊之圓形結節狀陰影，直徑約3–4公分，符合標示之肺部腫塊。右側橫膈較左側抬高，雙側肺門略顯突出；心臟大小正常，氣管居中，未見肋膜積液或氣胸。未見任何導管、引流管、心律調節器或手術夾等治療痕跡。"
+}

@@ -1,0 +1,43 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film; left \"L\" lead marker with technologist initials at the image upper right confirms conventional orientation. Good inspiration, mild rotation not significant, penetration adequate (vertebral bodies visible through the heart). Both costophrenic angles and apices included.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "Nipple marker (small round metallic BB), bilateral",
+   "location": "Bilateral lower zones, laterally, at roughly the same level (patient right ~5th anterior rib level, patient left slightly higher) - projected over the lung fields, external skin markers"
+  },
+  {
+   "type": "External lead side marker ('L' with technologist initials and round marker)",
+   "location": "Image upper right, over the patient's left shoulder / axillary region, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Blunted left costophrenic angle with a band of soft-tissue density along the lower lateral pleura - pleural thickening (small effusion not fully excluded)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild pleural thickening / apical capping at both lung apices",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Subtle band of density along the right lower lateral pleural surface - possible mild pleural thickening; right costophrenic angle remains sharp",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded aortic knob / tortuous thoracic aorta (age-related), trachea midline, heart size within normal limits",
+   "laterality": "none",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部X光正面(PA)片,兩側可見對稱之小圓形金屬密度乳頭標記,影像右上方有「L」側別鉛字,方向為常規擺位。左側肋膈角變鈍,左下外側胸壁沿肋膜可見帶狀軟組織密度,長度約4公分,符合肋膜增厚(不完全排除少量肋膜積液);兩側肺尖有輕度肋膜頂增厚,右下外側肋膜亦有可疑之輕微增厚,但右側肋膈角仍銳利。主動脈弓突出、胸主動脈迂曲,氣管居中,心臟大小正常,肺野未見明確結節或實質病灶。未見胸管、引流管或其他治療痕跡。"
+}

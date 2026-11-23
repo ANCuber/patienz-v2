@@ -1,0 +1,66 @@
+{
+ "id": "nih-pleural-thickening-00000322_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "PA film; L side marker with 'DG' tag at image top-right over the patient's left shoulder confirms conventional orientation. Adequate inspiration on the left (about 8-9 posterior ribs), minimal rotation, adequate penetration (thoracic spine visible through the mediastinum); scapulae project over the upper lateral lung fields and the lower thorax is slightly underpenetrated. Right lung volume is reduced with an elevated right hemidiaphragm.",
+ "target": {
+  "finding": "pleural thickening",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "lower",
+  "size_cm": 6,
+  "confidence": 0.8
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Median sternotomy wires (approximately 7, including a double-loop wire at the manubrial level)",
+   "location": "Midline over the sternum, projected over the upper-mid thoracic spine",
+   "zh": "胸骨正中切開術鋼絲（約 7 條，胸骨柄處有一雙環形鋼絲）"
+  },
+  {
+   "type": "Surgical staple lines from pulmonary resection (multiple, small-loop 'zipper' appearance)",
+   "location": "Right lung: a long curvilinear line from the right upper zone laterally down the lateral chest wall into the lower zone, an oblique line in the mid zone toward the hilum, and further lines in the lower zone along the lateral costal margin and near the right heart border",
+   "zh": "右肺多條手術釘合線（肺切除術後）"
+  },
+  {
+   "type": "Surgical vascular clips (cluster of about 5 short straight clips)",
+   "location": "Right hilum",
+   "zh": "右肺門血管夾（約 5 枚）"
+  },
+  {
+   "type": "Three short straight linear metallic densities (surgical clips or skin staples)",
+   "location": "Right upper lateral chest wall soft tissue near the axilla, outside the rib cage",
+   "zh": "右上側胸壁軟組織三枚線狀金屬夾／皮膚釘"
+  },
+  {
+   "type": "Tiny irregular metallic-density speck of uncertain significance (probable film artifact)",
+   "location": "Left costophrenic angle, lateral",
+   "zh": "左肋膈角微小金屬密度點（疑為偽影）"
+  },
+  {
+   "type": "Radiographic side marker 'L' with 'DG' tag",
+   "location": "Image top-right, over the patient's left shoulder",
+   "zh": "L 側標記"
+  }
+ ],
+ "other_findings": [
+  "右肺容積減少、右橫膈上抬（較左側高約 3–4 公分），符合右肺切除術後變化",
+  "右下肺區橫膈上方及內側輕度模糊增高密度，可能為術後變化或少量肋膜積液",
+  "胸骨正中切開術鋼絲、右肺多條手術釘合線及右肺門血管夾，顯示曾接受胸骨正中切開及右肺切除手術",
+  "右上側胸壁軟組織三枚線狀金屬夾／皮膚釘",
+  "心臟大小正常（心胸比約 0.35），縱膈與氣管居中",
+  "左肺清晰、左肋膈角銳利，未見氣胸、胸管或引流管"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標的右下肺區胸膜增厚清楚可見且無胸管或引流管，但影像同時顯示胸骨正中切開術鋼絲、右肺多條手術釘合線及肺門血管夾等明顯右肺切除術後變化，且右肺容積減少、右橫膈上抬，胸膜增厚極可能為術後所致；除非病例設定包含相符的胸腔手術史，否則不適合作為首次以胸膜增厚就診的病例。",
+ "description_zh": "PA 正面胸部X光，影像右上方可見 L 側標記，吸氣與曝光尚可，無明顯旋轉。中線可見胸骨正中切開術鋼絲約 7 條（胸骨柄處有一雙環形鋼絲），右肺上、中、下區可見多條環扣狀手術釘合線（一條自右上肺野外側沿側胸壁彎向下方至右下肺野，另有中肺區斜向肺門及下肺區沿肋緣與右心緣的釘合線），右肺門並有約 5 枚血管夾，右上側胸壁軟組織另見三枚線狀金屬夾，顯示曾接受右肺切除手術。右下肺區外側沿側胸壁可見厚約 1 公分、縱向約 6 公分的帶狀軟組織密度，肺緣向內移位並伴右肋膈角變鈍，符合右側下肺區胸膜增厚；右肺容積減少、右橫膈較左側上抬約 3–4 公分，橫膈上方有輕度模糊增高密度，可能為術後變化或少量肋膜積液。心臟大小正常（心胸比約 0.35）、縱膈與氣管居中，左肺清晰、左肋膈角銳利（僅有一微小金屬密度點，疑為偽影），未見氣胸、胸管或引流管。",
+ "label_concern": ""
+}

@@ -1,0 +1,60 @@
+{
+ "view": "PA erect frontal chest radiograph; \"L\" side marker (with technologist initials) in the image upper-right corner confirms conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate: good inspiration (about 10 posterior ribs), no significant rotation (clavicles roughly symmetric about the spinous processes), adequate penetration (vertebral bodies visible through the heart), apices and both costophrenic angles included. Both scapulae are only partly abducted and overlap the lateral upper lung fields. Small metallic clips at the inferior film edge are partly cut off.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External L side marker with technologist initials",
+   "location": "Image upper-right corner (patient's left), outside the body"
+  },
+  {
+   "type": "Small linear metallic density (~0.4 cm), probable surgical clip vs external artifact",
+   "location": "Left upper zone, projected over the left upper lung field near the anterior 2nd rib"
+  },
+  {
+   "type": "Small linear metallic density (~0.4 cm), probable surgical clip vs external artifact",
+   "location": "Left axilla / lateral upper chest wall soft tissues, lateral to the ribs"
+  },
+  {
+   "type": "Small curvilinear metallic surgical clips (2-3), likely cholecystectomy clips",
+   "location": "Right upper quadrant of abdomen below the right hemidiaphragm, at the inferior film edge"
+  },
+  {
+   "type": "Small curvilinear metallic clip-like densities (2), surgical clips vs external artifact",
+   "location": "Left upper quadrant of abdomen below the left hemidiaphragm, at the inferior film edge"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Tortuous, ectatic (unfolded) thoracic aorta with prominent aortic knob and rim calcification of the arch; age-related, trachea midline, heart size normal (CTR ~0.40)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly prominent bronchovascular / interstitial markings in the perihilar and lower zones without focal consolidation, nodule, effusion or pneumothorax; costophrenic angles sharp",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative change of both glenohumeral joints; right humeral head appears slightly high-riding under the acromion",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Gastric fundus containing food/debris and colonic gas with fecal material under the left hemidiaphragm; left hemidiaphragm at about the same level as the right (incidental)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Scapulae partially projected over the lateral upper lung fields (positioning, not pathology)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.9,
+ "description_zh": "PA 正面胸部X光，影像右上角可見 L 側別標記，吸氣充足、無明顯旋轉，雙側肩胛骨部分重疊於上外側肺野。雙肺野清晰，未見實質病灶、結節、肋膜積液或氣胸，雙側肋膈角銳利，僅雙側肺門周圍及下肺野支氣管血管紋理略為增加；心臟大小正常（CTR 約 0.40），胸主動脈迂曲擴張並見主動脈弓邊緣鈣化，符合年齡相關變化，氣管居中。左上肺野及左腋下各見一枚細小線狀金屬密度（疑為手術夾或外在異物），影像下緣右上腹見數枚小型弧形金屬夾（疑為膽囊切除術夾），左上腹亦見類似小金屬影，性質不確定。左橫膈下可見含食物殘渣之胃泡及帶糞便之結腸氣體，雙側肩關節退化性變化；整體無急性心肺病變，無胸管或引流管等治療證據。"
+}

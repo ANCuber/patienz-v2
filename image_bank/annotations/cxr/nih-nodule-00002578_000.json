@@ -1,0 +1,51 @@
+{
+  "id": "nih-nodule-00002578_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect frontal (PA) film: good inspiration (about 9-10 posterior ribs), minimal rotation, adequate penetration (vertebral bodies and left hemidiaphragm visible through the heart). Collimation is generous (neck, mandible and skull base included); scapulae partly overlie the lateral upper zones and bilateral breast shadows overlie the lower zones, slightly reducing conspicuity there. A black rectangular collimation/blanking bar lies along the left image edge outside the thorax.",
+  "target": {
+    "finding": "pulmonary nodule",
+    "visible": "uncertain",
+    "laterality": "left",
+    "zone": "upper",
+    "size_cm": 1.0,
+    "confidence": 0.4
+  },
+  "laterality_sources": {
+    "bbox": "left",
+    "reader_a": "left",
+    "reader_b": "left",
+    "adjudicator": "left"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "External side marker (L, with SC text)",
+      "location": "Upper right corner of the image, outside the patient (above the patient's left shoulder)",
+      "zh": "「L」側別標記（含SC字樣），影像右上角、病人體外"
+    },
+    {
+      "type": "Round radiopaque disc / external marker",
+      "location": "Upper right corner of the image, above the L marker, outside the patient",
+      "zh": "圓形不透光外部標記物，影像右上角、病人體外"
+    },
+    {
+      "type": "Collimation / digital blanking bar (black rectangle artifact)",
+      "location": "Left image edge, upper portion, outside the thorax (patient's right shoulder region)",
+      "zh": "影像左緣上方黑色準直／遮蔽偽影（病人右肩外側）"
+    }
+  ],
+  "other_findings": [
+    "雙側肺門略顯粗大（左側較明顯），以血管性突出為主，未見明確肺門腫塊",
+    "左下肺野內側沿左心緣（肺門下方／舌葉區）支氣管血管紋理增粗，伴邊界不清的淡薄密度增高，未見明確結節或實質化，較可能為血管交會與乳房陰影重疊",
+    "右下肺野內側（肺門下方）支氣管血管紋理輕度增多",
+    "雙側乳房陰影重疊於下肺野",
+    "肩胛骨部分重疊於兩側肺野外上方",
+    "攝影範圍較寬，包含頸部、下頜及顱底"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "片中無胸管、引流管或任何治療性裝置，心肺輪廓與肋膈角正常，本身不與初次就診情境相衝突；但放射科標註框所在的左上肺野僅隱約可見一約1公分、邊界不清的淡薄圓形密度影，與肋骨交叉處重疊，兩位判讀者（含知道標籤者）皆未在該位置辨識出結節，目標病灶能見度不確定，不適合作為初次就診肺結節的教學主影像，需人工複核後再決定。",
+  "description_zh": "胸部正面立位（PA）X光片，吸氣量足夠、旋轉輕微、穿透度適當，攝影範圍包含頸部與顱底，肩胛骨部分重疊於兩側肺野外上方，雙側乳房陰影重疊於下肺野；影像右上角可見「L」側別標記與一圓形外部標記物，影像左緣有黑色準直遮蔽偽影，未見胸管、導管、心律調節器或任何體內裝置。左上肺野外側、鎖骨下方肋骨交叉處可見一約1公分、邊界不清的淡薄圓形密度影，可能為小結節，但與肋骨及血管重疊，能見度不確定，建議與舊片比較或以胸部CT進一步評估。雙側肺門略顯粗大（左側較明顯），以血管性突出為主，未見明確肺門腫塊；左下肺野內側沿左心緣支氣管血管紋理增粗並伴淡薄密度增高，右下肺野內側紋理亦稍增多，較可能為血管與乳房陰影重疊，未見明確結節或實質化。心臟大小正常，縱膈不寬，氣管居中，雙側橫膈平滑、肋膈角銳利，無肋膜積液或氣胸，左膈下可見胃泡，骨骼與軟組織未見明顯異常。",
+  "label_concern": "標籤「肺結節」僅由放射科標註框支持：框內（左上肺野）只隱約可見一約1公分淡薄圓形密度影，與肋骨交叉重疊，無法排除為肋骨／血管重疊影；兩位判讀者皆未於該位置辨識出結節，反而將疑似異常放在左下肺野肺門下方。目標病灶能見度不確定，建議人工複核。"
+}

@@ -1,0 +1,61 @@
+{
+ "view": "Frontal chest radiograph, AP (probably supine/portable; arms abducted/raised with humeral heads at the top corners, scapulae overlapping the lateral upper lung fields, external tubing lying on the patient)",
+ "technical_quality": "Suboptimal: low contrast, grainy/noisy with heavy processing; lateral edges cropped and vignetted (dark); scapulae project over the upper lung fields; no significant rotation (medial clavicles roughly symmetric about the spinous processes); adequate inspiration on the left (~8-9 posterior ribs), right hemithorax appears smaller. Skeletal maturity looks adult-type despite the stated age of 10 y. No L/R marker visible - conventional orientation assumed.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Chest tube (thoracostomy tube), large-calibre with lumen visible",
+   "location": "Right hemithorax: enters the lateral right chest wall at the mid zone (about 4th-5th rib level, anterior/mid-axillary line), courses superomedially along the upper lateral chest with the tip at the right lung apex"
+  },
+  {
+   "type": "Tube connector / hub (small rectangular radiopaque device)",
+   "location": "Right lateral chest wall at the chest-tube insertion site, mid zone (patient's right)"
+  },
+  {
+   "type": "External drainage tubing with luer-type connectors (two roughly parallel tubes lying on the patient)",
+   "location": "Overlying the right lower hemithorax and right upper abdomen, lateral to the spine (patient's right)"
+  },
+  {
+   "type": "Multiple small linear metallic densities (surgical clips vs metallic foreign bodies)",
+   "location": "Projected over the left mid zone, medially / perihilar (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy increased opacity of the right lower zone with obscured/blunted right costophrenic angle and elevated right hemidiaphragm - pleural effusion (possibly layering on a supine film) and/or right basal atelectasis-consolidation",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Diffuse relative haziness and mildly reduced volume of the right hemithorax compared with the left (post-drainage lung, layering effusion or volume loss)",
+   "laterality": "right",
+   "zone": "whole"
+  },
+  {
+   "finding": "Ill-defined rounded area of increased density adjacent to the right hilum (indeterminate: possible nodule/mass vs overlapping vessels/consolidation) - uncertain",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Chest tube tip at the right apex; a small residual apical pneumothorax cannot be excluded - uncertain (no definite visceral pleural line identified)",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Multiple small linear metallic densities projecting over the perihilar lung (surgical clips from prior thoracic surgery vs metallic foreign bodies)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent distended gastric air bubble beneath the left hemidiaphragm (incidental)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.5,
+ "description_zh": "正面胸部X光（疑為仰臥AP攝影，雙臂上舉、肩胛骨重疊於上肺野），影像對比偏低且有雜訊，兩側邊緣遭裁切。右側可見胸管自右側胸壁中肺野處進入，向上內側彎曲，尖端位於右肺尖，插入處有連接頭，右下胸及右上腹外側可見體外引流管線與接頭。右肺整體較左肺混濁且容積略減，右下肺野霧狀密度增加、右側肋膈角模糊、右橫膈升高，考慮右側肋膜積液或右下肺塌陷／實質病變；右中肺野肺門旁有邊界不清之類圓形密度，需與血管重疊區分，右肺尖是否殘留少量氣胸無法確定。左中肺野肺門旁投影數個小型線狀金屬密度影（手術夾或異物）；心臟大小於AP片下未見明顯擴大、縱膈居中，左橫膈下胃泡膨脹，骨骼未見明顯骨折。"
+}

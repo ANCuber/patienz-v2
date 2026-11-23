@@ -1,0 +1,51 @@
+{
+ "id": "nih-nodule-00012374_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate: good inspiration (about 9-10 posterior ribs), well penetrated (thoracic spine visible through the heart), no significant rotation; costophrenic angles included; scapulae only partially rotated off the lateral lung fields. The side marker (L + technologist initials) in the upper right image corner is mirror-reversed (placed backward), but anatomy (aortic knob, cardiac apex and gastric bubble on image right, higher right hemidiaphragm on image left) confirms conventional orientation with the patient's left on the image right.",
+ "target": {
+  "finding": "pulmonary nodule",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "upper",
+  "size_cm": 2.2,
+  "confidence": 0.85
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Radiographic side marker (L) with technologist initials, mirror-reversed (placed backward); external",
+   "location": "Upper right corner of the image, projected over the patient's left shoulder soft tissues",
+   "zh": "側邊 L 標記（含技師縮寫，字樣鏡像反置），位於影像右上角、病人左肩軟組織上方"
+  },
+  {
+   "type": "Multiple (5-6) small linear metallic foreign bodies, each a few mm long, consistent with retained acupuncture-needle fragments / embedded metallic threads",
+   "location": "Soft tissues of the right lower neck / right supraclavicular region, above the right clavicle (image upper left), extrathoracic",
+   "zh": "右下頸部／右鎖骨上區軟組織多枚細小線狀金屬異物（疑殘留針灸針斷片或埋線），位於胸腔外"
+  },
+  {
+   "type": "Small curved (hook-shaped) metallic fragment, likely a further retained needle fragment or external artifact",
+   "location": "Projected over the lateral right clavicle / right acromioclavicular region",
+   "zh": "右鎖骨外側／右肩鎖關節處一小段彎曲金屬影（疑殘留針斷片或外在人工物）"
+  }
+ ],
+ "other_findings": [
+  "右下頸部及右鎖骨上區軟組織可見多枚數毫米長之細小線狀金屬異物，符合殘留針灸針斷片（位於胸腔外，與肺部無關）",
+  "右鎖骨外側／肩鎖關節處一小段彎曲金屬影，疑為殘留針斷片或外在人工物",
+  "側邊 L 標記字樣呈鏡像反置（標記反放），惟依主動脈弓、心尖及胃泡位於影像右側確認為常規方向",
+  "餘雙側肺野清晰，無實質化、氣胸或肋膜積液，雙側肋膈角銳利，雙側肺門無異常",
+  "心臟大小正常，縱膈輪廓正常，氣管居中",
+  "骨骼結構無明顯骨折或破壞性病灶"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "左上肺野約 2.2 公分之圓形結節清楚可見，且放射科標註框、知情讀片者與盲讀者三方位置一致；影像上無胸管、引流管、中心靜脈導管或任何與肺結節相關之治療裝置。右下頸部殘留針灸針斷片為胸腔外偶然發現，與肺結節無關，不會與「初次因肺結節就診」之情境相矛盾；側邊標記鏡像反置僅為技術上的瑕疵，解剖方向已確認無誤。故適合作為初次就診之肺結節影像。",
+ "description_zh": "站立後前位（PA）胸部X光，吸氣充分、穿透度適當、無明顯旋轉；影像右上角之側邊 L 標記及技師縮寫呈鏡像反置，惟依主動脈弓、心尖及胃泡位於影像右側確認為常規方向（影像右側為病人左側）。左上肺野於主動脈弓外上方、約左側第二前肋端處可見一顆邊緣清楚之圓形實質結節，直徑約 2.2 公分，無明顯鈣化、空洞或周圍實質化，部分與前肋重疊。餘雙側肺野清晰，雙側肺門無異常，心臟大小及縱膈輪廓正常，氣管居中，雙側肋膈角銳利，未見肋膜積液或氣胸。右下頸部及右鎖骨上區軟組織可見多枚數毫米長之細小線狀金屬異物，另右鎖骨外側／肩鎖關節處有一小段彎曲金屬影，符合殘留針灸針斷片（位於胸腔外）；未見胸管、引流管、中心靜脈導管或其他治療相關裝置，骨骼結構無明顯骨折或破壞性病灶。",
+ "label_concern": ""
+}

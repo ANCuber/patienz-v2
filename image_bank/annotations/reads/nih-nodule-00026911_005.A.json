@@ -1,0 +1,52 @@
+{
+ "view": "PA (frontal), recorded PA",
+ "technical_quality": "Adequate exposure; apices and both costophrenic angles included; mild rotation (asymmetric clavicles, left shoulder higher); no L/R marker visible, conventional orientation assumed; overlying external tubing over the right lower chest/abdomen",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 3,
+ "devices": [
+  {
+   "type": "Chest tube / small-bore pleural drainage catheter",
+   "location": "Right hemithorax: enters via right lateral chest wall at the mid-lower zone through a small radiopaque connector, courses superomedially across the right lung field, tip curled in the right apex (upper zone, medial)"
+  },
+  {
+   "type": "External drainage tubing (two parallel segments with connector joints)",
+   "location": "Projected over the right abdomen below the drain entry site, extending off the bottom of the film"
+  },
+  {
+   "type": "Surgical clips (approximately 6 linear metallic densities)",
+   "location": "Left upper-to-middle zone, perihilar / aortopulmonary window region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined, roughly rounded heterogeneous opacity (~3 cm), candidate for the labelled nodule; differential includes consolidation or atelectasis adjacent to the drain",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Multiple linear metallic surgical clips indicating prior thoracic/mediastinal surgery",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Chest drain in situ with tip in the apex; no definite residual pneumothorax or large pleural effusion identified",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Subtle hazy increased density lateral to the heart, indeterminate (possible overlying soft tissue or minimal effusion)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Gastric air-fluid level below the left hemidiaphragm (normal finding)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.5,
+ "description_zh": "正面胸部X光，右側可見一條胸管／肋膜引流管，由右側胸壁中下部經一小型不透光接頭進入，管身斜向上內走行，管端彎曲位於右肺尖內側，右腹部並見兩段外接引流管投影。左上至中肺野近肺門處可見約六枚線狀金屬手術夾，為術後變化。右中肺野近肺門處另見一約3公分邊緣模糊的類圓形密度增加影，可能與所標示之結節相符，但亦需考慮實質化或肺不張。目前未見明顯氣胸或大量肋膜積液，左側橫膈下見正常胃泡。"
+}

@@ -1,0 +1,51 @@
+{
+ "view": "Frontal chest radiograph, PA projection (mirror-imaged L marker on the image right = patient's left; conventional orientation)",
+ "technical_quality": "Adequate. Inspiration adequate (~9-10 posterior ribs visible); penetration adequate (thoracic spine visible through the cardiac shadow); no significant rotation (medial clavicular ends roughly symmetric about the spinous processes); scapulae partially projected over the lateral upper lung fields; entire thorax included, lower image edge cuts through the upper abdomen.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "External thick curvilinear radiopaque artifact (cable/tubing or lead-shield edge) - not intrathoracic, no chest tube",
+   "location": "Lower left corner of the image, projected over the patient's right flank / upper abdomen below the right hemidiaphragm, outside the lung fields"
+  },
+  {
+   "type": "Small radiopaque bar, probably part of the same external object",
+   "location": "Inferior image edge, over the patient's left upper abdomen"
+  },
+  {
+   "type": "Tiny S-shaped radiopaque mark (~0.5 cm), most likely an external artifact (clothing/detector); a tiny clip is less likely",
+   "location": "Left upper abdomen, just below the medial left hemidiaphragm"
+  },
+  {
+   "type": "L side marker (mirror-imaged lettering)",
+   "location": "Upper right of the image over the patient's left shoulder"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy, ill-defined area of increased opacity with coarse reticulonodular markings lateral to the left heart border (lingular region), approx. 6 cm; partly superimposed breast shadow possible but denser than the contralateral side",
+   "laterality": "left",
+   "zone": "lower (extending into middle)"
+  },
+  {
+   "finding": "Prominent, dense left hilum compared with the right (vascular vs. adenopathy)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Small well-defined dense nodule ~0.3-0.4 cm lateral to the aortic knob, most consistent with a calcified granuloma",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Aortic knob / left superior mediastinal contour prominent for a 34-year-old",
+   "laterality": "left (mediastinal border)",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "胸部正面（PA）X光，吸氣深度及穿透度尚可、無明顯旋轉；胸腔內未見任何導管、引流管或植入裝置，影像左下角（病人右側脅腹／上腹部）見一粗弧形體外高密度影（電線／管路或鉛遮蔽物邊緣），左上腹另見一微小「S」形高密度影，疑為體外雜訊。右肺野清晰；左側肺門較對側顯著且密度增加，主動脈弓結以此年齡而言略為突出，左中肺野主動脈弓外側見約0.3–0.4公分之緻密小結節（疑鈣化性肉芽腫），左中下肺野心臟外側可見約6公分範圍模糊之網狀結節狀密度增加（部分可能為乳房陰影重疊，但較對側明顯）。心臟大小正常、氣管居中；雙側肋膈角銳利，未見肋膜積液、氣胸或明確之肋膜增厚／肺尖帽；骨骼結構及軟組織無明顯異常。"
+}

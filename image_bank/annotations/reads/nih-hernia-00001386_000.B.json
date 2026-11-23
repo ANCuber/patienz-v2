@@ -1,0 +1,54 @@
+{
+ "view": "Frontal chest radiograph (PA projection presumed; 'L' side marker on image right confirms conventional orientation)",
+ "technical_quality": "Adequate penetration and no significant rotation (clavicular heads roughly symmetric about the spinous processes). Scapulae partially project over the lateral lung fields. Inspiration adequate on the left (about 9 posterior ribs) but effectively limited on the right by a markedly elevated right hemidiaphragm. Lung apices and both costophrenic regions included; image cropped/processed (dataset style). Diagnostic quality.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' with technologist initials (not a patient device)",
+   "location": "Upper corner of the image on the patient's left side, over the left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Marked elevation of the right hemidiaphragm (dome roughly 4-5 cm higher than the left, reaching about the 4th-5th anterior rib level) with a smooth convex upper contour and homogeneous soft-tissue density beneath it, obscuring the right lower zone; differential: eventration / phrenic nerve palsy vs. subpulmonic effusion vs. hepatomegaly; basal atelectasis likely",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right costophrenic angle poorly assessable / possibly blunted because of the elevated hemidiaphragm - small effusion cannot be excluded",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Borderline cardiomegaly (cardiothoracic ratio approx. 0.55), possibly exaggerated by the elevated right hemidiaphragm; right heart border partly obscured",
+   "laterality": "midline/bilateral",
+   "zone": "middle-lower"
+  },
+  {
+   "finding": "Prominent, unfolded/tortuous thoracic aortic arch with a prominent aortic knob, widening the upper left mediastinal contour (age-related ectasia most likely)",
+   "laterality": "left/midline",
+   "zone": "upper"
+  },
+  {
+   "finding": "Rounded gas lucency in the retrocardiac left paraspinal region at the level of the diaphragm - possible hiatal hernia (retrocardiac air-fluid level) vs. gastric fundus projecting through the diaphragm; correlation with lateral view advised",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent gas-distended stomach and splenic-flexure colon (lobulated gas shadows with folds) beneath the left hemidiaphragm",
+   "laterality": "left",
+   "zone": "lower (subdiaphragmatic)"
+  },
+  {
+   "finding": "Small irregular gas lucency projected beneath the elevated right dome, medially near the spine - bowel gas (hepatic flexure/duodenum); colonic interposition (Chilaiditi) cannot be excluded",
+   "laterality": "right",
+   "zone": "lower (subdiaphragmatic)"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光，無明顯旋轉，穿透度適當，未見任何管路、導線或植入裝置。右側橫膈明顯上抬（較左側高約4-5公分），其下為均質軟組織密度，右下肺野被遮蔽、右肋膈角評估受限，考慮橫膈膨出或膈神經麻痺，亦不排除肺下積液。心影邊緣性擴大（CTR約0.55，可能因右橫膈上抬而放大），主動脈弓突出迂曲；心後左側脊椎旁近橫膈處見圓形透亮氣體影，需注意裂孔疝之可能，左橫膈下並見明顯胃及結腸脾曲脹氣。其餘雙上、中肺野清晰，無氣胸、無實質化，骨骼未見急性病變。"
+}

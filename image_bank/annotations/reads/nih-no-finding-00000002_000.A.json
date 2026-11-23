@@ -1,0 +1,42 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film; good inspiration, no significant rotation, lung apices and costophrenic angles included; upper corners partly obscured by a burned-in anonymization bar (image upper right) and the patient's arms/hands are projected along both lateral chest walls.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Round radiopaque external object (likely side marker or clothing snap/button), no internal device",
+   "location": "Patient's left shoulder / lateral clavicle region, upper zone (image upper right), outside the lung field"
+  },
+  {
+   "type": "Black rectangular de-identification mask (burned-in artifact)",
+   "location": "Image upper right corner, above patient's left shoulder"
+  },
+  {
+   "type": "Patient's arms/hands projected over lateral chest wall soft tissues (positioning artifact)",
+   "location": "Both lateral chest walls, more prominent on patient's left (image right), mid-to-lower level"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Unfolded / tortuous thoracic aorta with prominent aortic knob (age-related, likely with mild wall calcification)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Borderline prominent cardiomediastinal silhouette (estimated CTR ~0.5-0.55), likely within age-related limits; no pulmonary edema or effusion",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Tiny dense dot near left hilum, most likely end-on vessel or small calcified granuloma (uncertain, non-acute)",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.85,
+ "description_zh": "正面（PA）胸部X光：雙側肺野大致清晰，未見明顯實質浸潤、腫塊、肋膜積液或氣胸，橫膈輪廓平滑、雙側肋膈角銳利。心縱膈影略顯突出，心胸比約在上限（約0.5–0.55），主動脈弓明顯且胸主動脈呈迂曲展開，符合高齡退化性變化；左肺門附近可見一微小緻密點，推測為血管端面或小鈣化肉芽腫，非急性病灶。未見任何管路、導線、引流管或節律器；病人左肩區可見一圓形金屬密度外物（推測為側別標記或衣物鈕釦），影像右上角有去識別化黑色遮罩，雙側胸壁外側有上肢軟組織重疊。整體所見與「無急性心肺病灶」之標籤相符。"
+}

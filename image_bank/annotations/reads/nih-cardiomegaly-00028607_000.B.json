@@ -1,0 +1,29 @@
+{
+ "view": "Frontal chest radiograph, probably AP (or PA with scapulae not fully retracted); erect-appearing. No L/R lead marker legible – conventional orientation assumed.",
+ "technical_quality": "Adequate inspiration (about 8-9 posterior ribs / anterior 6th rib at the right hemidiaphragm). No significant rotation (spinous processes roughly midway between the clavicular heads). Penetration adequate – thoracic vertebrae faintly visible through the cardiac shadow. Both scapulae project over the lateral upper/middle lung zones (limits assessment of those areas slightly). Whole thorax and upper abdomen included; costophrenic angles included. Pediatric skeleton (open growth plates at humeral heads, prominent costochondral junctions).",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 17.5,
+ "devices": [
+  {
+   "type": "External radiopaque marker fragment (partial V/chevron-shaped, probably a cassette or lead side-marker; not a medical device)",
+   "location": "Extreme upper right corner of the image (patient's left, above the shoulder), outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Cardiac silhouette borderline to mildly enlarged with a globular/rounded left heart border; apex lies close to the left lateral chest wall; estimated cardiothoracic ratio about 0.50 (transverse cardiac diameter ~17.5 cm on the assumed 35 cm thorax). Possibly partly accentuated by AP projection magnification. No pulmonary vascular congestion, no interstitial edema, no pleural effusion.",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Technical: both scapulae project over the lateral upper-to-middle lung zones (not retracted), partially obscuring the peripheral lung; no underlying abnormality identified beneath them.",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光(疑為AP投影,雙側肩胛骨重疊於外側肺野),吸氣量足夠、無明顯旋轉、穿透度適中;胸腔內未見任何管路、導線、夾子或植入裝置,僅於影像右上角(病人左上方、胸廓之外)可見一小型體外標記物殘影。雙側肺野清晰,無實質化、結節、間質性病變或氣胸,肺門及肺血管紋路正常,雙側肋膈角銳利,無肋膜積液,雙側橫膈平滑、左橫膈下可見正常胃泡。心影輪廓呈球形、左心緣圓鈍且心尖接近左側胸壁,心胸比約0.50,屬臨界性至輕度心臟擴大(部分可能為AP投影放大效應),縱隔不寬、氣管居中。骨骼(鎖骨、肋骨、脊椎、肱骨頭生長板)及胸壁軟組織未見異常。"
+}

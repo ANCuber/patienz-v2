@@ -1,0 +1,38 @@
+{
+ "view": "PA (frontal), erect; L side marker at image upper right consistent with conventional orientation",
+ "technical_quality": "Adequate penetration and inspiration; no significant rotation; costophrenic angles included but left CP angle close to the inferior film edge; scapulae partly overlap the upper lateral lung fields",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 10,
+ "devices": [
+  {
+   "type": "Film side marker (L, with number) - external",
+   "location": "Image upper right corner, over patient's left shoulder region"
+  },
+  {
+   "type": "Round radiopaque external object (~1.5 cm), likely lead marker bead or clothing snap/button",
+   "location": "Image upper right, projected over patient's left supraclavicular / shoulder soft tissue, lateral to the left clavicle"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Smooth band-like soft-tissue density along the lateral pleural surface extending down toward the costophrenic angle (~3-4 mm thick, ~10 cm long) - subtle, possible pleural thickening vs extrapleural fat",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Similar but thinner band along the lateral pleura - possible mild pleural thickening / extrapleural fat",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right hemidiaphragm mildly elevated relative to the left (~3 cm), smooth contour; nonspecific",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.4,
+ "description_zh": "PA 胸部X光。心臟大小及縱膈影正常，氣管居中，兩側肺門無明顯異常。右側下肺野外側胸壁可見沿肋膜走行之平滑帶狀軟組織密度影，向下延伸至右側肋膈角，厚約 3–4 mm、長約 10 cm，疑為局部肋膜增厚，惟亦不排除肋膜外脂肪；左側下外側肋膜亦有類似但較輕微之表現。右側橫膈較左側偏高約 3 cm，輪廓平滑，兩側肋膈角大致銳利，肺野未見實質浸潤、結節或氣胸。影像右上角可見 L 側標記及一圓形不透光外物（疑為標記珠或衣物釦），未見胸管或引流管等治療痕跡。"
+}

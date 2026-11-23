@@ -1,0 +1,48 @@
+{
+ "view": "Frontal chest radiograph, PA projection (probable; scapulae only partially cleared from the lateral lung fields), erect; R side marker present in the image upper-left corner confirming conventional orientation (patient's right on image left)",
+ "technical_quality": "Adequate penetration (thoracic spine visible through the heart); minimal rotation (trachea and spinous processes midline, clavicles roughly symmetric); inspiration is shallow with low lung volumes (about 8 posterior ribs above the dome, high diaphragms) which crowds the basal vessels and accentuates the cardiac silhouette; apices and both costophrenic angles are included. No implanted lines, tubes, pacemaker, drains or surgical clips.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "R side marker (external radiographic marker, with small tech initials)",
+   "location": "image upper-left corner, projected above the patient's right shoulder"
+  },
+  {
+   "type": "External coiled / spring-like artifact (probable clothing zipper pull or equipment cable) - not an implanted device",
+   "location": "image right edge, patient's left lower lateral aspect below the left costophrenic angle, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined hazy increased opacity in the medial right lower zone adjacent to the right heart border, with partial loss of sharpness of the lower right heart border and slight tenting/peaking of the medial right hemidiaphragm; crowding of the basal vessels. Favours right middle lobe / right basal subsegmental atelectasis, early infiltrate less likely. Approx. 5 x 4 cm.",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Low lung volumes / shallow inspiration with high diaphragms bilaterally (technical, but contributes to basal vascular crowding)",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal (CTR approx 0.50-0.55), most likely accentuated by shallow inspiration; upper mediastinum mildly full but within limits for age, aortic knob small (young patient)",
+   "laterality": "midline",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent hila bilaterally, symmetric, with visible branching vessels - most likely vascular / normal for age rather than adenopathy",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Coiled/spring-like external artifact at the image edge lateral to the left lower chest/abdomen (clothing or equipment, no clinical significance)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面（PA）胸部X光，吸氣稍淺、肺容積偏低，無明顯旋轉，未見任何體內導管、引流管、心律調節器或手術夾；影像左上角有R側標記，患者左側下外方影像邊緣見一螺旋狀外部異物（疑為衣物拉鍊或線材）。右下肺野內側鄰近右心緣處見輕度模糊之增加密度，右心緣下段稍不清晰並有輕微橫膈頂帳狀牽拉，基底血管擁擠，疑為右中葉／右下葉亞肺段肺擴張不全，早期浸潤較不可能。雙側肺門稍顯突出（多為血管性、符合年齡），心臟大小於正常上限（CTR約0.50–0.55，部分因吸氣淺所致），氣管及縱膈居中。雙側肋膈角銳利，未見氣胸或肋膜積液，骨骼（鎖骨、肋骨、肩關節、脊椎）及軟組織未見明顯異常。"
+}

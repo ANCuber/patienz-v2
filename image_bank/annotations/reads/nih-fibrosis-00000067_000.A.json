@@ -1,0 +1,49 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration, no significant rotation (clavicles symmetric about the spinous processes), adequate penetration with vertebral bodies faintly visible through the heart. Bilateral breast shadows overlie the lower zones and slightly limit assessment of the bases. Left side marker (\"L\" with radiographer initials) present in the image upper-right corner, confirming conventional orientation.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "External side marker (L, with radiographer initials)",
+   "location": "Image upper-right corner, lateral to patient's left shoulder; outside the patient"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild reticular / linear interstitial markings at the lung base, most evident medially adjacent to the right heart border (cardiophrenic region); subtle, no honeycombing or volume loss",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild coarse linear and reticular interstitial markings in the lower zone lateral to the heart, subtle",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Several small dense nodular opacities at the hilum, consistent with calcified hilar lymph nodes (probable old granulomatous disease)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Small dense nodular density at the hilum, possibly a calcified lymph node",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Right hemidiaphragm mildly elevated relative to the left (may be within normal variation)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Bilateral breast shadows overlying the lower zones (normal soft tissue, noted as it limits evaluation)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "PA 胸部 X 光，吸氣量足夠，無明顯旋轉，左側標記位於影像右上角。雙側下肺野（尤以右側心旁區及左側下葉外側）可見輕度網狀與線狀間質紋理增加，疑為輕度肺纖維化，未見蜂窩狀變化或明顯體積減少，上肺野相對清晰。雙側肺門可見數個小而緻密之結節狀影，疑為鈣化之肺門淋巴結；右側橫膈略高於左側。心臟大小正常，雙側肋膈角銳利，未見氣胸、肋膜積液或任何導管、引流管及治療裝置，雙側乳影重疊於下肺野。"
+}

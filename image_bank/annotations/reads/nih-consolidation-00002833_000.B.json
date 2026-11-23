@@ -1,0 +1,38 @@
+{
+ "view": "PA/AP frontal chest radiograph (erect), \"L\" marker at image right upper corner confirming conventional orientation (patient left on image right)",
+ "technical_quality": "Adequate. Inspiration adequate (right hemidiaphragm at about the 6th anterior / 9th posterior rib). No significant rotation (spinous processes roughly equidistant from clavicular heads). Penetration adequate with thoracic vertebral bodies visible through the cardiac silhouette. Scapulae not fully rotated out and project over the lateral upper zones bilaterally. Whole thorax and upper abdomen included; edges of the film show vignetting/collimation.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 4.5,
+ "devices": [
+  {
+   "type": "External lead side marker 'L' with small letters beneath and an adjacent round metallic density (marker BB or clothing snap) - external artifact, not in the patient",
+   "location": "Image right upper corner, over the patient's left shoulder / left upper lateral chest, outside the lung field"
+  },
+  {
+   "type": "Two symmetric curved tubular radiopaque structures (external positioning frame / shield edge or tubing) - external artifact",
+   "location": "Bottom corners of the image bilaterally, projected over the upper abdomen/flanks, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Subtle ill-defined hazy increased opacity in the right infrahilar / medial lower zone with prominent bronchovascular markings - possible early/subtle consolidation versus vascular crowding; no air bronchogram clearly seen",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent perihilar bronchovascular markings (peribronchial thickening pattern), right slightly more than left",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Scapular borders projected over the lateral upper lung fields (technical, arms not fully rotated) - may obscure subtle lateral upper zone lesions",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面胸部X光片，L標記位於影像右上角，吸氣量尚可，無明顯旋轉，兩側肩胛骨部分重疊於肺野外上側。兩側肺門血管支氣管紋理略顯增加，右側肺門下方內側（右下肺野內側）可見淡薄、邊界不清之密度增加，疑似早期實變或血管重疊，建議配合臨床評估或追蹤。心臟大小及縱膈輪廓正常，氣管居中，兩側肋膈角銳利，無肋膜積液或氣胸，左橫膈下可見胃泡，骨骼結構無明顯異常。影像左上外側之L標記與圓形金屬密度，以及下方兩側之弧形管狀影，均為體外人工物，無胸管或引流管。"
+}

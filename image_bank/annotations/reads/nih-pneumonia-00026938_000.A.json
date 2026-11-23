@@ -1,0 +1,57 @@
+{
+ "view": "Frontal chest radiograph, recorded PA; an \"L\" side marker is present at the image's upper-right corner (patient's left), confirming conventional orientation.",
+ "technical_quality": "Adequate: good inspiration (about 9 posterior ribs), trachea midline with no significant rotation, adequate penetration (spine visible through the heart), both costophrenic angles and lung apices included. Metallic hardware overlaps the right shoulder/proximal humerus and the lateral chest walls are partly clipped; upper abdomen partially included.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "Transvenous pacing lead (single bipolar lead; no pulse generator seen within the field - possibly a temporary pacing wire or generator outside the field of view)",
+   "location": "Proximal end terminates at the left mid-clavicle; enters via the left subclavian vein, crosses the mediastinum to the SVC, descends along the right side of the spine (right atrium), then curves to the right ventricle; tip near the RV apex projecting at the level of the left hemidiaphragm, superimposed on the gastric fundus"
+  },
+  {
+   "type": "Metallic plate with hex-head bolt/screw - most likely external hardware (arm support/immobilizer); an orthopedic humeral plate cannot be excluded on this single view",
+   "location": "Projected over the right shoulder / proximal right humerus (image left edge), extending off the image"
+  },
+  {
+   "type": "Radiographic L side marker",
+   "location": "Upper right corner of the image, over the patient's left shoulder"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy, ill-defined opacity at the right hilum extending inferomedially into the infrahilar / paracardiac medial right lower zone (~2.5 x 4 cm dense core, streaky extension to ~6-7 cm); right hilum appears bulky. Compatible with the labelled pneumonia, but hilar mass/adenopathy is a differential",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Coarse reticulonodular interstitial markings in the right lower zone (adjacent to / part of the above)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, rounded, unfolded aortic knob - ectatic/tortuous thoracic aorta (age-related; aneurysm not excluded)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Subtle hazy increased density in the left lower zone lateral to the left heart border - equivocal (possible early infiltrate vs soft-tissue overlap); left heart border preserved",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Distended stomach with gas and mottled food/fecal-type contents beneath the left hemidiaphragm (incidental, subdiaphragmatic)",
+   "laterality": "left",
+   "zone": "none"
+  },
+  {
+   "finding": "No pneumothorax, no definite pleural effusion (costophrenic angles sharp), cardiothoracic ratio within normal limits (~0.4)",
+   "laterality": "bilateral",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面胸部X光（右上角L標記位於病人左側），吸氣度尚可，氣管居中，心胸比在正常範圍。右側肺門區延伸至肺門下方、右下肺野內側（心臟旁）可見邊緣模糊之片狀浸潤影，約2.5×4公分，右肺門顯得飽滿，右下肺野並有粗糙網狀結節狀紋理，以肺炎為優先考量，惟肺門腫塊或淋巴結腫大無法完全排除；左下肺野外側有輕微朦朧密度增加，屬可疑。主動脈弓明顯突出、迂曲（老年性主動脈擴張）。可見單一經靜脈心律調節導線自左鎖骨下靜脈進入，經上腔靜脈、右心房至右心室，末端位於右心室心尖附近、投影於左橫膈高度並與胃底重疊，視野內未見脈衝產生器（可能為暫時性心律調節導線）；右肩／右肱骨近端投影有金屬板與螺栓，較可能為體外器材。左橫膈下胃泡膨脹並含斑駁內容物；未見胸管或引流管，無氣胸，肋膈角銳利、無明顯肋膜積液。"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "nih-pleural-thickening-00000028_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate upright PA film. 'L' lead marker with technologist initials at image upper right (patient's left shoulder) confirms conventional orientation. Adequate inspiration (right hemidiaphragm at about the 6th anterior rib), no significant rotation, adequate penetration (vertebral bodies visible through the cardiac silhouette). Apices and both costophrenic angles included; no motion blur.",
+  "target": {
+    "finding": "pleural thickening",
+    "visible": "yes",
+    "laterality": "left",
+    "zone": "lower",
+    "size_cm": 5,
+    "confidence": 0.65
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "left",
+    "reader_b": "left",
+    "adjudicator": "left"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "External nipple marker (punctate round metallic BB), skin marker",
+      "location": "Right lower zone, lateral, projecting over about the 7th posterior rib",
+      "zh": "右側體外乳頭標記（點狀金屬影）"
+    },
+    {
+      "type": "External nipple marker (punctate round metallic BB), skin marker",
+      "location": "Left lower zone, lateral, projecting over about the 6th-7th posterior rib, slightly higher than the right",
+      "zh": "左側體外乳頭標記（點狀金屬影）"
+    },
+    {
+      "type": "External 'L' lead side marker with circular dot and technologist initials",
+      "location": "Image upper right, over the patient's left shoulder soft tissues, outside the thorax",
+      "zh": "左側「L」側別鉛字標記（體外）"
+    }
+  ],
+  "other_findings": [
+    "右下外側胸壁沿肋膜可見細微平滑帶狀軟組織密度，疑似輕度肋膜／肋膜外增厚（或肋膜外脂肪），右側肋膈角仍銳利",
+    "兩側肺尖輕度肋膜頂增厚（apical capping），右側較明顯，部分與第一肋及鎖骨重疊，信心度低",
+    "主動脈弓突出、胸主動脈迂曲，符合年齡相關變化；縱膈無增寬，氣管居中",
+    "左側橫膈略高於右側（約1公分），下方可見胃泡氣體，可能屬正常變異",
+    "心臟大小正常（心胸比約0.45以下），雙肺野未見結節、實質浸潤或氣胸"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標記病灶（左下肺區沿外側胸壁之肋膜增厚伴左側肋膈角變鈍）於影像上清楚可見；片中無胸管、引流管、中央靜脈導管或任何治療裝置，亦無手術後改變。僅有體外乳頭標記與側別鉛字，不影響初次就診情境，故適合作為初次就診之影像。",
+  "description_zh": "胸部X光正面站立（PA）片，吸氣深度足夠、無明顯旋轉、穿透度適當，影像右上方（病人左肩）可見「L」側別鉛字標記，方向為常規擺位。左側肋膈角變鈍，左下外側胸壁沿肋膜可見平滑帶狀軟組織密度，長度約5公分、厚度約0.5公分，符合左下肺區肋膜增厚，未見明確半月徵，少量肋膜積液不完全排除；右下外側胸壁亦有細微肋膜／肋膜外增厚條紋，右側肋膈角仍銳利，兩側肺尖（右側較明顯）有輕度肋膜頂增厚。心臟大小正常，氣管居中，主動脈弓突出、胸主動脈迂曲，符合年齡相關變化；左側橫膈略高於右側約1公分，下方可見胃泡氣體，雙肺野未見結節、實質浸潤或氣胸。兩側下肺區外側各見一點狀金屬密度影，應為體外乳頭標記；未見胸管、引流管、中央靜脈導管或其他治療裝置。",
+  "label_concern": ""
+}

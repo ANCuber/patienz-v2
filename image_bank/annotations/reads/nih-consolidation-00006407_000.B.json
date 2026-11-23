@@ -1,0 +1,48 @@
+{
+ "view": "PA (frontal) erect chest radiograph; conventional orientation confirmed by an \"L\" laterality marker at the image's upper right (patient's left shoulder)",
+ "technical_quality": "Adequate. Minimal rotation (medial clavicular ends roughly equidistant from the spinous processes). Inspiration adequate (about 9 posterior ribs visible). Penetration adequate with vertebral bodies faintly seen through the cardiac shadow. Scapulae partly projected over the lateral upper lung fields. Both costophrenic angles and lung apices included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "External laterality marker (\"L\" with arrow) and adjacent round metallic-density clip/button artifact",
+   "location": "Upper right corner of the image, projected over the patient's left shoulder soft tissues (outside the lung)"
+  },
+  {
+   "type": "Black rectangular collimation/edge artifact",
+   "location": "Left edge of the image (patient's right, outside the thorax)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined heterogeneous perihilar opacity extending from the left hilum inferolaterally into the lower zone, with a prominent/bulky left hilum; consolidation versus hilar mass with adjacent airspace change (in an 80-year-old, neoplasm should be excluded)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Increased retrocardiac density in the medial left lower zone, partially obscuring the medial left hemidiaphragm (lower lobe airspace opacity / atelectasis)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded and calcified aortic knob with mild widening of the upper mediastinum at the arch level, consistent with atherosclerotic/ectatic thoracic aorta",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly increased bronchovascular/interstitial markings at the right lung base",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative changes of the thoracic spine (spondylosis) and glenohumeral joints",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面立位胸部X光，體位與曝露條件尚可，無旋轉，右上角可見「L」側別標記與外部圓形金屬密度小物件，胸腔內未見任何管路、導線或植入物。左側肺門區域可見邊界不清、密度不均之浸潤影，自肺門向下外側延伸至左下肺野，左肺門顯得腫大，並有左下肺後心區密度增加、內側橫膈輪廓部分模糊，需考慮左肺門周圍實質化，於高齡病人亦須排除肺門腫瘤合併阻塞性變化；右肺基底部支氣管血管紋理輕度增加，其餘右肺清晰，雙側肋膈角銳利，未見氣胸或明顯肋膜積液。心臟大小在正常上限，主動脈弓迂曲、突出並有鈣化，符合動脈硬化性主動脈；胸椎與雙側肩關節見退化性變化，骨質無明顯骨折或破壞。"
+}

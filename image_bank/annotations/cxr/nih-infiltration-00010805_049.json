@@ -1,0 +1,77 @@
+{
+  "id": "nih-infiltration-00010805_049",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "AP portable, pediatric frontal chest (marked \"AP PORTABLE\", L marker on image right = patient's left)",
+  "technical_quality": "Suboptimal: portable AP film with marked tilt/rotation of the image, low lung volumes, mandible and scapulae overlapping the apices, slight patient rotation; penetration adequate; both costophrenic angles included but the right base is partly obscured by an ECG electrode; AP magnification of the mediastinum expected",
+  "target": {
+    "finding": "pulmonary infiltrate",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "middle",
+    "size_cm": 9,
+    "confidence": 0.7
+  },
+  "laterality_sources": {
+    "bbox": "right, middle zone (324x319 px box, radiologist localisation)",
+    "reader_a": "bilateral overall; dominant/most conspicuous infiltrate right, middle-lower zone",
+    "reader_b": "bilateral overall (blind); dominant/most conspicuous infiltrate right, perihilar and basal",
+    "adjudicator": "right, middle zone extending into the lower zone and perihilar region; milder left perihilar/lower-zone involvement recorded as an additional finding"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Tracheostomy tube (round flange en face, cannula projecting over the upper trachea, tip well above the carina)",
+      "location": "Midline lower neck / upper trachea",
+      "zh": "氣切管（頸部正中，尖端位於上段氣管）"
+    },
+    {
+      "type": "ECG electrode with lead wire (rectangular clip)",
+      "location": "Patient's right shoulder / right upper chest soft tissue",
+      "zh": "心電圖電極及導線（右肩／右上胸）"
+    },
+    {
+      "type": "ECG electrode with lead wire (round)",
+      "location": "Patient's right lower lateral chest, over the right lower zone / hemidiaphragm",
+      "zh": "心電圖電極及導線（右下胸，鄰近右橫膈）"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "Patient's left mid chest, lateral to the heart border",
+      "zh": "心電圖電極及導線（左中胸）"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "Patient's left lower chest / costal margin near the left hemidiaphragm",
+      "zh": "心電圖電極及導線（左下胸／肋緣）"
+    },
+    {
+      "type": "Thin tubular line of uncertain nature (central venous catheter vs enteric/feeding tube vs external lead wire)",
+      "location": "Right paramediastinal, from the right neck/shoulder region descending along the right mediastinal border toward the diaphragm",
+      "zh": "右側縱膈旁細管狀影（中央靜脈導管、餵食管或體外導線，性質不確定）"
+    },
+    {
+      "type": "Small rectangular metallic snap/clip (external artifact, e.g. tracheostomy tie fastener or gown snap)",
+      "location": "Patient's left supraclavicular soft tissue, lateral to the trachea",
+      "zh": "左鎖骨上方小金屬扣（體外物）"
+    },
+    {
+      "type": "External tubing (probable IV line or lead wire), outside the thorax",
+      "location": "Lateral to the patient's left arm at the image edge",
+      "zh": "左臂外側影像邊緣體外管線（點滴管或導線）"
+    }
+  ],
+  "other_findings": [
+    "左側肺門周圍及左下肺野較淡之斑片狀浸潤（雙側受累，右側為主）",
+    "心縱膈影偏大、邊緣性心臟肥大（AP 投照、旋轉及低肺容積之放大效應需納入考量）",
+    "雙側肺門突出",
+    "肺容積偏低，支氣管血管紋理擁擠",
+    "右側橫膈邊緣部分模糊，右肋膈角疑似輕度鈍化／少量肋膜積液（受電極遮蔽，不確定）",
+    "長骨及肋骨纖細、呈骨質減少樣表現，提示慢性病或長期臥床病童",
+    "未見氣胸、大量肋膜積液或胸管"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "右側中下肺野浸潤清楚可見，且無胸管或肋膜引流管；但影像上有氣切管、四枚心電圖電極及右縱膈旁疑似中央靜脈導管／餵食管，顯示為慢性病、長期依賴氣切且處於監測環境之病童，與一般首次就診情境不符。僅適合病史已載明氣切依賴（如神經肌肉疾病合併吸入性肺炎）之個案使用。",
+  "description_zh": "AP 攜帶式小兒胸部X光，影像明顯傾斜旋轉且肺容積偏低，下頜與肩胛骨重疊於上肺野。頸部正中可見氣切管，胸壁有四枚心電圖電極及導線，右側縱膈旁另見一條細管狀影自頸部向下延伸至橫膈附近（中央靜脈導管、餵食管或體外導線，性質不確定），左鎖骨上方有一小金屬扣，左臂外側影像邊緣另有體外管線。右側中肺野可見範圍約 8-10 公分之斑片狀、網狀肺浸潤，向下延伸至右下肺野與肺門周圍，右側橫膈邊緣部分模糊、右肋膈角疑似輕度鈍化；左側肺門周圍及左下肺野亦有較淡之斑片狀浸潤。心縱膈影偏大、雙側肺門突出（AP 投照、旋轉與低肺容積之放大效應需納入考量），骨骼纖細呈骨質減少樣表現，未見氣胸、大量肋膜積液或胸管。",
+  "label_concern": ""
+}

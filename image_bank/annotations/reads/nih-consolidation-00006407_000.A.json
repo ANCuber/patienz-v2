@@ -1,0 +1,44 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film; L side marker present at image upper right confirming conventional orientation; no significant rotation; adequate inspiration; slight overpenetration of mediastinum. Black band artifact at the top-left image edge (processing/collimation artifact).",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "External L side marker with round marker disc (not a medical device)",
+   "location": "image upper right corner, over patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Subtle hazy patchy opacity with coarse reticulonodular markings lateral to the left heart border above the left hemidiaphragm; possible mild consolidation/infiltrate (candidate for the labelled finding, not definite)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Dense, bulky left hilum with clustered nodular (possibly calcified) densities; calcified hilar lymph nodes vs hilar prominence/mass, needs correlation",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, unfolded/tortuous aortic knob consistent with atherosclerotic ectasia in an elderly patient",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Coarse, mildly increased bronchovascular markings, more evident in the lower zones (chronic bronchitic-type change)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiac silhouette upper-normal/borderline in size; no pleural effusion, costophrenic angles sharp; no pneumothorax",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.45,
+ "description_zh": "胸部 PA 正面片，影像右上方可見 L 側標記，體位對稱、吸氣量尚可。左下肺野心臟外側、左橫膈上方可見輕度模糊的斑片狀密度增加並伴粗糙網狀結節狀紋理，可能為輕度實變或浸潤，但變化細微、邊界不清，需與慢性肺紋理增粗鑑別。左肺門較緻密並見成簇結節狀（疑鈣化）陰影，主動脈弓突出且迂曲，符合老年動脈硬化性改變；雙側肺紋理粗，兩側肋膈角銳利，未見肋膜積液或氣胸。未見任何導管、引流管、心律調節器或其他治療性裝置。"
+}

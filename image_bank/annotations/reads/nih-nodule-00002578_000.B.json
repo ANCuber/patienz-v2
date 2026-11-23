@@ -1,0 +1,42 @@
+{
+ "view": "Frontal erect chest radiograph (PA, possibly AP; scapulae partly overlie the lateral upper lung fields)",
+ "technical_quality": "Adequate inspiration (about 9-10 posterior ribs visible), minimal rotation (spinous processes roughly midway between the clavicular heads), adequate penetration (thoracic vertebral bodies and the left hemidiaphragm visible through the heart). Collimation is generous: the neck, mandible and skull base are included superiorly; a black rectangular collimation/plate artifact lies along the left image edge. An \"L\" side marker (with \"SC\" text) at the upper right of the image confirms conventional orientation.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External side marker (L, with SC text)",
+   "location": "Upper right corner of the image, outside the patient (patient's left)"
+  },
+  {
+   "type": "Round radiopaque disc / external marker or button",
+   "location": "Upper right corner of the image, outside the thorax"
+  },
+  {
+   "type": "Collimation / cassette edge artifact (black rectangle)",
+   "location": "Left image edge, over the patient's right shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Coarse, increased bronchovascular / peribronchial markings with an ill-defined hazy band of increased density along the left heart border (lingula / left lower lobe region); no definite discrete nodule or consolidation, no air bronchogram. Differential: peribronchial thickening (bronchitic change), early/mild infiltrate, or summation of prominent vessels and overlying breast shadow.",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent bilateral hila, left more than right, with a bulky appearance most consistent with prominent pulmonary arteries; no discrete hilar mass identified.",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly increased bronchovascular markings in the medial right lower zone (infrahilar), less marked than on the left.",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面立位X光片，吸氣量足夠、旋轉輕微、穿透度適當，肩胛骨部分重疊於兩側肺野外上方；影像右上角可見「L」側別標記及一圓形外部標記物，影像左緣有黑色遮蔽偽影，未見任何管路、導線或體內裝置。雙側肺門略顯粗大（左側較明顯），以血管性突出為主，未見明確肺門腫塊；左下肺野沿左心緣可見支氣管血管紋理增粗並伴有邊界不清的淡薄密度增高，右下肺野內側支氣管血管紋理亦稍增多，其餘肺野透亮、未見明確結節或實質化。雙側肋膈角銳利、未見肋膜積液或氣胸，心臟大小正常、縱膈不寬、氣管居中，橫膈平滑且左膈下可見胃泡，骨骼與軟組織未見明顯異常。"
+}

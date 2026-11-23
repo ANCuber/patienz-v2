@@ -1,0 +1,77 @@
+{
+ "view": "Frontal chest radiograph (PA/AP, erect); no definite side marker legible, conventional orientation assumed (small corner marker at image upper-right)",
+ "technical_quality": "Adequate penetration and inspiration (~8-9 posterior ribs). Minimal rotation. Scapulae partially project over the upper lung fields bilaterally. Large bilateral breast shadows obscure both lower zones and costophrenic angles, limiting evaluation of the lung bases. Image label characters at the inferior edge.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 9,
+ "devices": [
+  {
+   "type": "external artifact - side/corner marker",
+   "location": "image upper-right corner (patient left, outside the thorax)"
+  },
+  {
+   "type": "external artifact - date/label stamp characters",
+   "location": "inferior midline edge of film, below the diaphragm"
+  },
+  {
+   "type": "external artifact - small rectangular radiodense object (possible button/clothing artifact)",
+   "location": "lower midline overlying the lower thoracic spine below the cardiac silhouette"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large rounded gas-filled structure with a visible thick wall in the left lower hemithorax with elevated left hemidiaphragm (~9 cm); most consistent with a distended gastric fundus under an eventrated/elevated left hemidiaphragm or diaphragmatic hernia; differential includes a large cavitary/bullous lesion of the left lower lobe",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small rounded nodular opacity (~1 cm) in the right middle zone adjacent to the right hilum / lower paratracheal region",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Small nodular opacity (~0.8 cm) in the lateral right middle zone near the chest wall",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Nodular/increased density at the left hilum (prominent hilum vs. nodule)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Dense right hilar densities, possibly calcified hilar nodes or vessels end-on",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Borderline cardiomegaly (CTR ~0.5-0.55) with left ventricular configuration",
+   "laterality": "midline",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded/ectatic aortic arch with rounded aortic knob",
+   "laterality": "midline",
+   "zone": "upper"
+  },
+  {
+   "finding": "Left hemidiaphragm markedly elevated relative to the right",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Lower zones and costophrenic angles obscured by large breast shadows; right costophrenic angle possibly mildly blunted, indeterminate",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative changes of both glenohumeral joints and generalized osteopenia",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面X光片，吸氣尚可，肩胛骨部分投影於雙上肺野，雙側乳房陰影遮蔽下肺野及肋膈角。左下胸見一約9公分之大型含氣圓形結構伴厚壁，左側橫膈明顯上抬，考慮胃底脹氣合併橫膈膨升或橫膈疝氣，需與左下葉空洞或大泡性病變鑑別。右中肺野近肺門處及外側各見約1公分小結節狀陰影，左肺門亦見結節狀密度增加，建議進一步CT評估。心影邊緣性擴大，主動脈弓明顯迂曲，未見任何管路、引流管或心律調節器。"
+}

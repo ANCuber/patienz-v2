@@ -1,0 +1,34 @@
+{
+ "view": "Frontal chest radiograph (PA/AP, erect), wide field of view including upper abdomen and lumbar spine; \"L\" side marker over the patient's left shoulder (image upper right) confirms conventional orientation",
+ "technical_quality": "Adequate inspiration (about 9 posterior ribs visible), adequate penetration (vertebral bodies seen through the cardiac shadow), minimal rotation (spinous processes roughly midway between the clavicular heads). Scapulae partially project over the lateral upper zones (incomplete scapular rotation). No motion blur. Whole thorax included; costophrenic angles included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 14,
+ "devices": [
+  {
+   "type": "radiographic side marker 'L' (external artifact, not a medical device)",
+   "location": "over the patient's left shoulder / acromion region (image upper right)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large gas-distended stomach / splenic flexure of colon with mottled (food or faecal) contents beneath the left hemidiaphragm; contained within bowel wall, no free subdiaphragmatic air - incidental, most likely physiologic",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right hemidiaphragm slightly higher than the left (about 2 cm), smooth rounded dome - at the upper limit of normal, no subpulmonic effusion or basal opacity to suggest a cause",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent / dense right hilum, most likely vascular (pulmonary artery end-on) rather than a mass - low confidence, no associated lung opacity",
+   "laterality": "right",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光，吸氣量足夠、穿透度適中、旋轉輕微，肩胛骨部分重疊於兩側上肺野外側；未見任何管路、導線、夾子或植入裝置，僅於左肩處見「L」側別標記。兩側肺野透亮度對稱、無實質化、結節、間質性浸潤、Kerley B線或肺水腫表現，肺門血管影大致正常（右肺門略顯飽滿，較可能為血管影而非腫塊）；心臟大小正常（CTR約0.3），縱隔未增寬，氣管居中，主動脈弓正常。兩側肋膈角銳利，無肋膜積液或氣胸；右側橫膈略高於左側（約2公分，屬正常上限），左側橫膈下見一大型含氣、內容物呈斑駁狀的胃／結腸脾曲影像（約14公分，可能為食物或糞便殘渣，屬偶然發現，未見膈下游離氣體）。骨骼結構完整，未見肋骨或鎖骨骨折，脊椎排列正常；兩側乳房陰影重疊於下肺野，屬正常軟組織影。整體判讀為大致正常之胸部X光。"
+}

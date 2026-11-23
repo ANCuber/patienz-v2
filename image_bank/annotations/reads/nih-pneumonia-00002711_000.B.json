@@ -1,0 +1,43 @@
+{
+ "view": "PA frontal chest radiograph, erect",
+ "technical_quality": "Adequate: good inspiration (about 9-10 posterior ribs visible), adequate penetration (vertebral bodies visible through the cardiac shadow), minimal rotation. Both scapulae partially overlap the lateral upper lung fields (not fully retracted). 'L' side marker present on the patient's left; a rotated printed text label ('DMD') in the upper corner on the patient's left side, outside the thorax.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "external side marker 'L' (radiographic marker, not a device)",
+   "location": "upper corner of image on the patient's left, over the left shoulder soft tissue / outside thorax"
+  },
+  {
+   "type": "external printed text label (rotated 'DMD' annotation)",
+   "location": "far upper corner on the patient's left, outside the body"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy, ill-defined airspace opacity in the left perihilar / mid zone extending into the left lower zone, partially obscuring the left heart border (silhouette sign) - consolidation, most consistent with lingular / left lower lobe pneumonia",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, dense left hilum compared with the right (likely part of the perihilar consolidation; hilar adenopathy cannot be excluded)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild elevation of the left hemidiaphragm (left dome projects slightly higher than the right) with a prominent gastric air bubble beneath it - possible minor left lower lobe volume loss versus gastric distension",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent bronchovascular / peribronchial markings in the right perihilar and lower zone, without focal consolidation (low confidence, may be within normal for age)",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面直立胸部X光(PA),吸氣量足夠、穿透度適當、幾無旋轉,雙側肩胛骨部分重疊於外側肺野;未見任何管路、引流管、夾子或植入裝置,僅病人左側上角見「L」側別標記及一印字標籤。左肺門區至左中肺野見斑片狀、邊界不清之肺泡性陰影,並向左下肺野延伸,部分遮蔽左心緣,左肺門較右側突出且緻密,以左舌葉/左下葉肺炎實變最為可能;右肺大致清晰,僅肺門周圍及下肺野支氣管血管紋理略增,無局灶性實變。雙側肋膈角銳利,未見肋膜積液或氣胸;左側橫膈輕度抬高,其下方見明顯胃泡。心臟大小正常,縱膈與氣管居中,肋骨、鎖骨、肱骨頭(生長板未閉合,符合年齡)及軟組織未見明顯異常。"
+}

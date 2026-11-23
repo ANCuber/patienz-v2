@@ -1,0 +1,43 @@
+{
+  "id": "nih-pneumonia-00007845_001",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal), upright; 'L' side marker at image upper right = patient's left, conventional orientation",
+  "technical_quality": "Adequate. Apices, both costophrenic angles and lateral chest walls included; inspiration adequate (~9 posterior ribs); no significant rotation; penetration adequate (spine visible through the heart, retrocardiac region slightly under-penetrated by the large cardiac shadow). Scapulae partially project over the lateral upper lung fields. Image is soft/slightly blurred from dataset downsampling, limiting fine interstitial detail.",
+  "target": {
+    "finding": "pneumonia",
+    "visible": "uncertain",
+    "laterality": "left",
+    "zone": "lower",
+    "size_cm": 6,
+    "confidence": 0.45
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "left",
+    "reader_b": "right",
+    "adjudicator": "left"
+  },
+  "agreement": "conflict",
+  "devices": [
+    {
+      "type": "Radiographic side marker 'L' with small annotation text (external marker only, not a medical device)",
+      "location": "Image upper-right corner, over the patient's left shoulder soft tissue, outside the thorax",
+      "zh": "左側「L」側別標記（放射標記，非醫療裝置）"
+    }
+  ],
+  "other_findings": [
+    "心影明顯擴大（心胸比約 0.6），左心室輪廓突出",
+    "胸主動脈迂曲、延展，主動脈弓明顯突出（老年性主動脈延展，瘤樣擴張無法排除），氣管於弓部略向右偏",
+    "左側肋膈角輕度鈍化／模糊，少量肋膜積液無法排除",
+    "右下肺野內側及右肺門周圍支氣管血管紋理粗糙增加（慢性間質變化或輕度鬱血），未見明確實質化或空氣支氣管徵，右側橫膈與肋膈角清晰",
+    "右肺門附近微小緻密點狀影，可能為血管端面或小鈣化肉芽腫",
+    "胸廓骨質疏鬆，未見肋骨骨折或溶骨性病灶",
+    "肩胛骨部分重疊於兩側上肺野外側（體位因素）",
+    "未見氣胸"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標記為肺炎的病灶僅為左下肺野心尖外側之淡薄霧狀陰影，合併左側橫膈外側輪廓部分消失與肋膈角輕度鈍化，影像表現不具特異性（肺炎、肺底塌陷或少量積液皆可能），且兩位判讀者對病灶側別意見相左（A：左下；B：右下），無放射科醫師標註框可佐證。全片以顯著心臟擴大與主動脈迂曲為主要表現，會使報告重點偏離「首次以肺炎就診」的情境。雖無任何治療裝置（無引流管、導管或節律器），但因目標病灶可見度不確定，不建議作為肺炎首次就診的教學影像。",
+  "description_zh": "站立 PA 胸部正面片，吸氣量足夠、無明顯旋轉，影像右上角可見「L」側別標記，未見任何導管、導線、引流管或心臟節律器。心影顯著擴大（心胸比約 0.6），左心室輪廓突出並延伸至左側胸壁附近；胸主動脈迂曲延展、主動脈弓明顯突出，氣管於弓部略向右偏移，符合老年性主動脈延展。左下肺野於心尖外側可見約 6 公分之淡薄霧狀密度增加，左側橫膈外側輪廓部分被遮蔽、左側肋膈角輕度鈍化，可能為左下葉／舌葉肺炎或肺底塌陷，少量肋膜積液無法排除。右下肺野內側及右肺門周圍支氣管血管紋理粗糙增加，右肺門旁有一微小緻密點狀影（血管端面或小鈣化肉芽腫），但未見明確實質化，右側橫膈與肋膈角清晰。胸廓骨質疏鬆，未見肋骨骨折或氣胸。",
+  "label_concern": "此標籤為 NLP 自報告擷取、無放射科醫師標註框；影像上僅見左下肺野非特異性淡薄霧狀陰影，未見明確實質化或空氣支氣管徵，可能為肺底塌陷（同片另有 Atelectasis 標籤）或少量積液而非肺炎；兩位判讀者對側別意見相左（左下 vs 右下），肺炎標籤可靠度偏低。"
+}

@@ -1,0 +1,38 @@
+{
+ "view": "PA (frontal), pediatric; L marker at image upper right confirms conventional orientation",
+ "technical_quality": "Suboptimal: patient rotated with head turned to the patient's right, cervical/upper thoracic spine curved by positioning; adequate penetration; costophrenic angles and both lung apices included; mandible/teeth projected over the upper field",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "multiple",
+ "size_cm": 18,
+ "devices": [
+  {
+   "type": "L side marker (external)",
+   "location": "image upper right, over patient's left shoulder region"
+  },
+  {
+   "type": "small angular linear radiopaque density (~2 cm), likely external artifact / lead fragment - uncertain; not a chest tube or pigtail",
+   "location": "patient's right mid zone, lateral, projected over the ribs"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large pleural effusion: dense homogeneous opacification of the middle and lower hemithorax obscuring the hemidiaphragm and costophrenic angle, with opacity tracking up along the lateral chest wall; probable underlying lower-lobe consolidation/collapse",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Patchy airspace opacities / infiltrates in the residual aerated upper lung",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Relative hyperlucency / compensatory hyperinflation of the contralateral lung; possible mild mediastinal shift to the left (uncertain given rotation)",
+   "laterality": "left",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.85,
+ "description_zh": "小兒胸部正面X光，L標記位於影像右上方，符合常規擺位；病人頭部轉向右側、胸廓有旋轉，品質欠佳。右側胸腔中下肺野呈大範圍均質緻密白化，右側橫膈與肋膈角被遮蔽，緻密影沿外側胸壁向上延伸，符合大量右側肋膜積液，並疑合併右下肺實變或塌陷；右上肺野仍有部分通氣，但可見斑片狀浸潤。左肺相對透亮，疑有代償性過度充氣，縱隔可能輕度向左偏移（因旋轉難以確定）；左側橫膈下可見正常胃泡。右側中肺野外側投影一小段角狀線形高密度影，疑為體外導線或異物，未見胸管、豬尾巴導管或其他引流裝置。"
+}

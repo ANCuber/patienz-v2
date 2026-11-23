@@ -1,0 +1,29 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film, good inspiration, no significant rotation; L side marker present in upper right of image confirming conventional orientation. Slight over-penetration of upper mediastinum.",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "external radiographic side marker (L) with technologist initials",
+   "location": "upper right corner of image (patient's left upper, outside thorax)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "small dense calcific foci at the hilum, consistent with calcified hilar lymph nodes (old granulomatous disease); more conspicuous on the right",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "mild prominence of basal/perihilar vascular markings without Kerley B lines, peribronchial cuffing, or alveolar opacity; equivocal for interstitial edema",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.3,
+ "description_zh": "胸部正面 PA 片，吸氣良好，無明顯旋轉。心臟大小正常，縱膈輪廓正常，兩側肋膈角銳利，未見肋膜積液。兩側肺野通氣良好，僅見兩側下肺野及肺門周圍血管紋理輕度增加，未見明確 Kerley B 線、支氣管周圍套袖徵或肺泡性浸潤，肺水腫之影像證據不明確。兩側肺門可見小型鈣化緻密影（右側較明顯），符合舊性肉芽腫性病變之鈣化淋巴結；左橫膈下可見正常胃泡，未見任何管路或引流裝置。"
+}

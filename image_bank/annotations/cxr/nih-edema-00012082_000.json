@@ -1,0 +1,44 @@
+{
+ "id": "nih-edema-00012082_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "Frontal chest radiograph, recorded PA (arms abducted/elevated, so AP cannot be excluded); lead 'L' marker with technologist initials 'DMD' at image upper right (patient's left) — conventional orientation, image-left = patient-right",
+ "technical_quality": "Adequate but limited. Whole thorax included, no significant rotation (medial clavicles roughly symmetric about the spinous processes). Very large body habitus with abundant chest-wall and upper-arm soft tissue: upper/mid zones adequately penetrated, but the lower chest and upper abdomen are dense with low contrast, partly obscuring the lung bases and the left costophrenic angle. Inspiration adequate to mildly reduced (~8 posterior ribs), hemidiaphragms slightly elevated. Scapulae partly project over the upper lateral lung fields. Cardiomediastinal silhouette small/normal. Skeletal maturity and habitus appear adult-like, inconsistent with the recorded age of 10 years — demographics may be inaccurate.",
+ "target": {
+  "finding": "pulmonary edema",
+  "visible": "yes",
+  "laterality": "bilateral",
+  "zone": "multiple",
+  "size_cm": -1.0,
+  "confidence": 0.55
+ },
+ "laterality_sources": {
+  "bbox": null,
+  "reader_a": "bilateral",
+  "reader_b": "bilateral",
+  "adjudicator": "bilateral"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' with technologist initials 'DMD' (not a medical device)",
+   "location": "Image upper-right corner, projected above the patient's left shoulder, outside the thorax",
+   "zh": "體外左側（L）鉛字標記附技師縮寫「DMD」，位於影像右上角（病人左側），非醫療裝置"
+  }
+ ],
+ "other_findings": [
+  "雙側肺門輕度突出，右側肺門邊緣較模糊、略顯飽滿",
+  "體型壯碩，胸壁與上臂軟組織豐厚，使下肺野及上腹部對比度偏低、肺底部分被遮蔽",
+  "吸氣量尚可至偏低（約8根後肋），雙側橫膈略上抬",
+  "右側肋膈角銳利；左側肋膈角部分被軟組織遮蔽，無明確肋膜積液",
+  "心影大小正常（心胸比約0.36–0.40），縱膈與氣管居中",
+  "未見肺泡實變、Kerley B線、氣胸或肺結節",
+  "雙上臂外展，肩胛骨部分投影於上外側肺野",
+  "骨骼成熟度與體型看似成人，與登記之10歲男童不符，人口學資料可能有誤",
+  "肋骨、鎖骨及脊椎未見明顯異常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記病灶（肺水腫）在片上以雙側肺門周圍及中下肺野間質／支氣管血管紋理增加、肺門邊緣模糊之輕度間質性肺水腫型態呈現，右側較明顯；盲讀者亦獨立描述同一發現且側別一致（雙側）。片上無胸管、引流管、中心靜脈導管、心律調節器或任何治療性裝置，僅有體外L側標記，無手術或既往處置痕跡，不與首次就診情境衝突。惟徵象輕微且非特異（無Kerley B線、無肋膜積液、心影不大），教學時宜提示需結合臨床判讀，並注意登記年齡與影像外觀不符。",
+ "description_zh": "正面胸部X光（登記為PA，雙上臂外展），影像右上角可見體外左側（L）鉛字標記附技師縮寫，為常規擺位；病人體型壯碩、胸壁與上臂軟組織豐厚，下肺野及上腹部對比度偏低，吸氣量尚可至略偏低、雙側橫膈略上抬。雙側肺門周圍及中下肺野可見間質性與支氣管血管紋理輕度增加、略帶模糊，雙側肺門輕度突出且右側肺門邊緣較不清晰，以右側較為明顯，範圍自肺門延伸至下肺野約10–12公分，符合輕度間質性肺水腫之表現；未見明確Kerley B線、肺泡實變或肺結節。心影大小正常（心胸比約0.36–0.40），縱膈與氣管居中；右側肋膈角銳利，左側肋膈角部分被軟組織遮蔽，無明確肋膜積液或氣胸。骨骼成熟度與體型看似成人，與登記之10歲年齡不符；片上未見任何導管、導線、胸管、引流管或植入裝置，無已接受治療之影像證據。",
+ "label_concern": "肺水腫徵象輕微且非特異：僅見雙側肺門周圍及中下肺野間質紋理增加與肺門模糊（右側較明顯），無Kerley B線、無肋膜積液、心影不大；盲讀者雖獨立描述同一發現但未主動判為肺水腫，亦可為支氣管周圍增厚或軟組織重疊造成之假象，NLP擷取標籤可信度中等。另登記年齡（10歲男童）與影像之骨骼成熟度及體型明顯不符。"
+}

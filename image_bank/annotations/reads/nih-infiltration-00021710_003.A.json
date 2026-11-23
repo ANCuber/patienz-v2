@@ -1,0 +1,52 @@
+{
+ "view": "PA (frontal); 'L' marker in the upper right corner of the image confirms conventional orientation (patient's left = image right)",
+ "technical_quality": "Adequate penetration and exposure, no significant rotation (medial clavicles roughly symmetric about the spinous processes), inspiration moderate/slightly limited, apices and both costophrenic angles included. 1024-px downsampled image limits fine detail (e.g. catheter tip).",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "Dual-lumen implanted subcutaneous venous port (port-a-cath) reservoir with two circular septa and a top connector",
+   "location": "Left upper anterior chest wall (patient's left, image right), projected over the left anterior 2nd-3rd ribs lateral to the aortic arch"
+  },
+  {
+   "type": "Port catheter",
+   "location": "Runs superiorly from the reservoir connector, loops over the left clavicle (likely left jugular/subclavian venous access) and descends along the left side of the mediastinum toward the SVC; tip not confidently identified at this resolution"
+  },
+  {
+   "type": "External 'L' side marker",
+   "location": "Image upper right corner (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy reticular/patchy infiltrate in the medial left lower zone extending from below the left hilum toward the retrocardiac/lingular region, partially blurring the left heart border; approx 8 cm craniocaudal",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Increased bronchovascular / coarse reticular interstitial markings at both lung bases (more than expected for a 59-year-old), without dense consolidation",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cluster of nodular high-density opacities at the left hilum (approx 2-3 cm cluster), most consistent with calcified hilar lymph nodes / old granulomatous disease",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, tortuous / unfolded aortic knob with slightly widened upper mediastinum (vascular, likely aortic ectasia)",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal; costophrenic angles sharp, no pleural effusion, no pneumothorax, no chest tube",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面（PA）X光：左上胸壁皮下可見雙腔式植入式人工血管注射座（port-a-cath），導管自注射座向上繞經左鎖骨區後沿左側縱膈下行朝向上腔靜脈，導管末端於本片解析度下無法確認。左下肺野內側（左肺門下方至心緣旁／舌葉區）可見模糊網狀合併斑片狀浸潤影，範圍約 8 公分，左心緣部分模糊；雙側下肺野支氣管血管紋理增加，但未見緻密實質化。左肺門旁另見成簇結節狀高密度影（疑鈣化淋巴結或陳舊性肉芽腫病灶），主動脈弓突出且迂曲。心臟大小在正常上限，雙側肋膈角銳利，未見肋膜積液或氣胸，未見胸管或引流管。"
+}

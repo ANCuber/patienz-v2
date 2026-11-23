@@ -1,0 +1,42 @@
+{
+ "view": "PA erect frontal chest radiograph",
+ "technical_quality": "Adequate inspiration (about 9-10 posterior ribs visible), adequate penetration with thoracic spine visible through the heart, no significant rotation (medial clavicular ends roughly equidistant from the spinous processes). Scapulae are only partially rotated off the lateral lung fields. A side marker is present at the image's upper right but its letters ('L' and technologist initials) are mirror-reversed, i.e. the marker was placed backward; anatomy (aortic knob, cardiac apex and gastric bubble on the image right, higher right hemidiaphragm on the image left) confirms conventional orientation with the patient's left on the image right.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": 2.2,
+ "devices": [
+  {
+   "type": "multiple small linear metallic foreign bodies (appearance of retained acupuncture-needle fragments / embedded metallic threads), 5-6 pieces, each a few mm long",
+   "location": "soft tissues of the right lower neck / right supraclavicular region, above the right clavicle (image upper left), outside the lung"
+  },
+  {
+   "type": "small curved metallic density (hook-shaped wire fragment), likely a further retained needle fragment or external artifact",
+   "location": "projected over the lateral right clavicle / right acromioclavicular region"
+  },
+  {
+   "type": "mirror-reversed side marker 'L' with technologist initials (external, backward-placed)",
+   "location": "image upper right corner, over the patient's left shoulder soft tissues"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Solitary well-circumscribed round nodular opacity, approximately 2.2 cm, projecting over the anterior end of the left 2nd rib lateral to the aortic knob (left upper lobe on frontal view); no cavitation, no visible calcification, no surrounding consolidation",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Multiple small linear metallic foreign bodies in the extrathoracic soft tissues of the right lower neck / supraclavicular fossa, consistent with retained acupuncture-needle fragments (external to lung)",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Small curved metallic fragment projected over the lateral right clavicle / acromioclavicular region (retained needle fragment or external artifact)",
+   "laterality": "right",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.8,
+ "description_zh": "站立後前位胸部X光，吸氣充足、無明顯旋轉，側邊標記字樣呈鏡像反置，惟依解剖結構確認為常規方向。左上肺野於左側第二前肋端外側、主動脈弓旁可見一約2.2公分邊緣清楚之圓形結節狀陰影，無明顯鈣化或空洞，餘雙側肺野清晰，無實質化、氣胸或肋膜積液，雙側肋膈角銳利。心臟大小正常，縱膈輪廓及氣管位置正常，雙側肺門無異常。右側下頸部及鎖骨上區軟組織可見多枚細小線狀金屬異物，另右鎖骨外側/肩鎖關節處有一小段彎曲金屬影，符合殘留針灸針斷片（位於胸腔外）；骨骼結構無明顯骨折或破壞性病灶。建議針對左上肺結節以胸部電腦斷層進一步評估。"
+}

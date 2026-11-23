@@ -1,0 +1,57 @@
+{
+  "id": "nih-infiltration-00000734_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate. Erect PA film, L marker at image upper right (conventional orientation). Inspiration to ~9-10 posterior ribs, minimal rotation, penetration adequate (vertebral bodies visible through the heart). Apices and both costophrenic angles included; scapulae partly overlap the lateral upper lung fields; inferior corners partly obscured by external curved radiopaque artifacts.",
+  "target": {
+    "finding": "pulmonary infiltrate",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 7,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Side marker (L)",
+      "location": "Image upper right, over the patient's left shoulder soft tissue",
+      "zh": "左側標記（L）"
+    },
+    {
+      "type": "External curved radiopaque artifact (thick smooth arc; lead shield / positioning device / clothing, not intrathoracic)",
+      "location": "Image lower-left corner, projected over the patient's right upper abdomen below the right hemidiaphragm",
+      "zh": "外部弧形高密度偽影（右上腹投影處，疑為鉛衣或擺位裝置）"
+    },
+    {
+      "type": "External curved radiopaque artifact (thick smooth arc; lead shield / positioning device / clothing, not intrathoracic)",
+      "location": "Image lower-right corner, projected over the patient's left upper abdomen below the left hemidiaphragm",
+      "zh": "外部弧形高密度偽影（左上腹投影處，疑為鉛衣或擺位裝置）"
+    },
+    {
+      "type": "Small thin wavy curvilinear density, indeterminate - probably external (gown tie / thread), less likely surgical clips",
+      "location": "Right upper abdomen just right of midline at the inferior edge of the film, below the right hemidiaphragm",
+      "zh": "細小波浪狀高密度影（右上腹近中線片緣，疑為衣物線或手術夾，不確定）"
+    }
+  ],
+  "other_findings": [
+    "左下肺野支氣管血管紋理輕度增加（含心後區），程度明顯較右側輕微",
+    "雙側肺門略顯突出，較可能為血管性或老年性變化，而非淋巴腺腫大",
+    "胸主動脈迂曲、主動脈弓突出，符合高齡變化；心臟大小正常（CTR 約 0.35–0.45）",
+    "氣管於主動脈弓處輕度右偏，歸因於主動脈迂曲而非旋轉",
+    "右下肺野可見一約 3–4 mm 緻密點狀影，最可能為血管末端投影或鈣化肉芽腫",
+    "胸椎退化性變化（骨刺），未見肋骨骨折或溶骨性病灶",
+    "雙側肋膈角銳利，無肋膜積液或氣胸；左橫膈下可見正常胃泡"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "右下肺野浸潤影可辨識（雖屬輕度、非實變型），片上無胸管、引流管或任何針對此病灶的治療裝置。兩側下角的弧形偽影與底緣的細小波浪狀影皆為外部或腹部投影，與肺部病灶無關，不會與「初次就診」情境矛盾，適合作為初次表現之教學影像。",
+  "description_zh": "PA 立位胸部X光，影像右上方可見 L 側標記，吸氣深度約達第 9–10 後肋，無明顯旋轉，穿透度適當，雙側肺尖及肋膈角皆納入。右下肺野自肺門下方至內側基底部可見粗糙網狀及支氣管血管束周圍增粗之模糊浸潤影，範圍約 7 公分（6–8 公分），無氣管充氣徵或緻密實變，左下肺野紋理僅輕度增加而右側明顯較重；右下肺野另見一約 3–4 mm 緻密點狀影，最可能為血管末端投影或鈣化肉芽腫。心臟大小正常，胸主動脈迂曲並主動脈弓突出，氣管於弓部輕度右偏，雙側肺門略顯突出，皆符合高齡血管性變化，胸椎可見退化性變化。雙側肋膈角銳利，無肋膜積液或氣胸，左橫膈下可見正常胃泡。兩側下角上腹部投影處各有一條粗弧形外部高密度偽影（疑為鉛衣或擺位裝置），右上腹近中線片緣另有一細小波浪狀高密度影（疑為衣物線或手術夾，不確定）；未見胸管、引流管或其他體內裝置。",
+  "label_concern": "浸潤影屬輕微、以間質性／支氣管血管束周圍增粗為主而非實變，需與高齡慢性支氣管血管紋理增加鑑別；標籤可接受，但為低顯著度病灶。"
+}

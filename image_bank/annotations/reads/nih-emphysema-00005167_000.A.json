@@ -1,0 +1,43 @@
+{
+ "view": "PA (frontal, upright); conventional orientation confirmed by cardiac apex/aortic knob on image right and side-marker clip at image top-right",
+ "technical_quality": "Adequate. Good inspiration (approx. 10-11 posterior ribs visible), no significant rotation (medial clavicular ends roughly symmetric about the spinous processes), adequate penetration (thoracic spine visible through the cardiac shadow), apices and costophrenic angles included. Scapulae partially project over the upper lateral lung fields bilaterally. Small de-identification black bar at the top-right image corner does not obscure anatomy.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External radiographic side marker (L-shaped lead marker with clip, technologist initials 'CA')",
+   "location": "Image top-right corner, superimposed over the patient's left shoulder / lateral to the left clavicle (patient left, upper zone, outside lung)"
+  },
+  {
+   "type": "De-identification blackout bar (post-processing artifact)",
+   "location": "Image top-right edge, above the patient's left shoulder; outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Increased lucency with paucity of vascular markings in both upper zones, with mild hyperinflation (10-11 posterior ribs) - compatible with upper-zone-predominant emphysema; diaphragms not clearly flattened, so changes are mild",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Narrow, vertically oriented (tubular) cardiac silhouette with small cardiothoracic ratio, consistent with hyperinflation",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly accentuated bronchovascular / interstitial markings in both lower zones (bronchitic-type pattern); no focal consolidation",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small dense (possibly calcified) focus at the left hilum - vessel end-on versus small calcified node; uncertain, of doubtful significance",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 正面立位胸部X光，吸氣充足、無明顯旋轉，穿透度適當。兩側上肺野透亮度增加、血管紋理明顯稀疏，肺容積偏大（可見約10–11對後肋），心影狹長呈垂直管狀，符合肺氣腫之過度充氣表現，惟橫膈未見明顯扁平化，整體變化屬輕度。兩側下肺野支氣管血管紋理略增粗；左肺門處見一小高密度影，可能為血管正切像或小鈣化淋巴結，意義不明。未見氣胸、肋膜積液、實質浸潤或肺結節；僅於影像右上角見外部「L」側別鉛標記及去識別化黑框，未見任何導管、引流管或治療裝置。"
+}

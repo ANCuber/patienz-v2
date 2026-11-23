@@ -1,0 +1,51 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film, R marker at image top-left (conventional orientation). Adequate inspiration and penetration; minimal rotation. Numerous overlying metallic foreign bodies and an external jewelry-like object partly obscure the right upper zone.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "Multiple small linear metallic foreign bodies (embedded acupuncture-needle fragments / thread-embedding remnants)",
+   "location": "Right shoulder and right upper chest wall soft tissues (image left), projected over the right upper zone and lateral chest wall"
+  },
+  {
+   "type": "Multiple small linear metallic foreign bodies (embedded acupuncture-needle fragments), including one longer needle-like fragment",
+   "location": "Left shoulder, left upper chest wall and left axillary/lateral chest wall soft tissues (image right), projected over the left upper and middle zones"
+  },
+  {
+   "type": "Ring-shaped / figure-of-8 metallic object with a thin wire or chain extending superiorly (external artifact, likely pendant/jewelry or clip)",
+   "location": "Projected over the right upper-to-middle zone, medial to the anterior 3rd-4th rib (image left)"
+  },
+  {
+   "type": "Laterality marker 'R' with small text label",
+   "location": "Image top-left corner (outside the patient)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Faint band-like / linear opacity just above the hemidiaphragm near the cardiophrenic angle, possibly plate-like (discoid) atelectasis; low certainty",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Subtle linear opacities above the hemidiaphragm, possible minor linear atelectasis; low certainty",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent aortic knob with unfolded / tortuous thoracic aorta (left upper mediastinal contour bulge)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Colonic gas (splenic flexure) beneath the left hemidiaphragm - normal variant, no free air",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.35,
+ "description_zh": "胸部正面（PA）X光片：兩側肩部及上胸壁軟組織內可見多枚細小線狀金屬異物（疑為埋針／針灸針殘留），右上肺野另見一環狀金屬物附細線，應為體外飾物或夾具投影。主動脈弓突出、胸主動脈迂曲。右下肺野近心橫膈角處疑有淡薄帶狀密度，可能為盤狀肺塌陷，但判讀不確定；左下肺野亦見輕微線狀陰影。未見肋膜積液、氣胸，亦無胸管或其他治療跡象。"
+}

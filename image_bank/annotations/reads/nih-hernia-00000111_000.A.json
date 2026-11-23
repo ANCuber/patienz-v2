@@ -1,0 +1,52 @@
+{
+ "view": "PA (frontal), L marker at image upper right confirming conventional orientation",
+ "technical_quality": "Adequate penetration; lung volumes somewhat reduced with a short, kyphotic thorax; apices and both costophrenic angles included but the neck/cervical hardware is at the very top edge; extensive spinal hardware and the retrocardiac hernia obscure the lower mediastinum and right heart border; no significant rotation.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 9,
+ "devices": [
+  {
+   "type": "Posterior spinal instrumentation (pedicle screws with bilateral longitudinal rods)",
+   "location": "Midline, lower thoracic spine extending down through the lumbar spine, projecting below the diaphragm"
+  },
+  {
+   "type": "Cervical spine fixation hardware (screws/plate-rod)",
+   "location": "Midline, lower cervical spine / cervicothoracic junction at the top edge of the film"
+  },
+  {
+   "type": "Radiographic side marker 'L' (external)",
+   "location": "Image upper right corner (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hiatal hernia: rounded retrocardiac soft-tissue opacity with an air-fluid level projecting over the lower thoracic spine, straddling the midline and bulging slightly beyond the right mediastinal border, approx. 8-9 cm wide",
+   "laterality": "bilateral (midline/retrocardiac)",
+   "zone": "lower"
+  },
+  {
+   "finding": "Thoracolumbar scoliosis / spinal deformity, status post extensive posterior spinal fusion",
+   "laterality": "midline",
+   "zone": "lower"
+  },
+  {
+   "finding": "Widened, unfolded superior mediastinum with tortuous thoracic aorta (likely age-related and accentuated by kyphosis)",
+   "laterality": "midline",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly increased bronchovascular/interstitial markings at the lung base, no consolidation or effusion",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Diffuse osteopenia and reduced lung volumes; cardiac size not reliably assessable due to overlying hernia and hardware",
+   "laterality": "none",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.65,
+ "description_zh": "後前位胸部X光片：心臟後方、下胸椎前方可見一圓形軟組織影併有氣液面（air-fluid level），橫跨中線並略向右側縱膈緣突出，寬約8-9公分，符合食道裂孔疝氣（hiatal hernia）表現。下胸椎至腰椎可見廣泛後路椎弓根螺釘與雙側連桿固定併胸腰椎側彎，頸椎下段亦可見固定螺釘/鋼板。兩側肺野未見明顯實質化或肋膜積液，右下肺野支氣管血管紋理略為增加；上縱膈因主動脈迂曲及脊椎後凸而顯得較寬，骨質疏鬆。未見胸管或其他引流裝置。"
+}

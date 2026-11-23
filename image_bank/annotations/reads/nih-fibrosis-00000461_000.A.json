@@ -1,0 +1,61 @@
+{
+ "view": "PA (frontal), upright",
+ "technical_quality": "Adequate inspiration (approx. 9 posterior ribs), minimal rotation, penetration adequate. Right lateral chest-wall soft-tissue folds partly project over the right lung base; a lead marker at the image top-right corner is partly cut off. Diagnostic quality.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "multiple",
+ "size_cm": 9,
+ "devices": [
+  {
+   "type": "Multiple small linear surgical clips (approx. 10-15), consistent with prior axillary lymph-node dissection",
+   "location": "Patient right axilla / right upper lateral chest wall, extra-thoracic (image left, upper)"
+  },
+  {
+   "type": "Additional short linear metallic densities (surgical clips / skin staples)",
+   "location": "Patient right lateral chest wall soft tissue, lower level (image far left, mid-height)"
+  },
+  {
+   "type": "Radiographic lead side-marker / film marker (round + rectangular bright object, partly cut off), external",
+   "location": "Image top-right corner, over patient left shoulder region"
+  },
+  {
+   "type": "Small oblong radiopaque density (~1 cm), likely external artifact (clothing snap) versus calcified gallstone - indeterminate",
+   "location": "Patient right upper quadrant, projected below the right hemidiaphragm over the liver (image left of midline, bottom)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Coarse reticular / linear interstitial opacities radiating from the hilum into the perihilar middle and lower zone, consistent with fibrotic change (labelled finding, dominant side)",
+   "laterality": "right",
+   "zone": "multiple (middle-lower, perihilar)"
+  },
+  {
+   "finding": "Milder coarse linear interstitial markings in the perihilar and lower zone",
+   "laterality": "left",
+   "zone": "multiple (middle-lower, perihilar)"
+  },
+  {
+   "finding": "Prominent, unfolded / tortuous aortic arch with dense aortic knob (atherosclerotic aorta), mild upper-mediastinal widening",
+   "laterality": "left",
+   "zone": "upper (mediastinum)"
+  },
+  {
+   "finding": "Multiple surgical clips in the axilla - post axillary node dissection (possible prior breast cancer surgery)",
+   "laterality": "right",
+   "zone": "upper (extra-thoracic soft tissue)"
+  },
+  {
+   "finding": "Degenerative changes of the thoracic spine",
+   "laterality": "none",
+   "zone": "whole (midline)"
+  },
+  {
+   "finding": "Costophrenic angles sharp, no pleural effusion, no pneumothorax, cardiac size within normal limits",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面胸部X光片，吸氣程度尚可，無明顯旋轉。右側肺門周圍及右中下肺野可見粗網狀、線狀之間質性陰影自肺門向外放射，左側肺門周圍及左下肺野亦有較輕微的粗線狀紋路增加，符合肺纖維化變化；雙側肋膈角清晰，未見肋膜積液或氣胸，心臟大小在正常範圍。右側腋窩及右側胸壁軟組織可見多枚手術夾，疑為既往腋窩淋巴結廓清術後；主動脈弓迂曲突出且鈣化，胸椎有退化性變化；右上腹另見一約1公分之小片狀不透光影，外來物或膽結石待鑑別。未見胸管、引流管或其他治療裝置。"
+}

@@ -1,0 +1,42 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration (about 9-10 posterior ribs), minimal rotation, adequate penetration; scapulae partially overlap the upper lateral lung fields; whole thorax and both costophrenic angles included; image-corner check-mark marker present, no L/R lead marker seen.",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "small-bore chest drain / pigtail-type pleural catheter (thin radiopaque stripe with interruptions consistent with side holes), tip at the left apex",
+   "location": "left hemithorax: enters at the left lower lateral chest wall and courses obliquely upward and medially to the left apex"
+  },
+  {
+   "type": "cluster of small metallic-density linear opacities, probable surgical clips",
+   "location": "projected over the left hilum / aortopulmonary window region"
+  },
+  {
+   "type": "external check-mark image marker (annotation artifact)",
+   "location": "upper corner of the image on the patient's left side, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Left pleural drain in situ with tip at apex; left lung appears essentially re-expanded - no definite residual visceral pleural line or apical/lateral lucent rim identified, so any residual pneumothorax is at most tiny and not confidently seen",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Gas-distended splenic flexure of colon (haustrated bowel gas) beneath a mildly elevated left hemidiaphragm; likely incidental",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right lung clear with normal vascularity to the periphery; heart size and mediastinal contour normal, trachea midline; no pleural effusion, no subcutaneous emphysema seen",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.55,
+ "description_zh": "PA 胸部X光顯示左側胸腔置有一條細管徑胸腔引流管（pigtail 型），由左下外側胸壁進入，斜向上內走行，管尖位於左肺尖，顯示氣胸已接受引流治療。左肺大致已復張，未見明確之臟層肋膜線或肺尖／外側透亮帶，殘餘氣胸不明顯（若有亦極小），右肺清晰、血管紋理正常延伸至周邊。左肺門／主動脈肺動脈窗區域可見數枚金屬密度線狀影，疑為手術夾；左橫膈稍高並可見其下方脾曲結腸脹氣，屬偶然發現。心影大小正常、縱膈居中，未見肋膜積液或皮下氣腫。"
+}

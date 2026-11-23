@@ -1,0 +1,44 @@
+{
+ "view": "PA (frontal), L marker at image upper right confirming conventional orientation",
+ "technical_quality": "Suboptimal: patient rotated (medial clavicle ends asymmetric, mediastinum appears shifted toward the left), shallow inspiration with hypoinflated lungs, lower film includes much of the upper abdomen; penetration adequate (thoracic spine visible through the heart); both costophrenic angles included.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "External side marker (radiopaque 'L')",
+   "location": "Image upper right corner, over the patient's left shoulder region (outside the thorax)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy, ill-defined increased perihilar and medial basal opacity with accentuated bronchovascular markings, consistent with a patchy infiltrate (possible dataset target); not well marginated, borders indistinct",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Subtle retrocardiac haziness in the left lower zone behind the heart, partly attributable to rotation and hypoinflation; cannot exclude a second area of infiltrate",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiac silhouette appears enlarged (estimated CTR about 0.55-0.6) with rounded apex; likely exaggerated by rotation and shallow inspiration, so true cardiomegaly is uncertain",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild thoracic scoliosis / spinal curvature; mediastinum and trachea appear displaced toward the left, most likely positional (rotation) rather than true shift",
+   "laterality": "none",
+   "zone": "whole"
+  },
+  {
+   "finding": "Elevated right hemidiaphragm relative to the left (right dome higher than expected), with prominent gastric/bowel gas under the left hemidiaphragm",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.45,
+ "description_zh": "胸部正面 X 光片，病人有明顯旋轉且吸氣不足，影像品質受限。右側肺門周圍至右下肺野內側可見模糊、邊界不清的浸潤性增加密度影，支氣管血管紋理增粗，範圍約 6–8 公分；左下肺野心後區亦有輕微模糊影，部分可能與旋轉及低通氣有關，無法完全排除第二處浸潤。心影偏大（心胸比約 0.55–0.6），但受旋轉及吸氣不足影響，真實心臟擴大程度不確定；縱膈與氣管略向左偏，右側橫膈較左側抬高，左橫膈下可見胃泡及腸氣。未見肋膜積液、氣胸、胸管、中心靜脈導管、心律調節器或其他體內裝置，僅於影像右上角見外部「L」標記。"
+}

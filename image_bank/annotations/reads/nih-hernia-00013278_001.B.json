@@ -1,0 +1,63 @@
+{
+ "view": "PA erect frontal chest radiograph (L marker with \"DG\" stamp at image upper right, i.e. patient's left)",
+ "technical_quality": "Adequate inspiration (~9-10 posterior ribs), minimal rotation (medial clavicles roughly symmetric about spinous processes), slightly under-penetrated over the cardiac shadow (lower thoracic spine poorly seen through the heart); both costophrenic angles and apices included. Diagnostic quality.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "External side marker 'L' with 'DG' technologist stamp",
+   "location": "Image upper-right corner, above the patient's left shoulder (confirms conventional orientation)"
+  },
+  {
+   "type": "Small metallic-density fleck (probable surgical clip vs. external artifact)",
+   "location": "Lower midline, projected over the upper abdomen just below the cardiac base / xiphoid region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Retrocardiac rounded soft-tissue opacity containing mottled/bubbly gas lucencies, projected over the lower cardiac silhouette left of the spine and clearly above the level of the left hemidiaphragm, ~6 cm; most consistent with a hiatal hernia (differential: gas-containing bowel loop/eventration)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right hemidiaphragm elevated relative to the left by roughly 4 cm (more than the usual 1-3 cm); smooth dome, likely eventration/variant",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Lungs appear mildly hyperinflated with flattened hemidiaphragms and a narrow vertical cardiac configuration, suggesting emphysema/COPD; no focal consolidation",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Dense calcified nodular foci in both hila (right more than left), consistent with old calcified granulomatous lymph nodes",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Tiny (~3-4 mm) calcified nodule in the medial left upper zone near the first rib/clavicle, consistent with a calcified granuloma",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Unfolded/tortuous thoracic aorta with a prominent rounded aortic knob and mild leftward bulge of the superior mediastinum; trachea slightly deviated to the right at arch level (age-related ectasia)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Faint ill-defined ~1 cm rounded opacity in the lateral left lower zone (around anterior 6th rib level) - uncertain, may represent vessel end-on/overlapping rib shadow; comparison with prior films or CT suggested",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative changes of both glenohumeral joints (sclerosis/osteophytes, right more prominent); ribs intact, no fracture",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部X光正面站立PA像，吸氣程度足夠、旋轉輕微，左上方有L側別標記；未見任何導管、引流管或心律調節器，僅下方正中見一小金屬密度點，疑為手術夾或體外異物。心影後方（左側脊椎旁、下肺野）可見一約6公分含斑駁氣泡狀透亮區之圓形軟組織陰影，位於左橫膈水平以上，最符合橫膈裂孔疝氣（鑑別：含氣腸袢或橫膈膨升）；右橫膈較左側明顯偏高。雙肺輕度過度充氣、橫膈平坦、心影窄直，可能與肺氣腫/COPD相關；雙側肺門及左上肺野內側見鈣化結節（陳舊性肉芽腫病變），胸主動脈迂曲擴張、主動脈弓突出；左下肺野外側疑似約1公分模糊結節狀陰影，建議與舊片比對或CT追蹤。心臟大小正常，無肋膜積液或氣胸，雙側肋膈角銳利，雙肩關節退化性變化。"
+}

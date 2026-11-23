@@ -1,0 +1,63 @@
+{
+ "view": "PA (recorded); frontal upright chest radiograph",
+ "technical_quality": "Limited: suboptimal (shallow) inspiration with high hemidiaphragms, large body habitus with bilateral breast shadows obscuring the lower zones and cardiac silhouette, and multiple overlying ECG electrodes/lead wires; no gross rotation; no L/R marker visible.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "ECG electrode with snap-on lead wire",
+   "location": "right anterior chest, right mid zone laterally (patient right, image left)"
+  },
+  {
+   "type": "ECG electrode with snap-on lead wire",
+   "location": "left anterior chest, left mid zone (patient left, image right)"
+  },
+  {
+   "type": "ECG electrode with snap-on lead wire",
+   "location": "right lower chest projected over the right cardiophrenic angle / right hemidiaphragm"
+  },
+  {
+   "type": "ECG electrode with snap-on lead wire",
+   "location": "right upper abdomen / right flank below the diaphragm"
+  },
+  {
+   "type": "ECG electrode with snap-on lead wire",
+   "location": "left upper abdomen / left flank below the diaphragm"
+  },
+  {
+   "type": "ECG lead wires (external), multiple, including one taut straight wire crossing the right mid zone and a bundle of cables running down the midline of the abdomen over the spine",
+   "location": "over both hemithoraces, right lateral chest wall and central abdomen"
+  },
+  {
+   "type": "small oblong metallic density (~0.4 x 1.5 cm), indeterminate, most likely external (cable connector/clothing snap)",
+   "location": "projected over the right paratracheal / right hilar region, right upper-middle zone medially"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Elevated right hemidiaphragm (dome ~5 cm higher than the left) with band/wedge-like increased density at the right lung base medially, silhouetting the right heart border and blunting the right cardiophrenic angle - consistent with right basal (lower lobe / middle lobe) atelectasis (the labelled finding)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Hazy rounded soft-tissue densities in the lower zones adjacent to the chest electrodes, symmetric, most likely nipple/breast shadows rather than lung nodules",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent bilateral breast soft-tissue shadows and obese body habitus obscuring the lower zones and cardiac silhouette; heart size cannot be reliably assessed",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Gastric fundal gas with an air-fluid level beneath the left hemidiaphragm (normal, indicates upright position); left lung clear with sharp left costophrenic angle",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光（記錄為PA），吸氣量不足、體型肥胖且雙側乳房陰影重疊於下肺野，另有多個心電圖電極片與導線投影於胸腹部，影像品質受限。右側橫膈明顯上抬，右下肺野內側靠近右心緣可見帶狀／楔形密度增加，右心緣與右肋膈角變模糊，符合右下肺野（右下葉／中葉基底）肺塌陷，範圍約5公分。左肺野清晰，左肋膈角銳利，左橫膈下可見胃泡氣液面；雙側下肺野於電極片附近之淡圓形陰影疑為乳頭影。未見胸管或引流管等治療證據；右側氣管旁／肺門區另見一小片長橢圓形金屬密度影，疑為外在物品。"
+}

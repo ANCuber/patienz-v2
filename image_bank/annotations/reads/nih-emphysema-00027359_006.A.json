@@ -1,0 +1,55 @@
+{
+ "view": "PA (frontal, erect; consistent with recorded PA)",
+ "technical_quality": "Adequate inspiration and penetration, no significant rotation; upper zones appear somewhat hyperlucent (thin habitus/exposure). Left costophrenic angle partly obscured by overlapping tubes and gastric fundus air. 1024x1024 downsampled image; fine detail limited.",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "chest tube (large-bore, tram-track appearance with radiopaque stripe)",
+   "location": "left hemithorax, lateral; tip at left mid zone (approx. anterior 3rd-4th rib level), courses vertically down along the lateral chest wall to below the left hemidiaphragm dome (posterior sulcus)"
+  },
+  {
+   "type": "chest tube (large-bore, second tube)",
+   "location": "left hemithorax, paravertebral about 2.5 cm lateral to the spine (likely posterior); blunt tip at the level of the aortic arch / left hilum (upper-mid zone junction), extends inferiorly past the left hemidiaphragm dome"
+  },
+  {
+   "type": "thin radiopaque drain / small-bore pleural catheter (Blake-type or pigtail-type stripe; external monitoring wire less likely)",
+   "location": "left hemithorax; enters the low left lateral chest wall (~8th-9th rib laterally), runs along the inner lateral pleural margin, tip in the left upper zone at about the anterior 2nd rib; external segment continues over the left flank and exits the image inferolaterally"
+  },
+  {
+   "type": "surgical clips / staple line (metallic, angulated chain)",
+   "location": "left apex, paramediastinal, adjacent to the left paratracheal / aortic arch region (left upper zone) - post-thoracic-surgery appearance"
+  },
+  {
+   "type": "external orientation/side marker (chevron symbol)",
+   "location": "top right corner of the image (patient's left shoulder)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "subcutaneous emphysema: streaky linear lucencies within the soft tissues of the left axilla and upper lateral chest wall (absent on the right); approx. 3 x 5 cm extent - the most likely correlate of the dataset 'emphysema' label",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "post-operative changes at the left apex with surgical clips/staple line and mild adjacent paramediastinal density",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "no radiographic signs of pulmonary emphysema (no bullae, diaphragm domes preserved, no hyperinflation); mild bilateral upper-zone hyperlucency likely technical / habitus",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "no definite visceral pleural line / pneumothorax and no definite pleural effusion on the left after drainage (left CP angle partly obscured); right lung clear, heart size and mediastinum normal",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.6,
+ "description_zh": "PA 胸部正面片。左側胸腔可見兩條大口徑胸管（一條沿外側胸壁走行、尖端約在左中肺野；另一條位於脊椎旁、尖端約在主動脈弓/左肺門高度，並向下延伸至左橫膈頂之下的後肋膈溝），另有一條細線狀高密度引流管自左下外側胸壁進入、沿外側肋膜緣上行，尖端位於左上肺野約第2前肋高度；左肺尖內側縱膈旁可見手術用金屬夾/釘線，符合胸腔手術後狀態。左側腋窩及上外側胸壁軟組織內可見條紋狀透亮影，右側無此表現，符合皮下氣腫，範圍約5公分；此為本片最可能對應「emphysema」標籤之所見，未見肺實質性肺氣腫之徵象（無肺泡、橫膈仍呈圓頂、無過度充氣）。引流後左側未見明確肋膜線或氣胸，亦無明確肋膜積液（左肋膈角部分被管路與胃泡遮蔽）；右肺清晰，心臟大小與縱膈正常。"
+}

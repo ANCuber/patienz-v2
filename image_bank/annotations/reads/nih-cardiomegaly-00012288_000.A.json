@@ -1,0 +1,54 @@
+{
+ "view": "PA (frontal), erect; L marker present at the image right (patient's left shoulder), conventional orientation",
+ "technical_quality": "Adequate penetration, no significant rotation. Suboptimal inspiration with low lung volumes and elevated hemidiaphragms. Obese habitus: large bilateral breast shadows overlie the lower zones and the scapulae partially project over the upper lung fields, reducing detail. External marker 'L / GKH' visible.",
+ "target_finding_visible": "yes",
+ "laterality": "none",
+ "zone": "lower",
+ "size_cm": 17,
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' with 'GKH' tag (no in-patient device)",
+   "location": "Upper right corner of the image, projected over the patient's left shoulder / acromioclavicular region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Globular enlargement of the cardiac silhouette, cardiothoracic ratio approximately 0.5-0.55 (borderline to mild cardiomegaly); transverse cardiac diameter roughly 17 cm. Apparent enlargement may be partly exaggerated by poor inspiration and obese habitus.",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Widened superior mediastinum, most likely mediastinal fat / tortuous great vessels in the setting of low lung volumes; no discrete mass identified.",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Low lung volumes with elevated hemidiaphragms (poor inspiratory effort); right hemidiaphragm slightly higher than left, within normal limits.",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent / crowded perihilar bronchovascular markings without focal consolidation, likely due to hypoinflation; no overt interstitial oedema.",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Small punctate dense opacities at the right hilum, possibly calcified lymph nodes vs end-on vessels (indeterminate).",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Right costophrenic angle partially obscured by overlying breast/soft-tissue shadow; no definite pleural effusion. Left costophrenic angle sharp. No pneumothorax.",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Obese body habitus with large bilateral breast soft-tissue shadows overlying the lower zones (incidental, degrades lower-zone assessment).",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.65,
+ "description_zh": "胸部正面(PA)X光片，吸氣不足、雙側橫膈位置偏高，病人體型肥胖，雙側乳房軟組織影重疊於下肺野，肩胛骨部分投影於上肺野。心臟陰影呈球狀增大，心胸比約0.5–0.55，屬臨界至輕度心臟擴大，惟部分可能受吸氣不足及體型影響而放大；上縱膈亦顯寬，較可能為縱膈脂肪或大血管迂曲，未見明確腫塊。雙側肺門血管紋理稍顯著，無明確肺實質化、肋膜積液或氣胸，右肺門見小點狀高密度影，疑為鈣化淋巴結或血管切面；左橫膈下見胃泡。未見任何導管、引流管、手術夾或心律調節器等裝置，僅見外部左側標記(L/GKH)。"
+}

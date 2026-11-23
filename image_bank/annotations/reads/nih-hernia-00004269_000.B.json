@@ -1,0 +1,38 @@
+{
+ "view": "Frontal chest radiograph (PA vs AP uncertain; \"L\" marker on the image right confirms conventional orientation; medial scapular borders project over the upper lateral lung fields bilaterally, right more than left, suggesting AP projection or incomplete scapular rotation)",
+ "technical_quality": "Adequate. Good inspiration (approximately 9-10 posterior ribs above the right hemidiaphragm), no significant rotation (clavicular heads roughly equidistant from the spinous processes), acceptable penetration with the thoracic spine visible through the cardiac silhouette. Whole thorax included; a small black collimation/cropping wedge at the top right corner of the image and a slightly tilted upper edge are digitization artifacts. Scapulae not fully cleared from the lung fields.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "Multiple small linear metallic densities in a row (probable surgical clips vs. metallic foreign-body fragments vs. external artifact); no lines, tubes, pacemaker or chest drain",
+   "location": "Right upper zone, laterally, projected over the lateral 3rd-4th posterior ribs / right lateral chest wall"
+  },
+  {
+   "type": "Side marker 'L' with technologist characters",
+   "location": "Image upper right, over the left shoulder region (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Retrocardiac rounded, well-marginated relative lucency / soft-tissue shadow with curvilinear superior margin, projected medial to the left heart border and lateral to the spine, extending above the level of the left hemidiaphragm, about 5 cm across; no definite air-fluid level. Appearance suspicious for a hiatal hernia (herniated gastric fundus). Lateral view or further imaging suggested for confirmation.",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Multiple small linear metallic densities arranged in a row over the lateral right upper chest (over the lateral ribs), likely surgical clips or metallic foreign-body fragments; external artifact not excluded. No associated lung or bony abnormality.",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Scapulae not fully rotated out of the lung fields (medial scapular borders overlie the upper lateral lung fields bilaterally, right more than left) - technical, not a pathological finding",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面X光（依右側影像之「L」標記為常規方向，肩胛骨未完全移出肺野，疑為AP或肩胛未旋出之PA片），吸氣量足夠、無明顯旋轉。於心臟後方、左下縱膈（脊椎與左心緣之間）可見一約5公分、邊緣清楚之圓形相對透亮陰影，向上超過左側橫膈頂之高度，未見明確氣液平面，疑為食道裂孔疝氣（橫膈裂孔疝氣），建議加照側面片或進一步檢查確認。右上肺野外側投影於外側肋骨處可見數個排列成行之小線狀金屬密度影，可能為手術夾或金屬異物碎片，亦不排除體外偽影。雙側肺野清晰，無實質化、結節、氣胸或肋膜積液，兩側肋膈角銳利，橫膈輪廓正常；心臟大小正常（CTR約0.4），縱膈與氣管居中、上縱膈未增寬；骨骼（鎖骨、肋骨、肩關節、胸椎）及軟組織無明顯異常，未見管路、導線或引流管。"
+}

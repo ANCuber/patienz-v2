@@ -1,0 +1,347 @@
+[
+  {
+    "id": "ptbxl-ISC_-11837",
+    "ecg_id": "11837",
+    "selected_code": "ISC_",
+    "language": "en",
+    "source_report": "trace only requested.",
+    "source_report_zh": "（僅要求描記心電圖，未附文字判讀）",
+    "statements_zh": [
+      {"code": "SEHYP", "likelihood": 100.0, "kind": "diagnostic", "zh": "中隔肥厚"},
+      {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+      {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血變化"},
+      {"code": "IVCD", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性心室內傳導障礙（阻滯）"}
+    ],
+    "axis_zh": "",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "原始報告僅註「trace only requested」（僅要求描記），無任何判讀文字；診斷內容僅來自 SCP 代碼（中隔肥厚、左心室肥厚、非特異性缺血、心室內傳導障礙），無法與報告文字交叉驗證。另 extra_beats 註記 2ES。",
+    "corrected": true
+  },
+  {
+    "id": "ptbxl-ISC_-16598",
+    "ecg_id": "16598",
+    "selected_code": "ISC_",
+    "language": "en",
+    "source_report": "sinus arrhythmia. st segments are depressed in ii, iii, avf, v5,6. t waves are low in limb leads and v5,6. the tracing is abnormal, but the significance is uncertain in a patient of this age. suggest cardiological review.",
+    "source_report_zh": "竇性心律不整。II、III、aVF、V5–V6 導程 ST 段壓低；肢體導程及 V5–V6 之 T 波低平。心電圖異常，惟於此年齡病人其臨床意義不明，建議心臟科評估。",
+    "statements_zh": [
+      {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血變化"}
+    ],
+    "axis_zh": "",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-IRBBB-65",
+    "ecg_id": "65",
+    "selected_code": "IRBBB",
+    "language": "de",
+    "source_report": "sinusrhythmus r-s #bergang in v ableitungen nach rechts verschoben unvollstÄndiger rechtsschenkelblock sonst normales ekg",
+    "source_report_zh": "竇性心律，胸前導程 R/S 移行帶向右偏移，不完全性右束支傳導阻滯，其餘正常心電圖。",
+    "statements_zh": [
+      {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"}
+    ],
+    "axis_zh": "",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-IRBBB-2375",
+    "ecg_id": "2375",
+    "selected_code": "IRBBB",
+    "language": "de",
+    "source_report": "sinusrhythmus rechtsschenkelblock",
+    "source_report_zh": "竇性心律，右束支傳導阻滯。",
+    "statements_zh": [
+      {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"}
+    ],
+    "axis_zh": "",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "原始判讀僅寫「rechtsschenkelblock」（右束支傳導阻滯），未註明完全或不完全；SCP 代碼為不完全性右束支傳導阻滯（IRBBB 100）。非直接矛盾（報告較簡略），翻譯忠於原文未擅加「不完全性」，但呈現時宜以代碼之「不完全性」為準。",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-IRBBB-478",
+    "ecg_id": "478",
+    "selected_code": "IRBBB",
+    "language": "en",
+    "source_report": "sinus arrhythmia. incomplete right bundle branch block, this is probably    a normal variant. otherwise normal ecg.",
+    "source_report_zh": "竇性心律不整，不完全性右束支傳導阻滯（可能為正常變異），其餘正常心電圖。",
+    "statements_zh": [
+      {"code": "NORM", "likelihood": 80.0, "kind": "diagnostic", "zh": "正常心電圖"},
+      {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"}
+    ],
+    "axis_zh": "",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-IRBBB-726",
+    "ecg_id": "726",
+    "selected_code": "IRBBB",
+    "language": "en",
+    "source_report": "sinus rhythm. incomplete right bundle branch block. otherwise normal ecg. Edit: NORM 50, IRBBB, (NORM 100, IRBBB, LAFB)",
+    "source_report_zh": "竇性心律，不完全性右束支傳導阻滯，其餘正常心電圖。",
+    "statements_zh": [
+      {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"},
+      {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+      {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"}
+    ],
+    "axis_zh": "",
+    "stadium_zh": "",
+    "consistent_with_codes": false,
+    "issues": "SCP 代碼含左前分支阻滯（LAFB 100），但原始判讀文字未提及且明言「其餘正常心電圖」，兩者不相容；此 LAFB 係資料庫事後編修加入（原文尾端「Edit: NORM 50, IRBBB, (NORM 100, IRBBB, LAFB)」為標註修訂註記，非判讀內容，翻譯已略去）。另 NORM 100 與 LAFB 100 並存亦屬代碼內部矛盾。建議使用時以代碼為準或避免採用此筆作為教學題。",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-IRBBB-823",
+    "ecg_id": "823",
+    "selected_code": "IRBBB",
+    "language": "en",
+    "source_report": "premature ventricular contraction(s). sinus bradycardia. incomplete right bundle branch block. st segments are depressed in v2-6. t waves are low in v4,5,6. this may be due to lv strain or ischaemia. the cause of the bradycardia is not evident.",
+    "source_report_zh": "竇性心搏過緩，伴心室早期收縮。不完全性右束支傳導阻滯。V2–V6 導程 ST 段壓低，V4–V6 之 T 波低平，可能為左心室勞損（strain）或缺血所致。心搏過緩原因不明。",
+    "statements_zh": [
+      {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"},
+      {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+      {"code": "PVC", "likelihood": 100.0, "kind": "form", "zh": "心室早期收縮"}
+    ],
+    "axis_zh": "",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-IRBBB-975",
+    "ecg_id": "975",
+    "selected_code": "IRBBB",
+    "language": "en",
+    "source_report": "premature ventricular contraction(s). sinus rhythm. right axis deviation. incomplete right bundle branch block.",
+    "source_report_zh": "竇性心律，伴心室早期收縮。電軸右偏，不完全性右束支傳導阻滯。",
+    "statements_zh": [
+      {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+      {"code": "LPFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左後分支阻滯"},
+      {"code": "PVC", "likelihood": 100.0, "kind": "form", "zh": "心室早期收縮"}
+    ],
+    "axis_zh": "電軸右偏",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-IRBBB-569",
+    "ecg_id": "569",
+    "selected_code": "IRBBB",
+    "language": "en",
+    "source_report": "atrial fibrillation with rapid ventricular response. incomplete right bundle branch block. st segments are depressed in i, v2-6. non-specific but consistent with myocardial ischaemia.",
+    "source_report_zh": "心房顫動併快速心室反應。不完全性右束支傳導阻滯。I、V2–V6 導程 ST 段壓低，屬非特異性變化，但與心肌缺血相符。",
+    "statements_zh": [
+      {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+      {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"},
+      {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"}
+    ],
+    "axis_zh": "",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-IRBBB-3641",
+    "ecg_id": "3641",
+    "selected_code": "IRBBB",
+    "language": "de",
+    "source_report": "sinusrhythmus p-sinistrocardiale rechtstyp linksposteriorer hemiblock unvollstÄndiger rechtsschenkelblock",
+    "source_report_zh": "竇性心律，左心房負荷（P mitrale），電軸右偏，左後分支阻滯，不完全性右束支傳導阻滯。",
+    "statements_zh": [
+      {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+      {"code": "LPFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左後分支阻滯"}
+    ],
+    "axis_zh": "電軸右偏",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-IRBBB-3233",
+    "ecg_id": "3233",
+    "selected_code": "IRBBB",
+    "language": "de",
+    "source_report": "sinusrhythmus unvollstÄndiger rechtsschenkelblock sonst normales ekg",
+    "source_report_zh": "竇性心律，不完全性右束支傳導阻滯，其餘正常心電圖。",
+    "statements_zh": [
+      {"code": "NORM", "likelihood": 80.0, "kind": "diagnostic", "zh": "正常心電圖"},
+      {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"}
+    ],
+    "axis_zh": "",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-IRBBB-2368",
+    "ecg_id": "2368",
+    "selected_code": "IRBBB",
+    "language": "de",
+    "source_report": "sinus arrhythmie lagetyp normal unvollstÄndiger rechtsschenkelblock sonst normales ekg",
+    "source_report_zh": "竇性心律不整，電軸正常，不完全性右束支傳導阻滯，其餘正常心電圖。",
+    "statements_zh": [
+      {"code": "NORM", "likelihood": 80.0, "kind": "diagnostic", "zh": "正常心電圖"},
+      {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"}
+    ],
+    "axis_zh": "電軸正常",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-1AVB-218",
+    "ecg_id": "218",
+    "selected_code": "1AVB",
+    "language": "de",
+    "source_report": "sinusrhythmus lagetyp normal av-block 1.grades pathologisch",
+    "source_report_zh": "竇性心律，電軸正常，一度房室傳導阻滯，異常心電圖。",
+    "statements_zh": [
+      {"code": "NORM", "likelihood": 80.0, "kind": "diagnostic", "zh": "正常心電圖"},
+      {"code": "1AVB", "likelihood": 100.0, "kind": "diagnostic", "zh": "一度房室傳導阻滯"}
+    ],
+    "axis_zh": "電軸正常",
+    "stadium_zh": "",
+    "consistent_with_codes": false,
+    "issues": "原始判讀結語為「pathologisch」（異常心電圖），但 SCP 代碼含 NORM 80（正常心電圖），整體分類互相牴觸；一度房室傳導阻滯（1AVB 100）本身與報告相符。翻譯忠於原文。屬資料庫原始標註不一致，使用時宜以「一度房室傳導阻滯」為主要教學重點並留意 NORM 標籤。",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-1AVB-234",
+    "ecg_id": "234",
+    "selected_code": "1AVB",
+    "language": "de",
+    "source_report": "sinusrhythmus a-v block i steillage    anteriorer infarkt  mit vorderwandaneurysma    inferiorer infarkt pathologische repolarisation",
+    "source_report_zh": "竇性心律，一度房室傳導阻滯，電軸垂直位，前壁梗塞併前壁心室瘤，下壁梗塞，再極化異常。",
+    "statements_zh": [
+      {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+      {"code": "ANEUR", "likelihood": 100.0, "kind": "diagnostic", "zh": "與心室瘤相符之 ST-T 變化"},
+      {"code": "1AVB", "likelihood": 100.0, "kind": "diagnostic", "zh": "一度房室傳導阻滯"}
+    ],
+    "axis_zh": "電軸右偏(?)",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "翻譯忠於原文，無矛盾，但有三處需留意：(1) 原始判讀為 Steillage（電軸垂直位），heart_axis 欄位為 AXR（電軸右偏?），兩者相近但非同一分類；(2) 報告寫「前壁梗塞」，代碼為前間壁心肌梗塞（ASMI 100），屬報告用語較寬泛，可相容；(3) 報告明載「下壁梗塞」，但代碼 IMI 僅 15%（未列入 statements_zh），代碼與報告對下壁梗塞的把握度不同。梗塞分期為 unknown。",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-1AVB-13856",
+    "ecg_id": "13856",
+    "selected_code": "1AVB",
+    "language": "sv",
+    "source_report": "sinusbradykardi a-v block i p fÖrlÄngd misstÄnkt vÄnster kammarhypertrofi avvikande qrs(t) fÖrlopp    anteroseptal myokardskada bÖr ÖvervÄgas",
+    "source_report_zh": "竇性心搏過緩，一度房室傳導阻滯，P 波時間延長，疑似左心室肥厚，QRS(T) 型態異常，應考慮前間壁心肌損傷。",
+    "statements_zh": [
+      {"code": "1AVB", "likelihood": 100.0, "kind": "diagnostic", "zh": "一度房室傳導阻滯"},
+      {"code": "LVH", "likelihood": 50.0, "kind": "diagnostic", "zh": "左心室肥厚"}
+    ],
+    "axis_zh": "",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-1AVB-728",
+    "ecg_id": "728",
+    "selected_code": "1AVB",
+    "language": "en",
+    "source_report": "sinus rhythm. prolonged pr interval. qs complexes in v2 and tiny r waves in v3 consistent    with old anteroseptal myocardial infarction. t wave flattening in i, avl, v4,5,6. st segments are slightly depressed in i, avl. non-specific but consistent with m",
+    "source_report_zh": "竇性心律，PR 間期延長。V2 呈 QS 波、V3 之 R 波極小，與陳舊性前間壁心肌梗塞相符。I、aVL、V4–V6 之 T 波低平，I、aVL 之 ST 段輕度壓低，屬非特異性變化，但與心肌缺血相符（原文於「m」處截斷，「心肌缺血」依同系列報告慣用語補全）。",
+    "statements_zh": [
+      {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+      {"code": "IMI", "likelihood": 50.0, "kind": "diagnostic", "zh": "下壁心肌梗塞"},
+      {"code": "1AVB", "likelihood": 100.0, "kind": "diagnostic", "zh": "一度房室傳導阻滯"}
+    ],
+    "axis_zh": "",
+    "stadium_zh": "陳舊性",
+    "consistent_with_codes": true,
+    "issues": "原文末句於「consistent with m」截斷；譯者補全為「心肌缺血」屬合理推測（同資料庫英文報告慣用「non-specific but consistent with myocardial ischaemia」），已於譯文加註截斷說明以免視為原文內容。另 SCP 代碼含下壁心肌梗塞（IMI 50），報告文字未提及下壁，屬報告較簡略，非矛盾。",
+    "corrected": true
+  },
+  {
+    "id": "ptbxl-1AVB-1484",
+    "ecg_id": "1484",
+    "selected_code": "1AVB",
+    "language": "de",
+    "source_report": "sinus arrhythmie a-v block i lagetyp normal",
+    "source_report_zh": "竇性心律不整，一度房室傳導阻滯，電軸正常。",
+    "statements_zh": [
+      {"code": "1AVB", "likelihood": 100.0, "kind": "diagnostic", "zh": "一度房室傳導阻滯"}
+    ],
+    "axis_zh": "電軸正常",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-1AVB-1713",
+    "ecg_id": "1713",
+    "selected_code": "1AVB",
+    "language": "de",
+    "source_report": "sinusrhythmus lagetyp normal av-block 1.grades pathologisch",
+    "source_report_zh": "竇性心律，電軸正常，一度房室傳導阻滯，異常心電圖。",
+    "statements_zh": [
+      {"code": "1AVB", "likelihood": 100.0, "kind": "diagnostic", "zh": "一度房室傳導阻滯"},
+      {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"}
+    ],
+    "axis_zh": "電軸正常",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  },
+  {
+    "id": "ptbxl-1AVB-3980",
+    "ecg_id": "3980",
+    "selected_code": "1AVB",
+    "language": "en",
+    "source_report": "trace only requested.",
+    "source_report_zh": "（僅要求描記心電圖，未附文字判讀）",
+    "statements_zh": [
+      {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+      {"code": "1AVB", "likelihood": 100.0, "kind": "diagnostic", "zh": "一度房室傳導阻滯"},
+      {"code": "RVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心室肥厚"}
+    ],
+    "axis_zh": "",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "原始報告僅註「trace only requested」（僅要求描記），無任何判讀文字；診斷內容僅來自 SCP 代碼（不完全性右束支傳導阻滯、一度房室傳導阻滯、右心室肥厚），無法與報告文字交叉驗證。",
+    "corrected": true
+  },
+  {
+    "id": "ptbxl-1AVB-17523",
+    "ecg_id": "17523",
+    "selected_code": "1AVB",
+    "language": "de",
+    "source_report": "sinus arrhythmie a-v block i lagetyp normal",
+    "source_report_zh": "竇性心律不整，一度房室傳導阻滯，電軸正常。",
+    "statements_zh": [
+      {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"},
+      {"code": "1AVB", "likelihood": 100.0, "kind": "diagnostic", "zh": "一度房室傳導阻滯"}
+    ],
+    "axis_zh": "電軸正常",
+    "stadium_zh": "",
+    "consistent_with_codes": true,
+    "issues": "",
+    "corrected": false
+  }
+]

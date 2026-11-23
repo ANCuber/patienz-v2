@@ -1,0 +1,45 @@
+{
+ "id": "nih-emphysema-00000801_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate upright PA film. Good (deep) inspiration with about 10-11 posterior ribs visible; minimal rotation (medial clavicle ends roughly equidistant from the spinous processes); penetration adequate to slightly high (thoracic vertebral bodies visible through the cardiac silhouette). Scapulae largely rotated off the lung fields with only slight lateral overlap. L side marker at the image upper right confirms conventional orientation. The image is cropped inferiorly so the hemidiaphragms and costophrenic angles are only just included.",
+ "target": {
+  "finding": "pulmonary emphysema",
+  "visible": "yes",
+  "laterality": "bilateral",
+  "zone": "upper",
+  "size_cm": -1,
+  "confidence": 0.65
+ },
+ "laterality_sources": {
+  "bbox": null,
+  "reader_a": "bilateral",
+  "reader_b": "bilateral",
+  "adjudicator": "bilateral"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Side marker 'L' (external radiographic marker)",
+   "location": "Image upper-right corner, over the patient's left shoulder / lateral clavicle region",
+   "zh": "L 側別標記（體外）"
+  },
+  {
+   "type": "Round radiopaque external object (~1.5-2 cm), likely clothing snap/button, marker bead or ECG electrode; not an internal device",
+   "location": "Over the patient's left shoulder soft tissues, immediately below the L marker, outside the lung field",
+   "zh": "左肩軟組織上約 1.5–2 公分圓形金屬密度體外異物（疑為衣物釦、標記珠或電極片）"
+  }
+ ],
+ "other_findings": [
+  "心影狹長呈垂直管狀，心胸比偏小，為過度充氣所致；無心臟擴大，縱膈與氣管居中",
+  "主動脈弓輕度突出／稍顯展開",
+  "雙下肺野支氣管血管紋理略顯粗糙，疑為慢性支氣管炎變化（細微，低信心）",
+  "未見肋膜積液、氣胸、局部實質化、結節或腫塊；雙側肋膈角銳利；左橫膈下可見正常胃泡",
+  "骨骼與軟組織未見明顯異常；影像下緣略被裁切，肋膈角僅勉強含括"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記病灶（肺氣腫）可見：雙肺過度充氣、橫膈低平、上肺野透亮度增加且周邊血管紋理稀疏，兩位判讀者（含盲讀）均獨立辨識同一發現且側別一致。片上無胸管、引流管、手術夾或任何治療相關裝置，僅有體外 L 標記與衣物釦類異物，無任何與初次就診情境矛盾之處。",
+ "description_zh": "正面直立 PA 胸部X光，吸氣充分（約 10–11 根後肋）、無明顯旋轉、穿透度適當，影像下緣略被裁切但雙側肋膈角仍勉強含括。雙側肺野過度充氣，橫膈低平（左側較右側明顯）、肋間隙增寬，雙上肺野透亮度增加且周邊血管紋理稀疏減少，符合以上肺野為主之雙側肺氣腫變化，範圍瀰漫無法以公分量測，未見明確肺大泡。心影狹長呈垂直管狀、心胸比偏小，係過度充氣所致而非心臟病變；主動脈弓輕度突出，縱膈與氣管居中；雙下肺野支氣管血管紋理略粗，疑為慢性支氣管炎變化。未見肋膜積液、氣胸、局部實質化、結節或腫塊，左橫膈下可見正常胃泡，骨骼與軟組織無明顯異常。影像右上角（病人左肩處）可見 L 側別標記及其下方一約 1.5–2 公分圓形金屬密度體外異物（疑為衣物釦或電極片），未見胸管、引流管或任何體內裝置。",
+ "label_concern": ""
+}

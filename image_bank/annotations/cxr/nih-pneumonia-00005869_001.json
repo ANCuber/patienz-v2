@@ -1,0 +1,59 @@
+{
+  "id": "nih-pneumonia-00005869_001",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect PA frontal film; penetration adequate (thoracic spine visible through the cardiac shadow); minimal rotation with trachea midline and clavicles roughly symmetric; inspiration moderate-to-shallow with mildly low lung volumes and basal vascular crowding; large body habitus with bilateral breast and chest-wall soft-tissue shadows reducing contrast in both lower zones; apices, costophrenic angles and upper abdomen included; 'L' side marker at image upper right confirms conventional orientation (image-left = patient-right).",
+  "target": {
+    "finding": "pneumonia (patchy ill-defined hazy air-space/interstitial opacity in the right perihilar/infrahilar region, abutting the right heart border with partial silhouetting of the right cardiac border and extending toward the right base)",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 7,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "right (radiologist box 179x280 px; centroid in the middle zone but the 280 px height spans the middle and lower zones)",
+    "reader_a": "right (lower zone; label-aware)",
+    "reader_b": "right (lower zone; found blind without the label)",
+    "adjudicator": "right (mid-to-lower zone; epicentre infrahilar / lower medial, adjacent to the right heart border)"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "external metallic snap fastener (gown/clothing)",
+      "location": "soft tissue over the right shoulder, image upper-left corner, outside the thorax",
+      "zh": "衣物金屬釦（右肩，體外）"
+    },
+    {
+      "type": "external metallic snap fastener (gown/clothing)",
+      "location": "top edge of the image, right of midline, over the left neck/shoulder region, outside the thorax",
+      "zh": "衣物金屬釦（左頸肩上緣，體外）"
+    },
+    {
+      "type": "lead side marker 'L' with 'CA' annotation (not a medical device)",
+      "location": "image upper-right corner over the left shoulder soft tissue",
+      "zh": "「L」側別標記（含 CA 字樣，左肩，體外）"
+    },
+    {
+      "type": "round metallic ring / marker-holder clip (external, not a medical device)",
+      "location": "immediately above the L marker, over the left shoulder soft tissue",
+      "zh": "圓形金屬環／標記夾（左肩上方，體外）"
+    }
+  ],
+  "other_findings": [
+    "雙肺支氣管血管紋理增加並伴支氣管周圍增厚，以雙下肺野較明顯（部分受肺容積偏低及乳房陰影重疊影響）",
+    "左下肺野心後區輕微霧狀密度增加，無空氣支氣管徵，較右側不明顯，性質不確定（血管擁擠或早期浸潤）",
+    "吸氣量中等偏淺、肺容積略低，雙側基底血管擁擠",
+    "心臟大小在正常上限（CTR 約 0.5，可能因吸氣不足而略顯放大），縱膈居中無增寬，氣管居中，左肺門略顯突出但無明確腫大",
+    "病人體型肥胖，雙側乳房及胸壁軟組織陰影重疊於下肺野",
+    "雙側肋膈角銳利，未見肋膜積液",
+    "右上肺野：NIH 放射科醫師另標有氣胸方框（246x81 px，右肺尖），但本片右肺尖未見明確臟層肋膜線或肺紋理消失，兩位讀片者與裁定者皆無法確認氣胸",
+    "下腹部（右側中線旁及左下腹）多顆圓形、邊界清楚之高密度影，疑為口服藥錠或鈣化（靜脈石／鈣化淋巴結），屬胸腔外偶然發現",
+    "骨骼結構無明顯異常；左橫膈下可見正常胃泡"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標籤之肺炎浸潤影於右側中下肺野清楚可見，盲讀者亦獨立發現且側別一致；體內未見任何胸管、引流管、中心靜脈導管或起搏器，體外僅有衣物釦與側別標記，無任何治療後或術後跡象，與首次因肺炎症狀就診之情境相符。唯 NIH 另附之右上肺野氣胸標記於本片無法確認，出題時應以右側中下肺野肺炎為主要判讀目標，勿以氣胸為教學重點。",
+  "description_zh": "PA 直立正面胸部X光，病人體型肥胖，雙側乳房與胸壁軟組織陰影重疊於下肺野，吸氣量中等偏淺、肺容積略低，無明顯旋轉，穿透度尚可。右側中下肺野（肺門周圍至肺門下方、緊鄰右心緣並向肺底延伸）可見片狀、邊界不清之肺泡／間質性浸潤影，範圍約 6–7 公分，右心緣局部略不清晰（silhouette sign），較對側明顯，符合右中／下葉肺炎表現。雙肺支氣管血管紋理增加並伴支氣管周圍增厚，以雙下肺野較明顯；左下肺野心後區有輕微霧狀密度增加，性質不確定。心臟大小在正常上限（CTR 約 0.5），縱膈與氣管居中，左肺門略顯突出，雙側肋膈角銳利，未見肋膜積液；右肺尖未見明確臟層肋膜線，無法確認氣胸。體內未見任何管路、引流管或起搏器；體外可見右肩及左頸肩上緣之衣物金屬釦、左肩之「L」側別標記（CA）及其上方之圓形金屬環，下腹部另見多顆圓形高密度影，疑為口服藥錠或鈣化，屬胸腔外偶然發現；骨骼結構無明顯異常。",
+  "label_concern": "肺炎標籤合理，方框、標籤讀者與盲讀者皆判為右側，浸潤影實際跨越右中下肺野（方框中心落在中肺野、兩位讀者判為下肺野，裁定以下肺野為主）。另附之右上肺野氣胸標記於本片無法確認，未見明確氣胸線，請勿將氣胸列為此片教學重點。"
+}

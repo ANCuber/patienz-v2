@@ -1,0 +1,53 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA frontal film with an \"L\" side marker (plus technologist initials) over the patient's left upper corner confirming conventional orientation; adequate inspiration, no significant rotation. Large bilateral breast shadows overlie both lower zones and obscure the right costophrenic angle and right heart border; retrocardiac and subdiaphragmatic regions are relatively underpenetrated.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "upper",
+ "size_cm": 1,
+ "devices": [
+  {
+   "type": "Small linear metallic density (surgical clip vs metallic foreign body), ~1 cm, single straight rod-like",
+   "location": "Patient left, medial mid-to-lower zone, immediately lateral to the left heart border below the left hilum (projected over left lower lobe)"
+  },
+  {
+   "type": "Radiographic side marker 'L' with technologist initials (mirrored text)",
+   "location": "Image upper right corner, over patient's left shoulder soft tissue / outside lung"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Well-circumscribed, dense (calcified-appearing) round nodule ~1 cm, paramediastinal, just above the right hilum at approximately the level of the aortic knob (upper/middle zone junction); most likely a calcified granuloma - this is the nodule matching the dataset label",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Additional tiny dense dot ~0.4 cm at the upper right hilum (small calcified granuloma/node vs end-on vessel)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Borderline-to-mildly enlarged cardiac silhouette (estimated CTR ~0.53-0.55); right heart border partly obscured by breast shadow",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded aortic knob with tortuous thoracic aorta (age-related)",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly elevated right hemidiaphragm relative to the left",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Large bilateral breast shadows overlying the lower zones (obscuring right costophrenic angle); left costophrenic angle sharp, no visible pleural effusion or pneumothorax",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "PA 正面胸部X光，影像右上方可見「L」側別標記，吸氣深度尚可，無明顯旋轉，但雙側乳房陰影大範圍遮蔽下肺野及右側肋膈角。右上肺野內側（右肺門上方、約主動脈弓高度，位於上／中肺野交界）可見一顆約1公分、邊緣清楚、密度偏高疑似鈣化之圓形結節，右肺門上方另見一約0.4公分的小鈣化點；此結節與資料集標籤相符，影像特徵較偏向鈣化性肉芽腫。左心緣旁、左肺門下方可見一枚約1公分的細長線狀金屬密度影，疑為手術夾或金屬異物，未見胸管、引流管或其他導管。心影略大（CTR約0.53–0.55，右心緣部分被乳房陰影遮蔽），主動脈弓突出迂曲，右側橫膈略高於左側，左側肋膈角銳利，未見明顯肋膜積液或氣胸。"
+}

@@ -1,0 +1,70 @@
+{
+ "view": "Frontal chest radiograph, AP projection (likely portable/supine), right arm abducted",
+ "technical_quality": "Poor. Large body habitus with heavy soft-tissue overlap, marked rotation (asymmetric clavicle heights, spine tilted/curved with lower thoracic spine displaced toward image right), under-penetrated lower half of film so heart borders, both hemidiaphragms and both costophrenic angles are poorly defined. Right arm abducted with humerus and scapula projected over the right hemithorax. Apices included; lung bases only partially assessable. Left side marker (L with technologist initials) on image right confirms conventional orientation. Limited diagnostic value; repeat PA/lateral advised.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Patient's right hemithorax, mid zone, projected over the right lung (image left)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Patient's left lateral chest wall, mid zone at about the 4th anterior rib level (image right)"
+  },
+  {
+   "type": "Multiple ECG lead wires / monitoring cables",
+   "location": "Crossing both hemithoraces and the lower part of the film; cable connector projected over the left lateral lower chest near the side marker"
+  },
+  {
+   "type": "External tubing (double-contoured, likely oxygen or monitoring tubing; central venous catheter not confidently identified)",
+   "location": "Runs from the right neck/upper chest along the right paramediastinal region down to the right lower zone where it curls; appears external, not a chest drain"
+  },
+  {
+   "type": "Radiopaque left side marker with technologist initials",
+   "location": "Image right, lateral to the patient's left chest wall"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Obscured right hemidiaphragm and right costophrenic angle with hazy increased density at the right base; pleural effusion or basal atelectasis cannot be excluded, though overlying soft tissue and rotation likely contribute",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Reduced apparent right lung volume with diffuse veiling opacity of the right hemithorax compared with the left (positional/soft-tissue overlap vs true volume loss)",
+   "laterality": "right",
+   "zone": "whole"
+  },
+  {
+   "finding": "Dense overlying soft tissue (abducted arm, axilla, chest wall) obscuring the lateral right upper zone",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Left costophrenic angle obscured by overlying soft-tissue (breast/abdominal) density; effusion not excluded",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Relative hyperlucency of the left upper and mid zones with somewhat sparse peripheral vascular markings (may be accentuated by contrast with the veiled right lung)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Cardiomediastinal silhouette not evaluable; trachea and mediastinum appear displaced toward the patient's left, most likely rotational rather than true shift",
+   "laterality": "uncertain",
+   "zone": "middle"
+  },
+  {
+   "finding": "Tilted/curved thoracic spine (rotation vs mild scoliosis)",
+   "laterality": "uncertain",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.4,
+ "description_zh": "前後位（AP）胸部X光，病人體型肥胖、明顯旋轉且穿透不足，整體影像品質不佳，心臟輪廓、兩側橫膈及肋膈角皆顯示不清。胸部可見多個心電圖電極與導線，右側縱膈旁另見一條外置管線（疑為氧氣或監測管線）向下走行至右下肺野捲曲，未見胸管或中央靜脈導管確切證據。右側胸腔容積相對縮小並呈瀰漫性密度增加，右橫膈與右肋膈角模糊，可能與體位及軟組織重疊有關，但無法排除右側肋膜積液或肺底塌陷；左上肺野相對透亮，周邊肺紋理略顯稀疏。心縱膈因旋轉與軟組織重疊無法評估，氣管及縱膈似偏向左側，多屬旋轉造成，建議重新拍攝標準PA及側面片。"
+}

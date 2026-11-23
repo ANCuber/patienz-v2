@@ -1,0 +1,51 @@
+{
+ "id": "nih-cardiomegaly-00015400_001",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (recorded); frontal upright chest radiograph, L side marker with technologist initials 'OG' at image upper-right (patient's left) confirms conventional orientation; scapulae partially overlap the lateral lung fields (incomplete scapular rotation or AP-like projection)",
+ "technical_quality": "Adequate for interpretation. Penetration adequate (thoracic spine visible through the cardiac silhouette); minimal rotation (medial clavicle ends roughly symmetric about the spinous processes); apices and both costophrenic angles included. Inspiration fair to suboptimal (about 8-9 posterior ribs) with relatively elevated hemidiaphragms (right higher than left), which may mildly exaggerate cardiac and mediastinal size. Large body habitus with thick chest-wall soft tissue; scapulae partially overlap the lateral lung fields. Two round external snap-button (clothing fastener) artifacts overlie the midline spine at the mid-thoracic and thoracolumbar levels. No lines, tubes, pacemaker or surgical hardware.",
+ "target": {
+  "finding": "cardiomegaly",
+  "visible": "yes",
+  "laterality": "none",
+  "zone": "lower",
+  "size_cm": 19.5,
+  "confidence": 0.85
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "bilateral",
+  "reader_b": "bilateral",
+  "adjudicator": "none"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External snap-button / clothing fastener artifact (round metallic ring with central dense dot), no line or tube attached",
+   "location": "Midline, projected over the mid-thoracic spine (approx. T7-T9) at the level of the cardiac silhouette",
+   "zh": "衣物按扣體外偽影（投影於中胸椎）"
+  },
+  {
+   "type": "External snap-button / clothing fastener artifact (round metallic ring with central dense dot), no line or tube attached",
+   "location": "Midline, projected over the thoracolumbar / upper lumbar spine just below the diaphragm (approx. T11-L1)",
+   "zh": "衣物按扣體外偽影（投影於胸腰交界處）"
+  },
+  {
+   "type": "Radiographic 'L' side marker with technologist initials 'OG'",
+   "location": "Image upper-right corner (patient's left shoulder region), outside the thorax",
+   "zh": "L側標記（含技師縮寫），非治療裝置"
+  }
+ ],
+ "other_findings": [
+  "雙側肺門增粗（右側較明顯），肺門周圍及雙下肺野支氣管血管／網狀間質紋理增加，疑為肺靜脈鬱血或輕度間質性肺水腫，亦需考慮慢性間質性變化；未見局部肺實變、腫塊或結節",
+  "上縱膈輕度增寬，左側主動脈結／肺動脈段突出（以36歲男性而言偏顯著），氣管居中；部分可能因吸氣不足與投照方式而放大",
+  "肺容積偏低、雙側橫膈相對上抬（右側高於左側），符合吸氣不足",
+  "雙側肋膈角清晰銳利，未見肋膜積液或氣胸",
+  "左橫膈下可見胃泡；體型壯碩、胸壁軟組織厚，雙側肩胛骨部分重疊於肺野外側；骨骼結構未見明顯異常",
+  "正中線於中胸椎及胸腰交界處各見一枚圓形衣物按扣體外偽影，無管路或導線相連"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "心影擴大清楚可見（心胸比約0.56、橫徑約19.5 cm），盲讀者亦獨立發現，與放射科定界框位置一致；片上無胸管、引流管、心律調節器或手術鋼絲等任何治療證據。其餘所見（雙側肺門增粗、肺血管鬱血樣紋理、吸氣不足）與心臟擴大初次就診之情境相符；兩枚衣物按扣為體外偽影，不影響作為初次表現影像使用。",
+ "description_zh": "胸部正面（PA）立位X光片，L側標記及技師縮寫位於影像右上角，患者旋轉輕微，吸氣稍嫌不足、肺容積偏低，雙側橫膈相對上抬（右側較高），雙側肩胛骨部分重疊於肺野外側，體型壯碩。心影呈球狀明顯擴大，心臟橫徑約19.5 cm、心胸比約0.56，左心緣（左心室輪廓）向左側胸壁明顯外展、右心緣亦向右膨出，心影位於雙側下肺野中央而無側別之分；上縱膈輕度增寬，左側主動脈結／肺動脈段略顯突出，氣管居中。雙側肺門增粗（右側較明顯），肺門周圍及雙下肺野支氣管血管與網狀間質紋理增加，疑為肺靜脈鬱血或輕度間質性肺水腫，未見局部肺實變、腫塊或結節。雙側肋膈角清晰，未見肋膜積液或氣胸，左橫膈下可見胃泡，骨骼結構未見明顯異常。正中線於中胸椎及胸腰交界處各見一枚圓形衣物按扣體外偽影，未見任何導管、引流管、心律調節器或手術鋼絲。",
+ "label_concern": ""
+}

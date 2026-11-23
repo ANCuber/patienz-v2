@@ -1,0 +1,44 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film; good inspiration on the left, midline trachea, no rotation, well penetrated; \"L\" side marker and \"H8\" label present in the upper-right image corner confirming conventional orientation. Right hemidiaphragm elevated, which limits assessment of the right base.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "radiographic side marker (L) with label H8 - external artifact",
+   "location": "upper-right corner of image, over the patient's left shoulder region (outside the thorax)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Coarse reticular/linear opacities with a few small nodular densities extending from the right hilum inferiorly along the right heart border to the right cardiophrenic region - fibrotic scarring (labelled finding), approx 5 x 8 cm area",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Elevated right hemidiaphragm (dome at approximately the anterior 4th-5th rib level), suggesting right basal volume loss",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small dense round nodule (~0.5 cm) just below the right clavicle, most consistent with a calcified granuloma",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Small dense (possibly calcified) hilar nodal densities at both hila, more conspicuous on the left - likely old granulomatous disease",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild prominence/unfolding of the aortic knob; heart size within normal limits (CTR approximately 0.35-0.4)",
+   "laterality": "none",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "PA 胸部X光，影像右上角可見「L」側別標記，方向為常規。右側肺門下方及右下肺野內側可見粗糙網狀、線狀併少數小結節狀陰影，沿右心緣向下延伸至右心橫膈角，範圍約5×8公分，符合局部纖維化／瘢痕變化；右側橫膈明顯上抬，可能伴隨右下肺容積減少。右上肺野鎖骨下方另見一約0.5公分之高密度小結節，雙側肺門亦有小的高密度（疑鈣化）結節影，疑為舊有肉芽腫性病變；主動脈弓輕微突出。左肺野大致清晰，心臟大小正常，未見肋膜積液、氣胸，亦未見任何導管、引流管或心律調節器等裝置。"
+}

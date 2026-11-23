@@ -1,0 +1,34 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film; good inspiration (posterior ribs ~9-10 visible), trachea midline, no significant rotation, adequate penetration; L side marker with technologist initials (TMM) at image upper right confirms conventional orientation.",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "external side marker (L) with technologist initials TMM",
+   "location": "image upper right corner, outside the patient, patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild coarse reticular / linear interstitial markings, most conspicuous in the left perihilar and lower zone; subtle and non-specific, possible mild fibrotic change",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild increased reticular interstitial markings medially near the cardiophrenic region; subtle",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left hilum appears slightly prominent / dense (likely vascular or peribronchovascular thickening; no discrete mass)",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.4,
+ "description_zh": "PA 正面胸部X光，吸氣量足夠，氣管及縱膈居中，心臟大小正常。雙側下肺野及左側肺門周圍可見輕度粗網狀、線狀間質紋理增加，以左側肺門周圍至左下肺野較明顯，可能為輕度纖維化變化，但程度輕微且非特異性，無明確蜂窩狀變化或體積縮小。雙側肋膈角銳利，未見肋膜積液或氣胸，亦未見任何導管、引流管、夾子或植入裝置；影像右上角為外部左側標記（L）。"
+}

@@ -1,0 +1,61 @@
+{
+ "id": "nih-cardiomegaly-00002418_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (recorded); frontal paediatric chest radiograph whose appearance (mandible/teeth included, both scapulae over the lateral lung fields, arms abducted, clavicles projected high) is more consistent with an AP projection. L marker with technologist initials 'DG' at image upper right confirms conventional orientation (image-left = patient-right).",
+ "technical_quality": "Adequate. Penetration reasonable (thoracic spine visible through the cardiac silhouette). Inspiration slightly shallow to adequate (about 6 anterior ribs above the right hemidiaphragm). Rotation minimal at most (Reader B suggested mild leftward rotation; medial clavicular ends are roughly symmetric about the spinous processes). Both apices and both costophrenic angles are included. Mandible and teeth project above the thoracic inlet without obscuring the apices; scapulae overlie the lateral upper lung fields. Collimated field with unexposed white borders laterally and superiorly and a small dark rectangular film/scan edge artifact at the far upper-left image corner. Earrings were not removed. AP-type projection and shallow inspiration may mildly exaggerate the cardiac silhouette.",
+ "target": {
+  "finding": "cardiomegaly",
+  "visible": "yes",
+  "laterality": "none",
+  "zone": "lower",
+  "size_cm": 12.0,
+  "confidence": 0.7
+ },
+ "laterality_sources": {
+  "bbox": "none (NLP-mined label, no radiologist bounding box)",
+  "reader_a": "bilateral (central, left-predominant)",
+  "reader_b": "midline/central, projects into both hemithoraces, predominantly left (found blind)",
+  "adjudicator": "none (midline cardiac silhouette, no side; central lower zone extending into the middle zone, apex toward the left)"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Metallic earring (lever-back / hoop type), external artifact",
+   "location": "Patient's right ear lobe, projected lateral to the right mandibular angle at the upper edge of the field, outside the thorax (image upper left)",
+   "zh": "右耳金屬耳環（體外物）"
+  },
+  {
+   "type": "Metallic earring (lever-back / hoop type), external artifact",
+   "location": "Patient's left ear lobe, projected lateral to the left mandibular angle at the upper edge of the field, outside the thorax (image upper right)",
+   "zh": "左耳金屬耳環（體外物）"
+  },
+  {
+   "type": "Lead laterality side marker 'L' with technologist initials 'DG'",
+   "location": "Patient's left, upper corner of the exposed field above the left shoulder, outside the body (image upper right)",
+   "zh": "左側「L」鉛字側別標記（技師代號 DG）"
+  },
+  {
+   "type": "Circular radiopaque marker disc (part of the side-marker set / positioning marker)",
+   "location": "Immediately above the L marker, patient's left upper corner of the field, outside the body",
+   "zh": "圓形不透光標記盤（位於 L 標記上方，體外）"
+  },
+  {
+   "type": "Small round radiopaque object with central lucency (clothing snap or ECG electrode; external, uncertain)",
+   "location": "Projected over the left shoulder / lateral left clavicle-acromion region",
+   "zh": "左肩區小圓形體外物（疑為衣物暗扣或心電圖電極貼片）"
+  }
+ ],
+ "other_findings": [
+  "上縱膈輪廓略顯寬大，可能為吸氣稍淺、AP 投照或殘餘胸腺所致，意義不確定（Reader B 認為未增寬）",
+  "雙側肺門周圍支氣管血管紋理略顯（右略多於左），無 Kerley 線、間質性水腫或肺泡浸潤，可能仍在兒童正常範圍內",
+  "雙肺野清晰，未見實質浸潤、肺水腫、肋膜積液或氣胸；雙側肋膈角銳利，橫膈輪廓完整",
+  "氣管居中；骨骼結構（肋骨、鎖骨、肩胛骨、脊椎）無明顯異常",
+  "下頜骨與牙齒投影於胸廓入口上方，雙側肩胛骨重疊於外側上肺野，屬投照相關之技術性表現",
+  "影像左上角小片深色矩形為底片／掃描邊緣偽影；四周為準直未曝光之白色邊框"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記所見（心臟擴大）清楚可見：心影呈球狀擴大、心胸比約 0.54，超過 7 歲兒童正常上限；片上無胸管、引流管、中心靜脈導管、心律調節器或任何治療性裝置，僅見耳環、側別標記與疑似衣物暗扣等體外物；無手術或既往處置痕跡，適合作為首次就診之影像。惟擴大程度屬輕度，AP 投照與吸氣稍淺可能部分放大心影，教學時可提示需結合臨床判讀。",
+ "description_zh": "7 歲女童正面胸部 X 光（記錄為 PA，影像特徵較符合 AP 投照），雙臂外展，吸氣稍淺至尚可，無明顯旋轉，穿透度適當。心影呈球狀擴大，位於中央下肺野並延伸至中肺野，心尖偏向左側；心臟橫徑約占胸廓內徑 54%（心胸比約 0.54），以兒童胸寬推估心臟橫徑約 12 公分，超過此年齡層正常上限，惟 AP 投照及吸氣不足可能部分放大心影；上縱膈輪廓略寬，可能與投照條件或殘餘胸腺有關，氣管居中。雙肺野清晰，肺門血管紋理略顯但無 Kerley 線或肺泡浸潤，未見肺水腫、肋膜積液或氣胸，雙側肋膈角銳利，橫膈輪廓完整，骨骼結構無明顯異常。體外物包括雙側耳垂金屬耳環、影像右上角（病人左側）之 L 側別標記（DG）與其上方之圓形不透光標記盤，以及左肩區一小圓形物（疑為衣物暗扣或電極貼片）；未見胸管、引流管、導管或心律調節器等任何治療性裝置。",
+ "label_concern": ""
+}

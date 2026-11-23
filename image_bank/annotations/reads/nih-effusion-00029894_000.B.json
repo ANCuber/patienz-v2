@@ -1,0 +1,49 @@
+{
+ "view": "Frontal (PA) chest radiograph, erect; \"L\" side marker at the image upper-right corner (patient's left) confirms conventional orientation",
+ "technical_quality": "Adequate inspiration (about 8-9 posterior ribs visible), penetration acceptable with the lower thoracic spine faintly seen through the mediastinum, minimal rotation. Both scapulae are incompletely rotated and project over the lateral upper/mid lung fields. Apices and costophrenic angles are included; upper abdomen partly included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "L side marker (external film label, not a medical device)",
+   "location": "image upper-right corner, patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Homogeneous dense opacity occupying the left lower zone with a smooth upward-convex superior contour and a laterally up-turned meniscus, consistent with a moderate left pleural effusion",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left hemidiaphragm not separately visualised; the apparent 'dome' sits high with a markedly increased distance to the gastric/colonic gas below, suggesting a subpulmonic component of the effusion (pseudo-elevation of the left hemidiaphragm)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left costophrenic angle blunted/obliterated",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left heart border partially obscured by the basal opacity (silhouette sign); cardiothoracic ratio cannot be reliably measured, cardiac silhouette appears at least borderline enlarged",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Upper mediastinum appears mildly broad with a prominent aortic knob, likely projectional/ectatic aorta; trachea midline",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly accentuated bronchovascular markings at the right lung base, no focal consolidation",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.78,
+ "description_zh": "正面站立胸部X光，吸氣尚可，兩側肩胛骨部分重疊於外側肺野，未見任何管路、引流管或植入裝置。左下肺野可見均質性緻密影，上緣呈平滑向上凸之弧形、外側呈向上之半月徵，左側橫膈及左側肋膈角被遮蔽，且與下方胃泡／結腸氣體間距明顯增大，符合左側中等量肋膜積液，並疑合併肺下型積液。心臟左緣部分被遮蔽（輪廓徵），心胸比無法準確評估，上縱膈稍寬、主動脈結突出，氣管居中。右肺大致清晰，右下肺紋理稍增加，右側肋膈角銳利；骨骼及軟組織無明顯異常。"
+}

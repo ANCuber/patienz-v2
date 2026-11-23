@@ -1,0 +1,42 @@
+{
+ "id": "nih-fibrosis-00000224_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate upright PA film; lead 'L' marker with technologist initials at image upper right (conventional orientation, image-left = patient-right). Good inspiration (about 9-10 posterior ribs), no significant rotation (clavicles symmetric about the spinous processes), adequate penetration with somewhat high contrast; apices and both costophrenic angles included. Both scapulae project over the upper-lateral lung fields (incomplete scapular rotation) and breast shadows overlie the lower zones; mild image noise.",
+ "target": {
+  "finding": "pulmonary fibrosis",
+  "visible": "uncertain",
+  "laterality": "bilateral",
+  "zone": "lower",
+  "size_cm": -1,
+  "confidence": 0.45
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "bilateral",
+  "reader_b": "bilateral",
+  "adjudicator": "bilateral"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External radiographic laterality marker 'L' with technologist initials (not a medical device)",
+   "location": "Image upper-right corner, projected over the patient's left shoulder / axillary soft tissues, outside the lung fields",
+   "zh": "影像右上角之體外鉛製左側標記「L」（含技師縮寫），投影於患者左肩／腋窩軟組織，非醫療裝置"
+  }
+ ],
+ "other_findings": [
+  "雙側肺門及肺門旁支氣管血管紋理輕度增加，考慮為血管性／輕微支氣管周圍增厚，無腫塊或明顯淋巴結腫大",
+  "左橫膈下可見脹氣之胃泡，內含斑駁狀食物／內容物，屬胸腔外附帶發現",
+  "雙側肩胛骨部分重疊於上肺野外側（擺位技術因素），雙側乳房軟組織陰影覆蓋下肺野",
+  "心臟大小正常（心胸比 <0.5），縱膈及氣管居中，上縱膈未增寬",
+  "雙側肋膈角銳利，無肋膜積液或氣胸；無實質化、結節或腫塊",
+  "無蜂窩狀變化、牽引性支氣管擴張或肺容積減少；橫膈位置正常",
+  "骨骼結構完整，無骨折或溶骨病灶"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "雖無胸管、引流管或其他治療器材，影片上亦無與首次就診相矛盾之處，但標籤所指之肺纖維化在影片上僅為雙下肺（右側中下肺野自肺門放射之粗線狀紋理、左側心緣旁及肺底）輕微、非特異性之網狀／線狀間質紋理增加，無蜂窩狀變化、牽引性支氣管擴張或肺容積減少；盲讀者認為大致在正常範圍內，三位判讀者信心度均僅約 0.5。此標籤為 NLP 文字探勘所得且無放射科醫師框選，影像證據薄弱，不適合作為首次就診之肺纖維化教學代表影像。",
+ "description_zh": "胸部正位（PA）站立X光片，吸氣深度足夠（約9-10根後肋）、無明顯旋轉、穿透度適當，影像右上角可見體外鉛製左側標記「L」及技師縮寫，為傳統擺位；雙側肩胛骨部分重疊於上肺野外側，雙側乳房陰影覆蓋下肺野。雙側肺野整體通氣良好，雙下肺區可見輕微網狀／線狀間質紋理增加，以右側中下肺野自肺門向外周放射之較粗線狀紋理較為明顯，左側則於心緣旁及肺底可見較細微之網狀紋理，呈瀰漫性分佈而無可量測之侷限病灶；未見蜂窩狀變化、牽引性支氣管擴張、肺容積減少、實質化、結節或腫塊，變化輕微且非特異，是否為纖維化不確定。雙側肺門及肺門旁支氣管血管紋理略顯明顯，無腫塊。心臟大小正常（心胸比 <0.5），縱膈及氣管居中，雙側肋膈角銳利，無肋膜積液或氣胸；左橫膈下見脹氣且含斑駁狀食物內容之胃泡，屬附帶發現。骨骼結構完整，全片未見任何導管、引流管、夾子或心律調節器等治療裝置。",
+ "label_concern": "「肺纖維化」標籤為 NLP 文字探勘所得、無放射科醫師框選；影片僅見雙下肺輕微、非特異性之網狀／線狀間質紋理增加（右側中下肺野較明顯），無蜂窩狀變化、牽引性支氣管擴張或容積減少，31歲患者亦可為正常血管紋理。盲讀者判為大致正常，標籤知情讀者信心度僅 0.6，仲裁者判為不確定；標籤可能正確但影像證據薄弱。"
+}

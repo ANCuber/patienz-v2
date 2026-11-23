@@ -1,0 +1,38 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: good inspiration, no significant rotation, adequate penetration; L marker present at image upper right confirming conventional orientation. Costophrenic angles and upper abdomen included.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "Tunneled catheter with inverted-U loop (appearance most consistent with a peritoneovenous shunt or long tunneled central venous catheter)",
+   "location": "Loop at the patient's right supraclavicular / medial clavicular region; venous limb descends along the right mediastinal border (SVC course) to about the right atrial level; subcutaneous limb runs down the right anterior chest wall, crosses below the right hemidiaphragm into the right upper abdomen and continues off the inferior edge of the film"
+  },
+  {
+   "type": "L side marker (external)",
+   "location": "Image upper right corner (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Small pleural effusion: blunting of the costophrenic angle with a lateral meniscus and partial obscuration of the hemidiaphragm",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Hazy basal opacity adjacent to the effusion, likely passive/basal atelectasis",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Multiple small round calcific densities in the soft tissues of the neck, supraclavicular fossae, shoulders and axillae (soft-tissue calcification vs calcified lymph nodes)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "胸部正面 (PA) X 光片，吸氣良好、無明顯旋轉。左側肋膈角變鈍並可見外側半月形液面，左側橫膈輪廓部分模糊，合併左下肺野淡霧狀陰影，符合少量左側肋膜積液併鄰近肺底塌陷；右側肋膈角銳利，右側橫膈清楚。右側可見一條皮下隧道式導管，於右鎖骨上/內側形成倒 U 形環，一肢沿右縱膈邊緣（上腔靜脈路徑）下行至約右心房高度，另一肢沿右前胸壁向下越過橫膈進入右上腹並延伸至片外，外觀較符合腹腔靜脈分流管或長隧道式中心靜脈導管；未見胸管或肋膜引流管。另於雙側頸部、鎖骨上及腋窩軟組織可見多發小圓形鈣化影，心影大小正常。"
+}

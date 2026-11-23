@@ -1,0 +1,47 @@
+{
+ "id": "nih-nodule-00013885_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Frontal film recorded as PA; arms at the sides with the scapulae partly overlying the lateral lung fields and relatively high clavicles, so AP-type positioning cannot be excluded. Low inspiratory volume with elevated hemidiaphragms (right higher than left); no significant rotation. Upper thorax adequately penetrated, but large body habitus with dense bilateral breast/chest-wall soft-tissue shadows obscures both lower zones and the right costophrenic angle. Mirrored lead marker 'DMD' with an L-shaped mark in the upper corner on the patient's left, outside the thorax.",
+ "target": {
+  "finding": "pulmonary nodule",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "upper",
+  "size_cm": 0.9,
+  "confidence": 0.85
+ },
+ "laterality_sources": {
+  "bbox": "right",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Small straight linear metallic density (~0.8 cm), surgical clip versus external metallic artifact; no tubes, lines, sternotomy wires or other clips",
+   "location": "Left mid-to-lower zone, projected over the left heart border / paracardiac region below the left hilum",
+   "zh": "左心緣旁細長金屬密度影（約0.8公分，手術夾或體外金屬異物）"
+  },
+  {
+   "type": "External lead radiographic marker with mirrored letters 'DMD' and an L-shaped mark (technologist initials / side marker)",
+   "location": "Upper corner of the film on the patient's left, outside the thorax",
+   "zh": "鉛字標記「DMD」及L形側別標記（體外，影像上方病人左側角落）"
+  }
+ ],
+ "other_findings": [
+  "主結節正下方及右肺門上方另見1–2個約0.2–0.4公分的細小高密度點，疑為小鈣化肉芽腫或血管端面影（右肺內側、上／中肺野）",
+  "主動脈弓突出、迂曲，符合年齡相關之主動脈延展，氣管居中",
+  "心影大小於正常上限至輕度擴大（CTR約0.50–0.55），右心緣部分被乳房陰影遮蔽，且低肺容積可能使心影放大",
+  "吸氣量偏低，雙側橫膈上抬（右側較左側高），肺底血管紋理擁擠",
+  "雙側大範圍乳房及胸壁軟組織陰影遮蔽雙下肺野與肋膈角，右側肋膈角無法評估，左側肋膈角銳利；小量肋膜積液或肺底病灶無法完全排除",
+  "手臂置於身側，肩胛骨部分重疊於雙側外側肺野",
+  "未見氣胸、明顯肺實質浸潤、胸管、引流管、中央靜脈導管或胸骨鋼絲"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標籤之右上肺結節清楚可見，片上無胸管、引流管或任何針對該結節之治療痕跡。左心緣旁單一小金屬影（手術夾或體外異物）位於對側且與結節無關，不影響以「初次發現肺結節」的情境呈現。惟結節密度高、邊緣清楚，型態偏向良性鈣化性肉芽腫，案例撰寫時宜留意此點。",
+ "description_zh": "胸部正面X光（記錄為PA；手臂置於身側、肩胛骨部分重疊於外側肺野，吸氣量偏低，雙側橫膈上抬且右側較高），病人體型較大，雙側乳房與胸壁軟組織陰影大範圍遮蔽雙下肺野及肋膈角，影像上方病人左側角落可見鏡像鉛字標記「DMD」。右上肺野內側（縱膈旁、右肺門上方、約主動脈弓高度）可見一顆約0.9公分、邊緣清楚、密度偏高的圓形結節，其正下方及右肺門上方另有1–2個約0.2–0.4公分的細小高密度點，整體型態較符合鈣化性肉芽腫，但單靠此片無法排除實質性肺結節。左心緣旁（左中下肺野）可見一枚約0.8公分的直線狀金屬密度影，疑為手術夾或體外金屬異物；未見胸管、引流管、中央靜脈導管或胸骨鋼絲。主動脈弓突出迂曲，心影大小於正常上限至輕度擴大（CTR約0.50–0.55，右心緣部分被乳房陰影遮蔽），氣管居中，未見氣胸或明顯肺實質浸潤，左側肋膈角銳利，右側肋膈角因軟組織遮蔽無法評估。",
+ "label_concern": "標籤正確（右上肺結節清楚可見，與放射科框選位置一致），但結節密度高、邊緣清楚，型態偏向良性鈣化性肉芽腫；若案例需要「待查之不確定實質結節」，此片可能不理想。"
+}

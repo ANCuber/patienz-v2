@@ -1,0 +1,33 @@
+{
+ "view": "PA (frontal) chest radiograph, erect, with L marker at the patient's left upper corner (conventional orientation)",
+ "technical_quality": "Adequate: good inspiration (about 9 posterior ribs), minimal rotation (spinous processes roughly midway between clavicular heads), adequate penetration with vertebral bodies faintly visible behind the heart; scapulae partially project over the upper lateral lung fields; entire lung fields and costophrenic angles included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "External round radiopaque artifact (about 1.7 cm disc, likely gown snap/button or marker BB), not an internal device",
+   "location": "Projected over the left shoulder / acromioclavicular region, immediately below the L side marker"
+  },
+  {
+   "type": "Lead side marker 'L' with technologist initials",
+   "location": "Upper corner of the image on the patient's left"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mildly prominent, slightly ill-defined perihilar bronchovascular markings with subtle patchy haziness; no dense lobar consolidation, air bronchogram or volume loss",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Minimal accentuation of bronchovascular markings in the retrocardiac / left lower zone, borderline, likely within normal limits",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "胸部正面X光（PA），吸氣深度與穿透度尚可，左肩部投影處見一圓形不透X光之外物影（疑為衣物釦或標記物），未見胸管、引流管或其他體內裝置。左側肺門周圍中肺野支氣管血管紋理稍增多且邊緣略模糊，呈輕微斑片狀模糊影，無明確大葉性實變或支氣管充氣徵；右肺野清晰。雙側肋膈角銳利，無肋膜積液或氣胸；心影大小正常（心胸比約0.4），縱隔居中，氣管無偏移，骨骼及軟組織無明顯異常。"
+}

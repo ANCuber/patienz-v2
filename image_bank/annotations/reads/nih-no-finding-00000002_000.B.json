@@ -1,0 +1,38 @@
+{
+ "view": "Frontal chest radiograph, likely PA erect (scapulae mostly rotated off the lung fields); adequate inspiration (about 9-10 posterior ribs), no significant rotation, trachea midline",
+ "technical_quality": "Adequate. Good inspiration and no significant rotation; lower thorax and upper abdomen appear relatively under-penetrated/bright so the retrocardiac and subdiaphragmatic regions are less well assessed. Top right image corner has a black redaction bar. Patient's upper arms/soft tissue partly project along both lateral image edges (more on the patient's left).",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External metallic circular marker (side/skin marker or clothing fastener) with small hook-shaped component above it",
+   "location": "Projecting over the patient's left shoulder / acromion region, upper right corner of the image"
+  },
+  {
+   "type": "Black rectangular redaction/label bar (image annotation, not on patient)",
+   "location": "Top right corner of the image, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Unfolded, tortuous thoracic aorta with a prominent aortic knob (age-related ectasia); no definite mediastinal mass",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly prominent central bronchovascular markings, likely age-related / chronic; no focal consolidation",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Degenerative changes of the shoulders (acromioclavicular / glenohumeral joints) and mild diffuse osteopenia consistent with age",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.72,
+ "description_zh": "正面（疑似PA）胸部X光，吸氣深度足夠、無明顯旋轉，氣管居中。雙側肺野清晰，未見局部實質浸潤、結節或肋膜積液，雙側肋膈角銳利，橫膈輪廓平滑，右側橫膈略高於左側屬正常。心臟大小正常（心胸比約0.45），胸主動脈迂曲延長、主動脈弓突出，符合年齡相關變化；雙側肺門血管影略明顯但無腫塊。骨骼呈雙肩退化性變化及輕度骨質疏鬆，未見肋骨骨折；左肩區可見外在圓形金屬標記物，無胸管、中央靜脈導管或心律調節器等植入裝置。"
+}

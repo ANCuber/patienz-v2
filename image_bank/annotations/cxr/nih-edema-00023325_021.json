@@ -1,0 +1,89 @@
+{
+ "id": "nih-edema-00023325_021",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "AP portable (supine/semi-erect)",
+ "technical_quality": "Limited: AP portable film with 'L' marker on image right and 'AP PORTABLE' annotation (conventional orientation). Low lung volumes (poor inspiration), the patient's chin/head is superimposed on the upper mediastinum, trachea and both apices, mild rotation, AP magnification of the cardiomediastinal silhouette. Multiple ECG electrodes and external lead wires/tubing overlie the chest. Penetration adequate. Right costophrenic angle obscured by the elevated right hemidiaphragm. No ET tube, NG tube, central line, pacemaker or chest tube.",
+ "target": {
+  "finding": "pulmonary edema",
+  "visible": "yes",
+  "laterality": "bilateral",
+  "zone": "multiple",
+  "size_cm": -1,
+  "confidence": 0.6
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "bilateral",
+  "reader_b": "bilateral",
+  "adjudicator": "bilateral"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Patient's left upper-mid zone, lateral lung field (image right, about x685 y390)",
+   "zh": "左上－中肺野外側之心電圖電極片及導線"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Patient's right parasternal, middle zone (about x395 y485)",
+   "zh": "右側胸骨旁中肺野之心電圖電極片及導線"
+  },
+  {
+   "type": "ECG electrode / lead clip",
+   "location": "Patient's right lower zone at the right heart border, just above the elevated right hemidiaphragm (about x380 y600)",
+   "zh": "右下肺野右心緣處（上抬之右橫膈上方）之心電圖電極片／導線夾"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Patient's right lower chest wall / right upper abdomen (image bottom left, about x345 y905)",
+   "zh": "右下胸壁／右上腹之心電圖電極片及導線"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Patient's left lower chest wall / left upper abdomen (image bottom right, about x715 y905)",
+   "zh": "左下胸壁／左上腹之心電圖電極片及導線"
+  },
+  {
+   "type": "Cluster of surgical clips (about 10 small metallic clips)",
+   "location": "Projected over the patient's left upper zone, lateral / axillary region (image right, about x720-805 y270-370); prior left thoracic or axillary surgery",
+   "zh": "左上肺野外側／腋窩區投影之一簇手術夾（約10枚），提示既往左側胸部或腋窩手術"
+  },
+  {
+   "type": "Possible tiny metallic densities (uncertain; small clips vs artifact)",
+   "location": "Patient's right upper quadrant abdomen / below the right costophrenic region (image bottom left, about x185-195 y900-915)",
+   "zh": "右上腹／右肋膈區下方數個微小金屬密度影（不確定，小型手術夾或偽影）"
+  },
+  {
+   "type": "External lead wire",
+   "location": "Over the patient's right neck/shoulder and right upper chest wall",
+   "zh": "跨越右頸／右肩及右上胸壁之體外導線"
+  },
+  {
+   "type": "External tubing / lead cables",
+   "location": "Over the patient's left shoulder and coursing obliquely across the lower chest and upper abdomen",
+   "zh": "跨越左肩並斜向橫過下胸部及上腹之體外管線／導線"
+  },
+  {
+   "type": "Side marker 'L' with 'AP PORTABLE' annotation",
+   "location": "Image right, patient's left, mid-lower zone, outside the patient",
+   "zh": "影像右側（患者左側）之左側標記「L」及「AP PORTABLE」註記"
+  }
+ ],
+ "other_findings": [
+  "右側橫膈明顯上抬，右下肺野呈大片邊緣光滑、圓頂狀之均質緻密影（寬約14公分），遮蔽右心緣及右肋膈角；最符合橫膈膨升／膈神經麻痺或肝臟上頂，次肺性肋膜積液或肝腫大無法排除",
+  "左側橫膈亦上抬，其下方可見含氣擴張之胃／結腸",
+  "心縱膈影增寬（心臟擴大，AP臥位投影部分放大效應）",
+  "上縱膈增寬，可能為主動脈迂曲延展及下巴重疊之投影效應，評估受限",
+  "雙側肺容積低，支氣管血管紋理擁擠",
+  "左上肺野外側一簇手術夾，提示既往胸部或腋窩手術",
+  "骨質疏鬆併雙側肩關節退化性變化，未見急性肋骨骨折",
+  "下巴／頭部重疊於上縱膈及雙肺尖，肺尖及氣管評估受限（技術性）",
+  "未見氣胸，未見氣管內管、鼻胃管、中央靜脈導管或胸管"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "雙側肺門周圍霧狀模糊、血管邊緣不清、間質紋理增加及支氣管周圍套袖徵，併心臟擴大，符合輕至中度肺水腫／肺血管淤血，標籤知情讀者與盲讀者均獨立辨認出此雙側表現。影片上僅有心電圖監測電極及體外導線，無胸管、引流管等治療器材，亦無氣管內管或中央靜脈導管，與病人因喘首次就診之情境相容。惟本片最顯眼的異常為右側橫膈明顯上抬之大片圓頂狀緻密影（膈膨升／肝臟上頂為主，次肺性積液待排除），且左上肺野有陳舊手術夾；出題時須將此右下肺野表現與既往手術史納入病例描述，避免與標籤病灶混淆。",
+ "description_zh": "AP攜帶式胸部X光，患者下巴／頭部重疊於上縱膈及雙肺尖，吸氣不足、輕度旋轉且多條導線重疊，影像品質受限。雙側肺門周圍及中下肺野呈瀰漫性霧狀模糊陰影，肺血管邊緣不清、間質網狀紋理增加並可見支氣管周圍套袖徵，右側肺門周圍稍明顯，併心縱膈影增寬（心臟擴大，AP投影部分放大），符合雙側輕至中度肺水腫／肺血管淤血。右側橫膈明顯上抬，右下肺野見一大片邊緣光滑、圓頂狀之均質緻密影（寬約14公分），遮蔽右心緣及右肋膈角，最符合橫膈膨升或肝臟上頂，次肺性肋膜積液無法完全排除；左側橫膈亦上抬，其下可見含氣擴張之胃／結腸，雙側肺容積低。可見五枚心電圖電極片（右側胸骨旁中肺野、右下肺野右心緣、左上肺野外側、雙側下胸壁／上腹各一）及跨越雙肩與下胸部之體外導線，左上肺野外側投影一簇約10枚手術夾（既往胸部或腋窩手術），右上腹另有數個微小金屬密度影（不確定）；未見氣管內管、鼻胃管、中央靜脈導管、胸管或引流管。骨質疏鬆併雙側肩關節退化性變化，未見氣胸或急性骨折。",
+ "label_concern": "肺水腫徵象為輕至中度，且受低肺容積、下巴重疊及導線干擾，非典型教學片；本片最顯眼的異常為右側橫膈明顯上抬之大片圓頂狀緻密影（非標籤所示），盲讀者以此為主要發現、肺水腫為次要發現。標籤大致合理，但建議標註為輕度肺水腫並註明右橫膈上抬。"
+}

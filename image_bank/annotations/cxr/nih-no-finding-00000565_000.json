@@ -1,0 +1,63 @@
+{
+ "id": "nih-no-finding-00000565_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "Frontal chest radiograph, recorded PA; appearance (scapulae projected over the lung fields, chin-down positioning with mandible over the thoracic inlet, external chair/wheelchair armrests at both lower corners) suggests a seated AP acquisition. 'L' marker at image upper right (patient's left), conventional orientation.",
+ "technical_quality": "Limited. Hypoinflated with high hemidiaphragms; mandible and dentition overlap the apices and thoracic inlet; extensive posterior spinal instrumentation obscures the spine, trachea and central mediastinum; marked thoracic cage asymmetry/rotation from scoliosis; right base partly obscured by elevated diaphragm and breast soft tissue. Penetration adequate for the lung fields, no significant motion blur.",
+ "target": {
+  "finding": "no acute cardiopulmonary finding (NIH No Finding; normal)",
+  "visible": "yes",
+  "laterality": "none",
+  "zone": "none",
+  "size_cm": -1,
+  "confidence": 0.6
+ },
+ "laterality_sources": {
+  "bbox": "none (NLP-mined label only, no radiologist box)",
+  "reader_a": "none",
+  "reader_b": "none (B's 'bilateral / whole' fields described the spinal instrumentation, not an acute finding; B, blind, found no acute cardiopulmonary abnormality)",
+  "adjudicator": "none"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Posterior spinal fusion instrumentation: two paraspinal rods with multiple hooks/screws and a transverse cross-connector (scoliosis construct), approx 27 cm long",
+   "location": "Midline, projected over the mediastinum from the cervicothoracic junction (about T1) to the upper lumbar spine, extending below the diaphragm",
+   "zh": "後路脊椎固定器（雙桿、多枚鉤／螺釘及一橫向連接器，脊椎側彎矯正構造），自頸胸交界延伸至上腰椎"
+  },
+  {
+   "type": "Earrings (metallic), bilateral",
+   "location": "Both ear lobes, projected at the top of the image on either side of the mandible, above the thorax",
+   "zh": "雙側金屬耳環（影像上緣、下頜兩側）"
+  },
+  {
+   "type": "Side marker 'L' with numeric marker (30)",
+   "location": "External, image upper right corner, i.e. lateral to the patient's left shoulder",
+   "zh": "左側「L」側別標記附數字30（影像右上角，病人左肩外側）"
+  },
+  {
+   "type": "Round metallic marker (calibration ball / BB)",
+   "location": "External, adjacent to the L marker, lateral to the patient's left shoulder",
+   "zh": "圓形金屬校正球標記（L標記旁，病人左肩外側）"
+  },
+  {
+   "type": "External curved thick dense structures, probable wheelchair armrests / positioning frame",
+   "location": "Both lower lateral image corners, lateral to the lower thorax/abdomen, outside the patient",
+   "zh": "雙側下角外部彎曲致密支架（疑為輪椅扶手或擺位裝置）"
+  }
+ ],
+ "other_findings": [
+  "脊椎側彎後路融合固定術後（慢性），脊椎、氣管及中央縱膈被金屬器材遮蔽",
+  "胸廓明顯不對稱變形：右側胸廓狹窄、肋骨擁擠且斜度陡，右肺透亮度相對減低（殘餘側彎／旋轉性胸壁變形，限制性胸廓）",
+  "肺容積偏低、兩側橫膈上抬，以右側橫膈上抬較明顯",
+  "心縱膈輪廓因脊椎側彎、金屬器材及疑似AP攝影而顯得寬大變形，心臟大小無法可靠評估（未證實心臟擴大）",
+  "下頜骨與牙齒投影於肺尖及上縱膈（頸部前屈、短軀幹），肺尖評估受限",
+  "右側肺門旁／中肺野略呈模糊增加密度，較可能為肋骨、肺門血管重疊及旋轉所致，非明確實質化（低信心）",
+  "右下肺野被上抬之橫膈／肝臟及乳房軟組織重疊，右側肋膈角評估受限",
+  "雙側肩胛骨投影於肺野"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "此片在可評估範圍內確實未見急性心肺病灶，也沒有胸管或引流裝置；但它並非「乾淨的正常片」——有廣泛後路脊椎固定器、明顯胸廓變形、肺容積低、下頜遮蔽肺尖，且中央縱膈幾乎完全被金屬遮蔽，影像品質受限。若作為初次就診之「正常胸部X光」範例，學生會被大量術後改變與變形干擾，且脊椎手術史與初次就診情境不符，故不適合。",
+ "description_zh": "胸部正面X光片（紀錄為PA，但肩胛骨重疊於肺野、下頜投影於胸廓入口，且影像下角可見外部座椅支架，較符合坐姿AP攝影），吸氣不足、影像品質受限。可見自頸胸交界延伸至上腰椎之後路脊椎固定器（雙桿、多枚鉤／螺釘及一橫向連接器，長約27公分），符合脊椎側彎融合術後；胸廓明顯不對稱，右側胸廓狹窄、肋骨擁擠且斜度陡，右肺透亮度相對減低，兩側橫膈上抬（以右側為著），肺容積小。心縱膈輪廓因脊椎側彎、金屬器材及攝影方式而顯得寬大變形，心臟大小無法可靠評估；下頜骨與牙齒重疊於肺尖及上縱膈，中央縱膈與氣管被金屬遮蔽。在可評估之雙肺野內未見明確實質浸潤、肺葉塌陷、氣胸或肋膜積液，右側肺門旁區略呈模糊增加密度，較可能為肋骨與肺門血管重疊所致；整體無急性心肺病灶（無側別、無特定肺區、無可量測病灶）。另見雙側耳環、影像右上角（病人左側）之「L」標記與數字30及圓形金屬校正球，以及雙側下角之外部彎曲支架（疑為輪椅扶手）；未見胸管、引流管或其他治療性裝置。",
+ "label_concern": "標籤「無急性心肺病灶」就急性病灶而言尚屬合理，但此片並非正常片：有廣泛脊椎側彎後路固定器、明顯胸廓變形、肺容積低及影像品質受限（中央縱膈、肺尖被遮蔽），不宜作為「正常胸部X光」範例；若需正常對照片應另選。"
+}

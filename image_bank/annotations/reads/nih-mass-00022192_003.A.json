@@ -1,0 +1,43 @@
+{
+ "view": "PA (frontal; recorded PA, L marker at image upper-right confirms conventional orientation)",
+ "technical_quality": "Adequate: good inspiration (approx. 9 posterior ribs), adequate penetration, no significant rotation; scapulae partly project over the lateral upper lung fields; costophrenic angles included.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "upper",
+ "size_cm": 9,
+ "devices": [
+  {
+   "type": "Round snap-type radiopaque artifact (garment/gown snap or ECG electrode stud), external",
+   "location": "Projected over the mid-thoracic spine / mediastinum at approximately the hilar level (about T6-T7), midline"
+  },
+  {
+   "type": "Round snap-type radiopaque artifact (garment/gown snap or ECG electrode stud), external",
+   "location": "Projected over the lower thoracic spine / upper abdomen just right of midline (about T11-T12)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large, well-circumscribed, homogeneous rounded mass with a smooth convex inferior margin, occupying most of the right upper lobe, extending inferiorly to about the level of the right hilum; separated from the mediastinum by a thin strip of aerated lung. Approx. 7 x 12 cm (about 9 cm). No cavitation or calcification seen within it.",
+   "laterality": "right",
+   "zone": "upper (extends into the middle zone at hilar level)"
+  },
+  {
+   "finding": "Two small dense nodules (probable calcified granulomas or calcified hilar lymph nodes) in the right hilar region, adjacent to the inferior margin of the mass",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild elevation of the right hemidiaphragm relative to the left (about 2.5 cm); may be a normal variant or reflect right lung volume loss / phrenic involvement - uncertain",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded / tortuous aortic knob, likely age-related atherosclerotic ectasia; heart size within normal limits",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.85,
+ "description_zh": "胸部正面（PA）X光：右上肺野可見一大型、邊緣清楚、密度均勻的圓形腫塊，下緣呈平滑凸面，佔據右上葉大部分並向下延伸至右肺門高度，與縱膈之間仍有薄層含氣肺組織相隔，估計約 7 x 12 公分（約 9 公分），內部未見明顯空洞或鈣化；右肺門處另見兩枚小而緻密的結節，可能為鈣化肉芽腫或鈣化淋巴結。右側橫膈較左側輕度抬高（約 2.5 公分），主動脈弓突出迂曲，心臟大小正常，左肺野清晰，兩側肋膈角銳利，未見肋膜積液或氣胸。另於中胸椎及下胸椎/上腹部中線附近見兩枚圓形環狀外物投影（衣物暗扣或心電圖電極扣），無胸管、引流管或其他治療痕跡。"
+}

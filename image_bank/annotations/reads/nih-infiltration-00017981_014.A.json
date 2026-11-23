@@ -1,0 +1,38 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: adequate inspiration, no significant rotation (spinous processes midline between clavicular heads), scapulae partially projected over the lateral upper zones, both costophrenic angles included. L marker present at the patient's left shoulder confirming conventional orientation.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 5.5,
+ "devices": [
+  {
+   "type": "Tubular catheter (course consistent with ventriculoperitoneal shunt distal catheter; alternatively a tunneled/external tube)",
+   "location": "Enters from the right side of the neck, passes over the right clavicle, runs vertically down the medial third of the right hemithorax, crosses the right hemidiaphragm and continues over the right upper abdomen to the bottom edge of the film"
+  },
+  {
+   "type": "L side marker (external)",
+   "location": "Projected over the patient's left shoulder / left acromioclavicular region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy heterogeneous infiltrate with interspersed linear and ring-like air lucencies (peribronchial / possible bronchiectatic change), infrahilar and paracardiac, about 5-6 cm",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Several small dense (calcified-appearing) nodular densities at the hilum, likely calcified hilar nodes / old granulomas",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mottled gas/soft-tissue density in the left upper quadrant below the diaphragm consistent with stomach contents (incidental, not thoracic)",
+   "laterality": "left",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 正面胸部X光，吸氣量足夠，無明顯旋轉，雙側肩胛骨部分重疊於上肺野外側，左肩處可見 L 標記。右側頸部可見一條管狀導管影，經右鎖骨上方後垂直向下沿右側胸腔內側 1/3 走行，跨越右橫膈延伸至右上腹部，走向符合腦室腹腔分流管（或皮下隧道式／體外管路）；未見胸管或引流管。右下肺野內側（右肺門下方、右心緣旁）可見約 5–6 公分之斑片狀不均質浸潤影，其中夾雜線狀及環狀透亮影，右肺門並見數個小型鈣化樣結節影。左肺野清晰，心影大小尚可，雙側肋膈角銳利，未見氣胸或肋膜積液。"
+}

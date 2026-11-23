@@ -1,0 +1,48 @@
+{
+ "view": "PA (frontal) chest radiograph, erect",
+ "technical_quality": "Adequate but not ideal: lung fields well/over-penetrated, whereas the lower thorax, retrocardiac region and upper abdomen are underexposed (very white) so subdiaphragmatic and retrocardiac detail is limited. Inspiration acceptable but right lung volume reduced by an elevated right hemidiaphragm. No significant rotation (spinous processes midway between clavicular heads). Scapulae partially overlap the upper lateral lung fields. L side marker present at patient's left upper corner, confirming conventional orientation. Large body habitus.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External side marker 'L' (radiographic marker, not a device)",
+   "location": "upper corner on patient's left, over the left shoulder/soft tissue"
+  },
+  {
+   "type": "External film label 'H 8' (annotation, not a device)",
+   "location": "upper corner on patient's left, just below the L marker"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Elevated right hemidiaphragm with a smooth, rounded dome, about 2-3 cm higher than the left; reduced right lung volume; no subdiaphragmatic free air. Likely eventration or phrenic weakness; subpulmonic process not excluded",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small, sharply defined, dense (calcific-density) round nodule about 0.5 cm, projecting over the medial right upper zone just below the anterior end of the 1st rib; most consistent with a calcified granuloma (costochondral calcification less likely)",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Both hila mildly prominent/dense (left more than right) with peribronchial wall thickening (end-on thick-walled bronchus at left hilum) - chronic airway change or mildly enlarged central pulmonary arteries",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly increased reticular / bronchovascular markings at both lung bases (right paracardiac lower zone and left lateral lower zone), without consolidation or air bronchogram",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Relative hyperlucency of both upper zones with paucity of peripheral vessels - possible emphysematous change (low confidence)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面X光（PA立位），肺野穿透稍過度而下胸部、心後及上腹部曝光不足，肩胛骨部分重疊於兩側上肺野外側；未見任何導管、引流管、起搏器或植入裝置，僅見病人左上角之L側別標記與H8標籤。右側橫膈輪廓平滑但較左側明顯抬高（約2–3公分），右肺容積相對減少；右上肺野內側靠近第一前肋下方可見一約0.5公分之高密度小結節，較可能為鈣化肉芽腫。兩側肺門略顯突出（左側較明顯）並伴支氣管壁增厚，兩側下肺野網狀及支氣管血管紋理輕度增加，兩側上肺野相對透亮；未見實質化、腫塊、肋膜積液或氣胸，兩側肋膈角銳利。心臟大小在正常範圍（右心緣部分被抬高之橫膈遮蔽），縱隔未見增寬，氣管居中，主動脈弓大小正常，骨骼未見骨折或破壞性病灶，軟組織無明顯異常。"
+}

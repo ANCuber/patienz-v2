@@ -1,0 +1,39 @@
+{
+ "view": "PA (frontal, erect); L marker at patient's left upper corner confirms conventional orientation",
+ "technical_quality": "Adequate inspiration and penetration (vertebral bodies visible through the heart), no significant rotation (spinous processes centred between clavicular heads); lateral chest walls partially cropped at image edges (right lateral costophrenic region near edge), scapulae partly overlapping the upper lateral lung fields. Diagnostic quality.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 9,
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' with technologist initials 'DG'",
+   "location": "Image right upper corner, over the patient's left shoulder / soft tissue outside the lung"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Fine reticular / linear interstitial opacities from the right hilum extending down to the medial right base above the hemidiaphragm (most conspicuous area; possible mild fibrotic change, no volume loss or honeycombing)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Subtle increased reticular markings lateral to the cardiac apex at the left base, milder than the right",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent bilateral hilar / peribronchovascular markings (could be within normal for age)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Moderate bowel gas and stool pattern in the upper abdomen (incidental, extrathoracic)",
+   "laterality": "bilateral",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "PA 胸部正面片，吸氣量尚可、無明顯旋轉、穿透度適中，兩側外側胸壁略被裁切。右下肺野自肺門延伸至內側肺底、橫膈上方可見細網狀及線狀間質陰影，左下肺野於心尖外側亦有輕微網狀紋路增加，雙側肺門血管支氣管紋路略顯著，變化輕微，與標籤之肺纖維化僅為可能相符，未見蜂窩狀變化或容積減少。心影大小正常，氣管與縱隔居中，未見肋膜積液、氣胸或實質化病灶，橫膈輪廓清楚。未見任何導管、導線、夾子或植入裝置，僅見左側 L 標記，無治療證據。"
+}

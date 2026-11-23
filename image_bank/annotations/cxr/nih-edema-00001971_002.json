@@ -1,0 +1,47 @@
+{
+ "id": "nih-edema-00001971_002",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (frontal, upright), as recorded; conventional orientation — 'L' side marker with technologist initials at image upper right (patient's left), aortic knob and cardiac apex on image right",
+ "technical_quality": "Suboptimal to adequate: low lung volumes with both hemidiaphragms elevated (right higher than left), which crowds the basal vessels and exaggerates the cardiomediastinal width; no significant rotation (clavicles symmetric, spinous processes midline). Upper zones well penetrated, but the lower chest, retrocardiac region and upper abdomen are dense (large body habitus, overlying breast shadows), limiting evaluation of the lung bases. Apices and both costophrenic angles included.",
+ "target": {
+  "finding": "pulmonary edema",
+  "visible": "uncertain",
+  "laterality": "bilateral",
+  "zone": "multiple",
+  "size_cm": -1.0,
+  "confidence": 0.45
+ },
+ "laterality_sources": {
+  "bbox": null,
+  "reader_a": "bilateral",
+  "reader_b": "bilateral",
+  "adjudicator": "bilateral"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Radiographic side marker 'L' with technologist initials (mirrored/rotated letters); external, not a medical device",
+   "location": "Image upper-right corner, outside the thorax over the patient's left shoulder region",
+   "zh": "側別鉛字標記「L」及技師縮寫（影像右上角、病人左肩外側，非醫療裝置）"
+  },
+  {
+   "type": "External artifact: small ring-shaped radiopaque object (clothing snap/button) plus a faint short linear density (gown/strap edge); not intrathoracic, not a medical device",
+   "location": "Inferior image edge below both hemidiaphragms, near the midline (ring slightly to the patient's right, linear density slightly to the patient's left)",
+   "zh": "體外物件：影像下緣橫膈下方近中線之小環狀緻密影（疑衣物鈕扣／按扣）及細短線狀影（疑衣物或固定帶邊緣），非醫療裝置"
+  }
+ ],
+ "other_findings": [
+  "雙側肺門豐滿突出、邊緣略模糊，肺門周圍及雙下肺野血管／間質紋理增加且邊緣不清，疑似輕度肺血管充血或早期間質性肺水腫；未見Kerley B線、肺泡性實變或蝙蝠翼狀陰影，部分表現可能為吸氣不足造成之血管擁擠",
+  "吸氣不足、肺容積偏低，兩側橫膈上抬（右側較左側高），上肺野相對透亮",
+  "心縱膈影稍寬、心臟呈球狀，心胸比約0.5（正常上限／臨界性心臟擴大），可能因低肺容積而放大",
+  "胸主動脈迂曲、主動脈弓突出（年齡相關變化）",
+  "兩側肋膈角大致銳利，右側肋膈角僅疑似極輕度鈍化，少量右側肋膜積液無法完全排除；未見氣胸",
+  "體型壯碩，上腹部及雙側乳房陰影密度高，遮蔽雙下肺野及心後區",
+  "骨骼結構未見明顯異常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "影像上無任何胸管、引流管或其他治療裝置，也無與初次就診相牴觸之所見；但標的「肺水腫」僅屬可疑：僅見雙側肺門豐滿、肺門周圍及下肺野血管紋理增加且邊緣模糊，無Kerley B線、肺泡性水腫或明確肋膜積液，且吸氣不足本身即可造成類似的血管擁擠。影像本身不足以明確呈現肺水腫，若作為初次就診之肺水腫示範影像可能誤導學生，建議人工複核後再決定是否使用。",
+ "description_zh": "胸部正面（PA）X光片，吸氣不足、肺容積偏低，兩側橫膈上抬（右側較高），體型壯碩、上腹部及雙側乳房陰影密度高，使雙下肺野及心後區評估受限；未見明顯旋轉。雙側肺門豐滿突出、邊緣略模糊，肺門周圍及雙下肺野血管／間質紋理增加且邊緣不清，呈瀰漫性分布（雙側、以中下肺野為主，無法以公分量測），可符合輕度肺血管充血或早期間質性肺水腫，但未見Kerley B線、肺泡性實變或蝙蝠翼狀陰影，部分表現可能為吸氣不足所致之血管擁擠。心縱膈影稍寬、心臟呈球狀，心胸比約0.5，屬臨界性心臟擴大（可能因低肺容積放大）；胸主動脈迂曲、主動脈弓突出，符合年齡相關變化。兩側肋膈角大致銳利，右側肋膈角僅疑似極輕度鈍化，少量右側肋膜積液無法完全排除；未見氣胸，骨骼未見明顯異常。影像右上角（病人左肩外側）可見「L」鉛字側別標記及技師縮寫，影像下緣橫膈下方近中線處另見小型環狀及細線狀體外物件（疑為衣物鈕扣／固定帶），均非醫療裝置；未見任何導管、引流管、胸管、心律調節器或手術夾。",
+ "label_concern": "「肺水腫」標籤僅獲可疑（equivocal）支持：雙側肺門豐滿、肺門周圍血管紋理增加且邊緣模糊，可符合輕度肺血管充血／早期間質性肺水腫，但無Kerley B線、肺泡性實變或明確肋膜積液，且吸氣不足可造成類似表現；此標籤為NLP自報告擷取、無放射科框選佐證，建議人工複核後再使用。"
+}

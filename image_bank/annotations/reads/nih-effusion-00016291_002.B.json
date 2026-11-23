@@ -1,0 +1,42 @@
+{
+ "view": "Frontal chest radiograph, probably AP (scapulae overlying lung fields, relatively wide upper mediastinum); partial L-shaped marker at image upper-right = patient's left, confirming conventional orientation.",
+ "technical_quality": "Adequate: inspiration fair (~9 posterior ribs on the right), minimal rotation (medial clavicle ends roughly symmetric about the spinous processes), penetration adequate with thoracic spine faintly visible through the heart. Lung apices and costophrenic angles included; upper abdomen partly included. Scapulae project over the upper lateral lung zones.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 3,
+ "devices": [
+  {
+   "type": "Tunneled shunt tubing, most consistent with a peritoneovenous (Denver/LeVeen-type) shunt: hairpin loop at the right infraclavicular / first-rib level, one limb descending along the right mediastinal border (SVC course) to project at about the right atrial level, the other limb coursing inferolaterally over the right hemithorax, crossing the right hemidiaphragm into the right upper abdomen where it appears doubled/coiled. Differential: ventriculoperitoneal shunt (no cranial/neck tubing seen) or pleuroperitoneal shunt (less likely). Not a chest tube or pleural drain.",
+   "location": "Right hemithorax: loop at right medial clavicle/1st rib; medial limb along right paramediastinal/SVC course to right atrium level; lateral limb over right lung to right upper abdomen"
+  },
+  {
+   "type": "Side marker (partial, L-shaped)",
+   "location": "Image upper right corner, over the patient's left shoulder region"
+  },
+  {
+   "type": "Possible tiny metallic clip/foreign body (uncertain)",
+   "location": "Right upper abdomen near the bottom edge of the film, medial to the shunt tubing"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Small left pleural effusion: blunting of the left costophrenic angle with lateral meniscus and partial obscuration of the lateral left hemidiaphragm; adjacent hazy density at the left base suggesting basal atelectasis",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Multiple small round/ovoid calcified densities in the soft tissues of the neck, supraclavicular fossae and both shoulder/axillary regions (differential: calcified lymph nodes from prior granulomatous disease, or soft-tissue cysticercosis calcifications)",
+   "laterality": "bilateral",
+   "zone": "upper (extrathoracic neck/shoulder soft tissues)"
+  },
+  {
+   "finding": "Homogeneous increased density of the visualized upper abdomen without discernible bowel gas, raising the possibility of ascites (in keeping with the probable peritoneovenous shunt)",
+   "laterality": "bilateral",
+   "zone": "subdiaphragmatic / upper abdomen"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面（疑為AP）胸部X光，吸氣尚可、無明顯旋轉。右側可見一條隧道式分流管路，於右鎖骨下方呈髮夾狀迴圈後分為兩支：一支沿右縱膈邊緣（上腔靜脈走向）下行至約右心房高度，另一支沿右側胸壁向下跨越右橫膈進入右上腹並呈重疊盤繞，型態最符合腹腔靜脈分流管（peritoneovenous shunt），未見胸管或肋膜引流管。左側肋膈角變鈍、左橫膈外側輪廓部分消失並伴左下肺野模糊，符合少量左側肋膜積液併可能之基底肺塌陷；右肺野清晰、右肋膈角銳利，心臟大小於AP投影下約在正常上限，氣管與縱膈居中。另於頸部、鎖骨上窩及雙側肩部/腋下軟組織可見多發小型卵圓形鈣化（鑑別包括鈣化淋巴結或軟組織囊蟲鈣化），上腹部密度均勻增加且無明顯腸氣，須考慮腹水；骨骼未見急性骨折。"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "nih-edema-00004079_002",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate frontal film: good inspiration (~9 posterior ribs), no significant rotation, adequate penetration; apices and both costophrenic angles included. Large body habitus with thick chest-wall soft tissue slightly reduces lung-field contrast; scapulae partially overlap the upper lateral lung fields (raises the possibility of AP technique despite the recorded PA view). L marker with technologist initials at image upper right confirms conventional orientation (image-left = patient-right).",
+  "target": {
+    "finding": "pulmonary edema",
+    "visible": "uncertain",
+    "laterality": "bilateral",
+    "zone": "lower",
+    "size_cm": -1,
+    "confidence": 0.3
+  },
+  "laterality_sources": {
+    "bbox": "none (NLP-mined label, no radiologist box)",
+    "reader_a": "bilateral, lower zone (label-aware; visible = uncertain)",
+    "reader_b": "bilateral, middle/perihilar zone (blind; called only borderline vascular prominence, did not call edema)",
+    "adjudicator": "bilateral, perihilar-to-lower zone; only mild vascular prominence, no definite interstitial or alveolar edema"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "external radiographic side marker (L) with technologist initials - artifact only, not a medical device",
+      "location": "image upper right corner, over the patient's left shoulder region, outside the thorax",
+      "zh": "體外側別標記（L）含技師縮寫，非醫療裝置"
+    }
+  ],
+  "other_findings": [
+    "兩側肺門小型鈣化緻密影（右側較明顯），符合舊性肉芽腫性病變之鈣化淋巴結",
+    "主動脈弓突出並略為迂曲延展，符合年齡相關之主動脈延展，無局部縱膈腫塊",
+    "體型壯碩、胸壁軟組織較厚，使肺野對比度略減",
+    "肩胛骨部分投影於兩側上外肺野（技術因素）",
+    "左橫膈下可見正常胃泡及結腸氣體",
+    "心臟大小正常，兩側肋膈角銳利，無肋膜積液或氣胸"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標記之肺水腫在本片上無明確影像證據，僅見兩側肺門周圍至下肺野輕度血管紋理增加，兩位判讀者皆評為不確定或接近正常；雖無任何治療裝置、亦無與初次就診矛盾之舊病變，但作為肺水腫初次就診之教學影像，其陽性表現不足，故不適合。",
+  "description_zh": "胸部正面片，吸氣量足夠、無明顯旋轉，影像右上角可見 L 側別標記及技師縮寫，未見任何導管、引流管、心律調節器或其他體內裝置。心臟大小正常，主動脈弓略為突出迂曲，氣管及縱膈居中；兩側肋膈角銳利，未見肋膜積液或氣胸。兩側肺門及肺門周圍至下肺野血管紋理輕度增粗（右側略明顯），呈瀰漫分布、無法以公分量測，未見 Kerley B 線、支氣管周圍套袖徵或肺泡性浸潤，肺水腫之影像證據僅屬可疑、最多為輕度血管充血。兩側肺門可見小型鈣化緻密影（右側較明顯），符合舊性肉芽腫性病變之鈣化淋巴結。體型壯碩、胸壁軟組織較厚，肩胛骨部分投影於上外肺野，左橫膈下可見正常胃泡及結腸氣體。",
+  "label_concern": "NLP 探勘之「肺水腫」標籤在影像上證據不足：本片接近正常，僅有兩側肺門周圍輕度血管紋理增粗，無 Kerley B 線、肺泡性浸潤或肋膜積液；標籤可能有誤，或僅反映極輕度／早期之肺血管充血。"
+}

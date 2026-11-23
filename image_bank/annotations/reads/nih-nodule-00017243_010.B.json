@@ -1,0 +1,74 @@
+{
+ "view": "Frontal chest radiograph (likely AP), L marker at image upper right confirms conventional orientation",
+ "technical_quality": "Adequate penetration and inspiration; minimal rotation (clavicles roughly symmetric about the spine); apices and both costophrenic regions included. Right shoulder orthopaedic hardware and a looped port catheter overlie the upper chest and mediastinum; 1024-px downsampled image limits fine detail. Left heart border and left hemidiaphragm are obscured by disease, so cardiothoracic ratio is not assessable.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 9,
+ "devices": [
+  {
+   "type": "Implanted venous access port (triangular reservoir with central septum marker)",
+   "location": "Midline, projected over the lower thoracic spine (~T8 level), anterior chest wall"
+  },
+  {
+   "type": "Port catheter forming a large loop",
+   "location": "Ascends along the left anterior chest / left mediastinal border, crosses the mediastinum at clavicle level, descends along the right mediastinal border (SVC); tip curls at right-atrial level adjacent to the port (low)"
+  },
+  {
+   "type": "Orthopaedic plate with 4 screws",
+   "location": "Distal right clavicle / acromioclavicular region"
+  },
+  {
+   "type": "Two long lag/cannulated screws",
+   "location": "Right shoulder girdle, directed from the lateral clavicle/acromion into the scapula (coracoid/glenoid region)"
+  },
+  {
+   "type": "Small metallic fragments / surgical clips",
+   "location": "Right supraclavicular / shoulder soft tissue adjacent to the plate"
+  },
+  {
+   "type": "L side marker",
+   "location": "Image upper right corner (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large lobulated homogeneous opacity occupying the left lower zone and extending into the mid zone, silhouetting the left heart border, left hemidiaphragm and left costophrenic angle (mass / consolidation / loculated effusion), ~9 cm transverse extent",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Thin-walled ring-shaped (cavitary or cystic) lesion ~3 cm in the perihilar left lung with an adjacent ~0.5 cm nodule just below it",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mediastinal and cardiac shift to the left with reduced left hemithorax volume (crowded left ribs)",
+   "laterality": "left",
+   "zone": "whole"
+  },
+  {
+   "finding": "Compensatory hyperinflation / hyperlucency of the right lung",
+   "laterality": "right",
+   "zone": "whole"
+  },
+  {
+   "finding": "Several small (0.3-1 cm) nodular opacities in the right mid and lower zones, indeterminate (small pulmonary nodules vs end-on vessels)",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Port catheter with a large redundant loop across the anterior chest / mediastinum and a low tip at right-atrial level; position warrants verification",
+   "laterality": "midline (spans both sides)",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Post-surgical plate-and-screw fixation of the distal right clavicle / acromioclavicular region with two long screws into the scapula and small metallic fragments in adjacent soft tissue",
+   "laterality": "right",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面X光片：右側鎖骨遠端／肩峰處可見骨板及四枚螺釘固定，另有兩枚長螺釘指向右肩胛；中線下胸椎（約T8）投影處可見三角形植入式人工血管注射座（port），導管於前胸形成大環，經左側上行、於鎖骨高度跨越縱膈後沿右縱膈緣（上腔靜脈）下行，尖端於右心房高度捲曲，位置偏低。左下肺野可見大片分葉狀不透亮影，遮蔽左心緣、左橫膈及左肋膈角（腫塊／實質化／局限性積液待鑑別），並伴縱膈與心臟向左偏移、左側胸廓容積減少及右肺代償性過度膨脹；左肺門旁另見約3公分薄壁環狀（空洞或囊狀）病灶及鄰近約0.5公分小結節。右中下肺野可見數個0.3–1公分小結節狀影，需與血管斷面鑑別；未見胸管或肋膜引流管。"
+}

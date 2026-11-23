@@ -1,0 +1,48 @@
+{
+ "view": "Frontal chest radiograph (PA/AP, L marker at image top right = patient's left; scapulae overlie upper lateral lung fields)",
+ "technical_quality": "Adequate inspiration (about 9 posterior ribs), acceptable penetration, minimal rotation; scapulae not fully cleared from the lung fields, slight collimation cut-off at the film edges",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 3.5,
+ "devices": [
+  {
+   "type": "Implanted subcutaneous chest port (dual-lumen reservoir appearance, two round chambers with a stem)",
+   "location": "left upper anterior chest wall, projecting over the left upper zone at about the anterior 2nd-3rd rib; catheter course to the central veins not clearly traced"
+  },
+  {
+   "type": "External L side marker",
+   "location": "image top right (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Lobulated, clustered nodular opacity in the left hilar/perihilar region, bulky left hilum (lymphadenopathy or hilar mass), approx 3-4 cm",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, unfolded/tortuous aortic knob with slight widening of the left superior mediastinal contour",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Coarse bronchovascular / reticular interstitial markings in the lower zones, more on the right, without frank consolidation",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Implanted chest port device overlying the left upper zone (foreign body / device, not lung pathology)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mild bilateral apical pleural thickening / capping",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面X光，吸氣深度足夠，曝露適當，兩側肩胛骨部分重疊於肺野。左上胸壁見一植入式人工血管注射座（雙腔式外觀），導管走向未能清楚追蹤；未見胸管或引流管。左側肺門區可見分葉狀、聚集性結節狀陰影，左肺門增大，需考慮肺門淋巴結腫大或肺門腫塊；主動脈弓突出且迂曲，左上縱膈輪廓略寬。兩下肺野支氣管血管紋理粗糙增加（右側較明顯），未見明確實質化、氣胸或肋膜積液，兩側肋膈角銳利；心臟大小在正常上限，骨骼未見明顯異常。"
+}

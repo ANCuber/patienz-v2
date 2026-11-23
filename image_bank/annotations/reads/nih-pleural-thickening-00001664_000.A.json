@@ -1,0 +1,39 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration (~9-10 posterior ribs), trachea midline, minimal rotation, adequate penetration. Scapulae incompletely rotated out and overlap the lateral upper/mid lung fields bilaterally; bilateral breast shadows over the lower zones. No readable L/R marker (only a cropped marker fragment at the image's top-right corner), conventional orientation assumed.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Smooth band-like soft-tissue density along the lateral chest wall paralleling the inner rib margin, extending from the lower-mid zone down to the costophrenic angle (a few mm thick, ~8 cm craniocaudal) - consistent with lateral pleural thickening; CP angle itself still fairly sharp, no definite effusion",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small (~1 cm) very dense nodular opacity at the hilum, most likely a calcified lymph node / old granulomatous focus",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Thin faint apical caps bilaterally, roughly symmetric - likely normal apical pleural/extrapleural shadow rather than definite thickening",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Thin lateral chest-wall soft-tissue line along the lower ribs, thinner than the left side - probably normal companion shadow/extrapleural fat, not clearly abnormal",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Scapulae overlapping the lateral lung fields (positioning), breast shadows over both lower zones - technical, not disease",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "PA 胸部X光，吸氣量足夠，氣管與縱膈位於中線，心臟大小正常，未見肺實質浸潤或氣胸。左側下肺野外側胸壁沿肋骨內緣可見平滑之帶狀軟組織密度增厚，向下延伸至肋膈角（約8公分長），符合左下外側肋膜增厚；肋膈角尚清楚，無明顯肋膜積液。左側肺門處另見約1公分之高密度結節影，疑為鈣化淋巴結或舊肉芽腫病灶。雙側肩胛骨部分重疊於外側肺野、雙側乳房陰影投影於下肺野；未見胸管、導線或其他置入物。"
+}

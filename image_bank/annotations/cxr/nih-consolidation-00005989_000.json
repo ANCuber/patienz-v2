@@ -1,0 +1,37 @@
+{
+ "id": "nih-consolidation-00005989_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate: PA erect projection, fair-to-good inspiration (about 9-10 posterior ribs), no significant rotation, adequate penetration (thoracic spine visible through the heart). Scapulae partly overlap the lateral upper lung fields; bottom edge slightly crops the costophrenic sulci. Only an external technologist 'L' side marker at the image upper-right corner (patient's left) - not a patient device.",
+ "target": {
+  "finding": "consolidation",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "lower",
+  "size_cm": 5,
+  "confidence": 0.55
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "bilateral",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "partial",
+ "devices": [],
+ "other_findings": [
+  "主動脈弓突出且迂曲（老年性主動脈延長／擴張）",
+  "心影於正常上限至輕度擴大（心胸比約 0.5–0.55）",
+  "雙側肺門突出，肺門周圍及下肺野支氣管血管紋理粗糙增多（慢性支氣管炎型態）",
+  "右上縱膈輕度飽滿，應為迂曲之頭臂血管所致",
+  "左側心緣旁／舌葉區輕度淡薄斑片影，不確定是否為輕微浸潤",
+  "左橫膈下可見正常胃泡",
+  "雙側肋膈角銳利，未見肋膜積液或氣胸",
+  "骨骼與軟組織無明顯異常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標的實變影（右下肺野內側心緣旁，約 5 cm）可見，雖然較淡但足以辨識；片上無任何管路、引流或治療裝置，亦無手術後變化。伴隨之主動脈迂曲、支氣管血管紋理增加與臨界心影擴大皆為 67 歲男性可預期之慢性背景變化，不與初次以肺炎／實變就診之情境衝突。",
+ "description_zh": "PA 胸部正面片，吸氣約 9–10 根後肋，無明顯旋轉，穿透度適中，肩胛骨部分重疊於雙側上肺野外側，影像右上角有 L 側別標記，未見任何管路、導線、節律器或引流裝置。右下肺野內側心緣旁區可見約 5 cm 邊界不清之斑片狀模糊實變影，使右心緣下段部分模糊而右橫膈輪廓仍清楚，符合早期實變（肺炎）或次節段性肺塌陷；左側心緣旁／舌葉區僅見輕度淡薄斑片影，不確定是否為浸潤。雙側肺門突出，肺門周圍及下肺野支氣管血管紋理粗糙增多，呈慢性支氣管炎型態。心影於正常上限至輕度擴大（心胸比約 0.5–0.55），主動脈弓突出且迂曲，右上縱膈輕度飽滿，應為迂曲之頭臂血管所致。雙側肋膈角銳利，未見肋膜積液或氣胸，左橫膈下可見正常胃泡，骨骼與軟組織無明顯異常。",
+ "label_concern": "實變影較淡且不典型，以右下肺內側心緣旁為主；讀者對側別意見不一（A：雙側、B：右側），且無放射科醫師定位框，亦不能完全排除次節段性肺塌陷。"
+}

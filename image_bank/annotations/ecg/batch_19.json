@@ -1,0 +1,451 @@
+[
+ {
+  "id": "ptbxl-LVOLT-2158",
+  "ecg_id": "2158",
+  "selected_code": "LVOLT",
+  "language": "de",
+  "source_report": "sinusbradykardie linkstyp periphere niederspannung",
+  "source_report_zh": "竇性心搏過緩，電軸左偏，肢體導程低電壓。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LVOLT-7091",
+  "ecg_id": "7091",
+  "selected_code": "LVOLT",
+  "language": "en",
+  "source_report": "sinus rhythm. low limb lead voltage. no definite pathology. Edit: NORM 100, (IRRB, LAFB)(NORM 100) ",
+  "source_report_zh": "竇性心律，肢體導程低電壓，無明確病理變化。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原文末尾「Edit: NORM 100, (IRRB, LAFB)(NORM 100)」為標註者編輯註記，非臨床敘述，譯文省略；與 NORM 100 一致。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LVOLT-7621",
+  "ecg_id": "7621",
+  "selected_code": "LVOLT",
+  "language": "mixed",
+  "source_report": "sinustachykardie lagetyp normal periphere low volrage normales ekg",
+  "source_report_zh": "竇性心搏過速，電軸正常，肢體導程低電壓，正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LVOLT-14107",
+  "ecg_id": "14107",
+  "selected_code": "LVOLT",
+  "language": "en",
+  "source_report": "sinus rhythm. low limb lead voltage. q waves in ii, iii, avf are probably normal. no definite pathology.",
+  "source_report_zh": "竇性心律，肢體導程低電壓，II、III、aVF 導程之 Q 波可能屬正常，無明確病理變化。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-HVOLT-207",
+  "ecg_id": "207",
+  "selected_code": "HVOLT",
+  "language": "de",
+  "source_report": "sinusrhythmus amplitudenkriterien f#r linkshypertrophie",
+  "source_report_zh": "竇性心律，符合左心室肥厚之電壓（振幅）標準。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-HVOLT-291",
+  "ecg_id": "291",
+  "selected_code": "HVOLT",
+  "language": "en",
+  "source_report": "sinus rhythm. incomplete right bundle branch block, this is probably  a normal variant. high v lead voltages are probably normal for age.",
+  "source_report_zh": "竇性心律，不完全性右束支傳導阻滯，可能為正常變異；胸前導程高電壓，以其年齡而言可能屬正常。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   },
+   {
+    "code": "IRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "不完全性右束支傳導阻滯"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-HVOLT-10994",
+  "ecg_id": "10994",
+  "selected_code": "HVOLT",
+  "language": "en",
+  "source_report": "premature atrial contraction(s). sinus rhythm. voltages are high in limb leads suggesting lvh. r-s transition zone in v leads displaced to the left. non-specific t wave flattening in limb leads and v6.",
+  "source_report_zh": "竇性心律，心房早期收縮，肢體導程高電壓，疑左心室肥厚；胸前導程 R/S 移行帶向左偏移；肢體導程及 V6 非特異性 T 波平坦。",
+  "statements_zh": [],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-HVOLT-4068",
+  "ecg_id": "4068",
+  "selected_code": "HVOLT",
+  "language": "en",
+  "source_report": "premature atrial contraction(s). sinus rhythm. prolonged pr interval. voltages are high in limb leads suggesting lvh. left axis deviation. left anterior fascicular block. right bundle branch block. patient has trifascicular block and may be at increased r",
+  "source_report_zh": "竇性心律，心房早期收縮，PR 間期延長，肢體導程高電壓，疑左心室肥厚；電軸左偏，左前分支阻滯，右束支傳導阻滯，屬三分支阻滯，風險可能增加（原文於此截斷）。",
+  "statements_zh": [
+   {
+    "code": "CRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "完全性右束支傳導阻滯"
+   },
+   {
+    "code": "LAFB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "左前分支阻滯"
+   },
+   {
+    "code": "1AVB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "一度房室傳導阻滯"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-HVOLT-1061",
+  "ecg_id": "1061",
+  "selected_code": "HVOLT",
+  "language": "en",
+  "source_report": "sinus arrhythmia. voltages in chest leads are at upper limit. no definite pathology.",
+  "source_report_zh": "竇性心律不整，胸前導程電壓位於正常上限，無明確病理變化。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-HVOLT-6431",
+  "ecg_id": "6431",
+  "selected_code": "HVOLT",
+  "language": "de",
+  "source_report": "sinusrhythmus amplitudenkriterien f#r linkshypertrophie",
+  "source_report_zh": "竇性心律，符合左心室肥厚之電壓（振幅）標準。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-HVOLT-2768",
+  "ecg_id": "2768",
+  "selected_code": "HVOLT",
+  "language": "en",
+  "source_report": "sinus rhythm. voltages in chest leads are at upper limit. no definite pathology.",
+  "source_report_zh": "竇性心律，胸前導程電壓位於正常上限，無明確病理變化。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-HVOLT-5039",
+  "ecg_id": "5039",
+  "selected_code": "HVOLT",
+  "language": "en",
+  "source_report": "sinus rhythm. voltages in limb leads are at upper limit. no definite pathology.",
+  "source_report_zh": "竇性心律，肢體導程電壓位於正常上限，無明確病理變化。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-TAB_-194",
+  "ecg_id": "194",
+  "selected_code": "TAB_",
+  "language": "de",
+  "source_report": "sinusbrsadykardie indiff. typ t-veraenderungen  negativ in iii, flach v4-v6 normales ekg",
+  "source_report_zh": "竇性心搏過緩，中間電軸，T 波變化：III 導程 T 波倒置、V4–V6 T 波平坦，正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-TAB_-1567",
+  "ecg_id": "1567",
+  "selected_code": "TAB_",
+  "language": "de",
+  "source_report": "bradykardie sinus                                       lagetyp normal intraventr. leitungsstoerung i, v3                      schlechte r- progression v1 - v3                        t- veraenderungen neg in l, v1 ekg wahrscheinlich normal",
+  "source_report_zh": "竇性心搏過緩，電軸正常，I、V3 導程心室內傳導障礙，V1–V3 R 波進展不良，T 波變化：I、V1 導程 T 波倒置，心電圖可能正常。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   },
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原文「neg in l, v1」之「l」推定為 I 導程（同報告前文以「i」表示 I 導程，應為打字誤植）；與 IVCD 100、NORM 50 相容。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-TAB_-1571",
+  "ecg_id": "1571",
+  "selected_code": "TAB_",
+  "language": "de",
+  "source_report": "sinusrhythmus linkstyp intraventr. leitungsstoerung v1, v2, iii,f              st- senkung asc. v2                                     t- veraenderungen hoch in v2                            grenzbefund",
+  "source_report_zh": "竇性心律，電軸左偏，V1、V2、III、aVF 導程心室內傳導障礙，V2 上升型 ST 段壓低，T 波變化：V2 T 波高尖，臨界所見。",
+  "statements_zh": [
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-TAB_-2725",
+  "ecg_id": "2725",
+  "selected_code": "TAB_",
+  "language": "de",
+  "source_report": "tachykardes vorhofflimmern intraventr. leitungsstoerung alle ablt. ausser v2 -v6   schlechte r- progression v1 - v5                        t- veraenderungen neg t v6                              ekg pathologisch",
+  "source_report_zh": "心房顫動併快速心室反應，除 V2–V6 以外所有導程心室內傳導障礙，V1–V5 R 波進展不良，T 波變化：V6 T 波倒置，異常心電圖。",
+  "statements_zh": [
+   {
+    "code": "ASMI",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "前間壁心肌梗塞"
+   },
+   {
+    "code": "ISCAL",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前側壁導程缺血"
+   },
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-TAB_-10575",
+  "ecg_id": "10575",
+  "selected_code": "TAB_",
+  "language": "de",
+  "source_report": "sinusrhythmus lagetyp normal unspezifisches abnormales t normal",
+  "source_report_zh": "竇性心律，電軸正常，非特異性 T 波異常；整體判讀：正常。",
+  "statements_zh": [
+   {
+    "code": "NDT",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非診斷性 T 波異常"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原文結尾僅書「normal」，語意不明確（可能指整體判讀正常）；譯文以「整體判讀：正常」呈現。代碼為 NDT 100（非診斷性 T 波異常）而無 NORM，兩者不衝突。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-TAB_-16003",
+  "ecg_id": "16003",
+  "selected_code": "TAB_",
+  "language": "de",
+  "source_report": "sinusrhythmus linkstyp t- veraenderungen neg iii                               ekg normal",
+  "source_report_zh": "竇性心律，電軸左偏，T 波變化：III 導程 T 波倒置，正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-TAB_-8168",
+  "ecg_id": "8168",
+  "selected_code": "TAB_",
+  "language": "de",
+  "source_report": "sinusrhythmus mltlagetyp normal t-veraenderungen biphas. in iii normales ekg",
+  "source_report_zh": "竇性心律，電軸正常，T 波變化：III 導程 T 波雙相，正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STE_-17892",
+  "ecg_id": "17892",
+  "selected_code": "STE_",
+  "language": "de",
+  "source_report": "sinusrhythmus lagetyp normal st-hebung in v1-2 t biphasisch in iii,avf,v5-6",
+  "source_report_zh": "竇性心律，電軸正常，V1–V2 ST 段上升，III、aVF、V5–V6 T 波雙相。",
+  "statements_zh": [
+   {
+    "code": "NST_",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性 ST 段變化"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ }
+]

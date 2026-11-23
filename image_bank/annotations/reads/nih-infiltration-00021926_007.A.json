@@ -1,0 +1,34 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate inspiration and penetration, no significant rotation; scapulae partially projected over the upper lung fields; L side marker at top right corner (partly cut off). Pediatric film, arms at sides.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "radiopaque laterality marker (L)",
+   "location": "top right corner of image, lateral to patient's left shoulder (outside the thorax)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "patchy ill-defined hazy opacity with peribronchial thickening, perihilar extending laterally (the labelled infiltrate)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "increased perihilar bronchovascular markings / peribronchial cuffing without confluent consolidation",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "mildly prominent hila bilaterally (likely peribronchial/reactive)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部X光正面（PA）像，吸氣深度足夠，無明顯旋轉，穿透度適中。左側肺門周圍延伸至中肺野可見片狀、邊界不清之模糊浸潤影，範圍約7公分，伴支氣管周圍增厚；右側肺門周圍亦見支氣管血管紋理增加及支氣管周圍套袖徵，但無明顯融合性實變。心臟大小正常，兩側橫膈輪廓清楚、肋膈角銳利，未見肋膜積液或氣胸。影像右上角可見 L 側別標記，未見任何導管、引流管、外科夾或其他植入裝置。"
+}

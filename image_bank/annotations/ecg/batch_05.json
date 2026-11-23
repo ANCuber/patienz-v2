@@ -1,0 +1,512 @@
+[
+ {
+  "id": "ptbxl-IVCD-49",
+  "ecg_id": "49",
+  "selected_code": "IVCD",
+  "language": "de",
+  "source_report": "sinusrhythmus rechtstyp unspezifische intraventrikulÄre leitungsstÖrung",
+  "source_report_zh": "竇性心律，電軸右偏，非特異性心室內傳導障礙。",
+  "statements_zh": [
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   }
+  ],
+  "axis_zh": "電軸右偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-IVCD-2123",
+  "ecg_id": "2123",
+  "selected_code": "IVCD",
+  "language": "en",
+  "source_report": "sinus arhythmia minor terminal intraventricular  conduction delay normal ecg.",
+  "source_report_zh": "竇性心律不整，輕微終末心室內傳導延遲，正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "RAO/RAE",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "右心房負荷/擴大"
+   },
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "報告結論為「正常心電圖」，但代碼含右心房負荷/擴大（RAO/RAE 100）且未含 NORM；報告全文未提及右心房異常，與代碼有矛盾。IVCD 100 對應報告之「輕微終末心室內傳導延遲」，尚可相容。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-IVCD-563",
+  "ecg_id": "563",
+  "selected_code": "IVCD",
+  "language": "sv",
+  "source_report": "sinusrytm a-v block i vÄnster el-axel avvikande qrs(t) fÖrlopp    anterior infarkt     Ålder ej bestÄmmbar st-t sÄnkning, sÅsom vid    hÖg lateral ischemi eller vÄnster belastning",
+  "source_report_zh": "竇性心律，一度房室傳導阻滯，電軸左偏，QRS(T) 型態異常，前壁梗塞（時期無法判定）；ST-T 壓低，如高側壁缺血或左心負荷所見。",
+  "statements_zh": [
+   {
+    "code": "IMI",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "下壁心肌梗塞"
+   },
+   {
+    "code": "ASMI",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前間壁心肌梗塞"
+   },
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   },
+   {
+    "code": "1AVB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "一度房室傳導阻滯"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-IVCD-581",
+  "ecg_id": "581",
+  "selected_code": "IVCD",
+  "language": "en",
+  "source_report": "atrial fibrillation with slow ventricular response. non-specific intraventricular block. tiny r waves in v2,3 suggesting old anteroseptal myocardial infarction. non-specific st-t wave changes.",
+  "source_report_zh": "心房顫動合併緩慢心室反應，非特異性心室內傳導阻滯；V2、V3 R 波微小，疑為陳舊性前間壁心肌梗塞；非特異性 ST-T 波變化。",
+  "statements_zh": [
+   {
+    "code": "ASMI",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前間壁心肌梗塞"
+   },
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-IVCD-527",
+  "ecg_id": "527",
+  "selected_code": "IVCD",
+  "language": "sv",
+  "source_report": "sinusrytm avvikande qrs(t) fÖrlopp    inferior myokardskada bÖr ÖvervÄgas qt fÖrlÄngd",
+  "source_report_zh": "竇性心律，QRS(T) 型態異常，應考慮下壁心肌損傷，QT 間期延長。",
+  "statements_zh": [
+   {
+    "code": "NDT",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非診斷性 T 波異常"
+   },
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-IVCD-658",
+  "ecg_id": "658",
+  "selected_code": "IVCD",
+  "language": "de",
+  "source_report": "sinusbradykardie unspezifische intraventrikulÄre leitungsstÖrung",
+  "source_report_zh": "竇性心搏過緩，非特異性心室內傳導障礙。",
+  "statements_zh": [
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-IVCD-2909",
+  "ecg_id": "2909",
+  "selected_code": "IVCD",
+  "language": "de",
+  "source_report": "sinusbradykardie linkslagetyp normales ekg intraventr. leitungsstÖrung v2",
+  "source_report_zh": "竇性心搏過緩，電軸左偏，正常心電圖；V2 導程心室內傳導障礙。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   },
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-IVCD-5545",
+  "ecg_id": "5545",
+  "selected_code": "IVCD",
+  "language": "de",
+  "source_report": "sinusrhythmus unspezifische intraventrikulÄre leitungsstÖrung",
+  "source_report_zh": "竇性心律，非特異性心室內傳導障礙。",
+  "statements_zh": [
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   },
+   {
+    "code": "NDT",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非診斷性 T 波異常"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-IVCD-5663",
+  "ecg_id": "5663",
+  "selected_code": "IVCD",
+  "language": "de",
+  "source_report": "sinus arrhythmie unspezifische intraventrikulÄre leitungsstÖrung",
+  "source_report_zh": "竇性心律不整，非特異性心室內傳導障礙。",
+  "statements_zh": [
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISCAL-1817",
+  "ecg_id": "1817",
+  "selected_code": "ISCAL",
+  "language": "de",
+  "source_report": "normokardes bis tachykardes vorhofflimmern ueberdrehter linkstyp linksanteriorer hemiblock st-senkung Über i,avl t spitz zulaufend in v2,v5",
+  "source_report_zh": "心房顫動（心率正常至過速），電軸極度左偏，左前分支阻滯，I、aVL 導程 ST 段壓低，V2、V5 T 波尖峭。",
+  "statements_zh": [
+   {
+    "code": "LAFB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "左前分支阻滯"
+   },
+   {
+    "code": "ISCAL",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前側壁導程缺血"
+   }
+  ],
+  "axis_zh": "電軸極度左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISCAL-164",
+  "ecg_id": "164",
+  "selected_code": "ISCAL",
+  "language": "mixed",
+  "source_report": "sinustachykardi st-t fÖrÄndring anterolateralt och inferolateralt sÅsom vid ischemi eller vÄnster kammarbelastning. Edit: LVH 100, ISC, (f,26), Sokolow 2,6(ISCAL)",
+  "source_report_zh": "竇性心搏過速，前側壁及下側壁 ST-T 變化，如缺血或左心室負荷所見。（編註：LVH 100、ISC，女性 26 歲，Sokolow 指數 2.6，判為 ISCAL）",
+  "statements_zh": [
+   {
+    "code": "ISCAL",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前側壁導程缺血"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "來源末尾「Edit: LVH 100, ISC, (f,26), Sokolow 2,6(ISCAL)」為註解者的編輯備註（原判 LVH/ISC，因女性 26 歲、Sokolow 指數 2.6 mV 未達 LVH 標準而改判為 ISCAL），非臨床判讀本文；譯文以編註形式保留，顯示時可考慮省略。另 extra_beats 標記 1ES（一次期外收縮），報告未提及。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISCAL-167",
+  "ecg_id": "167",
+  "selected_code": "ISCAL",
+  "language": "sv",
+  "source_report": "sinusrytm t-fÖrÄndring, sÅsom vid    hÖg lateral myokardaffektion",
+  "source_report_zh": "竇性心律，T 波變化，如高側壁心肌病變所見。",
+  "statements_zh": [
+   {
+    "code": "ISCAL",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前側壁導程缺血"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISCAL-1944",
+  "ecg_id": "1944",
+  "selected_code": "ISCAL",
+  "language": "en",
+  "source_report": "sinus rhythm. compared with tracing of 15:7:92, it is very similar old inferior myocardial infarction and non-specific t wave inversion in v3-6.",
+  "source_report_zh": "竇性心律。與 15/7/92 之心電圖比較非常相似：陳舊性下壁心肌梗塞，V3–V6 非特異性 T 波倒置。",
+  "statements_zh": [
+   {
+    "code": "ILMI",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "下側壁心肌梗塞"
+   },
+   {
+    "code": "ISCAL",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前側壁導程缺血"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "譯文「大致相同」改為「非常相似」以符合原文 very similar。報告寫「陳舊性下壁心肌梗塞」，代碼為下側壁心肌梗塞（ILMI 100），代碼範圍較報告廣（含側壁），屬報告較簡略，非矛盾。「15:7:92」為前次心電圖日期（1992-07-15），譯作 15/7/92。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-ISCAL-1429",
+  "ecg_id": "1429",
+  "selected_code": "ISCAL",
+  "language": "sv",
+  "source_report": "sinusrytm st-t sÄnkning, sÅsom vid    anterolateral ischemi eller vÄnster belastning    inferolateral ischemi eller vÄnster belastning",
+  "source_report_zh": "竇性心律，ST-T 壓低，如前側壁缺血或左心負荷、下側壁缺血或左心負荷所見。",
+  "statements_zh": [
+   {
+    "code": "ISCAL",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前側壁導程缺血"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISCAL-4307",
+  "ecg_id": "4307",
+  "selected_code": "ISCAL",
+  "language": "de",
+  "source_report": "sinusrhythmus lagetyp normal qrs(t) abnormal    inferiorer infarkt mÖglich st & t abnormal, wahrscheinlich    anteriore ischÄmie oder linksbelastung    laterale ischÄmie oder linksbelastung",
+  "source_report_zh": "竇性心律，電軸正常，QRS(T) 型態異常，可能為下壁梗塞；ST 及 T 波異常，很可能為前壁缺血或左心負荷、側壁缺血或左心負荷。",
+  "statements_zh": [
+   {
+    "code": "IMI",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "下壁心肌梗塞"
+   },
+   {
+    "code": "ISCAL",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前側壁導程缺血"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISCAL-19719",
+  "ecg_id": "19719",
+  "selected_code": "ISCAL",
+  "language": "de",
+  "source_report": "sinusrhythmus lagetyp normal st & t abnormal, wahrscheinlich    anteriore ischÄmie oder linksbelastung t abnormal in lateralen ableitungen",
+  "source_report_zh": "竇性心律，電軸正常，ST 及 T 波異常，很可能為前壁缺血或左心負荷；側壁導程 T 波異常。",
+  "statements_zh": [
+   {
+    "code": "ISCAL",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前側壁導程缺血"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISCAL-19488",
+  "ecg_id": "19488",
+  "selected_code": "ISCAL",
+  "language": "de",
+  "source_report": "sinustachykardie lagetyp normal st & t abnormal, wahrscheinlich    anterolaterale ischÄmie oder linksbelastung t abnormal in anterioren ableitungen",
+  "source_report_zh": "竇性心搏過速，電軸正常，ST 及 T 波異常，很可能為前側壁缺血或左心負荷；前壁導程 T 波異常。",
+  "statements_zh": [
+   {
+    "code": "AMI",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "前壁心肌梗塞"
+   },
+   {
+    "code": "INJAS",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前間壁導程心內膜下損傷"
+   },
+   {
+    "code": "ISCAL",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前側壁導程缺血"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-CRBBB-172",
+  "ecg_id": "172",
+  "selected_code": "CRBBB",
+  "language": "sv",
+  "source_report": "sinusrytm svÅrbestÄmmbar el-axel lÅga qrs amplituder i extremitetsavledningarna hÖgersidigt skÄnkelblock",
+  "source_report_zh": "竇性心律，電軸難以判定，肢體導程 QRS 低電壓，右束支傳導阻滯。",
+  "statements_zh": [
+   {
+    "code": "CRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "完全性右束支傳導阻滯"
+   },
+   {
+    "code": "LAFB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "左前分支阻滯"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "代碼含左前分支阻滯（LAFB 100），報告未提及，且報告稱電軸難以判定（肢體導程低電壓）；LAFB 診斷通常需電軸左偏支持，兩者略有張力，但非直接矛盾。報告之右束支傳導阻滯未註明完全性，與 CRBBB 相容。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-CRBBB-512",
+  "ecg_id": "512",
+  "selected_code": "CRBBB",
+  "language": "sv",
+  "source_report": "sinusbradykardi svÅrbestÄmmbar el-axel hÖgersidigt skÄnkelblock",
+  "source_report_zh": "竇性心搏過緩，電軸難以判定，右束支傳導阻滯。",
+  "statements_zh": [
+   {
+    "code": "CRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "完全性右束支傳導阻滯"
+   },
+   {
+    "code": "ASMI",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前間壁心肌梗塞"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-CRBBB-1093",
+  "ecg_id": "1093",
+  "selected_code": "CRBBB",
+  "language": "en",
+  "source_report": "sinus rhythm. prolonged pr interval. right bundle branch block. probable old inferior infarct. antero-lateral st-t wave changes suggest possible ischaemia.",
+  "source_report_zh": "竇性心律，PR 間期延長，右束支傳導阻滯，很可能為陳舊性下壁梗塞；前側壁 ST-T 波變化提示可能缺血。",
+  "statements_zh": [
+   {
+    "code": "CRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "完全性右束支傳導阻滯"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "「probable old inferior infarct」原譯「疑似」改為「很可能為」以符合 probable 之強度。惟代碼 IMI 可能性僅 15（<50，未列入 statements_zh），報告用語較代碼肯定；stadium_zh 之「陳舊性」係依 infarction_stadium1=Stadium III 填入。",
+  "corrected": true
+ }
+]

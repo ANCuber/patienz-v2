@@ -1,0 +1,18 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film of a young patient; good inspiration (posterior ribs ~9-10 visible), no significant rotation (clavicles roughly symmetric about the spinous processes), adequate penetration with thoracic spine faintly visible through the mediastinum. Left side marker (L) present at image top-right, confirming conventional orientation. Minor cropping of the lateral soft tissues of the left chest wall, lung fields fully included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External side marker (L) with adjacent round radiopaque marker disc",
+   "location": "Top-right corner of the image, lateral to the patient's left shoulder / acromioclavicular region (patient's left side, outside the thorax)"
+  }
+ ],
+ "abnormalities": [],
+ "treatment_evidence": false,
+ "confidence": 0.9,
+ "description_zh": "胸部正面（PA）X光：兩側肺野透亮度對稱且清晰，未見實質浸潤、結節、腫塊或肋膜積液，肺紋理分布正常。心臟大小及縱膈輪廓正常，氣管居中，兩側橫膈平滑，肋膈角銳利，左橫膈下可見正常胃泡。骨骼結構未見骨折或破壞。影像右上角（病人左肩外側）可見 L 側別標記及圓形不透光標記物，屬外在物件；未見任何導管、引流管、心律調節器或其他治療相關裝置。整體判讀為無急性心肺異常。"
+}

@@ -1,0 +1,68 @@
+{
+ "view": "Frontal chest radiograph, AP projection (paediatric), likely supine/semi-erect; L side marker at image upper right (conventional orientation)",
+ "technical_quality": "Suboptimal. Marked patient rotation and tilt: head turned toward the patient's right (mandible/teeth projected over the right upper thorax), cervicothoracic spine obliquely oriented, clavicles very asymmetric (right clavicle projected much lower than left). Both shoulders/proximal humeri included. Apices and costophrenic angles included. Penetration adequate (vertebral bodies visible through mediastinum). Rotation limits assessment of cardiac size and mediastinal position.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "multiple",
+ "size_cm": 15,
+ "devices": [
+  {
+   "type": "Side marker 'L' with technologist initials (external)",
+   "location": "Image upper right corner, lateral to the patient's left shoulder"
+  },
+  {
+   "type": "Small angular (L/7-shaped) linear radiopaque density, probably external artifact / small foreign body",
+   "location": "Projected over the lateral right mid zone, near the right lateral chest wall at approximately the 5th-6th rib level"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large homogeneous dense opacification of the right hemithorax occupying the lower and middle zones (roughly the lower two-thirds), with a laterally higher concave-upward upper margin (meniscus), most consistent with a large right pleural effusion; underlying consolidation/collapse cannot be excluded",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Right costophrenic angle obliterated; right hemidiaphragm not visualised",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right heart border and right mediastinal border obscured by the opacity (silhouette sign)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Tracheal and mediastinal/cardiac shift to the left (contralateral to the opacity), partly confounded by patient rotation",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Patchy hazy opacity in the right upper zone with a lobulated soft-tissue contour along the right upper mediastinum (compressed/consolidated upper lobe or superior extension of the effusion; residual thymus less likely at this age)",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Relative hyperlucency / compensatory hyperinflation of the left lung",
+   "laterality": "left",
+   "zone": "whole"
+  },
+  {
+   "finding": "Cardiac size not assessable (right border obscured, marked rotation)",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Apparent crowding of the right ribs and oblique tilt of the thoracic spine (positional rotation/tilt vs. scoliosis; possible right volume loss)",
+   "laterality": "right",
+   "zone": "whole"
+  },
+  {
+   "finding": "Small angular linear radiopaque density over the lateral right mid zone, likely external artifact / foreign body",
+   "laterality": "right",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "正面（AP）胸部X光，病童明顯旋轉且頭部轉向右側，影像品質受限。右側胸腔中下野呈大範圍均質性緻密不透光影，上緣呈外側較高之弧形（meniscus sign），右側肋膈角、右橫膈及右心緣皆被遮蔽，氣管與縱膈向左側偏移，最符合大量右側肋膜積液；右上野另見片狀模糊影，可能為受壓或實變之肺組織，左肺相對過度充氣。未見胸管、引流管等治療裝置；右側中野外側見一小段角狀線狀高密度影，疑為外部異物或偽影，左橫膈下可見正常胃泡。"
+}

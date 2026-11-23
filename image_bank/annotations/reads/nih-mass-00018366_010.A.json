@@ -1,0 +1,43 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film; L marker at image upper right confirms conventional orientation. Adequate penetration (spine visible through mediastinum) and inspiration (right hemidiaphragm ~9th posterior rib); minimal rotation. Large bilateral breast shadows overlie the lower zones and partially reduce contrast there.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 10,
+ "devices": [
+  {
+   "type": "surgical clips (3 small linear metallic densities, one folded/double-line)",
+   "location": "patient right apex / right upper zone, at the level of the 1st-2nd ribs"
+  },
+  {
+   "type": "external L side marker with technologist initials",
+   "location": "image upper right corner (patient left shoulder region), outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large lobulated dense mass contiguous with the left hilum/mediastinum, ~10 cm, convex well-defined upper-lateral margin against aerated left upper lobe; extends inferiorly into the lower zone (labelled pulmonary mass)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Homogeneous dense opacity in the left lower zone contiguous with the hilar mass, silhouetting the left heart border and medial left hemidiaphragm (mass extension and/or left lower lobe collapse/consolidation); left costophrenic angle only partially visible",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left hilar enlargement / apparent widening of the left mediastinal contour, likely part of the mass or associated lymphadenopathy",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Residual aerated left upper lobe appears relatively hyperlucent (probable compensatory hyperinflation)",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "正面胸部X光（PA），左側標記位於影像右上方，定位正常。左側肺門區可見一大型、邊緣分葉狀之緻密腫塊影，約10公分，與縱膈相連並向外側及下方延伸至左中下肺野，遮蔽左心緣及左橫膈內側，左上肺野殘餘肺組織相對透亮。右肺尖可見三枚手術夾，右肺野餘清晰，右橫膈及右肋膈角清楚。未見胸管、引流管、心律調節器或血管導管等裝置；雙側乳房陰影重疊於下肺野。"
+}

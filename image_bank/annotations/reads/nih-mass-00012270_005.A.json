@@ -1,0 +1,33 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration (about 9-10 posterior ribs), no significant rotation (spinous processes midline between clavicular heads), L marker in image upper-right corner confirming conventional orientation; penetration adequate, lung apices and both costophrenic angles included.",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 0.8,
+ "devices": [
+  {
+   "type": "surgical clips (multiple small linear metallic clips)",
+   "location": "left upper quadrant of abdomen, below the left hemidiaphragm, region of the gastric fundus / splenic hilum (patient's left); not intrathoracic"
+  },
+  {
+   "type": "L side marker (film marker)",
+   "location": "image upper-right corner, patient's left"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Small (~0.7-1 cm) well-circumscribed, dense round nodule lateral-superior to the left hilum at about the 3rd anterior rib level; very dense for its size, suggesting a calcified granuloma or end-on vessel rather than a true mass. This is the only candidate for the 'mass' label; no opacity >3 cm is seen.",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Post-surgical change: multiple surgical clips in the left upper quadrant of the abdomen (gastric fundus / splenic region); unrelated to the lungs",
+   "laterality": "left",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "PA 胸部正面片，吸氣充足、無明顯旋轉，L 標記位於影像右上方，符合常規擺位。左中肺野（左肺門外上方、約第 3 前肋高度）可見一顆約 0.7–1 公分、邊緣清楚且密度偏高之小圓形結節，以其大小與高密度而言較像鈣化肉芽腫或端視血管，未見大於 3 公分之明確肺部腫塊。雙側肺野餘無明顯實質病灶，心影大小正常、縱膈不寬，雙側肋膈角銳利，無肋膜積液或氣胸。左上腹橫膈下胃底／脾門區可見多枚手術夾，屬腹部術後變化；未見胸管或其他針對胸腔病灶之治療證據。"
+}

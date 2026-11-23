@@ -1,0 +1,60 @@
+{
+ "view": "PA (recorded); scapulae project over the lateral lung fields, so an AP acquisition cannot be excluded",
+ "technical_quality": "Adequate exposure; apices and costophrenic angles included; minimal rotation; slightly shallow inspiration (about 8 posterior ribs visible); scapulae not fully cleared from the lung fields; bilateral breast shadows add density to the lower zones; L marker present in the upper corner on the patient's left, confirming conventional orientation.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "multiple",
+ "size_cm": 12,
+ "devices": [
+  {
+   "type": "Implanted venous access port (port-a-cath) reservoir",
+   "location": "Patient's right anterior upper chest wall, infraclavicular (image left, upper zone)"
+  },
+  {
+   "type": "Port catheter",
+   "location": "Courses from the right chest port over the right neck base into the right central veins, descending along the right mediastinal border; tip projects over the lower SVC / cavoatrial junction"
+  },
+  {
+   "type": "ECG electrodes / lead snaps (2-3 small round densities)",
+   "location": "Patient's left lower-middle chest wall, projected over the left middle-lower zone"
+  },
+  {
+   "type": "External tubing (oxygen or IV lines) with a plastic connector/hub",
+   "location": "Draped over both neck bases; a plastic connector projects over the left middle zone; tubing runs along the left lateral chest wall and along the right lateral chest wall / upper abdomen and the lower edge of the film"
+  },
+  {
+   "type": "Side marker (L)",
+   "location": "Upper corner of the film on the patient's left (image upper right)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy patchy / reticulonodular infiltrates with reduced overall lucency of the right lung, most conspicuous in the middle and lower zones (approx. 12 cm craniocaudal extent)",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Blunting of the right costophrenic angle with hazy lower-zone density; possible small right pleural effusion",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Elevated right hemidiaphragm relative to the left",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly increased interstitial / reticular markings in the left lower zone, less marked than the right",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiomediastinal silhouette at the upper limit of normal / borderline enlarged (may be accentuated by shallow inspiration and possible AP projection)",
+   "laterality": "none",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面片（記錄為PA，肩胛骨未完全移出肺野，吸氣量略淺）。右側肺野整體透亮度降低，右中、下肺野可見斑片狀、網狀結節性浸潤影，範圍約12公分，右肋膈角變鈍，疑合併少量右側肋膜積液，右橫膈相對抬高；左下肺野亦見間質性紋理增加，程度較輕。右前上胸壁可見植入式靜脈輸液港（port-a-cath），導管沿右側中央靜脈走行，尖端投影於上腔靜脈下段／腔靜脈心房交界處；左中下胸壁可見心電圖電極片，頸部兩側及左側胸壁有多條體外管路與一塑膠接頭投影。心縱膈影約在正常上限，未見氣胸、胸管或肋膜引流管。"
+}

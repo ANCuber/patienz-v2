@@ -1,0 +1,49 @@
+{
+ "view": "PA frontal chest radiograph (L marker with \"HB\" tech initials at image upper right = patient's left; conventional orientation confirmed)",
+ "technical_quality": "Adequate. Deep inspiration (>10 posterior ribs visible - hyperinflated), minimal/no rotation (medial clavicles roughly equidistant from spinous processes), adequate penetration (vertebral bodies visible through the cardiac shadow), apices and both costophrenic angles included. Scapulae largely projected clear of the lung fields.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "whole",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "radiographic side marker (L) with technician initials (HB) - external artifact only, no medical device",
+   "location": "image upper right corner, over the patient's left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Pulmonary hyperinflation: increased lung volumes with low, flattened hemidiaphragms (right more than left), widened intercostal spaces, hyperlucent lung fields - pattern of emphysema/COPD",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Attenuated / pruned peripheral vascular markings with increased radiolucency in the upper zones",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Coarse, prominent bronchovascular markings in the lower zones (chronic bronchitic pattern), no focal consolidation",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Narrow, elongated vertical ('tubular') cardiac silhouette secondary to hyperinflation; cardiothoracic ratio not increased",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent hilar vascular shadows, right slightly more than left, possibly reflecting enlarged central pulmonary arteries",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent / unfolded aortic knob",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "正面PA胸部X光，吸氣充分、無明顯旋轉，穿透度適中，未見任何管路、導線或植入裝置，僅見左側標記(L/HB)。雙肺明顯過度充氣，橫膈低平（右側尤為明顯），肋間隙增寬，雙上肺野透亮度增加且周邊血管紋理減少，雙下肺野支氣管血管紋理略粗，未見局部實質化、結節或腫塊。心影細長呈垂直型，心胸比未增大，雙側肺門血管影略為突出，主動脈弓略顯突出，縱膈無增寬、氣管居中。雙側肋膈角銳利，未見肋膜積液或氣胸；骨骼與軟組織無明顯異常。整體影像符合肺氣腫／慢性阻塞性肺病之表現。"
+}

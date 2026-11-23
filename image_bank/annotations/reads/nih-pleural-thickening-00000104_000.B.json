@@ -1,0 +1,52 @@
+{
+ "view": "PA frontal chest radiograph (erect), adult female",
+ "technical_quality": "Adequate: full inspiration (well-expanded lungs, diaphragm domes at about the 10th posterior rib), minimal rotation (medial clavicular ends roughly equidistant from the spinous processes), adequate penetration (thoracic vertebral bodies visible through the heart). Apices and both costophrenic angles included; field of view extends low into the upper abdomen. Scapulae largely projected off the lung fields. Large bilateral breast shadows overlie the lower zones and partly reduce conspicuity of the bases. A side marker with technologist initials and an 'L'-type element is projected over the image's upper right corner (patient's left), supporting conventional orientation.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 9,
+ "devices": [
+  {
+   "type": "multiple metallic surgical clips (cholecystectomy-type cluster)",
+   "location": "right upper quadrant of the abdomen, subhepatic, just below the right hemidiaphragm to the right of the spine (patient's right)"
+  },
+  {
+   "type": "multiple metallic surgical clips",
+   "location": "left upper quadrant of the abdomen, medial to the gastric fundus near the gastro-oesophageal junction, to the left of the spine (patient's left)"
+  },
+  {
+   "type": "radiographic side marker / technologist initials (external)",
+   "location": "upper corner of the image on the patient's left, above the left shoulder"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild smooth band-like pleural thickening along the lateral chest wall, running from the mid zone down to the costophrenic region (thickness roughly 0.5 cm, craniocaudal extent roughly 9 cm); the left lateral costophrenic angle is preserved but partly obscured by overlying breast shadow",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Subtle, equivocal thin pleural density along the lateral lower chest wall, much less conspicuous than on the left; costophrenic angle sharp",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Minimal apical pleural capping above both clavicles, slightly more on the left (low confidence; likely age-related)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly prominent/unfolded aortic knob with slightly tortuous thoracic aorta; trachea midline; no mediastinal widening (age-appropriate)",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Postoperative upper abdomen: multiple surgical clips on both sides of the spine below the diaphragm (right subhepatic and left near the gastric fundus), consistent with prior cholecystectomy and additional upper-abdominal/gastro-oesophageal surgery",
+   "laterality": "bilateral",
+   "zone": "below diaphragm (upper abdomen)"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面(PA)胸部X光，吸氣充足、無明顯旋轉、穿透度適當；雙側肺野透亮清晰，未見實質浸潤、結節、腫塊或氣胸，心臟大小正常(CTR約0.4)，氣管居中，主動脈弓略為突出迂曲，符合年齡變化。左側外側胸壁自中肺野延伸至下肺野可見平滑帶狀之輕度肋膜增厚(厚約0.5公分、上下長約9公分)，右側外側下胸壁僅有極不明顯之類似薄層密度，雙側肺尖疑有極輕微肋膜帽狀增厚，雙側肋膈角大致銳利、未見明顯肋膜積液。橫膈下方雙側上腹部(右上腹肝下區及左上腹胃底附近)可見多枚手術夾，左橫膈下見正常胃泡；骨骼未見急性病灶，雙側大乳影重疊於下肺野，未見胸管或引流管等治療裝置。"
+}

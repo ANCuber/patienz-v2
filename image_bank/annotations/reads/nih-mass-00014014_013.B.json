@@ -1,0 +1,51 @@
+{
+ "view": "Frontal chest radiograph (likely PA; L marker at image upper right, conventional orientation)",
+ "technical_quality": "Adequate but suboptimal: mandible/chin projects over the upper mediastinum and partially obscures the apices, both scapulae partially overlap the upper-lateral lung fields, mild lordotic tilt (clavicles high, anterior ribs horizontal), overall image noisy/low contrast with dense chest-wall soft tissue. Inspiration adequate (about 8-9 posterior ribs). No rotation. Costophrenic angles included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "External monitoring lead / tubing (thin linear artifact) running obliquely from right shoulder-axilla across right upper and middle zones toward the right heart border",
+   "location": "right hemithorax, upper to lower zone, external"
+  },
+  {
+   "type": "Small rectangular external electrode / clip",
+   "location": "right mid zone, medial to the scapula, external"
+  },
+  {
+   "type": "Metallic external object (clasp / buckle-like artifact)",
+   "location": "left shoulder soft tissue, lateral, external"
+  },
+  {
+   "type": "Side marker 'L DG'",
+   "location": "image upper right corner (patient left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Enlarged, bulky right hilum with a rounded/lobulated perihilar opacity of roughly 4 cm (hilar mass or lymphadenopathy vs. superimposed vessels)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild prominence of the left hilum with nodular contour",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Diffusely increased bilateral perihilar bronchovascular / interstitial markings",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Fullness of the right paratracheal / superior mediastinal contour (uncertain; partly obscured by chin and possible residual thymus at this age)",
+   "laterality": "right",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面胸部X光（疑PA），吸氣尚可，但下頜與上縱膈重疊、雙側肩胛骨部分投影於肺野且影像雜訊偏高；右側胸壁可見體外導線與小型電極片斜行跨越右肺野，左肩外側軟組織可見金屬外物，未見胸管或引流管。右肺門增大且輪廓呈分葉狀，右中肺野肺門旁可見約4公分類圓形增加密度影，需考慮肺門腫塊或淋巴結腫大；左肺門亦略顯著，雙肺支氣管血管紋理增加，右上縱膈旁輪廓稍飽滿。雙側肋膈角大致銳利，未見明顯肋膜積液或氣胸，心臟大小正常，左橫膈下可見胃泡，骨骼未見明顯異常。"
+}

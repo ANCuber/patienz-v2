@@ -1,0 +1,53 @@
+{
+  "id": "nih-mass-00002867_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (recorded), erect frontal chest radiograph; conventional orientation confirmed by cardiac apex and gastric bubble on image right (no legible L/R marker letters)",
+  "technical_quality": "Adequate penetration (spine visible through the heart). Inspiration fair to slightly suboptimal (~8-9 posterior ribs). Mild rotation/tilt. Centred low with the upper abdomen included; both lungs and costophrenic angles fully included. Scapulae partially project over the lateral lung fields. Bright vertical collimation/cassette-edge band along the image's left edge (lateral to the patient's right chest wall) and a white label block plus a side-marker tag at the image top-right corner.",
+  "target": {
+    "finding": "Enlarged, dense, lobulated right hilum with a rounded well-defined soft-tissue mass (~3 cm) adjacent to the hilum in the mid zone, denser and more lobulated than the contralateral hilum - right hilar mass / hilar lymphadenopathy (the labelled 'mass'); partially overlapped by hilar vessels",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "middle",
+    "size_cm": 3,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "external artifact - side-marker tag with small round lead marker (letters not legible)",
+      "location": "image top-right, projected over the patient's left shoulder / acromioclavicular region",
+      "zh": "體外側標記牌（含小圓形鉛標記，字母無法辨識），投影於左肩/肩鎖關節區"
+    },
+    {
+      "type": "external artifact - white rectangular label block",
+      "location": "image top-right corner, outside the thorax",
+      "zh": "影像右上角白色矩形標籤區塊（胸廓外）"
+    },
+    {
+      "type": "external artifact - collimation / cassette-edge bright vertical band",
+      "location": "along the image's left edge, lateral to the patient's right chest wall / arm",
+      "zh": "影像左緣垂直亮帶（準直/片匣邊緣偽影），位於右胸壁外側"
+    }
+  ],
+  "other_findings": [
+    "右側氣管旁條紋略增寬且外凸，疑右氣管旁淋巴結腫大（上肺野，不確定）",
+    "右肺門旁兩個細小亮點，可能為血管末端投影或小鈣化肉芽腫（性質不定）",
+    "左側肺門輕度突出，多為血管影，可能為此年齡之正常表現（不確定）",
+    "吸氣量略不足，兩側肺底輕度支氣管血管影擁擠（技術因素）",
+    "輕度旋轉，攝影中心偏低而包含上腹部；兩側肩胛骨部分投影於肺野外側",
+    "心臟大小於正常上限，氣管居中",
+    "兩側肺野無實質浸潤、實變或其他結節；肋膈角銳利，無肋膜積液或氣胸",
+    "左橫膈下可見正常胃泡；骨骼與軟組織無明顯異常"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標籤病灶（右肺門約3公分分葉狀軟組織腫塊）於影像上可見，且盲讀者亦獨立於同側發現；影像上無胸管、引流管或任何治療裝置，亦無術後或治療後變化，與初次就診之情境相符。惟病灶位於肺門並伴疑似右氣管旁淋巴結腫大，於16歲男性較可能為淋巴瘤、結核或類肉瘤病等造成之肺門淋巴結腫大，報告產生器宜以「右肺門腫塊/肺門淋巴結腫大」描述，而非周邊肺實質內之孤立腫塊。",
+  "description_zh": "胸部正面X光片（記錄為PA view），吸氣量略不足至尚可（約8-9後肋），輕度旋轉，穿透度適當，攝影中心偏低而包含上腹部，兩側肩胛骨部分投影於肺野外側；影像左緣可見垂直亮帶（準直/片匣邊緣偽影），影像右上角有體外側標記牌（含小圓形鉛標記，字母無法辨識）及白色矩形標籤區塊，未見任何導管、引流管、金屬夾或心律調節器。右側肺門明顯增大且密度增加，於中肺野肺門旁可見約3公分、邊緣分葉狀之圓形軟組織腫塊影，較對側肺門更緻密且呈分葉狀，需考慮右肺門腫塊或肺門淋巴結腫大；右側氣管旁條紋亦略增寬呈外凸，疑有右氣管旁淋巴結腫大。右肺門旁另見兩個細小亮點，可能為血管末端投影或小鈣化肉芽腫，性質不定；左側肺門僅輕度突出、多為血管影。兩側肺野餘無明確實質浸潤、實變或其他結節，肋膈角銳利，無肋膜積液或氣胸，心臟大小於正常上限，氣管居中，左橫膈下可見正常胃泡，骨骼與軟組織無明顯異常。",
+  "label_concern": "NLP擷取標籤、無放射科醫師標註框；影像上之「腫塊」位於右肺門（疑肺門腫塊或肺門淋巴結腫大，並疑右氣管旁淋巴結腫大），並非周邊肺實質內之孤立腫塊，且與肺門血管重疊，病灶邊界之確定性中等。"
+}

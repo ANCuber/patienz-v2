@@ -1,0 +1,42 @@
+{
+ "view": "Frontal chest radiograph, PA projection (L marker on image right, scapulae largely rotated off the lung fields), erect",
+ "technical_quality": "Adequate: roughly 9 posterior ribs visible above the diaphragm, adequate penetration (vertebral bodies faintly seen through the cardiac silhouette), minimal rotation (clavicles roughly symmetric about the spinous processes), lung apices and costophrenic angles included. Large bilateral breast shadows overlie both lower zones and slightly reduce lower-zone contrast.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 18,
+ "devices": [
+  {
+   "type": "Small metallic densities (surgical clips vs external artifact), two short linear opacities",
+   "location": "Projected over the left supraclavicular region / medial left clavicle, patient's left upper zone"
+  },
+  {
+   "type": "Small metallic density cluster (clip-like, surgical clip vs external artifact)",
+   "location": "Projected over the left apex, just below the left first rib, patient's left upper zone"
+  },
+  {
+   "type": "Radiographic side marker with technologist initials",
+   "location": "Upper right corner of the image (patient's left), outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Cardiomegaly: enlarged cardiac silhouette with cardiothoracic ratio approximately 0.5 or greater, rounded left heart border extending inferolaterally toward the left chest wall, transverse cardiac diameter estimated ~18 cm; upper mediastinum and aortic knob not widened",
+   "laterality": "midline / bilateral (predominantly leftward enlargement)",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild prominence of the left hilum, probably vascular (pulmonary artery) rather than a mass; no discrete nodule",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Several small metallic densities projected over the left apex and left supraclavicular region, most consistent with surgical clips or external artifacts; no associated lung lesion",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "正面胸部X光（PA站立），吸氣量尚可、曝光適當、無明顯旋轉。心影擴大，心胸比約0.5以上，左心緣圓鈍並向左下方延伸，上縱膈及主動脈弓未見明顯增寬，氣管居中；左肺門略顯突出，考量為血管性。兩側肺野清晰，未見明顯浸潤、實質化、結節或肋膜積液，兩側肋膈角銳利，橫膈輪廓平順，胃泡位於左側橫膈下方。左肺尖及左鎖骨上區可見數個細小金屬密度影，疑為手術夾或體外異物；骨骼未見急性病灶，兩側乳影明顯。未見胸管或引流管等治療裝置。"
+}

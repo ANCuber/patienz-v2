@@ -1,0 +1,49 @@
+{
+ "view": "PA (frontal); \"L\" side marker at image upper-right confirms conventional orientation (patient left = image right)",
+ "technical_quality": "Adequate inspiration (~9-10 posterior ribs), adequate penetration (spine visible through heart), minimal rotation, scapulae partly overlapping upper lateral lung fields; no cropping of costophrenic angles",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "external radiographic side marker (L)",
+   "location": "image upper-right corner, over patient's left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "faint linear/band-like opacities at the lung base with subtle retrocardiac density and slight crowding of vessels, consistent with subsegmental/basal atelectasis (the labelled finding)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "mild elevation of the left hemidiaphragm (nearly level with the right), suggesting left basal volume loss; gastric air bubble beneath",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "tortuous, unfolded thoracic aorta with prominent aortic knob (age-related ectasia); mediastinal contour otherwise midline",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "prominent density at the left hilum / aortopulmonary region, most likely vascular (tortuous aorta / pulmonary artery) but a hilar mass cannot be fully excluded",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "left costophrenic angle slightly less sharp than the right - equivocal minimal pleural thickening or trace effusion",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "degenerative changes of both glenohumeral joints / shoulders",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "胸部正面（PA）X光，吸氣量尚可，穿透度適當，縱膈大致居中。左下肺野可見淡薄之線狀／帶狀密度增加，並伴有心後區密度稍增及左側橫膈輕度抬高，疑為左下肺次節段性肺擴張不全（atelectasis），範圍約4–6公分。胸主動脈迂曲、主動脈弓突出，符合年長者主動脈延展；左肺門／主動脈肺窗處密度較高，多為血管性結構，惟無法完全排除腫塊。右肺野清晰，右側肋膈角銳利、左側稍模糊；未見氣胸、胸管、中心靜脈導管或心律調節器等置入物，僅見影像右上角（病人左側）之「L」側別標記。"
+}

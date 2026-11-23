@@ -1,0 +1,56 @@
+{
+ "id": "nih-atelectasis-00000072_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate PA film; R marker at image top-left (conventional orientation). Adequate inspiration (right hemidiaphragm at about the anterior 6th rib), no significant rotation, adequate penetration; apices and both costophrenic angles included. Image is heavily processed / contrast-stretched. Multiple metallic foreign bodies over both shoulder girdles and an external figure-of-8 strap slider projected over the right upper-mid zone partly limit evaluation of those areas.",
+ "target": {
+  "finding": "atelectasis",
+  "visible": "uncertain",
+  "laterality": "right",
+  "zone": "middle",
+  "size_cm": 4,
+  "confidence": 0.4
+ },
+ "laterality_sources": {
+  "bbox": "right",
+  "reader_a": "right",
+  "reader_b": "left",
+  "adjudicator": "right"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "Multiple short linear metallic foreign bodies (retained acupuncture / thread-embedding needle fragments; clustered, clip-like)",
+   "location": "Soft tissues of the right shoulder girdle, right axilla and right lateral chest wall, several projecting over the right upper zone",
+   "zh": "右側肩帶、腋窩及側胸壁軟組織多枚細短線狀金屬異物（疑殘留針灸埋針斷片），部分投影於右上肺野"
+  },
+  {
+   "type": "Multiple short linear / rod-like metallic foreign bodies (retained acupuncture needle fragments; scattered, longest about 1 cm)",
+   "location": "Soft tissues of the left shoulder / supraclavicular region, left axilla and left lateral chest wall, some projecting over the left upper zone",
+   "zh": "左側肩部、鎖骨上區、腋窩及側胸壁軟組織多枚短線狀金屬異物（疑殘留針灸埋針斷片，最長約1公分），部分投影於左上肺野"
+  },
+  {
+   "type": "External artifact: figure-of-8 metallic ring / strap slider with a thin strap or cord extending superiorly toward the right shoulder (bra strap adjuster or pendant); projected over the lung, not intrathoracic",
+   "location": "Projected over the right upper-to-middle zone at about the anterior 3rd-4th rib, medial to the mid-clavicular line",
+   "zh": "右上－中肺野投影之「8」字形金屬環伴向上延伸至右肩之細帶（體外物，疑為胸罩肩帶調整扣或吊飾），非胸腔內裝置"
+  },
+  {
+   "type": "Laterality marker 'R' with small text label",
+   "location": "Image top-left corner, outside the patient",
+   "zh": "影像左上角之右側標記「R」（患者體外）"
+  }
+ ],
+ "other_findings": [
+  "主動脈弓突出、胸主動脈迂曲延展，屬年齡相關變化；上縱膈未增寬，氣管居中",
+  "心臟大小正常，心胸比約0.5（正常上限）",
+  "左側橫膈與右側約等高或略高，其下方見含氣之結腸脾曲（結腸嵌入），心後區密度輕微增加，不排除輕微左下肺容積減少或橫膈膨升（低信心度）",
+  "左下肺野橫膈上方輕微線狀陰影，可能為輕微線狀肺擴張不全（低信心度）",
+  "雙側肩帶、腋窩及側胸壁軟組織多枚短線狀金屬異物，符合殘留針灸埋針斷片；右上－中肺野另有體外「8」字形金屬環偽影",
+  "兩側肋膈角銳利，無肋膜積液、氣胸或實質浸潤；骨骼結構完整"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標記之右中肺野肺擴張不全在影片上僅為極淡薄、邊界不清之條紋狀陰影：盲讀者未能發現，標籤知情讀者與仲裁者亦僅判為不確定。雖無胸管等治療器材，且雙側殘留埋針與體外飾物偽影本身不與首次就診相矛盾，但目標病灶影像證據薄弱、又有多處金屬偽影干擾，不適合作為首次就診之肺擴張不全教學代表影像。",
+ "description_zh": "胸部正位（PA）X光片，吸氣深度足夠、無明顯旋轉、穿透度適當，氣管居中。右側肺門下外側、右中肺野（中下肺野交界處）可見一淡薄、邊界不清之條紋狀／帶狀陰影，範圍約4×3公分，疑為輕微之次節段性（線狀）肺擴張不全，但無肺葉塌陷、裂隙或肺門移位等明確容積減少徵象，判讀不確定。雙側肩帶、腋窩及側胸壁軟組織可見多枚細短線狀金屬異物（右側較密集、左側較分散且較長，最長約1公分），部分投影於雙上肺野，符合殘留針灸埋針斷片；右上－中肺野另見一「8」字形金屬環伴向上延伸至右肩之細帶狀影，為體外物品（胸罩肩帶調整扣或吊飾）之投影，非胸腔內裝置。心臟大小正常（心胸比約0.5），主動脈弓突出且胸主動脈迂曲，屬年齡相關變化；左側橫膈與右側約等高，其下方見含氣之結腸脾曲，心後區密度略增，不排除輕微左下肺容積減少或橫膈膨升。兩側肋膈角銳利，無肋膜積液、氣胸或實質浸潤，骨骼結構完整，未見胸管、引流管、心律調節器等治療器材。",
+ "label_concern": "標記之肺擴張不全在影片上僅隱約可見（右側肺門下外側淡薄條紋狀陰影，位於中下肺野交界），盲讀者未能發現；標籤可能正確但影像證據薄弱。另左下肺亦有輕微容積減少之可能，側別上未達完全一致。"
+}

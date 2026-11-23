@@ -1,0 +1,67 @@
+{
+ "view": "Frontal chest radiograph, PA projection (scapulae largely rotated off the lung fields), erect",
+ "technical_quality": "Adequate inspiration (about 9 posterior ribs visible), minimal rotation, adequate penetration with vertebral bodies faintly visible behind the heart; whole thorax included; soft-copy image with moderate processing/noise. No R/L lead marker legible; a round radiographic marker artifact projects at the upper right corner of the image (patient's left shoulder). Conventional orientation assumed.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Multiple small linear metallic surgical clips (approx. 15-20), consistent with prior axillary lymph node dissection",
+   "location": "Right axilla / right lateral upper chest wall soft tissue"
+  },
+  {
+   "type": "Single small rectangular radiopaque density, likely surgical clip (possible cholecystectomy) or small calcification",
+   "location": "Right upper quadrant of abdomen, below the right hemidiaphragm"
+  },
+  {
+   "type": "External radiographic marker / positioning artifact (round dense object with small bar)",
+   "location": "Upper right corner of image, overlying patient's left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Coarse reticular / interstitial opacities with peribronchial thickening, right more than left, suggesting chronic interstitial change / fibrosis",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Linear band-like opacity at the medial right lung base adjacent to the right heart border, likely fibrotic band or subsegmental atelectasis",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, somewhat dense hila with possible calcified hilar lymph nodes",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent aortic knob with tortuous / unfolded thoracic aorta; mild superior mediastinal widening on the left, consistent with age-related aortic ectasia",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal (cardiothoracic ratio approximately 0.5), no definite cardiomegaly",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Post-surgical change: multiple surgical clips in the right axilla, consistent with prior axillary dissection (right breast surgery)",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Small radiopaque density in the right upper quadrant below the diaphragm (surgical clip vs. calcification)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Diffuse osteopenia with mild degenerative change of the thoracic spine; no rib fracture",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面（PA）胸部X光，吸氣充分、旋轉輕微。兩側下肺野可見粗糙的網狀間質性紋理增加並伴有支氣管周圍增厚，以右下肺野較為明顯，右肺基部近右心緣另見帶狀線性影，疑為纖維化或次節段性肺塌陷；兩側肺門稍顯突出且密度增高，疑有鈣化淋巴結。主動脈弓突出並迂曲，心臟大小約在正常上限，氣管居中。右腋下可見多枚外科夾（疑前次腋下淋巴廓清），右上腹橫膈下方另有一小塊高密度影（疑手術夾或鈣化）；兩側肋膈角清晰，未見明顯肋膜積液、氣胸，亦無胸管或引流管；骨質疏鬆併胸椎輕度退化，未見肋骨骨折。"
+}

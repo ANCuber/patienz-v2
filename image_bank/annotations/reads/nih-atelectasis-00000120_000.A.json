@@ -1,0 +1,39 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: PA frontal film, L side marker on image right confirms conventional orientation; adequate inspiration (right hemidiaphragm at ~9th-10th posterior rib), minimal rotation, penetration adequate (vertebral bodies visible through the heart), both costophrenic angles and lung apices included; overlying bilateral breast shadows.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "Radiographic side marker 'L' with technologist initials ('CAM') - external marker, not on the patient",
+   "location": "Upper right corner of the image (patient's left), outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Wedge-shaped / band-like hazy opacity lateral to the lower left heart border extending from the hilar level to the left hemidiaphragm, with partial obscuration of the lower left cardiac silhouette (silhouette sign) - most consistent with lingular atelectasis; lateral left costophrenic angle remains clear",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Unfolded, tortuous thoracic aorta with prominent aortic knob (age-related change); trachea slightly deviated to the right at arch level",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Small rounded ~1 cm opacity projected over the right hilum, most likely an end-on vessel; a small nodule cannot be fully excluded",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Coarse, slightly tortuous bronchovascular markings in the medial right lower zone (possible mild peribronchial thickening), with a sharp right hemidiaphragm and costophrenic angle",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面（PA）胸部X光，吸氣深度尚可、旋轉輕微。左下肺野沿左心緣外側可見一楔形／帶狀之淡薄增加密度影，自肺門高度向下延伸至左橫膈，左心緣下段輪廓部分模糊（silhouette sign），疑為舌葉（lingula）肺擴張不全，長徑約7–8公分，左側外側肋膈角仍清晰。右肺野大致清晰，右下肺野內側支氣管血管紋理略粗，右肺門附近有一約1公分之圓形小影，較可能為血管端面像；右橫膈與肋膈角銳利。胸主動脈迂曲、主動脈結突出，符合年齡相關變化，心臟大小正常，未見氣胸或肋膜積液，亦未見任何導管、引流管或植入裝置。"
+}

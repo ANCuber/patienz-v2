@@ -1,0 +1,50 @@
+{
+ "view": "PA (frontal, \"L DG\" lead marker at image upper right = patient's left; conventional orientation)",
+ "technical_quality": "Adequate inspiration and minimal rotation; lower zones are relatively under-penetrated and overlapped by breast/soft-tissue shadows, which limits assessment of the bases. Apices and lateral lung margins are reasonably well seen.",
+ "target_finding_visible": "uncertain",
+ "laterality": "uncertain",
+ "zone": "uncertain",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "cluster of metallic surgical clips with adjacent granular/staple-line density (prior thoracic surgery)",
+   "location": "patient right lower zone, medial / infra-hilar, just above the right hemidiaphragm"
+  },
+  {
+   "type": "lead film marker 'L DG'",
+   "location": "image upper right corner, over patient's left shoulder region (external)"
+  },
+  {
+   "type": "round marker/object partly cut off at top edge and blank rectangular label block",
+   "location": "image top right corner (external / annotation artifact)"
+  },
+  {
+   "type": "possible tiny linear metallic-density object (small clip?) - uncertain",
+   "location": "patient left hilar region, middle zone"
+  },
+  {
+   "type": "few punctate bright dots, probable film/detector artifact",
+   "location": "projected over patient right shoulder / glenohumeral region (external)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "No definite visceral pleural line or vessel-free lucent zone identified at either apex or along the lateral chest walls; no mediastinal shift - the labelled pneumothorax cannot be confirmed on this film (if present it would be very small)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Hazy increased density with irregular linear/reticular opacity around the surgical clips, elevated right hemidiaphragm and indistinct right costophrenic angle - consistent with post-surgical change / volume loss and possible small effusion or pleural thickening",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Large gastric air bubble beneath the left hemidiaphragm (normal variant, noted for completeness)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.25,
+ "description_zh": "正面胸部X光（L 鉛字標記位於影像右上，為病人左側，符合常規方位）。兩側肺尖及肺野外側均未見明確的臟層胸膜線或無肺紋理透亮區，縱膈無偏移，本片無法確認標記的氣胸；若存在應為極少量。右下肺野內側、肺門下方可見一團金屬手術夾及其下方顆粒狀緻密影，合併右下肺野模糊增加之密度、右側橫膈抬高及右肋膈角較不清晰，符合右側胸腔術後變化（疑楔狀或肺葉切除後）併少量肋膜積液或肋膜增厚之可能。未見胸管或引流管；左側橫膈下可見明顯胃泡氣體。"
+}

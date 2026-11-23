@@ -1,0 +1,39 @@
+{
+ "view": "Frontal (PA, erect) chest radiograph; L marker at image upper-right confirms conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate. Good inspiration (about 9 posterior ribs above the right hemidiaphragm). Minimal rotation (spinous processes roughly midway between medial clavicular ends). Penetration adequate, thoracic vertebrae visible through the cardiac shadow. Scapular medial borders project slightly over the lateral upper lung fields. Entire lungs and costophrenic angles included; apices slightly obscured by clavicles/soft tissue but included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": 3,
+ "devices": [
+  {
+   "type": "External L side marker (radiographic marker, not a medical device)",
+   "location": "Upper right corner of the image, i.e. patient's left upper hemithorax / shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Prominent convex left mediastinal contour at the level of the aortic knob / pulmonary trunk (prominent aortic arch or main pulmonary artery segment), unusual for a 38-year-old",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal (cardiothoracic ratio approximately 0.50-0.53) with leftward-prominent left heart border",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly accentuated bronchovascular / perihilar markings in the medial right lower zone adjacent to the right heart border, without frank consolidation; possible minimal subsegmental atelectasis or breast-shadow overlap",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left hemidiaphragm projects at approximately the same height as the right (mild relative elevation of the left hemidiaphragm; normally the left is lower)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面（PA）X光片，吸氣量尚可，無明顯旋轉，未見任何導管、引流管、起搏器或金屬夾，僅影像右上角可見L側標記。兩側肺野大致透亮，右下肺野內側靠近右心緣處支氣管血管紋理略增加，但未見明確實質化、腫塊、肋膜積液或氣胸，兩側肋膈角銳利。心影大小約在正常上限（CTR約0.5），左側縱膈輪廓於主動脈弓／肺動脈幹段顯得較為突出；左側橫膈與右側約同高，呈相對輕度抬高。骨骼結構（肋骨、鎖骨、脊椎）完整，軟組織可見兩側乳房陰影，未見骨折或皮下氣腫。"
+}

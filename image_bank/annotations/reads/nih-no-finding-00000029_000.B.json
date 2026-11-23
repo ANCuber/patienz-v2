@@ -1,0 +1,13 @@
+{
+ "view": "PA (frontal) chest radiograph, erect; L marker at image upper right confirms conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate. Good inspiration (approximately 9-10 posterior ribs visible), adequate penetration (thoracic spine and retrocardiac vessels visible through the heart), no significant rotation (medial clavicular ends roughly equidistant from the spinous processes). Scapulae partially project over the lateral upper zones. Bilateral breast shadows overlie the lower zones. Only external artifacts: the L side marker with a small text annotation and a blacked-out rectangle at the top right corner (de-identification).",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [],
+ "abnormalities": [],
+ "treatment_evidence": false,
+ "confidence": 0.82,
+ "description_zh": "胸部正面X光片，吸氣深度足夠、穿透度適當、無明顯旋轉；未見任何導管、引流管、心律調節器或手術夾等裝置。雙側肺野上、中、下區透亮度對稱，未見局部實質化、結節、腫塊或間質性病變，肺門大小與位置正常。雙側肋膈角銳利，無肋膜積液或氣胸；心臟大小正常（心胸比未超過0.5），縱膈與氣管居中，左橫膈下可見正常胃泡。骨骼結構（肋骨、鎖骨、肩胛骨與胸椎）未見骨折或溶骨性病灶，軟組織含雙側乳房陰影無異常，整體為正常胸部X光片。"
+}

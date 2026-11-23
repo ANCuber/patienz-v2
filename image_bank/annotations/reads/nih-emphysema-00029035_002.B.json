@@ -1,0 +1,67 @@
+{
+ "view": "Frontal AP (portable, supine/semi-erect) chest radiograph",
+ "technical_quality": "Adequate but suboptimal: AP portable technique, mild rotation, scapulae projected over both upper-lateral lung fields, adequate inspiration (about 9-10 posterior ribs), apices and both costophrenic angles included; numerous external ECG wires and tubing overlie the thorax and reduce clarity, particularly on the left.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Small-bore chest drain / pleural catheter (thin radiopaque stripe, side-hole marker gap visible)",
+   "location": "Left hemithorax: enters via left lower lateral chest wall, courses superomedially, tip at the left apex adjacent to the mediastinum (left upper zone); side-hole gap projects in the left mid/lower zone at hilar level, within the thorax"
+  },
+  {
+   "type": "Second small-bore chest drain / pleural catheter (thin radiopaque stripe with side-hole gap)",
+   "location": "Left hemithorax: enters via left lower lateral chest wall, courses superomedially, tip in the lateral left upper zone (apex); side-hole gap projects in the left upper/mid zone within the thorax"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Right upper anterior chest wall (over right upper zone)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Left upper anterior chest wall (over left upper zone, lateral)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Right parasternal / lower medial chest (over right lower zone near right heart border)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Right lower lateral chest wall / right upper flank, below the diaphragm level"
+  },
+  {
+   "type": "External cables / tubing (e.g. monitor cable, oxygen tubing) - external artifact",
+   "location": "Multiple crossing lines over the left hemithorax, left axilla and left upper abdomen, extending beyond the body outline"
+  },
+  {
+   "type": "Small linear metallic density (~1 cm), surgical clip vs external artifact",
+   "location": "Projected over the left mid zone medially, near the left hilum"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Two left-sided small-bore pleural drains in situ with tips at the left apex; left lung appears fully expanded with no definite residual pneumothorax (small apical pneumothorax cannot be fully excluded given overlying lines)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Left hemidiaphragm elevated relative to the right (approximately 3 cm), with gas-distended gastric fundus beneath; possibly positional/post-procedural",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small (~1 cm) linear metallic density projected over the left mid zone near the hilum - surgical clip versus external artifact",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild patient rotation and scapulae overlying the upper-lateral lung fields (technical)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.6,
+ "description_zh": "前後位（AP）攜帶式胸部X光，病人輕度旋轉，肩胛骨重疊於兩側上肺野，胸前可見四枚心電圖電極貼片及多條外部導線／管路投影。左側胸腔可見兩條細管徑胸腔引流管（可見側孔標記），皆自左下側胸壁進入並向上延伸至左肺尖（上肺野）；左肺已擴張，未見明確殘餘氣胸或肋膜積液。另於左中肺野近肺門處見約1公分線狀金屬密度影（手術夾或外物待鑑別），左側橫膈較右側抬高約3公分，下方可見脹氣之胃泡。右肺清晰，兩側肋膈角銳利，心影大小正常，縱膈未見增寬，氣管約居中線，骨骼未見明顯骨折或破壞。"
+}

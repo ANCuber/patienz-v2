@@ -1,0 +1,46 @@
+{
+ "id": "nih-consolidation-00001853_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate erect PA film. L marker (mirrored technologist initials) at image upper right confirms conventional orientation. Adequate inspiration, trachea midline, minimal rotation, apices and both costophrenic angles included; scapulae partly project over the upper lateral lung fields; lower zones slightly over-penetrated.",
+ "target": {
+  "finding": "consolidation",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 8,
+  "confidence": 0.6
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "left",
+  "reader_b": "right",
+  "adjudicator": "left"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "External lead side marker 'L' with technologist initials (mirrored 'HS'); not a medical device",
+   "location": "Image upper right corner, projected over the patient's left shoulder",
+   "zh": "L 側標記（含放射師縮寫），體外標記"
+  },
+  {
+   "type": "Round radiopaque disc (~2 cm), external marker / button-snap artifact; not an implant",
+   "location": "Projected over the patient's left shoulder, lateral to the acromioclavicular joint",
+   "zh": "左肩圓形高密度體外標記物（非植入物）"
+  }
+ ],
+ "other_findings": [
+  "右下肺野內側（肺門周圍至右心膈角）支氣管血管紋理增加、呈淡霧狀，右心緣下段略模糊，但無確定實變；右橫膈與右肋膈角銳利",
+  "主動脈弓突出、迂曲（unfolded aorta）；心影大小約在正常上限（CTR 約 0.47–0.50）",
+  "雙側肋膈角銳利，無肋膜積液或氣胸",
+  "左橫膈下可見胃泡，屬正常",
+  "肩胛骨部分重疊於雙上肺野外側，為技術因素",
+  "骨骼結構無急性骨折"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "左下肺野可見邊界不清之浸潤性陰影，符合標籤所示的實變；片中無胸管、引流管、中心靜脈導管、心律調節器或任何治療相關裝置，僅有體外側標記及肩部標記物，亦無術後或引流後的變化，適合作為病人首次就診（如社區型肺炎）的影像。惟實變影像較淡且右下肺內側亦有輕度紋理增加，出題時宜以左下肺為主要描述並可提及右側輕微變化。",
+ "description_zh": "直立正面（PA）胸部X光，吸氣量及穿透度尚可，氣管居中，無明顯旋轉；影像右上角可見 L 側標記，左肩鎖關節外側另見一圓形高密度體外標記物，片中未見任何管路、導線、胸管或植入裝置。左下肺野於左心緣外側至左橫膈上方可見一片約 8 公分、邊界不清的淡霧狀浸潤性陰影，左心緣下段輪廓略模糊，左橫膈仍可辨識，左肋膈角大致保留，未見氣液平面，符合左下肺（舌葉／左下葉）實變。右下肺野內側自肺門周圍延伸至右心膈角處支氣管血管紋理略增加、呈輕度淡霧狀，右心緣下段稍模糊，但無確定實變；雙上肺野與右中肺野清晰。心影大小約在正常上限，主動脈弓突出且迂曲；雙側肋膈角銳利，無肋膜積液或氣胸，左橫膈下可見胃泡，骨骼無急性病灶。",
+ "label_concern": "實變影像較淡薄且偏向雙側下肺；盲讀者以右下肺內側為主要異常，標籤側別（左）的判定信心為中等。"
+}

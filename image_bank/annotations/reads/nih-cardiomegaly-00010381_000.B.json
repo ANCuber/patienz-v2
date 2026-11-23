@@ -1,0 +1,39 @@
+{
+ "view": "Frontal chest radiograph (probably AP: scapulae overlie the lateral lung fields, clavicles projected high over the apices); \"L\" side marker at image upper right confirms conventional orientation (patient's right on image left)",
+ "technical_quality": "Adequate penetration and contrast; no significant rotation (spinous processes midline between clavicular heads); poor inspiratory effort with both hemidiaphragms elevated to roughly the anterior 4th-5th rib level, low lung volumes - this magnifies the cardiomediastinal silhouette and crowds the basal vessels, limiting assessment of heart size and lung bases. Whole thorax and shoulders included; large body habitus with thick lateral chest wall soft tissues.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 17,
+ "devices": [
+  {
+   "type": "External radiographic side marker (L)",
+   "location": "Image upper right corner, over the patient's left shoulder region (external, not on the patient)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Cardiac silhouette borderline-to-mildly enlarged with a globular contour; transverse cardiac diameter approx 17 cm, cardiothoracic ratio approx 0.5 (measured right border ~x410 to left border ~x730 vs inner thoracic width ~630 px); probably accentuated by poor inspiration and AP projection",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Bilateral elevated hemidiaphragms (right slightly higher than left) with low lung volumes / poor inspiration; bibasilar vascular crowding without frank consolidation",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Hazy increased density in the right perihilar / infrahilar region adjacent to the right heart border with a somewhat prominent right hilum - most consistent with crowded vessels from low lung volumes, early infiltrate or right middle lobe partial collapse not excluded (left hilum normal in size and density)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Large upper abdominal shadow with gastric fundal gas under the left hemidiaphragm and hepatic-flexure colonic gas under the right hemidiaphragm; no free subdiaphragmatic air - incidental, suggests obesity or abdominal distension contributing to the diaphragmatic elevation",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面像（疑為AP投照），吸氣不足，兩側橫膈明顯上抬至前第4-5肋水平，肺容積偏小，兩側下肺野血管擁擠。心影呈球狀、橫徑約17 cm，心胸比約0.5，屬臨界至輕度心臟擴大，惟受吸氣不足與投照方式影響可能高估。右側肺門旁及右心緣旁見模糊增高密度並右肺門略顯突出，以血管擁擠為主，需與早期浸潤或右中葉部分塌陷區別；兩側上肺野清晰，肋膈角銳利，未見肋膜積液或氣胸，縱膈與氣管居中。未見任何管路、引流管或植入物，僅見L側標記；骨骼無明顯骨折，左橫膈下見胃泡、右橫膈下見結腸氣體，無游離氣體。"
+}

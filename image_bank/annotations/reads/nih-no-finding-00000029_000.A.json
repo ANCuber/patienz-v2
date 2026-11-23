@@ -1,0 +1,18 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: good inspiration (about 9-10 posterior ribs), no significant rotation (clavicular heads roughly equidistant from the spinous processes), adequate penetration with vertebral bodies faintly visible behind the heart; lung apices and both costophrenic angles included. L marker in the upper right of the image confirms conventional orientation.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "external side marker (radiopaque 'L' with small 'DG' technologist tag)",
+   "location": "upper right corner of the image, i.e. above the patient's left shoulder, outside the thorax"
+  }
+ ],
+ "abnormalities": [],
+ "treatment_evidence": false,
+ "confidence": 0.9,
+ "description_zh": "PA 正面胸部X光，吸氣量足夠，無明顯旋轉，穿透度適中。雙側肺野清晰，未見實質化、結節、腫塊、肋膜積液或氣胸，雙側肋膈角銳利，肺門結構對稱且無明顯腫大。心臟大小及縱膈輪廓正常，氣管居中，雙側橫膈輪廓平滑，左橫膈下可見正常胃泡；雙側乳房軟組織陰影重疊於下肺野。骨骼結構未見急性異常，胸腔內未見任何導管、引流管、心律調節器或其他植入裝置，僅於影像右上角（病人左側）見 L 側別標記。"
+}

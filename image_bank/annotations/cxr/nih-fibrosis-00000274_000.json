@@ -1,0 +1,45 @@
+{
+  "id": "nih-fibrosis-00000274_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect PA film. Trachea midline, clavicles symmetric, no significant rotation; inspiration adequate (about 9 posterior ribs). Slightly under-penetrated (lower thoracic spine poorly seen through the heart). Scapulae partly overlap the upper lateral lung fields and bilateral breast shadows overlie the lower zones, reducing basal clarity. Conventional orientation confirmed by external L lead marker (with technologist initials TMM) at image upper right. Bright collimation band along the bottom edge.",
+  "target": {
+    "finding": "pulmonary fibrosis",
+    "visible": "uncertain",
+    "laterality": "bilateral",
+    "zone": "lower",
+    "size_cm": 8,
+    "confidence": 0.4
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "bilateral",
+    "reader_b": "bilateral",
+    "adjudicator": "bilateral"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "external lead side marker (L) with technologist initials TMM, not on the patient",
+      "location": "image upper right corner, outside the patient (patient's left shoulder region)",
+      "zh": "外部左側鉛字標記（L，附技師縮寫TMM），非病人身上裝置"
+    }
+  ],
+  "other_findings": [
+    "右側心橫膈角附近（心旁／心後）輕度模糊、邊界不清的密度增加",
+    "左側肺門稍顯突出／密度略高，無明確腫塊，可能為血管或支氣管血管周圍增厚",
+    "左側外側胸壁下肺野高度可見縱向細線，其外側仍見肺紋理，較符合皮膚／腋下皺褶假影而非氣胸",
+    "雙側乳房陰影重疊於下肺野，降低肺底判讀清晰度",
+    "影像稍曝光不足，下胸椎經心影顯示不清",
+    "主動脈弓稍顯著",
+    "心臟大小正常（心胸比約0.44），縱膈與氣管位置正常",
+    "雙側肋膈角銳利，無肋膜積液或氣胸",
+    "左橫膈下可見胃泡，骨骼與軟組織未見明顯病灶",
+    "無任何管路、導線、引流管或植入裝置"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標籤之肺纖維化在本片僅表現為輕微、非特異性的雙下肺野網狀／線狀紋理增加，且受乳房陰影重疊影響，無蜂窩狀變化、牽引性支氣管擴張或體積縮小等明確纖維化徵象，目標病灶可見度判定為「不確定」；雖然影像上無任何治療裝置或與初次就診相矛盾的表現，但目標病灶不明確，作為肺纖維化初次就診的教學影像可能誤導，故判定不適合。",
+  "description_zh": "PA正面站立胸部X光，吸氣量足夠，氣管與縱膈居中，無明顯旋轉，影像稍曝光不足；影像右上角為外部左側鉛字標記（L，附技師縮寫），病人身上未見任何管路、導線、引流管或植入裝置。雙側下肺野（以肺底為主，每側範圍約6至8公分）可見輕度粗網狀／線狀間質紋理增加，左側肺門周圍至左下肺野稍明顯，可能為輕度纖維化變化，但程度輕微且非特異性，無明確蜂窩狀變化、牽引性支氣管擴張或體積縮小。右側心橫膈角附近另見模糊、邊界不清的輕度密度增加；左側肺門稍顯突出，無明確腫塊。心臟大小正常（心胸比約0.44），主動脈弓稍顯著，雙側肋膈角銳利，無肋膜積液或氣胸；雙側乳房陰影重疊於下肺野，左側外側胸壁之縱向細線較符合皮膚皺褶假影，左橫膈下可見胃泡，骨骼未見明顯病灶。",
+  "label_concern": "標籤為NLP探勘且無放射科醫師框選；影像僅見輕微、非特異性的雙下肺野網狀間質紋理增加（部分受乳房陰影重疊），無蜂窩狀變化、牽引性支氣管擴張或體積縮小，肺纖維化診斷不確定，盲讀者亦未主動判讀為纖維化。"
+}

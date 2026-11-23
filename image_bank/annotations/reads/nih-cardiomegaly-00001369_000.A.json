@@ -1,0 +1,33 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film, no significant rotation (medial clavicles roughly symmetric about the spinous processes); inspiration slightly suboptimal (about 8 posterior ribs, diaphragms mildly elevated) which can slightly exaggerate cardiac size; penetration acceptable, thoracic spine faintly visible through the heart. L marker present at image right (patient's left), so conventional orientation confirmed.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 19.5,
+ "devices": [
+  {
+   "type": "External film marker: 'L' side marker with technologist initials plus a round radiopaque lead disc",
+   "location": "Upper right corner of the image, lateral to the patient's left shoulder / upper arm soft tissue, outside the thorax"
+  },
+  {
+   "type": "Black rectangular image artifact (collimation / digital edge artifact)",
+   "location": "Extreme left edge of the image (patient's right), at the level of the shoulder, outside the patient"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild cardiomegaly: cardiothoracic ratio approximately 0.56 (cardiac transverse diameter ~475 px vs inner thoracic width ~840 px). Left heart border rounded and displaced laterally, right atrial border mildly prominent; mediastinum not widened, aortic knob small (young patient). No pulmonary venous congestion, no interstitial edema, no pleural effusion.",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly elevated hemidiaphragms consistent with suboptimal inspiration (technical, not a true abnormality); costophrenic angles sharp bilaterally; gastric fundal air bubble and bowel gas in the left upper abdomen are normal.",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "正面胸部X光(PA)，吸氣程度稍不足，雙側橫膈略高。心影輕度增大，心胸比約0.56，左心緣圓鈍並向左外側突出，右心緣亦稍為凸出，縱膈未見增寬，主動脈弓小。雙側肺野清晰，未見實質浸潤、結節或肋膜積液，肺門血管不明顯充血，雙側肋膈角銳利，左上腹可見胃泡氣體。未見導管、引流管或心律調節器；影像右上角(病人左側肩部外側)可見「L」側別標記及圓形鉛標記，影像左緣有一黑色長條狀影像偽影，均屬體外物件。"
+}

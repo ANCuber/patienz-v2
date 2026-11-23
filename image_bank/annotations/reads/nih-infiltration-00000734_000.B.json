@@ -1,0 +1,61 @@
+{
+ "view": "Frontal (PA) chest radiograph, upright, L marker at image upper right (conventional orientation)",
+ "technical_quality": "Adequate: inspiration to ~9 posterior ribs, minimal rotation (clavicles roughly symmetric about the spinous processes), penetration adequate with vertebral bodies visible behind the heart, costophrenic angles and apices included; scapulae only partly rotated off the lateral upper lung fields; mild rightward deviation of the trachea at the arch level attributable to aortic unfolding rather than rotation.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "External curved radiopaque artifact (thick smooth arc, likely clothing/shielding/positioning device, not intrathoracic)",
+   "location": "Projected over the right upper abdomen below the right hemidiaphragm, image lower-left corner"
+  },
+  {
+   "type": "External curved radiopaque artifact (thick smooth arc, likely clothing/shielding/positioning device, not intrathoracic)",
+   "location": "Projected over the left upper abdomen below the left hemidiaphragm, image lower-right corner"
+  },
+  {
+   "type": "Small thin wavy curvilinear density, probably external (gown tie / thread) - uncertain",
+   "location": "Right upper abdomen, just right of midline at the bottom edge of the film"
+  },
+  {
+   "type": "L side marker",
+   "location": "Image upper right, over the left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Coarse, increased reticular/bronchovascular markings with mild hazy patchy opacity in the perihilar to medial basal region, suspicious for interstitial infiltrate or bronchitic change; no dense lobar consolidation or air bronchogram",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly accentuated bronchovascular/interstitial markings (less marked than the right side), including retrocardiac region",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent hila bilaterally, more likely vascular/age-related than adenopathy",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Unfolded, tortuous thoracic aorta with prominent aortic knob (age-related); heart size normal (CTR ~0.35)",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Degenerative changes (spondylosis) of the thoracic spine; no rib fracture or lytic lesion seen",
+   "laterality": "none",
+   "zone": "whole"
+  },
+  {
+   "finding": "Gastric fundal air bubble under the left hemidiaphragm (normal); costophrenic angles sharp, no pleural effusion or pneumothorax",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光（右上方可見 L 側標記），吸氣度尚可、無明顯旋轉、穿透度適當，雙側肩胛骨部分重疊於上肺野外側。右下肺野自肺門周圍至內側基底部可見支氣管血管紋理增粗、網狀變化並伴輕度模糊浸潤影，左下肺野紋理亦略增加（右側較明顯）；雙側肺門略顯突出，較可能為血管性或老年性變化。心臟大小正常，胸主動脈迂曲、主動脈弓突出（老年性變化），氣管大致居中；雙側肋膈角銳利，無胸水或氣胸；胸椎退化性變化。雙側上腹部投影處可見兩條弧形外部高密度偽影（疑為衣物、屏蔽物或擺位裝置），無胸管、引流管或其他體內裝置。"
+}

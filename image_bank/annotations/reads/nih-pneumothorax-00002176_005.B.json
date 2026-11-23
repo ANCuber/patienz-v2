@@ -1,0 +1,37 @@
+{
+ "view": "frontal (AP or PA; scapulae not rotated clear of the lung fields), erect-appearing, R marker present",
+ "technical_quality": "Adequate. Whole thorax including apices and costophrenic angles is included; minimal rotation; adequate inspiration; slightly high-contrast/over-penetrated rendering. Both scapulae overlap the upper-lateral lung fields and large bilateral breast shadows partially obscure the lower zones, which limits assessment of the lung bases.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "external tubing / monitoring lead (thin, uniform radiopaque line; extends beyond the skin outline, not a chest tube or central line)",
+   "location": "projects over the right hemithorax: upper end at the right paratracheal level (~3rd rib), courses inferolaterally across the right mid and lower zones, crosses the right hemidiaphragm shadow and exits beyond the right lower chest wall to the lower image edge"
+  },
+  {
+   "type": "side marker 'R' with operator initials",
+   "location": "right upper corner of the film, over the right shoulder"
+  },
+  {
+   "type": "small linear metallic density (external artifact)",
+   "location": "right lateral upper abdominal wall soft tissue, below the right costal margin"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Elevated right hemidiaphragm (dome ~3-4 cm higher than the left) with mild crowding of right basal vascular markings; no focal consolidation, effusion or mass",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent / unfolded aortic knob, likely age-related",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光，兩側肩胛骨重疊於上肺野，雙側大面積乳房陰影遮蔽下肺野；右側胸腔可見一條細長外部管線（可能為氧氣管或監測導線）自右氣管旁區斜向下外側越過右下肺野並延伸至體外，非胸管或中央靜脈導管。兩側肺野清晰，未見明確肺實質病灶、肋膜積液，亦未見臟層肋膜線或明確氣胸；右側橫膈相對抬高，右下肺野血管紋理略為擁擠，兩側肋膈角銳利。心影大小正常，縱膈居中、氣管居中，主動脈弓輕度突出（年齡相關）；骨骼未見急性骨折，左橫膈下可見胃泡氣體。"
+}

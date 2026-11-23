@@ -1,0 +1,46 @@
+{
+ "id": "nih-mass-00012270_005",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate erect PA film: good inspiration (about 9-10 posterior ribs), no significant rotation (spinous processes midway between medial clavicular ends), adequate penetration (vertebral bodies visible through the heart). Apices and both costophrenic angles included. \"L\" side marker in the image upper-right corner with a partially cut-off burned-in text label beside it. Scapulae partially overlap the upper lateral lung fields; bilateral breast shadows overlie the lower zones.",
+ "target": {
+  "finding": "pulmonary mass",
+  "visible": "uncertain",
+  "laterality": "left",
+  "zone": "upper",
+  "size_cm": 1.8,
+  "confidence": 0.45
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "surgical clips (multiple small linear metallic clips)",
+   "location": "left upper quadrant of abdomen below the left hemidiaphragm, gastric fundus / splenic hilum region; extra-thoracic",
+   "zh": "左上腹手術夾（橫膈下、胃底／脾門區，胸腔外）"
+  },
+  {
+   "type": "external L side marker (film marker)",
+   "location": "image upper-right corner, patient's left shoulder region",
+   "zh": "左側「L」側別標記（影像右上角）"
+  }
+ ],
+ "other_findings": [
+  "左肺門外上方（前第3肋高度、框選病灶內下方約2公分）可見一顆約0.5公分、密度甚高、邊緣銳利之小圓形結節，最符合鈣化肉芽腫，並非腫塊",
+  "左肺門略顯飽滿，但輪廓仍呈血管樣（肺動脈），未見明確肺門腫塊",
+  "左上腹橫膈下（胃底／脾門區）多枚手術夾，顯示既往上腹部手術（胸腔外、偶然發現）；胃及脾曲結腸含氣",
+  "雙側肩胛骨部分重疊於上外側肺野；雙側乳房陰影投影於下肺野（正常女性軟組織）",
+  "影像右上角「L」標記旁有部分被裁切之烙印文字標籤（影像處理痕跡）",
+  "心臟大小正常、縱膈不寬、氣管居中，雙側肋膈角銳利，無肋膜積液或氣胸，骨骼結構完整"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "放射科框選之左上肺野病灶僅為約1.5–2公分、邊緣模糊之淡薄陰影，需放大並與對側比較才可辨識，隱微到兩位獨立判讀者皆未察覺，且未達腫塊（≥3公分）標準；片中最醒目的反而是鄰近之鈣化肉芽腫小結節，易誤導學生。雖無胸管或其他胸腔治療裝置，左上腹手術夾亦不牴觸首次就診情境，但此片不適合作為「肺腫塊」首次就診之教學影像。",
+ "description_zh": "正面胸部X光（PA，站立），吸氣充足（約9–10後肋）、無明顯旋轉、穿透度適當，影像右上角可見「L」側別標記，雙側肩胛骨部分重疊於上外側肺野，雙側乳房陰影投影於下肺野。左上肺野外側（約前第2–3肋交會處、肺門外上方，上／中肺野交界）可見一片約1.5–2公分、邊緣模糊、略呈分葉之淡薄圓形陰影，部分被肋骨遮蔽，與對側同部位比較呈不對稱之密度增加，即放射科框選之「腫塊」病灶，但相當隱微；其內下方約2公分處（左肺門外側、前第3肋高度）另見一顆約0.5公分、密度甚高、邊緣銳利之小圓形結節，最符合鈣化肉芽腫。左肺門略顯飽滿但輪廓仍呈血管樣，右肺野清晰，雙側肋膈角銳利，無肋膜積液或氣胸；心臟大小正常、縱膈不寬、氣管居中。左上腹橫膈下（胃底／脾門區）可見多枚手術夾，顯示既往上腹部手術，胃及脾曲結腸含氣；全片未見胸管、引流管、中央靜脈導管或其他胸腔治療裝置。",
+ "label_concern": "標籤「肺腫塊」存疑：框選病灶為左上肺野約1.5–2公分、邊緣模糊之隱微陰影，未達腫塊（≥3公分）定義，兩位判讀者皆未發現而改描述鄰近之鈣化肉芽腫小結節；較適合標為「隱微肺結節／不明確陰影」，需CT確認。"
+}

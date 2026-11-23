@@ -1,0 +1,41 @@
+{
+  "id": "nih-edema-00009894_003",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect PA film: good inspiration (about 9-10 posterior ribs), adequate penetration (thoracic spine visible through the heart), minimal rotation, scapulae mostly clear of the lung fields, both costophrenic angles included; L side marker in the image upper right corner confirms conventional orientation.",
+  "target": {
+    "finding": "pulmonary edema",
+    "visible": "uncertain",
+    "laterality": "bilateral",
+    "zone": "middle",
+    "size_cm": -1,
+    "confidence": 0.35
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "bilateral",
+    "reader_b": "bilateral",
+    "adjudicator": "bilateral"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "external side marker (L) - radiographic marker, not a medical device",
+      "location": "image upper right corner, over the patient's left shoulder region, outside the thorax",
+      "zh": "左側(L)側別標記（外部影像標記，非醫療裝置）"
+    }
+  ],
+  "other_findings": [
+    "雙側肺門周圍及下肺野支氣管血管紋理輕度增加，程度輕微且不確定，未見 Kerley B 線、支氣管周圍套袖徵或肺泡型浸潤",
+    "左側肺門稍顯飽滿，疑似左肺動脈輕度突出（不確定）",
+    "心臟大小在正常範圍，縱膈未見增寬，氣管居中，主動脈弓輪廓正常",
+    "雙側肋膈角銳利，無肋膜積液，無氣胸",
+    "左側橫膈下可見胃泡氣體（正常）",
+    "雙側乳房陰影對稱，骨骼結構完整，無管路、導線或植入物"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "本片雖無任何治療裝置（無胸管、引流管或心律調節器），但標籤所述之肺水腫在影像上無法確認：僅見雙側肺門周圍支氣管血管紋理輕度增加，心臟不大，無 Kerley B 線、無肺泡型浸潤、無肋膜積液。三位判讀者皆認為表現輕微且不確定，因此不適合作為肺水腫首次表現之教學影像。",
+  "description_zh": "正位(PA)直立胸部X光片，吸氣良好、曝光適中、無明顯旋轉，影像右上角可見「L」側別標記，除此之外未見任何管路、導線、心律調節器或手術植入物。雙側肺野大致清晰，僅雙側肺門周圍（中肺野）及下肺野之支氣管血管紋理輕度增加，範圍約侷限於兩側肺門旁各數公分之內，屬輕微且不確定之肺血管充血表現，未見 Kerley B 線、支氣管周圍套袖徵、肺泡型浸潤或結節；左側肺門稍顯飽滿，疑似左肺動脈輕度突出。心臟大小在正常範圍，縱膈未見增寬，氣管居中，主動脈弓輪廓正常。雙側橫膈輪廓平滑，肋膈角銳利，未見肋膜積液或氣胸，左側橫膈下可見胃泡氣體。雙側乳房陰影對稱，骨骼結構完整，軟組織無異常。",
+  "label_concern": "標籤「肺水腫」在本片無法確認：僅見雙側肺門周圍支氣管血管紋理輕度增加（可能為輕度血管充血），心臟不大，無 Kerley B 線、無肺泡型浸潤、無肋膜積液。此為 NLP 擷取之標籤，可能來自報告中對輕微間質變化的描述或否定句之誤判；盲讀者亦未獨立辨識出肺水腫。"
+}

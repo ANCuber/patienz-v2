@@ -1,0 +1,29 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: good inspiration (about 9-10 posterior ribs), no significant rotation, appropriate penetration; scapulae mostly cleared from lung fields; L side marker present at image upper right, confirming conventional orientation.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 1.3,
+ "devices": [
+  {
+   "type": "side marker (L) with mirrored text label 'DG' - external radiographic marker, no medical device",
+   "location": "image upper right corner (patient's left shoulder region), outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "lobulated, relatively dense (possibly calcified) nodular density cluster at the right hilum / perihilar region, ~1-1.5 cm; differential: hilar nodule vs calcified hilar lymph nodes vs superimposed vessels",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "additional small nodular densities along the right lower hilum, likely vascular/nodal",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.4,
+ "description_zh": "胸部正面 PA 片，吸氣量足夠、無明顯旋轉，影像右上角可見 L 側標記。右側肺門區可見一分葉狀、密度偏高的結節狀陰影，約 1–1.5 cm，位於中肺野，疑為肺門小結節或鈣化淋巴結，需與血管重疊影鑑別；右下肺門亦有數個小結節狀密度，多半為血管或淋巴結影。其餘雙側肺野清晰，未見明顯肺實質浸潤、肋膜積液或氣胸；心臟大小與縱膈輪廓正常，雙側橫膈平滑、肋膈角銳利，左橫膈下可見胃泡。未見任何導管、引流管、起搏器或植入裝置。"
+}

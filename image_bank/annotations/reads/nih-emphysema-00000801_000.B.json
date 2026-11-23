@@ -1,0 +1,43 @@
+{
+ "view": "frontal (PA) chest radiograph, upright",
+ "technical_quality": "Adequate penetration (thoracic spine faintly visible through the heart) with minimal rotation; good inspiration (long lung fields). Scapulae partly project over the lateral lung fields. The lower thorax is cropped so both costophrenic angles are only partially included. An L marker is present at image right, confirming conventional orientation.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "whole",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "external round radiopaque object (button/lead marker), approx 1.5 cm",
+   "location": "projected over the left shoulder / lateral left clavicle, just below the L marker"
+  },
+  {
+   "type": "L side marker",
+   "location": "left upper corner of the field (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hyperinflated, hyperlucent lungs with peripheral vascular attenuation and a narrow, vertical (tubular) cardiac silhouette, low-lying hemidiaphragms",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Accentuated bronchovascular / interstitial markings in the perihilar and lower zones (partly overlapped by breast shadows)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent aortic knob / convex left upper mediastinal contour",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly prominent hila, right slightly more than left, without discrete mass",
+   "laterality": "bilateral",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面站立胸部X光片，穿透度與吸氣程度足夠，無明顯旋轉，但下胸部略被切除，雙側肋膈角僅部分顯示。雙側肺野呈過度充氣與透亮度增加，周邊血管紋理稀疏，橫膈位置偏低，心影狹長呈垂直管狀，符合肺氣腫／過度充氣之表現；雙側肺門周圍及下肺野支氣管血管紋理增加（部分與乳房陰影重疊）。主動脈弓突出，雙側肺門略顯突出但無明確腫塊，未見明顯實質浸潤、肋膜積液或氣胸。體內無任何管路或裝置，左肩／左鎖骨外側處可見一圓形體外不透光物（鈕扣或標記），骨骼結構無明顯異常。"
+}

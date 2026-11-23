@@ -1,0 +1,63 @@
+{
+ "view": "PA frontal chest radiograph, erect (L marker at patient's left upper corner, conventional orientation)",
+ "technical_quality": "Adequate. Minimal rotation (medial clavicles roughly symmetric about the spinous processes). Deep inspiration / hyperinflation (left hemidiaphragm at about the posterior 11th rib). Penetration adequate: thoracic vertebrae visible through the cardiac shadow. Both costophrenic angles and both apices included. No lines, tubes or internal devices; the only artifacts are the external L marker and a metallic garment clasp projected over the left upper abdomen.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "whole",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External L side marker",
+   "location": "Image upper right corner, over the patient's left shoulder region (outside the thorax)"
+  },
+  {
+   "type": "External metallic clasp / garment clip (not an implanted device)",
+   "location": "Projected over the left upper abdomen / gastric region, below the left hemidiaphragm, just left of the lower thoracic spine"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hyperinflated lungs: flattened, depressed left hemidiaphragm, hyperlucent lung fields, narrow vertical cardiac silhouette; appearance consistent with emphysema / COPD",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Smooth band-like soft-tissue density along the lateral chest wall between the ribs and lung, with mild blunting of the lateral costophrenic angle - probable lateral pleural thickening (small effusion not fully excluded)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, rounded, unfolded aortic knob (ectatic / tortuous thoracic aorta with probable rim calcification), age-related",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Lobulated / high dome of the right hemidiaphragm with lung projecting below the dome laterally down to the costophrenic angle - probable partial eventration or diaphragmatic hump",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Well-defined rounded opacity at the left cardiophrenic angle lateral to the cardiac apex, most likely a prominent pericardial fat pad",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly increased reticular / bronchovascular markings at the lung base",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Large gastric air bubble distending the stomach beneath the flattened left hemidiaphragm (incidental)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild degenerative changes of both glenohumeral / acromioclavicular joints",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面站立位X光片，吸氣充分，攝影條件尚可，無管路或植入物，僅見左側標記與投影於左上腹的體外金屬扣具。雙肺過度充氣，左側橫膈明顯低平，肺野透亮度增加，心影狹長，符合肺氣腫／COPD變化；右側橫膈頂呈分葉狀高聳，疑局部膨升。右側下肺野外側胸壁可見平滑帶狀軟組織密度並伴右側肋膈角輕度鈍化，考慮右側壁層肋膜增厚（少量積液不能完全排除），右肺底網狀紋理輕度增加。主動脈弓突出迂曲（老年性主動脈延長），左心膈角處圓形影像可能為心包脂肪墊，左橫膈下胃泡明顯，雙側肩關節退化性變化。"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "nih-effusion-00013337_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal), erect; 'L' side marker at the upper-right image corner confirms conventional orientation (image-left = patient-right)",
+  "technical_quality": "Adequate for interpretation. Trachea and spinous processes midline (minimal rotation). Inspiration acceptable on the left (~8-9 posterior ribs); not assessable on the right because the lower hemithorax is completely opacified. Edge-enhanced processing; scapulae partly overlap the upper lung fields. Bright vertical bands along both lateral image margins are cassette/processing artifacts outside the thorax and do not obscure the lungs.",
+  "target": {
+    "finding": "pleural effusion",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "lower (extending into middle)",
+    "size_cm": 15,
+    "confidence": 0.92
+  },
+  "laterality_sources": {
+    "bbox": "right",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Implanted venous access port (Port-A-Cath) reservoir - round radiopaque ring with suture-hole dots and a short catheter stub leading superolaterally; catheter course to the SVC not confidently traced",
+      "location": "Left anterior chest wall, projected over the lateral left middle zone at about the 3rd-4th anterior rib level",
+      "zh": "左前胸壁植入式靜脈輸液港（Port-A-Cath）貯槽，投影於左中肺野外側，導管走向未能完整追蹤"
+    },
+    {
+      "type": "Radiographic side marker 'L' (with small mirrored 'R')",
+      "location": "Upper-right corner of the image (patient's left)",
+      "zh": "影像右上角「L」側別標記"
+    }
+  ],
+  "other_findings": [
+    "右肺門旁、積液上內緣可見圓形分葉狀緻密影，疑為肺門腫塊、包裹性積液或鄰近實變，無法與積液分離",
+    "右側橫膈、右肋膈角及右心緣均被積液遮蔽，心臟大小及右側縱膈輪廓無法評估",
+    "氣管居中，無明顯縱膈偏移",
+    "左肺野清晰，左肋膈角銳利，僅支氣管血管紋理略為明顯，無局部實變",
+    "左橫膈下可見胃泡",
+    "未見氣胸；肋骨、鎖骨、肩關節及脊椎骨骼與軟組織無明顯異常",
+    "兩側影像邊緣亮帶為片匣／影像處理偽影，位於胸廓之外，不影響判讀"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "右側大量肋膜積液清楚可見，且無胸管、引流管或引流後痕跡，積液本身尚未接受治療。然而左前胸壁已植入靜脈輸液港（Port-A-Cath），代表病人先前已有需長期靜脈治療的病史（如惡性腫瘤化療），加上右肺門旁疑似腫塊，這與「過去健康、首次因積液就診」的一般病例設定不符。僅適用於病例明確包含已知惡性腫瘤並植有輸液港的情境，否則影像會與病史矛盾。",
+  "description_zh": "正面胸部X光（PA），「L」標記位於影像右上角，方位為常規，氣管及棘突居中。右側下肺野延伸至中肺野可見大片均質緻密影，上緣呈外高內低之新月形（meniscus sign），右側橫膈、右肋膈角及右心緣均被遮蔽，符合大量右側肋膜積液，垂直範圍約15公分、佔右側胸腔下半部；右肺門旁積液上內緣另見圓形分葉狀緻密影，需考慮肺門腫塊或包裹性積液，心臟大小因此無法評估。左前胸壁可見植入式靜脈輸液港（Port-A-Cath）貯槽投影於左中肺野外側（約第3-4前肋），導管走向未能完整追蹤；未見胸管或引流管。左肺野清晰，左肋膈角銳利，左橫膈下可見胃泡，無氣胸亦無明顯縱膈偏移，骨骼及軟組織無明顯異常，兩側影像邊緣亮帶為處理偽影。",
+  "label_concern": ""
+}

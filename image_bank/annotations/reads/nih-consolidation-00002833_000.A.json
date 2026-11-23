@@ -1,0 +1,42 @@
+{
+ "view": "PA (frontal), L marker projected over the patient's left upper chest wall; conventional orientation",
+ "technical_quality": "Adequate: good inspiration, adequate penetration (vertebral bodies visible through the heart), no significant rotation. Peripheral vignetting/edge-processing artifact; scapulae partially overlap the upper lateral lung fields. Costophrenic angles and both hemidiaphragms included.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Radiographic side marker 'L'",
+   "location": "Image upper right, projected over the patient's left shoulder / lateral upper chest wall soft tissue (outside the lung)"
+  },
+  {
+   "type": "Round radiopaque disc (external marker component or clothing object)",
+   "location": "Adjacent to and just below the L marker, over the patient's left shoulder soft tissue, outside the thorax"
+  },
+  {
+   "type": "Curved tubular radiopaque external artifact (likely positioning device / chair frame or shield holder)",
+   "location": "Both lower image corners below the diaphragms, outside the thorax, bilateral"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Small well-defined round nodular opacity (~0.6 cm), most likely a vessel seen end-on; no cavitation or calcification",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent / slightly hazy infrahilar bronchovascular markings, right more than left; no confluent air-space opacity, no air bronchogram, no silhouette sign of the heart border or hemidiaphragm",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "No pleural effusion, no pneumothorax; costophrenic angles sharp; normal cardiomediastinal contour; gastric bubble under the left hemidiaphragm; no rib fracture",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.3,
+ "description_zh": "正面胸部X光（PA），吸氣深度與穿透度尚可，影像周邊有暈影處理偽影。雙側肺野大致清晰，右側中肺野見一約0.6公分的小圓形結節狀密度（可能為血管端面影），雙側肺門下方支氣管血管紋理略為增加、右側較明顯，但未見明確的肺實質化（consolidation）病灶、空氣支氣管徵或心緣／橫膈輪廓消失。心臟大小正常，雙側肋膈角銳利，未見肋膜積液或氣胸，左橫膈下可見胃泡。患者左肩部外側可見L側標記與圓形金屬標記，影像下緣雙側可見弧形體外裝置偽影；未見胸管、引流管或其他治療裝置。"
+}

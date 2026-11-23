@@ -1,0 +1,56 @@
+{
+ "view": "Frontal (PA, erect) chest radiograph; wide field of view that also includes the upper abdomen",
+ "technical_quality": "Adequate: full inspiration (~10 posterior ribs visible), no significant rotation (spinous processes midway between clavicular heads), adequate penetration, entire lungs and costophrenic angles included; 'LT GV' side marker projected over the left shoulder confirms conventional orientation. External tubing/cables overlie both flanks but do not obscure the lungs.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "upper",
+ "size_cm": 10,
+ "devices": [
+  {
+   "type": "Small-bore chest drain / pleural catheter (approx. 3 mm calibre), folded back on itself in a tight hairpin at the apex; malpositioned/kinked",
+   "location": "Right hemithorax: enters through the right lateral lower chest wall (about 6th-7th rib, mid-axillary line), runs superiorly along the lateral pleural space to the right apex, doubles back and descends along the right paramediastinal region with its tip projecting over the medial right mid-zone at the level of the right hilum"
+  },
+  {
+   "type": "External drainage connecting tubing with connectors (segmented appearance), plus 1-2 additional thin external tubes/wires",
+   "location": "Along the right lateral chest wall and right flank / abdominal wall, continuous with the chest drain exit site"
+  },
+  {
+   "type": "External tubing / monitoring cables (thin, no intrathoracic course)",
+   "location": "Along the left lateral chest wall from the left shoulder down to the left flank"
+  },
+  {
+   "type": "Radiographic side marker 'LT GV'",
+   "location": "Over the left shoulder (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Right chest drain folded back on itself (tight hairpin kink) at the right apex; the redundant distal segment (~10 cm) descends along the right paramediastinal region with the tip pointing inferiorly at the level of the right hilum - malpositioned/kinked drain",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Faint band-like linear opacity at the left lung base just above the hemidiaphragm, oriented obliquely toward the lateral costophrenic angle - possible subsegmental (discoid) atelectasis; low-moderate confidence",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left hemidiaphragm slightly higher than the right (~1 cm), reversing the usual relationship; may reflect minor left basal volume loss or gas-distended stomach/colon beneath",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Thin oblique linear line crossing the lateral right lower zone - most likely a skin/breast fold; no pneumothorax appearance lateral to it, subsegmental atelectasis less likely",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Incidental: gas-distended gastric fundus and stool/gas-filled colon under the left hemidiaphragm with multiple gas-containing bowel loops in the upper abdomen; no free subdiaphragmatic air",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.7,
+ "description_zh": "正面（PA）胸部X光，吸氣度足夠、無明顯旋轉，左肩處可見「LT」側別標記。右側可見一條小口徑胸腔引流管自右下側胸壁進入，沿側胸膜腔上行至右肺尖後呈髮夾狀緊密反折，多餘末段沿右縱膈旁向下走行，尖端投影於右肺門高度（右中肺野內側），顯示引流管於肺尖打折／反摺（位置不良）；體外引流連接管沿右側腹壁向下，左側胸壁及側腹另見體外管線／導線投影。兩側肺野大致清晰，未見明確氣胸、肋膜積液或實質化病灶，兩側肋膈角銳利；左下肺野近橫膈處疑有帶狀細線狀陰影，可能為次節段性（盤狀）肺擴張不全，左側橫膈略高於右側約1公分。心臟大小正常（心胸比約0.3，心影狹長直立）、氣管與縱膈居中、肺門正常，骨骼與軟組織無明顯異常，無皮下氣腫；左橫膈下可見脹氣之胃泡及含糞便氣體之結腸，無膈下游離氣體。"
+}

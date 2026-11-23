@@ -1,0 +1,39 @@
+{
+ "view": "PA (frontal) chest radiograph, erect; L side marker on the patient's left confirms conventional orientation",
+ "technical_quality": "Adequate. Good inspiration (about 9-10 posterior ribs), no significant rotation (medial clavicle ends roughly symmetric about the spinous processes), adequate penetration with the thoracic spine visible through the heart. Scapulae partly projected over the upper lateral lung fields. Full lung fields and costophrenic angles included; apices slightly obscured by clavicles/first ribs.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "Radiographic side marker 'L' with 'DG' text annotation (external, not a medical device)",
+   "location": "Upper corner of the image on the patient's left side, over the left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy, ill-defined hazy airspace/interstitial opacities (infiltrate) in the perihilar and infrahilar region extending laterally, approx. 5 x 4 cm, with a prominent right hilum",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly increased reticular/interstitial markings",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly increased reticular/interstitial markings lateral to the cardiac border, no consolidation",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent aortic knob with tortuous/unfolded thoracic aorta and mild widening of the superior mediastinum, consistent with age-related aortic ectasia; trachea midline",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光，吸氣量足夠、無明顯旋轉，影像品質尚可；未見任何管路、導線、心律調節器或引流裝置，僅左上角有 L 側別標記。右側中肺野肺門周圍及其外側可見斑片狀、邊緣模糊之浸潤性陰影（約5公分），右肺門略顯突出，兩側下肺野間質紋理輕度增加；兩側肋膈角銳利，無明顯肋膜積液或氣胸。心臟大小正常（心胸比約0.45），主動脈弓突出、胸主動脈迂曲，上縱膈輕度增寬，氣管居中；骨骼未見急性骨折或破壞性病變，左橫膈下可見胃泡及含糞便之腸氣，橫膈下無游離氣體。"
+}

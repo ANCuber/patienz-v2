@@ -1,0 +1,43 @@
+{
+ "view": "Frontal chest radiograph (likely AP; scapulae project over the upper lung fields), L marker at patient's left shoulder",
+ "technical_quality": "Adequate. Minimal rotation (clavicular heads roughly symmetric about the spinous processes), adequate inspiration (~9 posterior ribs), adequate penetration with vertebral bodies visible behind the heart. Apices and both costophrenic angles included; lower cervical spine and upper abdomen also in field. Scapulae overlap the lateral upper zones.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 4.5,
+ "devices": [
+  {
+   "type": "Subcutaneous tunneled catheter consistent with a ventriculoperitoneal (VP) shunt tube (uniform-caliber, double-walled radiopaque tubing)",
+   "location": "First seen at the right lower neck (about C4-5 level, right paramedian), coursing obliquely over the right clavicle and right upper zone, then descending along the medial right hemithorax lateral to the mediastinum, crossing the right hemidiaphragm and continuing through the right upper quadrant of the abdomen out of the bottom of the film; proximal segment not traceable above the mid-cervical level on this film"
+  },
+  {
+   "type": "Radiographic side marker 'L'",
+   "location": "Over the patient's left shoulder / acromion region (image upper right)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy, ill-defined perihilar and infrahilar infiltrate with peribronchial thickening / cuffing (ring shadows of end-on bronchi), extending medially into the right middle zone adjacent to the right heart border; approx 4-5 cm region",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Several small (2-4 mm) dense nodular foci at the right hilum, likely calcified hilar lymph nodes or calcified granulomas (old granulomatous disease); right hilum denser and more prominent than the left",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild hazy opacity in the medial right lower zone adjacent to the right heart border, likely contiguous with the perihilar infiltrate (possible right middle lobe involvement); no consolidation with air bronchograms",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Scapulae superimposed on the lateral upper lung fields (positioning, not pathology); bilateral breast shadows and lateral chest-wall skin folds overlie both lower zones",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光（疑為AP投照，雙側肩胛骨重疊於肺野），吸氣量尚可，無明顯旋轉，左肩上方可見L標記。右側頸部至右側胸壁可見一條皮下走行之管路，向下越過右側橫膈進入右上腹，型態符合腦室腹腔（VP）引流管；未見胸管或肋膜引流管。右側肺門周圍及右中肺野內側呈斑片狀浸潤影並伴支氣管周圍增厚，右肺門並見數個小型緻密（疑鈣化）結節，右下肺野內側靠近右心緣處輕度模糊，左肺清晰。心臟大小正常，縱隔位置居中，雙側肋膈角銳利，未見氣胸或肋膜積液，骨骼結構無明顯異常，雙側可見乳房陰影。"
+}

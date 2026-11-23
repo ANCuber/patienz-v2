@@ -1,0 +1,39 @@
+{
+ "view": "Frontal (PA/AP) chest radiograph, upright; L marker at image upper right confirms conventional orientation",
+ "technical_quality": "Suboptimal: low lung volumes (shallow inspiration, both hemidiaphragms high), scapulae projected over the upper lateral lung fields, large body habitus with dense lower chest/upper abdominal soft tissue, minimal rotation; exposure adequate with thoracic spine visible through the heart",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "L side marker (external, image upper right)",
+   "location": "patient left upper corner of film, outside thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild hazy ill-defined opacity with coarse, prominent bronchovascular markings in the medial right lower zone adjacent to the right heart border / right cardiophrenic region, without frank lobar consolidation or air bronchogram",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent perihilar bronchovascular markings with mild haziness at the left hilum extending into the medial left lower zone",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Borderline cardiac silhouette (CTR about 0.53), likely exaggerated by shallow inspiration and possible AP projection",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Low lung volumes with elevated hemidiaphragms (right higher than left) and abundant colonic/gastric gas beneath the left hemidiaphragm, consistent with poor inspiration and large body habitus",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "胸部正面X光片，吸氣不足、雙側橫膈偏高，肩胛骨重疊於上外側肺野，體型較胖，影像品質受限。雙側上肺野清晰；右下肺野內側靠近右心緣處可見輕度模糊浸潤影併支氣管血管紋理增粗，左肺門及左下肺野內側亦見紋理增加與輕微模糊，未見明確葉性實質化或空氣支氣管徵。雙側肋膈角尚銳利，未見明顯肋膜積液或氣胸；心影邊界性偏大（CTR約0.53），可能與吸氣不足有關，縱膈與氣管居中。骨骼結構無明顯異常，未見任何導管、引流管或植入裝置，左橫膈下大量腸氣。"
+}

@@ -1,0 +1,62 @@
+{
+ "view": "Frontal chest radiograph (likely AP; scapulae partially overlap the upper lateral lung fields), L marker in the upper right of the image confirming conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate but limited: slightly under-penetrated over the lower zones, large body habitus with bilateral breast shadows overlying both lower zones; minimal rotation, trachea midline; moderate inspiration (approx. 7-8 posterior ribs); no L/R reversal, marker present.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "ECG monitoring lead wires (external)",
+   "location": "bilateral, running along the lateral chest walls from the shoulder region downward"
+  },
+  {
+   "type": "ECG electrodes (external)",
+   "location": "bilateral lower lateral chest wall / upper abdomen, at the inferior ends of the lead wires"
+  },
+  {
+   "type": "L side marker",
+   "location": "upper right corner of image (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Moderate pleural effusion: homogeneous dense opacity with a meniscus-shaped upper border, blunted costophrenic angle and obscured hemidiaphragm",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Probable small pleural effusion: hazy basal opacity with blunting of the costophrenic angle and partially obscured hemidiaphragm",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Ill-defined increased perihilar / mid-zone opacity with prominent hilum (vascular congestion vs infiltrate; underlying mass not excluded)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Borderline enlarged cardiac silhouette (assessment limited by right effusion and probable AP projection)",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Widened superior mediastinum with prominent aortic knob and tortuous/unfolded thoracic aorta",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Prominent bilateral hila with increased central vascular markings, suggesting pulmonary venous congestion",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Degenerative changes of both glenohumeral joints; large breast shadows and body habitus adding density to both lower zones",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "正面（疑為AP）胸部X光，右下肺野可見均質緻密影，上緣呈半月狀，右側肋膈角變鈍且右橫膈輪廓消失，符合中等量右側肋膜積液；左側肋膈角亦有變鈍，疑有少量左側肋膜積液。心影邊緣性擴大，上縱隔增寬並見主動脈弓突出及胸主動脈迂曲，雙側肺門突出，右肺門周圍及右中肺野可見邊界不清之增加密度影，須考慮肺血管鬱血或浸潤。雙側胸壁可見心電圖導線及電極，未見胸管、引流管或心律調節器；雙側肩關節退化性變化，乳房陰影重疊於雙下肺野。"
+}

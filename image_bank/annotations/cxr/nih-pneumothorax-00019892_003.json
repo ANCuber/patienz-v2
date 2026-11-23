@@ -1,0 +1,56 @@
+{
+  "id": "nih-pneumothorax-00019892_003",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal, erect); 'L' side marker with technologist initials 'WTA' at image upper-right, conventional orientation (patient's left on image right)",
+  "technical_quality": "Adequate: good inspiration (about 9 posterior ribs), minimal rotation, slightly underpenetrated through the lower mediastinum; apices and both costophrenic angles included. Bilateral breast shadows overlie the lower zones and the scapulae partly overlap the lateral upper lung fields. At the 1024 px bank resolution a thin visceral pleural line is at the limit of resolution.",
+  "target": {
+    "finding": "pneumothorax",
+    "visible": "uncertain",
+    "laterality": "left",
+    "zone": "upper",
+    "size_cm": 1.5,
+    "confidence": 0.4
+  },
+  "laterality_sources": {
+    "bbox": "left",
+    "reader_a": "uncertain",
+    "reader_b": "not_found",
+    "adjudicator": "left"
+  },
+  "agreement": "conflict",
+  "devices": [
+    {
+      "type": "ECG monitoring electrode (round, external)",
+      "location": "patient right upper anterior chest / right shoulder-infraclavicular region (image upper-left)",
+      "zh": "心電圖監測電極貼片（右上胸／右肩鎖骨下區）"
+    },
+    {
+      "type": "ECG monitoring electrode (round, external)",
+      "location": "patient left upper anterior chest, infraclavicular region near the left clavicle (image upper-right)",
+      "zh": "心電圖監測電極貼片（左上胸／左鎖骨下區）"
+    },
+    {
+      "type": "ECG electrode with attached looped lead wire (external)",
+      "location": "patient left lower lateral chest wall near the left costophrenic angle, wire coursing inferiorly over the left flank / upper abdomen (image lower-right)",
+      "zh": "心電圖電極貼片及迴繞導線（左下側胸壁，導線向下延伸至左側腹）"
+    },
+    {
+      "type": "Radiographic side marker 'L' with technologist initials 'WTA'",
+      "location": "image upper-right corner (patient's left side), outside the body",
+      "zh": "左側標記「L」及技師縮寫「WTA」（影像右上角）"
+    }
+  ],
+  "other_findings": [
+    "雙側乳房陰影重疊於下肺野",
+    "雙側肩胛骨部分重疊於外側上肺野",
+    "雙側肺門略顯突出，上縱膈及右氣管旁區輕度飽滿，可能為投影或血管性因素，未見明確腫塊",
+    "右下肺野支氣管血管紋理輕度增加，部分為乳房陰影重疊所致，未見實質化或結節",
+    "心臟大小於正常上限（CTR 約 0.48–0.50），心臟輪廓正常，氣管居中，縱膈無移位",
+    "雙側肋膈角銳利，橫膈輪廓清楚，左橫膈下可見胃泡，骨骼結構未見明顯異常"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "片上無胸管、豬尾巴導管或任何肋膜引流證據，體外僅有心電圖監測電極貼片，情境上與急診初次就診相符；但標註之左肺尖氣胸極為細微：兩位讀片者皆未辨識，仲裁者僅在對放射科醫師標註區域局部放大、窄窗顯示並與右側鏡像比較後，見左肺尖第一肋與鎖骨之間一處邊緣銳利、缺乏血管紋理的透亮區，尚無法確認臟層肋膜線。學員在一般顯示下極可能看不到此發現，故不建議作為初次就診之教學影像；若經人工複核確認，可改列為「微量肺尖氣胸」進階判讀案例。",
+  "description_zh": "胸部正面（PA）直立X光，吸氣量足夠、旋轉輕微，影像右上角可見「L」側別標記，雙側乳房陰影重疊於下肺野，肩胛骨部分重疊於外側上肺野。放射科醫師標註區域位於左肺尖（第一肋弓與鎖骨之間，約 10 × 4 公分範圍）；局部放大並與右側比較後，該處可見一邊緣銳利、缺乏血管紋理之透亮區，與微量左肺尖氣胸（肺尖氣體帶約 1–2 公分）相符，但於本解析度下無法辨識確切之臟層肋膜線，兩位讀片者皆未發現，判讀為「疑似／不確定」。其餘肺野透亮度大致對稱，肺紋理可延伸至胸壁，右下肺野支氣管血管紋理輕度增加（部分為乳房陰影所致），未見實質化、結節或肋膜積液，縱膈無移位。心臟大小於正常上限（CTR 約 0.48–0.50），雙側肺門略顯突出、上縱膈及右氣管旁區輕度飽滿，可能為投影或血管性因素；雙側肋膈角銳利，橫膈輪廓清楚，左橫膈下可見胃泡。體外可見三枚圓形心電圖電極貼片（右上胸、左上胸、左下側胸壁，後者連接迴繞之導線），未見胸管或任何肋膜引流裝置。",
+  "label_concern": "氣胸極為細微：兩位獨立讀片者皆未辨識，仲裁者僅於放射科醫師標註之左肺尖區域經局部放大、窄窗與左右鏡像比較後見到可疑之無紋理透亮區，無法確認臟層肋膜線；左側全肺亦整體較右側透亮（可能與旋轉或軟組織不對稱有關），使密度比較之證據力減弱。標籤可能正確但影像上難以獨立證實，建議人工複核後再決定是否用於教學，或僅作為「微量肺尖氣胸」進階案例。"
+}

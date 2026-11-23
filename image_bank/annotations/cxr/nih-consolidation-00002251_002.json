@@ -1,0 +1,50 @@
+{
+  "id": "nih-consolidation-00002251_002",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect PA film. No significant rotation (spinous processes midline between clavicular heads). Inspiration adequate to slightly shallow (~8-9 posterior ribs). Penetration adequate (thoracic spine faintly visible through the heart). Apices and both costophrenic angles included. Scapulae partially overlap the upper lateral lung fields; large bilateral breast shadows overlie the lower zones. A black vertical band at the far image-left edge is a collimation/digitisation artifact outside the patient.",
+  "target": {
+    "finding": "consolidation",
+    "visible": "uncertain",
+    "laterality": "left",
+    "zone": "middle",
+    "size_cm": 4,
+    "confidence": 0.4
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "left",
+    "reader_b": "left",
+    "adjudicator": "left"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Side marker 'L' with technologist initials (external lead marker)",
+      "location": "Image upper right, projected lateral to the patient's left clavicle / left shoulder soft tissue, outside the lung field",
+      "zh": "左側「L」側別標記（外部鉛字，含技術員縮寫）"
+    },
+    {
+      "type": "Round radiopaque disc marker (external lead button)",
+      "location": "Image upper right, over the patient's left shoulder / acromioclavicular region, outside the lung field",
+      "zh": "圓形不透X光外部標記（鉛扣），位於病人左肩"
+    }
+  ],
+  "other_findings": [
+    "左側肺門飽滿、緻密且輪廓略呈分葉狀，明顯較右側肺門大；以肺動脈突出為可能，但單一正面片無法排除肺門腫塊或淋巴結腫大",
+    "主動脈弓突出且迂曲（胸主動脈延展、老年性動脈硬化）",
+    "左肺門外側約0.5公分緻密小結節，疑為鈣化肉芽腫或端面血管",
+    "右側肺門周圍、沿右心緣及右中肺野支氣管血管紋理輕度增粗，伴少許斑片狀淡影，無明確實變、空氣支氣管徵或結節",
+    "兩側肺底支氣管血管／網狀紋理輕度增加",
+    "兩側大型乳房陰影重疊於下肺野，造成雙側肺底對稱性淡增濃（軟組織重疊，非肺實質病灶）",
+    "心臟大小正常，縱膈與氣管居中",
+    "兩側肋膈角銳利，無肋膜積液或氣胸；橫膈輪廓清楚，左橫膈下可見胃泡",
+    "骨骼結構未見骨折或破壞性病灶",
+    "影像左緣黑色垂直遮蔽帶為準直／數位化偽影，位於病人體外"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "本片無任何胸管、引流管、導管或其他治療性裝置，亦無與初次就診相牴觸之跡象；但標示的「實變」在影像上僅表現為左肺門周圍約4公分、邊界不清的淡片狀增濃，且與飽滿分葉狀的左肺門重疊，無法與肺動脈突出、肺門腫塊或淋巴結腫大區分，兩位判讀者與仲裁者皆未見明確實變（無空氣支氣管徵、無大葉性分布）。因目標病灶本身可見度不確定、標籤與影像不完全相符，不建議作為「初次表現之肺實變」教學片使用。",
+  "description_zh": "PA 正面站立胸部X光，吸氣量尚可、無明顯旋轉，兩側大型乳房陰影重疊於下肺野，影像左緣黑色垂直帶為準直／數位化偽影；片右上方（病人左肩處）可見「L」側別標記及一圓形外部鉛扣標記，未見任何胸管、導管、心律調節器或其他治療性裝置。左側肺門飽滿、緻密且輪廓略呈分葉狀，明顯大於右側肺門，其外側左中肺野可見一約4公分、邊界不清的淡片狀增濃，可能為肺門周圍實變，惟肺動脈突出、肺門腫塊或淋巴結腫大亦無法排除；左肺門外側另見約0.5公分緻密小結節，疑為鈣化肉芽腫或端面血管。主動脈弓突出且迂曲，右側肺門周圍、沿右心緣及右中肺野支氣管血管紋理輕度增粗並伴少許斑片狀淡影，兩側肺底紋理略增，但全片未見明確大葉性實變、空氣支氣管徵或肺結節。心臟大小正常、氣管與縱膈居中，兩側肋膈角銳利，無肋膜積液或氣胸，左橫膈下可見胃泡，骨骼未見骨折或破壞性病灶。",
+  "label_concern": "NLP 標籤「Consolidation」與影像不完全相符：僅見左肺門飽滿分葉及其周圍邊界不清的淡影，無明確實變徵象（無空氣支氣管徵、無大葉性分布）；較可能為左肺動脈突出、肺門腫塊或淋巴結腫大之鑑別，建議人工核對原報告或以 CT 對照後再決定是否保留此標籤。"
+}

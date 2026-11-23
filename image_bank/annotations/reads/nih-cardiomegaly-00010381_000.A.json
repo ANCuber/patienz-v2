@@ -1,0 +1,39 @@
+{
+ "view": "PA (frontal), L side marker at image upper right confirms conventional orientation",
+ "technical_quality": "Adequate penetration (vertebral bodies visible through the heart); no significant rotation (medial clavicular ends roughly equidistant from spinous processes); shallow inspiration with both hemidiaphragms high, right markedly higher than left; scapulae partly overlap the upper lateral lung fields; costophrenic angles included; no obscuring external artifacts",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 15,
+ "devices": [
+  {
+   "type": "L 側別鉛字標記 (lead side marker, external artifact; no medical device)",
+   "location": "影像右上角，病人左側肩部外上方 (image upper-right corner, above patient's left shoulder, outside the thorax)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "右側橫膈明顯上抬，頂端約在前第5肋高度，右心緣及右下肺野被遮蔽；成因不明（eventration / 膈神經麻痺 / 肺下積液 / 肝腫大皆有可能）",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "心影邊緣性偏大、左心緣圓鈍（估計橫徑約15 cm）；因吸氣淺且右心緣被上抬橫膈遮蔽，心胸比無法可靠量測，心臟肥大之判定為不確定",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "右下肺野緊鄰上抬橫膈處輕度模糊影，較可能為血管聚集／被動性肺塌陷，無明確實變",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "雙側肺門與下肺野支氣管血管紋理輕度增加，無明確肺水腫、Kerley B線或肋膜積液",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "PA 胸部X光，吸氣深度不足，右側橫膈明顯上抬（頂端約在前第5肋高度），右心緣與右下肺野內側被其遮蔽，心胸比無法可靠評估；心影呈邊緣性偏大、左心緣圓鈍，估計橫徑約15 cm，是否符合心臟肥大判定為不確定。雙側肺門及下肺野支氣管血管紋理輕度增加，右下肺野緊貼上抬橫膈處見輕度模糊影，較可能為血管聚集或被動性肺塌陷；未見明確肺實質實變、肋膜積液或氣胸，左橫膈下可見正常胃泡氣體。全片未見任何導管、管線、心律調節器或手術夾，僅影像右上角（病人左側）有 L 側別標記；無已接受治療之證據。"
+}

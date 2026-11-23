@@ -1,0 +1,66 @@
+{
+ "view": "Frontal (probable PA, upright) chest radiograph",
+ "technical_quality": "Adequate quality. 'L' side marker in the upper-right image corner confirms conventional orientation (patient's right on image left). Penetration adequate (thoracic vertebral bodies visible through the heart); inspiration adequate (about 9 posterior ribs); minimal rotation. Scapulae partially project over the lateral upper lung fields. Apices and costophrenic angles included; inferior edge cuts through the upper abdomen.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "Round radiopaque snap-type external artifact (ECG electrode snap or gown snap)",
+   "location": "Midline, projected over the mid-mediastinum at about the level of the carina"
+  },
+  {
+   "type": "Round radiopaque snap-type external artifact (ECG electrode snap or gown snap)",
+   "location": "Midline, projected over the lower cardiac silhouette / diaphragm level"
+  },
+  {
+   "type": "Round radiopaque snap-type external artifact (ECG electrode snap or gown snap)",
+   "location": "Midline at the inferior edge of the film, over the upper abdomen"
+  },
+  {
+   "type": "Lead side marker 'L'",
+   "location": "Upper-right corner of the image (patient's left shoulder region)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Rounded, mass-like opacity in the right perihilar / mid zone with an enlarged, dense-appearing right hilum (approx. 4-5 cm)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Increased medial opacity in the right upper zone with thickening of the right paratracheal stripe / widened right upper mediastinum, contiguous with the hilar density",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Small dense (possibly calcified) nodular opacities at the right hilum, suggestive of calcified lymph nodes",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Generalised relative increased density of the right hemithorax compared with the hyperlucent-appearing left lung",
+   "laterality": "right",
+   "zone": "whole"
+  },
+  {
+   "finding": "Prominent, unfolded/tortuous aortic knob and descending thoracic aorta (age-related ectasia)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal / borderline enlarged (CTR roughly 0.5)",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative changes of both acromioclavicular joints and shoulders",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面（疑為PA）胸部X光，投照品質尚可，正中線可見三枚圓形外物影（疑為心電圖貼片扣或衣物鈕扣），無胸管或引流管。右側肺門增大且密度增加，右中肺野肺門旁可見約4–5公分之圓形腫塊狀陰影，並延伸至右上肺野內側，使右側氣管旁條紋增厚、上縱膈增寬；右肺門另見數個小點狀高密度影，疑為鈣化淋巴結。左肺相對透亮且清晰，雙側肋膈角銳利，無明顯肋膜積液或氣胸；心影大小約在正常上限，主動脈弓突出且迂曲，雙側肩鎖關節見退化性變化。"
+}

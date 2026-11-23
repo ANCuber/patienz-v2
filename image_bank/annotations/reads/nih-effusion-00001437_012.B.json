@@ -1,0 +1,100 @@
+{
+ "view": "AP frontal chest radiograph, portable, likely semi-erect (horizontal gastric air-fluid level); L side marker at image upper right confirms conventional orientation",
+ "technical_quality": "Adequate for a portable film but limited: patient slightly rotated (right hemithorax appears foreshortened, right clavicle/scapula projected higher and more medially), lung apices and costophrenic angles included, penetration adequate for the left lung but the dense right hemithorax obscures the right heart border and right hemidiaphragm. Numerous overlying ECG wires, external tubing and catheter loops project over both hemithoraces and the upper abdomen.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "multiple",
+ "size_cm": 12,
+ "devices": [
+  {
+   "type": "Pigtail pleural drainage catheter (probable; possibly two pigtails, two coiled tips seen)",
+   "location": "Coiled tips project over the right mid zone medially near the right hilum; redundant tubing loops project over the right mid/lower hemithorax; tubing exits at the right lateral lower chest wall and runs off the film inferiorly"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Right upper anterior chest (right mid-clavicular region, ~3rd rib level)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Left upper chest, parasternal/paramediastinal, ~3rd-4th rib level; lead runs inferiorly over the left lung and heart"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Left upper chest, lateral (mid-clavicular), ~3rd rib level; lead runs inferiorly over the left lower chest"
+  },
+  {
+   "type": "ECG lead clip/connector",
+   "location": "Left lower abdomen (image lower right), with wire coursing across the upper abdomen"
+  },
+  {
+   "type": "Small clip/connector (external) and a small metallic clip",
+   "location": "Right lateral lower chest wall at the level of the lower ribs"
+  },
+  {
+   "type": "Thin external tubing/line (probable nasal cannula tubing or monitoring lead; course not compatible with an intravascular catheter since it continues below the diaphragm - a left-approach central line cannot be entirely excluded, correlate clinically)",
+   "location": "Descends from the left neck, crosses the upper mediastinum at ~T3-T4 level, then runs down the right paraspinal region and continues into the abdomen to the bottom of the film"
+  },
+  {
+   "type": "Second thin external line",
+   "location": "Crosses the left upper chest obliquely from the left supraclavicular region toward the left axilla"
+  },
+  {
+   "type": "Side marker 'L'",
+   "location": "Image upper right (patient's left shoulder)"
+  },
+  {
+   "type": "No endotracheal tube, nasogastric tube, central venous catheter with typical course, pacemaker, sternotomy wires or surgical clips identified",
+   "location": "n/a"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large right pleural effusion: dense homogeneous opacification of the right mid and lower zones obscuring the right heart border and right hemidiaphragm, with a pigtail drainage catheter in situ (approx. 12 cm craniocaudal extent below the fluid level)",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Right hydropneumothorax component: lucent air collection (approx. 7 x 5 cm) with a sharp horizontal air-fluid level in the right mid zone (loculated hydropneumothorax, post-drainage; differential: cavity/pneumatocele with air-fluid level)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Hazy increased density over the right upper zone/apex with loss of lung markings, consistent with pleural fluid tracking apically, pleural thickening or associated volume loss of the right upper lobe",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Small thin linear metallic density (~1.5 cm) with an adjacent tinier fragment projecting within the right mid-zone lucency - retained needle/wire fragment or clip; not part of the visible catheter, requires clinical correlation",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Right heart border and right hemidiaphragm silhouetted (not separately visible); cardiac size cannot be reliably assessed, visible left heart border not obviously enlarged; trachea approximately midline without definite mediastinal shift",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Vertical row of small rectangular metallic densities along the right lateral lower chest wall (skin staples vs. external zipper/garment artifact)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild diffuse accentuation of bronchovascular/interstitial markings in the left lung without focal consolidation; left costophrenic angle preserved",
+   "laterality": "left",
+   "zone": "whole"
+  },
+  {
+   "finding": "Markedly gas-distended stomach with an air-fluid level beneath the left hemidiaphragm (incidental)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Bilateral breast shadows superimposed on the lower zones; bones (ribs, clavicles, shoulders, visible spine) intact without fracture or lytic lesion",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.7,
+ "description_zh": "AP 半直立式攜帶型胸部X光，病人略有旋轉；右側可見豬尾巴引流管（pigtail catheter）捲曲末端投影於右中肺野近肺門處，並有多圈冗餘管路重疊於右下胸，另有三枚心電圖電極片、導線及體外管線重疊於胸腹部。右側中、下肺野呈大片均質緻密陰影，右心緣與右橫膈膜均被遮蔽，右中肺野另見一透亮氣體區並具清楚水平氣液面，右肺尖亦呈霧狀密度增加，整體符合右側大量肋膜積液併水氣胸（引流中）；該透亮區內並見約1.5公分細線狀金屬密度影，需臨床對照。左肺充氣尚可，僅輕度支氣管血管紋理增加，左肋膈角尚清；氣管約在中線，無明顯縱膈偏移，心臟大小因右側陰影難以評估。骨骼未見明顯骨折，右下側胸壁可見一排小方形金屬密度（皮膚釘或體外物），左橫膈下胃泡明顯脹氣併氣液面。"
+}

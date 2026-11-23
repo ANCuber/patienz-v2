@@ -1,0 +1,29 @@
+{
+ "view": "PA (frontal, erect; scapulae partly overlap lateral lung fields)",
+ "technical_quality": "Adequate. Good inspiration (about 7 anterior ribs), adequate penetration (vertebral bodies visible through the heart), minimal rotation (medial clavicle ends roughly equidistant from spinous processes). Both scapular blades project over the lateral upper/mid lung fields (arms not fully rotated forward). Lung apices and both costophrenic angles included. A rotated/mirrored side-marker sticker is present at the image top-right corner (patient's left).",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "External side-marker sticker (rotated/mirrored lettering), no medical device",
+   "location": "Image top-right corner, over the patient's left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Subtle hazy increased opacity with slightly prominent markings in the medial left upper zone (adjacent to the aortic arch / superior mediastinum), asymmetric compared with the clear right apex; low conspicuity - possible early infiltrate versus overlap of scapula/first rib/mediastinal structures",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Left hemidiaphragm mildly elevated relative to the right (reverses the normal relationship, about 1 cm higher), with a distended gastric bubble containing mottled food residue beneath it",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面胸部X光（疑為PA直立位），吸氣充分、曝光適中、無明顯旋轉，惟兩側肩胛骨部分重疊於外側肺野；未見任何導管、引流管、夾子或起搏器等裝置。右肺野清晰；左上肺野內側（主動脈弓旁）呈現淡薄、界線不清之密度增加並伴輕度紋理增多，與右側肺尖相比不對稱，須考慮早期浸潤與骨骼／縱膈結構重疊之鑑別。左側橫膈較右側略高（與正常相反），其下方可見擴張且含食物殘渣之胃泡；兩側肋膈角銳利，未見肋膜積液或氣胸。心臟大小正常、縱膈及氣管居中，骨骼與軟組織未見明顯異常。"
+}

@@ -1,0 +1,74 @@
+{
+ "view": "AP frontal (portable/supine or semi-erect) chest radiograph; L marker at image upper right confirms conventional orientation",
+ "technical_quality": "Adequate for interpretation but limited: AP portable technique, scapulae overlie the upper lung fields, minimal rotation, slightly underpenetrated over the opaque right hemithorax; lung apices and both costophrenic angles included; large body habitus.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "whole",
+ "size_cm": 24,
+ "devices": [
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "right shoulder / right infraclavicular soft tissue"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "left shoulder / left infraclavicular soft tissue"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "left mid chest, lateral to the left heart border (lead wire descends over the left lower zone)"
+  },
+  {
+   "type": "External lead wire / tubing (not intravascular)",
+   "location": "coursing obliquely over the right hemithorax from the right neck base down toward the right upper abdomen"
+  },
+  {
+   "type": "External lead wire / tubing",
+   "location": "lateral to the right chest wall over the right arm/flank"
+  },
+  {
+   "type": "L side marker",
+   "location": "image upper right (patient left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Near-complete dense opacification (white-out) of the right hemithorax with ipsilateral volume loss, most consistent with right lung collapse/atelectasis (endobronchial obstruction vs post-pneumonectomy state); coexisting pleural fluid cannot be excluded",
+   "laterality": "right",
+   "zone": "whole"
+  },
+  {
+   "finding": "Tracheal and mediastinal (cardiac) shift toward the right, i.e. toward the opacified side",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Small residual lucent areas medially at the right apex and in the medial right lower zone - residual aerated lung vs loculated air (loculated pneumothorax/hydropneumothorax component) not excluded",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Right costophrenic angle and right hemidiaphragm obscured by the opacity",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Compensatory hyperinflation / hyperlucency of the left lung with flattened left hemidiaphragm; left lung otherwise clear, left costophrenic angle sharp",
+   "laterality": "left",
+   "zone": "whole"
+  },
+  {
+   "finding": "Right heart border and cardiac size not assessable due to the right hemithorax opacity",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Degenerative changes of both glenohumeral/acromioclavicular joints; no acute rib fracture identified",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "前後位（AP）胸部X光，右側胸腔幾乎完全白化，氣管與心臟縱膈向右側移位，顯示右側容積減少，符合右肺塌陷（肺不張，須考慮支氣管內阻塞或肺切除術後狀態），並不排除合併肋膜積液；僅右肺尖內側及右下肺野內側殘留少量透亮區，可能為殘餘含氣肺或局限性氣體（局限性氣胸／液氣胸）。左肺代償性過度膨脹、透亮度增加，左側肋膈角清晰，未見明確浸潤。右側橫膈與肋膈角被緻密影遮蔽，心臟大小無法評估。體表可見三個心電圖電極及導線與外部管線投影於右胸，未見胸管或引流管。"
+}

@@ -1,0 +1,22 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate inspiration and penetration, no significant rotation; an \"L\" side marker is present at the image upper-right corner confirming conventional orientation (patient's right on image left).",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "uncertain",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "chest tube / pleural drain (radiopaque-striped)",
+   "location": "Right hemithorax: enters at the right lower lateral chest wall, courses cephalad along the lateral pleural space, then curves medially in the right mid zone with the tip pointing inferiorly at about the level of the anterior 4th rib"
+  },
+  {
+   "type": "L side marker (external)",
+   "location": "Image upper-right corner, over the patient's left shoulder soft tissues"
+  }
+ ],
+ "abnormalities": [],
+ "treatment_evidence": true,
+ "confidence": 0.6,
+ "description_zh": "胸部X光正面像（PA），影像右上角可見L標記，方向為傳統方向。右側胸腔可見一條胸管自右下外側胸壁進入，沿外側肋膜腔向上走行，於右中肺野轉彎向內、尖端朝下，顯示右側氣胸已接受引流治療。雙側肺野肺紋理均可延伸至胸壁，右肺頂未見明確臟層肋膜線，目前無法確認是否仍有殘餘氣胸。心縱膈輪廓正常，氣管居中，雙側肋膈角銳利，未見其他明顯異常。"
+}

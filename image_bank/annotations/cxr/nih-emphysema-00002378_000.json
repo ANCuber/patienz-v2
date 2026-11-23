@@ -1,0 +1,67 @@
+{
+  "id": "nih-emphysema-00002378_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "Frontal chest radiograph, recorded PA; appearance (ECG leads, abducted right arm, marked rotation, low volumes) suggests an AP/portable-style exposure. L side marker with technologist initials (JMS) on image right confirms conventional orientation (image-left = patient-right).",
+  "technical_quality": "Poor. Marked rotation (asymmetric clavicles, thoracic spine tilted/curved toward image right), poor inspiration with low lung volumes, right arm abducted with humerus and scapula projected over the right hemithorax, heavy soft-tissue overlap, and an under-penetrated lower half so that the cardiac borders, both hemidiaphragms and both costophrenic angles are not evaluable. Overlying ECG leads and external tubing further degrade the film. Limited diagnostic value.",
+  "target": {
+    "finding": "pulmonary emphysema",
+    "visible": "uncertain",
+    "laterality": "left",
+    "zone": "upper",
+    "size_cm": -1,
+    "confidence": 0.3
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "left (upper; uncertain)",
+    "reader_b": "right (lower; primary abnormality was basal opacity, emphysema not identified blind, but left upper/mid hyperlucency noted as a secondary finding)",
+    "adjudicator": "left (upper/mid relative hyperlucency; likely accentuated by rotation and right-sided soft-tissue veiling)"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "patient right hemithorax, mid zone, projected over the right lung (image left)",
+      "zh": "心電圖電極貼片及導線（右側中肺野）"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "patient left lateral chest wall, mid zone (image right)",
+      "zh": "心電圖電極貼片及導線（左側外側胸壁中段）"
+    },
+    {
+      "type": "multiple ECG lead wires / monitoring cables",
+      "location": "crossing both hemithoraces and the upper abdomen; cable connector projected over the left lower lateral chest wall just below the L marker",
+      "zh": "多條心電圖導線／監測線橫越兩側胸腔與上腹部，左下外側胸壁近側標記處可見接頭"
+    },
+    {
+      "type": "external double-lumen tubing (likely oxygen / nasal cannula tubing), hairpin loop with connector; not intravascular, not a chest drain",
+      "location": "from the right neck / upper chest, draped over the right arm, descending along the right paramediastinal region to a loop at the right cardiophrenic angle / right lower zone",
+      "zh": "外置雙腔管線（疑為氧氣管），自右頸／右上胸沿右側縱膈旁向下至右心膈角處捲曲成髮夾狀迴圈"
+    },
+    {
+      "type": "small metallic densities (surgical clips vs external tubing connector)",
+      "location": "patient right paratracheal / upper mediastinum, upper zone",
+      "zh": "右側氣管旁／上縱膈區數枚小型金屬密度（手術夾或管線接頭）"
+    },
+    {
+      "type": "radiopaque L side marker with technologist initials (JMS)",
+      "location": "image right, lateral to the patient's left chest wall",
+      "zh": "「L」側標記及技師縮寫（JMS），位於影像右側、左胸壁外側"
+    }
+  ],
+  "other_findings": [
+    "右下肺野霧狀密度增加，右側橫膈與右肋膈角模糊；體位及軟組織重疊為主要原因，但少量肋膜積液或肺底塌陷無法排除",
+    "右側胸腔呈瀰漫性遮蔽狀密度增加、右肺容積相對縮小、右側橫膈位置偏高（吸氣不足／體位／軟組織重疊 vs 真正容積減少）",
+    "右上臂外展，肱骨與肩胛骨投影於右上肺野，右上肺野外側被緻密軟組織（腋窩、胸壁）遮蔽",
+    "左下肺野霧狀密度增加，左側橫膈與左肋膈角顯示不清（乳房／腹部軟組織重疊，積液無法排除）",
+    "心縱膈輪廓因旋轉、穿透不足及管線重疊無法評估；氣管與縱膈似有偏移，兩位判讀者方向不一致，多屬旋轉所致而非真正位移",
+    "胸椎傾斜／彎曲（旋轉 vs 輕度脊椎側彎）",
+    "未見氣胸、未見胸管或引流管、未見中央靜脈導管"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標籤之肺氣腫在本片僅表現為左上／中肺野相對透亮、周邊血管紋理稀疏的不確定徵象，未見肺大泡、橫膈平坦或胸廓過度膨脹，且此不對稱極可能是右肺被軟組織遮蔽形成對比及明顯旋轉所致，無法確認目標病灶。影像品質極差（旋轉、吸氣不足、穿透不足、手臂與管線重疊），身上已有心電圖監測電極與氧氣管線，較像急診／床邊監測情境。雖無胸管等治療性裝置，但因目標病灶不可靠、影像不具代表性，不適合作為首次就診肺氣腫的教學影像。",
+  "description_zh": "正面胸部X光（登記為PA，但影像特徵較似AP床邊攝影），病人明顯向一側旋轉、吸氣不足，右上臂外展使肱骨與肩胛骨投影於右上肺野，下半部影像因腹部與軟組織緻密影穿透不足，心臟輪廓、兩側橫膈及肋膈角均顯示不清，整體品質不佳。兩側胸壁各見一枚心電圖電極貼片（右側中肺野、左側外側胸壁中段）及多條導線橫越胸腹、接頭投影於左下外側胸壁，右側縱膈旁另有一條外置雙腔管線（疑為氧氣管）自右頸／上胸沿縱膈旁向下走行至右心膈角處捲曲成髮夾狀迴圈，右側氣管旁／上縱膈區可見數枚小型金屬密度（手術夾或管線接頭），影像右側有「L」側標記（JMS），未見胸管、引流管或中央靜脈導管。左上及中肺野相對透亮、周邊血管紋理稀疏，範圍約占左肺上半部，但未見明確肺大泡、橫膈平坦或胸廓過度膨脹，且可能因右肺被軟組織遮蔽形成對比而被放大，本片無法確認肺氣腫。右側胸腔呈瀰漫性遮蔽狀密度增加、右肺容積相對縮小、右橫膈位置偏高，右下與左下肺野皆有霧狀密度增加且肋膈角模糊，體位及軟組織重疊為主要原因，但少量肋膜積液或肺底塌陷無法排除。氣管與縱膈似有偏移、胸椎傾斜，多屬旋轉所致，建議重新拍攝標準PA及側面片。",
+  "label_concern": "標籤為NLP自動擷取且無放射科醫師標註框。本片僅見左上／中肺野相對透亮、周邊血管紋理稀疏，但因明顯旋轉、右側軟組織遮蔽、吸氣不足，無法確認肺氣腫；未見肺大泡、橫膈平坦或過度膨脹，26歲女性亦非典型族群。盲讀者未辨識出肺氣腫，反而以右下肺野模糊（積液／塌陷不排除）為主要異常。建議以CT或臨床資料驗證後再使用。"
+}

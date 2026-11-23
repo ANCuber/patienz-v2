@@ -1,0 +1,18 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA erect film; good inspiration (approximately 9-10 posterior ribs visible), minimal rotation (clavicular heads roughly equidistant from the spinous processes), adequate penetration with thoracic vertebral bodies faintly visible through the cardiac silhouette; both costophrenic angles and lung apices included. Left (L) side marker present at image upper right, confirming conventional orientation.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "radiographic side marker (letter L with adjacent technologist lettering), external artifact only",
+   "location": "image upper right corner, lateral to the patient's left shoulder, outside the thorax"
+  }
+ ],
+ "abnormalities": [],
+ "treatment_evidence": false,
+ "confidence": 0.85,
+ "description_zh": "胸部X光正面(PA)站立像，吸氣深度足夠，旋轉輕微，影像品質適當，右上角可見L側別標記。雙側肺野清晰，未見實質浸潤、結節、腫塊或肋膜積液，兩側肋膈角銳利，肺尖無異常。心臟大小正常，縱隔與氣管居中，兩側肺門與主動脈弓輪廓正常；左側橫膈下可見正常胃泡，右側橫膈略高於左側屬正常變異。骨骼結構(鎖骨、肋骨、肩關節及胸椎)未見明顯骨折或破壞性病灶，未見任何體內裝置、導管或引流管，整體為無急性心肺異常之影像。"
+}

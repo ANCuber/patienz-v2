@@ -1,0 +1,53 @@
+{
+ "view": "PA (frontal), erect; \"L\" side marker at image upper-right corner confirms conventional orientation (patient left on image right)",
+ "technical_quality": "Adequate. Good inspiration, minimal rotation, both costophrenic angles included, apices included. Lower zones slightly dense from overlying breast/soft tissue but spine visible through the heart; mildly under-penetrated abdomen.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External laterality marker 'L' (with small annotation)",
+   "location": "Image upper-right corner, outside the thorax over the patient's left shoulder"
+  },
+  {
+   "type": "External artifact (clothing/gown fold or strap edge, ribbed soft-tissue density)",
+   "location": "Image lower-right edge, patient's left lower lateral chest wall/flank, outside the lung fields"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hyperlucent upper lung zones with attenuated/paucity of peripheral vascular markings and widened intercostal spaces, consistent with emphysematous change (diffuse, upper-zone predominant)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Prominent aortic knob with unfolded/tortuous thoracic aorta; widened superior mediastinum with convex right paratracheal contour, likely ectatic ascending aorta",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Elevated, rounded right hemidiaphragm (possible eventration), higher than the left by roughly 2 rib spaces",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal / borderline cardiomegaly with elongated left ventricular contour",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent bibasilar bronchovascular markings, possibly chronic bronchitic change",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative changes of the thoracic and lower cervical spine (osteophytes, sclerosis)",
+   "laterality": "none",
+   "zone": "multiple"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 立位胸部X光片，影像右上角可見 L 側標，方向為常規擺位。雙側上肺野透亮度增加、周邊血管紋理稀疏且肋間隙增寬，符合肺氣腫改變；雙下肺野支氣管血管紋理略增粗。主動脈弓突出、胸主動脈迂曲延展，上縱膈於右側氣管旁輪廓外凸（疑升主動脈延展），心影大小約在正常上限。右側橫膈膜明顯抬高呈圓弧狀，胸椎可見退化性變化；未見胸管、引流管或任何植入裝置，僅影像右下緣可見衣物等體外偽影。"
+}

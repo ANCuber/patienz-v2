@@ -1,0 +1,49 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: PA projection, full inspiration (about 9-10 posterior ribs), minimal rotation, adequate penetration; scapulae partly overlap the lateral upper lung fields. L side marker present at the image upper-right corner.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "L side marker with lead ID tag (external film marker, not a patient device)",
+   "location": "image upper-right corner, over the patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy ill-defined airspace opacity adjacent to the left heart border (lingula / medial left lower zone), with partial obscuration of the lower left heart border (silhouette sign); dominant component of the labelled consolidation, ~6 cm",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Hazy patchy opacity along the right heart border in the medial right lower zone (paracardiac / right middle lobe-medial lower lobe region), ~5 cm, with a small ring-like lucency near the right cardiophrenic angle",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiomegaly (cardiothoracic ratio increased, approx 0.6)",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, rounded / unfolded aortic knob (tortuous thoracic aorta)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent bilateral hila with coarse peribronchovascular markings (chronic bronchitic / bronchiectatic pattern)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "No pleural effusion or pneumothorax; costophrenic angles sharp bilaterally; gastric fundal air bubble under left hemidiaphragm (normal)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "PA 胸部正面片。心影明顯擴大（心胸比約 0.6），主動脈弓突出且迂曲。雙側下肺野可見邊界不清之斑片狀浸潤影，以左側心緣旁（舌葉／左下肺內側）較為明顯，約 6 cm，並使左心緣下段部分模糊；右側心緣旁內側下肺野亦有約 5 cm 之淡薄斑片影，並於右肋膈角附近見小環狀透亮影。雙側肺門突出、支氣管血管紋理粗糙增多；兩側肋膈角銳利，未見肋膜積液或氣胸，未見任何管路、引流或植入裝置，僅見影像右上角之 L 側別標記。"
+}

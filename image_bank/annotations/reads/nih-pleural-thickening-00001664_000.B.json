@@ -1,0 +1,29 @@
+{
+ "view": "PA frontal chest radiograph (erect), no side marker visible; conventional orientation assumed",
+ "technical_quality": "Adequate: good inspiration (approximately 9-10 posterior ribs), adequate penetration with vertebral bodies visible behind the heart, minimal rotation (clavicular heads roughly symmetric about the spinous processes), full lung fields included. Bilateral breast shadows and scapular edges overlap the lower/lateral lung zones. No L/R marker.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 1,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Small well-defined dense (probably calcified) nodular opacity adjacent to the left hilum just below the aortic knob, ~1 cm, most consistent with a calcified granuloma or calcified hilar lymph node; vessel seen end-on is a differential",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Subtle bilateral apical pleural thickening / apical capping (low confidence, may be partly due to overlying first rib and clavicle)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Possible minimal blunting of the left costophrenic angle with a thin band of pleural density along the left lateral lower chest wall; right costophrenic angle is sharp (low confidence, partly obscured by breast/soft-tissue shadow)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面（PA）胸部X光，吸氣充分、曝光適中、無明顯旋轉；未見任何管路、導線、鈕釦或體外異物。左肺門旁（主動脈弓下方）可見約1公分邊緣清楚的高密度結節影，疑為鈣化肉芽腫或鈣化肺門淋巴結，亦須考慮血管端面投影；雙側肺尖疑有輕微肋膜增厚（apical capping），左側肋膈角疑有輕度鈍化並沿左下外側胸壁見薄層肋膜密度，右側肋膈角銳利。其餘肺野透亮度正常，無實質浸潤、氣胸或明顯肋膜積液；心臟大小正常（CTR 約 0.42），縱膈及氣管居中，主動脈弓正常。骨骼未見骨折或破壞性病灶，雙側乳房軟組織陰影重疊於下肺野，胃泡位於左橫膈下方。"
+}

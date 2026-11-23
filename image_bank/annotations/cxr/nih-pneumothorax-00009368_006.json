@@ -1,0 +1,88 @@
+{
+  "id": "nih-pneumothorax-00009368_006",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "Portable AP frontal chest radiograph (supine / semi-erect); 'L' side marker with 'OG' annotation at the image upper right confirms conventional orientation (patient's right on image left)",
+  "technical_quality": "Limited: portable AP film, shallow inspiration, large body habitus, low contrast with the right hemithorax under-penetrated by dense opacity; mild rotation (right clavicle projects higher than left); multiple ECG electrodes and lead wires overlie both hemithoraces; lateral chest walls partly cut off; heart size and mediastinal position not reliably assessable",
+  "target": {
+    "finding": "Pneumothorax (right, upper zone) - a ~4 cm lucent air pocket without lung markings in the right upper medial zone with a sharp, straight inferior margin (air-fluid interface), most consistent with a loculated apical air component of a hydropneumothorax above a massive right effusion; a discrete visceral pleural line is not confidently identified and a bulla / cavity / residual aerated apical lung cannot be excluded",
+    "visible": "uncertain",
+    "laterality": "right",
+    "zone": "upper",
+    "size_cm": 4,
+    "confidence": 0.5
+  },
+  "laterality_sources": {
+    "bbox": "right",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "patient's right infraclavicular / upper anterior chest (above right clavicle)",
+      "zh": "心電圖電極片及導線（右鎖骨下／右上前胸）"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "patient's left infraclavicular / upper anterior chest (above left clavicle)",
+      "zh": "心電圖電極片及導線（左鎖骨下／左上前胸）"
+    },
+    {
+      "type": "ECG electrode with lead wire running caudally",
+      "location": "patient's left mid-zone lateral chest wall (approx. 5th-6th rib level)",
+      "zh": "心電圖電極片及向下走行之導線（左中肺野外側胸壁）"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "patient's right anterior upper-mid chest, medially over the right upper zone",
+      "zh": "心電圖電極片及導線（右前胸上中部，投影於右上肺野內側）"
+    },
+    {
+      "type": "Small round electrode / snap fastener",
+      "location": "patient's right shoulder / upper arm, lateral to the humeral head",
+      "zh": "小型圓形電極／扣件（右肩，肱骨頭外側）"
+    },
+    {
+      "type": "ECG lead wires",
+      "location": "multiple thin wires coursing over both hemithoraces, crossing the right upper-mid zone (paramediastinal) and the left lower zone",
+      "zh": "多條心電圖導線（重疊於雙側胸腔，橫越右上中肺野及左下肺野）"
+    },
+    {
+      "type": "External tubing / lead wires",
+      "location": "projected along the patient's right lateral chest wall, right arm and right upper abdomen",
+      "zh": "體外管線／導線（沿右側胸壁外側、右上臂及右上腹走行）"
+    },
+    {
+      "type": "Tiny punctate metallic density (artifact / foreign body)",
+      "location": "patient's right lateral lower chest wall",
+      "zh": "微小點狀金屬密度影（右下外側胸壁，偽影或異物）"
+    },
+    {
+      "type": "Linear density over the right paramediastinal region - uncertain: most likely an overlying external ECG lead wire; Reader B suggested a right internal jugular central venous catheter with tip over the lower SVC / right atrium, but a catheter is not confidently identified",
+      "location": "from the right lower neck coursing caudally along the right paramediastinal region to the level of the right heart",
+      "zh": "右側縱膈旁線狀影（不確定：較可能為重疊之心電圖導線；亦不排除右頸內靜脈中心靜脈導管）"
+    },
+    {
+      "type": "Side marker 'L' with annotation 'OG'",
+      "location": "image upper right corner (patient's left shoulder)",
+      "zh": "L側標記（含OG註記，影像右上角）"
+    }
+  ],
+  "other_findings": [
+    "右側胸腔近乎全白（均質緻密混濁），右橫膈、右肋膈角及右心緣均被遮蔽，最符合大量右側肋膜積液（仰臥時向後層積）併下方肺被動塌陷／實變",
+    "右上中肺野內側緊貼縱膈之緻密影：右上葉塌陷／局限性積液，無法排除下方腫塊",
+    "右中下肺野緻密影內散在不規則斑片狀透亮區（部分充氣之肺組織／小氣體腔）",
+    "左肺充氣良好但間質紋理瀰漫性粗糙呈網狀；肺紋理延伸至胸壁，未見左側氣胸",
+    "左下肺野模糊、左肋膈角鈍化，疑少量左側肋膜積液及／或基底肺擴張不全",
+    "心縱膈影增寬、疑心臟擴大，但因前後位攝影及右側病灶遮蔽右心緣，評估不可靠；氣管大致居中，未見明顯縱膈移位",
+    "廣泛骨質疏鬆及雙肩退化性變化；此受限影像上未見明確急性肋骨或鎖骨骨折",
+    "技術因素：吸氣不足、輕度旋轉、攝影條件偏低"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "不適合作為首次就診之氣胸範例：（1）標籤之氣胸無法確認——右上內側之透亮氣體影雖疑為水氣胸之氣體成分，但未見明確臟層肋膜線，亦無法排除肺大泡、空洞或殘留充氣肺；（2）本片主要表現為右側大量肋膜積液／全白併肺塌陷，若作為單純氣胸教學會誤導；（3）病人身上有四枚心電圖電極、多條導線及右側縱膈旁線狀影（不排除中心靜脈導管），呈現住院／加護監測之情境，與「首次就診」不符。雖無胸管或引流管，仍不建議用於首次表現案例。",
+  "description_zh": "可攜式前後位胸部X光（仰臥或半坐臥），L側標記位於影像右上角；影像品質受限，包括吸氣不足、體型較大、攝影條件偏低、輕度旋轉，且多枚心電圖電極及導線重疊於雙側胸腔。右側胸腔幾乎全白，右橫膈、右肋膈角及右心緣輪廓消失，最符合大量右側肋膜積液併下方肺塌陷／實變，右中下肺野緻密影內另見散在斑片狀透亮區。右上肺野內側可見一約4公分、無肺紋理且下緣平直之透亮氣體影（放射科標記之氣胸位置，右側、上肺野），較符合右側水氣胸之局限性氣體成分（氣液介面），但未見明確臟層肺膜線，亦無法排除肺大泡、空洞或殘留充氣之肺尖，故氣胸診斷不確定。左肺充氣良好但間質紋理瀰漫性粗糙呈網狀，左下肺野模糊且左肋膈角鈍化，疑少量左側肋膜積液或基底肺擴張不全；心縱膈影增寬但因前後位及右側病灶影響難以準確評估，氣管大致居中。可見右鎖骨下、左鎖骨下、左中肺野外側及右前胸上中部共四枚心電圖電極片及多條導線、右肩一小型圓形扣件、右下外側胸壁一微小點狀金屬影、沿右側胸壁走行之體外管線，以及右側縱膈旁一線狀影（較可能為導線重疊，不排除右頸內靜脈中心靜脈導管）；未見胸管、肋膜引流管或氣管內管。",
+  "label_concern": "「氣胸」標籤無法確認：右上內側雖有一約4公分、無肺紋理且下緣平直之透亮氣體影（符合放射科標記位置），較像水氣胸之氣體成分，但未見明確臟層肋膜線，亦無法排除肺大泡、空洞或殘留充氣肺；本片主要表現為右側大量肋膜積液／全白併肺塌陷，而非單純氣胸。"
+}

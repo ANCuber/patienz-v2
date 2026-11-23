@@ -1,0 +1,47 @@
+{
+  "id": "nih-pneumothorax-00018055_005",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Upright PA frontal film, adequate inspiration (about 9-10 posterior ribs), no significant rotation, adequate penetration with vertebral bodies visible behind the heart; both costophrenic angles and both apices included. An L side marker projects over the patient's left shoulder (image upper right), confirming conventional orientation (image-left = patient-right).",
+  "target": {
+    "finding": "pneumothorax",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "upper",
+    "size_cm": 2,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "right",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Chest tube (thoracostomy drain, radiopaque stripe visible)",
+      "location": "Patient's right hemithorax: enters at the right lower lateral chest wall, courses cephalad along the lateral pleural space, then curves medially in the right mid zone with the tip pointing inferiorly at about the anterior 3rd-4th rib level",
+      "zh": "右側胸管（胸腔引流管）"
+    },
+    {
+      "type": "Side marker (L)",
+      "location": "Image upper-right corner, projected over the patient's left shoulder soft tissues",
+      "zh": "左側標記（L）"
+    }
+  ],
+  "other_findings": [
+    "右側胸管置入後狀態，右肺大致復張，右中下肺野肺紋理可延伸至胸壁",
+    "無縱隔偏移，氣管居中",
+    "心臟大小正常，心縱膈輪廓正常",
+    "兩側肋膈角銳利，無肋膜積液",
+    "左肺清澈，無實質病灶",
+    "左橫膈下可見胃泡（正常）",
+    "骨骼及軟組織無明顯異常，未見皮下氣腫"
+  ],
+  "treatment_evidence": true,
+  "first_presentation_suitable": false,
+  "suitability_reason": "右側胸腔已置入胸管，屬引流治療後影像；右肺大致復張，僅右肺上外側殘留少量氣胸且肋膜線淡。胸管的存在直接顯示已接受治療，與「初次就診、尚未治療的氣胸」情境相矛盾，故不適合作為初次表現教學片。",
+  "description_zh": "正面直立胸部X光（PA），吸氣充分、無明顯旋轉、穿透度適中，影像右上角可見L側標記，為傳統方向。右側胸腔置有一條具不透光線條的胸管，自右下外側胸壁進入，沿外側肋膜腔向上走行，於右中肺野轉彎向內、末端朝下，約位於前肋第3-4肋高度。右肺大致復張，惟右肺上野外側自肺尖至約第4前肋處仍可見一條淡的臟層肋膜線，其外側區域無肺紋理，與胸壁間距最寬約2公分，符合引流後右上肺野少量殘餘氣胸；無縱隔偏移、氣管居中。左肺清澈，心臟大小正常，兩側肋膈角銳利，無肋膜積液，左橫膈下可見胃泡，骨骼軟組織無明顯異常，未見皮下氣腫。",
+  "label_concern": "標籤（右側氣胸）與影像相符，惟本片為胸管引流後影像，殘餘氣胸量小、肋膜線淡，顯示度有限，不宜作為典型氣胸範例。"
+}

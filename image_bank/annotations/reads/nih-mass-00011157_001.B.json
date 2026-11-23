@@ -1,0 +1,34 @@
+{
+ "view": "PA (frontal) chest radiograph, upright; L marker at image top-right confirms conventional orientation",
+ "technical_quality": "Adequate penetration and inspiration (about 8-9 posterior ribs visible); mild rotation not significant; scapulae partially project over the lateral upper zones bilaterally; no cropping of costophrenic angles.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 2.2,
+ "devices": [
+  {
+   "type": "external radiographic side marker (L) and label/annotation artifact",
+   "location": "image top-right corner over the left shoulder region, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Well-defined rounded/ovoid soft-tissue opacity approximately 2 cm projecting over the lateral right lower zone at about the level of the 7th-8th posterior rib, just inside the lateral chest wall; differential is a pulmonary nodule/mass versus a nipple shadow",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Smaller rounded opacity about 1.5 cm in the lateral left lower zone (near the mid/lower zone junction), roughly symmetric with the right-sided opacity, raising the possibility of bilateral nipple shadows; a second nodule cannot be excluded",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, somewhat bulky and lobulated hila bilaterally with accentuated perihilar bronchovascular markings; bilateral hilar enlargement (e.g. lymphadenopathy) cannot be excluded",
+   "laterality": "bilateral",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面站立胸部X光，吸氣與穿透度尚可，雙側肩胛骨部分重疊於上肺野外側，未見胸管、導管或其他植入裝置。右下肺野外側可見一約2公分邊緣清楚之圓形軟組織密度陰影，左下肺野外側亦見一約1.5公分較小之類似圓形陰影，兩者位置大致對稱，需考慮乳頭陰影，但無法排除肺結節；建議加照乳頭標記片或側位片確認。雙側肺門稍顯飽滿並有肺門周圍支氣管血管紋理增加，不能排除雙側肺門淋巴結腫大。心臟大小正常，縱膈未見明顯增寬，雙側肋膈角銳利，無胸水或氣胸，骨骼未見明顯病灶。"
+}

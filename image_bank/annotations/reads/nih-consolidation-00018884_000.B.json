@@ -1,0 +1,71 @@
+{
+ "view": "Frontal chest radiograph, likely AP (scapulae projected over lung fields, L marker present at image right confirming conventional orientation)",
+ "technical_quality": "Adequate penetration (thoracic spine visible through the heart), adequate inspiration; mild patient rotation and scapulae overlapping the upper/lateral lung fields; apices and costophrenic angles included",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "Cardiac rhythm device generator (pacemaker/ICD, circuit board visible)",
+   "location": "Left infraclavicular / left upper anterior chest wall pocket"
+  },
+  {
+   "type": "Transvenous device lead (atrial)",
+   "location": "Via left subclavian vein and SVC into right atrium, with a redundant loop of lead in the right atrium"
+  },
+  {
+   "type": "Transvenous device lead (ventricular)",
+   "location": "Via left subclavian vein and SVC through right atrium, tip projecting over the right ventricular apex near the left hemidiaphragm"
+  },
+  {
+   "type": "Radiographic side marker 'L' (with 'AM' text)",
+   "location": "Image upper right corner over the patient's left shoulder"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy confluent hazy airspace/interstitial opacity in the left lower zone including the retrocardiac region",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Coarse reticular interstitial opacities, perihilar and mid-zone, more prominent on the left",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Increased coarse reticular/interstitial markings in the right mid and lower zones",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Cardiomegaly (cardiothoracic ratio approximately 0.6)",
+   "laterality": "none",
+   "zone": "none"
+  },
+  {
+   "finding": "Tortuous / unfolded thoracic aorta with prominent aortic knob",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mild blunting of the left costophrenic angle, suspicious for small left pleural effusion",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild thoracic scoliosis with degenerative changes of the thoracic spine",
+   "laterality": "none",
+   "zone": "whole"
+  },
+  {
+   "finding": "Degenerative changes of both glenohumeral joints; generalised osteopenia",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面（疑為AP）胸部X光，穿透及吸氣尚可，患者輕微旋轉、肩胛骨投影於肺野；左上胸壁見心臟節律裝置（心律調節器/去顫器）併經左鎖骨下靜脈之雙導線，分別位於右心房（導線有多餘環狀迂迴）及右心室心尖。心影擴大（CTR約0.6），胸主動脈迂曲。雙肺粗糙網狀間質性紋理增加，左中下肺野及心後區可見片狀融合性模糊浸潤，左肋膈角略鈍疑少量肋膜積液，右肋膈角大致清晰。胸椎輕度側彎併退化性變化，雙側肩關節退化、骨質疏鬆。"
+}

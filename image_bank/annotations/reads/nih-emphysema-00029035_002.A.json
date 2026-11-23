@@ -1,0 +1,54 @@
+{
+ "view": "AP-type frontal (recorded PA; scapulae overlap lung fields, monitoring leads on)",
+ "technical_quality": "Adequate penetration and inspiration; mild rotation; multiple ECG electrodes and lead wires overlie both hemithoraces and partly obscure the left lung; no L/R marker visible, conventional orientation assumed.",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "right upper anterior chest (patient right, upper zone)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "left upper anterior chest (patient left, upper zone)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "right lower medial chest, near cardiophrenic region (patient right, lower zone)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "right flank / lower lateral chest wall below the diaphragm (patient right)"
+  },
+  {
+   "type": "multiple external ECG/monitor lead wires",
+   "location": "crossing the left hemithorax, left flank and upper abdomen; two thin straight wire segments project over the left upper and mid lung"
+  },
+  {
+   "type": "external cable",
+   "location": "outside the body contour lateral to the left arm"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Branching, streaky lucencies within the soft tissues of the lateral chest wall / flank, consistent with subcutaneous emphysema (small volume, ~4-5 cm)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Lucent band paralleling the left mediastinal/paraspinal border - possible pneumomediastinum, uncertain (could be normal lung interposition)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Lungs mildly hyperlucent (left upper zone more than right) without definite bulla, pleural line or pneumothorax; no consolidation or effusion",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "胸部正面片（疑為AP攝影），雙側可見多枚心電圖電極及多條外接導線重疊於胸廓及左側腹壁，左上肺野另有兩段細直線狀導線投影。左側下外側胸壁／側腹軟組織內可見分支狀條紋透亮影，疑為少量皮下氣腫（約4-5公分）；左側縱膈旁另見一條透亮帶，無法排除縱膈氣腫，建議側位片或CT進一步評估。雙肺透亮度略高（左上肺野較明顯），但未見明確肺大泡、臟層肋膜線或氣胸，無實質化或肋膜積液；心臟縱膈輪廓大致正常，未見胸管或引流管。"
+}

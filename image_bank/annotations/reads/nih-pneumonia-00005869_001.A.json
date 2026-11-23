@@ -1,0 +1,47 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA frontal film; large body habitus with overlying soft tissue and breast shadows reduce contrast in the lower zones; inspiration adequate (~8-9 posterior ribs); minimal rotation; L marker present on image right confirming conventional orientation.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "clothing snap / gown fastener (small oval metallic density)",
+   "location": "patient right shoulder region, external"
+  },
+  {
+   "type": "clothing snap / gown fastener (small metallic density)",
+   "location": "superior edge of film over patient left neck/shoulder region, external"
+  },
+  {
+   "type": "circular L side marker with 'CA' annotation",
+   "location": "patient left shoulder, external"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "patchy ill-defined hazy air-space/interstitial opacity, perihilar/infrahilar extending to the base, more conspicuous than contralateral side (consistent with labelled pneumonia)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "mildly coarse/prominent bronchovascular markings",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "multiple well-defined rounded radiopaque densities projected over the lower abdomen/bowel loops, likely ingested tablets or retained contrast material (not a thoracic finding)",
+   "laterality": "bilateral",
+   "zone": "none"
+  },
+  {
+   "finding": "large body habitus with extensive overlying soft tissue",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "PA 胸部X光，病人體型較胖、軟組織及乳房陰影重疊，吸氣深度尚可，縱膈居中。右側中下肺野（肺門下方延伸至肺底）可見片狀、邊界不清的浸潤性混濁增加，範圍約 7 公分，較對側明顯，符合肺炎表現；左肺相對清晰，兩側支氣管血管紋理略粗。心臟大小正常，兩側肋膈角銳利，未見肋膜積液或氣胸，未見胸管或引流管。外在物包括雙肩衣物釦扣及左側 L 標記；下腹部另見多顆圓形高密度影，疑為口服藥錠或腸內殘留顯影劑。"
+}

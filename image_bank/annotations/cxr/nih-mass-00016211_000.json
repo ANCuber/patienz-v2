@@ -1,0 +1,35 @@
+{
+  "id": "nih-mass-00016211_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Diagnostic quality. PA erect frontal film; external 'L' side marker (with technologist initials 'MM') at image upper right confirms conventional orientation. Inspiration adequate (~9 posterior ribs), no significant rotation (clavicles symmetric about the spinous processes), penetration adequate (thoracic spine faintly visible through the mediastinum). Apices and both costophrenic angles included; scapulae mostly projected clear of the lungs. Large bilateral breast shadows overlie both lower zones and partially obscure the right costophrenic angle and both hemidiaphragms.",
+  "target": {
+    "finding": "pulmonary mass",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "middle",
+    "size_cm": 9,
+    "confidence": 0.9
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [],
+  "other_findings": [
+    "胸主動脈迂曲、主動脈結突出，符合年齡相關變化；氣管居中、縱膈未偏移",
+    "心影大小約於正常上限，右心緣中段因右側腫塊遮蔽而無法完整評估",
+    "雙側乳房陰影重疊於兩下肺野，部分遮蔽右肋膈角及雙側橫膈",
+    "雙側肩關節（盂肱關節）及胸椎退化性變化；未見肋骨骨折或骨質破壞性病灶",
+    "左橫膈下可見正常胃泡",
+    "左肺清晰，未見肋膜積液或氣胸；腫塊下方右下肺野仍可見肺紋理"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標的病灶（右側中肺野約9公分之大型腫塊）清楚可見，知標籤讀者與盲讀者皆獨立於同側同區辨識出相同病灶。片上無任何胸管、引流管、導管、心律調節器、手術夾或其他植入裝置，亦無手術後或治療後變化，與病人初次因此病灶就診之情境相符，適合作為初次表現之教學影像。",
+  "description_zh": "正面（PA）站立胸部X光，吸氣深度足夠、無明顯旋轉，雙側乳房陰影重疊於兩下肺野。右側中肺野可見一約9×8公分之大型、類圓形、邊緣清楚、密度均質的腫塊影，自右肺門向外側延伸至側胸壁，上緣呈凸弧形，內側與右肺門及右心緣中段相連使右心緣局部模糊，未見明顯空洞或鈣化；腫塊上方之右上肺野及下方之右下肺野仍可見正常肺紋理，與右橫膈分離。左肺清晰，未見肋膜積液或氣胸，氣管居中。心影大小約於正常上限，胸主動脈迂曲、主動脈結突出，符合年齡相關變化；雙側肩關節及胸椎有退化性變化，左橫膈下可見正常胃泡。除影像右上角之外置「L」側別標記外，未見任何導管、引流管、心律調節器或其他植入裝置。",
+  "label_concern": ""
+}

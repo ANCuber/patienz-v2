@@ -1,0 +1,43 @@
+{
+ "view": "frontal chest radiograph, probable AP projection (L marker on image right = patient's left; conventional orientation)",
+ "technical_quality": "Adequate inspiration (~6 anterior ribs above right hemidiaphragm), minimal rotation (clavicular ends roughly symmetric about spinous processes), adequate penetration with vertebral bodies faintly seen through the heart. Both scapulae project over the lateral lung fields (suggests AP/portable technique), which also limits cardiac size assessment. Costophrenic angles and apices included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "middle",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "tunneled central venous access device (probable subcutaneous port / large-bore tunneled catheter)",
+   "location": "right side: thick-walled catheter forms a hairpin loop over the right lung apex / supraclavicular region, then descends along the right mediastinal border (SVC course) toward the cavoatrial junction / right atrium; a triangular radiopaque component (probable port reservoir or split-tip catheter end) projects over the medial right lower zone adjacent to the right heart border"
+  },
+  {
+   "type": "side marker 'L' with adjacent round marker",
+   "location": "upper right corner of the image (patient's left), external"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "mildly increased perihilar / central vascular markings (mild central vascular prominence), without overt Kerley lines or alveolar opacity",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "prominent / bulky left hilum (probable prominent left pulmonary artery)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "cardiac silhouette at upper limit of normal / borderline enlarged (CTR roughly 0.52), assessment limited by probable AP projection",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "mild widening / density of the right upper mediastinum (paratracheal region), partly overlapped by the catheter, likely vascular (SVC) or projectional",
+   "laterality": "right",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面（疑為 AP）胸部X光，吸氣尚可、旋轉輕微，雙側肩胛骨投影於肺野外側。右側可見隧道式中心靜脈導管／注射座系統：導管於右肺尖／鎖骨上區形成迴圈後沿右縱膈邊緣（上腔靜脈走向）下行，三角形不透光元件投影於右下肺野內側近右心緣；未見胸管或肋膜引流管。雙肺整體尚清晰，雙側肺門周圍中央血管紋理稍增加，左側肺門較為突出，心影大小接近上限（AP 投影評估受限），右上縱膈稍寬（部分為導管重疊，可能為血管性）。雙側肋膈角銳利，無明顯肋膜積液或氣胸；橫膈輪廓清楚，左上腹可見含糞便腸氣；骨骼未見明顯骨折。"
+}

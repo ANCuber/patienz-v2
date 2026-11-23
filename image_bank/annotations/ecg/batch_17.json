@@ -1,0 +1,482 @@
+[
+ {
+  "id": "ptbxl-LOWT-576",
+  "ecg_id": "576",
+  "selected_code": "LOWT",
+  "language": "en",
+  "source_report": "sinus rhythm. minimal st segment depression in v4,5. t waves are low in v5,6. this is minor, non-specific and of doubtful significance.",
+  "source_report_zh": "竇性心律。V4、V5 導程輕微 ST 段壓低，V5、V6 導程 T 波低平。此為輕微非特異性變化，臨床意義不明確。",
+  "statements_zh": [
+   {
+    "code": "NST_",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性 ST 段變化"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LOWT-609",
+  "ecg_id": "609",
+  "selected_code": "LOWT",
+  "language": "en",
+  "source_report": "sinus rhythm. left ventricular hypertrophy. st segments are depressed in v5,6. t waves are low in ii, v5,6. this may be due to lv strain or ischaemia.",
+  "source_report_zh": "竇性心律，左心室肥厚。V5、V6 導程 ST 段壓低，II、V5、V6 導程 T 波低平，可能為左心室勞損（strain）或缺血所致。",
+  "statements_zh": [
+   {
+    "code": "LVH",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "左心室肥厚"
+   },
+   {
+    "code": "ISC_",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性缺血性變化"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LOWT-2039",
+  "ecg_id": "2039",
+  "selected_code": "LOWT",
+  "language": "en",
+  "source_report": "sinus tachycardia. t waves are low throughout and slightly inverted in v2-5. myocardial ischaemia is likely. suggest exclude hypokalaemia. the age of the changes is uncertain.",
+  "source_report_zh": "竇性心搏過速。全導程 T 波低平，V2–V5 導程 T 波輕度倒置，很可能為心肌缺血，建議排除低血鉀。變化之發生時期不明。",
+  "statements_zh": [
+   {
+    "code": "NDT",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非診斷性 T 波異常"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原譯「可能為心肌缺血」弱化了原文 \"ischaemia is likely\" 的程度，已改為「很可能為心肌缺血」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-LOWT-1175",
+  "ecg_id": "1175",
+  "selected_code": "LOWT",
+  "language": "en",
+  "source_report": "sinus rhythm. st segments are depressed in ii, iii, avf, v6. t waves are low in ii, v6 and inverted in iii, avf. appearances are suspicious of inferolateral myocardial ischaemia.",
+  "source_report_zh": "竇性心律。II、III、aVF、V6 導程 ST 段壓低，II、V6 導程 T 波低平，III、aVF 導程 T 波倒置，疑似下側壁心肌缺血。",
+  "statements_zh": [
+   {
+    "code": "ISCIN",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "下壁導程缺血性變化"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NT_-619",
+  "ecg_id": "619",
+  "selected_code": "NT_",
+  "language": "en",
+  "source_report": "sinus rhythm. non-specific t wave flattening in v2,3.",
+  "source_report_zh": "竇性心律，V2、V3 導程非特異性 T 波低平。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NT_-1421",
+  "ecg_id": "1421",
+  "selected_code": "NT_",
+  "language": "en",
+  "source_report": "sinus rhythm. non-specific t wave flattening in v3-6.",
+  "source_report_zh": "竇性心律，V3–V6 導程非特異性 T 波低平。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NT_-601",
+  "ecg_id": "601",
+  "selected_code": "NT_",
+  "language": "en",
+  "source_report": "sinus rhythm. q waves in ii, iii, avf consistent with old inferior    myocardial infarction. non-specific t wave flattening in i, avl, v6.",
+  "source_report_zh": "竇性心律。II、III、aVF 導程出現 Q 波，符合陳舊性下壁心肌梗塞；I、aVL、V6 導程非特異性 T 波低平。",
+  "statements_zh": [
+   {
+    "code": "IMI",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "下壁心肌梗塞"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NT_-848",
+  "ecg_id": "848",
+  "selected_code": "NT_",
+  "language": "en",
+  "source_report": "sinus rhythm. minor non-specific t wave flattening in i and    inversion in avl.",
+  "source_report_zh": "竇性心律，I 導程輕微非特異性 T 波低平，aVL 導程 T 波倒置。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NT_-6706",
+  "ecg_id": "6706",
+  "selected_code": "NT_",
+  "language": "en",
+  "source_report": "sinus rhythm. non-specific t wave flattening in limb leads and v5,6. myocardial ischaemia is likely.",
+  "source_report_zh": "竇性心律，肢體導程及 V5、V6 導程非特異性 T 波低平，很可能為心肌缺血。",
+  "statements_zh": [
+   {
+    "code": "NDT",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非診斷性 T 波異常"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原譯「可能為心肌缺血」弱化了原文 \"ischaemia is likely\" 的程度，已改為「很可能為心肌缺血」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-NT_-499",
+  "ecg_id": "499",
+  "selected_code": "NT_",
+  "language": "en",
+  "source_report": "sinus rhythm. widespread t wave flattening. myocardial ischaemia is likely. suggest exclude hypokalaemia.",
+  "source_report_zh": "竇性心律，廣泛性 T 波低平，很可能為心肌缺血，建議排除低血鉀。",
+  "statements_zh": [
+   {
+    "code": "NDT",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非診斷性 T 波異常"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原譯「可能為心肌缺血」弱化了原文 \"ischaemia is likely\" 的程度，已改為「很可能為心肌缺血」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-NT_-10621",
+  "ecg_id": "10621",
+  "selected_code": "NT_",
+  "language": "en",
+  "source_report": "sinus tachycardia. non-specific t wave flattening in v4,5,6.",
+  "source_report_zh": "竇性心搏過速，V4、V5、V6 導程非特異性 T 波低平。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NT_-14461",
+  "ecg_id": "14461",
+  "selected_code": "NT_",
+  "language": "en",
+  "source_report": "sinus rhythm. poor progression of r waves in anterior chest leads. this is of uncertain significance. minor non-specific t wave flattening in limb leads.",
+  "source_report_zh": "竇性心律。前胸導程 R 波遞增不良，意義不明；肢體導程輕微非特異性 T 波低平。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PAC-2692",
+  "ecg_id": "2692",
+  "selected_code": "PAC",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s). premature atrial contraction(s). sinus tachycardia. left axis deviation. left anterior fascicular block. st segments are elevated in ii, iii, avf and to a    minimal degree in v5,6. early inferolateral myocardial infa",
+  "source_report_zh": "心室早期收縮，心房早期收縮。竇性心搏過速，電軸左偏，左前分支阻滯。II、III、aVF 導程 ST 段上升，V5、V6 導程輕微 ST 段上升；早期下側壁心肌梗塞。",
+  "statements_zh": [
+   {
+    "code": "ILMI",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "下側壁心肌梗塞"
+   },
+   {
+    "code": "ASMI",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "前間壁心肌梗塞"
+   },
+   {
+    "code": "LAFB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "左前分支阻滯"
+   },
+   {
+    "code": "PVC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心室早期收縮"
+   },
+   {
+    "code": "PAC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心房早期收縮"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "急性期",
+  "consistent_with_codes": true,
+  "issues": "原始報告於 \"early inferolateral myocardial infa\" 處截斷；依 ILMI 100% 與 Stadium I 補全為「早期下側壁心肌梗塞」，並移除原譯自行加入的「符合」二字（原文未含此判斷語）。另 ASMI（50%）於報告中未提及，可能位於截斷部分，非矛盾。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-PAC-4118",
+  "ecg_id": "4118",
+  "selected_code": "PAC",
+  "language": "en",
+  "source_report": "premature atrial contraction(s). sinus rhythm. st segments are depressed in i, ii, iii, avf, v6. non-specific but consistent with myocardial ischaemia.",
+  "source_report_zh": "心房早期收縮。竇性心律，I、II、III、aVF、V6 導程 ST 段壓低，屬非特異性變化，但與心肌缺血相符。",
+  "statements_zh": [
+   {
+    "code": "NDT",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非診斷性 T 波異常"
+   },
+   {
+    "code": "PAC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心房早期收縮"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PAC-4548",
+  "ecg_id": "4548",
+  "selected_code": "PAC",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s). premature atrial contraction(s). sinus rhythm. left atrial enlargement. left axis deviation. incomplete right bundle branch block.",
+  "source_report_zh": "心室早期收縮，心房早期收縮。竇性心律，左心房擴大，電軸左偏，不完全性右束支傳導阻滯。",
+  "statements_zh": [
+   {
+    "code": "LAFB",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "左前分支阻滯"
+   },
+   {
+    "code": "IRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "不完全性右束支傳導阻滯"
+   },
+   {
+    "code": "PVC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心室早期收縮"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PAC-4025",
+  "ecg_id": "4025",
+  "selected_code": "PAC",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s), couplet. premature atrial contraction(s). sinus tachycardia. otherwise normal ecg.",
+  "source_report_zh": "心室早期收縮（成對出現），心房早期收縮。竇性心搏過速，其餘為正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PAC-9458",
+  "ecg_id": "9458",
+  "selected_code": "PAC",
+  "language": "de",
+  "source_report": "supraventrikulÄre extrasystole(n) sinusrhythmus linkstyp unvollstÄndiger rechtsschenkelblock st & t abnormal, pathologisch",
+  "source_report_zh": "心房早期收縮（上心室早期收縮）。竇性心律，電軸左偏，不完全性右束支傳導阻滯，ST 段及 T 波異常，為異常心電圖。",
+  "statements_zh": [
+   {
+    "code": "IRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "不完全性右束支傳導阻滯"
+   },
+   {
+    "code": "PAC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心房早期收縮"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PAC-5434",
+  "ecg_id": "5434",
+  "selected_code": "PAC",
+  "language": "de",
+  "source_report": "supraventrikulÄre extrasystole(n) sinusrhythmus linkstyp sonst normales ekg",
+  "source_report_zh": "心房早期收縮（上心室早期收縮）。竇性心律，電軸左偏，其餘為正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   },
+   {
+    "code": "PAC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心房早期收縮"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PAC-4945",
+  "ecg_id": "4945",
+  "selected_code": "PAC",
+  "language": "en",
+  "source_report": "premature atrial contraction(s). sinus rhythm. st segments are elevated in v2-6, this is probably a  normal variant. otherwise normal ecg.",
+  "source_report_zh": "心房早期收縮。竇性心律，V2–V6 導程 ST 段上升，很可能為正常變異；其餘為正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原譯「可能為正常變異」弱化了原文 \"probably a normal variant\" 的程度，已改為「很可能為正常變異」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-PAC-15001",
+  "ecg_id": "15001",
+  "selected_code": "PAC",
+  "language": "en",
+  "source_report": "premature atrial contraction(s). sinus rhythm. otherwise normal ecg.",
+  "source_report_zh": "心房早期收縮。竇性心律，其餘為正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ }
+]

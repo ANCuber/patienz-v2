@@ -1,0 +1,72 @@
+{
+ "view": "AP portable (supine/semi-erect) frontal chest radiograph, paediatric",
+ "technical_quality": "Portable AP film labelled \"AP\" / \"PORTABLE\" with an L marker and upright arrow at the image upper-right (conventional orientation). Detector/patient mildly tilted and slightly rotated; arms abducted with humeri included. Lung apices and both costophrenic angles included; adequate penetration (spine visible through the mediastinum). Numerous overlying external lines, coiled tubing and an ECG electrode degrade assessment of the left mid zone and both lateral chest walls.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 12,
+ "devices": [
+  {
+   "type": "Central venous catheter (probable right internal jugular approach)",
+   "location": "Enters at the right side of the neck, courses over the right clavicle and descends along the right paramediastinal region; tip projects over the lower SVC / cavoatrial junction, roughly T6-T7 level"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Overlying the left mid-chest lateral to the left hilum (approximately anterior 3rd-4th rib level); lead wire runs to two coils of tubing over the left clavicle/upper chest"
+  },
+  {
+   "type": "External coiled tubing / lead wires (double loop)",
+   "location": "Left upper hemithorax overlying the left clavicle and first ribs"
+  },
+  {
+   "type": "External coiled tubing",
+   "location": "Right shoulder / right axillary region lateral to the right upper chest"
+  },
+  {
+   "type": "External tubing connector (hollow cylindrical piece)",
+   "location": "Right supraclavicular region just above the medial right clavicle"
+  },
+  {
+   "type": "External tubing connector (hollow cylindrical piece)",
+   "location": "Right mid-chest lateral to the right heart border, ~5th-6th posterior rib level"
+  },
+  {
+   "type": "External monitoring tubing / lead wires (multiple)",
+   "location": "Running along both lateral chest walls, the right-sided ones crossing the right lung field to the mid-chest connector; two left-sided lines end with terminals over the left flank / left upper abdomen"
+  },
+  {
+   "type": "Radiographic side marker (L) with upright arrow",
+   "location": "Image upper-right corner, patient's left"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large pleural effusion: homogeneous dense opacity of the lower and mid hemithorax with a laterally rising meniscus, obscuring the hemidiaphragm, costophrenic angle and right heart border",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Probable underlying lower-lobe volume loss / consolidation beneath the effusion (silhouetting of the right heart border and diaphragm; cannot be separated from the fluid on this film)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Patchy hazy airspace / atelectatic opacity in the lower zone and retrocardiac region; left costophrenic angle preserved",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly increased bronchovascular / interstitial markings throughout the aerated lung",
+   "laterality": "left",
+   "zone": "whole"
+  },
+  {
+   "finding": "Cardiomediastinal silhouette appears prominent / enlarged, but assessment limited by AP portable magnification and obscuration of the right heart border by the effusion; trachea midline, no definite mediastinal shift",
+   "laterality": "none",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.8,
+ "description_zh": "AP 可攜式正面胸部 X 光，病人輕度旋轉且體表覆蓋多條監測導線、心電圖電極片及盤繞管路，另見疑似右側內頸靜脈中心靜脈導管，尖端投影於下腔上腔靜脈／腔房交界處。右側中下肺野呈大片均質緻密影並向外側上升呈弧形，右橫膈、右肋膈角及右心緣均被遮蔽，符合大量右側肋膜積液，下方可能合併右下葉塌陷或實質化。左肺通氣尚可，但肺紋理略增加，左下肺野及心後區有斑片狀模糊影，左肋膈角尚清晰；心縱膈影顯得寬大，惟受 AP 攝影放大及右側積液遮蔽影響難以準確評估。骨骼未見骨折，肱骨頭可見生長板，未見胸管或引流管。"
+}

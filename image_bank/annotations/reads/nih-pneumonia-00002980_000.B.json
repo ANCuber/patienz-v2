@@ -1,0 +1,39 @@
+{
+ "view": "PA (frontal), erect",
+ "technical_quality": "Adequate. Frontal PA projection, no significant rotation (spinous processes roughly equidistant from the medial clavicular ends, trachea midline). Inspiration adequate (~9-10 posterior ribs visible). Penetration adequate with the lower thoracic vertebral bodies faintly visible through the cardiac shadow. Both costophrenic angles and both lung apices are included; both shoulders/proximal humeri are in the field. Mild soft-tissue/rib overlap over the apices from the clavicles and first ribs.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 9,
+ "devices": [
+  {
+   "type": "External radiographic side marker (checkmark/L-type marker, partly visible) - only external artifact; no lines, tubes, drains, clips, pacemaker or ECG leads",
+   "location": "Image upper right corner (patient's left upper field), outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy, ill-defined airspace/interstitial opacity in the medial left lower zone extending from the left perihilar region to the retrocardiac area, with partial silhouetting of the lower left heart border and the medial left hemidiaphragm - suspicious for left lower lobe / lingular pneumonia (approx. 8-10 cm)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, dense left hilum (likely part of the same perihilar opacity; hilar adenopathy or vascular prominence cannot be excluded)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Coarse, increased bronchovascular / reticular markings in the right lower zone (peribronchial thickening pattern), without a confluent consolidation",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Unfolded, tortuous thoracic aorta with a prominent aortic knob (age-related/atherosclerotic change); upper mediastinum otherwise unremarkable, trachea midline",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面（PA）胸部X光，吸氣度與穿透度尚可，無明顯旋轉；除影像右上角之外置側別標記外，未見任何導管、引流管、心律調節器或外科夾。左下肺野內側（自左肺門周圍延伸至心後區）可見片狀模糊之肺泡／間質性增加密度，部分遮蔽左下心緣及左橫膈內側，疑左下葉或舌葉肺炎；左肺門略顯飽滿，右下肺野支氣管血管紋理增粗。心臟大小約在正常上限（CTR 約 0.46），胸主動脈迂曲且主動脈弓突出，氣管居中；兩側肋膈角銳利，未見肋膜積液或氣胸，胃泡位置正常，骨骼及軟組織無明顯異常。"
+}

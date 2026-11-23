@@ -1,0 +1,38 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film; L marker (with technologist initials) at patient's left upper corner confirms conventional orientation. Mild tilt/rotation with the left shoulder elevated. Adequate inspiration and penetration. A necklace pendant overlies the left mid zone and partially obscures that region.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "necklace with ring-shaped metallic pendant (external artifact, thin chain running from the left shoulder/neck down to the pendant)",
+   "location": "projected over the left mid lung zone, lateral to the left hilum at about the anterior 4th-5th rib level"
+  },
+  {
+   "type": "radiographic side marker 'L' with technologist initials",
+   "location": "image upper right corner (patient's left shoulder region)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Subtle hazy patchy opacity with accentuated, thickened bronchovascular markings in the medial right lower zone (perihilar-basal), with slight indistinctness of the right heart border; possible infiltrate but faint and not definite",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent perihilar bronchovascular markings / peribronchial thickening, more on the right than the left",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild rotation / tilt with the left shoulder elevated (positioning)",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.4,
+ "description_zh": "胸部正面 PA 片，L 標記位於患者左側，患者左肩略為抬高、輕度旋轉；左側中肺野投影一項鍊式墜飾（環形金屬密度，細鍊延伸至左肩），屬體外異物，部分遮蔽該區。右下肺野內側（右肺門下方、近右心緣）可見輕微模糊斑片狀密度增加伴支氣管血管紋理增粗，右心緣稍顯不清，疑似右下肺野浸潤，但表現輕微且不確定；雙側肺門周圍支氣管血管紋理略增粗。左肺野清晰，雙側肋膈角銳利，心縱膈輪廓大小正常，無氣胸、肋膜積液，未見胸管、引流管或其他治療裝置。"
+}

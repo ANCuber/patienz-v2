@@ -1,0 +1,28 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film of a child: good inspiration (about 9-10 posterior ribs), no significant rotation, adequate penetration (thoracic vertebrae visible through the heart). Collimation edges visible at the image margins; L marker present at the upper right of the image (patient's left), confirming conventional orientation.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 3.5,
+ "devices": [
+  {
+   "type": "L side marker (radiographer's lead marker, external)",
+   "location": "Upper right corner of image, over patient's left shoulder soft tissues, outside lung fields"
+  },
+  {
+   "type": "Round radiopaque disc, external (marker disc or clothing button/snap)",
+   "location": "Just below the L marker, over the lateral left shoulder / acromion region, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Irregular, wavy curvilinear increased density immediately above the right hemidiaphragm (medial-to-lateral extent about 3-4 cm), most consistent with mild diaphragmatic pleural thickening / pleural tenting or a small basal fibrous strand; right costophrenic angle only slightly hazy, not frankly blunted",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部X光正面(PA)像，吸氣量足夠、無明顯旋轉，心臟縱膈輪廓大小正常，雙側肺尖清晰。右下肺野緊貼右側橫膈上方可見一不規則、波浪狀的線狀密度增加，範圍約3-4公分，疑為右側橫膈面胸膜增厚／胸膜牽拉（pleural thickening / tenting）或基底部纖維條索，右側肋膈角僅輕微模糊、未見明顯鈍化；左肺清晰，左側肋膈角銳利。未見胸管、引流管或任何體內裝置；影像右上方可見「L」標記及其下方一圓形不透光體外標記／鈕扣，位於左肩軟組織外側，不在肺野內。"
+}

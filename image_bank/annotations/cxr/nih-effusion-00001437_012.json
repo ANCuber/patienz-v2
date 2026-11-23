@@ -1,0 +1,110 @@
+{
+  "id": "nih-effusion-00001437_012",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "AP frontal chest radiograph, portable, likely semi-erect (recorded as PA in the dataset; ECG leads, central line and multiple pleural drains indicate a bedside film)",
+  "technical_quality": "Adequate penetration and inspiration for a portable film; 'L' side marker at image upper right confirms conventional orientation. Patient mildly rotated (right hemithorax foreshortened, right clavicle/scapula projected higher and more medially). Apices, lateral chest walls and costophrenic regions included. Numerous overlying catheters, external tubing and ECG cables partly obscure the mediastinum and right hemithorax; the dense right hemithorax hides the right heart border and right hemidiaphragm.",
+  "target": {
+    "finding": "pleural effusion",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "multiple",
+    "size_cm": 14,
+    "confidence": 0.95
+  },
+  "laterality_sources": {
+    "bbox": "right",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Pigtail pleural drainage catheter (tight spiral coil tip)",
+      "location": "Right pleural space, right mid zone medial/parahilar region (image ~x407,y385)",
+      "zh": "右側肋膜豬尾巴引流管（緊密螺旋末端，右中肺野近肺門）"
+    },
+    {
+      "type": "Pigtail pleural drainage catheter (larger loop tip)",
+      "location": "Right pleural space, right mid zone medial, just below the first pigtail (image ~x383,y463)",
+      "zh": "右側肋膜豬尾巴引流管（較大環狀末端，右中肺野內側）"
+    },
+    {
+      "type": "Third drainage catheter with J-curled tip (pigtail-type)",
+      "location": "Right mid-lower zone, more lateral (image ~x275,y513); shaft runs inferomedially then down through the opacified right hemithorax toward the right lower lateral chest wall",
+      "zh": "第三條引流管（J形捲曲末端，右中下肺野外側）"
+    },
+    {
+      "type": "External drainage tubing with connectors/clamps",
+      "location": "Redundant loops over the right lower hemithorax; tubing exits at the right lower lateral chest wall, runs along the right flank with connectors (~x110,y910 and ~x117,y992) and off the lower image edge",
+      "zh": "體外引流管路及接頭／夾具（右下側胸壁與右側腹壁）"
+    },
+    {
+      "type": "Central venous catheter (left internal jugular approach)",
+      "location": "Descends the left neck, crosses the midline at the clavicular/manubrial level (~T3-T4), runs down the right paramediastinal region; blunt tip ~4 cm right of midline at the lower SVC / cavoatrial junction level (image ~x428,y477). Reader B considered an external line instead, but the smooth intrathoracic course and blunt intrathoracic tip favour a CVC; a separate thin wire (ECG lead) overlaps below the tip and continues into the abdomen",
+      "zh": "左頸內靜脈中央靜脈導管（末端約於上腔靜脈下段／腔房交界處）"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "Right upper anterior chest, right mid-clavicular region ~3rd rib level (image ~x350,y307); lead runs down the right chest and abdomen",
+      "zh": "心電圖電極及導線（右上胸）"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "Left upper anterior chest, parasternal/paramediastinal ~3rd-4th rib level (image ~x593,y330); lead runs inferiorly over the heart and left lung",
+      "zh": "心電圖電極及導線（左上胸內側）"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "Left upper anterior chest, lateral/mid-clavicular ~3rd rib level (image ~x755,y327); lead runs inferiorly over the left lower chest",
+      "zh": "心電圖電極及導線（左上胸外側）"
+    },
+    {
+      "type": "ECG lead clip/connector",
+      "location": "Left lower abdomen (image ~x855,y957), with lead wires converging across the upper abdomen",
+      "zh": "心電圖導線接頭（左下腹）"
+    },
+    {
+      "type": "Small linear metallic density ~1.4 cm with a tiny adjacent fragment (retained wire fragment / clip / foreign body; nature uncertain, not part of the visible catheters)",
+      "location": "Right upper zone, projecting within the lucent air pocket of the hydropneumothorax (image ~x270-305,y351-360; fragment ~x343,y378)",
+      "zh": "右上肺野含氣腔內約1.4公分線狀金屬異物（性質不明，需臨床對照）"
+    },
+    {
+      "type": "Small metallic clips/skin staples (two) and a vertical row of small rectangular densities (skin staples vs. external garment/dressing artefact)",
+      "location": "Right lower lateral chest wall near the drain exit site (image ~x142-160,y756-784) and along the right flank (~x127-165,y782-882)",
+      "zh": "右下側胸壁小金屬夾／皮膚釘及一列小方形金屬密度（皮膚釘或體外物）"
+    },
+    {
+      "type": "External tubing/line (oxygen or IV line)",
+      "location": "Over the left shoulder / left supraclavicular region, running along the left lateral chest wall soft tissues outside the ribs",
+      "zh": "體外管線（左肩及左側胸壁外）"
+    },
+    {
+      "type": "External tubing/line",
+      "location": "From the right shoulder along the right lateral chest wall soft tissues",
+      "zh": "體外管線（右肩及右側胸壁外）"
+    },
+    {
+      "type": "Radiographic side marker 'L'",
+      "location": "Image upper right corner (patient's left shoulder)",
+      "zh": "左側標記「L」"
+    }
+  ],
+  "other_findings": [
+    "右側局限性水氣胸：右上肺野可見一含氣腔（約6-7公分寬）伴清楚水平氣液面，為引流後之局限性水氣胸；其下方一帶狀部分充氣／受壓之肺組織",
+    "右肺尖霧狀增密、肺紋理消失，符合肋膜增厚／積液向上延伸或右上葉容積減少",
+    "右心緣與右橫膈被遮蔽，心臟大小難以評估；可見之左心緣無明顯擴大",
+    "氣管居中、縱膈無明顯偏移，大量積液卻無對側推移，提示合併右側容積減少／肺陷閉",
+    "右上肺野含氣腔內約1.4公分線狀金屬密度影及鄰近小碎片，性質不明（殘留導絲／夾子／異物），需臨床對照",
+    "左肺充氣良好，僅輕度瀰漫性支氣管血管紋理增加，無局部實質化，無氣胸，左肋膈角清晰",
+    "左橫膈輪廓平直，其下胃泡明顯脹氣（附帶發現）；少量左側肺下積液無法完全排除",
+    "右下側胸壁小金屬夾／皮膚釘影及一列小方形金屬密度（皮膚釘或體外物）",
+    "雙側乳房陰影重疊於下肺野；肋骨、鎖骨、肩關節及可見脊椎未見骨折或溶骨病灶",
+    "病人略有旋轉，右側胸廓略呈縮短投影"
+  ],
+  "treatment_evidence": true,
+  "first_presentation_suitable": false,
+  "suitability_reason": "右側肋膜腔內已置入至少三條豬尾巴引流管並接體外引流管路，右上肺野有引流後之局限性水氣胸，另有左頸內靜脈中央靜脈導管、心電圖電極與多條體外管線，明顯為住院治療中之影像，不適合作為肋膜積液首次就診之影像。",
+  "description_zh": "AP 半直立式攜帶型胸部X光，病人略有旋轉。右側胸腔自約第3-4前肋以下幾乎全白，右中、下肺野呈均質性緻密影（上下範圍約14公分），右側橫膈、右肋膈角與右心緣皆被遮蔽，符合大量右側肋膜積液；右上肺野可見一約6-7公分寬之含氣腔伴清楚水平氣液面，為引流後之局限性右側水氣胸，右肺尖亦見肋膜增厚樣霧狀增密，含氣腔內另見約1.4公分性質不明之線狀金屬影。右肋膜腔內可見三條末端捲曲之豬尾巴引流管（兩條位於右中肺野近肺門處、一條偏外側），管路沿右下胸廓走向右側腹壁並接體外引流管與接頭，右下側胸壁見小金屬夾／皮膚釘影，顯示積液已接受引流治療；另見經左頸置入之中央靜脈導管跨越中線後沿右縱膈旁下行，末端約在上腔靜脈下段／腔房交界處，胸前三枚心電圖電極及導線接至左下腹接頭，雙側胸壁外並有體外管線。氣管居中、縱膈無明顯偏移（大量積液卻無推移，提示合併右側容積減少）；左肺充氣良好，僅輕度支氣管血管紋理增加，無實質化、無氣胸，左肋膈角清晰，惟左橫膈輪廓平直、其下胃泡明顯脹氣；骨骼未見骨折。",
+  "label_concern": ""
+}

@@ -1,0 +1,49 @@
+{
+ "view": "Frontal chest radiograph (PA/AP), erect; L marker projected on the image's right (letters appear mirrored) - conventional orientation, cardiac apex to patient's left",
+ "technical_quality": "Adequate but not optimal: large body habitus with bilateral breast/axillary soft tissue overlying both lower zones, mediastinum and lower thoracic spine relatively underpenetrated, moderate inspiration, minimal rotation. Whole thorax included; apices and costophrenic angles visible though the CP angles are partly obscured by soft tissue.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "external artifact (clothing/tubing edge, serrated dark curvilinear object outside the thorax)",
+   "location": "patient's left lower lateral chest wall / flank region, bottom-right corner of image, outside the rib cage"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Prominent, tortuous/ectatic thoracic aorta: enlarged dense aortic knob (~4 cm) bulging to the left with mild widening of the superior mediastinum and rightward convexity of the unfolded ascending aorta; trachea minimally displaced to the right at the arch level",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Hyperlucent upper zones with attenuated/sparse peripheral vascular markings, suggesting emphysematous change / mild hyperinflation",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Coarse, increased bronchovascular and reticular markings in the medial right lower zone with a prominent right hilum (chronic bronchitic/scarring change vs. mild interstitial change; no consolidation)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right costophrenic angle partly obscured/mildly blunted, likely overlying breast soft tissue; small effusion not excluded",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Heart size at the upper limit of normal (CTR approx. 0.48), left ventricular contour prominent",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild thoracic scoliosis with degenerative spondylotic changes of the cervicothoracic spine; degenerative change of both shoulder/acromioclavicular joints; no rib fracture or lytic lesion seen",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光，攝影品質尚可；病人體型較大，雙下肺野受乳房軟組織重疊，縱膈與下段胸椎穿透稍嫌不足。胸主動脈迂曲擴張、主動脈弓明顯突出（約4公分），上縱膈影稍寬，氣管於主動脈弓處略偏右，心臟大小約在正常上限。雙側上肺野透亮度增加、周邊血管紋理稀疏，疑有肺氣腫性變化；右下肺野內側支氣管血管紋理粗糙增加、右肺門較明顯，右肋膈角因軟組織重疊略顯模糊，未見明確實質化或氣胸。胸椎輕度側彎併退化性變化，雙肩關節退化；左下側胸壁外可見體外衣物/管線偽影，未見胸管、中央靜脈導管或節律器等裝置。"
+}

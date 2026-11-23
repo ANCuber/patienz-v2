@@ -1,0 +1,61 @@
+{
+ "view": "Frontal chest radiograph (probable PA, erect)",
+ "technical_quality": "Adequate penetration (thoracic spine visible through the cardiac shadow); minimal rotation (clavicular heads roughly symmetric about the spinous processes; trachea midline); inspiration somewhat shallow with low lung volumes and crowding of basal vessels; large body habitus with bilateral breast shadows overlying the lower zones; whole thorax and upper abdomen included; L marker present at image upper right confirming conventional orientation.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "External metallic snap fastener (gown/clothing)",
+   "location": "Soft tissue over the right shoulder, image upper-left corner"
+  },
+  {
+   "type": "External metallic snap fastener (gown/clothing)",
+   "location": "Top edge of image, right of midline (over patient's left shoulder/neck region)"
+  },
+  {
+   "type": "Lead side marker 'L' with label 'CA'",
+   "location": "Image upper right corner over the patient's left shoulder; confirms patient's left is on image right"
+  },
+  {
+   "type": "Round metallic ring artifact (marker holder / clip, external)",
+   "location": "Immediately above the L marker, patient's left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy patchy air-space/interstitial opacity medially, adjacent to the right heart border, with partial indistinctness of the right cardiac border; suspicious for right middle/lower lobe infiltrate (pneumonia). Approx. 5-6 cm.",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Increased interstitial / bronchovascular markings with peribronchial thickening, more pronounced in both lower zones; partly accentuated by low lung volumes and overlying breast shadows.",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild hazy retrocardiac / left basal density without air bronchograms; less conspicuous than the right side, indeterminate (crowding vs early infiltrate).",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Low lung volumes / shallow inspiration with crowding of basal vasculature.",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Heart size at the upper limit of normal (CTR approx 0.5), may be exaggerated by shallow inspiration; mediastinum central, no widening; hila not enlarged (left hilum slightly prominent).",
+   "laterality": "none",
+   "zone": "mediastinum / cardiac silhouette"
+  },
+  {
+   "finding": "Multiple rounded, well-defined radiopaque densities in the lower abdomen on both sides (clusters right of midline and in the left lower quadrant); likely ingested tablets or calcifications (phleboliths / calcified nodes) - incidental extra-thoracic finding.",
+   "laterality": "bilateral",
+   "zone": "abdomen (below diaphragm)"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光（疑為PA view），吸氣量稍不足、肺容積偏低，患者無明顯旋轉，穿透度尚可；雙側肩部可見衣物金屬扣及左上方之L側標記與圓形金屬體外異物，體內未見任何管路、引流管或起搏器。雙肺紋理增加並伴支氣管周圍增厚，以雙下肺野較明顯，右下肺野內側近右心緣處可見片狀模糊浸潤影（約5–6公分），右心緣局部略不清晰，疑為右中／下葉肺炎；左下肺野心後區亦有輕微霧狀密度增加，未見肋膜積液或氣胸，雙側肋膈角銳利。心臟大小約在正常上限（CTR約0.5），縱膈居中、氣管位置正常，左肺門略顯突出；骨骼結構無明顯異常，左橫膈下可見正常胃泡，下腹部另見多顆圓形高密度影，疑為口服藥丸或鈣化點，屬偶然發現。"
+}

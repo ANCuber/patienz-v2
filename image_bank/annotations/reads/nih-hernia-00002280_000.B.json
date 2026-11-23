@@ -1,0 +1,66 @@
+{
+ "view": "Frontal chest radiograph (likely PA, erect)",
+ "technical_quality": "Adequate penetration (thoracic spine visible through the heart); minimal rotation; low lung volumes / poor inspiratory effort with both hemidiaphragms high; apices and both costophrenic angles included; bilateral shoulder prostheses project over the shoulders only and do not obscure the lung fields. No L/R marker seen; conventional orientation assumed.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 2.5,
+ "devices": [
+  {
+   "type": "Right shoulder arthroplasty (stemmed humeral head prosthesis with glenoid component)",
+   "location": "Right shoulder, patient's right, projecting outside the right upper lung zone"
+  },
+  {
+   "type": "Left shoulder arthroplasty (reverse-type appearance: glenosphere with humeral cup)",
+   "location": "Left shoulder, patient's left, projecting outside the left upper lung zone"
+  },
+  {
+   "type": "Small ring-shaped metallic external artifact, most likely an earring",
+   "location": "Patient's left head/neck region, projected above the thorax at the top of the film (image top right)"
+  },
+  {
+   "type": "Tiny linear metallic/calcific density (~0.3 cm), possibly a small surgical clip vs calcified node - uncertain",
+   "location": "Medial right hilar / right paraspinal region, right middle zone"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Elevated right hemidiaphragm, dome about 2.5 cm higher than the left, smooth contour with central peak (no lateral peaking to suggest subpulmonic effusion); reduced right basal lung volume. Right heart border partially obscured by the high diaphragm.",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Rounded retrocardiac soft-tissue opacity (~4-5 cm) with curvilinear wall and central lucency projecting behind the left heart just above the left hemidiaphragm, most consistent with a hiatal hernia; gastric fundal gas seen below the left hemidiaphragm.",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Tortuous / unfolded descending thoracic aorta with prominent aortic knob (mediastinal contour, no discrete mass).",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Low lung volumes with crowding of basal bronchovascular markings; no focal consolidation, nodule, or interstitial pattern.",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild thoracic spine curvature (mild scoliosis / slight rotation).",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Bilateral shoulder arthroplasties (post-surgical change).",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Tiny linear dense focus near the right hilum, possible surgical clip vs calcified granuloma (indeterminate).",
+   "laterality": "right",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "胸部正面X光（疑似PA立位），吸氣量不足、雙側橫膈位置偏高，右側橫膈明顯高於左側約2.5公分，呈平滑圓頂狀，右下肺容積減少，雙側肋膈角尚清，未見氣胸或明顯肋膜積液。心臟後方、左側橫膈上方可見一約4-5公分之圓形軟組織影，具弧形邊緣及中央透亮區，最符合食道裂孔疝氣；胸主動脈迂曲、主動脈弓突出，心臟大小在正常範圍，肺野未見實質浸潤或結節。雙側肩關節置換術後（右側含關節盂組件、左側疑為反式人工肩關節），左側頭頸部投影處有一環狀金屬異物（疑為耳環），右肺門內側另見一極小線狀高密度影（疑為手術夾或鈣化），胸椎輕度側彎。"
+}

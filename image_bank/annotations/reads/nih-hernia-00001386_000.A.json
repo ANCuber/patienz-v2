@@ -1,0 +1,44 @@
+{
+ "view": "PA (frontal), upright; L marker at image upper-right corner confirms conventional orientation",
+ "technical_quality": "Adequate: full lung fields and costophrenic angles included, no significant rotation (medial clavicles roughly symmetric about the spinous processes), penetration adequate with thoracic spine faintly seen through the heart; inspiration acceptable on the left, not assessable on the right because of the elevated right hemidiaphragm; lower thoracic spine obscured by dense upper abdomen",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 15,
+ "devices": [
+  {
+   "type": "External lead side marker 'L' with adjacent 'GA' lettering (no medical device)",
+   "location": "upper right corner of the image, i.e. over the patient's left upper thorax/shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Marked elevation of the right hemidiaphragm with a large, smooth, dome-shaped homogeneous soft-tissue opacity filling the right lower hemithorax; superior convex margin reaches roughly the right hilum / anterior 4th-5th rib level, about 15 cm transverse; lateral costophrenic angle remains sharp. Appearance consistent with the labelled diaphragmatic hernia (likely containing liver) versus eventration/elevated hemidiaphragm - not separable on a single PA film",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right heart border obscured (silhouette sign) by the dome-shaped opacity; cardiothoracic ratio therefore not reliably assessable, cardiomediastinal silhouette appears prominent",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Gas-containing, mottled (stool/food-like) bowel or gastric shadow beneath a normally positioned left hemidiaphragm, with a small gas locule in the left paraspinal subdiaphragmatic region (likely gastric fundus/cardia); no definite retrocardiac air-fluid level to suggest hiatal hernia",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent/unfolded aortic arch, likely age-related",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "No focal consolidation, pneumothorax, pleural effusion, or pulmonary nodule identified in either lung",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "PA正面胸部X光，吸氣尚可、無明顯旋轉。右側橫膈明顯抬高，右下肺野可見大片邊緣平滑之圓頂狀均勻軟組織密度影，上緣約達右肺門／第4–5前肋高度，橫徑約15公分，右心緣因此被遮蔽而心胸比不易評估，右肋膈角仍尖銳；影像表現符合右側橫膈疝氣（可能含肝臟）或橫膈膨升，單張PA片難以區分。左側橫膈位置正常，其下方可見含氣且呈斑駁狀之胃／腸道陰影（疑為糞便或食物殘渣），未見明確心後方氣液面。兩側肺野無明顯實質化、氣胸或肋膜積液，主動脈弓略突出迂曲；未見任何導管、引流管或心律調節器。"
+}

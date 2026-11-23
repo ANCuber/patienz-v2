@@ -1,0 +1,44 @@
+{
+ "view": "Frontal (PA-type) chest radiograph; \"L\" side marker at the image's upper right confirms conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate inspiration with roughly 9-10 posterior ribs visible; no significant rotation (clavicular heads roughly equidistant from the spinous processes); scapulae projected laterally, largely clear of the lung fields. Penetration is limited in the lower half of the film - the lower zones, both hemidiaphragms and costophrenic angles are partly obscured by dense overlying soft tissue (breast shadows / body habitus), so the lung bases and pleural recesses are incompletely assessable. Upper and middle zones are well exposed. Costophrenic angles and apices included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "external side marker (letter L with adjacent mirrored/rotated lettering)",
+   "location": "upper right corner of the image, over the patient's left shoulder soft tissue - external, not on the patient"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Increased lucency with attenuated/pruned peripheral vascular markings in both upper zones, pattern consistent with emphysematous change",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mild hyperinflation - tall lung fields with a narrow, elongated cardiac silhouette",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Prominent bilateral hilar / central pulmonary vessels with relatively coarse central bronchovascular markings",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Both lower zones, hemidiaphragms and costophrenic angles obscured by dense overlying soft tissue (breast / body habitus); no definite effusion or consolidation identified but assessment is limited",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "A few tiny dense dots in both hilar regions - most likely end-on vessels or small calcified nodes (low confidence)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光，L標記位於影像右側，吸氣深度尚可、無明顯旋轉，但下半部影像因胸壁及乳房軟組織重疊而穿透度不足，雙側下肺野、橫膈與肋膈角評估受限。雙側上肺野透亮度增加、周邊血管紋理稀疏，肺容積偏大、心影狹長，雙側肺門血管略顯粗大，整體符合肺氣腫型變化。心臟大小正常，氣管與縱膈居中，未見氣胸、明確實質病灶或肋膈角鈍化；骨骼未見明顯骨折或破壞性病灶。未見任何導管、引流管、手術夾或植入裝置。"
+}

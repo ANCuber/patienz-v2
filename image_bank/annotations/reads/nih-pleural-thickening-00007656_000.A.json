@@ -1,0 +1,42 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate. Erect PA frontal film, L marker at upper right corner of image (patient's left) confirming conventional orientation. Good inspiration (about 9-10 posterior ribs), adequate penetration (vertebral bodies visible through the heart), minimal rotation. Apices and both costophrenic angles included; scapulae partly overlap the lateral upper lung fields.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 12,
+ "devices": [
+  {
+   "type": "Multiple metallic surgical clips (prior abdominal surgery)",
+   "location": "Upper abdomen, bilateral paraspinal at approximately T12-L2 level, below both hemidiaphragms"
+  },
+  {
+   "type": "External clothing fastener / buckle (artifact, outside patient)",
+   "location": "Projected over the upper abdomen at the bottom of the film, midline slightly to the patient's left"
+  },
+  {
+   "type": "Side marker 'L'",
+   "location": "Upper right corner of image, over the patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Band-like soft-tissue density along the lateral chest wall extending from the mid zone down to a mildly blunted/rounded costophrenic angle, about 1 cm thick and roughly 12 cm craniocaudal - consistent with lateral pleural thickening (labelled finding)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild apical pleural capping/thickening, slightly more prominent on the right",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Prominent, unfolded/tortuous aortic knob (age-related), heart size within normal limits",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 正面胸部X光，吸氣充足、穿透度適當。右側側胸壁自中肺野向下延伸至肋膈角可見帶狀軟組織密度影沿胸壁分佈（約 1 公分厚、縱向長度約 12 公分），右側肋膈角略呈鈍化，符合右側外側胸膜增厚；雙側肺尖另見輕度胸膜帽狀增厚，右側較明顯。左側肋膈角銳利，未見氣胸、肺實質實變或明顯肋膜積液；心臟大小正常，主動脈弓迂曲突出。上腹部脊椎兩側可見多枚手術夾（曾接受腹部手術），下方中線偏左處為體外衣物扣環之人工影像；未見胸管或引流管，無胸膜病灶已治療之證據。"
+}

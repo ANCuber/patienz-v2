@@ -1,0 +1,52 @@
+{
+ "view": "PA (frontal), upright",
+ "technical_quality": "Adequate penetration and minimal rotation (clavicles roughly symmetric about the spinous processes). Low lung volumes / hypoinflation: only ~7 anterior ribs visible above the diaphragms, with a large portion of the lower film occupied by abdomen and bilateral breast soft tissue. A de-identification black rectangle is present at the top-right corner of the image.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "Radiographic side marker with technologist initials ('L DG')",
+   "location": "Upper corner on the patient's LEFT side (image right), over the left shoulder region - external marker, consistent with conventional orientation"
+  },
+  {
+   "type": "Small metallic clip-like density (X/Y-shaped), probable surgical clip vs external metallic artifact",
+   "location": "Patient's right lower zone, medially, near the right heart border / infrahilar region, within a band of linear opacity"
+  },
+  {
+   "type": "Tiny punctate metallic-density dot (possible external artifact vs bone island)",
+   "location": "Patient's right shoulder, near the right acromioclavicular region - external to the lung field"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Increased reticular/linear opacity with hazy density adjacent to the right heart border and right infrahilar region, partially obscuring the right heart border; appearance favors atelectasis / scarring / post-procedural change (associated with the metallic clip-like density); no air bronchogram clearly seen",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small metallic clip-like density within the right lower zone medially (probable surgical clip; external artifact not excluded)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent right hilum relative to the left (likely related to adjacent lower-zone opacity / vascular crowding from hypoinflation)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Low lung volumes / hypoinflation with crowded bronchovascular markings bilaterally; bilateral breast shadows overlie both lower zones",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Left hemidiaphragm dome slightly higher than the right with a prominent gastric air bubble beneath it (reversed normal relationship)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光（PA），吸氣量不足（約僅見7根前肋），無明顯旋轉，穿透度尚可；左上角見「L DG」側別標記，無胸管、中心靜脈導管、氣管內管或心律調節器。右下肺野靠近右心緣及肺門下方見網狀/線狀增加密度及模糊影，部分遮蔽右心緣，並於其中見一小型金屬夾狀高密度影（疑手術夾或體外異物），影像表現以肺不張/纖維化或術後變化較為可能；右肺門略顯突出，左肺野清晰，雙側肋膈角尚銳利，未見明顯肋膜積液，亦未見明確氣胸之臟層肋膜線。心臟大小約在正常範圍，氣管及縱膈居中；左側橫膈略高於右側且其下見明顯胃泡；骨骼未見明顯骨折，雙側乳房軟組織影重疊於下肺野。"
+}

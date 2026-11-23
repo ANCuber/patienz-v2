@@ -1,0 +1,47 @@
+{
+ "view": "Frontal chest radiograph, erect, likely AP (scapulae project over the lateral lung fields); no L/R marker seen, conventional orientation assumed",
+ "technical_quality": "Adequate inspiration (about 9-10 posterior ribs), minimal rotation, apices and both costophrenic angles included. High-contrast / slightly underpenetrated mediastinum (thoracic spine not visible behind the heart), scapulae overlie the lateral lung fields. A check-mark shaped marker/annotation artifact is projected at the image upper right corner. Diagnostic quality.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "small-bore chest drain / pleural catheter (thin radiopaque stripe with side-hole marker gap)",
+   "location": "left hemithorax: enters at the left lower lateral chest wall, courses obliquely superomedially across the left lung, tip at the left apex just below the first rib; external segment continues beyond the left flank"
+  },
+  {
+   "type": "cluster of fine metallic linear densities (surgical clips vs overlying external artifact)",
+   "location": "projected over the left hilum / aortopulmonary window region"
+  },
+  {
+   "type": "external check-mark marker / annotation",
+   "location": "image upper right corner, over the patient's left shoulder region, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Small-bore chest drain in situ with tip at the left apex (post-drainage state); left lung appears re-expanded to the chest wall with no definite residual visceral pleural line",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Subtle paucity of vascular markings at the lateral left apex - a small residual apical pneumothorax cannot be excluded",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Cluster of fine metallic linear densities projected over the left hilum / aortopulmonary window - surgical clips versus overlying artifact",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Tiny dense nodule adjacent to the left hilum - possible calcified granuloma (uncertain)",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.7,
+ "description_zh": "正面胸部X光（疑為AP攝影），吸氣量尚可，縱膈曝光稍不足，右上角可見一勾號狀標記假影。左側胸腔可見一細口徑胸管自左下側胸壁進入，斜向上內走行，尖端位於左肺尖，途中不透光線中斷處為側孔標記；左肺目前大致擴張至胸壁，未見明確殘餘氣胸之臟層肋膜線，惟左肺尖外側血管紋理略稀疏，不能完全排除少量殘餘肺尖氣胸，建議追蹤。左側肺門／主動脈肺動脈窗附近投影數枚細小金屬線狀密度，疑為手術夾或體外異物，鄰近另見一小型緻密結節，可能為鈣化肉芽腫。右肺清澈，兩側肋膈角銳利，心臟大小及縱膈正常，骨骼未見骨折或皮下氣腫，左橫膈下大量胃／腸氣屬正常變異。"
+}

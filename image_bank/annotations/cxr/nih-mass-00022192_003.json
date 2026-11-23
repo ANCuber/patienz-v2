@@ -1,0 +1,58 @@
+{
+  "id": "nih-mass-00022192_003",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate: good inspiration (about 9 posterior ribs), adequate penetration, minimal rotation; 'L' marker at image upper-right confirms conventional orientation; scapulae partly project over the lateral upper lung fields; apices and costophrenic angles included, inferior edge cuts through the upper abdomen.",
+  "target": {
+    "finding": "pulmonary mass",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "upper",
+    "size_cm": 8.5,
+    "confidence": 0.9
+  },
+  "laterality_sources": {
+    "bbox": "right / upper (radiologist box 262x303 px, patient-right upper zone)",
+    "reader_a": "right / upper (large well-circumscribed RUL mass, ~9 cm, extending to hilum)",
+    "reader_b": "right / middle (blind: rounded perihilar mass-like opacity ~4-5 cm, contiguous with increased medial right upper zone opacity)",
+    "adjudicator": "right / upper (large homogeneous mass from below the apex to the right hilum, ~8-9 cm; B found the same right-sided finding but centred it lower)"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Round snap-type radiopaque external artifact (gown snap or ECG electrode snap)",
+      "location": "Midline over the mid-thoracic spine / mediastinum at about carina level (T6-T7)",
+      "zh": "正中線中胸椎高度之圓形暗扣外物影（病人服暗扣或心電圖電極扣）"
+    },
+    {
+      "type": "Round snap-type radiopaque external artifact (gown snap or ECG electrode snap)",
+      "location": "Midline over the lower thoracic spine / lower cardiac silhouette at diaphragm level (T11-T12)",
+      "zh": "正中線下胸椎／橫膈高度之圓形暗扣外物影（病人服暗扣或心電圖電極扣）"
+    },
+    {
+      "type": "Round snap-type radiopaque external artifact (gown snap or ECG electrode snap), partly cut off",
+      "location": "Midline at the inferior edge of the film, over the upper abdomen",
+      "zh": "影像下緣正中線上腹部之圓形暗扣外物影（部分被截切）"
+    },
+    {
+      "type": "Lead side marker 'L' (film marker, not a patient device)",
+      "location": "Upper-right corner of the image, patient's left shoulder region",
+      "zh": "影像右上角之 L 側別鉛字標記（非病人身上器材）"
+    }
+  ],
+  "other_findings": [
+    "右肺門處兩枚小而緻密的鈣化結節，位於腫塊下緣旁，可能為鈣化肉芽腫或鈣化淋巴結",
+    "右側肺門密度增加、顯得較飽滿，與腫塊下緣相連",
+    "右側橫膈較左側輕度抬高（約 2.5 公分），可能為正常變異或右肺體積減少",
+    "主動脈弓突出且迂曲，符合年齡相關之動脈硬化性擴張",
+    "心影大小約在正常上限（心胸比約 0.5）",
+    "右側胸廓整體密度較左側略高（部分為腫塊與肩胛骨投影所致），左肺野清晰",
+    "雙側肩鎖關節及肩關節退化性變化",
+    "兩側肋膈角銳利，未見肋膜積液或氣胸"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標記之右上肺野腫塊清楚可見，片上無胸管、引流管或任何治療器材；其餘所見（鈣化肉芽腫、主動脈迂曲、肩關節退化）皆為 73 歲男性常見之慢性或偶發變化，不與首次就診情境矛盾。正中線之圓形暗扣為病人服或電極扣之外物投影，不影響適用性。",
+  "description_zh": "胸部正面（PA）X光，吸氣與穿透度適當，無明顯旋轉，L 側別標記位於影像右上角。右上肺野可見一大型、邊緣清楚、密度均勻的圓形腫塊，自肺尖下方延伸至右肺門高度，下緣呈平滑凸面，上段與縱膈之間仍有薄層含氣肺組織相隔，下段則與右肺門相連，最大徑估計約 8 至 9 公分，內部未見空洞或鈣化；右肺門另見兩枚小而緻密的鈣化結節（可能為鈣化肉芽腫或淋巴結），右側肺門密度略增。右側橫膈較左側輕度抬高，主動脈弓突出迂曲，心影大小約在正常上限，左肺野清晰，兩側肋膈角銳利，未見肋膜積液或氣胸，雙側肩鎖關節見退化性變化。沿正中線（脊椎投影上）可見三枚圓形環狀外物影（病人服暗扣或心電圖電極扣），最下方一枚位於影像下緣被部分截切；無胸管、引流管或其他治療痕跡。",
+  "label_concern": ""
+}

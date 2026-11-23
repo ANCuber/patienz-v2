@@ -1,0 +1,52 @@
+{
+ "id": "nih-pneumonia-00013721_005",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Frontal PA film; L marker at image upper right over the patient's left shoulder confirms conventional orientation. Adequate penetration and inspiration (about 8-9 posterior ribs on the left); apices and both costophrenic angles included, lower lumbar hardware cut off at the bottom edge. Thorax markedly rotated/asymmetric because of severe instrumented thoracolumbar scoliosis (right shoulder lower than left); the long posterior spinal instrumentation projects over the mediastinum and paraspinal lung, and bilateral breast shadows overlie both lower zones, so the mediastinum, right paracardiac region and both lung bases are evaluated with limitation.",
+ "target": {
+  "finding": "pneumonia",
+  "visible": "uncertain",
+  "laterality": "right",
+  "zone": "lower",
+  "size_cm": 6,
+  "confidence": 0.5
+ },
+ "laterality_sources": {
+  "bbox": "right",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Posterior spinal fusion instrumentation: two longitudinal rods with multiple pedicle screws/hooks (about 10 levels per rod) and one transverse cross-link connector",
+   "location": "Midline thoracolumbar spine from upper thoracic (~T2-T3) to lower lumbar (~L4-L5), projecting over the mediastinum; cross-link at about T5-T6; lower end extends beyond the bottom edge of the film",
+   "zh": "後路胸腰椎脊椎融合內固定器（雙側縱向桿、多節椎弓根螺釘／鉤及一個橫向連接器），自上胸椎約T2-3延伸至下腰椎約L4-5，投影於縱膈上，橫向連接器約在T5-6，下端超出影像下緣"
+  },
+  {
+   "type": "External laterality marker 'L'",
+   "location": "Image upper right, over the patient's left shoulder (outside the patient)",
+   "zh": "左側標記「L」（影像右上角、患者左肩上方，體外）"
+  },
+  {
+   "type": "Small square external radiopaque label/tag",
+   "location": "Image upper right, adjacent and medial to the L marker over the patient's left shoulder (external artifact)",
+   "zh": "小方形體外標籤／貼片（緊鄰L標記內側、患者左肩上方，體外偽影）"
+  }
+ ],
+ "other_findings": [
+  "嚴重胸腰椎側彎，已接受長節段後路內固定融合手術，殘餘輕度彎曲；胸廓明顯旋轉不對稱，右側胸廓較窄、肋骨擁擠，左側胸廓較寬且相對透亮",
+  "右側橫膈較左側抬高約2公分，右側肺容積較小；右下肺野之模糊密度可能部分為側彎及橫膈抬高造成之壓迫性肺不張（NIH另標記Atelectasis）",
+  "縱膈與心影向左偏移（脊椎側彎／旋轉所致），縱膈被內固定器遮蔽，心臟大小不易評估（心胸比約0.46，尚在正常範圍）；氣管大致居中",
+  "右側肋膈角因軟組織重疊略顯模糊，不排除少量肋膜積液（低信心度）",
+  "雙側乳房陰影重疊於兩下肺野；左下肺野心尖外側之淡薄密度疑為乳房軟組織重疊而非肺實質病灶",
+  "肩帶不對稱，右肩較左肩低（姿勢／側彎相關）",
+  "左肺清晰、左肋膈角銳利；胃泡位於左橫膈下；未見氣胸、胸管、引流管或其他導管"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "右下肺野內側確有邊界不清之模糊增加密度，盲讀者亦獨立於同側同區發現，且無胸管、引流管等針對肺炎之治療器材；脊椎側彎內固定器屬既往骨科手術，本身不與肺炎首次就診相矛盾。然而三位讀者皆僅判為不確定：此密度與嚴重側彎所致之肋骨擁擠、右橫膈抬高、壓迫性肺不張及乳房陰影重疊難以區分，影像證據薄弱，且全片被脊椎內固定器主導、縱膈被遮蔽，不適合作為首次就診肺炎之代表性教學影像。",
+ "description_zh": "胸部正位（PA）X光片，L標記位於患者左肩上方、方向正常；吸氣深度與穿透度尚可，但因嚴重胸腰椎側彎併長節段後路脊椎內固定器（雙側縱向桿、多節椎弓根螺釘及一個橫向連接器，自上胸椎約T2-3延伸至下腰椎並超出影像下緣），胸廓明顯旋轉不對稱，內固定器投影遮蔽縱膈及椎旁區域，雙側乳房陰影重疊於兩下肺野，判讀受限。右側胸廓較窄、肋骨擁擠，右側橫膈較左側抬高約2公分，縱膈與心影向左偏移，心臟大小不易評估（心胸比約0.46）。右下肺野內側（右肺門下方、心旁、抬高之右橫膈上方；因橫膈抬高，此區約位於影像高度中段）可見範圍約6公分、邊界不清之淡薄增加密度伴支氣管血管紋理增加，右心緣部分模糊，可符合右中／下葉肺炎浸潤，惟與側彎造成之壓迫性肺不張、擁擠肋骨及乳房軟組織重疊難以區分；右側肋膈角因軟組織重疊略模糊，不排除少量肋膜積液。左肺清晰、左肋膈角銳利，左下肺野心尖外側之淡薄密度疑為乳房陰影重疊；胃泡位於左橫膈下，右肩較左肩低，未見氣胸，亦無胸管、引流管或其他導管。",
+ "label_concern": "右下肺野內側之模糊增加密度確可見，盲讀者亦獨立發現於同側同區，但因嚴重脊椎側彎、右橫膈抬高、肋骨擁擠及乳房陰影重疊，無法與壓迫性肺不張（NIH另標記Atelectasis）區分；肺炎標籤可能正確但影像證據不明確。放射科框選之「中肺野」為影像高度三分位（框選y約427-591），對應肺相對位置之右下肺野，與兩位讀者一致。"
+}

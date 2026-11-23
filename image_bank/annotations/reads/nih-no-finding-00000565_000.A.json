@@ -1,0 +1,55 @@
+{
+ "view": "PA (recorded); frontal chest radiograph, appearance (scapulae over lung fields, mandible projected over upper thorax, external chair-like frame at lower corners) suggests possible AP/seated acquisition",
+ "technical_quality": "Suboptimal: mandible and teeth overlap the lung apices/upper thorax, marked thoracic deformity with posterior spinal instrumentation distorts anatomy, low lung volumes, medial lung fields partly obscured by hardware; penetration adequate, no significant motion.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Posterior spinal fusion instrumentation (dual rods with multiple hooks/clamps, scoliosis construct)",
+   "location": "Midline, spanning approximately the cervicothoracic junction down to the thoracolumbar region"
+  },
+  {
+   "type": "Earrings (metallic)",
+   "location": "Bilateral, projected at the ear lobes above the thorax (upper image corners)"
+  },
+  {
+   "type": "Side marker 'L' with numeric marker",
+   "location": "External, image upper right corner (patient's left upper side)"
+  },
+  {
+   "type": "Round metallic marker/object",
+   "location": "External, image upper right corner adjacent to the L marker"
+  },
+  {
+   "type": "External curved tubular structures (probable chair/wheelchair frame or arm rests)",
+   "location": "Both lower lateral image corners, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Thoracic scoliosis with marked chest wall deformity and rib crowding, post surgical fusion (chronic)",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Low lung volumes with elevated right hemidiaphragm",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Distorted cardiomediastinal contour secondary to scoliosis/hardware; heart size not reliably assessable",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mandible and teeth projected over upper thorax (positioning/short trunk), apices partly obscured",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "正面胸部X光片：可見自頸胸交界延伸至胸腰段之後路脊椎固定器（雙桿多鉤構造），胸廓明顯變形、右側肋骨擠壓，右側橫膈上抬且雙肺容積偏低，下頜骨與牙齒投影於上胸部，心縱膈輪廓因脊椎側彎及金屬器材而變形，評估受限。在可評估範圍內雙肺野未見明確實質浸潤、肋膜積液或氣胸，未見急性心肺病灶。另見雙側耳環、影像右上角之L側標記及圓形金屬標記，以及雙側下角之外部曲形結構（疑為座椅或輪椅支架）；未見胸管或引流管。"
+}

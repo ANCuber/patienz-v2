@@ -1,0 +1,50 @@
+{
+  "id": "nih-hernia-00013278_001",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA erect frontal chest radiograph; 'L' side marker with 'DG' technologist stamp at image upper-right (patient left), conventional orientation",
+  "technical_quality": "Adequate: good inspiration (~9-10 posterior ribs), no significant rotation, both costophrenic angles and apices included; penetration adequate for the lungs but the lower thoracic spine is only faintly seen through the heart; scapulae partially overlap the upper lateral lung fields; inferior edge of the film cuts the upper abdomen.",
+  "target": {
+    "finding": "diaphragmatic hernia (presumed hiatal hernia; NIH label Hernia, NLP-mined)",
+    "visible": "uncertain",
+    "laterality": "left",
+    "zone": "lower",
+    "size_cm": -1,
+    "confidence": 0.35
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "uncertain",
+    "reader_b": "left",
+    "adjudicator": "left"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "Probable surgical clips: small cluster (2-3) of tiny metallic-density fragments plus a faint adjacent linear metallic density; likely from prior upper-abdominal surgery, relation to any hernia repair cannot be established",
+      "location": "Epigastrium / left upper quadrant, just left of midline, below the left hemidiaphragm at the inferior edge of the film (image approx x 565-645, y 980-1010)",
+      "zh": "上腹部中線偏左疑似手術夾（2-3個細小金屬密度影及一條細線狀金屬影），位於左橫膈下方、影像下緣"
+    },
+    {
+      "type": "External radiographic side marker 'L' with 'DG' technologist stamp and small identification squares (external artifact, not a patient device)",
+      "location": "Image upper-right corner, above the patient's left shoulder, outside the thorax",
+      "zh": "影像右上角「L」側別標記及「DG」技術員戳記（體外標記，非病人身上裝置）"
+    }
+  ],
+  "other_findings": [
+    "左側橫膈下方（影像 x 600-720、y 840-960）可見斑駁氣泡狀氣體影，位於左橫膈頂（y 約 805）下方約 1.5-5 公分，最符合胃底含食物殘渣之氣體或結腸脾曲氣體，非橫膈上方之疝氣",
+    "胸主動脈迂曲、主動脈弓突出，符合年齡相關性主動脈擴張；氣管於主動脈弓水平輕度右偏；未見明確鈣化",
+    "心影大小正常（CTR 約 0.40），心影呈窄長垂直型",
+    "雙側肺門可見緻密結節狀影（右側較明顯），疑為陳舊性鈣化肉芽腫性淋巴結或血管末端影",
+    "左上肺野內側（第一肋/鎖骨附近）一微小（約 2-4 mm）鈣化點，符合鈣化肉芽腫",
+    "左下肺野外側（約前第 6 肋水平）疑似約 1 公分邊界模糊結節影，可能為血管末端或肋骨重疊，不確定，建議與舊片比對",
+    "右橫膈略高於左側約 1 公分，屬正常範圍；雙側橫膈輪廓平滑，未見明確過度充氣或肺氣腫徵象",
+    "胸椎退化性骨刺（中下段椎體邊緣）；雙側肩盂肱關節退化性變化（右側較明顯）；肋骨完整，無骨折",
+    "雙側肺野未見局部實質浸潤、肋膜積液或氣胸；雙側肋膈角銳利",
+    "未見中心靜脈導管、氣管內管、胸管、心律調節器或其他治療性裝置"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標記之橫膈疝氣（推測為食道裂孔疝氣）於本 PA 片無法確認：心影後方未見氣液平面或邊界清楚之圓形軟組織影，讀片者 B 所指之斑駁氣體影經量測位於左橫膈輪廓下方，較符合胃底/結腸氣體。目標病灶不可見即不適合作為首次就診之教學影像；此外上腹部疑似手術夾提示曾接受上腹部手術，亦可能與病史設定衝突。",
+  "description_zh": "PA 站立正面胸部X光片，吸氣量足夠（約 9-10 後肋）、無明顯旋轉，影像右上角可見「L」側別標記及「DG」戳記，肩胛骨部分重疊於上外側肺野。心影大小正常（CTR 約 0.40）且呈窄長型，主動脈弓突出、胸主動脈迂曲，氣管於弓部水平輕度右偏，符合年齡相關變化。針對標記之橫膈（食道裂孔）疝氣：預期位置為左側心影後方下肺野，但本片心影後方僅見正常之左下葉透亮區，無氣液平面或圓形軟組織腫塊；左橫膈頂下方約 1.5-5 公分處（中線偏左）可見一約 4-5 公分範圍的斑駁氣泡狀氣體影，較符合胃底/結腸脾曲氣體，故橫膈疝氣於本片無法確認。其他所見：雙側肺門緻密結節狀影（右側較明顯，疑陳舊性鈣化淋巴結）、左上肺野內側微小鈣化肉芽腫、左下肺野外側疑似約 1 公分模糊結節影（可能為血管或肋骨重疊）、右橫膈略高於左側約 1 公分（正常範圍）、胸椎退化性骨刺及雙側肩關節退化。上腹部中線偏左、橫膈下方影像下緣可見 2-3 個細小金屬密度影及一條細線狀金屬影，疑為既往上腹部手術之手術夾；未見任何導管、引流管或心律調節器，雙側肺野清晰，無肋膜積液或氣胸，肋膈角銳利。",
+  "label_concern": "NLP 探勘之「Hernia」標籤於本 PA 片無法確認：心影後方無氣液平面或圓形軟組織影，唯一可疑之斑駁氣體影經量測位於左橫膈輪廓下方（胃底/結腸氣體）。可能為僅在側面片或 CT 所見之小型食道裂孔疝氣，或報告中提及之既往病史；不建議作為橫膈疝氣之教學影像。"
+}

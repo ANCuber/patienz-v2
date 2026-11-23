@@ -1,0 +1,76 @@
+{
+ "view": "PA frontal chest radiograph (erect), left-side marker projected at image upper-right = patient's left, conventional orientation",
+ "technical_quality": "Adequate inspiration (~9 posterior ribs), adequate penetration (thoracic spine visible through the heart), minimal rotation (medial clavicular ends roughly symmetric about the spinous processes). Scapulae partially overlap the lateral upper lung fields. Whole thorax, both costophrenic angles and the shoulders included; lung apices slightly cropped by the clavicles.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "Median sternotomy wires (approximately 5-6 twisted cerclage wires)",
+   "location": "Midline, projected over the sternum from the level of the aortic arch down to the lower cardiac silhouette"
+  },
+  {
+   "type": "Metallic prosthetic cardiac valve / valve ring (probable mechanical mitral valve, ~2 cm)",
+   "location": "Mediastinum, projected just left of the spine over the lower third of the cardiac silhouette"
+  },
+  {
+   "type": "Small metallic surgical clips / wire fragments",
+   "location": "Midline, adjacent to the lower sternal wires at the level of the lower heart"
+  },
+  {
+   "type": "External side marker (L) with text, rotated",
+   "location": "Image upper-right corner, over the patient's left shoulder soft tissue (external artifact)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy paracardiac opacity with loss of definition of the right heart border and crowded basal vessels, consistent with right middle lobe (with possible right lower lobe) atelectasis / collapse-consolidation",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Elevated right hemidiaphragm (lateral dome roughly 3-4 cm higher than the left) indicating right-sided volume loss; subpulmonic effusion not excluded",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, dense right hilum contiguous with the paracardiac opacity (volume loss / hilar crowding vs hilar enlargement)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Cardiomegaly, cardiothoracic ratio approximately 0.58-0.60, globular cardiac contour (post cardiac surgery, prosthetic valve in situ)",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Widened superior mediastinum with prominent, unfolded/tortuous thoracic aortic arch and descending aorta (ectatic aorta of the elderly)",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Diffusely accentuated bronchovascular / interstitial markings, more evident in the left lower zone (chronic bronchitic or mild interstitial change)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Post-median-sternotomy status with prosthetic cardiac valve (surgical, not pathological per se)",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Degenerative changes of both glenohumeral / acromioclavicular joints and thoracic spine spondylosis",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Large gastric air bubble under the left hemidiaphragm (incidental)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面X光（PA），吸氣量尚可、無明顯旋轉，可見正中胸骨切開鋼絲及縱膈內心臟人工瓣膜之金屬影（疑二尖瓣位置），未見胸管或引流管。右側心緣模糊、右中下肺野旁心緣呈霧狀密度增加，右側橫膈明顯上抬，符合右中葉（或合併右下葉）肺塌陷伴體積減少，右肺門顯得緻密。心臟擴大（CTR約0.58），胸主動脈弓迂曲擴張致上縱膈增寬；雙側支氣管血管紋理增加，兩側肋膜角尚銳利，未見氣胸或明顯肋膜積液。雙肩及胸椎退化性變化，左橫膈下大型胃泡為偶見。"
+}

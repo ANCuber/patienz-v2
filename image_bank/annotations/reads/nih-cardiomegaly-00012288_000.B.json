@@ -1,0 +1,49 @@
+{
+ "view": "Frontal chest radiograph (PA projection, erect), L marker at image upper right confirming conventional orientation (patient's left on image right)",
+ "technical_quality": "Suboptimal: low lung volumes / poor inspiratory effort (diaphragms high), obese body habitus with large bilateral breast and arm soft-tissue shadows overlying the lower zones and lateral chest, slightly under-penetrated mediastinum (thoracic vertebrae not well seen through the heart). Minimal rotation; costophrenic angles included but the right one is obscured by soft tissue. No cropping of apices.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 22,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Cardiomegaly - enlarged cardiac silhouette, cardiothoracic ratio approximately 0.63 (heart ~380 px vs inner thoracic width ~600 px), partly accentuated by low lung volumes",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Widened / prominent upper mediastinum with unfolded, tortuous thoracic aorta and prominent aortic knob",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Prominent bilateral hila with increased perihilar vascular markings, suggesting pulmonary vascular congestion (no frank interstitial or alveolar oedema)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Low lung volumes with elevated hemidiaphragms (poor inspiration / obesity), crowding of basal vessels",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right costophrenic angle not clearly visualised, possibly blunted - obscured by overlying breast/chest-wall soft tissue; small right effusion cannot be excluded",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Large gastric air bubble beneath the left hemidiaphragm (subdiaphragmatic)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Obese body habitus with large bilateral breast shadows and arm soft tissue overlying the lower zones and lateral thorax",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "正面胸部X光（PA），吸氣不足、肺容積偏低，體型肥胖，雙側乳房及上臂軟組織陰影重疊於下肺野與側胸壁，縱膈穿透稍嫌不足。心影明顯擴大，心胸比約0.63，上縱膈增寬併胸主動脈迂曲、主動脈弓突出，雙側肺門陰影增粗，疑肺血管鬱血，但未見明確間質或肺泡性肺水腫。雙肺上野清晰，未見肺實質實變、結節或氣胸；右側肋膈角因軟組織重疊顯示不清、疑似鈍化，無法排除少量肋膜積液，左側肋膈角尚可，左橫膈下見較大胃泡。未見任何管路、導線、心律調節器或人工裝置；骨骼未見明顯骨折或破壞性病灶。"
+}

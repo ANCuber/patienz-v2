@@ -1,0 +1,51 @@
+{
+  "id": "nih-cardiomegaly-00029391_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (recorded); frontal erect film. Scapulae partly overlap the lateral lung fields, so an AP-like projection cannot be excluded, but the recorded view is PA.",
+  "technical_quality": "Diagnostic but suboptimal. Minimal rotation (medial clavicle ends roughly symmetric about the spinous processes). Shallow inspiration with high diaphragms (about 5-6 anterior / 7 posterior ribs), which accentuates the cardiac silhouette, mediastinal width and basal markings. Obese habitus with large bilateral breast and lateral chest-wall soft-tissue shadows attenuating both lower zones; the mandible with metallic dental work projects over the upper mediastinum/neck. Penetration adequate (thoracic spine faintly visible through the heart). Apices, lateral chest walls, both costophrenic angles and upper abdomen included; retrocardiac and right basal areas limited.",
+  "target": {
+    "finding": "cardiomegaly",
+    "visible": "yes",
+    "laterality": "none",
+    "zone": "lower",
+    "size_cm": 18,
+    "confidence": 0.85
+  },
+  "laterality_sources": {
+    "bbox": "patient-left, middle zone (box 485x377 px centred on the heart; heart lies mostly left of midline, so 'left' is a box-centre artefact, not a true side)",
+    "reader_a": "bilateral, lower zone",
+    "reader_b": "bilateral, lower zone (found blind)",
+    "adjudicator": "none (midline structure); cardiac silhouette occupies the middle-to-lower zones, bulk in the lower zone"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Metallic dental restorations / dental prosthesis (multiple crowns or bridge work)",
+      "location": "Oral cavity, projected over the maxilla/mandible at the top-centre of the film, above the cervical spine",
+      "zh": "金屬牙科修復物（假牙／牙冠）"
+    },
+    {
+      "type": "Check-mark (tick) technical/side marker, no L or R letter",
+      "location": "Image upper-right corner, i.e. over the patient's left shoulder region, outside the thorax",
+      "zh": "勾形技術／側別標記"
+    }
+  ],
+  "other_findings": [
+    "右側橫膈抬高（較左側高約2.5–3公分），右下肺野呈均質緻密影、上緣平滑呈弧形；以橫膈膨升或肝臟陰影為主要考量，肺底積液或右下葉病灶無法於單張正面片完全排除",
+    "胸主動脈迂曲、主動脈弓突出，上縱膈略增寬，符合年齡相關血管迂曲／擴張",
+    "氣管於胸廓入口／主動脈弓高度輕度偏右，可能為主動脈迂曲所致（胸骨後甲狀腺腫大未排除）",
+    "雙側肺門血管影稍顯著，呈血管性輪廓，未見明確肺門腫塊",
+    "雙肺底支氣管血管紋理略增加，吸氣不足使其更明顯；未見局部實質化、結節、腫塊或Kerley線",
+    "右側心膈角處圓形軟組織密度，考慮心包脂肪墊",
+    "吸氣不足、肺容積偏低",
+    "體型豐滿，雙側乳房及側胸壁／腋下軟組織陰影重疊於下肺野，勿誤判為肋膜病變",
+    "左橫膈下可見胃泡及結腸脾曲氣體，右上腹亦見腸氣；無游離氣體",
+    "骨質疏鬆併頸椎退化性變化；未見肋骨骨折或溶骨性病灶",
+    "未見氣胸；雙側肋膈角大致銳利，無明顯肋膜積液"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標記的心臟擴大於影像上清楚可見（心胸比約0.54，橫徑約18公分），三方讀片一致。片上僅有金屬假牙與技術標記，無心律調節器、中央靜脈導管、氣管內管、胸管或引流管等治療裝置，亦無術後變化，與病人首次因此問題就診的情境不衝突。需注意吸氣不足與體型豐滿會使心影略顯放大，判讀時應納入考量。",
+  "description_zh": "正面（PA）胸部X光，91歲女性，吸氣不足、橫膈位置偏高，無明顯旋轉，體型豐滿並有雙側乳房軟組織陰影重疊於下肺野，影像上緣可見金屬假牙，右上角有勾形標記。心臟陰影呈球形擴大，位於中下肺野、以下肺野為主，橫徑約18公分、心胸比約0.53–0.55，左心緣向左側胸壁延伸，符合心臟擴大（部分受吸氣不足影響）。主動脈弓突出、胸主動脈迂曲，上縱膈略增寬，氣管於胸廓入口處輕度偏右；雙側肺門血管影稍顯著，雙肺底支氣管血管紋理略增加，但未見局部實質化、結節或氣胸。右側橫膈較左側抬高約2.5–3公分，右下肺野呈均質緻密影且上緣平滑，考慮橫膈膨升或肝臟陰影，肺底積液未能完全排除；右側心膈角處軟組織密度考慮心包脂肪墊，左橫膈下可見胃泡及結腸氣體，無游離氣體。骨質疏鬆併頸椎退化性變化，未見肋骨骨折；全片未見任何管路、導線、節律器或引流裝置。",
+  "label_concern": ""
+}

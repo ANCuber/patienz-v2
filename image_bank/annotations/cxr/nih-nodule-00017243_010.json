@@ -1,0 +1,64 @@
+{
+  "id": "nih-nodule-00017243_010",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (recorded); frontal chest radiograph, conventional orientation confirmed by an \"L\" marker at the image upper right (patient's left)",
+  "technical_quality": "Adequate exposure/penetration; right lung well inflated. Mild rotation with asymmetric clavicles (right shoulder elevated). Lower costophrenic angles and upper abdomen partly cut off at the bottom of the film. Bulky soft tissues. Orthopedic hardware over the right clavicle/shoulder and a long looped catheter over the mediastinum partly obscure assessment. Left hemithorax largely obscured by a large opacity. Paediatric patient (14 y).",
+  "target": {
+    "finding": "pulmonary nodule (NIH label Nodule) - small rounded perihilar densities in the right mid zone, largest ~1-1.5 cm; end-on vessels not excluded",
+    "visible": "uncertain",
+    "laterality": "right",
+    "zone": "middle",
+    "size_cm": 1.5,
+    "confidence": 0.45
+  },
+  "laterality_sources": {
+    "bbox": "right",
+    "reader_a": "left",
+    "reader_b": "left",
+    "adjudicator": "right"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "Orthopedic fixation plate with multiple (5) screws (clavicle ORIF)",
+      "location": "Right clavicle, mid/distal third to acromioclavicular region (patient's right shoulder, image upper left)",
+      "zh": "右鎖骨鋼板及多枚螺絲固定"
+    },
+    {
+      "type": "Two long parallel screws / pins",
+      "location": "Right shoulder, lateral to the clavicle plate at the acromion / coracoid region",
+      "zh": "右肩兩枚長螺絲（鋼板外側，肩峰／喙突區）"
+    },
+    {
+      "type": "Small metallic fragments (surgical debris / small foreign bodies)",
+      "location": "Right upper chest wall, adjacent to the clavicle plate",
+      "zh": "右上胸壁鋼板旁小金屬碎片"
+    },
+    {
+      "type": "Long looped catheter with double-wall (tube) appearance - most consistent with a malpositioned / coiled left-sided central venous catheter (port/PICC/tunnelled type); intrapleural or mediastinal drain cannot be entirely excluded",
+      "location": "Enters at the left supraclavicular region, descends along the left mediastinal border through the left upper/mid zone, kinks and coils over the lower thoracic spine (~T8-T10, cardiac level, with a bright end-on dot), then ascends along the right paravertebral / mediastinal border and crosses the upper mediastinum (~T3-T4) back toward the left; tip position uncertain",
+      "zh": "左側中心靜脈導管（走向異常，於下胸椎前方打折盤繞，尖端位置不確定）"
+    },
+    {
+      "type": "Side marker 'L' with technologist initials",
+      "location": "Image upper right corner (patient's left shoulder)",
+      "zh": "左側標記「L」及技師縮寫"
+    }
+  ],
+  "other_findings": [
+    "左側中下肺野大範圍均質緻密影，遮蔽左心緣、左橫膈及左肋膈角，上緣呈弧形：最可能為大型縱膈／左側胸腔腫塊，或中至大量肋膜積液合併左下葉塌陷（兩者不能區分）",
+    "縱膈增寬，心縱膈影偏向右側（縱膈右移）",
+    "左肺僅上肺野充氣，左肺容積減少",
+    "左中下肺野交界處、導管外側約3公分邊界清楚之圓形透亮區：殘留充氣肺組織、囊狀／空洞性病灶或局限性氣胸皆不能排除",
+    "右肺門突出，右肺門淋巴結腫大不能排除",
+    "右肺代償性過度膨脹，相對透亮",
+    "右鎖骨骨折術後鋼板螺絲固定（骨癒合狀態難以評估）",
+    "右側外側未見明確肋膜線或無肺紋理區，未證實NLP標籤之「氣胸」；右外側細線可能為皮膚皺褶",
+    "左橫膈下可見胃泡；下方肋膈角及上腹部部分被切掉"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標註之右中肺野「結節」僅為右肺門旁數個約0.5–1.5公分的小圓形密度影，血管端面像不能排除，可見度不確定；且整張片子由左側大範圍胸腔緻密影（腫塊或大量積液）、縱膈右移、盤繞之左側中心靜脈導管及右鎖骨骨折固定器材所主導，顯示病人已在治療中且有其他重大病變，與「初次以肺結節就診」之情境不符，不適合作為首次就診影像。",
+  "description_zh": "正面胸部X光（記錄為PA），右鎖骨見鋼板及多枚螺絲固定，外側另有兩枚長螺絲及鋼板旁小金屬碎片；並見一條細長雙壁導管自左頸根部進入，沿左側縱膈緣下行，於下胸椎（約T8–T10、心臟高度）前方打折盤繞並見端面亮點，再沿右側脊椎旁上行、於上縱膈（約T3–T4）跨越中線回到左側，走向不典型，最像位置異常／盤繞之左側中心靜脈導管，肋膜或縱膈引流管不能完全排除。左側中下肺野呈大範圍均質緻密影，遮蔽左心緣、左橫膈與左肋膈角，上緣呈弧形，縱膈增寬且心縱膈影向右偏移，最可能為大型縱膈／左側胸腔腫塊或中至大量肋膜積液合併下葉塌陷；左肺僅上肺野充氣，於左中下肺野交界、導管外側見一約3公分邊界清楚之圓形透亮區（殘留充氣肺、囊狀病灶或局限性氣胸皆不能排除）。右肺充氣良好、代償性膨脹，右肺門突出，右中肺野肺門旁見數個約0.5–1.5公分的小圓形密度影，最大者約1.5公分，為標註之右側中肺野結節，惟血管端面像不能排除；右側外側未見明確氣胸，未見胸管或肋膜引流管。",
+  "label_concern": "標註為「右中肺野結節」，影像上僅見右肺門旁數個小圓形密度影（約0.5–1.5公分），血管端面像不能排除，可見度不確定；本片主要病變為左側大範圍胸腔緻密影伴縱膈右移，並有盤繞之中心靜脈導管，結節並非本片之主要或典型發現。NLP標籤之「氣胸」（右側）未能於影像上證實。"
+}

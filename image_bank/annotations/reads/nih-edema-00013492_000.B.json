@@ -1,0 +1,29 @@
+{
+ "view": "AP frontal (pediatric, arms abducted); L marker on image right confirms conventional orientation",
+ "technical_quality": "Adequate: ~8 posterior ribs visible above the right hemidiaphragm, minimal rotation (medial clavicles roughly symmetric about the spinous processes), adequate penetration with vertebral bodies visible through the mediastinum. Wide field including skull base, cervical spine, both humeri and upper abdomen; scapulae project partly over the lateral upper lung fields. No motion blur.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "multiple",
+ "size_cm": 7,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Increased perihilar interstitial / bronchovascular markings with peribronchial cuffing, bilateral but clearly right-predominant",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Patchy hazy (interstitial-type) opacity extending from the right hilum into the right middle and lower zone medially, partially blurring the lower right heart border; no air bronchogram or lobar consolidation; right costophrenic angle preserved",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal for age on AP projection (estimated CTR ~0.52); upper mediastinum broad, consistent with normal thymus rather than true mediastinal widening - borderline, probably physiological",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "小兒前後位（AP）胸部X光，吸氣尚可、無明顯旋轉，影像中未見任何導管、引流管、起搏器或外來物。雙側肺門周圍支氣管血管紋理增加並有支氣管周圍增厚，以右側為著；右肺門至右中下肺野內側見片狀模糊間質型浸潤影，右心緣下段部分模糊，未見明確空氣支氣管徵或大葉性實變，左肺相對清晰。雙側肋膈角銳利，無肋膜積液或氣胸；心影大小約在此年齡AP攝影之正常上限，上縱膈增寬與正常胸腺相符，氣管居中，橫膈輪廓正常，骨骼與軟組織無異常。"
+}

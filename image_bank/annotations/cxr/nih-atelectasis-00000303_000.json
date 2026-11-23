@@ -1,0 +1,61 @@
+{
+ "id": "nih-atelectasis-00000303_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate: PA upright, near-full inspiration (~9 posterior ribs), minimal rotation (medial clavicles roughly symmetric about the spinous processes), adequate penetration (thoracic spine visible through the cardiac shadow). Scapulae partially overlap the upper lateral lung fields; both costophrenic angles and apices included. External 'L' marker over the patient's left shoulder confirms conventional orientation (image-left = patient-right).",
+ "target": {
+  "finding": "atelectasis",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "lower",
+  "size_cm": 6,
+  "confidence": 0.65
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Median sternotomy wires (approx. 6-7 twisted cerclage wires)",
+   "location": "Midline over the sternum, from the manubrium to the lower sternal body",
+   "zh": "正中胸骨切開鋼絲（約6-7條）"
+  },
+  {
+   "type": "Prosthetic mitral valve / annuloplasty ring (D-shaped metallic ring, ~2 cm)",
+   "location": "Projecting just left of the spine over the lower third of the cardiac silhouette (mitral position)",
+   "zh": "二尖瓣位置人工瓣膜／瓣環（D形金屬環）"
+  },
+  {
+   "type": "Small metallic surgical clips / wire fragments",
+   "location": "Midline adjacent to the lower sternal wires, at the level of the lower heart",
+   "zh": "下段胸骨旁小型金屬手術夾／鋼絲碎片"
+  },
+  {
+   "type": "External 'L' side marker",
+   "location": "Image upper-right corner over the patient's left shoulder soft tissues (external artifact, not in the patient)",
+   "zh": "外置左側（L）標記"
+  }
+ ],
+ "other_findings": [
+  "心臟擴大（心胸比約0.57），左心緣平直突出，疑左心房擴大（二尖瓣術後）",
+  "主動脈弓突出、迂曲擴張並疑有管壁鈣化，上縱膈因此略增寬（老年主動脈延展）",
+  "右側橫膈上抬（較左側高約3-4公分），符合右側體積減少；肺底積液不能完全排除",
+  "右肺門緻密突出，與右旁心緣模糊影相連（肺門擁擠／體積減少）",
+  "兩側下肺野支氣管血管紋理粗糙增加（慢性支氣管炎變化或輕度間質／靜脈鬱血）",
+  "左下肺野近左心緣條狀／斑片狀影（次節段性肺塌陷或纖維化疤痕）",
+  "右中肺野近肺門約5毫米小結節狀密度，最可能為血管端視影",
+  "左橫膈下大型胃泡伴氣液面（胃脹氣，偶見）",
+  "雙側肩關節及胸椎退化性變化",
+  "正中胸骨切開及人工二尖瓣術後狀態（陳舊，無急性術後徵象）",
+  "未見肋膜積液、氣胸或含空氣支氣管徵之實質化；未見胸管或引流管"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標的病灶可見：右中下肺野沿右心緣霧狀密度增加、右心緣部分模糊、右肺門擁擠且右橫膈上抬，符合右中葉／右下葉基底部肺塌陷伴體積減少；讀片者B在未告知標籤下獨立發現同側同一病灶。片上無胸管、引流管或其他針對肺塌陷的治療裝置，適合作為肺塌陷初次表現之影像。惟片上有正中胸骨鋼絲、人工二尖瓣及金屬夾，屬陳舊心臟手術後狀態，病例病史需納入既往二尖瓣手術與心臟擴大，才能與影像一致；病灶明顯度中等（讀片者A判定不確定），信心度約0.65。",
+ "description_zh": "後前位直立胸部X光，吸氣量尚可、無明顯旋轉，可見正中胸骨切開鋼絲約6-7條及二尖瓣位置之D形人工瓣膜／瓣環金屬影，下段胸骨旁另有小型金屬夾，顯示曾接受心臟手術；未見胸管或引流管。右側中下肺野沿右心緣可見約6公分之楔形／帶狀霧狀密度增加，右心緣部分模糊，右肺門緻密擁擠，右側橫膈上抬約3-4公分，符合右中葉（或合併右下葉基底部）肺塌陷伴體積減少。心臟擴大（心胸比約0.57），左心緣平直突出疑左心房擴大，主動脈弓迂曲突出並疑有鈣化致上縱膈略增寬。兩側下肺野支氣管血管紋理粗糙增加，左下肺野近心緣亦見條狀影，右中肺野近肺門有約5毫米小結節狀密度（最可能為血管端視影）；兩側肋膜角銳利，未見氣胸或明顯肋膜積液。左橫膈下大型胃泡伴氣液面，雙肩及胸椎退化性變化為偶見。",
+ "label_concern": ""
+}

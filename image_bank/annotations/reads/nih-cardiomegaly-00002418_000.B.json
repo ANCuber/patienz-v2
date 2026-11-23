@@ -1,0 +1,41 @@
+{
+ "view": "Frontal chest radiograph, AP projection (paediatric; mandible/teeth and both shoulders included, arms slightly abducted), erect or semi-erect; L marker at image right confirms conventional orientation",
+ "technical_quality": "Adequate but not ideal: mild rotation to the patient's left (asymmetric medial clavicular ends relative to the spinous processes), adequate inspiration (about 6-7 anterior ribs), reasonable penetration (thoracic spine visible through the heart). Both scapulae project over the lateral upper lung fields and the chin/mandible overlaps the upper neck/thoracic inlet. Costophrenic angles and both lung apices included. AP projection and rotation may exaggerate the cardiac silhouette.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 19,
+ "devices": [
+  {
+   "type": "Earring (metallic external artifact)",
+   "location": "Right ear lobe, projected at the upper edge of the film lateral to the right mandible"
+  },
+  {
+   "type": "Earring (metallic external artifact)",
+   "location": "Left ear lobe, projected at the upper edge of the film lateral to the left mandible"
+  },
+  {
+   "type": "Round radiopaque disc (external positioning/side marker or coin-like object), adjacent to the L/DG lead marker",
+   "location": "Outside the patient, upper left field of view (image upper right), above the left shoulder"
+  },
+  {
+   "type": "Small round radiopaque object with central lucency (clothing snap or ECG electrode)",
+   "location": "Projected over the left shoulder / lateral left clavicle-acromion region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Cardiomegaly: globular enlargement of the cardiac silhouette, cardiothoracic ratio approximately 0.55 (transverse cardiac diameter about 350 of 645 px inner thoracic width), above the expected upper limit for a 7-year-old; predominantly left-sided (apex) prominence, no widening of the superior mediastinum. Caveat: AP projection and mild leftward rotation magnify the heart",
+   "laterality": "midline/central, projects into both hemithoraces, predominantly left",
+   "zone": "lower (extends into middle)"
+  },
+  {
+   "finding": "Mild prominence of perihilar bronchovascular markings (right slightly more than left) without Kerley lines, interstitial edema, or alveolar opacity - equivocal, could be within normal paediatric range",
+   "laterality": "bilateral, right > left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "前後位(AP)胸部X光，病人輕度向左旋轉，吸氣深度尚可，雙側肩胛骨及下頜部分重疊於胸腔上方。心影呈球狀擴大，心胸比約0.55，超過此年齡層之正常上限，顯示心臟擴大（惟AP投影及旋轉會使心影放大，需結合臨床判讀）；上縱隔未見增寬，氣管居中。雙肺野大致清晰，肺門血管紋理略顯，未見實質浸潤、肋膜積液或氣胸，雙側肋膈角銳利，橫膈輪廓完整。骨骼結構無明顯異常；體外異物包括雙耳耳環、左上視野外側之圓形金屬標記物及左肩區小圓形體外物，未見胸管、引流管或其他治療性裝置。"
+}

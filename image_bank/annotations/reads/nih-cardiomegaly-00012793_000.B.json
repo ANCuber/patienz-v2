@@ -1,0 +1,39 @@
+{
+ "view": "Frontal chest radiograph, probably PA (scapulae partially projected over the lateral upper lung fields, so AP or suboptimal arm positioning cannot be excluded); no unambiguous L/R marker, conventional orientation assumed (a radiographic marker sits in the image upper-right corner).",
+ "technical_quality": "Adequate penetration (thoracic spine visible through the cardiac shadow). Minimal rotation (medial clavicles roughly symmetric about the spinous processes). Shallow inspiration: hemidiaphragms elevated (right dome at about the 8th posterior rib), giving low lung volumes that crowd the perihilar vessels and can exaggerate cardiac size. Apices and both costophrenic angles included. Scapulae partially overlying the lateral upper zones. Dense upper abdomen / large body habitus.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 17,
+ "devices": [
+  {
+   "type": "External radiographic technique/side marker (reads like 'M2' with an angle symbol); no line, tube, clip, pacemaker or drain identified",
+   "location": "Image upper-right corner, over the patient's left shoulder region, outside the lung field"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Borderline-to-mildly enlarged cardiac silhouette: transverse cardiac diameter about 17 cm against a ~35 cm internal thoracic diameter (CTR approx 0.48-0.50); probably accentuated by the shallow inspiration",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, somewhat unfolded aortic knob (tortuous thoracic aorta)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Low lung volumes with bilaterally elevated hemidiaphragms (shallow inspiratory effort)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent perihilar bronchovascular markings bilaterally, most likely vascular crowding from low lung volumes; no Kerley lines, no frank interstitial or alveolar edema",
+   "laterality": "bilateral",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面X光片，吸氣不足、雙側橫膈上抬，肩胛骨部分重疊於上肺野外側；未見任何管路、導線、節律器或引流管，僅影像右上角有外部標記。心影橫徑約17 cm，心胸比約0.48–0.50，呈邊緣性至輕度擴大，部分可能因吸氣不足而放大；主動脈弓突出、略呈迂曲。雙側肺門周圍支氣管血管紋理增加，考慮為低肺容積擁擠所致，未見實質化、結節、肋膜積液或氣胸，雙側肋膈角清晰；左橫膈下可見正常胃泡，骨骼結構未見明顯異常。"
+}

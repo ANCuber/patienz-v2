@@ -1,0 +1,39 @@
+{
+ "view": "Frontal chest radiograph (likely PA, upright); 'L' side marker at the upper right of the image confirms conventional orientation",
+ "technical_quality": "Adequate: ~9-10 posterior ribs visible (good inspiration), minimal rotation (clavicles roughly equidistant from spinous processes), adequate penetration (thoracic spine visible through the cardiac shadow). Scapulae partly overlap the upper lateral lung fields; large bilateral breast shadows overlie both lower zones and reduce conspicuity at the bases. No cropping.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 4.5,
+ "devices": [
+  {
+   "type": "External side marker 'L' with technologist initials 'DG' (no lines, tubes, clips, pacemaker or jewellery)",
+   "location": "Upper right corner of the image, i.e. patient's left, outside the chest"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Well-circumscribed round pulmonary nodule, ~2.5 cm, lateral to the right hilum (projected over anterior 4th rib)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Dense, rounded right hilum ~3.5 cm containing multiple punctate calcifications - calcified hilar lymph nodes / granulomatous change",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Well-defined homogeneous oval mass-like opacity ~4.5 x 3 cm in the peripheral left lower zone at the anterior 5th rib level (pulmonary nodule/mass; nipple or cutaneous shadow to be excluded with markers/CT)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left hemidiaphragm ~1 cm higher than the right, with a large gas- and food-debris-containing gastric shadow directly beneath it (distended stomach; diaphragmatic hernia / intrathoracic stomach cannot be excluded on frontal view alone - no definite retrocardiac air-fluid level)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光（疑為PA直立位），吸氣量足夠、無明顯旋轉，雙側大乳房陰影重疊於下肺野；未見任何導管、引流管、心律調節器或金屬夾，僅影像右上角可見 L 側別標記。右中肺野外側可見一約2.5公分邊緣清楚之圓形結節，右肺門呈約3.5公分含多發點狀鈣化之緻密影（鈣化肺門淋巴結）；左下肺野外側另見一約4.5×3公分邊緣清楚之橢圓形腫塊狀陰影，需與乳頭或皮膚陰影鑑別。心臟大小正常、縱膈不寬、氣管居中，雙側肋膈角銳利，無肋膜積液或氣胸；左側橫膈略高於右側，其下方為含氣及食物殘渣之擴張胃泡，未見明確心後氣液面，建議加照側面片或CT進一步評估；骨骼及軟組織無其他異常。"
+}

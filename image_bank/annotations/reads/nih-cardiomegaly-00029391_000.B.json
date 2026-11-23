@@ -1,0 +1,73 @@
+{
+ "view": "Frontal chest radiograph (likely AP: scapulae project over the lateral lung fields; no L/R marker, only a check-mark technical marker in the image upper-right corner; conventional orientation assumed)",
+ "technical_quality": "Adequate but suboptimal: slight-to-no rotation (medial clavicles roughly symmetric about the spinous processes); inspiration shallow (~5-6 anterior ribs above the right hemidiaphragm), which accentuates heart size and basal markings; penetration adequate (thoracic spine faintly visible through the cardiac shadow); both lungs, costophrenic angles and upper abdomen included; large body habitus with bilateral breast shadows and lateral soft-tissue/axillary folds attenuating the lower zones; retrocardiac area limited.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 18,
+ "devices": [
+  {
+   "type": "Metallic dental restorations / dental prosthesis (multiple crowns or fillings)",
+   "location": "Projected over the maxilla/mandible at the top of the film, midline"
+  },
+  {
+   "type": "Check-mark (tick) technical/side marker, no L or R letter",
+   "location": "Image upper-right corner, i.e. over the patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Cardiomegaly: globular enlarged cardiac silhouette, transverse cardiac diameter ~18 cm on the assumed 35 cm thorax, CTR approx 0.53-0.55 (may be partly exaggerated by AP projection and shallow inspiration)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Unfolded/tortuous thoracic aorta with a prominent aortic knob; superior mediastinum mildly widened, most consistent with age-related vascular ectasia/tortuosity",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Trachea mildly deviated to the right at the thoracic inlet/aortic arch level, likely secondary to the tortuous aorta (retrosternal thyroid enlargement not excluded)",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Bilateral hilar prominence, vascular in configuration; no discrete hilar mass",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly increased bronchovascular/interstitial markings at both lung bases, likely chronic/age-related and accentuated by low volumes; no focal consolidation, mass, nodule or Kerley lines identified",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Rounded soft-tissue density at the right cardiophrenic angle, most consistent with a pericardial fat pad",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Low lung volumes (shallow inspiration); right hemidiaphragm slightly higher than left (~2.5-3 cm), at the upper limit of normal",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Diffuse osteopenia and degenerative changes of the visible cervical spine; no rib fracture or lytic lesion seen",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Large body habitus with bilateral breast shadows and lateral chest-wall/axillary soft-tissue folds overlying the lower zones (not to be mistaken for pleural disease)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Incidental: gastric fundal gas and colonic (splenic flexure) gas beneath the left hemidiaphragm; no free subdiaphragmatic air",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "正面胸部X光（疑為AP投照），吸氣略不足、無明顯旋轉，體型豐滿並有雙側乳房陰影重疊於下肺野。心影擴大呈球形（心胸比約0.53–0.55），主動脈弓突出、胸主動脈迂曲，上縱膈因血管迂曲而稍寬，氣管於胸廓入口處輕度偏右；雙側肺門血管影稍顯著，雙肺底支氣管血管紋理略增加，但未見明確實質化、腫塊、結節或氣胸。雙側肋膈角銳利，未見明顯肋膜積液；右側心膈角處軟組織密度考慮為心包脂肪墊，左橫膈下可見胃泡及結腸脾曲氣體，無游離氣體。骨質疏鬆併頸椎退化性變化，未見肋骨骨折；上方可見金屬牙科修復物，無任何管路、導線、節律器或引流裝置。"
+}

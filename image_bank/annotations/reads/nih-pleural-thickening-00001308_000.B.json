@@ -1,0 +1,22 @@
+{
+ "view": "Frontal chest radiograph, likely PA (scapulae only partially cleared from the upper lateral lung fields); L side marker present on the image right, so conventional orientation confirmed",
+ "technical_quality": "Adequate. Good inspiration (about 9 posterior ribs above the right hemidiaphragm), no significant rotation (medial clavicular ends roughly symmetric about the spinous processes), adequate penetration (thoracic vertebral bodies visible through the heart). Post-processed image with dark collimation borders and blurred film periphery; no motion blur. Lung apices and costophrenic angles fully included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Lead side marker 'L' with small lead initials beneath it (external)",
+   "location": "Upper corner of film on the patient's left, projected over left shoulder soft tissue"
+  },
+  {
+   "type": "Round radiopaque disc about 1.5 cm (external marker disc or button/snap), not intrathoracic",
+   "location": "Patient's left shoulder/axillary soft tissue, just below the L marker and lateral to the proximal left humerus, outside the rib cage"
+  }
+ ],
+ "abnormalities": [],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "正面胸部X光（疑為PA），吸氣深度足夠、無明顯旋轉、穿透度適當；影像右側（病人左側）肩部見「L」側別鉛字標記及其下方一約1.5公分之圓形外在不透光物（外部標記片或鈕扣），未見胸管、引流管或其他置入裝置。雙側肺野清晰，上、中、下肺區均未見實質浸潤、結節、肺塌陷或明確肋膜增厚，雙側肺尖及肋膈角銳利，無肋膜積液或氣胸。心臟大小與縱膈輪廓正常，氣管居中，雙側肺門形態正常；骨骼結構完整，雙側肱骨近端生長板尚未閉合（與12歲年齡相符），左橫膈下可見胃泡。整體為正常範圍之胸部X光。"
+}

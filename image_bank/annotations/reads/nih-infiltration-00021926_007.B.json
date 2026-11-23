@@ -1,0 +1,29 @@
+{
+ "view": "Frontal chest radiograph, probably AP (scapulae partially projected over the upper lateral lung fields, arms abducted); a side marker is present in the upper right corner of the image (patient's left), consistent with conventional orientation.",
+ "technical_quality": "Adequate. Inspiration adequate (about 8-9 posterior ribs above the diaphragm), minimal rotation (spinous processes roughly midway between the clavicular heads), penetration adequate (vertebral bodies visible through the cardiac shadow). Scapulae overlap the upper lateral lung fields bilaterally. Small lucent focus in the lower midline below the diaphragm corresponds to the umbilicus (skin), not a device. Pediatric skeleton (open proximal humeral physes).",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 5,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Patchy hazy perihilar opacity / infiltrate-like increased density extending from the left hilum into the left upper-to-mid zone, without a discrete mass, cavitation or air bronchogram; no volume loss",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Bilateral prominent perihilar bronchovascular / peribronchial markings (left more than right), suggesting peribronchial thickening",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild streaky perihilar markings extending toward the right mid/lower zone; right lung otherwise clear",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光片（疑為AP投影，兩側肩胛骨部分重疊於上外側肺野），吸氣深度尚可、無明顯旋轉，未見任何導管、引流管、心律調節器或體外裝置，僅右上角見側別標記。兩側肺門周圍支氣管血管紋理增粗，以左側較明顯，左肺門旁至左上－中肺野可見片狀模糊浸潤影，未見明顯實質性團塊、空洞或體積減少；右肺大致清晰，僅肺門旁紋理略增。兩側肋膈角銳利，無肋膜積液或氣胸，心臟大小與縱膈輪廓在小兒範圍內正常，橫膈輪廓平滑，左橫膈下可見胃泡及含糞便之腸氣。骨骼結構完整，肱骨近端生長板為年齡相符之正常表現，無骨折，軟組織無異常。"
+}

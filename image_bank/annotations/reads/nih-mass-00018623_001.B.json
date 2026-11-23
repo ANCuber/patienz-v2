@@ -1,0 +1,42 @@
+{
+ "view": "Frontal chest radiograph (PA/erect), R marker present at the image upper-left confirming conventional orientation",
+ "technical_quality": "Adequate. Minimal rotation (spinous processes approximately midway between clavicular heads), adequate inspiration (~9-10 posterior ribs), adequate penetration with vertebral bodies faintly visible behind the heart. Scapulae partially project over the upper lateral lung fields. Whole thorax and both costophrenic angles included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 2.5,
+ "devices": [
+  {
+   "type": "Subcutaneous implanted venous access port (chest port / Port-A-Cath) reservoir",
+   "location": "Right upper anterior chest wall, overlying the right 2nd-3rd anterior rib interspace"
+  },
+  {
+   "type": "Port catheter (tunnelled central venous catheter)",
+   "location": "Courses from the right chest wall port cranially over the right clavicle into the right neck (right internal jugular approach), then descends along the right paratracheal mediastinum; tip projects over the lower SVC / cavoatrial junction"
+  },
+  {
+   "type": "External marker / cassette label",
+   "location": "Image upper-left: 'R' side marker with small alphanumeric label"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Well-defined rounded nodular opacity approximately 2.5 cm, lateral to the left hilum, suspicious for a pulmonary nodule/mass",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Ill-defined hazy increased opacity in the right perihilar region, suggesting right hilar prominence / possible hilar mass or adenopathy",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Left hilum appears mildly prominent / dense",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "胸部正面X光片,右側前胸壁可見皮下植入式靜脈注射座(Port-A-Cath),導管經右頸靜脈路徑下行,尖端位於下腔上靜脈/心房交界處。左肺中葉區(左肺門外側)可見一約2.5公分邊界清楚之圓形結節狀陰影,疑為肺結節或腫塊;右肺門周圍亦見模糊之密度增加,不排除右肺門腫大或淋巴結病變,左肺門亦略顯突出。心臟大小正常,縱膈無明顯偏移或增寬,雙側肋膈角清晰,無氣胸或肋膜積液,骨骼及軟組織無明顯異常。"
+}

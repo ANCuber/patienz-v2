@@ -1,0 +1,73 @@
+{
+ "view": "Frontal chest radiograph, portable AP projection (likely supine/semi-erect); L marker at image upper right, conventional orientation confirmed by cardiac apex and aortic knob on image right",
+ "technical_quality": "Adequate but limited: patient rotated (asymmetric clavicles, right hemithorax appears larger), mediastinum slightly under-penetrated, inspiration adequate (~9 posterior ribs). Large body habitus with bilateral breast shadows and numerous overlying external cables/tubing degrade assessment of both lower zones and the retrocardiac region.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 9,
+ "devices": [
+  {
+   "type": "ECG electrode with lead cable",
+   "location": "patient's right lateral chest wall, lower zone level (image left)"
+  },
+  {
+   "type": "ECG electrode with lead cable",
+   "location": "midline over lower sternum / cardiac silhouette"
+  },
+  {
+   "type": "ECG electrode with lead cable",
+   "location": "patient's left anterior chest over the heart, mid-to-lower zone (image right)"
+  },
+  {
+   "type": "External cable (ECG lead)",
+   "location": "long diagonal cable from right upper chest/neck region running infero-laterally across the right hemithorax and off the image at lower left, passing over the right lateral electrode"
+  },
+  {
+   "type": "External tubing/cable loop (oxygen tubing or monitoring cable, not intracorporeal)",
+   "location": "large circular loop projected over the left lower hemithorax and cardiac apex"
+  },
+  {
+   "type": "External tubing/cables",
+   "location": "multiple parallel curvilinear lines projected over the mediastinum and upper abdomen, extending below the diaphragm; no definite nasogastric tube course identified"
+  },
+  {
+   "type": "Side marker 'L'",
+   "location": "image upper right corner (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy airspace opacity / consolidation with partial obscuration of the right hemidiaphragm, suggestive of right lower lobe pneumonia (differential: atelectasis, effusion-related)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Blunting of the right costophrenic angle, possible small right pleural effusion",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Enlarged cardiac silhouette (CTR > 0.5) on AP projection; cardiomegaly possible but partly projectional",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Widened upper mediastinum, likely due to AP projection, rotation and body habitus rather than true pathology",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Bilateral large breast shadows and obesity-related soft tissue increasing lower-zone density bilaterally (technical/soft tissue, not lung pathology)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Rotation to one side with asymmetric clavicular heads (technical)",
+   "laterality": "none",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "可攜式前後位胸部X光，病人略有旋轉，體型肥胖且雙側乳房陰影重疊於下肺野。胸前可見三個心電圖電極及多條外部導線／管線投影於胸腔與上腹部（含左下肺野一大型環狀迴圈），未見明確之氣管內管、中心靜脈導管、鼻胃管或胸管。右下肺野可見模糊之肺泡浸潤／實變，右側橫膈部分模糊、右肋膈角略鈍，疑併少量右側肋膜積液；左肺相對清晰。心影於AP投影下呈擴大，上縱膈增寬可能為投影及旋轉所致；骨骼未見明顯異常。"
+}

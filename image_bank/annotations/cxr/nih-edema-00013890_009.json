@@ -1,0 +1,43 @@
+{
+ "id": "nih-edema-00013890_009",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (frontal, erect); conventional orientation — 'L' side marker at image upper right over the patient's left shoulder, cardiac apex on image right; wide field of view including upper abdomen and lumbar spine",
+ "technical_quality": "Adequate inspiration (about 9-10 posterior ribs), adequate penetration (vertebral bodies visible through the cardiac shadow), minimal rotation (spinous processes roughly midway between the clavicular heads). Scapulae incompletely rotated and project over the lateral upper/mid lung fields; bilateral breast shadows overlie the lower zones. Slightly soft image, no motion blur. Whole thorax and costophrenic angles included.",
+ "target": {
+  "finding": "pulmonary edema",
+  "visible": "uncertain",
+  "laterality": "bilateral",
+  "zone": "middle",
+  "size_cm": -1.0,
+  "confidence": 0.3
+ },
+ "laterality_sources": {
+  "bbox": null,
+  "reader_a": "bilateral",
+  "reader_b": "not found (blind reader called the film essentially normal; the 'left lower' entry referred to incidental bowel gas, not edema)",
+  "adjudicator": "bilateral"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' (laterality artifact, not a medical device)",
+   "location": "Image upper right = over the patient's left shoulder / acromion, lateral to the left humeral head",
+   "zh": "「L」側別標記（外部標記，非醫療裝置）"
+  }
+ ],
+ "other_findings": [
+  "雙側肺門血管紋理輕微增粗、邊緣略模糊，以右肺門較明顯（較可能為血管影／肺動脈正面投影而非腫塊）；周邊肺野清晰，未見 Kerley B 線、肺泡性浸潤或實質化",
+  "左側橫膈下見大型含氣之結腸脾曲／胃影，內容物呈斑駁狀（糞便或食物殘渣，約14公分），氣體侷限於腸壁內，無膈下游離氣體，屬偶然發現",
+  "右側橫膈略高於左側約2公分，圓頂平滑，屬正常上限；無肺底浸潤或肺下積液",
+  "心臟大小正常，縱膈未增寬，氣管居中，主動脈弓正常",
+  "兩側肋膈角銳利，無肋膜積液或氣胸",
+  "雙側乳影重疊於下肺野（軟組織重疊，非肺部病變）",
+  "肩胛骨部分重疊於兩側外側上肺野（擺位因素）",
+  "骨骼結構完整，未見肋骨或鎖骨骨折，脊椎排列正常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "無任何治療裝置，但標籤所指之肺水腫在此片上證據薄弱：僅雙側肺門血管輕微增粗，無 Kerley B 線、肋膜積液或心臟擴大，盲讀者判為大致正常之胸部X光；影像無法明確呈現肺水腫，不適合作為肺水腫初次就診之教學影像。",
+ "description_zh": "胸部正面（PA）直立X光，吸氣充足（約9-10後肋），穿透度適中，旋轉輕微，肩胛骨部分重疊於兩側外上肺野，雙側乳影重疊於下肺野；影像右上角（病人左肩處）見一「L」側別標記，未見任何胸管、導管、導線、節律器或其他置入裝置。心臟大小正常，縱膈未增寬，氣管居中，主動脈弓正常，兩側肋膈角銳利，無肋膜積液或氣胸。雙側中肺野（肺門周圍）血管紋理輕微增粗、周圍略呈模糊，以右肺門較明顯（較可能為血管影而非腫塊），但周邊肺野清晰，未見 Kerley B 線、肺泡性浸潤或實質化，肺水腫徵象僅屬輕微且不確定，無明確可量測之範圍。右側橫膈略高於左側約2公分，屬正常上限；左側橫膈下見大型含氣之結腸脾曲／胃影，內容物呈斑駁狀（約14公分），無膈下游離氣體，屬偶然發現。骨骼結構完整，未見骨折。",
+ "label_concern": "標籤「肺水腫」（NLP 探勘）於此片證據薄弱：36歲女性，心臟大小正常，僅雙側肺門血管輕微增粗，無 Kerley B 線、肋膜積液或肺泡性浸潤；盲讀者判為大致正常之胸部X光，疑為標籤誤判或極輕微／早期變化。"
+}

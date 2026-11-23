@@ -1,0 +1,43 @@
+{
+ "id": "nih-fibrosis-00000613_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate erect PA film. 'L' side marker and 'H8' film label in the upper-right image corner (patient's left) confirm conventional orientation. No significant rotation, trachea midline. Lung fields well/slightly over-penetrated while the lower thorax, retrocardiac region and upper abdomen are underexposed, limiting subdiaphragmatic and retrocardiac detail. Inspiration acceptable but right lung volume is reduced by an elevated right hemidiaphragm. Scapulae partially overlap the upper lateral lung fields. Large body habitus.",
+ "target": {
+  "finding": "pulmonary fibrosis",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "lower",
+  "size_cm": 6,
+  "confidence": 0.6
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' with film label 'H8' (annotation artifact, not a medical device)",
+   "location": "upper corner of the image on the patient's left, over the left shoulder soft tissue, outside the thorax",
+   "zh": "外部「L」側別標記與「H8」片標（影像標註，非醫療裝置）"
+  }
+ ],
+ "other_findings": [
+  "右側橫膈輪廓平滑但較左側明顯抬高約2–3公分，右肺容積相對減少；可能為橫膈膨出／膈神經無力，或伴隨右下肺纖維化之容積減少，未見橫膈下游離氣體",
+  "右上肺野內側、第一前肋下方（鎖骨下）可見一約0.5公分邊緣清晰之高密度小結節，最符合鈣化肉芽腫",
+  "兩側肺門略顯突出且密度增加（左側較明顯），伴支氣管壁增厚（左肺門可見端面厚壁支氣管），疑舊有肉芽腫性病變或慢性氣道變化",
+  "左下肺野外側輕度網狀及支氣管血管紋理增加，無實質化或空氣支氣管徵",
+  "兩側上肺野相對透亮、周邊血管稀疏，疑肺氣腫變化（低信心）",
+  "主動脈弓輕度突出／展開；心臟大小在正常範圍（CTR約0.35–0.4），縱隔未增寬",
+  "兩側肋膈角銳利，未見肋膜積液、氣胸或腫塊；骨骼未見骨折或破壞性病灶",
+  "技術性：肩胛骨部分重疊於兩側上肺野外側；下胸部、心後及上腹部曝光不足"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標的病灶（右下肺野內側自肺門沿右心緣至心橫膈角之粗糙線狀／網狀纖維化陰影，併右側橫膈抬高之容積減少）在片上可見；影像上無胸管、引流管、心律調節器或任何治療裝置，亦無手術後改變，其餘僅為鈣化肉芽腫等陳舊性變化，與病人首次因呼吸道症狀就診之情境不衝突。",
+ "description_zh": "PA 立位胸部X光，影像右上角（病人左側）可見「L」側別標記及「H8」片標，方向為常規；肺野穿透稍過度而下胸部、心後及上腹部曝光不足，肩胛骨部分重疊於兩側上肺野外側，未見任何導管、引流管、心律調節器或植入裝置。右下肺野內側自右肺門沿右心緣向下延伸至右心橫膈角，可見粗糙的線狀／網狀陰影併少數小結節狀密度，範圍約5×8公分（最大徑約6公分），符合右下肺局部纖維化／瘢痕變化；右側橫膈輪廓平滑但較左側明顯抬高約2–3公分，右肺容積相對減少。右上肺野內側第一前肋下方另見一約0.5公分之高密度小結節，最符合鈣化肉芽腫；兩側肺門略顯突出且密度增加（左側較明顯），伴支氣管壁增厚，左下肺野外側亦有輕度網狀紋理增加，兩側上肺野相對透亮。心臟大小正常，主動脈弓輕度突出，縱隔未增寬，氣管居中，兩側肋膈角銳利，未見肋膜積液、氣胸或實質化，骨骼未見骨折或破壞性病灶。",
+ "label_concern": ""
+}

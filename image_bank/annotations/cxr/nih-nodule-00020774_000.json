@@ -1,0 +1,40 @@
+{
+  "id": "nih-nodule-00020774_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate: full inspiration (about 9-10 posterior ribs), no significant rotation, appropriate penetration; scapulae partially project over the lateral upper lung fields; apices and costophrenic angles included; L side marker at image upper right confirms conventional orientation.",
+  "target": {
+    "finding": "pulmonary nodule",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "middle",
+    "size_cm": 1.5,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "right",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "external side marker (L) with technologist label 'DG' - radiographic marker only, not a medical device; no line, tube, clip, pacemaker or implant present",
+      "location": "image upper right corner, over the patient's left shoulder region, outside the thorax",
+      "zh": "左側「L」標記（外部放射標示，非醫療裝置）"
+    }
+  ],
+  "other_findings": [
+    "右下肺野內側、橫膈上方一約0.5公分之緻密、邊緣清楚小結節，疑為鈣化肉芽腫",
+    "右下肺門旁另有數個小結節狀密度，多為血管或淋巴結影",
+    "右肺門較左側飽滿，需考慮右肺門淋巴結腫大（可能為鈣化淋巴結）",
+    "主動脈弓突出，符合主動脈迂曲／延長（unfolded aorta）；縱膈未增寬、氣管居中",
+    "心臟大小正常，雙側肋膈角銳利，無肋膜積液或氣胸，左橫膈下可見胃泡"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標的結節於右肺門區（右中肺野內側）清楚可見，片上無任何導管、引流管或術後痕跡；其餘所見（疑鈣化肉芽腫、主動脈迂曲）皆為偶發性且不與初次就診情境衝突，適合作為初次就診之影像。",
+  "description_zh": "胸部正面（PA）X光片，吸氣量足夠（約9–10後肋）、無明顯旋轉、穿透度適當，影像右上角可見「L」側標記，未見任何導管、引流管、心律調節器或其他植入裝置。右側肺門（右中肺野內側）可見一分葉狀、密度偏高的結節狀陰影，約1.5公分，較同側血管及對側肺門明顯緻密，右肺門整體較左側飽滿，需考慮肺門旁肺結節或（可能鈣化之）右肺門淋巴結腫大；左肺門正常。右下肺野內側、橫膈上方另見一約0.5公分之緻密小結節，疑為鈣化肉芽腫，右下肺門旁亦有數個小結節狀密度，多為血管或淋巴結影。主動脈弓突出，符合主動脈迂曲延長；心臟大小正常、縱膈未增寬、氣管居中。雙側肋膈角銳利，無肋膜積液或氣胸，雙側橫膈平滑，左橫膈下可見胃泡，骨骼及軟組織無明顯異常。",
+  "label_concern": "結節狀陰影緊貼右肺門，兩位判讀者皆提出需與右肺門淋巴結腫大（可能鈣化）鑑別；「肺結節」標籤大致合理，但實際可能為肺門淋巴結而非肺實質結節。"
+}

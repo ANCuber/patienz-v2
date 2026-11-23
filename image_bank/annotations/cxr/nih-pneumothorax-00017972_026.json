@@ -1,0 +1,73 @@
+{
+  "id": "nih-pneumothorax-00017972_026",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "AP portable frontal (supine/semi-erect); L marker at image top-right, conventional orientation",
+  "technical_quality": "Suboptimal: portable AP technique, patient rotated to the left with obliquely tilted collimation, head turned, arms abducted with lateral soft-tissue overlap, shallow inspiration with low lung volumes, lower thorax/costophrenic angles partly clipped and underpenetrated; multiple ECG electrodes/cables and a left pigtail catheter overlie the chest and limit assessment of the left lateral pleural space.",
+  "target": {
+    "finding": "pneumothorax",
+    "visible": "yes",
+    "laterality": "left",
+    "zone": "upper",
+    "size_cm": 1.5,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "left",
+    "reader_a": "left",
+    "reader_b": "uncertain",
+    "adjudicator": "left"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "Pigtail pleural drainage catheter (coiled tip)",
+      "location": "Left hemithorax; coil projected over the lateral left upper/mid zone pleural space, tube runs down the left lateral chest wall to a hub/fixation point at the left lower lateral chest, then continues off the film",
+      "zh": "左側 pigtail 肋膜引流導管，捲曲末端位於左上至中肺野外側，導管沿左側胸壁向下至左下側胸接頭後離開照野"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "Right upper anterior chest wall (infraclavicular); wire courses inferomedially across the right lung toward the lower mediastinum",
+      "zh": "右上前胸心電圖電極貼片及導線，導線斜向內下跨越右肺至下縱膈"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "Left upper anterior chest wall (infraclavicular); wire runs down along the left axilla / lateral chest wall, lateral to the pigtail tube",
+      "zh": "左上前胸心電圖電極貼片及導線，導線沿左腋下／側胸壁向下"
+    },
+    {
+      "type": "ECG lead wire with connector",
+      "location": "Right lateral chest wall / right upper arm region (image far left), looping partly outside the collimated field",
+      "zh": "右側胸壁外側／右上臂區心電圖導線與接頭，部分位於照野外"
+    },
+    {
+      "type": "External monitoring cables",
+      "location": "One crossing the right shoulder/upper chest, one curving across the lower chest / upper abdomen from right to left",
+      "zh": "跨越右肩上胸部及下胸／上腹部之體外監測導線"
+    },
+    {
+      "type": "Coiled external cables",
+      "location": "Outside the patient at the image lower right (patient's left lower side)",
+      "zh": "患者左下方照野內之體外捲曲導線"
+    },
+    {
+      "type": "Side marker (L)",
+      "location": "Image top-right over the left shoulder region",
+      "zh": "左側 L 標記"
+    }
+  ],
+  "other_findings": [
+    "兩側肺野瀰漫性粗網狀結節及斑片狀肺泡浸潤，以中下肺野及肺門周圍最明顯，右側較左側嚴重",
+    "右下肺野均質密度增加，右橫膈及右肋膈角模糊，疑為實質化及／或層狀肋膜積液",
+    "左橫膈及左肋膈角亦部分模糊，臥姿下無法排除少量層狀積液或肺底實變",
+    "心臟縱膈輪廓略寬，右心緣部分被鄰近肺部病灶遮蔽；因 AP 臥姿、旋轉及肺部病灶無法評估心臟大小",
+    "吸氣不足、肺容積偏低",
+    "左側胸壁外側自鎖骨下向下延伸之寬帶狀平滑軟組織密度影，最符合皮膚皺褶，為氣胸之類似影像，需與肋膜線區分",
+    "左側側胸壁／腋下軟組織疑有條紋狀透亮影，皮下氣腫不能完全排除（低信心，受導線及外展手臂重疊影響）",
+    "肱骨近端可見生長板，符合青少年年齡；未見明顯肋骨骨折"
+  ],
+  "treatment_evidence": true,
+  "first_presentation_suitable": false,
+  "suitability_reason": "左側胸腔已置入 pigtail 肋膜引流導管，屬治療後追蹤影像；氣胸僅為引流後之小量殘餘，臟層肋膜線不明確，且與側胸壁皮膚皺褶帶影重疊。另合併兩側瀰漫性肺部浸潤及可能之肋膜積液，與初次就診之單純氣胸情境不符，不適合作為首次表現用影像。",
+  "description_zh": "AP 攜帶式臥姿胸部X光，病人向左旋轉、照野歪斜、吸氣不足，下胸部部分被準直框切除。左側胸腔可見一條 pigtail 肋膜引流導管，捲曲末端投影於左上至中肺野外側之肋膜腔，導管沿左側胸壁外側向下走行至左下側胸接頭後離開照野；導管捲曲處周圍及其上方沿左上肺野外側可見一薄層（約 1–1.5 公分寬、上下延伸約 8 公分）無肺紋理之透亮帶，符合引流後之小量殘餘左側氣胸，惟臟層肋膜線不明確，且與沿左側胸壁的寬帶狀軟組織（皮膚皺褶）影重疊。兩側肺野瀰漫性粗網狀結節及斑片狀肺泡浸潤，以中下肺野及右側較明顯，右下肺野密度均質增加並使右橫膈及肋膈角模糊，疑為實質化合併層狀肋膜積液，左橫膈亦部分模糊。心臟縱膈輪廓略寬，右心緣部分被鄰近肺部病灶遮蔽，因 AP 臥姿及旋轉無法評估心臟大小。另見右上及左上前胸心電圖電極貼片與多條體外監測導線投影於胸部及胸腔外，左側側胸壁／腋下軟組織疑有條紋狀透亮影，皮下氣腫不能排除；肱骨近端可見生長板，符合青少年。",
+  "label_concern": ""
+}

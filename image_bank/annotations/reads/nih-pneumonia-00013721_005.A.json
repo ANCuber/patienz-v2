@@ -1,0 +1,52 @@
+{
+ "view": "PA (frontal), L marker at patient's left shoulder confirms conventional orientation",
+ "technical_quality": "Adequate penetration and inspiration; both apices and costophrenic angles included. Thorax markedly rotated/asymmetric because of severe instrumented thoracolumbar scoliosis; spinal hardware overlaps the mediastinum and paraspinal lung; breast shadows overlie both lower zones. Interpretation of the lung bases is limited.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "Posterior spinal fusion instrumentation (two longitudinal rods with multiple pedicle screws/hooks and a transverse connector) for scoliosis",
+   "location": "Midline/paraspinal, spanning approximately upper thoracic (T2-T3) to lower lumbar (L3-L4) spine"
+  },
+  {
+   "type": "External side marker 'L'",
+   "location": "Image upper right, over the patient's left shoulder"
+  },
+  {
+   "type": "Small square radiographic label/tag (external artifact)",
+   "location": "Over the patient's left shoulder, just medial to the L marker"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy, ill-defined increased opacity in the medial/paracardiac right lower zone above the elevated right hemidiaphragm, partially obscuring the right heart border; possible right middle/lower lobe consolidation vs. compressive atelectasis from scoliosis and diaphragm elevation (uncertain)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Severe thoracolumbar scoliosis, status post posterior instrumented fusion, with rotation of the thorax",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Elevated right hemidiaphragm with crowded right-sided ribs (small right hemithorax)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mediastinum and cardiac silhouette displaced to the left; left hemithorax relatively large and hyperlucent (secondary to scoliosis/rotation); cardiac size not reliably assessable",
+   "laterality": "left",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Faint hazy density in the left lower zone lateral to the cardiac apex, indeterminate; likely overlapping breast/soft-tissue shadow rather than true consolidation",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.45,
+ "description_zh": "胸部正面片顯示嚴重胸腰椎側彎並已接受後位脊椎內固定手術（雙側縱向桿及多個椎弓根螺釘/鉤，範圍約自上胸椎至下腰椎），胸廓明顯旋轉不對稱，縱膈與心影向左偏移，右側橫膈抬高、右側肋骨擁擠。右下肺野內側靠近心緣處可見邊界不清的淡薄增加密度，右心緣部分模糊，可能為右中/下葉肺炎實變，但亦不排除因脊椎側彎及橫膈抬高造成的壓迫性肺不張，判讀受限。左下肺野外側亦有輕微模糊密度，疑為乳房軟組織重疊。未見胸腔積液、氣胸，亦無胸管或其他導管；胃泡位於左橫膈下。"
+}

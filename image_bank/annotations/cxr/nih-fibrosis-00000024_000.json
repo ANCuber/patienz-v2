@@ -1,0 +1,41 @@
+{
+ "id": "nih-fibrosis-00000024_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (frontal), erect; external L marker at image upper-right (patient's left) confirming conventional orientation",
+ "technical_quality": "Adequate: apices and both costophrenic angles included, inspiration adequate (~9-10 posterior ribs), trachea midline with minimal rotation, penetration adequate (vertebral bodies faintly visible through the heart). No cropping of relevance.",
+ "target": {
+  "finding": "pulmonary fibrosis — diffuse coarse reticular / reticulonodular interstitial opacities",
+  "visible": "yes",
+  "laterality": "bilateral",
+  "zone": "multiple",
+  "size_cm": -1,
+  "confidence": 0.75
+ },
+ "laterality_sources": {
+  "bbox": "none (NLP-mined label, no radiologist box)",
+  "reader_a": "bilateral",
+  "reader_b": "bilateral",
+  "adjudicator": "bilateral"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "external radiographic side marker (L) with small text label",
+   "location": "image upper-right, projected over the patient's left shoulder / infraclavicular soft tissue, outside the lung field",
+   "zh": "外置鉛製側別標記「L」（附小字標籤），位於病人左肩／鎖骨下軟組織區，非植入裝置"
+  }
+ ],
+ "other_findings": [
+  "雙側肺門紋理增粗，右側肺門較緻密、略顯突出，肺門周圍間質紋理增加",
+  "右上肺野數個疑似薄壁囊狀／小泡狀透亮區，疑纖維囊性變化或局部肺氣腫（與肋骨重疊，不確定）",
+  "主動脈弓略顯突出／胸主動脈稍延展",
+  "心臟大小約在正常上限，縱膈無增寬，氣管居中",
+  "雙側肋膈角銳利，未見肋膜積液或氣胸；未見實質化、腫塊或空洞",
+  "骨骼與軟組織未見明顯異常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記病灶（雙側瀰漫性粗網狀間質陰影，符合肺纖維化）在影像上清楚可見；片中無任何胸管、引流管、導管或植入裝置，唯一的「裝置」為胸廓外的側別標記，不代表治療。肺纖維化屬慢性病變，適合作為以漸進性呼吸困難或乾咳首次就診之病人的影像。",
+ "description_zh": "正面站立胸部X光片，吸氣量充足，氣管與縱膈居中，無明顯旋轉，穿透度適當，影像右上角（病人左肩處）可見外置「L」側別標記。雙側肺野可見瀰漫性粗糙網狀及網狀結節狀間質陰影，以左肺及雙側中下肺野、周邊肺野較為明顯，並伴支氣管血管束周圍增厚，範圍廣泛、無法以單一尺寸量測，整體符合肺纖維化。雙側肺門紋理增粗，右側肺門較為緻密突出；右上肺野另見數個疑似薄壁囊狀透亮區，疑為纖維囊性變化。心臟大小約在正常上限，主動脈弓略顯突出；雙側橫膈輪廓及肋膈角清晰，未見肋膜積液、氣胸、實質化或腫塊。片中未見任何導管、引流管、手術夾或植入裝置，無已治療之證據。",
+ "label_concern": ""
+}

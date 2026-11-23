@@ -1,0 +1,44 @@
+{
+ "id": "nih-effusion-00020751_003",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate erect PA film: good inspiration (~9 posterior ribs), minimal rotation, adequate penetration (vertebrae visible through the heart), apices and both costophrenic angles included; scapulae partly project over the upper lateral lung fields; 'L' side marker with technologist initials at image upper right confirms conventional orientation.",
+ "target": {
+  "finding": "pleural effusion",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 4,
+  "confidence": 0.85
+ },
+ "laterality_sources": {
+  "bbox": "left (box centre in middle zone; tall 249x658 px box spanning the lateral left hemithorax from middle to lower zone)",
+  "reader_a": "left, lower zone",
+  "reader_b": "left, lower zone (found blind)",
+  "adjudicator": "left, lower zone"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External thin linear artifact (about 1 mm wire/line, e.g. ECG lead or monitoring cable) - adjudicated NOT a chest tube: no lumen, no side-hole gap, perfectly straight, continues beyond the chest wall to the image edge; Reader B had read it as a chest tube",
+   "location": "Projected over the left hemithorax, from the medial left clavicle / 1st rib level obliquely down and laterally to the lower lateral left chest wall, continuing past the chest wall to the lower right image edge",
+   "zh": "體外細線狀假影（疑為心電圖導線或監測線，非胸管）"
+  },
+  {
+   "type": "Radiographic side marker ('L' with technologist initials 'DMD', external)",
+   "location": "Image upper right corner, over the patient's left shoulder region",
+   "zh": "左側標記（L 字樣附技師縮寫）"
+  }
+ ],
+ "other_findings": [
+  "左側橫膈及左下心緣輪廓消失（silhouette sign），胃泡與肺底距離增加，疑合併肺底下積液，不排除左下葉部分塌陷或實變",
+  "左側橫膈下可見明顯胃泡及結腸氣體",
+  "肩胛骨部分重疊於上外側肺野（技術性）",
+  "右肺清晰，右側肋膈角銳利，心臟大小正常，氣管與縱膈居中，未見氣胸，骨骼及軟組織無明顯異常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標的左側肋膜積液清楚可見（左下肺野均質混濁、肋膈角變鈍、外側彎月徵）。經放大檢視，左胸斜行線影粗細約1毫米、筆直、無管腔亦無側孔，且穿出胸壁後延續至影像邊緣，判定為體外導線或管線假影而非胸管或引流管，故無治療證據，亦無其他與初次就診矛盾之發現，適合作為初次就診之肋膜積液病例。惟盲讀者B曾將該線影判為胸管，教學使用時宜提醒學生辨識體外假影。",
+ "description_zh": "PA 直立胸部X光，吸氣充足（約9根後肋）、旋轉輕微、穿透適當，影像右上角可見「L」側標記。左下肺野呈均質性混濁，左側肋膈角變鈍並見外側彎月徵沿側胸壁上延，左側橫膈及左下心緣輪廓消失，胃泡與肺底距離增加，符合左側少至中量（約4–5公分）肋膜積液，不排除合併肺底下積液或左下葉部分塌陷。左側胸廓另可見一條細而筆直的高密度線影，自左鎖骨內側／第1肋水平斜向外下延伸至左下側胸壁並延續至影像邊緣，粗細約1毫米、無管腔及側孔，判定為體外導線或管線假影而非胸管；未見氣胸。右肺清晰，右側肋膈角銳利，心臟大小正常，氣管與縱膈居中，骨骼及軟組織無明顯異常。",
+ "label_concern": ""
+}

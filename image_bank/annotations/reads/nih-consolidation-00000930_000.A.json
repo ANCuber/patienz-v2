@@ -1,0 +1,33 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: PA projection with external L marker at the patient's left, good inspiration (~9-10 posterior ribs), acceptable penetration, minimal if any rotation; scapulae partially overlap the lateral upper lung fields.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "External radiographic side marker (lead 'L' letter, with 'LG' text)",
+   "location": "Upper right corner of the image, projected over the patient's left shoulder / lateral clavicle region"
+  },
+  {
+   "type": "Round radiopaque disc (external marker BB / clothing snap), no internal device",
+   "location": "Projected over the patient's left shoulder near the acromioclavicular joint / humeral head, just above the L marker"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Subtle ill-defined hazy increased opacity lateral to and partly blurring the lower left heart border, without air bronchogram; left hemidiaphragm outline preserved (lingular / left lower lobe consolidation pattern, subtle)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left hilum appears slightly more prominent/dense than the right; may be within normal variation",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "PA 胸部 X 光，吸氣量足夠，體位大致端正，右上角（病人左肩）可見外接 L 側標記及一枚圓形高密度外部標記物，未見任何導管、引流管或心律調節器。左下肺野（心臟左緣外側）可見範圍約 6 公分、邊界不清的淡薄浸潤性增加密度，並使左下心緣輪廓略顯模糊，左側橫膈輪廓仍可辨識，較符合舌葉或左下葉之輕微實質化。右肺野清晰，雙側肋膈角銳利，未見肋膜積液或氣胸，心臟大小正常，左肺門略顯突出，可能為正常變異。"
+}

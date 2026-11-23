@@ -1,0 +1,36 @@
+{
+ "id": "nih-fibrosis-00000067_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate upright PA film: inspiration adequate (~9 posterior ribs), minimal rotation (clavicles near-symmetric about the spinous processes), penetration adequate (vertebral bodies faintly visible through the heart). Left side marker ('L' with radiographer initials) in the image upper-right corner confirms conventional orientation. Scapulae partly project over the lateral upper lung fields; large bilateral breast shadows veil the lower zones and limit assessment of the bases and cardiophrenic angles. No lines, tubes or implanted devices.",
+ "target": {
+  "finding": "pulmonary fibrosis (mild bilateral basal reticular / interstitial prominence)",
+  "visible": "yes",
+  "laterality": "bilateral",
+  "zone": "lower",
+  "size_cm": 8,
+  "confidence": 0.5
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "bilateral",
+  "reader_b": "bilateral",
+  "adjudicator": "bilateral"
+ },
+ "agreement": "full",
+ "devices": [],
+ "other_findings": [
+  "雙側肺門輪廓略顯突出，右側肺門可見數個小而緻密之點狀影，左側肺門亦有一小緻密影，疑為鈣化肺門淋巴結（陳舊性肉芽腫性病變）",
+  "心臟大小於正常上限（心胸比約 0.5），屬臨界性心臟擴大",
+  "主動脈弓略呈迂曲、突出",
+  "右側橫膈略高於左側，可能為正常變異",
+  "雙側乳房軟組織陰影重疊於下肺野，部分遮蔽肺底與心膈角評估",
+  "肩胛骨部分投影於雙側上外側肺野",
+  "雙側肋膈角銳利，未見肋膜積液或氣胸；氣管居中；骨骼結構完整"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記之肺纖維化表現可見（雙側下肺野輕度網狀間質紋理），片中無任何導管、引流管、心律調節器或其他治療裝置，亦無術後或治療後變化；肺門鈣化淋巴結屬陳舊性變化，與初次因間質性肺病相關症狀就診並不矛盾，故適合作為初次就診之影像。惟纖維化程度輕微且部分被乳影遮蔽，教學上宜以「輕度／早期」情境使用。",
+ "description_zh": "胸部正面 PA 站立片，吸氣量足夠、無明顯旋轉、曝光適中，左側標記位於影像右上角，未見任何導管、線路、心律調節器或其他治療裝置。雙側下肺野（右側以心旁區為主、左側以心臟外側下肺野為主）可見輕度粗網狀與線狀間質紋理增加，並有肺門周圍支氣管血管紋理增粗，範圍約各佔下肺野 6–8 公分，未見蜂窩狀變化、牽引性支氣管擴張或明顯體積減少，上肺野及肺尖清晰，整體符合輕度雙側下葉為主之肺纖維化。雙側肺門略顯突出，右側肺門可見數個小而緻密之點狀影，疑為鈣化肺門淋巴結。心臟大小於正常上限（心胸比約 0.5），主動脈弓略迂曲突出，氣管居中；右側橫膈略高於左側，雙側橫膈輪廓平滑、肋膈角銳利，未見肋膜積液或氣胸。雙側大片乳房軟組織陰影重疊於下肺野並部分遮蔽肺底，肩胛骨部分投影於上外側肺野，骨骼結構完整。",
+ "label_concern": "標籤大致相符，但纖維化表現輕微且不典型：僅見雙側下肺野輕度網狀／支氣管血管紋理增加，無蜂窩狀變化或體積減少，且部分受乳影遮蔽，亦可能為慢性支氣管血管紋理增粗；NLP 標籤未經放射科醫師框選確認，建議以「輕度／疑似肺纖維化」定位。"
+}

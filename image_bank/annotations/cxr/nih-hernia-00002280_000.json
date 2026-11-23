@@ -1,0 +1,58 @@
+{
+ "id": "nih-hernia-00002280_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate exposure and penetration (thoracic spine visible through the heart); low lung volumes / poor inspiratory effort with both hemidiaphragms high (right markedly); mild rotation and mild thoracic scoliosis; apices and both costophrenic angles included; no L/R marker, conventional orientation assumed; bilateral shoulder prostheses project outside the lung fields and do not obscure them.",
+ "target": {
+  "finding": "diaphragmatic hernia (hiatal hernia, retrocardiac)",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 4.5,
+  "confidence": 0.65
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Right shoulder arthroplasty (stemmed humeral head prosthesis with glenoid component)",
+   "location": "Patient's right shoulder, projecting outside the right upper lung zone",
+   "zh": "右側人工肩關節（含肱骨柄與關節盂組件）"
+  },
+  {
+   "type": "Left shoulder arthroplasty (possibly reverse-type: glenosphere with humeral cup)",
+   "location": "Patient's left shoulder, projecting outside the left upper lung zone",
+   "zh": "左側人工肩關節（疑為反式人工肩關節）"
+  },
+  {
+   "type": "Small ring-shaped metallic external artifact, most likely an earring",
+   "location": "Patient's left head/neck region at the top edge of the film, above the thorax",
+   "zh": "耳環（左側頭頸部體外環狀金屬異物）"
+  },
+  {
+   "type": "Tiny linear metallic/calcific density (~0.3 cm), possible surgical clip vs calcified node - indeterminate",
+   "location": "Medial right hilar / right paraspinal region, right middle zone",
+   "zh": "右肺門內側極小線狀高密度影（疑手術夾或鈣化，性質不確定）"
+  }
+ ],
+ "other_findings": [
+  "右側橫膈明顯抬高，呈平滑圓頂狀（頂點約在前第4-5肋高度，較左側高約2.5公分），右下肺容積減少、右下肺野血管紋理擁擠；考慮橫膈膨出或膈神經麻痺，肺底下積液未能完全排除",
+  "雙側肺容積偏低（吸氣不足），雙側肺底血管紋理擁擠",
+  "胸主動脈迂曲、展開，主動脈弓突出，上縱膈輪廓稍寬（無明確腫塊）",
+  "胸椎輕度側彎／輕度旋轉",
+  "左橫膈下可見胃底氣體",
+  "心臟大小大致正常；肺野未見實質浸潤、結節或間質性病變",
+  "雙側肋膈角清晰，未見氣胸或明顯肋膜積液",
+  "雙側肩關節置換術後變化"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標籤所指之橫膈疝氣（食道裂孔疝氣）於左側心後區清楚可見，且兩位判讀者（含未被告知標籤之盲讀者）均獨立指出同一位置之發現。影像上無胸管、引流管或其他針對該病灶之治療痕跡；雙側人工肩關節與疑似耳環為與本病灶無關之器材。右橫膈明顯抬高為另一獨立之附帶發現，不與病人首次因該疝氣相關症狀就診之情境相矛盾，因此適合作為首次就診之影像。",
+ "description_zh": "胸部正面X光（PA），吸氣量不足、雙側橫膈位置偏高，右側橫膈明顯抬高呈平滑圓頂狀，較左側高約2.5公分，右下肺容積減少、血管紋理擁擠。左側心後區、脊椎左側緊鄰左橫膈上方可見一約4-5公分之圓形軟組織密度影，邊緣平滑呈弧形，中央略帶透亮，未見明確氣液平面，最符合食道裂孔疝氣（橫膈疝氣）；左橫膈下可見胃底氣體。胸主動脈迂曲展開、主動脈弓突出，上縱膈輪廓稍寬，心臟大小大致正常，胸椎輕度側彎；肺野未見實質浸潤、結節或間質性病變，雙側肋膈角清晰，未見氣胸或明顯肋膜積液。雙側肩關節可見人工關節置換術後之金屬植入物（右側含關節盂組件，左側疑為反式人工肩關節），影像上緣患者左側頭頸部投影處可見一環狀金屬異物（疑為耳環），右肺門內側另見一極小線狀高密度影（疑手術夾或鈣化，性質不確定）；未見胸管、引流管或其他治療後之變化。",
+ "label_concern": ""
+}

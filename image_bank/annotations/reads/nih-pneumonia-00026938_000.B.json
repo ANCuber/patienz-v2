@@ -1,0 +1,57 @@
+{
+ "view": "AP frontal (portable-type) chest radiograph",
+ "technical_quality": "Adequate penetration and inspiration (about 8-9 posterior ribs); mild rotation; both apices and costophrenic angles included; right arm/shoulder hardware projects at the lateral edge of the field, and the upper left shoulder region is partly cropped.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "Orthopedic fixation plate with multiple screws",
+   "location": "Right proximal humerus / right shoulder (image left)"
+  },
+  {
+   "type": "Transvenous cardiac pacing/ICD lead (single lead)",
+   "location": "Enters via the left subclavian/brachiocephalic route, courses through the SVC and right atrium, tip projects over the inferior heart at the expected right ventricular apex position; pulse generator not included in the field of view"
+  },
+  {
+   "type": "Small angular metallic density (likely external marker or surgical clip)",
+   "location": "Projecting over the left shoulder soft tissues (image upper right)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy increased density with accentuated bronchovascular markings in the medial right lower zone adjacent to the right heart border and hemidiaphragm, suggesting a patchy infiltrate or subsegmental atelectasis",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly elevated right hemidiaphragm relative to the left",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Unfolded, tortuous thoracic aorta with prominent aortic knob and widened upper mediastinal contour (age-related aortic ectasia)",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal / borderline enlarged on AP projection",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent hila bilaterally (vascular prominence)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Degenerative changes of the thoracic spine and shoulder girdles; right proximal humerus post-surgical fixation",
+   "laterality": "right",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "前後位胸部X光，吸氣尚可，輕度旋轉。右側近端肱骨可見骨板及多枚螺釘固定；另見一條經左側鎖骨下靜脈路徑之心臟導線，經上腔靜脈及右心房，尖端投影於右心室心尖部位置，脈衝產生器未在照野內。右下肺野內側靠近右心緣及橫膈處可見輕度模糊增高密度及支氣管血管紋理增加，疑為浸潤或局部肺塌陷，右側橫膈略為升高；左肺清晰，兩側肋膈角尚銳利，無氣胸或明顯肋膜積液。胸主動脈迂曲擴張、主動脈弓突出，心影大小約在正常上限。"
+}

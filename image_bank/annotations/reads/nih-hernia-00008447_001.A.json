@@ -1,0 +1,18 @@
+{
+ "view": "PA (frontal, erect); L marker on image right confirms conventional orientation",
+ "technical_quality": "Adequate: good inspiration (~9 posterior ribs), no significant rotation (medial clavicles symmetric about the spinous processes), adequate penetration (vertebral bodies visible behind the heart). Scapulae partially project over the upper lateral lung fields; bilateral breast shadows overlie the lower zones.",
+ "target_finding_visible": "no",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Lead side marker 'L' with technologist initials (external artifact)",
+   "location": "Top corner of the image on the patient's left (image top right), outside the thorax"
+  }
+ ],
+ "abnormalities": [],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 胸部X光，吸氣量足夠、無明顯旋轉，穿透度適中，兩側乳房陰影重疊於下肺野。兩側肺野清晰，未見實質浸潤、肋膜積液或氣胸；心臟大小及縱膈輪廓正常，左右橫膈高度相近，兩側肋橫膈角銳利。左橫膈下可見位置正常的胃泡氣體，胃泡與肺底之間軟組織厚度正常，未見心後方氣液面、心後腫塊或橫膈上方之腸胃道氣體影，故本片無法明確辨識標記之橫膈疝氣（若為小型食道裂孔疝氣，在正面片可能不顯影）。影像左上角（病人左側）可見「L」側別鉛字標記，未見其他管路、引流管或植入物，無已治療之證據。"
+}

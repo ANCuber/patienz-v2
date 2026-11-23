@@ -1,0 +1,39 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: good inspiration (about 9-10 posterior ribs), no significant rotation (clavicles symmetric about the spinous processes), costophrenic angles and apices included; contrast somewhat high with a dense upper abdomen; scapulae partially overlap the upper lateral lung fields. Lead L marker with technologist initials at image upper right confirms conventional orientation.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Lead side marker 'L' with technologist initials (MMT)",
+   "location": "Image upper right corner, over the patient's left shoulder region (external artifact, outside the lung fields)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Coarse reticular / linear interstitial markings radiating from the hilum toward the periphery, most conspicuous of the fibrotic-pattern changes",
+   "laterality": "right",
+   "zone": "middle and lower"
+  },
+  {
+   "finding": "Milder reticular interstitial markings paracardiac and basal, with slight blurring of the lower cardiac border",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent bronchovascular hila (peribronchial thickening pattern); no discrete mass",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Gas-distended stomach with mottled food/debris content beneath the left hemidiaphragm (incidental, extrathoracic)",
+   "laterality": "left",
+   "zone": "lower (subdiaphragmatic)"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 正面胸部X光，吸氣量足夠、無明顯旋轉，影像右上角可見鉛製 L 側標記（含技師縮寫），為傳統擺位。雙側中下肺區可見粗糙網狀及線狀間質紋理增加，以右側中下肺區自肺門向外周放射狀延伸最為明顯，左下肺區心緣旁及肺底亦有較輕微的網狀紋理，符合間質性纖維化樣變化；未見實質化、結節腫塊、肋膜積液或氣胸。心臟大小正常、縱膈居中，雙側肋膈角銳利；左橫膈下可見含斑駁狀內容物的胃泡，屬附帶發現。全片未見任何管路、引流管、夾子或節律器等治療痕跡。"
+}

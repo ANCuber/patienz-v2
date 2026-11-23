@@ -1,0 +1,61 @@
+{
+ "view": "PA (frontal) erect chest radiograph",
+ "technical_quality": "Adequate. Good inspiration (about 10 posterior ribs above the right hemidiaphragm), no significant rotation (clavicular heads roughly symmetric about the spinous processes), adequate penetration (thoracic vertebral bodies visible through the cardiac shadow), whole thorax including both costophrenic angles included. Scapulae partly project over the upper lateral lung fields. An 'L' side marker with rotated annotation text is present at the upper right corner of the image (patient's left), confirming conventional orientation.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "L side marker (rotated, with annotation text)",
+   "location": "upper right corner of the image, over the patient's left shoulder region"
+  },
+  {
+   "type": "External artifact - small curvilinear metallic-density object (likely clothing fastener), not within the thorax",
+   "location": "inferior image margin, patient's right, below the right hemidiaphragm / liver shadow"
+  },
+  {
+   "type": "External artifact - small linear density, not within the thorax",
+   "location": "inferior image margin, patient's left lower abdomen"
+  },
+  {
+   "type": "Tiny (~0.5 cm) linear radiodense focus - possible small clip or external/film artifact",
+   "location": "projected over the left upper zone at about the posterior 3rd rib, lateral to the mediastinum"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Tortuous, unfolded thoracic aorta with a prominent aortic knob and tortuous descending aorta projected left of the spine; age-related, no true mediastinal widening or mass",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mild hyperinflation: lucent lungs with low, flattened hemidiaphragms, suggestive of chronic obstructive (emphysematous) change; no bulla or pneumothorax",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Mildly coarse / prominent bronchovascular markings in the lower zones without focal consolidation, nodule, or air-bronchogram",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent hila, vascular in configuration (possibly with small calcified nodes); no discrete hilar mass",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Tiny linear radiodense focus (~0.5 cm) projected over the left upper zone, most likely an external/film artifact or small clip; no associated parenchymal lesion",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Degenerative change and osteopenia of the thoracic spine and both glenohumeral joints; no rib, clavicle, or vertebral fracture",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.8,
+ "description_zh": "正面（PA）站立胸部X光，吸氣充足、無明顯旋轉、穿透度適當，左側標記位於影像右上方。雙側肺野清晰，無實質化、結節、氣胸或肋膜積液，兩側肋膈角銳利；雙肺略呈過度充氣、橫膈低平，下肺野支氣管血管紋理輕度增粗，雙側肺門略顯突出但為血管型態。心臟大小正常（心胸比約0.4），氣管居中，胸主動脈迂曲延長、主動脈弓突出，屬年齡相關變化，縱膈無增寬或腫塊。胸椎及雙側肩關節見退化性變化與骨質疏鬆，無骨折；無中心靜脈導管、氣管內管、胸管或心律調節器，僅影像下緣見體外衣物雜訊，左上肺野投影一極小線狀高密度影，可能為體外或影像雜訊。"
+}

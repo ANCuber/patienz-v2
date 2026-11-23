@@ -1,0 +1,78 @@
+{
+  "id": "nih-emphysema-00029035_002",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "Frontal AP-type chest radiograph (recorded PA; portable/monitored appearance with ECG leads, scapulae projected over both upper-lateral lung fields)",
+  "technical_quality": "Adequate penetration and inspiration (about 9-10 posterior ribs), apices and both costophrenic angles included; mild rotation; numerous ECG electrodes, lead wires and external cables/tubing overlie the thorax and left flank and reduce clarity, especially over the left hemithorax; no side marker visible, conventional orientation assumed.",
+  "target": {
+    "finding": "pulmonary emphysema (dataset label) - not visible; the only emphysema on the film is subcutaneous emphysema of the left lower lateral chest wall / flank (~4-5 cm), adjacent to the chest-drain course",
+    "visible": "no",
+    "laterality": "left",
+    "zone": "lower",
+    "size_cm": 5,
+    "confidence": 0.7
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "left",
+    "reader_b": "left",
+    "adjudicator": "left"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "Small-bore chest drain / pleural catheter (thin radiopaque stripe with side-hole marker gap)",
+      "location": "Left hemithorax, medial: tip at the left apex adjacent to the mediastinum (left upper zone); courses inferolaterally through the left mid/lower zone toward the left lower lateral chest wall, then continues externally over the left flank/upper abdomen",
+      "zh": "左側細管徑胸腔引流管（內側，尖端於左肺尖近縱膈，可見側孔標記間隙）"
+    },
+    {
+      "type": "Second small-bore chest drain / pleural catheter (thin radiopaque stripe with side-hole marker gap)",
+      "location": "Left hemithorax, lateral: tip in the lateral left upper zone; courses inferolaterally through the left mid/lower zone toward the left lower lateral chest wall, then continues externally over the left flank",
+      "zh": "左側第二條細管徑胸腔引流管（外側，尖端於左上肺野外側）"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "Right upper anterior chest wall (over right upper zone)",
+      "zh": "心電圖電極貼片及導線（右上前胸壁）"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "Left upper anterior chest wall, lateral (over left upper zone)",
+      "zh": "心電圖電極貼片及導線（左上前胸壁外側）"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "Right lower medial / parasternal chest wall near the right heart border (over right lower zone)",
+      "zh": "心電圖電極貼片及導線（右下內側胸壁，近右心緣）"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "Right lower lateral chest wall / right upper flank, below the diaphragm level",
+      "zh": "心電圖電極貼片及導線（右下外側胸壁／右側腹）"
+    },
+    {
+      "type": "External monitor lead wires / cables / tubing (external artifact)",
+      "location": "Multiple crossing lines over the left hemithorax, left axilla, left flank and upper abdomen, extending beyond the body outline lateral to the left arm",
+      "zh": "多條外部監測導線／管路（重疊於左胸、左側腹及上腹，並延伸至左臂外側體外）"
+    },
+    {
+      "type": "Small linear metallic density (~1 cm), surgical clip vs external artifact",
+      "location": "Projected over the left mid zone medially, near the left hilum, alongside the medial drain",
+      "zh": "左中肺野近肺門約1公分線狀金屬影（手術夾或外物待鑑別）"
+    }
+  ],
+  "other_findings": [
+    "左下外側胸壁／側腹軟組織內可見分支狀條紋透亮影，符合少量皮下氣腫（約4-5公分），鄰近引流管走向，側胸壁軟組織並有條紋狀氣體分布",
+    "左側兩條細管徑胸腔引流管留置，尖端皆位於左上肺野／肺尖；左肺已擴張，未見明確殘餘氣胸，惟因多條導線重疊，少量肺尖氣胸無法完全排除",
+    "左側橫膈較右側抬高約3公分，下方可見脹氣之胃泡（可能為體位或術後因素）",
+    "左中肺野近肺門處約1公分線狀金屬密度影，手術夾或外物待鑑別",
+    "左側縱膈旁細長透亮帶，較可能為正常肺組織襯托，縱膈氣腫無法完全排除",
+    "雙肺容積正常，未見過度充氣、橫膈平坦或肺大泡等肺氣腫徵象；無實質化或肋膜積液，雙側肋膈角銳利",
+    "心影大小正常，縱膈未見增寬，氣管約居中線；骨骼未見明顯骨折",
+    "輕度旋轉，肩胛骨重疊於雙側上外側肺野（技術性）"
+  ],
+  "treatment_evidence": true,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標籤所指之「肺氣腫」於本片不可見（肺容積正常、無過度充氣或肺大泡）；片中主要為左側兩條胸腔引流管（治療證據）及引流管旁之左下外側胸壁皮下氣腫，屬氣胸引流後之追蹤影像，不適合作為肺氣腫或任何疾病首次就診之影像。",
+  "description_zh": "胸部正面片（AP型態攝影，18歲男性），病人輕度旋轉，肩胛骨重疊於雙側上外側肺野，胸前可見四枚心電圖電極貼片，另有多條外部導線／管路重疊於左胸、左側腹及上腹並延伸至體外。左側胸腔可見兩條細管徑胸腔引流管（可見側孔標記間隙），一條內側尖端位於左肺尖近縱膈，另一條外側尖端位於左上肺野外側，皆向下外側行經左中下肺野後延伸至左側腹；左肺已擴張，未見明確殘餘氣胸或肋膜積液，惟少量肺尖氣胸無法完全排除。左下外側胸壁／側腹軟組織內見分支狀條紋透亮影，符合少量皮下氣腫（約4-5公分），鄰近引流管走向；左側縱膈旁另見細長透亮帶，較可能為正常肺組織襯托。左中肺野近肺門處另見約1公分線狀金屬影（手術夾或外物待鑑別），左側橫膈較右側抬高約3公分，下方可見脹氣之胃泡。雙肺容積正常，未見肺氣腫之過度充氣、橫膈平坦或肺大泡，右肺清晰，心影大小正常，縱膈不寬，氣管居中。",
+  "label_concern": "標籤「肺氣腫（Emphysema）」疑為NLP自報告中「皮下氣腫（subcutaneous emphysema）」誤判所得：片中無肺氣腫徵象（肺容積正常、無過度充氣或肺大泡），實際所見為18歲男性左側兩條胸腔引流管（推測為原發性自發性氣胸引流後）合併左下外側胸壁少量皮下氣腫；不應作為肺氣腫教學影像。"
+}

@@ -1,0 +1,68 @@
+{
+ "id": "nih-pneumothorax-00000732_005",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "AP portable (supine / semi-erect); L marker at image top-right confirming conventional orientation",
+ "technical_quality": "Limited portable AP film: large-habitus 85-year-old woman, low inspiratory lung volumes with elevated hemidiaphragms, slight rotation; bilateral breast shadows overlie the lower zones and the left costophrenic angle is partly obscured. Penetration adequate; apices and lateral chest walls included. Multiple tubes, ECG leads and external cables project over the left hemithorax and upper abdomen. Original 2500x2048 px at 0.168 mm/px, downsampled to 1024 px (about 0.41 mm/px horizontally, 0.34 mm/px vertically), which limits detection of a thin pleural line.",
+ "target": {
+  "finding": "pneumothorax",
+  "visible": "uncertain",
+  "laterality": "left",
+  "zone": "upper",
+  "size_cm": 2,
+  "confidence": 0.5
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "left",
+  "reader_b": "none",
+  "adjudicator": "left"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "Chest tube / small-to-medium-bore pleural drain (double-walled tube with lumen): enters the left lower lateral chest wall at about the lateral 7th-8th rib, courses medially and superiorly along the left cardiomediastinal border, squared tip at the left apex adjacent to the mediastinum (about 1024-px coordinates x 583, y 215, immediately inferomedial to the radiologist pneumothorax box); external portion continues down the left flank to the image edge",
+   "location": "left hemithorax, lower lateral chest wall to left apex / upper zone, tip at left apex",
+   "zh": "左側胸管（肋膜引流管）：自左下側胸壁進入，沿左心縱膈緣向上走行，管尖位於左肺尖近縱膈處，體外段沿左側腹下行"
+  },
+  {
+   "type": "External drain / suction tubing of similar calibre: runs from above the left shoulder (crosses the clavicle, so extrathoracic) vertically along the left lateral chest wall over the ribs, with a short connector-like segment at about the lateral 3rd rib, and converges with the chest-tube tubing at the left flank; not intrapleural",
+   "location": "left shoulder to left lateral chest wall and flank, upper to lower zone",
+   "zh": "體外引流／抽吸管路：自左肩上方越過鎖骨，沿左側胸壁垂直下行至左側腹，與胸管體外段會合（非胸腔內）"
+  },
+  {
+   "type": "ECG electrode with lead wire (wire runs inferiorly along the right lower chest)",
+   "location": "right anterolateral chest wall, projected over the right mid/lower zone",
+   "zh": "心電圖電極及導線（右前外側胸壁，投影於右中下肺野）"
+  },
+  {
+   "type": "ECG electrode with lead wire (wire runs inferiorly along the left lateral chest)",
+   "location": "left upper anterolateral chest wall, projected over the left upper zone",
+   "zh": "心電圖電極及導線（左上前外側胸壁，投影於左上肺野）"
+  },
+  {
+   "type": "Coiled external cable / tubing loops (ECG lead cable or monitor tubing; no intra-abdominal or intra-oesophageal tube)",
+   "location": "over the epigastrium / upper abdomen below the diaphragms, right of midline",
+   "zh": "上腹部（橫膈下、偏右）盤繞之體外導線／管路"
+  },
+  {
+   "type": "Laterality marker 'L' with 'AP PORTABLE' annotation",
+   "location": "image top-right corner, over the patient's left shoulder",
+   "zh": "影像右上角之左側標記「L」及「AP PORTABLE」標示（患者左肩處）"
+  }
+ ],
+ "other_findings": [
+  "心影擴大（AP 投影下心胸比約 0.58，部分為攜帶式投影放大效應），放射科亦有心臟肥大之框選",
+  "上縱膈稍寬、主動脈弓突出、胸主動脈迂曲延展，符合年齡及仰臥 AP 投影相關變化",
+  "右肺門區緻密、分葉狀結節影，最符合鈣化肺門淋巴結（或突出之肺門血管）",
+  "左下肺野模糊陰影，左肋膈角及左橫膈輪廓部分不清，疑少量左側肋膜積液及／或肺底塌陷（乳影重疊亦有貢獻）",
+  "雙下肺野間質及血管紋理增加，以右側肺門周圍及下肺野較明顯，疑輕度肺血管充血或雙側肺底塌陷",
+  "吸氣量不足、雙側橫膈上抬，患者體型較大、雙側乳影重疊於下肺野",
+  "雙側肩關節及胸椎退化性變化，瀰漫性骨質減少；未見肋骨骨折",
+  "左肺大致已於胸管周圍擴張，未見縱膈移位或深溝徵等張力性氣胸徵象"
+ ],
+ "treatment_evidence": true,
+ "first_presentation_suitable": false,
+ "suitability_reason": "本片左側已有胸管置入（管尖位於左肺尖近縱膈處），並連接體外引流／抽吸管路，屬氣胸引流後之追蹤影像；標記之左肺尖氣胸在影像上僅為胸管尖端外上方之細微透亮區，無明確臟層肋膜線，盲讀者未能發現，且合併多條體外管線與心電圖電極。因已有針對此病灶之治療器材、殘餘氣胸又極微小，不適合作為首次就診（未治療）氣胸之教學影像。",
+ "description_zh": "AP 攜帶式胸部X光（仰臥／半坐臥），85 歲女性，體型較大、吸氣量不足，雙側乳影重疊於下肺野，影像品質受限。左側可見一條胸管自左下側胸壁（約側面第7–8肋）進入，沿左心縱膈緣向上走行，管尖位於左肺尖近縱膈處；胸管尖端外上方之左肺尖區呈細微透亮、肺紋理稀疏（放射科框選範圍約 7×3.5 公分），疑為引流後殘餘之微量左側肺尖氣胸（厚度約 1–2 公分），但無法辨識明確之臟層肋膜線，左肺其餘部分已擴張，無縱膈移位。心影擴大（心胸比約 0.58，AP 投影部分放大），上縱膈稍寬、胸主動脈迂曲；右肺門區見緻密分葉狀結節影，疑鈣化肺門淋巴結；左下肺野模糊、左肋膈角及左橫膈輪廓部分不清，疑少量左側肋膜積液或肺底塌陷，雙下肺野間質及血管紋理增加。另見雙側心電圖電極及導線（右前外側胸壁及左上胸）、一條自左肩越過鎖骨後沿左側胸壁垂直下行至左側腹之體外引流／抽吸管路、上腹部盤繞之體外導線，以及右上角「L／AP PORTABLE」標記；雙側肩關節與胸椎退化性變化，未見肋骨骨折。",
+ "label_concern": "氣胸標籤位置（左肺尖）與影像上胸管尖端外上方之細微透亮區相符，標籤可能正確，但無明確臟層肋膜線，盲讀者未能發現，影像證據薄弱；且本片為左側胸管置入後之引流追蹤影像（殘餘微量氣胸），並非未治療之氣胸。"
+}

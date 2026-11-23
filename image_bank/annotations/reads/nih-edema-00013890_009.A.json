@@ -1,0 +1,39 @@
+{
+ "view": "PA (frontal, erect)",
+ "technical_quality": "Adequate inspiration (about 9-10 posterior ribs), mediastinum roughly centred with no significant rotation, good penetration (spine visible through the heart). Scapulae not fully rotated out and overlap the lateral upper/mid lung fields; bilateral breast shadows overlie the lower zones. Slightly soft/blurred image quality.",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "middle",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External radiographic marker (white L-shaped / laterality marker)",
+   "location": "Image upper right = patient's left shoulder, lateral to the left humeral head"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild perihilar vascular prominence with slight haziness (possible mild interstitial edema); no Kerley B lines, no pleural effusion, heart size normal - equivocal",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Gas-filled colon (splenic flexure) with haustral markings and gastric bubble beneath the left hemidiaphragm - likely normal bowel gas, no free air",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Bilateral breast shadows overlying the lower lung zones (soft-tissue overlap, not lung pathology)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Scapulae projected over the lateral lung fields (positioning)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.4,
+ "description_zh": "胸部正面（PA）X光，吸氣尚可，縱膈居中，氣管居中，心臟大小正常，肋膈角兩側銳利，未見肋膜積液或氣胸。雙側肺門血管紋理略增粗且周圍稍呈模糊，右側肺門較明顯，但周邊肺野透亮、未見明確 Kerley B 線或肺泡性浸潤，僅為輕微且不確定之肺水腫徵象。左側橫膈下可見含氣之結腸（脾曲）及胃泡，雙側乳影重疊於下肺野，肩胛骨部分重疊於外側肺野。影像右上角（病人左肩處）見一 L 形外部標記；未見胸管、導管、節律器或其他置入物。"
+}

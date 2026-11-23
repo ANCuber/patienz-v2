@@ -1,0 +1,29 @@
+{
+ "view": "Frontal (PA) chest radiograph, upright, L marker upper right of image (conventional orientation)",
+ "technical_quality": "Adequate. Slightly shallow inspiration (right hemidiaphragm at about the anterior 5th-6th rib), minimal rotation, moderate penetration. Large body habitus with abundant chest wall and upper-abdominal soft tissue; scapulae partly overlap the upper lateral lung fields. No lines, tubes, clips, pacemaker or other devices; the only external artifact is the L side marker.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 4,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined, mildly lobulated mass-like opacity at the right hilum / medial right lung extending from the middle into the lower zone, approximately 4 cm, right hilum denser and more bulky than the left (suspicious for a central mass or hilar adenopathy)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild prominence of the left hilum (less than right; possibly vascular)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Shallow inspiration with mildly crowded basal vasculature; large body habitus",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面（PA）胸部X光，吸氣稍淺、體型較大，未見任何管路、引流管或植入裝置。右側肺門及其內下方可見一邊界不清、略呈分葉狀之腫塊樣緻密影，約4公分，右肺門較左側明顯增大且緻密，疑為中央型腫塊或肺門淋巴結腫大；左肺門輕度突出。其餘肺野未見明顯實變、結節或氣胸，雙側肋膈角銳利，無肋膜積液。心臟大小約在正常上限、縱膈與氣管居中，骨骼結構完整；建議進一步胸部CT評估右肺門病灶。"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "nih-pneumonia-00020845_002",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "Frontal chest radiograph, recorded PA; appearance suggests portable AP technique (scapulae projected over lung fields, multiple monitoring cables). Conventional orientation: L side marker at image upper right, cardiac apex and aortic knob on image right.",
+  "technical_quality": "Limited. Patient rotated (asymmetric clavicular heads), both scapulae overlie the upper/mid lung fields, large bilateral breast shadows obscure both lower zones and costophrenic angles, and numerous ECG cables / external tubing are projected over the thorax and upper abdomen. Inspiration adequate (~9 posterior ribs), penetration roughly adequate with the mediastinum slightly under-penetrated.",
+  "target": {
+    "finding": "pneumonia (right lower lobe airspace consolidation)",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 8,
+    "confidence": 0.7
+  },
+  "laterality_sources": {
+    "bbox": "right",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "ECG electrode with lead cable",
+      "location": "patient's right lower / lateral chest wall (image left, ~x235/y545)",
+      "zh": "心電圖電極貼片（右側下胸壁）"
+    },
+    {
+      "type": "ECG electrode with lead cable",
+      "location": "midline over the lower sternum / cardiac silhouette (~x485/y560)",
+      "zh": "心電圖電極貼片（胸骨下段中線）"
+    },
+    {
+      "type": "ECG electrode with lead cable",
+      "location": "patient's left anterior chest over the cardiac apex region (image right, ~x625/y550)",
+      "zh": "心電圖電極貼片（左前胸心尖區）"
+    },
+    {
+      "type": "ECG lead cables / external tubing, coiled (large circular loop)",
+      "location": "loops projected over the cardiac silhouette and left lower hemithorax, not intracorporeal",
+      "zh": "心電圖導線／外部管線環狀迴圈（投影於心影及左下胸）"
+    },
+    {
+      "type": "External cable / tubing (straight, oxygen tubing or lead wire)",
+      "location": "runs diagonally from the right upper chest near the right clavicle inferolaterally across the right hemithorax, passing over the right electrode and off the image at lower left",
+      "zh": "外部導線／管線（自右上胸斜行向外下越過右胸）"
+    },
+    {
+      "type": "External tubing / cables (multiple parallel curvilinear lines)",
+      "location": "projected over the mediastinum, right lower chest and upper abdomen, extending below the diaphragm; no nasogastric tube course identified",
+      "zh": "外部管線（投影於縱膈、右下胸及上腹部，延伸至橫膈下）"
+    },
+    {
+      "type": "External cable",
+      "location": "curving along the left lateral lower chest wall / axillary soft tissue (image right)",
+      "zh": "外部導線（沿左側下胸壁外側走行）"
+    }
+  ],
+  "other_findings": [
+    "心影擴大（心胸比約0.55–0.58），可能部分為AP投照放大所致",
+    "右橫膈內側緣部分模糊、右肋膈角略鈍，疑少量右側肋膜積液（無法排除）",
+    "雙側大型乳房陰影重疊於下肺野，雙側肋膈角顯示不清",
+    "上縱膈增寬，可能為AP投照、旋轉及體型所致而非真正病變",
+    "左下後心區密度略增，因導線環狀迴圈重疊無法確認（不確定）",
+    "病人略有旋轉，雙側肩胛骨重疊於上中肺野（技術性）",
+    "骨骼未見明顯異常；未見氣管內管、中心靜脈導管、鼻胃管或胸管"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "右下肺野內側之肺泡浸潤／實變清楚可見，符合肺炎標記；片中僅有心電圖電極貼片與外部監測導線／管線，無胸管、引流管或其他針對肺炎之治療證據，與初次因肺炎就診（如急診監測中）的情境相符。心影略為擴大屬共病或投照放大，不影響作為初次表現使用；惟影像品質受乳房陰影、旋轉及導線重疊影響，判讀時需留意。",
+  "description_zh": "可攜式前後位（記錄為PA）胸部正面X光，病人體型肥胖、略有旋轉，雙側肩胛骨重疊於上中肺野，雙側大型乳房陰影重疊於下肺野使肋膈角顯示不清。胸前可見三枚心電圖電極貼片（右側下胸壁、胸骨下段中線、左前胸心尖區）及多條外部導線／管線：一條自右上胸斜行向外下越過右胸，多圈環狀迴圈投影於心影與左下胸，另有數條平行管線投影於縱膈及上腹部並延伸至橫膈下，未見氣管內管、中心靜脈導管、鼻胃管或胸管。右下肺野內側（右心緣旁、右橫膈上方，並向上延伸至右肺門下方之中肺野內側）可見邊界不清之斑片狀肺泡浸潤／實變，範圍約8公分，右橫膈內側緣部分模糊、右肋膈角略鈍，疑併少量右側肋膜積液，符合右下葉肺炎。左肺野大致清晰，左下後心區因導線重疊密度略增但無法確認。心影擴大（心胸比約0.55–0.58）且上縱膈增寬，可能部分為AP投照、旋轉及體型所致；骨骼未見明顯異常。",
+  "label_concern": ""
+}

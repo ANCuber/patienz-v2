@@ -1,0 +1,67 @@
+{
+ "id": "nih-infiltration-00028383_002",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (recorded); appearance favours an AP/portable acquisition (scapulae projected over the lateral lung fields, monitoring leads and external lines, low lung volumes). L marker at image upper right confirms conventional orientation (patient right on image left).",
+ "technical_quality": "Adequate exposure; apices and both costophrenic regions included; minimal rotation; shallow inspiration / low lung volumes with the right hemidiaphragm higher than the left; scapulae not cleared from the lung fields; bilateral breast shadows add density to the lower zones; overlying tubing and a Y-connector partly obscure the left mid zone.",
+ "target": {
+  "finding": "pulmonary infiltrate (diffuse hazy reticulonodular / interstitial-alveolar opacities of the right lung, most conspicuous and confluent in the middle and lower zones, with silhouetting of the right heart border and right hemidiaphragm)",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "multiple",
+  "size_cm": 14,
+  "confidence": 0.7
+ },
+ "laterality_sources": {
+  "bbox": "right",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Implanted venous access port (port-a-cath) reservoir",
+   "location": "Right anterior upper chest wall, infraclavicular (right upper zone)",
+   "zh": "植入式靜脈輸液港（人工血管）儲液槽，位於右前上胸壁鎖骨下"
+  },
+  {
+   "type": "Port catheter",
+   "location": "Enters via the right neck / internal jugular veins and descends along the right mediastinal border; tip projects over the lower SVC / cavoatrial junction",
+   "zh": "輸液港導管，經右頸靜脈沿右縱膈緣下行，尖端投影於上腔靜脈下段／腔靜脈心房交界處"
+  },
+  {
+   "type": "ECG electrodes (2 round snaps)",
+   "location": "Left lower-lateral chest wall, projected over the left lower zone",
+   "zh": "心電圖電極片兩枚，左下側胸壁"
+  },
+  {
+   "type": "External tubing with Y-shaped connector/hub (IV extension / oxygen line or external catheter segment)",
+   "location": "Loops over both neck bases and the left apex; Y-hub projected over the left mid zone at the lateral chest wall; tubing continues along the left lateral chest wall and both lower flanks",
+   "zh": "體外管路及Y型接頭，跨越兩側頸根部與左肺尖，接頭投影於左中肺野外側，管路沿左側胸壁及兩側下方延伸"
+  },
+  {
+   "type": "Small linear metallic density (skin clip / external artifact)",
+   "location": "Right axillary soft tissue, lateral to the right upper thorax",
+   "zh": "右腋下軟組織小線狀金屬影（皮膚夾或體外異物）"
+  },
+  {
+   "type": "Side marker (L)",
+   "location": "Image upper right corner (patient left)",
+   "zh": "左側標記（L），影像右上角"
+  }
+ ],
+ "other_findings": [
+  "右側肋膈角變鈍併右下肺野緻密影，疑少量右側肋膜積液及／或基底肺塌陷",
+  "右橫膈抬高，右肺容積減少",
+  "右心緣及右橫膈輪廓模糊（silhouette sign）",
+  "左中、下肺野輕度網狀／肺門周圍間質性紋理增加，程度較右側輕；左肋膈角大致清晰",
+  "心縱膈影稍寬／臨界性心臟擴大（受吸氣不足及可能AP投影影響）",
+  "放射科標註框於左下肺野標示可能之少量肋膜積液（NLP標籤 Effusion，未經驗證）；本片左肋膈角僅疑極輕微變鈍，與判讀者所見之右側肋膈角變鈍側別不同",
+  "氣管居中，未見氣胸、胸管或肋膜引流管"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標的右肺浸潤清楚可見，且無針對該浸潤之治療裝置（無胸管或肋膜引流管）；但片中有植入式靜脈輸液港、心電圖電極片及多條體外管路，顯示病人已有需長期靜脈通路之既有疾病（如惡性腫瘤接受化療）並處於監測狀態，不符合一般「首次就診」情境。僅適用於病史中已設定有惡性腫瘤／人工血管留置之個案。",
+ "description_zh": "胸部正面X光（記錄為PA，但肩胛骨重疊於肺野、多條監測導線且吸氣量不足，較符合AP／床邊攝影），右橫膈較左側抬高。右肺全肺野透亮度降低，可見瀰漫性霧狀、網狀結節性浸潤，以右中、下肺野最為明顯且趨於融合，縱向範圍約14公分，右心緣及右橫膈輪廓模糊，右側肋膈角變鈍，疑合併少量右側肋膜積液或基底肺塌陷；左中、下肺野亦見較輕微之網狀間質性紋理增加，左肋膈角大致清晰。右前上胸壁鎖骨下可見植入式靜脈輸液港儲液槽，導管經右頸靜脈沿右縱膈緣下行，尖端投影於上腔靜脈下段／腔靜脈心房交界處；左下側胸壁有兩枚心電圖電極片，兩側頸根部及左肺尖有體外管路盤繞，其Y型接頭投影於左中肺野外側，管路沿左側胸壁及兩側下方延伸，右腋下另見一小線狀金屬影。心縱膈影稍寬（臨界性），氣管居中，未見氣胸、胸管或肋膜引流管。",
+ "label_concern": ""
+}

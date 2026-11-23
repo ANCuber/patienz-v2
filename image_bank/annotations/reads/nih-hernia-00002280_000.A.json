@@ -1,0 +1,52 @@
+{
+ "view": "PA (frontal)",
+ "technical_quality": "Adequate exposure and penetration; low lung volumes with bilaterally elevated hemidiaphragms (right markedly); mild rotation/thoracic scoliosis; no L/R marker visible, conventional orientation assumed; bilateral shoulder prostheses project over the apices/lateral upper zones but do not obscure the lung fields.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "Shoulder arthroplasty (prosthetic humeral head with stem, additional glenoid-side metallic components)",
+   "location": "Patient's right shoulder (image left)"
+  },
+  {
+   "type": "Shoulder arthroplasty (prosthetic humeral head with stem)",
+   "location": "Patient's left shoulder (image right)"
+  },
+  {
+   "type": "Small ring-shaped metallic external artifact, likely an earring",
+   "location": "Upper edge of image, patient's left side, projected over the head/neck region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Rounded retrocardiac soft-tissue opacity with smooth convex lateral border, lying left of the spine just above the left hemidiaphragm, no definite air-fluid level; consistent with a hiatal (diaphragmatic) hernia (the labelled finding)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Marked smooth elevation of the right hemidiaphragm (dome at roughly the anterior 4th-5th rib level) with crowding of right basal bronchovascular markings; eventration / phrenic weakness vs subpulmonic process not excluded",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Tortuous, unfolded thoracic aorta with mildly widened upper/left mediastinal contour",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild thoracic scoliosis / rotational spinal deformity",
+   "laterality": "none",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Low lung volumes with bilaterally elevated hemidiaphragms; gastric fundal gas beneath the left hemidiaphragm",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面X光：左側心後區（脊椎左側、左橫膈正上方）可見一圓形軟組織密度影，邊緣平滑、外側緣呈凸面，最大徑約5公分，未見明確氣液平面，符合橫膈裂孔疝氣之表現。右側橫膈明顯抬高呈平滑圓頂狀，右下肺野血管紋理擁擠，雙側肺容積偏低；胸主動脈迂曲、上縱膈輪廓稍寬，胸椎輕度側彎。雙側肩關節可見人工關節置換術後之金屬植入物，影像上緣患者左側另見一小型環狀金屬異物（疑似耳環）；未見胸管、引流管或其他治療後之變化。"
+}

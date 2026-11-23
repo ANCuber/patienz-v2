@@ -1,0 +1,46 @@
+{
+  "id": "nih-consolidation-00000930_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate: erect PA projection, L marker at the patient's left upper corner, good inspiration (about 9-10 posterior ribs), minimal rotation, adequate penetration (vertebral bodies faintly visible behind the heart), costophrenic angles included; scapulae partially overlap the upper lateral lung fields and bilateral breast shadows overlie the lower zones.",
+  "target": {
+    "finding": "consolidation",
+    "visible": "yes",
+    "laterality": "left",
+    "zone": "lower",
+    "size_cm": 5,
+    "confidence": 0.55
+  },
+  "laterality_sources": {
+    "bbox": "none (NLP-mined label only, no radiologist box)",
+    "reader_a": "left / lower (subtle hazy opacity lateral to the lower left heart border, ~6 cm, confidence 0.55)",
+    "reader_b": "left / middle (blind: subtle patchy perihilar haziness; also borderline accentuation of left lower zone markings, confidence 0.5)",
+    "adjudicator": "left / lower (subtle ill-defined haze lateral to the lower left heart border extending toward the left perihilar region, ~5 cm; right-left comparison and regional density support a mild left-lower asymmetry)"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "External lead side marker 'L' with technologist initials",
+      "location": "Upper corner of the image on the patient's left, projected over the left shoulder / lateral clavicle region",
+      "zh": "體外鉛製 L 側標記（含技術員縮寫），投影於病人左肩外側"
+    },
+    {
+      "type": "External round radiopaque disc (~1.7 cm; gown snap / marker BB), not an internal device",
+      "location": "Projected over the left shoulder near the acromioclavicular joint / humeral head, immediately below the L marker",
+      "zh": "體外圓形高密度物（約 1.7 公分，疑為衣物釦或標記珠），投影於左肩肩鎖關節附近、L 標記正下方"
+    }
+  ],
+  "other_findings": [
+    "左肺門周圍支氣管血管紋理略增多、邊緣稍模糊，較右側略顯突出，可能為正常變異",
+    "雙側肩胛骨部分重疊於上外側肺野（體位因素）",
+    "雙側乳房軟組織陰影重疊於下肺野",
+    "心臟大小正常，縱隔居中，氣管無偏移",
+    "雙側肋膈角銳利，無肋膜積液或氣胸",
+    "骨骼及軟組織無明顯異常"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "左下肺野可見輕微、邊界不清的斑片狀實變影，片中無胸管、引流管、中央靜脈導管或任何體內治療裝置，亦無術後或引流後跡象；心臟大小正常、無肋膜積液，整體影像與初次因肺部感染（如社區型肺炎）就診的病人相符。惟病灶相當輕微，教學時宜以「早期／輕微實變」呈現。",
+  "description_zh": "胸部正面 X 光（PA、直立），吸氣深度足夠，體位大致端正，穿透度適當；影像右上角（病人左側）可見體外 L 側標記，其下方於左肩肩鎖關節處另有一枚約 1.7 公分的圓形高密度體外物（疑為衣物釦或標記珠），未見胸管、引流管、中央靜脈導管或心律調節器等任何體內裝置。左下肺野、心臟左緣下段外側（舌葉／左下葉區）可見範圍約 5 公分、邊界不清的淡薄斑片狀實變影，局部血管紋理模糊，無支氣管充氣徵，左側橫膈及左心緣輪廓大致仍可辨識，且此區域向上與略顯突出、邊緣稍模糊的左肺門周圍紋理相連。右肺野清晰，雙側肋膈角銳利，無肋膜積液或氣胸。心臟大小正常，縱隔居中，氣管無偏移；雙側肩胛骨部分重疊於上外側肺野，雙側乳房陰影重疊於下肺野，骨骼及軟組織無明顯異常。",
+  "label_concern": "實變影相當輕微且邊界不清（非典型大葉性實變，無支氣管充氣徵）；盲讀者僅描述為左肺門周圍／左下肺野輕微斑片狀模糊影，讀者對分區（下／中）意見不一，且此標籤為 NLP 擷取、無放射科醫師框選。建議人工確認後再作為「實變」教學影像使用。"
+}

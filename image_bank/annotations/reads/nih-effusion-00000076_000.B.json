@@ -1,0 +1,49 @@
+{
+ "view": "PA frontal chest radiograph (L marker on image right, conventional orientation)",
+ "technical_quality": "Adequate: erect PA, trachea midline, minimal rotation, adequate inspiration (~6 anterior ribs) and penetration; scapulae partially project over the upper lateral lung fields; no L/R reversal.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Homogeneous opacity with laterally rising meniscus obliterating the costophrenic angle and obscuring the hemidiaphragm - moderate pleural effusion (approx. 7 cm vertical height at the lateral chest wall)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Probable adjacent basal atelectasis/consolidation behind the effusion (lung base not separable from the fluid)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiomegaly, cardiothoracic ratio approximately 0.55-0.60",
+   "laterality": "midline",
+   "zone": "lower"
+  },
+  {
+   "finding": "Unfolded/tortuous thoracic aorta with prominent aortic knob (age-related; possible mural calcification)",
+   "laterality": "midline",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, slightly ill-defined right hilum (enlarged pulmonary artery vs hilar adenopathy) - uncertain",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Increased bronchovascular/interstitial markings with mild crowding at the right base; right costophrenic angle essentially preserved",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small ring-like calcified density adjacent to the anterior end of the right 1st rib - most likely calcified 1st costal cartilage (benign), calcified granuloma less likely",
+   "laterality": "right",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.72,
+ "description_zh": "正面胸部X光（PA），氣管居中，未見任何管路、導線、節律器或外部裝置。左下肺野見均質性緻密影，外側上緣呈新月狀向上延伸，左側肋膈角消失、左橫膈面模糊，符合中等量左側肋膜積液，並可能合併其後方之下葉肺塌陷或實質化；右側肋膈角大致保留，右下肺野支氣管血管紋理略增加。心影擴大（心胸比約0.55–0.60），胸主動脈迂曲、主動脈結突出，右肺門略顯突出；右上肺野第一肋軟骨前端處見小片環狀鈣化影，多為良性肋軟骨鈣化，骨骼結構未見明顯骨折或溶骨病灶。"
+}

@@ -1,0 +1,39 @@
+{
+ "view": "PA frontal (upright)",
+ "technical_quality": "Adequate: L marker at image upper-right confirms conventional orientation; near-symmetric clavicles (minimal rotation); inspiration adequate (~9 posterior ribs); penetration adequate (thoracic vertebral bodies visible through the heart); scapulae partly project over the lateral upper lung fields; lower zones partly veiled by dense breast soft tissue. No devices.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Mild coarse reticular / increased interstitial and bronchovascular markings with perihilar and basal predominance",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent hila with a few punctate densities in the right hilum suggesting small calcified hilar lymph nodes",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent, unfolded/tortuous aortic knob",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Borderline cardiomegaly (cardiothoracic ratio approximately 0.5)",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Large breast shadows / obese habitus overlying the lower zones (soft tissue, not intrapulmonary)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面X光片（PA站立），吸氣量尚可、曝光適中、輕微旋轉，未見任何導管、線路、心律調節器或外在異物。雙側下肺野及肺門周圍可見輕度粗網狀及支氣管血管紋理增加，以下葉為主；雙側肺門稍顯突出，右側肺門疑有數個小鈣化淋巴結，肺尖清晰。心臟大小約在正常上限（心胸比約0.5），主動脈弓略呈迂曲突出，氣管居中；雙側橫膈輪廓平滑，肋膈角清晰，未見肋膜積液或氣胸。骨骼結構完整，雙側乳房軟組織陰影重疊於下肺野。"
+}

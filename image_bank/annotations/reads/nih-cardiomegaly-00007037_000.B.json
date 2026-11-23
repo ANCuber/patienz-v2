@@ -1,0 +1,57 @@
+{
+ "view": "Frontal chest radiograph (PA, upright); L marker at the upper right corner of the image confirms conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate. Good inspiration (about 9 posterior ribs), adequate penetration (thoracic vertebrae visible through the cardiac silhouette), minimal rotation, apices and both costophrenic angles included. Scapulae partially overlap the upper lateral lung fields. No motion artifact.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 22,
+ "devices": [
+  {
+   "type": "Median sternotomy wires (several twisted wire loops)",
+   "location": "Midline, projected over the sternum / upper-mid thoracic spine (approx. T2-T7 level)"
+  },
+  {
+   "type": "Prosthetic cardiac valve / annuloplasty ring (oval radiopaque ring, expected mitral position)",
+   "location": "Projected over the cardiac silhouette just left of the spine, at approx. T8-T9 level, below the line from right cardiophrenic angle to left hilum (mitral position)"
+  },
+  {
+   "type": "External L side marker",
+   "location": "Upper right corner of the image (patient's left side)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Marked cardiomegaly, cardiothoracic ratio approx. 0.62, globular/rounded contour with left ventricular predominance; left heart border extends nearly to the left lateral chest wall",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Suggestion of left atrial enlargement: convex/straightened left heart border below the pulmonary artery segment (prominent left atrial appendage segment)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Post-cardiac-surgery changes: median sternotomy wires and prosthetic mitral valve / annuloplasty ring",
+   "laterality": "none",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Unfolded, tortuous thoracic aorta with prominent aortic knob (age-related ectasia)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly increased bibasilar interstitial/bronchovascular markings without overt alveolar edema (possible mild congestion vs chronic change; uncertain)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative changes of the glenohumeral joints, more evident on the left shoulder",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "胸部正面X光片（PA站立位），吸氣深度與穿透度尚可，輕微旋轉，右上角可見L側標記。可見正中胸骨切開術鋼絲，以及投影於心影內、脊椎左側二尖瓣位置之橢圓形人工瓣膜環（人工二尖瓣或瓣環成形環），為心臟手術後變化。心影明顯擴大（心胸比約0.62），左心緣圓鈍外凸並延伸至近左側胸壁，左心緣肺動脈段下方隆起提示左心房擴大，胸主動脈迂曲且主動脈結突出。雙肺野大致清晰，雙下肺野輕度間質紋理增加但無明顯肺水腫，未見肋膜積液或氣胸，雙側肋膈角銳利；兩側肩關節有退化性變化，未見胸管或引流管。"
+}

@@ -1,0 +1,43 @@
+{
+ "view": "Frontal (PA) upright chest radiograph; \"L\" side marker with technologist initials in the upper right of the image confirms conventional orientation (patient's right = image left)",
+ "technical_quality": "Adequate penetration (thoracic spine visible through the cardiac silhouette), minimal rotation (spinous processes roughly midway between clavicular heads), adequate inspiration on the left (~9-10 posterior ribs); scapulae partially overlap the upper lateral lung fields bilaterally; costophrenic angles and lung apices included; slight image edge vignetting/burn-out at the right image margin (patient's left axilla).",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Round radiopaque external artifact with central lucency and two small nubs at its upper margin (most consistent with a snap-type ECG electrode/monitoring lead; a ring piercing is a differential) with a thin wire-like line extending superiorly from it",
+   "location": "Projected over the patient's left mid zone, laterally, at about the level of the 5th-6th anterior rib / just lateral and below the left hilum"
+  },
+  {
+   "type": "Radiographic side marker 'L' with technologist initials (external marker)",
+   "location": "Upper right corner of the image, over the patient's left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Elevated right hemidiaphragm (dome roughly 4 cm higher than the left, at about the 8th-9th posterior rib) with smooth contour and dome peak displaced somewhat laterally; differential includes eventration/phrenic weakness, subpulmonic effusion, or right basal volume loss",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild hazy increased density in the right lower zone medially, above the elevated hemidiaphragm and adjacent to the right heart border, with crowded vascular markings; possible subsegmental atelectasis or early infiltrate versus crowding from the elevated diaphragm (low confidence)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right hilum appears mildly prominent/dense compared with the left (likely vascular, low confidence)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent / unfolded aortic knob, likely age-related; trachea midline, mediastinum not widened",
+   "laterality": "none",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面（PA）站立胸部X光，L側標記位於影像右上方，患者旋轉輕微、吸氣尚可，兩側肩胛骨部分重疊於上肺野外側。左中肺野投影一枚環狀、中央透亮之金屬密度外來物（疑為心電圖電極或穿環），並見細線狀影向上延伸；未見胸管、引流管或其他導管。右側橫膈明顯抬高（約高於左側4公分），輪廓平滑，右下肺野內側略呈朦朧增加密度並見血管紋理擠壓，疑為右下肺容積減少/次節段性肺不張或早期浸潤，右肺門略顯突出；左肺野清晰，兩側肋膈角銳利，無氣胸。心臟大小正常，主動脈弓略顯突出，氣管居中，縱膈未增寬，骨骼及軟組織無明顯異常。"
+}

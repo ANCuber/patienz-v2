@@ -1,0 +1,61 @@
+{
+  "id": "nih-nodule-00009019_001",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect PA film: minimal rotation, adequate inspiration (right hemidiaphragm at about the 8th-9th posterior rib), adequate penetration with edge-enhancement post-processing. Apices and both costophrenic angles included. No L/R side letter (bracket-shaped corner film marker only); conventional orientation assumed (cardiac apex and gastric gas on patient's left). Large bilateral breast shadows overlie both lower zones and scapulae partly project over the upper lateral lung fields.",
+  "target": {
+    "finding": "Well-defined, dense (calcified-appearing) round pulmonary nodule ~0.7 cm in the lateral subpleural right mid zone, adjacent to the lateral chest wall between anterior rib shadows - most likely a calcified granuloma",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "middle",
+    "size_cm": 0.7,
+    "confidence": 0.65
+  },
+  "laterality_sources": {
+    "bbox": null,
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "External electronic device (rectangular circuit-board module with a round button-cell battery and small surface-mount components) - external artifact, not implanted",
+      "location": "Projected over the midline lower thoracic spine (approx. T10-T12), just below the cardiac silhouette",
+      "zh": "體外電子裝置（含鈕扣電池之長方形電路板模組），投影於下胸椎中線、心影下方"
+    },
+    {
+      "type": "Small rectangular radiopaque object (likely clothing fastener / external marker)",
+      "location": "Patient's right of the lower spine at upper-abdominal level, below the right hemidiaphragm",
+      "zh": "小型長方形不透X光物（疑衣物扣件／體外物），位於右側橫膈下、下段脊椎右旁"
+    },
+    {
+      "type": "Radiopaque lead label / date-stamp characters (\"00 日\") - film marker",
+      "location": "Bottom of the image, midline to patient's left, below the diaphragm",
+      "zh": "鉛字日期標記「00 日」，位於影像下緣橫膈下方偏左"
+    },
+    {
+      "type": "Bracket-shaped corner film marker (no readable L/R letter)",
+      "location": "Upper right corner of the image (patient's left upper), outside the thorax",
+      "zh": "影像右上角框形標記（無左右字母），位於胸廓外"
+    }
+  ],
+  "other_findings": [
+    "右側氣管旁／氣管支氣管角處約0.8公分邊界清楚之圓形緻密影，鈣化淋巴結、奇靜脈或結節待鑑別",
+    "右肺門緻密並見數個結節狀高密度影（約1公分），最可能為鈣化肺門淋巴結",
+    "右下肺野心緣外側及橫膈上方見一至二處模糊圓形結節狀陰影（約0.8–1.3公分），血管端面重疊或額外結節待鑑別，建議CT進一步評估",
+    "左上肺野主動脈弓外側約1.2公分模糊結節狀密度，疑為血管／肺門結構重疊，無法完全排除結節",
+    "左下胸腔大型含氣結構，具氣液平面、清楚薄壁及斑駁內容物，左側橫膈明顯抬高：最符合左側橫膈抬高／膨升（eventration或膈神經麻痺）伴其下充氣擴張之胃底／結腸脾曲，須與大型食道裂孔疝氣（胃疝入胸腔）鑑別；未見橫膈下游離氣體",
+    "主動脈迂曲、主動脈弓突出，符合年齡相關之主動脈擴張／硬化",
+    "心臟大小約在正常上限至邊界性擴大（CTR約0.45–0.5），氣管居中，縱膈未增寬",
+    "雙側下肺野及肺門周圍支氣管血管／間質紋理增粗，左側心後方較明顯，無融合性實質化",
+    "雙側肋膈角銳利，未見肋膜積液或氣胸",
+    "雙側肩關節（右側較重）及胸椎退化性變化，未見急性肋骨骨折或溶骨性病灶",
+    "雙側乳房陰影重疊於下肺野，肩胛骨部分投影於上外側肺野"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標籤之肺結節（右中肺野外側約0.7公分鈣化樣結節）於影像上清楚可見，兩位判讀者（含未知標籤之盲讀者）皆獨立指出同側同區域；影像上無胸管、引流管或任何針對此結節之治療裝置，體外電子裝置與鉛字標記皆為體外偽影，不影響首次就診情境。惟本片另有多處右肺門／氣管旁鈣化淋巴結樣影、右下及左上肺野可疑小結節影，以及左下胸腔大型含氣結構（左側橫膈抬高伴胃底／結腸，或大型食道裂孔疝氣），報告生成時須一併描述並建議CT追蹤；最明顯之結節呈鈣化樣，較可能為良性肉芽腫。",
+  "description_zh": "86歲女性，直立正面（PA）胸部X光，吸氣尚可、無明顯旋轉，無左右字母標記，雙側乳房陰影重疊於下肺野。右中肺野外側近胸壁處見一約0.7公分、邊界清楚之高密度（鈣化樣）圓形結節，最可能為鈣化肉芽腫；右側氣管旁／氣管支氣管角另見約0.8公分圓形緻密影，右肺門緻密並有數個結節狀鈣化影（疑鈣化淋巴結），右下肺野心緣旁及橫膈上方另有一至二處約0.8–1.3公分模糊結節影，左上肺野主動脈弓外側亦有約1.2公分模糊結節狀密度，血管重疊或額外結節待鑑別，建議CT進一步評估。左下胸腔可見一具氣液平面、薄壁清楚且內含斑駁內容物之大型含氣結構，左側橫膈明顯抬高，最符合左側橫膈抬高／膨升伴其下擴張之胃底或結腸脾曲，須與大型食道裂孔疝氣鑑別，未見橫膈下游離氣體。主動脈迂曲且主動脈弓突出，心臟大小約在正常上限至邊界性擴大（CTR約0.45–0.5），雙側下肺野及肺門周圍支氣管血管紋理增粗，雙側肋膈角銳利，未見肋膜積液或氣胸，雙側肩關節及胸椎見退化性變化。未見中央靜脈導管、心律調節器或胸管；下胸椎中線投影一含鈕扣電池之體外電子裝置，右側橫膈下有一小型長方形不透X光物（疑衣物扣件），影像下緣有鉛字日期標記「00 日」，右上角有框形膠片標記，均為體外偽影。",
+  "label_concern": ""
+}

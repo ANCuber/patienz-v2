@@ -1,0 +1,41 @@
+{
+ "id": "nih-atelectasis-00030674_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (frontal), upright; \"L\" side marker at image upper-right confirms conventional orientation (patient left = image right)",
+ "technical_quality": "Adequate inspiration (~9 posterior ribs on the right) and penetration (spine visible through the heart). Mild rotation (asymmetric medial clavicles, left hemithorax projects smaller). Scapulae partially overlie the upper lateral lung fields. Apices and both costophrenic angles included.",
+ "target": {
+  "finding": "atelectasis",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "upper",
+  "size_cm": 8.0,
+  "confidence": 0.6
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "external radiographic side marker (L)",
+   "location": "image upper-right corner, over the patient's left shoulder soft tissue",
+   "zh": "體外左側（L）側別標記"
+  }
+ ],
+ "other_findings": [
+  "左側橫膈輕度抬高，左下肺野／心後區淡薄密度增加，左側肋膈角略鈍，符合左肺容積減少之續發變化；不排除合併少量肋膜積液或次節段性基底肺擴張不全",
+  "主動脈弓突出、胸主動脈迂曲延展（年長者主動脈延展）；左上縱膈輪廓突出，部分可能為塌陷之左上葉貼附縱膈所致",
+  "左肺門顯著且位置偏高，肺門腫塊（如阻塞性支氣管內病灶）無法完全排除，建議進一步以CT評估",
+  "右肺門可見緻密結節狀／鈣化影，最符合鈣化肺門淋巴結（陳舊性肉芽腫性病變）",
+  "縱膈輕度左移、左側胸廓較小，右肺相對過度透亮（代償性過度充氣），部分可歸因於旋轉",
+  "雙側盂肱關節及頸胸椎退化性變化；未見急性肋骨骨折或溶骨性病灶"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記病灶（左上葉肺擴張不全）在影像上可見：左上肺野呈面紗狀淡薄密度增加，內側緊鄰主動脈弓處有新月形透亮區（Luftsichel徵象），伴左肺門上提、左側橫膈抬高與縱膈輕度左移，為典型左上葉容積減少表現。影像上無胸管、引流管、中心靜脈導管或任何治療性置入物，僅有體外側別標記；右肺門鈣化淋巴結屬陳舊性變化，不與初次就診情境衝突，故適合作為初次就診之影像。",
+ "description_zh": "胸部正面（PA）直立X光，吸氣量與穿透度尚可，輕度旋轉，肩胛骨部分重疊於雙上肺野外側，僅見影像右上角之體外「L」側別標記，未見任何管路、引流管、心律調節器或其他置入物。左上肺野可見範圍約7–8公分之面紗狀淡薄密度增加（相當於放射科醫師標記之228×210像素區域），其內側緊鄰突出之主動脈弓處呈新月形透亮區，左肺門顯著且位置上提，縱膈輕度左移、左側胸廓較小，符合左上葉肺擴張不全（左上葉塌陷）；年長患者宜考慮支氣管內阻塞性病灶之可能。左側橫膈輕度抬高，左下肺野／心後區淡薄密度增加、左側肋膈角略鈍，為左肺容積減少之續發變化，不排除合併少量肋膜積液。胸主動脈迂曲延展、主動脈弓突出，心臟大小在正常範圍；右肺門可見鈣化結節狀影，符合陳舊性鈣化淋巴結；右肺野清晰且相對過度透亮，雙側肩關節及頸胸椎有退化性變化，骨骼未見急性病灶。",
+ "label_concern": ""
+}

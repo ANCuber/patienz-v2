@@ -1,0 +1,43 @@
+{
+ "view": "PA (frontal), L marker at image upper-right confirms conventional orientation",
+ "technical_quality": "Adequate inspiration and penetration; minimal rotation; right scapula partly overlaps the right upper lung field; mediastinum slightly wide (projection/body habitus)",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 9,
+ "devices": [
+  {
+   "type": "Tunneled dual-lumen central venous catheter (likely hemodialysis catheter), hairpin loop at the right neck/apex",
+   "location": "Right internal jugular approach, courses down the SVC to the right of the mediastinum; tip projects at the lower SVC / cavoatrial junction, right paramediastinal at the level of the upper right heart border"
+  },
+  {
+   "type": "Radiographic side marker 'L' (lead marker)",
+   "location": "Image upper-right corner (patient's left side)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy airspace opacity in the medial right lower zone with obscuration of the right heart border (silhouette sign), consistent with right middle/lower lobe consolidation (the labelled pneumonia)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Elevated right hemidiaphragm (volume loss vs subpulmonic effusion); right costophrenic angle largely preserved",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Borderline to mildly enlarged, globular cardiac silhouette (CTR approximately 0.5)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild prominence of perihilar bronchovascular markings (possible mild vascular congestion, low certainty)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光（PA），右側頸部置入隧道式雙腔中心靜脈導管（疑為透析用導管），導管沿上腔靜脈向下走行，尖端約投影於上腔靜脈下段／腔靜脈心房交界處。右下肺野內側可見模糊性浸潤陰影，右心緣輪廓被遮蔽（silhouette sign），並伴右側橫膈上抬，符合右中／下葉肺炎併局部容積減少；右側肋膈角大致清晰。心影呈邊緣性增大，雙側肺門血管紋理略增多；左肺野相對清晰，左側橫膈下可見胃泡。未見胸管或引流管等治療後跡象。"
+}

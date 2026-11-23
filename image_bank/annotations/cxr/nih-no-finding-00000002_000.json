@@ -1,0 +1,47 @@
+{
+  "id": "nih-no-finding-00000002_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate. PA erect frontal film; good inspiration (~9-10 posterior ribs), no significant rotation, trachea midline, scapulae mostly rotated off the lung fields. Apices and both costophrenic angles included. Lower thorax / upper abdomen relatively under-penetrated so the retrocardiac and subdiaphragmatic regions are less well assessed. A black rectangular de-identification bar occupies the image upper-right corner (above the patient's left shoulder), and the patient's arms/hands project along both lateral chest walls (more on the patient's left, image right), outside the lung fields.",
+  "target": {
+    "finding": "no acute cardiopulmonary finding",
+    "visible": "yes",
+    "laterality": "none",
+    "zone": "none",
+    "size_cm": -1,
+    "confidence": 0.85
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "none",
+    "reader_b": "left (recorded for the tortuous aorta; reader B found no acute finding)",
+    "adjudicator": "none"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "External round radiopaque marker (side/skin marker or clothing fastener) with a small hook-shaped component above it; not an internal device",
+      "location": "Projecting over the patient's left shoulder / acromion region, upper zone (image upper right), outside the lung field",
+      "zh": "左肩區外在圓形金屬標記物（側別標記或衣物鈕釦），其上方有一小鉤狀構件，非植入裝置"
+    },
+    {
+      "type": "Black rectangular de-identification / redaction bar (burned-in image annotation, not on patient)",
+      "location": "Image upper-right corner, above the patient's left shoulder, outside the thorax",
+      "zh": "影像右上角黑色去識別化遮罩（非病人身上物件）"
+    }
+  ],
+  "other_findings": [
+    "胸主動脈迂曲展開、主動脈結突出，符合高齡退化性主動脈變化（可能伴輕度管壁鈣化）；無明顯縱膈腫塊",
+    "心縱膈影於正常上限（心胸比約0.5），無肺水腫或肋膜積液，屬年齡相關範圍內",
+    "雙側肺門血管及中央支氣管血管紋理略顯明顯，推測為年齡相關／慢性變化，無局部實質浸潤",
+    "左肺門附近一微小緻密點，較可能為血管端面像或小鈣化肉芽腫（不確定，非急性）",
+    "雙肩肩鎖關節／盂肱關節退化性變化及輕度瀰漫性骨質減少，符合年齡；未見肋骨骨折",
+    "雙側肋膈角銳利、橫膈輪廓平滑，右橫膈略高於左側屬正常；未見肋膜積液或氣胸",
+    "雙側胸壁外側有上肢／手部軟組織重疊（擺位所致），未影響肺野判讀"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "本片為80歲男性之乾淨正常片：雙側肺野清晰、無實質浸潤、肋膜積液、氣胸或急性心肺病灶。片上無胸管、引流管、中央靜脈導管、心律調節器或任何植入／治療裝置，亦無手術後變化；僅見年齡相關之主動脈迂曲與心臟大小於上限，皆不與初次就診情境相矛盾。知標籤讀者與盲讀者均獨立判定無急性病灶，適合作為正常對照或初次就診之教學影像。",
+  "description_zh": "正面（PA）站立胸部X光，吸氣深度足夠、無明顯旋轉、氣管居中，影像右上角有去識別化黑色遮罩，雙側胸壁外側有上肢軟組織重疊。雙側肺野清晰，未見局部實質浸潤、結節、腫塊、肋膜積液或氣胸；雙側肋膈角銳利、橫膈輪廓平滑，右橫膈略高於左側屬正常，雙側肺門血管紋理略明顯但無腫塊，左肺門附近一微小緻密點推測為血管端面像或小鈣化肉芽腫。心縱膈影於正常上限（心胸比約0.5），胸主動脈迂曲展開、主動脈結突出，符合高齡退化性變化，無縱膈腫塊。骨骼見雙肩退化性變化及輕度骨質減少，未見肋骨骨折。片上除病人左肩區一枚外在圓形金屬標記物（其上方有小鉤狀構件）外，未見任何導管、引流管、心律調節器或其他植入裝置；整體所見為無急性心肺病灶。",
+  "label_concern": ""
+}

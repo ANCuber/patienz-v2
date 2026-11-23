@@ -1,0 +1,45 @@
+{
+ "id": "nih-infiltration-00017981_014",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate. Minimal rotation (clavicular heads roughly symmetric about the spinous processes), adequate inspiration (~9 posterior ribs), adequate penetration (vertebral bodies visible behind the heart). Apices and both costophrenic angles included; lower cervical spine and upper abdomen also in field. Scapulae partially overlap the lateral upper zones (PA as recorded; scapular overlap raises the possibility of AP). L marker over the patient's left shoulder confirms conventional orientation.",
+ "target": {
+  "finding": "pulmonary infiltrate",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "middle",
+  "size_cm": 5.5,
+  "confidence": 0.6
+ },
+ "laterality_sources": {
+  "bbox": "right",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Subcutaneous tunneled catheter consistent with a ventriculoperitoneal (VP) shunt distal catheter (uniform-caliber radiopaque tubing; alternatively a tunneled/external line)",
+   "location": "First seen at the right lower neck (about C4-5, right paramedian), courses over the right clavicle and right upper zone, descends along the medial third of the right hemithorax lateral to the mediastinum, crosses the right hemidiaphragm and continues through the right upper quadrant of the abdomen out of the bottom of the film; proximal segment not traceable above the mid-cervical level",
+   "zh": "腦室腹腔（VP）分流管（右頸經右側胸壁皮下走行至右上腹）"
+  },
+  {
+   "type": "Radiographic side marker 'L' (external marker, not a patient device)",
+   "location": "Over the patient's left shoulder / acromioclavicular region (image upper right)",
+   "zh": "L 側別標記（外部標記，非病人身上裝置）"
+  }
+ ],
+ "other_findings": [
+  "右肺門數個 2–4 mm 之緻密（疑鈣化）結節影，疑為鈣化肺門淋巴結或陳舊性肉芽腫；右肺門較左側緻密且突出",
+  "右肺門周圍支氣管壁增厚／袖套徵，可見支氣管端面之環狀透亮影，可能合併支氣管擴張性（慢性）變化",
+  "左上腹橫膈下可見胃內容物之斑駁氣體／軟組織密度影（偶然發現，非胸腔病灶）",
+  "雙側肩胛骨重疊於上肺野外側（擺位因素，非病變）；雙側乳房陰影及側胸壁皮膚皺褶重疊於雙下肺野",
+  "左肺野清晰；心影大小正常，縱隔居中；雙側肋膈角銳利，未見氣胸或肋膜積液；骨骼結構無明顯異常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記所見（右側浸潤影）清楚可見，片上無胸管、肋膜引流管或任何針對肺部病灶之治療裝置，側別三方一致。片上唯一裝置為腦室腹腔（VP）分流管，屬既往神經外科病史（如水腦症）之慢性裝置，與肺部浸潤無關、不構成已治療之證據；病例設定時須將 VP 分流管納入過去病史，報告亦應提及此管路。右肺門鈣化樣結節及支氣管周圍變化可能為陳舊性肉芽腫或慢性變化，同樣不與初次以肺部浸潤就診之情境衝突。",
+ "description_zh": "PA 正面胸部X光，吸氣量足夠，無明顯旋轉，雙側肩胛骨部分重疊於上肺野外側，左肩處可見 L 標記。右側頸部可見一條皮下走行之管路，越過右鎖骨後沿右側胸腔內側三分之一垂直下行，跨越右橫膈進入右上腹並延伸出片外，型態符合腦室腹腔（VP）分流管；未見胸管、肋膜引流管或其他治療裝置。右中肺野內側（右肺門上方至肺門周圍）可見約 5–6 公分之斑片狀、邊緣不清的浸潤影，伴支氣管周圍增厚及環狀透亮影，並向下延伸至右肺門下方及右心緣旁之右下肺野內側，未見明顯空氣支氣管徵；右肺門另見數個 2–4 mm 之緻密（疑鈣化）結節影，右肺門較左側突出。左肺野清晰，心影大小正常，縱隔居中，雙側肋膈角銳利，未見氣胸或肋膜積液；橫膈下左上腹可見胃內容物影，骨骼結構無明顯異常。",
+ "label_concern": ""
+}

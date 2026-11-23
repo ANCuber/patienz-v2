@@ -1,0 +1,67 @@
+{
+  "id": "nih-pneumothorax-00021896_003",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate. PA erect frontal film consistent with the recorded view; no readable L/R marker (only an external check-mark symbol in the image upper-right corner), conventional orientation assumed. Minimal rotation (clavicular heads roughly symmetric about the spinous processes), adequate inspiration, adequate penetration (thoracic spine faintly visible through the heart); apices and both costophrenic angles included. Scapulae partly project over the lateral lung fields, and the large body habitus with thick chest-wall soft tissue gives soft overall contrast, which limits detection of a thin apical pleural line.",
+  "target": {
+    "finding": "pneumothorax",
+    "visible": "uncertain",
+    "laterality": "right",
+    "zone": "upper",
+    "size_cm": -1,
+    "confidence": 0.25
+  },
+  "laterality_sources": {
+    "bbox": "right / upper (226x215 px radiologist box)",
+    "reader_a": "uncertain (label-aware; no pleural line found on either side)",
+    "reader_b": "none (blind reader found no pneumothorax; its 'left/lower' entry refers to a cardiophrenic opacity, not a pneumothorax)",
+    "adjudicator": "right / upper per radiologist box; no definite visceral pleural line identified on my own review even after contrast enhancement - at most a small, subtle right apical pneumothorax"
+  },
+  "agreement": "conflict",
+  "devices": [
+    {
+      "type": "Median sternotomy wires (7 intact twisted cerclage loops)",
+      "location": "Midline over the sternum, upper to lower mediastinum",
+      "zh": "正中胸骨切開鋼絲（7枚）"
+    },
+    {
+      "type": "Small linear metallic surgical clip / wire fragment",
+      "location": "Right paramedian upper mediastinum, just above and to the right of the uppermost sternal wire",
+      "zh": "右上縱膈旁小型手術夾"
+    },
+    {
+      "type": "Thin straight metallic wire, most consistent with a retained temporary epicardial pacing wire (less likely thin Blake-type drain)",
+      "location": "Right lower zone, oblique course from the right hilar / right cardiac border region infero-medially toward the epigastrium",
+      "zh": "右下肺野心外膜節律導線（暫時性，遺留）"
+    },
+    {
+      "type": "Thin vertical metallic wire strand, most consistent with a retained temporary epicardial pacing wire",
+      "location": "Midline lower sternum, running vertically alongside the lower sternotomy wires toward the epigastrium",
+      "zh": "下縱膈中線心外膜節律導線（暫時性，遺留）"
+    },
+    {
+      "type": "Thin straight metallic wire, most consistent with a retained temporary epicardial pacing wire (less likely thin Blake-type drain)",
+      "location": "Left lower zone, oblique course from the cardiac apex / left cardiophrenic region infero-medially toward the epigastrium, projecting over the rounded cardiophrenic opacity",
+      "zh": "左下肺野心外膜節律導線（暫時性，遺留）"
+    },
+    {
+      "type": "External check-mark symbol (not a readable L/R side marker)",
+      "location": "Image upper-right corner, outside the patient",
+      "zh": "影像右上角外置勾號標記（非左右側別標記）"
+    }
+  ],
+  "other_findings": [
+    "正中胸骨切開術後狀態（曾接受心臟手術），伴多條遺留之暫時性心外膜節律導線",
+    "左側心橫膈角處見一邊緣清楚、上緣圓凸、密度介於脂肪與軟組織之間之圓形陰影（寬約8公分），位於心尖外側、左橫膈上方，最可能為明顯之心包脂肪墊；鑑別包括左下葉圓形實質化／腫塊、肺下積液或橫膈膨出",
+    "右肺門較顯著、略呈分葉狀（肺門血管突出 vs 肺門淋巴結腫大）",
+    "右下肺野內側朦朧密度，右心緣部分模糊，右側橫膈略高且輪廓扁平、右肺容積略減（可能為右中／下葉輕微塌陷、肺下積液或術後橫膈麻痺）",
+    "主動脈結突出／迂曲，左上縱膈輪廓較寬（主動脈擴張或迂曲）",
+    "心影約於正常上限（心胸比約0.5）",
+    "右側肋膈角銳利，左側外側肋膈角尚清（內側被心橫膈角陰影遮蔽）；未見明確肋膜積液或實質化，骨骼未見骨折"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標籤之氣胸（放射科醫師框選於右上肺野）在本片無法確認：三位讀者（含盲讀者）及仲裁者經對比增強放大後，於右肺尖及側胸壁均未見明確臟層肋膜線或無肺紋理之透亮區，若存在應為極少量之右肺尖氣胸。此外，片上有正中胸骨切開鋼絲及多條遺留之心外膜節律導線，顯示為心臟手術後病人，與「初次以自發性氣胸就診」之情境相矛盾；雖無胸管或引流管，仍不適合作為初次就診之教學影像。",
+  "description_zh": "正面（PA）站立胸部X光，旋轉輕微、吸氣及穿透度尚可，病人體型豐滿、胸壁軟組織厚，肩胛骨部分重疊於側肺野。可見正中胸骨切開術後之7枚胸骨鋼絲及右上縱膈旁一枚小型手術夾，另有三條細直金屬線分別自右肺門／右心緣區、下縱膈中線及左心尖／左心橫膈角區向上腹部匯聚，最符合遺留之暫時性心外膜節律導線；未見胸管、肋膜引流管或中心靜脈導管。標籤之氣胸依放射科醫師框選位於右上肺野（框約226×215像素），惟本片右肺尖及側胸壁未見明確臟層肋膜線或無肺紋理之透亮區，若存在應為極少量（無法量測）之右肺尖氣胸。左側心橫膈角處見一邊緣清楚、上緣圓凸、密度介於脂肪與軟組織之間之圓形陰影（寬約8公分），位於心尖外側、左橫膈上方，最可能為明顯之心包脂肪墊，鑑別包括左下葉圓形實質化／腫塊、肺下積液或橫膈膨出；右下肺野內側呈朦朧密度使右心緣部分模糊，右側橫膈略高且輪廓扁平，右肺門較顯著。主動脈結突出／迂曲，心影約於正常上限（心胸比約0.5），右側肋膈角銳利，未見明確肋膜積液或實質化，骨骼未見骨折。",
+  "label_concern": "標籤「氣胸」雖有放射科醫師框選（右上肺野），但三位讀者及仲裁者均無法在本片辨識明確之臟層肋膜線或氣胸；A讀者（知標籤）判為不確定，B讀者（盲讀）認為無氣胸並將主要異常置於左心橫膈角之圓形陰影（心包脂肪墊）。若氣胸存在應為極少量之右肺尖氣胸，且本片為心臟手術後（胸骨鋼絲、遺留心外膜節律導線）影像，建議人工核實後再決定是否用於教學。"
+}
