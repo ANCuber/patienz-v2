@@ -1,0 +1,58 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: full lung fields and both costophrenic angles included, adequate inspiration and penetration, minimal rotation. Left (\"L\") side marker with technologist initials present at the upper right of the image, confirming conventional orientation.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "external L side marker with technologist initials (DG)",
+   "location": "upper right corner of image, projected over the patient's left shoulder/clavicle region"
+  },
+  {
+   "type": "small linear metallic density (~0.8 cm), probable surgical clip",
+   "location": "below the left hemidiaphragm, projected over the left upper abdominal quadrant medial to the gastric fundus air"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hyperlucent lung with attenuated/paucity of vascular markings (emphysematous change), upper-zone predominant, mild hyperinflation",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Unfolded, ectatic and tortuous thoracic aorta with prominent aortic knob (age-related aortic unfolding/atherosclerosis)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Coarse increased bronchovascular markings with peribronchial (bronchial wall) thickening, chronic bronchitic pattern, most marked in lower zones and left perihilar region",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Reticular/linear fibrotic-type opacities in medial right upper zone (probable scarring) with a possible small thin-walled bulla",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Prominent left hilar shadow, probably vascular (pulmonary artery) rather than mass; no discrete nodule identified",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Degenerative change of both glenohumeral joints with narrowed acromiohumeral interval, right more than left (extra-thoracic, incidental)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Large gastric fundal air bubble with mottled contents beneath the left hemidiaphragm (likely food residue, incidental)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 胸部X光，吸氣尚可、無明顯旋轉，影像右上角可見 L 側標記。雙側上肺野透亮度增加、血管紋理稀疏並呈輕度過度充氣，符合肺氣腫變化；雙下肺野及左肺門周圍支氣管血管紋理粗糙增加並有支氣管壁增厚，右上肺內側另見網狀纖維條索，疑似小型肺大皰。主動脈弓明顯突出且迂曲延展，心臟大小正常，左肺門略顯突出（疑為血管性），雙側肋膈角銳利，未見胸水或氣胸。左橫膈下胃泡內側見一約 0.8 cm 線狀金屬密度影（疑為手術夾），雙側肩關節退化性變化，未見胸管或引流管等治療性裝置。"
+}

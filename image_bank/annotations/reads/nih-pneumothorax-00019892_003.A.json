@@ -1,0 +1,30 @@
+{
+ "view": "PA (frontal, erect); L marker visible at image upper-right corner confirming conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate: good inspiration (about 9 posterior ribs), minimal rotation, adequate penetration, apices and costophrenic angles included; mild overlap of lower zones by breast shadows and ECG electrodes/lead.",
+ "target_finding_visible": "no",
+ "laterality": "uncertain",
+ "zone": "uncertain",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "ECG electrode (round, external)",
+   "location": "patient right upper chest / right shoulder region (image upper-left)"
+  },
+  {
+   "type": "ECG electrode (round, external)",
+   "location": "patient left upper chest / left shoulder region (image upper-right)"
+  },
+  {
+   "type": "ECG electrode with attached lead wire (external, coiled wire projecting below)",
+   "location": "patient left lower lateral chest wall near left costophrenic angle (image lower-right)"
+  },
+  {
+   "type": "Side marker 'L' with 'WTA' annotation",
+   "location": "image upper-right corner (patient's left side)"
+  }
+ ],
+ "abnormalities": [],
+ "treatment_evidence": false,
+ "confidence": 0.15,
+ "description_zh": "胸部正面X光（PA），影像右上角可見L標記，為標準擺位。兩側肺野之血管紋理均可延伸至胸壁與肺尖，經對比增強及放大檢視後仍未見明確的臟層肋膜線或肋膜腔內無紋理透亮區，亦無縱膈移位，本片解析度下無法辨識確切氣胸，但極小量氣胸無法完全排除。心臟大小與縱膈輪廓正常，氣管居中，兩側橫膈輪廓及肋膈角尚清晰，兩側乳房陰影重疊於下肺野。體外可見三個心電圖電極片（右上胸、左上胸、左下側胸壁，後者連接導線），未見胸管或肋膜引流管等治療證據。"
+}

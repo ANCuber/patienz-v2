@@ -1,0 +1,48 @@
+{
+ "view": "Frontal (PA/AP) chest radiograph, erect; L marker at the patient's left upper corner confirms conventional orientation",
+ "technical_quality": "Adequate penetration (thoracic spine visible through the cardiac silhouette), no significant rotation (clavicular heads symmetric about the spinous processes). Poor inspiratory effort with low lung volumes (only ~5-6 anterior ribs above the diaphragm). Scapulae not fully rotated out and overlap the lateral lung fields. Costophrenic angles included; lower thorax/upper abdomen included and bulky (large body habitus).",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "External side marker (L with DOT/circle marker block)",
+   "location": "Image upper right corner, over the patient's left shoulder region"
+  },
+  {
+   "type": "Multiple metallic surgical clips (approx. 8-10, laparoscopic-type)",
+   "location": "Left upper quadrant / epigastrium of the upper abdomen, below the left hemidiaphragm, slightly left of midline; one clip projects within a small gas-containing loop lower down"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Gas-containing, mottled (stool/food-pattern) bowel or gastric fundus structure projected at the left lung base immediately beneath/at the elevated left hemidiaphragm, abutting the left heart border, approx. 8 x 5 cm; concerning for a diaphragmatic/hiatal hernia containing stomach or colon versus subdiaphragmatic bowel under an elevated hemidiaphragm; lateral view recommended",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Bilateral elevation of the hemidiaphragms, right more than left (smooth right dome at about the anterior 5th rib), with low lung volumes; large dense abdomen (obesity / possible hepatomegaly or ascites) or poor inspiration as contributors",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Multiple surgical clips in the left upper abdomen / epigastrium indicating prior upper abdominal (likely laparoscopic gastric/splenic) surgery",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Low lung volumes with crowding of bronchovascular markings at both bases (technical, poor inspiration)",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Mildly prominent superior mediastinum / right paratracheal stripe, most likely technical (low volumes, slight AP magnification); no discrete mass",
+   "laterality": "right",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光片，吸氣不足、肺容積偏低，兩側橫膈明顯上抬（右側較顯著，右側橫膈頂約達前第5肋水平），上腹部影像密度高、體型壯碩。左下肺野緊貼上抬的左側橫膈下方可見一含氣且呈斑駁狀的腸道／胃底影（約8 × 5公分），緊鄰左心緣，需考慮橫膈疝氣（食道裂孔疝或橫膈疝）內含胃或結腸，或為橫膈下腸段，建議加做側面像評估；左上腹並見多枚手術夾，顯示曾接受上腹部手術。兩側肺野清晰，無實質化、結節、肋膜積液或氣胸，肋膈角銳利；心影大小大致正常但下緣被橫膈遮蔽，氣管居中，上縱膈略顯寬大可能為技術因素，骨骼無明顯病灶；未見胸管或引流管。"
+}

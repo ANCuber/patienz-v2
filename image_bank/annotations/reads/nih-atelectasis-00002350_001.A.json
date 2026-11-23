@@ -1,0 +1,51 @@
+{
+ "view": "PA (frontal) chest radiograph; \"LT\" side marker projected over the patient's left shoulder, conventional orientation confirmed",
+ "technical_quality": "Adequate for interpretation. Roughly centred with minimal rotation; adequate inspiration (~8 posterior ribs); mediastinum slightly under-penetrated (thoracic spine only faintly visible behind the heart); scapulae partially overlap the upper lateral lung fields; bilateral breast shadows over the lower zones.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "Small-bore chest tube / pleural drainage catheter (tube with visible radiopaque walls; hairpin loop at the tip)",
+   "location": "Patient's RIGHT hemithorax: enters the right lateral chest wall at about the mid-lateral chest, courses cephalad along the lateral right hemithorax to the right lung apex, forms a tight hairpin loop at the apex, and the terminal limb then courses caudally along the right paramediastinal pleura ending at approximately the right hilar level"
+  },
+  {
+   "type": "External drainage tubing / monitoring cables (several parallel tubular lines with connector segments)",
+   "location": "Outside the thorax along the patient's right lateral chest wall and right flank, continuing inferiorly to the lower edge of the film (in continuity with the lateral limb of the right chest tube)"
+  },
+  {
+   "type": "Thin linear external line (probable external tubing/lead wire; skin fold not excluded)",
+   "location": "Patient's left lateral chest wall, from the left axilla running caudally to the left flank, outside the rib cage"
+  },
+  {
+   "type": "Radiographic side marker 'LT GV'",
+   "location": "Upper image-right corner, over the patient's left shoulder"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Oblique plate-like (discoid) linear opacity just above the left hemidiaphragm, extending from near the cardiac apex laterally toward the lateral chest wall, ~6 cm long and ~0.5 cm thick, with mildly crowded basal vessels - consistent with subsegmental/discoid atelectasis (the more conspicuous side)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Subtle band-like/linear opacities above the right hemidiaphragm with increased right basal and lower perihilar vascular crowding - probable mild subsegmental atelectasis (less definite than the left; partly overlapped by breast shadow and rib)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left hemidiaphragm projects slightly higher than the right (~1-1.5 cm, reversal of the usual relationship) with gastric/colonic gas beneath it - mild, non-specific (gastric distension or minor left basal volume loss)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "No definite pneumothorax identified after right chest tube placement (no visceral pleural line seen at the right apex); costophrenic angles sharp, no significant pleural effusion; heart size and mediastinal contours normal; trachea midline",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.5,
+ "description_zh": "胸部正面片(PA)，右側可見一小口徑胸管/肋膜引流管自右側胸壁進入，沿右側胸廓外側向上至右肺尖形成髮夾狀迴圈，末端再沿右側縱膈旁向下至約右肺門高度；右側胸壁及側腹另見多條體外引流管路/導線，左側胸壁外側亦有一細線狀外物影。雙側肺底可見線狀密度增加影，以左下肺野橫膈上方之斜行板狀影(約6公分長)較為明確，右下肺野則為較細微之線狀影伴基底血管紋理擁擠，符合雙側肺底次節段性(盤狀)肺擴張不全。未見明顯氣胸或肋膜積液，肋膈角銳利，心臟大小及縱膈輪廓正常，左側橫膈相對右側稍高。"
+}

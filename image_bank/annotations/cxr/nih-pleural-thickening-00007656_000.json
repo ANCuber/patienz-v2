@@ -1,0 +1,49 @@
+{
+ "id": "nih-pleural-thickening-00007656_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate. Erect PA frontal film, L marker at image upper-right (patient's left) confirming conventional orientation. Deep inspiration / hyperinflation (left hemidiaphragm at about the posterior 10th-11th rib), adequate penetration (thoracic vertebrae visible through the heart), minimal rotation. Both apices and both costophrenic angles included; scapulae partly overlap the lateral upper lung fields.",
+ "target": {
+  "finding": "pleural thickening (lateral, band-like, with mild blunting of the costophrenic angle)",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "lower",
+  "size_cm": 10,
+  "confidence": 0.6
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External L side marker",
+   "location": "Image upper-right corner, over the patient's left shoulder region (outside the thorax)",
+   "zh": "體外左側「L」標記"
+  },
+  {
+   "type": "External metallic garment clasp (not implanted)",
+   "location": "Projected over the left upper abdomen below the left hemidiaphragm, just left of the lumbar spine",
+   "zh": "體外金屬衣物扣具（投影於左上腹）"
+  }
+ ],
+ "other_findings": [
+  "雙肺過度充氣，左側橫膈低平下移，肺野透亮度增加，心影狹長，符合肺氣腫／COPD變化",
+  "雙側肺尖輕度胸膜帽狀增厚，右側較明顯",
+  "主動脈弓突出、迂曲（老年性主動脈延長，疑邊緣鈣化）",
+  "右側橫膈頂高聳呈分葉狀，疑局部橫膈膨升（eventration）",
+  "左心膈角處邊界清楚之圓形密度影，最可能為心包脂肪墊",
+  "右肺底網狀／支氣管血管紋理輕度增加",
+  "左橫膈下胃泡明顯擴張（偶然發現）",
+  "雙側肩關節（盂肱／肩鎖關節）輕度退化性變化",
+  "心臟大小正常；未見氣胸、肺實質實變或明顯肋膜積液；上腹部未見手術夾或其他體內裝置"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記病灶（右側下肺野外側胸膜增厚）在片上可見，且無胸管、引流管或其他針對該病灶的治療證據；片上其餘變化（肺氣腫、主動脈迂曲、右橫膈膨升、肩關節退化）皆為慢性或年齡相關，與 81 歲病人首次因此發現就診的情境並不衝突。惟病灶較細微，右側肋膈角鈍化亦不能完全排除少量積液，教學時宜提示此鑑別。",
+ "description_zh": "胸部正面（PA）站立位X光，吸氣充分、穿透度適當，未見管路、引流管或植入物，僅見左側「L」標記及投影於左上腹的體外金屬衣物扣具。右側下肺野外側胸壁可見平滑帶狀軟組織密度影沿胸壁分佈（約 1 公分厚、縱向長度約 10 公分），右側肋膈角輕度鈍化，符合右側下肺野外側胸膜增厚；雙側肺尖另見輕度胸膜帽狀增厚，右側較明顯。雙肺過度充氣、左側橫膈低平，心影狹長，符合肺氣腫／COPD變化；右側橫膈頂高聳呈分葉狀，疑局部膨升，右肺底網狀紋理輕度增加。心臟大小正常，主動脈弓突出迂曲（老年性主動脈延長），左心膈角處圓形密度影可能為心包脂肪墊，左橫膈下胃泡明顯，雙側肩關節退化性變化。未見氣胸、肺實質實變或明顯肋膜積液。",
+ "label_concern": ""
+}

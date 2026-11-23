@@ -1,0 +1,24 @@
+{
+ "view": "PA frontal (erect) chest radiograph; L marker at upper-right of image confirms conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate: good inspiration (approximately 9-10 posterior ribs), adequate penetration with thoracic spine visible through the cardiac shadow, minimal rotation (clavicular heads roughly symmetric about the spinous processes), scapulae largely projected clear of the lung fields; full lung fields and costophrenic angles included",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "external side marker (L)",
+   "location": "upper right corner of image, over patient's left shoulder region (outside the thorax)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mildly prominent perihilar and lower-zone bronchovascular markings, subtle and equivocal (possible mild vascular congestion / bronchial wall prominence); no Kerley lines, consolidation or nodules identified",
+   "laterality": "bilateral",
+   "zone": "multiple (perihilar/middle and lower)"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正位(PA)胸部X光片，吸氣良好、曝光適中，除左側(L)標記外未見任何管路、導線或置入裝置。雙側肺野大致清晰，僅雙側肺門周圍及下肺野之支氣管血管紋理輕度增加，未見明確實質化、結節或Kerley B線。心臟大小在正常範圍，縱膈及氣管居中，主動脈弓輪廓正常；雙側橫膈輪廓平滑，肋膈角銳利，未見肋膜積液或氣胸。骨骼結構完整，雙側乳房陰影對稱，軟組織無異常。"
+}

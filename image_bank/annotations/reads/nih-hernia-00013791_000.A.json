@@ -1,0 +1,48 @@
+{
+ "view": "PA (L marker at image upper right confirms conventional orientation: patient's left on image right)",
+ "technical_quality": "Adequate inspiration and penetration, minimal rotation. Large bilateral breast shadows overlie both lower zones and hemidiaphragms, limiting assessment of the bases and retrocardiac region; scapulae partly project over the upper lung fields.",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "small metallic surgical clips (several), likely from prior upper-abdominal surgery",
+   "location": "left upper abdominal quadrant, below the left hemidiaphragm, inferomedial to the gastric fundal gas bubble (patient's left, ~6-7 cm left of midline)"
+  },
+  {
+   "type": "external side marker 'L'",
+   "location": "upper right corner of the image (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "well-defined oval nodular opacity, approx. 4 x 2.5 cm, lateral to the hilum, not contiguous with the diaphragm (about 4 cm above the dome) - pulmonary nodule/mass favoured over nipple shadow or hernia",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "less well-defined oval opacity, approx. 3 x 2 cm, overlying the anterior rib end lateral to the right hilum - possible nodule vs. superimposed rib/vascular shadow",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "slightly rounded/prominent right hilum with a punctate calcific density - possible calcified lymph node or end-on vessel",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "no retrocardiac air-fluid level, no supradiaphragmatic bowel gas; gastric fundal gas bubble lies in normal subdiaphragmatic position; left hemidiaphragm at roughly the same level as the right (no definite elevation) - labelled hernia not clearly identified",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "large bilateral breast shadows obscuring both lower zones (technical limitation, not pathology)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.3,
+ "description_zh": "PA 胸部正面片，吸氣量尚可、無明顯旋轉，雙側大面積乳房陰影重疊於下肺野，影響雙下肺野、橫膈及心後區之評估。左下肺野外側見一約 4 × 2.5 cm 邊界清楚之橢圓形結節狀陰影（位於橫膈頂上方約 4 cm，與橫膈不相連），右中肺野前肋端附近另見一約 3 × 2 cm 較不明顯之橢圓形陰影，右肺門稍圓鈍並有點狀鈣化，需考慮肺結節或重疊陰影，建議進一步評估。心縱膈輪廓正常，心後區未見明確氣液面或腸氣，左橫膈下為正常位置之胃泡，雙側橫膈高度相近，未能明確辨識標註之橫膈疝氣。左上腹橫膈下、胃底內下方見數枚小型金屬手術夾，顯示曾接受上腹部手術，不排除為疝氣修補術後，但無法自本片確認。"
+}

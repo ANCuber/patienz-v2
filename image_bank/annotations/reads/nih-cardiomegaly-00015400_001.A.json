@@ -1,0 +1,42 @@
+{
+ "view": "PA (frontal, upright), L marker at image upper-right = patient's left; conventional orientation",
+ "technical_quality": "Adequate: no significant rotation (clavicles symmetric about the spinous processes), adequate inspiration (~9 posterior ribs), penetration adequate (thoracic spine visible through the cardiac silhouette), apices and both costophrenic angles included; mild image-processing noise but diagnostic.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 20,
+ "devices": [
+  {
+   "type": "External artifact - round snap fastener / clothing button (ring with central dense dot), no line or tube attached",
+   "location": "Midline, projecting over the mid-thoracic spine at the level of the cardiac silhouette (approx. T8-T9)"
+  },
+  {
+   "type": "External artifact - round snap fastener / clothing button (ring with central dense dot)",
+   "location": "Midline, projecting over the upper lumbar spine / upper abdomen below the diaphragm"
+  },
+  {
+   "type": "Radiographic side marker 'L' with adjacent technologist initials text",
+   "location": "Image upper-right corner (patient's left shoulder region), outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Cardiomegaly: globular enlarged cardiac silhouette, cardiothoracic ratio approx. 0.58-0.60, transverse cardiac diameter approx. 20 cm; left heart border (left ventricular contour) displaced far laterally toward the left chest wall, right heart border also bulging to the right",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Increased bilateral bronchovascular / interstitial markings with prominent perihilar vasculature (right hilum more prominent), suggestive of pulmonary venous congestion / mild interstitial edema; no frank alveolar consolidation",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Prominent aortic knob and mildly widened superior mediastinum / vascular pedicle for a 36-year-old; trachea remains midline (possible vascular congestion or projection - uncertain)",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.85,
+ "description_zh": "胸部正面(PA)立位X光片，L側標記位於影像右上角，患者無明顯旋轉、吸氣程度尚可。心影明顯擴大呈球狀，心胸比約0.58–0.60，左心緣向左側胸壁明顯外展，心影橫徑約20 cm。兩側肺門血管及支氣管血管紋理增加，以肺門周圍及下肺野較顯著，疑為肺靜脈鬱血；主動脈弓略顯突出、上縱膈稍寬，氣管居中。兩側肋膈角大致銳利，未見明顯肋膜積液、氣胸或實質性浸潤；正中線可見兩枚圓形扣狀外在物(衣物按扣)分別投影於中胸椎及上腰椎處，未見任何導管、引流管或心律調節器。"
+}

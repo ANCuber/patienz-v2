@@ -1,0 +1,56 @@
+{
+ "view": "PA (frontal), L marker present in upper image-right corner confirming conventional orientation",
+ "technical_quality": "Adequate: full inspiration, minimal rotation (clavicle medial ends roughly symmetric about the spinous processes), adequate penetration with vertebral bodies visible through the cardiac silhouette; pacemaker generator overlies part of the left upper zone; both costophrenic angles included.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "multiple",
+ "size_cm": 10,
+ "devices": [
+  {
+   "type": "Cardiac pacemaker generator (small pulse generator, no shock coils on leads, i.e. pacemaker rather than ICD)",
+   "location": "Patient's left infraclavicular / pectoral region, overlying the left upper zone"
+  },
+  {
+   "type": "Transvenous pacing lead #1 (atrial lead) with redundant loop",
+   "location": "Courses from the generator medially with a loop in the left upper chest, descends along the mediastinum; tip projects over the right atrium / mid-mediastinum just to the patient's right of midline at the level of the mid thorax"
+  },
+  {
+   "type": "Transvenous pacing lead #2 (ventricular lead) with redundant loop",
+   "location": "Descends along the mediastinum with a loop projected over the right atrial region, then crosses to the left; tip projects over the right ventricular apex at the inferior cardiac silhouette just above the left hemidiaphragm"
+  },
+  {
+   "type": "Radiographic side marker 'L' with technician initials",
+   "location": "Upper image-right corner (patient's left shoulder region), external artifact"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy, ill-defined airspace consolidation, perihilar, extending laterally, approx 8 cm wide x 13 cm tall, partially obscuring the upper left heart border (silhouette sign, suggesting lingular / left upper lobe involvement with extension toward the lower lobe)",
+   "laterality": "left",
+   "zone": "middle and lower (perihilar)"
+  },
+  {
+   "finding": "Diffuse coarse reticular / interstitial markings bilaterally, more prominent in the right lower zone (chronic interstitial change / bronchiectatic-type change vs interstitial edema); no focal consolidation on the right",
+   "laterality": "bilateral",
+   "zone": "whole, right lower predominant"
+  },
+  {
+   "finding": "Tortuous / unfolded thoracic aorta, consistent with age",
+   "laterality": "none",
+   "zone": "mediastinum"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal / borderline enlarged (CTR roughly 0.45-0.5); left heart border partly obscured so exact size uncertain",
+   "laterality": "none",
+   "zone": "mediastinum / lower"
+  },
+  {
+   "finding": "No pleural effusion (both costophrenic angles sharp), no pneumothorax, no chest tube or drain",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "胸部正面片(PA),左側鎖骨下區可見心臟節律器主機,兩條經靜脈導線分別投影於右心房及右心室心尖部位置,導線走行連續,未見明顯斷裂或移位。左肺中下野肺門周圍可見斑片狀、邊緣不清之肺泡實質浸潤(consolidation),範圍約 8×13 公分,部分遮蔽左心緣,符合左肺實質化病灶;右肺及左肺其餘區域呈瀰漫性粗網狀間質紋理增加,以右下肺野較明顯。兩側肋膈角銳利,未見明顯肋膜積液或氣胸;胸主動脈迂曲,心影大小約在正常上限。未見胸管、引流管或其他治療後之證據。"
+}

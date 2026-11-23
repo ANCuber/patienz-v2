@@ -1,0 +1,69 @@
+{
+ "view": "AP portable (supine/semi-erect), L marker on image right confirming conventional orientation",
+ "technical_quality": "Adequate penetration, minimal rotation, apices and both costophrenic regions included; lung volumes modest; left hemithorax partly obscured by overlying tubes, ECG lead and axillary/breast soft-tissue folds; left CP angle partially obscured",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Chest tube (thoracostomy drain) – enters left lower lateral chest wall, courses medially/superiorly along the left mediastinal border, square tip at the left apex adjacent to the mediastinum; external portion continues down over the left flank",
+   "location": "left hemithorax, tip at left apex/upper zone"
+  },
+  {
+   "type": "Second straight tube running vertically along the left lateral chest wall, square end at about the lateral 3rd rib level – probable second chest tube (lateral/apical) vs external drain tubing",
+   "location": "left lateral chest wall, upper to lower zone, continuing over the left flank"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "right anterior chest, mid/lower zone (image left)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "left anterior chest, upper zone lateral (image right)"
+  },
+  {
+   "type": "Coiled wire/tubing (most likely external ECG cable loops; no NG tube seen in the mediastinum)",
+   "location": "over the epigastrium / upper abdomen, below the diaphragm"
+  },
+  {
+   "type": "L side marker and 'AP PORTABLE' label",
+   "location": "image upper right (patient's left shoulder)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "No definite visceral pleural line or pleural air space identified on either side; left lung appears essentially re-expanded around the chest tube – any residual pneumothorax would be small and cannot be confirmed",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Enlarged cardiomediastinal silhouette / probable cardiomegaly (AP portable magnification limits assessment)",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Tortuous / unfolded thoracic aorta with prominent aortic knob",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Dense nodular opacities in the right perihilar region, most consistent with calcified hilar lymph nodes",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Hazy increased density of the left lower zone with partial obscuration of the left hemidiaphragm – possible small layering effusion / basal atelectasis (overlying breast shadow contributes)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative changes of the thoracic spine and shoulders",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.5,
+ "description_zh": "AP 攜帶式胸部X光，L 標記位於影像右側，為傳統擺位。左側胸腔可見一條胸管自左下側胸壁進入，沿左縱膈旁向上走行，末端位於左肺尖近縱膈處；另有一條管路沿左側胸壁垂直走行，末端約在第3肋高度，可能為第二條胸管或體外引流管路。雙側肺野未見明確之臟層肋膜線或肋膜腔積氣，左肺大致已擴張，若有殘餘氣胸應屬微量而無法確認。其他所見：雙側心電圖電極與導線、上腹部盤繞之導線（疑體外）、心影擴大（AP 投影限制）、主動脈迂曲、右肺門區鈣化結節狀影（疑鈣化淋巴結），以及左下肺野密度增加、左橫膈輪廓部分模糊。"
+}

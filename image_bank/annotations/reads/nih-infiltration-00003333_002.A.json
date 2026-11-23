@@ -1,0 +1,51 @@
+{
+ "view": "PA (frontal; L marker at image right confirming conventional orientation)",
+ "technical_quality": "Adequate penetration but low lung volumes with poor inspiration (both hemidiaphragms elevated); minimal rotation; large bilateral breast shadows overlie both lower zones and partly obscure the costophrenic angles.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 10,
+ "devices": [
+  {
+   "type": "L side marker (external, with technologist initials)",
+   "location": "image upper right corner, over patient's left shoulder region"
+  },
+  {
+   "type": "curved tubular radiopaque line, likely external tubing/drain (not a chest tube, outside the thorax)",
+   "location": "image lower left corner, patient's right flank/upper abdomen below the right hemidiaphragm"
+  },
+  {
+   "type": "small radiopaque clip-like artifact",
+   "location": "medial left mid zone near the left hilum / aortopulmonary window"
+  },
+  {
+   "type": "small radiopaque foreign-body densities (possible clips or external artifact)",
+   "location": "upper abdomen near midline, projected below the left hemidiaphragm"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "patchy hazy airspace/interstitial infiltrate, perihilar, extending into the lower zone; left hilum ill-defined",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "extension of the hazy opacity into the left lower zone above the hemidiaphragm",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "bilaterally elevated hemidiaphragms / low lung volumes (poor inspiration)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "large breast shadows overlying both lower zones (soft-tissue, not pulmonary)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "胸部正面（PA）X光片，吸氣量不足，雙側橫膈上抬，雙側乳房陰影重疊於下肺野。左側中肺野肺門周圍可見斑片狀模糊浸潤影，向左下肺野延伸，範圍約10公分，左肺門輪廓較不清晰；右肺野相對清晰，未見氣胸或明顯肋膜積液，心影大小尚可。影像左下角（病人右側側腹部）可見一彎曲管狀高密度影，位於胸廓之外，應為體外管線而非胸管；左中肺野內側近肺門處及上腹部另見小片金屬樣異物影，可能為夾子或體外物，未見已接受治療（如胸管引流）之證據。"
+}

@@ -1,0 +1,52 @@
+{
+ "view": "Frontal chest radiograph (PA vs AP uncertain; scapulae partially overlap the upper lateral lung fields, favouring AP or incompletely rotated PA)",
+ "technical_quality": "Adequate inspiration (about 9 posterior ribs), minimal rotation (spinous processes roughly midway between clavicular heads), adequate penetration with vertebral bodies faintly visible through the heart, apices and both costophrenic angles included; scapular bodies project over the upper/mid lateral lung zones. A small non-alphabetic marker (check-mark shaped) is in the upper image-right corner; no L/R letter marker seen, conventional orientation assumed.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "Median sternotomy wires (7 twisted-loop cerclage wires), intact-appearing",
+   "location": "Midline, projected over the sternum/thoracic spine from roughly T3 to T10 level"
+  },
+  {
+   "type": "Small short linear metallic density, possibly a wire fragment or artifact (uncertain)",
+   "location": "Immediately to the patient's right of the uppermost sternal wire, upper mediastinum"
+  },
+  {
+   "type": "External film marker (check-mark shaped), no L/R letter",
+   "location": "Upper corner of the image on the patient's left side, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Oblique linear opacity with surrounding increased reticular/linear density adjacent to the right cardiac border; right heart border partially obscured - most consistent with subsegmental (plate-like) atelectasis or scarring",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Borderline/mild cardiomegaly (CTR approximately 0.52) in a post-sternotomy chest",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent/unfolded aortic knob with a somewhat wide superior mediastinum, likely tortuous ectatic aorta; trachea midline",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Left lung relatively hyperlucent with sparse peripheral markings in the lateral lower zone; no definite visceral pleural line identified on either side (small pneumothorax cannot be fully excluded)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left hemidiaphragm at a similar or slightly higher level than the right (minor, mild elevation of left hemidiaphragm); costophrenic angles sharp, no pleural effusion",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光(疑為AP或肩胛骨未完全外旋之PA),吸氣程度尚可,無明顯旋轉,兩側肺尖及肋膈角均包含在片內。正中線可見七條胸骨鋼絲,顯示曾接受正中胸骨切開術,未見胸管、引流管、中央靜脈導管或心律調節器。心臟輪廓略大(心胸比約0.52),主動脈弓突出、上縱膈略寬,考慮主動脈迂曲;右下肺野於右心緣旁可見斜行線狀及網狀密度增加,右心緣部分模糊,考慮為次節段性肺塌陷或纖維化疤痕。左肺相對透亮、外側下肺野周邊紋理稀疏,但兩側未見確切臟層肋膜線或肋膜積液,肋膈角尚清晰;骨骼及軟組織無明顯異常。"
+}

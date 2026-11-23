@@ -1,0 +1,39 @@
+{
+ "view": "PA (frontal), as recorded; scapulae partially project over the upper lateral lung fields",
+ "technical_quality": "Adequate inspiration and penetration, minimal rotation; both scapulae overlap the lateral lung fields; strong vignetting/dark-band artifact at the lateral image edges (dataset processing). Side marker at upper-right corner of the image has mirrored/unreadable lettering, so conventional orientation is assumed.",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External radiographic side marker with L-shaped bracket, lettering mirrored/unreadable (not a line, tube or implant)",
+   "location": "Upper-right corner of the image, projected over the patient's left shoulder / acromioclavicular region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild prominence and coarsening of perihilar and lower-zone bronchovascular markings, right more than left, without Kerley B lines, alveolar consolidation or pleural effusion (only equivocal support for the 'edema' label)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, somewhat dense right hilum (likely vascular / age-related; hilar lymphadenopathy not excluded at this resolution)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Tortuous / unfolded thoracic aorta with prominent aortic knob; heart size within normal limits",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Degenerative (osteoarthritic) changes of both glenohumeral joints, extrathoracic",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.35,
+ "description_zh": "胸部正面片（記錄為PA），吸氣尚可，兩側肩胛骨部分重疊於外側肺野，影像兩側邊緣有明顯暗帶處理假影。心臟大小正常，胸主動脈迂曲、主動脈弓突出，符合高齡變化；氣管居中。兩側肺門周圍及下肺野支氣管血管紋理輕度增粗（右側較明顯），但未見明確Kerley B線、肺泡型實質化或肋膈角變鈍，兩側肋膈角銳利，故對「肺水腫」僅屬可疑而非確定。未見任何導管、引流管、心律調節器或手術夾；另見兩側肩關節退化性變化。"
+}

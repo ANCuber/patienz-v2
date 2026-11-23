@@ -1,0 +1,59 @@
+{
+ "view": "Frontal chest radiograph (likely AP; scapulae partially projected over the upper lateral lung fields, superior mediastinum appears wide). \"L\" side marker and technologist initials at the patient's upper left (image top-right) confirm conventional orientation.",
+ "technical_quality": "Adequate but suboptimal: low lung volumes (approximately 8 posterior ribs, hemidiaphragms high), slight underpenetration (thoracic spine only faintly seen through the heart), minimal rotation (clavicles roughly symmetric about the spinous processes). Large body habitus with abundant chest-wall soft tissue adding density to both lower zones.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": 16,
+ "devices": [
+  {
+   "type": "External side marker 'L' with technologist initials (no medical device)",
+   "location": "Patient's left upper corner of the film (image top-right), outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Enlarged cardiac silhouette (cardiothoracic ratio roughly 0.5-0.55; transverse diameter approx. 16 cm) - cardiomegaly, partly exaggerated by AP projection and shallow inspiration",
+   "laterality": "none (midline)",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, ill-defined bilateral hila with increased perihilar and lower-zone interstitial/vascular markings and upper-zone vessel prominence - pulmonary vascular congestion / mild interstitial edema pattern",
+   "laterality": "bilateral",
+   "zone": "multiple (middle and lower, perihilar)"
+  },
+  {
+   "finding": "Widened superior mediastinum with prominent aortic knob - likely projection/tortuous aorta and vascular engorgement rather than a mass; not definitively assessable on this film",
+   "laterality": "none (midline)",
+   "zone": "upper"
+  },
+  {
+   "finding": "Elevated right hemidiaphragm with a smooth dome, higher than the left",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Blunting of the right costophrenic angle with lateral peaking of the right diaphragm contour - small right pleural effusion (possibly subpulmonic) suspected",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left costophrenic angle largely preserved; only equivocal minimal blunting, partly obscured by chest-wall soft tissue",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Low lung volumes / shallow inspiration crowding the basal vessels",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "No focal consolidation, mass, pneumothorax, or cavity; trachea midline; bones intact without acute fracture; no lines, tubes, pacemaker, or surgical clips",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光（疑為AP投照），吸氣不足、肩胛骨部分重疊於肺野，穿透度略低。心影增大（心胸比約0.5以上），上縱膈增寬、主動脈結突出；雙側肺門影增粗且邊界模糊，雙側肺門周圍及下肺野血管與間質紋理增加，符合肺血管充血／輕度間質性肺水腫表現。右側橫膈抬高、右側肋膈角變鈍，疑有少量右側肋膜積液；左側肋膈角大致清晰。未見局部實質化、氣胸或腫塊，骨骼無急性病變，未見任何管路、引流管或植入裝置。"
+}

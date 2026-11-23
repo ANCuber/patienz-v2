@@ -1,0 +1,329 @@
+[
+ {
+  "id": "ptbxl-NDT-13641",
+  "ecg_id": "13641",
+  "selected_code": "NDT",
+  "language": "de",
+  "source_report": "sinus arrhythmie lagetyp normal unvollstÄndiger rechtsschenkelblock unspezifisches abnormes t",
+  "source_report_zh": "竇性心律不整，電軸正常，不完全性右束支傳導阻滯，非特異性 T 波異常。",
+  "statements_zh": [
+   {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NDT-48",
+  "ecg_id": "48",
+  "selected_code": "NDT",
+  "language": "de",
+  "source_report": "sinusrhythmus unspezifisches abnormales t",
+  "source_report_zh": "竇性心律，非特異性 T 波異常。",
+  "statements_zh": [
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NDT-318",
+  "ecg_id": "318",
+  "selected_code": "NDT",
+  "language": "en",
+  "source_report": "atrial fibrillation. st segments are depressed in ii, iii, avf, v4,5,6. non-specific but consistent with myocardial ischaemia and digitalis effect.",
+  "source_report_zh": "心房顫動。II、III、aVF、V4–V6 導程 ST 段壓低；屬非特異性變化，但符合心肌缺血及毛地黃效應。",
+  "statements_zh": [
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"},
+   {"code": "DIG", "likelihood": 80.0, "kind": "diagnostic", "zh": "毛地黃效應"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NDT-128",
+  "ecg_id": "128",
+  "selected_code": "NDT",
+  "language": "de",
+  "source_report": "ventrikulÄre extrasystole(n) interponierte ventrikulÄre extrasystole(n) sinus arrhythmie unspezifisches abnormales t",
+  "source_report_zh": "心室早期收縮，間插性心室早期收縮，竇性心律不整，非特異性 T 波異常。",
+  "statements_zh": [
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NDT-116",
+  "ecg_id": "116",
+  "selected_code": "NDT",
+  "language": "de",
+  "source_report": "sinusrhythmus linkstyp unspezifisches abnormales t",
+  "source_report_zh": "竇性心律，電軸左偏，非特異性 T 波異常。",
+  "statements_zh": [
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NDT-134",
+  "ecg_id": "134",
+  "selected_code": "NDT",
+  "language": "sv",
+  "source_report": "sinusrytm vÄnster el-axel inget sÄkert patologikst",
+  "source_report_zh": "竇性心律，電軸左偏，無明確病理性變化。",
+  "statements_zh": [
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NDT-217",
+  "ecg_id": "217",
+  "selected_code": "NDT",
+  "language": "de",
+  "source_report": "sinusrhythmus lagetyp normal vorhofsueberlastung wahrscheinlich unspez. myokardschaedigung m. rep.stoerungen grenzbefund",
+  "source_report_zh": "竇性心律，電軸正常，很可能有心房負荷過重；非特異性心肌損傷合併再極化異常，屬臨界所見。",
+  "statements_zh": [
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "「wahrscheinlich」表「很可能」（probable），原譯「可能有」易與 möglich（可能）混淆，已改為「很可能有」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-NDT-1205",
+  "ecg_id": "1205",
+  "selected_code": "NDT",
+  "language": "de",
+  "source_report": "sinusrhythmus linkstyp unspezifisches abnormales t",
+  "source_report_zh": "竇性心律，電軸左偏，非特異性 T 波異常。",
+  "statements_zh": [
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"},
+   {"code": "IVCD", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性心室內傳導障礙（阻滯）"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NDT-1009",
+  "ecg_id": "1009",
+  "selected_code": "NDT",
+  "language": "en",
+  "source_report": "sinus rhythm. st segments are depressed in v3-6. t waves are flat in v3,4. myocardial ischaemia is likely.",
+  "source_report_zh": "竇性心律。V3–V6 導程 ST 段壓低，V3、V4 導程 T 波平坦；很可能為心肌缺血。",
+  "statements_zh": [
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NST_-26",
+  "ecg_id": "26",
+  "selected_code": "NST_",
+  "language": "de",
+  "source_report": "sinusrhythmus verdacht auf p-sinistrocardiale linkstyp unspezifisches abnormales t qt-verlÄngerung zweiter tag 3x2 cordichin erfolgreiche cardioversion von vorhofflattern (novodigal 0,2 1x1)",
+  "source_report_zh": "竇性心律，疑似左心房負荷（P mitrale），電軸左偏，非特異性 T 波異常，QT 間期延長。Cordichin 3x2 服用第二天，心房撲動整流成功（Novodigal 0.2 1x1）。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"},
+   {"code": "DIG", "likelihood": 100.0, "kind": "diagnostic", "zh": "毛地黃效應"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "cardioversion 依台灣慣用語改為「整流」（原譯「整律」）。Cordichin（quinidine/verapamil 複方）與 Novodigal（β-acetyldigoxin，毛地黃類）為德國藥品商品名，保留原文；報告提及 Novodigal，與 DIG 代碼相符。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-NST_-160",
+  "ecg_id": "160",
+  "selected_code": "NST_",
+  "language": "sv",
+  "source_report": "sinusrytm vÄnster el-axel t-fÖrÄndring, sÅsom vid    hÖg lateral myokardaffektion",
+  "source_report_zh": "竇性心律，電軸左偏，T 波變化，型態如高側壁心肌病變所見。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NST_-295",
+  "ecg_id": "295",
+  "selected_code": "NST_",
+  "language": "en",
+  "source_report": "sinus rhythm. minor non-specific st-t wave changes in i, avl.",
+  "source_report_zh": "竇性心律。I、aVL 導程輕微非特異性 ST-T 變化。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NST_-529",
+  "ecg_id": "529",
+  "selected_code": "NST_",
+  "language": "sv",
+  "source_report": "sinusrytm avvikande qrs(t) fÖrlopp    inferior myokardskada",
+  "source_report_zh": "竇性心律，QRS(T) 型態異常，下壁心肌損傷。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "報告述及「下壁心肌損傷」，但 SCP 代碼僅有 NST_（非特異性 ST 段變化），未含梗塞或損傷代碼；非矛盾，惟代碼較報告保守，供參考。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NST_-1994",
+  "ecg_id": "1994",
+  "selected_code": "NST_",
+  "language": "de",
+  "source_report": "sinusrhythmus lagetyp normal unspezifisches abnormales t qt-verlÄngerung",
+  "source_report_zh": "竇性心律，電軸正常，非特異性 T 波異常，QT 間期延長。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NST_-16707",
+  "ecg_id": "16707",
+  "selected_code": "NST_",
+  "language": "de",
+  "source_report": "sinus arrhythmie lagetyp normal t abnormal in inferioren ableitungen",
+  "source_report_zh": "竇性心律不整，電軸正常，下壁導程 T 波異常。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NST_-2949",
+  "ecg_id": "2949",
+  "selected_code": "NST_",
+  "language": "en",
+  "source_report": "sinus rhythm. st segments are depressed in ii, iii, avf, v3-6. t waves are low or flat in v2,3,4. non-specific but consistent with myocardial ischaemia.",
+  "source_report_zh": "竇性心律。II、III、aVF、V3–V6 導程 ST 段壓低，V2–V4 導程 T 波低平；屬非特異性變化，但符合心肌缺血。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NST_-4127",
+  "ecg_id": "4127",
+  "selected_code": "NST_",
+  "language": "de",
+  "source_report": "sinusrhythmus slt flaches t in l, v4-6 iq grenzwertig normales ekg",
+  "source_report_zh": "竇性心律，電軸垂直位，aVL 及 V4–V6 導程 T 波平坦；臨界正常心電圖。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 50.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"}
+  ],
+  "axis_zh": "電軸右偏(?)",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原文縮寫「slt」判讀為 Steiltyp（電軸垂直位），與 heart_axis=AXR 相容（Steiltyp 為偏右之電軸）；「l」判讀為導程 aVL（德式 R/L/F 肢體導程標記）；「iq」無法判讀，已略去。代碼另含 LVH 50%（可能左心室肥厚），報告未提及，但與「臨界正常心電圖」不矛盾。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-NST_-13619",
+  "ecg_id": "13619",
+  "selected_code": "NST_",
+  "language": "de",
+  "source_report": "sinustachykardie st & t abnormal, wahrscheinlich",
+  "source_report_zh": "竇性心搏過速，很可能有 ST 段及 T 波異常。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "「wahrscheinlich」表「很可能」（probable），原譯「可能有」已改為「很可能有」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-DIG-26",
+  "ecg_id": "26",
+  "selected_code": "DIG",
+  "language": "de",
+  "source_report": "sinusrhythmus verdacht auf p-sinistrocardiale linkstyp unspezifisches abnormales t qt-verlÄngerung zweiter tag 3x2 cordichin erfolgreiche cardioversion von vorhofflattern (novodigal 0,2 1x1)",
+  "source_report_zh": "竇性心律，疑似左心房負荷（P mitrale），電軸左偏，非特異性 T 波異常，QT 間期延長。Cordichin 3x2 服用第二天，心房撲動整流成功（Novodigal 0.2 1x1）。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"},
+   {"code": "DIG", "likelihood": 100.0, "kind": "diagnostic", "zh": "毛地黃效應"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "同 ptbxl-NST_-26（同一筆 ecg_id=26）：cardioversion 依台灣慣用語改為「整流」（原譯「整律」）。Cordichin（quinidine/verapamil 複方）與 Novodigal（β-acetyldigoxin，毛地黃類）為德國藥品商品名，保留原文；報告提及 Novodigal，與 DIG 代碼相符。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-DIG-1962",
+  "ecg_id": "1962",
+  "selected_code": "DIG",
+  "language": "en",
+  "source_report": "atrial fibrillation. right bundle branch block. non-specific st-t wave changes which are probably due  to ischaemic heart disease and digitalis effect.",
+  "source_report_zh": "心房顫動，右束支傳導阻滯，非特異性 ST-T 變化，很可能由缺血性心臟病及毛地黃效應所致。",
+  "statements_zh": [
+   {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+   {"code": "DIG", "likelihood": 100.0, "kind": "diagnostic", "zh": "毛地黃效應"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "報告僅寫「right bundle branch block」（未註明不完全性，慣例上指完全性 RBBB），而 SCP 代碼為 IRBBB 100%（不完全性右束支傳導阻滯），束支傳導阻滯之完整性不一致，需人工核對心電圖 QRS 寬度。譯文依原文保留「右束支傳導阻滯」，未擅加「完全性」或「不完全性」。另「probably」原譯「可能」已改為「很可能」。",
+  "corrected": true
+ }
+]

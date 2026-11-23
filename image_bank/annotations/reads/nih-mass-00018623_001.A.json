@@ -1,0 +1,48 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: PA projection with R marker at image top-left (patient right), adequate inspiration (~9-10 posterior ribs), minimal rotation, adequate penetration (spine visible through the heart). Scapulae partly overlap the upper lateral lung fields; no cut-off of costophrenic angles.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "Implanted venous access port (port-a-cath) reservoir with catheter",
+   "location": "Reservoir in the right anterior upper chest wall (patient right upper zone, image left, below the right clavicle); catheter loops cranially over the right clavicle (right internal jugular approach) and descends along the right mediastinal border in the SVC, tip projecting near the cavoatrial junction / upper right atrium"
+  },
+  {
+   "type": "Laterality marker (R)",
+   "location": "Image top-left corner, over the patient's right shoulder"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined mass-like opacity (~4 x 3.5 cm), medial/infrahilar, abutting the right heart border; mass vs. mass-like consolidation",
+   "laterality": "right",
+   "zone": "lower (mid-to-lower, medial)"
+  },
+  {
+   "finding": "Bulky, lobulated left hilum / perihilar mass (~3.5 cm), suspicious for hilar mass or hilar lymphadenopathy",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Well-defined round nodule (~1.5-2 cm) lateral to the left hilum",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent / widened left mediastinal contour from the aortic arch level downward (AP window appears filled), possible mediastinal lymphadenopathy vs. tortuous aorta",
+   "laterality": "left",
+   "zone": "upper-middle (mediastinal)"
+  },
+  {
+   "finding": "No pleural effusion, no pneumothorax; costophrenic angles sharp; cardiothoracic ratio within normal limits; no rib fracture or lytic lesion identified",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.55,
+ "description_zh": "PA 胸部X光，右前上胸壁可見植入式靜脈注射座 (port-a-cath)，導管經右側頸內靜脈路徑沿右縱膈緣下行至上腔靜脈，末端約位於上腔靜脈與右心房交界處。左側肺門腫大且呈分葉狀 (約 3.5 cm)，其外側左肺中野另見一邊界清楚之圓形結節 (約 1.5-2 cm)，左側縱膈輪廓亦較寬；右肺中下野內側 (肺門下方、緊鄰右心緣) 可見一邊界不清之腫塊樣陰影 (約 4 cm)，腫塊或實質化病灶需鑑別。兩側肋膈角銳利，未見肋膜積液或氣胸，心臟大小正常；無胸管或引流管，但植入式注射座提示病人可能已接受或正在接受全身性治療。"
+}

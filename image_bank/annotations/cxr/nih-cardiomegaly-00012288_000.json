@@ -1,0 +1,37 @@
+{
+ "id": "nih-cardiomegaly-00012288_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (frontal), erect; conventional orientation (external 'L / GKH' side marker projected over the patient's left shoulder at image upper right)",
+ "technical_quality": "Suboptimal. Low lung volumes / poor inspiratory effort with elevated hemidiaphragms (right slightly higher than left). Obese body habitus: large bilateral breast and upper-arm soft-tissue shadows overlie the lower zones and lateral chest wall, obscuring the right costophrenic angle; scapulae partly project over the upper lung fields. Mediastinum slightly under-penetrated (thoracic spine only faintly seen through the heart). Minimal rotation; apices and both costophrenic angles included. No in-patient devices; only an external side marker.",
+ "target": {
+  "finding": "cardiomegaly",
+  "visible": "yes",
+  "laterality": "none",
+  "zone": "lower",
+  "size_cm": 17.0,
+  "confidence": 0.8
+ },
+ "laterality_sources": {
+  "bbox": "patient-left, middle zone (box centre over the left-sided cardiac silhouette; sideless finding)",
+  "reader_a": "none (zone lower)",
+  "reader_b": "bilateral (zone lower)",
+  "adjudicator": "none (zone lower; cardiac silhouette spans middle-to-lower zones, centre of mass in the lower zone on this hypoinflated film)"
+ },
+ "agreement": "full",
+ "devices": [],
+ "other_findings": [
+  "上縱膈增寬，胸主動脈迂曲、主動脈弓突出，未見明確縱膈腫塊（部分可能為縱膈脂肪及吸氣不足所致）",
+  "雙側肺門陰影增粗、肺門周圍血管紋理增加，疑肺血管鬱血，但無明確間質或肺泡性肺水腫",
+  "吸氣不足、肺容積偏低，雙側橫膈上抬（右側略高於左側），基底血管擁擠",
+  "右側肋膈角因乳房及胸壁軟組織重疊顯示不清、疑似鈍化，無法排除少量右側肋膜積液；左側肋膈角銳利",
+  "右肺門小點狀高密度影，疑為鈣化淋巴結或血管切面（不確定）",
+  "左橫膈下大型胃泡",
+  "肥胖體型，雙側乳房及上臂軟組織影重疊於下肺野及側胸壁，降低下肺野判讀品質",
+  "未見肺實質實變、結節或氣胸；骨骼未見明顯骨折或破壞性病灶"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "心臟擴大清楚可見（心胸比約0.6，橫徑約17公分），片上無任何導管、引流管、心律調節器或手術後痕跡，僅見外部側別標記；伴隨的肺門血管影增粗與疑似少量右側肋膜積液皆與心臟疾病初次就診（如新發心衰竭或高血壓性心臟病）的表現相符，無任何與初次就診矛盾之處。惟吸氣不足與肥胖體型可能略為放大心影，教學時宜提醒。",
+ "description_zh": "胸部正面PA站立像，吸氣不足、肺容積偏低，雙側橫膈上抬，病人體型肥胖，雙側乳房及上臂軟組織影重疊於下肺野與側胸壁，右側肋膈角因而顯示不清；縱膈穿透稍嫌不足，旋轉輕微。心影呈球狀明顯擴大，心胸比約0.60至0.63、橫徑約17公分，符合心臟擴大，惟部分可能受吸氣不足及體型影響而放大；上縱膈增寬，胸主動脈迂曲、主動脈弓突出，未見明確縱膈腫塊。雙側肺門陰影增粗、肺門周圍血管紋理增加，疑肺血管鬱血，但未見明確間質或肺泡性肺水腫，雙肺未見實變、結節或氣胸；右肺門見小點狀高密度影，疑為鈣化淋巴結或血管切面。右側肋膈角疑似鈍化，無法排除少量右側肋膜積液，左側肋膈角銳利，左橫膈下見大型胃泡。全片未見任何導管、引流管、心律調節器或其他體內裝置，僅影像右上角見外部左側標記（L/GKH）；骨骼未見明顯骨折或破壞性病灶。",
+ "label_concern": ""
+}

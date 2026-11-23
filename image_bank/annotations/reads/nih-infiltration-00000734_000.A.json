@@ -1,0 +1,42 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate. PA erect film with L side marker on image right (conventional orientation confirmed). Good inspiration (~9-10 posterior ribs), adequate penetration (thoracic spine visible through heart), no significant rotation. Apices and both costophrenic angles included; inferior corners partly obscured by external curved radiopaque artifacts.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "Side marker (L)",
+   "location": "Upper right corner of image, over the patient's left shoulder region"
+  },
+  {
+   "type": "External curved radiopaque bands (probable lead shield / positioning device edges)",
+   "location": "Both inferior corners of the film, below the diaphragms, patient's right and left"
+  },
+  {
+   "type": "Small metallic densities, probable surgical clips",
+   "location": "Right upper quadrant of abdomen at the inferior edge of the film (below right hemidiaphragm)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Coarse reticular / peribronchovascular hazy opacity (infiltrate) in the infrahilar and medial basal lung, asymmetric compared with the left, approx 6-8 cm; no air bronchogram or consolidation-level density; no effusion",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Tortuous / unfolded thoracic aorta with prominent aortic knob, consistent with age-related change; heart size within normal limits",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Tiny dense nodular dot (~3-4 mm) in the lower zone, most likely an end-on vessel or small calcified granuloma; indeterminate",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "PA 胸部X光，吸氣深度與穿透度尚可，無明顯旋轉，影像右上方可見 L 側位標記。右側下肺野（肺門下方至內側基底部）可見粗糙網狀及支氣管血管束周圍增加之浸潤性陰影，範圍約 6–8 公分，左肺野相對清晰，雙側肋膈角銳利，未見氣胸或肋膜積液。心臟大小正常，胸主動脈迂曲並主動脈弓突出，符合高齡變化。右上腹於片緣可見數枚小金屬密度影（疑為手術夾），兩側下角另有弧形外來高密度偽影（疑為鉛衣或擺位裝置），未見胸管或引流管。"
+}

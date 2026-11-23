@@ -1,0 +1,46 @@
+{
+ "view": "Frontal chest radiograph (presumed PA, erect); L side marker with \"DG\" tag at image top-right (patient's left shoulder) confirms conventional orientation",
+ "technical_quality": "Adequate inspiration (~8-9 posterior ribs), no significant rotation (spinous processes roughly equidistant from clavicular heads), both scapulae project over the upper lateral lung fields, lower thorax/abdomen slightly underpenetrated, large body habitus with broad shoulders; the beaded metallic artifact over the right hemithorax partly obscures the right hilum and right lateral lung",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External artifact: string of small bead/ring-shaped metallic densities (ball-chain or beaded necklace appearance; surgical clips considered much less likely given the curvilinear chest-wall course)",
+   "location": "Projected over the RIGHT hemithorax - one segment from the right upper zone laterally, curving down along the lateral chest wall to the right lower zone; a second segment from the right hilar region extending inferiorly toward the right cardiophrenic region"
+  },
+  {
+   "type": "Small angulated linear metallic density (wire/clasp fragment, likely part of the same external object)",
+   "location": "Right upper zone, lateral, at about the anterior 2nd-3rd rib level"
+  },
+  {
+   "type": "Small bracket-shaped metallic density (probably part of the chain/clasp)",
+   "location": "Right hilar region, medial right middle zone"
+  },
+  {
+   "type": "Side marker 'L' with 'DG' label plate",
+   "location": "Image top-right corner over the patient's left shoulder/acromion"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild blunting of the costophrenic angle with hazy pleural-based density along the lateral lower chest wall - suggests basal pleural thickening or a small pleural effusion",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Questionable minimal apical pleural capping (low confidence; partly obscured by clavicle and first rib)",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Curvilinear beaded metallic artifact overlying the lung field (external object, see devices) limiting assessment of the right hilum and right lateral lung; no chest tube or drain",
+   "laterality": "right",
+   "zone": "multiple"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面胸部X光（推測為PA站立位），吸氣尚可、無明顯旋轉，雙側肩胛骨投影於上外側肺野，下胸部略曝光不足。右側胸腔可見一串珠狀、彎曲走行的金屬密度影，自右上肺野外側沿側胸壁向下延伸至右下肺野，另一段自右肺門區向下延伸，最可能為體外飾物（珠鏈／項鍊）偽影，手術夾可能性較低；右上肺野外側另見一小段角狀線形金屬影。右側肋膈角輕度鈍化，右下外側肺野呈模糊之肋膜性增高密度，疑右側基底肋膜增厚或少量肋膜積液，右肺尖疑似輕微肋膜帽（信心度低）。心臟大小與縱膈正常，氣管居中，左側肋膈角銳利，無氣胸，骨骼與軟組織無明顯異常，未見胸管或引流管。"
+}

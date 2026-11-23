@@ -1,0 +1,42 @@
+{
+ "view": "PA (frontal), confirmed by L marker at image right (patient's left), gastric bubble under left hemidiaphragm",
+ "technical_quality": "Adequate: good inspiration, minimal rotation (clavicle heads roughly symmetric about spinous processes), adequate penetration (vertebral bodies visible through heart); breast shadows partly obscure the lung bases; apices included.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 19,
+ "devices": [
+  {
+   "type": "surgical clips (cluster of ~3-4 metallic clips)",
+   "location": "patient's left supraclavicular / lower neck region, projected just above the left clavicle and first rib"
+  },
+  {
+   "type": "surgical clips (cluster of ~3 metallic clips)",
+   "location": "patient's left lung apex, medial left upper zone, projected below the left clavicle"
+  },
+  {
+   "type": "external L side marker with technologist initials (DHS)",
+   "location": "upper corner of the image on the patient's left side, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild cardiomegaly: cardiothoracic ratio ~0.54 (cardiac transverse diameter ~19 cm vs inner thoracic width ~35 cm); rounded, left-predominant cardiac contour with apex displaced to the left and downward",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent left hilum / main pulmonary artery segment along the upper left mediastinal border (may be normal variant in a young female; uncertain significance)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Postoperative surgical clips in the left supraclavicular and left apical region (prior surgery; no associated lung lesion)",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "PA 胸部正面片，吸氣尚可、無明顯旋轉，穿透度適中。心影輕度擴大，心胸比約 0.54（心影橫徑約 19 cm），心尖朝左下、左心緣圓鈍，左肺門及肺動脈段略顯突出。雙側肺野清晰，未見實質浸潤、肋膜積液或氣胸；橫膈輪廓平滑、肋膈角銳利，左橫膈下可見正常胃泡。左鎖骨上及左肺尖區可見多枚手術夾，為既往手術之變化；未見其他導管、引流管或心臟裝置。"
+}

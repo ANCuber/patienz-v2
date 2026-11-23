@@ -1,0 +1,42 @@
+{
+ "view": "PA (frontal) - \"L\" side marker present at patient's left, conventional orientation confirmed",
+ "technical_quality": "Adequate: good inspiration (~9 posterior ribs), no significant rotation (clavicles symmetric about spinous processes), adequate penetration; scapulae partially projected over the lateral upper lung fields (left more than right). Whole thorax and costophrenic angles included.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "whole",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Implanted subcutaneous venous access port (Port-A-Cath) reservoir - round radiopaque housing with central lucent septum and peripheral suture holes",
+   "location": "Left lower hemithorax, projected over the left cardiophrenic region just above the left hemidiaphragm (unusually low port position)"
+  },
+  {
+   "type": "Port catheter (tunneled)",
+   "location": "Runs superiorly from the reservoir along the left cardiac border, forms a redundant loop in the left upper zone (approx. 2nd-3rd anterior rib level), then crosses the upper mediastinum medially (probable left subclavian / left brachiocephalic vein) toward the SVC; distal tip not confidently identified on this film"
+  },
+  {
+   "type": "External 'L' side marker",
+   "location": "Image upper right corner, over the patient's left shoulder region (outside the thorax)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Diffuse fine reticular / reticulonodular interstitial pattern (coarse lung markings) consistent with chronic interstitial / fibrotic change; upper- and mid-zone predominant but present throughout both lungs",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Bronchial wall thickening with a few ring shadows / tram-track lines suggestive of bronchiectasis (in a 16-year-old with a port this pattern raises cystic fibrosis as the likely underlying chronic lung disease)",
+   "laterality": "bilateral",
+   "zone": "multiple (upper and middle)"
+  },
+  {
+   "finding": "Heart size and mediastinal contour normal; trachea midline; costophrenic angles sharp; no pneumothorax, pleural effusion, focal consolidation, or mass",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.75,
+ "description_zh": "胸部正面(PA)片，吸氣量足夠，無明顯旋轉，右上角可見「L」側別標記。雙側肺野可見瀰漫性細網狀及網狀結節狀間質浸潤，以上、中肺野較為明顯，並見部分支氣管壁增厚及環狀影，符合慢性間質性／纖維化變化（16歲女性合併植入式輸液港，須考慮囊狀纖維化等慢性肺病）。左下胸壁近左心橫膈角處可見一皮下植入式輸液港(port)儲液槽，位置偏低，其導管沿左心緣向上走行，於左上肺野形成迴圈後橫越上縱膈，推測經左鎖骨下／頭臂靜脈進入上腔靜脈，導管末端位置無法確切辨識。心臟大小正常、縱膈不寬、氣管居中，兩側肋膈角銳利，未見氣胸、肋膜積液或局部實質化病灶。"
+}

@@ -1,0 +1,88 @@
+{
+ "view": "Frontal chest radiograph (recorded PA; ECG leads, CVC and multiple drains suggest an AP/semi-erect bedside film)",
+ "technical_quality": "Adequate penetration and inspiration; 'L' side marker at image upper right confirms conventional orientation; mild rotation; apices, lateral chest walls and costophrenic regions included; multiple overlying lines, tubes and ECG cables partly obscure the mediastinum and right hemithorax.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "multiple",
+ "size_cm": 15,
+ "devices": [
+  {
+   "type": "Pigtail pleural drainage catheter (tight spiral coil tip)",
+   "location": "Right pleural space, right mid zone medial/parahilar region (image ~x407,y385)"
+  },
+  {
+   "type": "Pigtail pleural drainage catheter (larger loop tip)",
+   "location": "Right pleural space, right mid zone medial, just below the first pigtail (image ~x380,y465)"
+  },
+  {
+   "type": "Third drainage catheter with J-curled tip (likely pigtail)",
+   "location": "Right mid-lower zone, more lateral (image ~x285,y515); all three catheters course inferolaterally through the opacified right lower hemithorax and exit toward the right lower lateral chest wall"
+  },
+  {
+   "type": "External drainage tubing with connectors/clamps",
+   "location": "Along the right flank / right lower lateral chest wall, running off the lower image edge"
+  },
+  {
+   "type": "Central venous catheter (left internal jugular approach)",
+   "location": "Descends the left neck, crosses the midline at about the clavicular/manubrial level and runs down the right paramediastinal region; blunt tip projects ~4 cm right of midline at approximately the lower SVC / cavoatrial junction level (image ~x430,y478)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Right upper anterior chest, over the right upper zone (image ~x350,y307)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Left upper anterior chest, medial (image ~x593,y330)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Left upper anterior chest, lateral (image ~x755,y327); lead wires run down the chest to a connector over the left lower abdomen (image ~x855,y957)"
+  },
+  {
+   "type": "Small linear metallic density ~1.4 cm (clip / foreign body, nature uncertain)",
+   "location": "Right upper zone, within the lucent air pocket (image ~x270-305,y351-360)"
+  },
+  {
+   "type": "Small metallic clips/skin staples (two)",
+   "location": "Right lower lateral chest wall near the drain exit region (image ~x142-160,y756-784)"
+  },
+  {
+   "type": "External tubing/cable (oxygen or IV line)",
+   "location": "Over the left shoulder and along the left lateral chest wall soft tissues, outside the ribs; a further external tube/cable runs along the right lateral chest wall from the shoulder"
+  },
+  {
+   "type": "Radiographic side marker 'L'",
+   "location": "Image upper right corner (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Massive right pleural effusion: near-complete homogeneous opacification of the right hemithorax below the level of the ~3rd-4th anterior rib, obscuring the right hemidiaphragm, right costophrenic angle and right heart border (labelled finding, s/p pigtail drainage)",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Right hydropneumothorax: lucent air pocket with a sharp horizontal air-fluid level in the right upper zone (image ~y395), likely loculated post-drainage; a band of partially aerated/compressed lung lies just below it",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Right apical haziness / pleural thickening or capping (partially aerated apex denser than the left)",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "No significant mediastinal shift despite the large effusion (trachea midline, cardiac silhouette roughly normal in position), suggesting associated right-sided volume loss / trapped lung",
+   "laterality": "none",
+   "zone": "none"
+  },
+  {
+   "finding": "Left lung base: sharp, flat horizontal interface across the left base with a flattened/apparently elevated left hemidiaphragm contour; small left subpulmonic effusion or subdiaphragmatic process cannot be excluded (uncertain); left costophrenic angle otherwise preserved, left lung clear, no left pneumothorax",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.95,
+ "description_zh": "右側胸腔幾乎全白，右中、下肺野呈均質性緻密影，右側橫膈、右肋膈角與右心緣皆被遮蔽，符合大量右側肋膜積液；右上肺野可見一含氣腔伴水平氣液平面，提示局限性右側水氣胸，右肺尖亦見肋膜增厚樣模糊影。右肋膜腔內可見至少三條末端捲曲之豬尾巴引流管（兩條位於右中肺野近肺門處、一條偏外側），管路沿右下胸廓走向右側腹壁並接外部引流管與接頭，顯示積液已接受引流治療；另見經左頸置入之中央靜脈導管跨越中線後沿右縱膈旁下行，末端約在上腔靜脈下段／腔房交界處，胸前三枚心電圖電極及導線，右上肺野一約1.4公分性質不明之線狀金屬影，右下側胸壁小金屬夾／釘影。氣管居中、縱膈無明顯偏移；左肺清澈無氣胸，惟左肺底呈平直之水平界面伴左橫膈輪廓變平，不排除少量左側肺下積液。"
+}

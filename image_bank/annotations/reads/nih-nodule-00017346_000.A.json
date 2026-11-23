@@ -1,0 +1,33 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration (approx. 9-10 posterior ribs), no significant rotation, adequate penetration; apices and costophrenic angles included. Both breast shadows present.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 0.4,
+ "devices": [
+  {
+   "type": "surgical clips (multiple small metallic clips, consistent with prior axillary lymph node dissection)",
+   "location": "right axilla / right lateral upper chest wall, outside the lung"
+  },
+  {
+   "type": "external arrow-shaped image marker (digitizer/orientation annotation, not an L/R lead marker)",
+   "location": "upper right corner of the image, outside the patient"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Small (~0.3-0.4 cm) very dense, sharply marginated round nodule projected over the left cardiac silhouette near the left heart border; density suggests a calcified granuloma - this is the only discrete nodular opacity identified and is presumed to be the labelled nodule",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Multiple metallic surgical clips in the right axilla, consistent with prior right axillary lymph node surgery (breast shadows are present bilaterally, so no radiographic evidence of mastectomy)",
+   "laterality": "right",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 胸部X光，吸氣充分、無明顯旋轉。於左下肺野、投影於左心緣附近可見一顆約 0.3–0.4 cm、邊緣清楚且密度甚高的小圓形結節，疑為鈣化性肉芽腫，為本片唯一可辨識之結節狀陰影。右側腋窩可見多枚金屬手術夾，符合先前右腋窩淋巴結手術；影像右上角另有外加之箭頭標記。餘雙側肺野清晰，無肋膜積液或氣胸，心臟縱膈輪廓正常，雙側乳房陰影皆存在。"
+}

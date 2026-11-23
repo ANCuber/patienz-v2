@@ -1,0 +1,51 @@
+{
+ "view": "Frontal chest radiograph, likely AP erect (scapulae partially projected over the upper lateral lung fields); no L/R letter marker seen, a chevron-shaped marker at the upper right image corner; conventional orientation assumed (gastric bubble and cardiac apex on image right = patient's left)",
+ "technical_quality": "Adequate. No significant rotation (medial clavicular ends roughly equidistant from the spinous processes). Adequate inspiration (about 8-9 posterior ribs). Exposure adequate with vertebral bodies visible through the cardiac shadow. Both lung apices and costophrenic angles included. Bilateral breast shadows overlie the lower zones; scapulae overlap the upper lateral lung fields.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Chest tube (thoracostomy / pleural drain)",
+   "location": "Left hemithorax: enters through the left lateral lower chest wall (about 6th-7th rib level), courses superiorly along the lateral pleural surface with tip at the left apex / upper zone; external tubing continues downward along the left flank and lower abdomen to the image edge"
+  },
+  {
+   "type": "Second tubular linear structure (possible second pleural drain / catheter, or drainage tubing; pneumomediastinal mediastinal pleural line is a differential)",
+   "location": "Left paramediastinal region, running vertically along the left cardiac border from the upper mediastinum down to the left hemidiaphragm (left middle-lower zone)"
+  },
+  {
+   "type": "Small metallic clip / coil-like density (surgical clip or catheter tip, uncertain)",
+   "location": "Left upper paravertebral region at about the T2-T3 level, adjacent to the spine (patient's left)"
+  },
+  {
+   "type": "Chevron-shaped external marker",
+   "location": "Upper right corner of the image (patient's left), outside the chest"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Subcutaneous emphysema: streaky linear lucencies in the soft tissues of the lateral chest wall and axillary region",
+   "laterality": "left",
+   "zone": "multiple (lateral chest wall from axilla to lower chest)"
+  },
+  {
+   "finding": "Possible small residual apical pneumothorax adjacent to the chest tube tip (thin pleural line suspected, not definite)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Possible pneumomediastinum: linear lucency with a thin pleural line along the left cardiac border (alternatively this represents a second drain/tubing, see devices)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly reduced left lung volume with the left hemidiaphragm at or slightly above the level of the right hemidiaphragm",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光（疑為AP直立位），吸氣度與曝光尚可，無明顯旋轉，雙側肩胛骨部分重疊於上肺野，雙側乳影重疊於下肺野。左側可見胸管自左下外側胸壁進入胸腔並沿外側胸膜面向上延伸，末端位於左肺尖／上肺野；另於左心緣旁可見一垂直走行之管狀線影延伸至左橫膈（可能為第二條引流管或引流管線，亦需考慮縱隔氣腫之縱隔胸膜線），左上縱隔旁（約T2-T3）另見小型金屬夾／線圈狀高密度影。左側外側胸壁及腋下軟組織可見條紋狀透亮影，符合皮下氣腫；左肺尖不排除少量殘餘氣胸，左肺容積略減。右肺清晰、雙側肋膈角銳利、氣管居中、心臟大小及縱隔位置正常，骨骼結構無明顯骨折或破壞。"
+}

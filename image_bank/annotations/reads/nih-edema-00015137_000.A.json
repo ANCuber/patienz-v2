@@ -1,0 +1,49 @@
+{
+ "view": "PA (recorded); frontal chest radiograph, L marker in image upper-right corner confirming conventional orientation",
+ "technical_quality": "Adequate but limited: low lung volumes (right hemidiaphragm dome at ~anterior 5th rib), under-penetrated lower zones/upper abdomen (retrocardiac and subdiaphragmatic regions washed out), scapulae not fully cleared from the upper lateral lung fields bilaterally, no significant rotation.",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External side marker 'L' with technologist initials (radiographic lead marker)",
+   "location": "Upper-right corner of the image, i.e. patient's left upper chest, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Prominent, ill-defined hila with increased perihilar and basal vascular/interstitial markings (right > left); could represent mild vascular congestion / interstitial edema, but crowding from low lung volumes is a confounder. No alveolar consolidation, no definite Kerley B lines.",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Marked elevation of the right hemidiaphragm with crowding of right basal vessels; lucent crescent beneath the dome likely posterior costophrenic recess (colonic interposition not excluded). Right costophrenic angle not well assessed.",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal / borderline enlarged (CTR ~0.5), assessment limited by low inspiration",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent / unfolded aortic knob with slightly wide upper mediastinum (partly body habitus and projection)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Low lung volumes (hypoinflation); scapulae projected over upper lateral lung fields",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "No definite pleural effusion (left costophrenic angle sharp; right limited by elevated hemidiaphragm); no pneumothorax; bones intact",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.45,
+ "description_zh": "正面胸部X光（影像右上角可見L標記，符合常規方向），吸氣量偏低，右側橫膈明顯上抬，下肺野及上腹部穿透不足。雙側肺門陰影增粗且邊緣略模糊，肺門周圍及右下肺野血管與間質紋理增加，可能代表輕度肺血管充血或間質性肺水腫，但亦可能部分為低肺容積與右側橫膈上抬造成之血管聚集，故判讀上不確定；未見明顯肺泡性實質病變、Kerley B線或明確肋膈角鈍化。心影大小接近上限（心胸比約0.5），主動脈弓突出。未見任何導管、引流管、心律調節器或手術夾。"
+}

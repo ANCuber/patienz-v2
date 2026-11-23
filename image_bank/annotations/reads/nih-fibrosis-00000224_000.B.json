@@ -1,0 +1,34 @@
+{
+ "view": "PA (frontal) chest radiograph, upright; adequate inspiration (~9 posterior ribs), minimal rotation, penetration adequate; both scapulae project over the upper-lateral lung fields (not fully rotated clear); left-side (L) marker with technologist initials at image upper-right corner, consistent with conventional orientation",
+ "technical_quality": "Adequate: good inspiration, acceptable penetration, minimal rotation; scapulae overlap the lateral upper lung fields bilaterally; entire thorax and costophrenic angles included; mild image noise",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "External radiographic side marker (L) with technologist initials, no medical device",
+   "location": "Image upper-right corner, over patient's left shoulder/axilla region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild fine reticular / linear interstitial markings at the lung base, left slightly more than right, nonspecific and subtle; no honeycombing, no volume loss, no consolidation",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent hilar / perihilar bronchovascular markings, likely vascular, within normal limits for age",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Technical: scapulae project over the upper-lateral lung fields (incomplete scapular rotation)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "胸部正面(PA)站立位X光片,吸氣充足、旋轉輕微,兩側肩胛骨部分重疊於上肺野外側,右上角可見L側標記,無任何導管、引流管或起搏器等裝置。兩側肺野大致通氣良好,雙下肺野(左側略多於右側)可見輕微細網狀/線狀間質性紋理增加,無蜂窩狀變化、實質化、結節或體積減少;雙側肺門血管紋理略顯明顯,考慮為正常變異。兩側肋膈角銳利,無肋膜積液或氣胸;心臟大小正常(心胸比<0.5),縱膈及氣管居中,無增寬;骨骼結構完整無骨折或溶骨病灶,軟組織可見雙側乳房陰影,左橫膈下可見胃泡氣體。整體而言,除雙下肺輕微非特異性網狀紋理外,大致在正常範圍內。"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "nih-nodule-00021374_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect PA film: good inspiration (hyperinflated, 9-10 posterior ribs), no significant rotation (spinous processes centred between the medial clavicles), adequate penetration (thoracic spine visible through the cardiac shadow). Apices and both costophrenic angles included, the right costophrenic sulcus close to the inferior film edge. Scapulae partially overlap the upper lateral lung fields. No lines, tubes, drains, clips or pacemaker; a single external check-mark side marker over the left shoulder.",
+  "target": {
+    "finding": "pulmonary nodule",
+    "visible": "yes",
+    "laterality": "left",
+    "zone": "middle",
+    "size_cm": 1.5,
+    "confidence": 0.5
+  },
+  "laterality_sources": {
+    "bbox": "left",
+    "reader_a": "right",
+    "reader_b": "left",
+    "adjudicator": "left"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "external radiographic side marker (check-mark / L-shaped lead marker), not an internal device",
+      "location": "upper right corner of the image, projected over the patient's left shoulder soft tissue",
+      "zh": "外部勾形側別鉛標記（投影於左肩軟組織上，非體內裝置）"
+    }
+  ],
+  "other_findings": [
+    "左下肺野、左心緣外側（與肋骨重疊處）另見一約1.5至2公分邊緣模糊之斑片狀結節影，為兩位判讀者所指最明顯之左側病灶，位置低於放射科框選處，需與血管匯合影鑑別，建議CT評估",
+    "右中肺野內側（右縱膈旁、右肺門上方，約主動脈弓高度）見一約1至1.5公分淡薄、邊緣模糊之類結節影，結節與血管端面／匯合影鑑別困難",
+    "雙肺過度充氣、橫膈平坦、肺野透亮度增加，符合肺氣腫／慢性阻塞性肺病變化",
+    "雙下肺野支氣管血管紋理粗糙增加（右側較明顯），右肺門旁支氣管壁增厚（軌道徵），無實質化、無Kerley B線",
+    "右下肺野數個小於0.5公分之緻密小點狀影，疑鈣化肉芽腫，與血管端面影不易區分",
+    "疑小型薄壁透亮區（肺大泡）：右中下肺野及左下肺野外側各一處，皆不確定，需與血管間隙重疊假影鑑別",
+    "主動脈弓突出、胸主動脈迂曲延長（老年性主動脈擴張），上縱膈略寬，氣管於主動脈弓高度輕度右偏",
+    "心臟大小正常（心胸比約0.35至0.40），兩側肋膈角銳利，無肋膜積液；兩側肺尖未見氣胸之臟層肋膜線，亦無明確腫塊",
+    "胸椎及雙側肩關節（盂肱、肩鎖關節）退化性變化；肋骨完整，無急性骨折"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "放射科框選之左中肺野外側（主動脈弓高度、與後肋重疊處）可見一約1.5公分淡薄、邊緣模糊之結節影，另有左心緣外側及右縱膈旁疑似結節影；片中無胸管、引流管或任何治療裝置，亦無手術或放射治療後變化。伴隨之肺氣腫、主動脈迂曲與退化性骨關節變化屬80歲男性常見之慢性背景，不與「首次因肺結節就診」之情境矛盾。惟目標結節淡薄且本片可能為多發結節影，教學時宜強調需CT確認。",
+  "description_zh": "PA正面胸部X光，吸氣充分、無明顯旋轉、穿透度適當，未見任何導管、引流管、外科夾或心律調節器，僅左肩上方見一外部勾形側別鉛標記。左中肺野外側（約主動脈弓高度、左肺門上方，與後肋重疊處）可見一約1.5公分、邊緣模糊之淡薄圓形結節影，為放射科標記之肺結節；另於左下肺野、左心緣外側見一約1.5至2公分邊緣模糊之斑片狀結節影，右中肺野內側縱膈旁亦見一約1至1.5公分淡薄類結節影，均需與血管重疊影鑑別，建議CT進一步評估。雙肺過度充氣、橫膈平坦、肺野透亮度增加，符合肺氣腫變化；雙下肺野支氣管血管紋理粗糙增加（右側較明顯）伴支氣管壁增厚，右下肺野見數個小於0.5公分之緻密小點影（疑鈣化肉芽腫），右中下及左下肺野疑有小型肺大泡。主動脈弓突出迂曲、上縱膈略寬，氣管於弓部高度輕度右偏；心臟大小正常，兩側肋膈角銳利，無肋膜積液、氣胸或腫塊；胸椎及雙肩呈退化性變化，未見急性骨折。",
+  "label_concern": "放射科框選（x 747–868, y 377–482）之結節位於左中肺野外側、與後肋重疊，影像上淡薄、邊緣模糊，約1.5公分，兩位判讀者均未獨立指出此處（判讀者A將目標誤判於右中肺野內側；判讀者B所見最明顯之左側結節影位於較低處、左心緣外側）。本片較可能為多發結節影而非單一結節，「左側肺結節」標籤仍成立，但目標結節與血管重疊影鑑別困難，宜以CT確認。NLP標籤之「Pneumothorax」與「Mass」於本片無對應影像證據。"
+}

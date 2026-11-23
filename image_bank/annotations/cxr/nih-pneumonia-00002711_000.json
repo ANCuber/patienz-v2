@@ -1,0 +1,45 @@
+{
+  "id": "nih-pneumonia-00002711_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal, erect); 'L' side marker at image upper right confirms conventional orientation (image-left = patient-right)",
+  "technical_quality": "Adequate: good inspiration (about 9 posterior ribs), adequate penetration (vertebral bodies visible through the heart), minimal rotation; image somewhat grainy with low contrast; both scapulae partially overlap the lateral upper lung fields; apices and both costophrenic angles included; a rotated printed text label is partially cut off at the upper corner on the patient's left",
+  "target": {
+    "finding": "pneumonia",
+    "visible": "yes",
+    "laterality": "bilateral",
+    "zone": "middle",
+    "size_cm": 7,
+    "confidence": 0.65
+  },
+  "laterality_sources": {
+    "bbox": "right",
+    "reader_a": "left",
+    "reader_b": "left",
+    "adjudicator": "bilateral"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "External radiographic side marker 'L' (lettering only, not a medical device)",
+      "location": "Image upper right, over the patient's left shoulder soft tissue, outside the thorax",
+      "zh": "「L」側別標記(外部標記,非醫療裝置)"
+    },
+    {
+      "type": "External rotated printed text label ('DMD'-like lettering, partially cut off; not a medical device)",
+      "location": "Extreme upper corner of image on the patient's left, outside the body",
+      "zh": "外部旋轉印字標籤(DMD,非醫療裝置)"
+    }
+  ],
+  "other_findings": [
+    "左肺門較右側突出且緻密,與肺門周圍實變相連;無法完全排除肺門淋巴結腫大",
+    "左側橫膈輕度抬高,其下方見明顯胃泡(可能為輕微左下葉容積減少或胃脹氣)",
+    "上縱膈於此年齡稍寬,可能為殘餘胸腺組織或投照因素,未見明確腫塊",
+    "雙側肩胛骨部分重疊於外側上肺野(技術因素)",
+    "雙側肋膈角銳利,未見肋膜積液或氣胸;心臟大小正常,氣管與縱膈居中;肱骨頭生長板未閉合,符合年齡"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "片中肺炎浸潤清楚可見(雙側,以左肺門周圍至左下肺野之實變最明顯,右中下肺野亦見斑片狀浸潤),無胸管、引流管或任何治療裝置,亦無手術或既往病灶痕跡,適合作為肺炎初次就診之影像。",
+  "description_zh": "14歲男性之正面直立胸部X光(PA),吸氣量足夠、穿透度適當、幾無旋轉,雙側肩胛骨部分重疊於外側上肺野;病人左側上角可見「L」側別標記及一旋轉之外部印字標籤,未見任何管路、引流管、夾子或植入裝置。左肺門周圍至左中、下肺野可見範圍約6至7公分之斑片狀、邊界不清之肺泡性實變陰影,部分遮蔽左心緣(silhouette sign),左肺門較右側突出且緻密,分布符合舌葉/左下葉肺炎;右中肺野並延伸至右下肺野另見較淡之斑片狀支氣管周圍浸潤及粗糙之支氣管血管紋理,範圍約7至9公分,即放射科標記框所在位置,整體為雙側肺炎浸潤,以左側較顯著。雙側肋膈角銳利,未見肋膜積液或氣胸;左側橫膈輕度抬高,其下方見明顯胃泡。心臟大小正常,氣管與縱膈居中,上縱膈於此年齡稍寬(可能為殘餘胸腺或投照因素),骨骼及軟組織未見明顯異常。",
+  "label_concern": "標籤「肺炎」本身正確,但放射科框選(x187–461, y376–751)位於右中下肺野之較淡斑片狀浸潤,而片中最明顯之實變在左肺門周圍至左下肺野並遮蔽左心緣;兩位讀片者皆僅將左側判為肺炎、右側僅視為紋理增加。實為雙側病灶,以左側較顯著,使用側別欄位時請注意。"
+}

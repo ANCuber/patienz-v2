@@ -1,0 +1,34 @@
+{
+ "view": "PA frontal chest radiograph (erect), conventional orientation confirmed by an external \"L\" lead marker in the upper right corner of the image (patient's left)",
+ "technical_quality": "Adequate. Trachea midline, clavicles roughly symmetric with no significant rotation. Inspiration adequate (about 9 posterior ribs). Film slightly under-penetrated: lower thoracic spine poorly seen through the cardiac shadow and the mediastinum appears dense. Scapulae partly project over the upper lateral lung fields. Bilateral breast shadows overlie the lower zones and reduce basal clarity. Whole thorax from lower cervical spine to upper abdomen included; a bright collimation/cassette-edge band runs along the bottom of the image.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "external lead side marker (\"L\" with small lettering)",
+   "location": "upper right corner of image, outside the patient (patient's left upper)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mildly increased reticular / linear interstitial markings at both lung bases, coarser than expected for vascular markings alone; partly overlapped by breast shadows",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Hazy ill-defined increased density in the medial right lower zone near the right cardiophrenic angle (retrocardiac/paracardiac)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Vertical curvilinear line along the left lateral chest wall at the level of the lower zone, most consistent with a skin/axillary fold artifact rather than a pneumothorax (lung markings seen lateral to it)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面（PA）站立胸部X光，吸氣尚可，影像稍偏白（曝光略不足），左側鉛字標記位於影像右上角，方向為常規擺位，未見任何管路、導線或植入裝置。雙側下肺野（以肺底部為主）可見輕度網狀／線狀間質性紋理增加，右側心橫膈角附近另有模糊、邊界不清的密度增加；雙側乳房陰影重疊於下肺野，降低肺底部的判讀清晰度。雙側肋膈角銳利，無明顯肋膜積液或氣胸；左側外側胸壁的縱向細線較符合皮膚皺褶假影。心臟大小正常（心胸比約0.44），縱膈與氣管位置正常，主動脈弓稍顯著；上肺野與中肺野清晰，骨骼與軟組織未見明顯病灶。"
+}

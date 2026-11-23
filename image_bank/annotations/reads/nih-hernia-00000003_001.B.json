@@ -1,0 +1,38 @@
+{
+ "view": "PA frontal (erect) chest radiograph; L marker on image right confirms conventional orientation",
+ "technical_quality": "Adequate: good inspiration (about 9 posterior ribs), adequate penetration with spine visible behind heart, no significant rotation (clavicles roughly symmetric about spinous processes); both scapulae partially project over the upper lateral lung fields (more on the right); entire lung fields and costophrenic angles included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "upper",
+ "size_cm": 10,
+ "devices": [
+  {
+   "type": "multiple metallic surgical clips (approximately 12), curvilinear arrangement, consistent with prior axillary lymph node dissection",
+   "location": "right axilla / right upper lateral chest wall soft tissues, projecting over and lateral to the right upper zone at the level of the 2nd-4th ribs"
+  },
+  {
+   "type": "external radiographic side marker ('L') with technologist label ('8H')",
+   "location": "over the left shoulder / left upper corner of the image (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Multiple (about 12) metallic surgical clips in curvilinear distribution in the axillary soft tissues, consistent with previous axillary lymph node dissection",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Absent breast shadow with relative hyperlucency of the lower hemithorax compared with the left (left breast soft-tissue shadow present) - consistent with prior mastectomy; no parenchymal abnormality",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Tortuous / unfolded thoracic aorta with prominent, rounded aortic knob (age-related; possible mild arch calcification)",
+   "laterality": "none",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.8,
+ "description_zh": "站立後前位胸部X光，吸氣及曝光尚可，L標記位於影像右側，方向正常，無明顯旋轉。右側腋窩可見約十餘枚呈弧形排列之金屬手術夾，且右側乳房陰影消失、右下胸廓較左側相對透亮，符合右側乳房切除併腋窩淋巴結廓清術後變化；未見胸管、引流管或其他導管。兩側肺野清晰，未見實質化、結節、間質病灶或氣胸，兩側肋膈角銳利，無肋膜積液；心臟大小正常，胸主動脈迂曲、主動脈弓突出，屬年齡相關變化，氣管居中，橫膈輪廓平滑，胃泡位於左橫膈下正常位置，骨骼未見急性異常。"
+}

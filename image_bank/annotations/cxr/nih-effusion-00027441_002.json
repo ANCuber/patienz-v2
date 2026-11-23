@@ -1,0 +1,84 @@
+{
+  "id": "nih-effusion-00027441_002",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "AP portable (supine/semi-erect) frontal chest radiograph, paediatric (F, 11 y); L marker and up-arrow at image upper-right confirm conventional orientation (patient's left on image right)",
+  "technical_quality": "Adequate but limited: portable AP with the detector/patient tilted a few degrees (image rotated counter-clockwise) and mild rotation; adequate inspiration and penetration (spine visible through the mediastinum); apices, both costophrenic angles, humeri and upper abdomen included. Numerous overlying external lines, coiled tubing and an ECG electrode degrade assessment of the left mid zone and both lateral chest walls.",
+  "target": {
+    "finding": "pleural effusion",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 11,
+    "confidence": 0.8
+  },
+  "laterality_sources": {
+    "bbox": "right",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "zone_sources": {
+    "bbox": "upper (box 218x562 px spans most of the right hemithorax; localisation artefact of a tall box)",
+    "reader_a": "lower",
+    "reader_b": "lower",
+    "adjudicator": "lower (dense component; layering fluid veils the whole right hemithorax up to the middle zone)"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Probable central venous catheter (right internal jugular approach)",
+      "location": "Enters at the right side of the neck, courses over the right clavicle and descends along the right paramediastinal region; tip projects over the lower SVC / cavoatrial junction (about T6-T7)",
+      "zh": "疑似右內頸靜脈中心靜脈導管，尖端位於下段上腔靜脈／腔房交界處"
+    },
+    {
+      "type": "ECG electrode with lead wire",
+      "location": "Overlying the left mid zone lateral to the left hilum (anterior 3rd-4th rib level); lead wire runs up to coiled tubing over the left clavicle",
+      "zh": "心電圖電極片（左中肺野）"
+    },
+    {
+      "type": "External coiled tubing / lead wires (double loop)",
+      "location": "Left upper hemithorax overlying the left clavicle and first ribs",
+      "zh": "體外盤繞管線（左上胸／左鎖骨區）"
+    },
+    {
+      "type": "External coiled tubing",
+      "location": "Right shoulder / right axilla / right upper arm, continuing down along the right lateral chest wall",
+      "zh": "體外盤繞管線（右肩、右腋及右上臂）"
+    },
+    {
+      "type": "External tubing connector (hollow cylindrical piece)",
+      "location": "Right supraclavicular region just above the medial right clavicle",
+      "zh": "體外管線接頭（右鎖骨上區）"
+    },
+    {
+      "type": "External tubing connector (hollow cylindrical piece)",
+      "location": "Right mid zone lateral to the right heart border / near the right hilum, about the 5th-6th posterior rib level",
+      "zh": "體外管線接頭（右中肺野近右肺門）"
+    },
+    {
+      "type": "External monitoring tubing / lead wires (multiple)",
+      "location": "Running along both lateral chest walls; the right-sided lines cross the right lung field to the mid-chest connector, two left-sided lines end with radiopaque terminals over the left flank / left upper abdomen",
+      "zh": "多條體外監測導線／管路（兩側胸壁，左側兩條末端接頭投影於左側腹）"
+    },
+    {
+      "type": "Radiographic side marker (L) with upright arrow",
+      "location": "Image upper-right corner (patient's left)",
+      "zh": "左側標記（L）與方向箭頭"
+    }
+  ],
+  "other_findings": [
+    "右側積液下方可能合併右下葉肺塌陷或實變（右心緣與右橫膈均被遮蔽，單張影像無法與積液區分）",
+    "整個右側胸廓透明度較左側減低（仰臥位層狀積液），並向右中肺野延伸",
+    "左下肺野及心後區輕微斑片狀模糊影，可能為肺塌陷；左肋膈角清晰",
+    "兩肺支氣管血管紋理輕度增加",
+    "心縱膈影顯得寬大，惟受 AP 放大、旋轉及右側積液遮蔽影響無法準確評估",
+    "氣管居中，未見明顯縱膈偏移；未見氣胸",
+    "左側橫膈與胃泡可見；骨骼未見骨折，肱骨頭生長板可見（符合兒童年齡）",
+    "未見氣管內管或鼻胃管"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "右側大量肋膜積液清楚可見，且未見胸管、肋膜引流管或引流後變化；但片上有疑似右內頸靜脈中心靜脈導管、心電圖電極片及大量體外監測導線與管路，顯示病人已在住院／加護照護中接受治療，與「首次就診、尚未接受任何處置」的情境不符。較適合作為住院或加護病房追蹤影像使用。",
+  "description_zh": "攜帶式 AP 正面胸部 X 光（11 歲女童），影像略呈逆時針傾斜且病人輕度旋轉，吸氣尚可；體表覆蓋多條監測導線與盤繞管路，左中胸壁見心電圖電極片，右鎖骨上及右中肺野各見一個體外管線接頭，右頸部另見疑似右內頸靜脈中心靜脈導管，尖端投影於下段上腔靜脈／腔房交界處。右側中下肺野呈大片均質緻密影，外側緣向上弧形上升，右側橫膈、右肋膈角及右心緣均被遮蔽，且整個右側胸廓透明度較左側減低，符合仰臥位大量右側肋膜積液（緻密影上下範圍約 10-12 公分）並向右中肺野延伸，其下方不排除合併右下葉塌陷或實變。左肺大致通氣良好，肺紋理略增加，左下肺野及心後區有輕微斑片狀模糊影，左肋膈角清晰，左側橫膈與胃泡可見。心縱膈影顯得寬大，惟受 AP 放大、旋轉及右側積液遮蔽影響難以準確評估；氣管居中，未見明顯縱膈偏移，未見氣胸、胸管或肋膜引流管，亦未見氣管內管；骨骼未見骨折，肱骨頭生長板可見。",
+  "label_concern": ""
+}

@@ -1,0 +1,38 @@
+{
+ "view": "Frontal chest radiograph, PA erect (L side marker with technologist initials at image upper right; conventional orientation: patient's left on image right)",
+ "technical_quality": "Adequate. Deep inspiration (right hemidiaphragm dome at about the 7th-8th anterior rib), minimal rotation (clavicular heads roughly equidistant from the spinous processes), adequate penetration (thoracic vertebral bodies and disc spaces visible through the heart), trachea midline. Scapulae partly projected over the lateral upper lung fields; both costophrenic angles included at the lower image edge.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 10,
+ "devices": [
+  {
+   "type": "External round radiopaque disc marker (~2.4 cm), likely lead positioning marker or clothing snap",
+   "location": "Projected over the left clavicle / acromioclavicular region (image upper right)"
+  },
+  {
+   "type": "Side marker 'L' with technologist initials 'SC'",
+   "location": "Image upper right corner, patient's left"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Band-like soft-tissue stripe between the inner rib margins and the lung along the lateral chest wall, ~0.6-1.0 cm thick and ~10 cm craniocaudal extent, consistent with lateral pleural thickening (extrapleural fat is a differential); costophrenic angle essentially preserved",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Subtle, thinner lateral pleural stripe along the lower lateral chest wall, much less conspicuous than the left; costophrenic angle sharp",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Relatively flat hemidiaphragms with long lung fields and a narrow vertical heart - possible mild hyperinflation, though tall thin habitus / deep inspiration can produce the same appearance (low confidence)",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "站立正面（PA）胸部X光，吸氣充分、旋轉輕微、穿透度適當；左肩鎖區可見一外部圓形不透X光標記物及L側別標記，未見任何導管、引流管或心律調節器。雙肺野透亮，無實質浸潤、結節或肺水腫；左下側胸壁可見沿肋骨內緣平行之帶狀軟組織密度（厚約0.6–1.0公分、縱向延伸約10公分），符合局部側胸膜增厚（需與胸膜外脂肪鑑別），右下側胸壁亦有較不明顯之類似胸膜條紋，雙側肋膈角大致銳利，無明顯肋膜積液或氣胸。心影狹長、心胸比正常，縱隔與肺門無明顯異常，氣管居中，骨骼結構完整無骨折。雙側橫膈相對平坦、肺容積偏大，需考慮輕度過度充氣之可能，惟亦可為體型與深吸氣所致。"
+}

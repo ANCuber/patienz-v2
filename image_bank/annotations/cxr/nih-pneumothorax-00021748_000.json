@@ -1,0 +1,51 @@
+{
+ "id": "nih-pneumothorax-00021748_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate erect frontal film (recorded PA; scapulae overlap the upper lateral lung fields so AP cannot be excluded). Good inspiration (about 9-10 posterior ribs), minimal rotation, slightly underpenetrated mediastinum, apices and both costophrenic angles included. No L/R lead marker; a check-mark annotation artifact is projected at the upper corner on the patient's left, outside the thorax. Diagnostic quality.",
+ "target": {
+  "finding": "pneumothorax",
+  "visible": "uncertain",
+  "laterality": "left",
+  "zone": "upper",
+  "size_cm": 2,
+  "confidence": 0.5
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "small-bore chest drain / pigtail-type pleural catheter (thin radiopaque stripe with side-hole gap)",
+   "location": "left hemithorax: enters at the left lower lateral chest wall, courses obliquely superomedially across the left lung, tip at the left apex just below the first rib; external segment continues beyond the left flank",
+   "zh": "左側細口徑胸腔引流管（pigtail 型），自左下外側胸壁進入，管尖位於左肺尖"
+  },
+  {
+   "type": "cluster of fine metallic linear densities, probable surgical clips (versus overlying external artifact)",
+   "location": "projected over the left hilum / aortopulmonary window region",
+   "zh": "左肺門／主動脈肺動脈窗區域數枚金屬夾狀密度（疑手術夾或體外假影）"
+  },
+  {
+   "type": "external check-mark image marker / annotation artifact",
+   "location": "upper corner of the image on the patient's left side, over the left shoulder region, outside the thorax",
+   "zh": "影像右上角（病人左側）勾號狀標記假影"
+  }
+ ],
+ "other_findings": [
+  "左側胸腔引流管在位，屬引流後狀態；左肺大致已復張至胸壁，未見明確殘餘臟層肋膜線",
+  "左肺門／主動脈肺動脈窗區域投影數枚細小金屬線狀密度，疑為手術夾或體外假影",
+  "左肺門旁小型緻密結節，可能為鈣化肉芽腫（不確定）",
+  "左橫膈稍高，其下方脾曲結腸／胃明顯脹氣，屬偶然發現",
+  "右肺清晰、血管紋理正常延伸至周邊；心臟大小及縱膈正常、氣管居中，兩側肋膈角銳利，未見肋膜積液、皮下氣腫或骨折",
+  "肩胛骨重疊於兩側外上肺野（技術因素）"
+ ],
+ "treatment_evidence": true,
+ "first_presentation_suitable": false,
+ "suitability_reason": "左側胸腔已置入細口徑引流管且管尖位於左肺尖，左肺大致復張，屬氣胸引流治療後之影像；殘餘氣胸僅為不確定之少量肺尖氣胸，且未見明確臟層肋膜線。此片無法代表首次就診、尚未治療之氣胸表現，不適合作為初次呈現之教學影像。",
+ "description_zh": "正面胸部X光（記錄為 PA，肩胛骨重疊於兩側外上肺野），吸氣量足夠，縱膈曝光稍不足，影像右上角（病人左側）可見一勾號狀標記假影。左側胸腔置有一條細口徑胸腔引流管（pigtail 型），自左下外側胸壁進入，斜向上內走行，管尖位於左肺尖第一肋下方，管身可見側孔造成之不透光線中斷。左肺大致已復張至胸壁，左肺尖外側（放射科標註處，約 6×2 公分範圍）血管紋理略稀疏，可能為少量（約 1–2 公分厚）殘餘肺尖氣胸，但未見明確臟層肋膜線，屬引流後不確定之殘餘氣胸。左肺門／主動脈肺動脈窗區域投影數枚細小金屬線狀密度，疑為手術夾或體外假影，鄰近另見一小型緻密結節，可能為鈣化肉芽腫；左橫膈稍高，其下方脾曲結腸／胃明顯脹氣，屬偶然發現。右肺清晰、血管紋理正常延伸至周邊，心臟大小及縱膈正常，氣管居中，兩側肋膈角銳利，未見肋膜積液、皮下氣腫或骨折。",
+ "label_concern": "標籤方向（左上）與放射科標註框及兩位判讀者一致，但此片為左側胸腔引流管置入後之影像，殘餘氣胸僅為不確定之少量肺尖氣胸，未見明確臟層肋膜線；作為「氣胸」教學影像應標示為治療後（引流後）狀態。"
+}

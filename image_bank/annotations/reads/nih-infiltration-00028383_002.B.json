@@ -1,0 +1,69 @@
+{
+ "view": "Frontal chest radiograph, AP (portable) projection, likely semi-erect/supine; L-marker at image upper right confirms conventional orientation (patient right on image left)",
+ "technical_quality": "Adequate penetration; lung apices and both costophrenic regions included; minimal rotation; low lung volumes (poor inspiration), with the right hemidiaphragm higher than the left; multiple overlying lines/wires partially obscure the upper and left mid chest",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "whole",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Implanted venous access port (Port-A-Cath) reservoir with catheter",
+   "location": "Reservoir over the right anterior upper chest wall (right upper zone); catheter courses via the right neck veins and descends along the right paramediastinal region, tip projected over the lower SVC / cavoatrial junction"
+  },
+  {
+   "type": "Second central venous catheter / tunneled line (or external catheter segment) with Y-shaped hub-connector",
+   "location": "Loops over the left apex / left supraclavicular region, hub-connector projected over the left mid zone at the lateral chest wall; tubing continues inferiorly along the left lateral chest wall and flank"
+  },
+  {
+   "type": "ECG electrodes (2 round snaps)",
+   "location": "Left lower-lateral chest wall, projected over the left lower zone"
+  },
+  {
+   "type": "External tubing / lead wires",
+   "location": "Along the left lateral chest wall and both lower flanks (external to the thorax)"
+  },
+  {
+   "type": "Small linear metallic density (skin clip or external artifact)",
+   "location": "Right axillary soft tissue, lateral to the right upper thorax"
+  },
+  {
+   "type": "L side marker",
+   "location": "Image upper right corner (patient left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Diffuse hazy reticulonodular / interstitial-alveolar opacities involving the entire right lung, most dense in the lower zone; right lung less aerated than the left",
+   "laterality": "right",
+   "zone": "whole"
+  },
+  {
+   "finding": "Confluent airspace opacity at the right base with silhouetting of the right heart border and right hemidiaphragm",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Blunting of the right costophrenic angle with basal opacity - possible small right pleural effusion and/or basal atelectasis",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Elevated right hemidiaphragm with reduced right lung volume",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Patchy reticular / perihilar interstitial opacities in the left mid and lower zones (milder than the right); left costophrenic angle preserved",
+   "laterality": "left",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Mildly prominent cardiomediastinal silhouette (borderline cardiomegaly, limited by AP projection and low lung volumes); trachea midline, no pneumothorax",
+   "laterality": "none",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面（AP portable）X光，吸氣量不足，右側橫膈較左側抬高。右前上胸壁可見植入式人工血管（Port-A-Cath）儲液槽，導管經右頸靜脈下行，尖端投影於下腔上腔靜脈／心房交界處；另於左上胸及左肺尖可見一條中心靜脈導管／外接管路盤繞，其Y型接頭投影於左中肺野，左下側胸壁並有兩枚心電圖電極片。右肺全肺野瀰漫性網狀結節狀及霧狀浸潤，以右下肺野最為密實並伴右心緣及右橫膈輪廓模糊，右側肋膈角變鈍，疑合併少量肋膜積液或基底肺塌陷；左肺中、下肺野亦見較輕微之網狀／肺門周圍間質性浸潤，左側肋膈角尚清。心縱膈影稍寬（受AP投影影響），氣管居中，未見氣胸或胸管。"
+}

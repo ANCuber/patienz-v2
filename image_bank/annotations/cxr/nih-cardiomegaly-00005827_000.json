@@ -1,0 +1,50 @@
+{
+  "id": "nih-cardiomegaly-00005827_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate: erect PA (L marker image-right, scapulae rotated off the lungs), good inspiration (~9 posterior ribs), minimal rotation (clavicles symmetric about the spinous processes), adequate penetration (vertebral bodies faintly seen through the heart); large bilateral breast shadows reduce lower-zone contrast; apices and costophrenic angles included.",
+  "target": {
+    "finding": "Cardiomegaly",
+    "visible": "yes",
+    "laterality": "none",
+    "zone": "lower",
+    "size_cm": 18,
+    "confidence": 0.8
+  },
+  "laterality_sources": {
+    "bbox": "patient-left, middle zone (452x471 px box over the left-predominant cardiac silhouette; midline finding)",
+    "reader_a": "bilateral, lower zone",
+    "reader_b": "midline / bilateral (predominantly leftward enlargement), lower zone",
+    "adjudicator": "none (midline finding; cardiac silhouette centred over the lower zone, left-predominant)"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "surgical clips (two short linear metallic clips)",
+      "location": "patient's left supraclavicular region / medial to the left clavicle, left upper zone",
+      "zh": "左鎖骨上區手術夾"
+    },
+    {
+      "type": "surgical clips (small cluster of ~3 metallic clips)",
+      "location": "patient's left lung apex, just below the left first rib, medial left upper zone",
+      "zh": "左肺尖手術夾"
+    },
+    {
+      "type": "radiographic side marker (L) with technologist initials (external, not a medical device)",
+      "location": "upper corner of the image on the patient's left side, outside the thorax",
+      "zh": "L 側別標記與技師縮寫"
+    }
+  ],
+  "other_findings": [
+    "左肺門略為突出，考量為血管性（肺動脈段），未見明確腫塊或結節",
+    "左鎖骨上區及左肺尖可見數枚細小金屬手術夾，為既往手術變化，無相關肺部病灶",
+    "兩側大片乳影覆蓋下肺野，略降低下肺野對比",
+    "兩側肺野清晰，未見浸潤、實質化、肋膜積液或氣胸；肋膈角銳利，橫膈輪廓平順，左橫膈下可見正常胃泡",
+    "氣管居中，上縱膈及主動脈弓未見增寬；骨骼未見急性病灶"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "心影擴大清楚可見（心胸比約 0.55），片上無胸管、引流管、中央靜脈導管或心臟節律器等治療裝置。左鎖骨上及左肺尖之手術夾為既往手術（如頸部／淋巴結手術）之變化，與心臟擴大之初次表現並無矛盾，適合作為初診影像。",
+  "description_zh": "PA 站立胸部正面片，吸氣充足、無明顯旋轉、穿透度適當，兩側大片乳影覆蓋下肺野。心影擴大，心胸比約 0.55（心影橫徑約 18 cm），左心緣圓鈍並向左下方延伸至下肺野，氣管居中，上縱膈與主動脈弓未見增寬；左肺門略為突出，考量為血管性。兩側肺野清晰，未見浸潤、實質化、結節、肋膜積液或氣胸，肋膈角銳利，橫膈輪廓平順，左橫膈下可見正常胃泡。左鎖骨上區及左肺尖（第一肋下方）可見數枚細小金屬手術夾，為既往手術變化，無相關肺部病灶；影像左上方（病人左側）有 L 側別標記及技師縮寫。未見胸管、引流管、中央靜脈導管或心臟節律器等治療裝置。",
+  "label_concern": ""
+}

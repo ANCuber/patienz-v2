@@ -1,0 +1,53 @@
+{
+ "view": "Frontal chest radiograph, probable AP projection (high clavicles, mildly lordotic), arms down at the sides, scapulae partly overlying the upper lateral lung fields",
+ "technical_quality": "Limited: low inspiratory volume with elevated hemidiaphragms (right higher than left), large body habitus with dense breast and chest-wall soft-tissue shadows obscuring both lower zones and costophrenic angles; no significant rotation (medial clavicles roughly symmetric about the spinous processes); upper thorax adequately penetrated (spine visible through the upper mediastinum) but the lower zones are relatively underpenetrated; a reversed lead marker ('DMD') is present in the upper corner on the patient's left, no L/R marker seen",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "upper",
+ "size_cm": 0.5,
+ "devices": [
+  {
+   "type": "small linear metallic density (~0.5 cm), probable surgical clip versus external artifact; no other clips, sternotomy wires, lines or tubes",
+   "location": "left mid-to-lower zone, projected at the left heart border / paracardiac region"
+  },
+  {
+   "type": "lead marker 'DMD' (letters appear reversed), external",
+   "location": "upper corner of the film on the patient's left, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Small well-defined, dense, rounded nodule approx 0.5 cm, medial/paramediastinal, just above the right hilum; high density and sharp margin favour a calcified granuloma, but a small solid pulmonary nodule cannot be excluded on this film",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "One or two additional tiny dense dots (approx 0.2 cm) along the medial right lung between the upper nodule and the right hilum, probably small calcified granulomas or vessels end-on",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Linear metallic density approx 0.5 cm projected over the left heart border (surgical clip versus external artifact)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, unfolded/ectatic aortic arch bulging into the left upper mediastinum, consistent with age-related aortic unfolding; trachea midline",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Low lung volumes with elevated hemidiaphragms (right higher than left) and basal vascular crowding; both lower zones and costophrenic angles are largely obscured by dense breast/soft-tissue shadows, so a small effusion or basal opacity cannot be confidently excluded",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal / borderline enlarged (CTR approx 0.5), likely exaggerated by AP projection and low inspiration",
+   "laterality": "none",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面（疑似AP）攝影，吸氣量不足、雙側橫膈上抬（右側較高），且因體型肥胖與乳房軟組織陰影，雙下肺野及肋膈角評估受限。右上肺野內側、右肺門上方見一約0.5公分邊緣清楚之高密度圓形結節，以鈣化肉芽腫為優先考量，惟小型肺結節無法完全排除；右肺內側另見數個更小之點狀高密度影。左心緣旁見一約0.5公分線狀金屬密度影（手術夾或體外異物），主動脈弓突出迂曲，心影大小於正常上限（AP投影、低肺容積下可能放大）；未見氣胸或明顯肺實質浸潤，亦無胸管或引流管。"
+}

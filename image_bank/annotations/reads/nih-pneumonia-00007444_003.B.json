@@ -1,0 +1,38 @@
+{
+ "view": "Frontal chest radiograph, erect. PA vs AP not definitively determinable (scapulae incompletely rotated off the lateral lung fields, shoulders elevated). An \"L\" side marker with technologist initials is present at the upper right corner of the image, i.e. the patient's LEFT — conventional orientation (patient's right on image left), corroborated by the cardiac apex, aortic knob and gastric bubble all on the image right.",
+ "technical_quality": "Adequate. Good inspiration (~9-10 posterior ribs above the right hemidiaphragm); minimal rotation (medial clavicular ends roughly equidistant from the spinous processes); adequate penetration (lower thoracic vertebral bodies faintly visible through the cardiac silhouette). Scapulae overlap the lateral upper/mid lung fields bilaterally (arms not fully rotated forward). Field of view includes the neck/cervical spine and mandible superiorly; both costophrenic angles included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "Central venous catheter, probable right internal jugular approach, relatively large-bore (visible lumen / double wall; tunneled or dialysis-type catheter possible). A redundant hairpin loop is present at the base of the neck; the catheter then descends along the right paratracheal mediastinum. An external tubing artifact superimposed on the chest is a less likely alternative.",
+   "location": "Loop projects over the right supraclavicular / lower neck region (patient's right, above the clavicle); shaft descends along the right paratracheal / SVC region; tip projects at approximately the level of the lower right hilum, near the expected SVC-right atrial junction (about T6-T7)."
+  },
+  {
+   "type": "Radiographic side marker 'L' with technologist initials (external)",
+   "location": "Upper right corner of the image = patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Subtle, ill-defined hazy increased opacity in the medial right lower zone (paracardiac / right cardiophrenic region) with partial loss of definition of the right heart border — suggests early infiltrate/consolidation (right middle lobe or medial right lower lobe) versus mild atelectasis; no air bronchograms, no cavitation. Low-to-moderate certainty; approximately 5-6 cm extent.",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild elevation of the right hemidiaphragm (dome ~4 cm higher than the left, slightly more than the usual physiological difference). Right costophrenic angle remains sharp, so a subpulmonic effusion is unlikely; may be volume loss related to the medial basal opacity or a normal variant.",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Questionable mild prominence of the right upper mediastinal / right paratracheal contour (SVC region). Most likely projectional (AP-type magnification, superimposed catheter); no discrete mass, tracheal deviation or lymphadenopathy identified.",
+   "laterality": "right",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面胸部X光，吸氣量足夠、旋轉輕微，雙側肩胛骨部分重疊於肺野外側。右頸根部/鎖骨上區可見一條大口徑導管呈髮夾狀迴繞後，沿右側氣管旁縱膈下行，尖端約投影於右肺門下緣、上腔靜脈與右心房交界處附近，研判為右內頸靜脈中心靜脈導管（不排除為體外管路重疊影）。右下肺野內側近心緣處可見淡薄、邊界不清之模糊增加密度影，右心緣輪廓稍模糊，需考慮右中葉/右下葉早期肺炎浸潤或輕度肺膨脹不全；右側橫膈較左側稍高約4公分。左肺清晰，雙側肋膈角銳利，無氣胸或肋膜積液；心臟大小正常，上縱膈右側輪廓稍顯突出，可能為投影因素，未見明確腫塊；骨骼及軟組織無明顯異常，未見胸管或引流管。"
+}

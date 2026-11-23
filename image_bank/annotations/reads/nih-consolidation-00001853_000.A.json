@@ -1,0 +1,38 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film; L marker present at upper right of image (patient's left) confirming conventional orientation. Adequate inspiration, trachea midline, minimal rotation, both costophrenic angles included. Slight over-penetration of the lower zones.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 10,
+ "devices": [
+  {
+   "type": "Round radiopaque external marker / button-snap (~2 cm), not an implant",
+   "location": "Over the patient's left shoulder, acromioclavicular region"
+  },
+  {
+   "type": "Lead 'L' side marker with technologist initials (SH)",
+   "location": "Upper corner of image on patient's left side"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined hazy airspace opacity in the left lower zone, lateral to and partly overlapping the lower left cardiac border and extending to just above the left hemidiaphragm; lower left heart border and medial left hemidiaphragm slightly indistinct, left costophrenic angle largely preserved, no air-fluid level - consistent with left lower zone consolidation (lingula / left lower lobe)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, rounded aortic knob suggesting an unfolded / tortuous thoracic aorta; heart size within normal limits (CTR approximately 0.48)",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly accentuated bronchovascular markings at the right lower zone medially near the right cardiophrenic angle, without definite consolidation; right hemidiaphragm and costophrenic angle sharp",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "PA正面胸部X光，吸氣量尚可，氣管居中，影像右上角可見 L 側標記。左下肺野可見一片邊界不清的模糊浸潤性陰影，位於左心緣外側並向下延伸至橫膈上方（約10公分），左心緣下段及左橫膈內側輪廓略為模糊，左肋膈角大致保留，未見氣液平面，符合左下肺（舌葉／左下葉）實變之表現。右肺野清晰，右橫膈及肋膈角銳利；心影大小在正常範圍，主動脈弓略為突出（主動脈迂曲）。左肩鎖關節區可見一圓形高密度體表外物（標記或鈕扣），未見胸管、導管、心律調節器或其他置入物，亦無已接受治療的證據。"
+}

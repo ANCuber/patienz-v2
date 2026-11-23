@@ -1,0 +1,58 @@
+{
+ "id": "nih-fibrosis-00002820_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate. Frontal PA film, L marker at image upper-right (conventional orientation), minimal rotation, penetration adequate (thoracic spine visible through the upper mediastinum, faint behind the heart). Inspiration mildly shallow with small lung volumes, accentuated on the right by a markedly elevated right hemidiaphragm. Both costophrenic angles included; upper abdomen cropped. Pacemaker generator and redundant lead loop overlie the right upper zone and part of the right hilum; scapular margins partly overlap the lateral upper zones.",
+ "target": {
+  "finding": "pulmonary fibrosis",
+  "visible": "yes",
+  "laterality": "bilateral",
+  "zone": "lower",
+  "size_cm": -1,
+  "confidence": 0.7
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "bilateral",
+  "reader_b": "bilateral",
+  "adjudicator": "bilateral"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Cardiac pacemaker pulse generator (dual-chamber transvenous system) with redundant lead loop coiled around the can",
+   "location": "Patient's right infraclavicular / pectoral chest wall, projecting over the right upper zone",
+   "zh": "雙腔心臟節律器主機（右鎖骨下區，伴多餘導線迴圈）"
+  },
+  {
+   "type": "Transvenous pacing lead (atrial)",
+   "location": "Enters via right subclavian vein / SVC; tip projects over the right atrium",
+   "zh": "心房節律導線（尖端投影於右心房）"
+  },
+  {
+   "type": "Transvenous pacing lead (ventricular)",
+   "location": "Via right subclavian vein / SVC, crosses the right atrium; tip projects over the right ventricular apex, left of midline at the lower cardiac silhouette",
+   "zh": "心室節律導線（尖端投影於右心室心尖）"
+  },
+  {
+   "type": "Radiographic side marker 'L'",
+   "location": "Image upper-right corner, over the patient's left shoulder region",
+   "zh": "左側標記「L」（影像右上角）"
+  }
+ ],
+ "other_findings": [
+  "心影邊緣性擴大（心胸比約0.48–0.50）",
+  "胸主動脈迂曲、主動脈弓突出，上縱隔增寬（年齡相關）",
+  "雙側肺門陰影顯著（右側部分被導線迴圈遮蔽），疑中央肺動脈擴張",
+  "右側橫膈明顯上提（穹頂約高於左側5–6 cm），考慮橫膈膨升／膈神經麻痺／右下肺容積減少，肺下積液不能排除",
+  "右肋膈角變鈍，疑少量右側肋膜積液或肋膜增厚",
+  "肺容積偏小、吸氣稍淺",
+  "心後方／左橫膈下圓形透亮影，較可能為胃底氣體（小型食道裂孔疝不能完全排除）",
+  "雙側肩關節及胸椎退化性變化"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標籤病灶（雙側下肺野粗網狀間質性陰影）清楚可見，片上無胸管、引流管或任何針對肺纖維化的治療痕跡。片上的心臟節律器為慢性心臟病史的裝置，與肺纖維化初次就診並不矛盾，但病例設定須納入節律器病史（如病竇症候群或房室傳導阻滯）；另右側橫膈明顯上提及右肋膈角變鈍為伴隨發現，報告需一併描述，並需注意此高齡心臟病患者的基底間質變化與慢性間質性肺水腫存在鑑別空間。",
+ "description_zh": "PA 正面胸部X光，吸氣稍淺、肺容積偏小，旋轉輕微，穿透度適中。病人右側鎖骨下區可見雙腔心臟節律器主機並伴多餘導線迴圈，兩條導線經右鎖骨下靜脈及上腔靜脈進入心臟，尖端分別投影於右心房及右心室心尖；未見胸管、引流管或氣胸。雙側下肺野（尤以肺底及心緣旁，左側較右側明顯）可見粗網狀／網狀結節狀間質性陰影，範圍約占雙下肺野下三分之一，伴肺容積減少，符合基底部肺纖維化／慢性間質性肺病表現，惟需與慢性間質性肺水腫鑑別。心影邊緣性擴大（心胸比約0.5），上縱隔增寬伴胸主動脈迂曲、主動脈弓突出，雙側肺門陰影顯著（右側部分被導線迴圈遮蔽）。右側橫膈明顯上提（約高於左側5–6 cm）且右肋膈角變鈍，需考慮橫膈膨升或少量肋膜積液；心後方圓形透亮影較可能為胃底氣體，雙側肩關節及胸椎呈退化性變化。",
+ "label_concern": ""
+}

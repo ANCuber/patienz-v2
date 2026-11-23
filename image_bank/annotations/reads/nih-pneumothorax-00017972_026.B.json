@@ -1,0 +1,73 @@
+{
+ "view": "AP portable frontal chest radiograph (supine/semi-erect), L marker at image upper right confirming conventional orientation",
+ "technical_quality": "Suboptimal: portable AP technique with the patient rotated and the field obliquely collimated (image tilted), head turned to the left, both arms abducted with soft-tissue overlap laterally, shallow inspiration with low lung volumes, the lower thorax/upper abdomen partially clipped by the collimator, and the lung bases relatively underpenetrated. Multiple ECG leads overlie the chest.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "right upper anterior chest wall, infraclavicular over the right 2nd-3rd anterior rib (external)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "left upper anterior chest wall, infraclavicular over the left 2nd anterior rib (external)"
+  },
+  {
+   "type": "coiled ECG lead wire",
+   "location": "projected over the left mid zone laterally, external"
+  },
+  {
+   "type": "ECG lead wire with connector clip",
+   "location": "running down the left lateral chest wall to the left lower lateral chest, external"
+  },
+  {
+   "type": "ECG lead wire / monitoring cable",
+   "location": "crossing obliquely from the right upper chest over the mediastinum toward the lower chest, external"
+  },
+  {
+   "type": "lead wire / tubing with connector",
+   "location": "right lateral chest wall and axillary region, partly outside the collimated field, external"
+  },
+  {
+   "type": "coiled lead wires",
+   "location": "outside the thorax at the image lower right (patient's left lower side), external"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Diffuse coarse reticulonodular and patchy alveolar opacities throughout both lungs, most confluent in the mid and lower zones, right more than left, with perihilar accentuation",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Both hemidiaphragms and costophrenic angles obscured by basal opacity; layering pleural effusion or basal consolidation/atelectasis not excluded on this supine film",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent/widened cardiomediastinal silhouette with partially obscured cardiac borders; heart size indeterminate given AP supine technique, rotation and adjacent lung opacity",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Low lung volumes / shallow inspiration",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Possible streaky lucencies in the left lateral chest wall and axillary soft tissues, suspicious for subcutaneous emphysema (low confidence, partly overlapped by lead wires and abducted arm)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "No definite visceral pleural line identified; a small or anteromedial pneumothorax cannot be excluded on a supine film with extensive parenchymal opacity",
+   "laterality": "uncertain",
+   "zone": "uncertain"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "AP前後位臥姿攜帶式胸部X光，病人有旋轉、吸氣不足且影像傾斜，下胸部部分被準直框切除；右上及左上前胸壁見心電圖電極，多條導線投影於左側胸壁、縱膈及胸腔外，未見胸管、氣管內管或中心靜脈導管。兩側肺野瀰漫性粗網狀結節及斑片狀肺泡浸潤，以中下肺野最為明顯，右側較左側嚴重，兩側橫膈及肋膈角均模糊不清，無法排除臥姿層狀肋膜積液或肺底實變。心臟縱膈輪廓略顯寬大，惟因AP臥姿技術及肺部病灶遮蔽而不易評估；未見明確臟層肋膜線，但左側側胸壁及腋下軟組織疑有條紋狀透亮影，需注意皮下氣腫及潛在氣胸之可能。骨骼結構未見明顯骨折，肱骨頭可見生長板，符合青少年年齡。"
+}

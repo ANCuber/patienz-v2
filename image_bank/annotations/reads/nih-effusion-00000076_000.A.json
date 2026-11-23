@@ -1,0 +1,49 @@
+{
+ "view": "PA (frontal), upright; L side marker present at image upper right, confirming conventional orientation",
+ "technical_quality": "Adequate penetration, minimal rotation, slightly reduced inspiration (about 9 posterior ribs on the right, with an elevated right hemidiaphragm); costophrenic angles and apices included",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "Radiographic side marker 'L' with technologist initials (external artifact)",
+   "location": "Image upper right corner, over patient's left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Small-to-moderate pleural effusion: blunted costophrenic angle with a lateral meniscus rising along the chest wall, hazy adjacent lung base",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiomegaly (cardiothoracic ratio approximately 0.57)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded/tortuous aortic knob (age-related)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Elevated right hemidiaphragm (about 5-6 cm higher than left) with a relatively preserved costophrenic angle; subpulmonic effusion versus eventration not excluded",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Dense irregular calcified opacity at the anterior first costochondral junction, most consistent with costal cartilage calcification (benign); not a parenchymal nodule with certainty",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly increased bronchovascular/interstitial markings at the lung bases",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.8,
+ "description_zh": "正面（PA）胸部X光片，右上角可見 L 側標記。左側肋膈角變鈍，並可見沿左側胸壁上升之半月形液面（meniscus），左下肺野基底呈霧狀增加密度，符合左側少至中量肋膜積液（垂直高度約5公分）；右側肋膈角大致銳利，但右側橫膈明顯抬高，不排除右側肺下型積液或橫膈膨升。心影擴大（心胸比約0.57），主動脈弓突出迂曲；右上肺野外側第一肋軟骨處可見緻密不規則鈣化，最可能為肋軟骨鈣化。未見任何導管、引流管、心律調節器等裝置，亦無已治療之證據。"
+}

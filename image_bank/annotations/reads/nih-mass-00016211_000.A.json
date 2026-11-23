@@ -1,0 +1,34 @@
+{
+ "view": "PA (frontal), upright",
+ "technical_quality": "Diagnostic quality. Adequate inspiration (~9 posterior ribs), no significant rotation (clavicles roughly symmetric about the spinous processes), adequate penetration (vertebral bodies faintly visible through the heart). Apices and both costophrenic angles included; both lung bases and the right costophrenic angle are partially obscured by large breast shadows.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 9,
+ "devices": [
+  {
+   "type": "External radiographic marker / technologist marker (small lettered marker, reads approximately 'L'/'MM')",
+   "location": "Image top-right corner, i.e. patient's left upper side, outside the thorax; no lines, tubes, clips, or pacemaker present"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large, well-circumscribed, round, homogeneous pulmonary mass approximately 9 cm in diameter, lateral to the right hilum and abutting the lateral chest wall; lung markings are visible below it, so it is separate from the hemidiaphragm; no cavitation or calcification evident. (This is the labelled finding.)",
+   "laterality": "right",
+   "zone": "middle, extending into the upper part of the lower zone (approx. 3rd-5th anterior rib levels)"
+  },
+  {
+   "finding": "Tortuous / unfolded thoracic aorta with a prominent aortic knob, consistent with age-related change; cardiothoracic ratio within normal limits",
+   "laterality": "left",
+   "zone": "upper-middle (mediastinum)"
+  },
+  {
+   "finding": "Large bilateral breast shadows partially obscuring the lower zones (normal soft tissue, not pathological - noted to avoid misinterpretation as basal opacity)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.85,
+ "description_zh": "PA 正面胸部X光，吸氣量足夠，無明顯旋轉。右側中肺野（並延伸至下肺野上部）可見一約 9 公分、邊緣清楚的圓形均質腫塊影，位於右肺門外側並貼近側胸壁，其下方仍可見肺紋理，與右側橫膈分離，未見明顯空洞或鈣化。心臟大小正常，胸主動脈迂曲、主動脈弓突出，符合年齡相關變化；左肺野清晰，未見肋膜積液或氣胸，左側橫膈下可見正常胃泡。無任何置入性管線、引流管或裝置，僅見影像右上角之外部標記；雙側乳房陰影部分遮蔽兩下肺野。"
+}

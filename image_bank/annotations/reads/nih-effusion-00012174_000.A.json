@@ -1,0 +1,53 @@
+{
+ "view": "PA (frontal), L marker at image upper-right confirms conventional orientation",
+ "technical_quality": "Adequate penetration and no significant rotation; inspiration slightly shallow. Lower zones partially obscured by large bilateral breast shadows; both lateral chest walls show curvilinear skin-fold / breast-contour lines that should not be mistaken for tubes.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "External side marker (L)",
+   "location": "Image upper-right corner, patient left side"
+  },
+  {
+   "type": "Skin fold / breast contour lines (external soft-tissue artifact, not a tube)",
+   "location": "Bilateral lateral chest walls, running from axilla to below the diaphragm"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Pleural effusion, moderate: homogeneous basal opacity with lateral meniscus, blunted costophrenic angle and obscured hemidiaphragm",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiomegaly (CTR approx 0.58)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, unfolded / tortuous aortic arch",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Patchy perihilar opacity, possible consolidation vs vascular crowding (uncertain)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Increased reticular interstitial markings",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative changes of glenohumeral joints",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "PA 胸部X光片：左下肺野可見均勻緻密影，左側肋膈角鈍化並呈新月狀（meniscus sign），左側橫膈輪廓被遮蔽，符合左側中等量肋膜積液（約7公分高）。心臟陰影擴大（CTR約0.58），主動脈弓突出且迂曲。右側近肺門處有片狀模糊影，右下肺野網狀紋理增加；雙側大乳房陰影遮蔽下肺野，兩側側胸壁可見皮膚皺褶線影，未見胸管、引流管或其他置入裝置。"
+}

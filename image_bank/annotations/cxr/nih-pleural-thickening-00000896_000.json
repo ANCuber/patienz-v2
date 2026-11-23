@@ -1,0 +1,62 @@
+{
+ "id": "nih-pleural-thickening-00000896_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate PA film; 'L' marker at image upper right confirms conventional orientation. Adequate inspiration, minimal rotation, penetration adequate. Large body habitus with bulky chest-wall/axillary soft tissue; contrast slightly low with dataset processing noise. Apices partly overlapped by clavicles/first ribs but assessable; costophrenic angles assessable.",
+ "target": {
+  "finding": "pleural thickening",
+  "visible": "uncertain",
+  "laterality": "bilateral",
+  "zone": "upper",
+  "size_cm": 0.5,
+  "confidence": 0.4
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "bilateral",
+  "reader_b": "left",
+  "adjudicator": "bilateral"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "Median sternotomy wires (multiple metallic densities along the midline, several appearing fragmented or loosened; one straight fragment projects over the right paratracheal region), consistent with prior cardiac surgery",
+   "location": "Midline over the sternum/mediastinum, approximately T3-T9 levels",
+   "zh": "胸骨縫合鋼線（多枚，部分似斷裂或鬆脫），位於正中線胸骨/縱膈，約T3–T9水平"
+  },
+  {
+   "type": "Small V/Y-shaped metallic density (surgical clip vs external artifact)",
+   "location": "Left upper abdomen near the midline, just below the diaphragm at the bottom edge of the film",
+   "zh": "上腹部中線附近（橫膈下、片緣處）小型V/Y形金屬影，手術夾或體外異物"
+  },
+  {
+   "type": "External radiographer side marker 'L' with technologist initials 'HB'",
+   "location": "Image upper right corner (patient's left shoulder region, outside the thorax)",
+   "zh": "體外左側標記「L」及技師縮寫「HB」，位於影像右上角（病人左肩外側）"
+  },
+  {
+   "type": "External chain-like metallic artifact (interlinked rings, i.e. a jewelry/clothing chain), ~1.5-2 cm, NOT a calcified pleural plaque",
+   "location": "Patient's left lateral chest wall at about the 7th-8th rib level (mid/lower zone laterally)",
+   "zh": "左側外側胸壁（約第7–8肋水平）連環狀金屬鏈條偽影，約1.5–2公分，屬體外飾品/衣物，非鈣化性肋膜斑塊"
+  },
+  {
+   "type": "External chain-like metallic artifact (interlinked rings with a hook-like element), ~1.5 cm, NOT a calcified pleural plaque",
+   "location": "Patient's right lower lateral chest wall, projected over the right costophrenic angle",
+   "zh": "右側下外側胸壁（投影於右肋膈角）連環狀金屬鏈條偽影，約1.5公分，屬體外物，非鈣化性肋膜斑塊"
+  }
+ ],
+ "other_findings": [
+  "兩側外側胸壁的連環狀金屬影為體外鏈條偽影（左側中下肺野外側、右側肋膈角處），並非鈣化性肋膜斑塊或肋膜增厚",
+  "心影邊界性擴大（心胸比約0.5–0.55），左心室輪廓略突出",
+  "胸主動脈迂曲擴張，主動脈結突出並見鈣化，升主動脈向右上縱膈突出",
+  "正中線多枚胸骨縫合鋼線（部分似斷裂或鬆脫），符合曾接受正中胸骨切開術／心臟手術",
+  "兩側中央支氣管血管紋理及肺門略為增加，屬慢性或年齡相關變化；未見局部實質化、肺結節或氣胸",
+  "兩側肋膈角大致銳利，未見明顯肋膜積液",
+  "右側肩關節退化性變化（硬化、關節腔狹窄）及胸椎退化性變化"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "不適合作為肋膜增厚的初次表現影像：兩位讀片者所指的外側胸壁「鈣化性肋膜斑塊」放大後實為連環狀金屬鏈條的體外偽影；片中真正的肋膜變化僅為兩側肺尖輕度、非特異性的肋膜增厚（apical cap），在80歲病人可為正常老化表現，標籤證據薄弱。此外正中線有多枚胸骨縫合鋼線代表曾接受心臟手術，並有心影擴大與主動脈擴張，整體不像單純以肋膜增厚初次就診的病人。雖無胸管或引流管等針對性治療證據，但上述因素使本片不宜用於初次表現情境。",
+ "description_zh": "胸部X光正面像（PA），吸氣量尚可、無明顯旋轉，體型壯碩且影像對比稍低。兩側肺尖可見輕度肋膜增厚（apical cap），左側略明顯，厚度約0.5公分，屬非特異性變化；兩側外側胸壁各見一約1.5–2公分的連環狀金屬鏈影（左側位於第7–8肋水平的中下肺野外側，右側投影於右肋膈角），為體外飾品或衣物鏈條的偽影，不應誤判為鈣化性肋膜斑塊。心影邊界性擴大（心胸比約0.5–0.55），胸主動脈迂曲擴張、主動脈結突出並有鈣化；正中線可見多枚胸骨縫合鋼線（部分似斷裂或鬆脫），符合曾接受正中胸骨切開術的病史，另於上腹部中線附近見一小型V/Y形金屬影（手術夾或體外異物）。兩肺未見實質化、結節或氣胸，兩側肋膈角銳利、無肋膜積液；右肩關節及胸椎見退化性變化；未見胸管或引流管。",
+ "label_concern": "標籤存疑：兩位讀片者所指的兩側外側胸壁「鈣化性肋膜斑塊／帶狀肋膜增厚」放大檢視為連環狀金屬鏈條，是體外偽影而非肋膜病變；片中僅見輕度、非特異性的兩側肺尖肋膜增厚，可能即為NLP標籤的來源，但證據薄弱，建議人工複核後再決定是否採用。"
+}

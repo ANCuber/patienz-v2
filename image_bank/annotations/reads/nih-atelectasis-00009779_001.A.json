@@ -1,0 +1,38 @@
+{
+ "view": "AP frontal chest radiograph (R marker at image upper-left confirms conventional orientation)",
+ "technical_quality": "Adequate. Slightly rotated / AP projection with apparent upper mediastinal widening (young patient, AP magnification); lung apices and both costophrenic angles included; adequate penetration; no gross motion.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "Side marker 'R' with technologist initials (external lead marker)",
+   "location": "Image upper-left corner, over the patient's right shoulder / acromioclavicular region"
+  },
+  {
+   "type": "Coiled/spring-like metallic external artifact (likely clothing snap or ECG lead wire)",
+   "location": "Image lower-right edge, outside the patient's left lateral chest wall / flank, projected outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Subtle hazy increased opacity with bronchovascular crowding medial right lower zone adjacent to the right heart border and above the right hemidiaphragm, possible subsegmental (plate-like) atelectasis; faint and not definite",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent perihilar bronchovascular markings, likely AP projection / normal variant in adolescent",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Apparent widening of the superior mediastinum, most likely AP projection magnification / residual thymic tissue in a 17-year-old rather than true pathology",
+   "laterality": "none",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.45,
+ "description_zh": "胸部AP正面片，影像左上角可見R側標記，方向為常規擺位。右下肺野內側、鄰近右心緣與右橫膈上方處可見淡薄模糊之密度增加合併支氣管血管紋理聚集，疑似右下肺次節段性（板狀）肺擴張不全，惟表現細微、無法確定。兩側肺門周圍血管紋理略顯著，上縱膈於AP投影下顯得稍寬，心影大小尚可，兩側肋膈角大致清晰，未見明顯肋膜積液或氣胸。未見胸管、引流管或其他治療裝置；影像右下緣體外可見螺旋狀金屬外部偽影（衣物或導線類）。"
+}

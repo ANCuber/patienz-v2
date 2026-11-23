@@ -1,0 +1,38 @@
+{
+ "view": "PA erect frontal chest radiograph; \"L\" side marker in the upper right of the image (patient's left), conventional orientation",
+ "technical_quality": "Adequate: good inspiration (about 9-10 posterior ribs), adequate penetration (vertebral bodies visible through the cardiac silhouette), minimal rotation (spinous processes midway between clavicular heads), both costophrenic angles and apices included; scapulae partially project over the lateral upper lung fields; bilateral breast shadows overlie the lower zones",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 0.5,
+ "devices": [
+  {
+   "type": "external side marker (L)",
+   "location": "upper right corner of image, patient's left shoulder region"
+  },
+  {
+   "type": "multiple small linear metallic surgical clips",
+   "location": "left upper quadrant of abdomen below the left hemidiaphragm, adjacent to gas-filled stomach / splenic flexure (extra-thoracic)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Small (about 0.5 cm) round, sharply marginated, very dense nodule lateral to the left hilum at the level of the anterior 3rd rib, most consistent with a calcified granuloma",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Left hilum appears mildly prominent/rounded, likely vascular (pulmonary artery); no definite mass but uncertain",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Multiple surgical clips in the left upper quadrant of the abdomen beneath the left hemidiaphragm, indicating prior LUQ surgery (incidental, extra-thoracic)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光（PA），吸氣充足、穿透度適中、無明顯旋轉；未見任何導管、引流管或心律調節器。左側中肺野（約前第3肋高度、左肺門外側）可見一顆約0.5公分、邊緣清楚且密度甚高之圓形小結節，疑似鈣化肉芽腫；左肺門稍顯突出但輪廓尚屬血管樣，右肺清晰，兩側肋膈角銳利，無肋膜積液或氣胸。心臟大小正常，縱膈未增寬，氣管居中；骨骼結構完整，左上腹橫膈下可見多枚手術夾，胃及脾曲結腸含氣。"
+}

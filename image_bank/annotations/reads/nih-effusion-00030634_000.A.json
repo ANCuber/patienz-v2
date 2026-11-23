@@ -1,0 +1,42 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: good inspiration (~9-10 posterior ribs), minimal rotation (clavicles roughly symmetric about the spinous processes), adequate penetration with vertebral bodies visible through the cardiac shadow; scapulae mostly cleared from the lung fields. L marker present in the image upper-right corner confirming conventional orientation.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 3,
+ "devices": [
+  {
+   "type": "L side marker (external)",
+   "location": "image upper-right corner, over the patient's left shoulder region"
+  },
+  {
+   "type": "thin oblique linear external artifact (likely gown tie or skin fold; not a medical device)",
+   "location": "patient's right shoulder / axilla projecting across the right upper chest wall toward the medial clavicle"
+  },
+  {
+   "type": "serrated clothing/waistband-type artifact (external)",
+   "location": "bottom edge of the film, patient's right lower abdomen"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Blunting of the costophrenic angle with a small meniscus-shaped density, consistent with a small pleural effusion (~2-3 cm); left costophrenic angle is sharp by comparison",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent / unfolded aortic knob, likely age-related; mediastinum otherwise midline, cardiothoracic ratio within normal limits",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly accentuated bronchovascular markings, no focal consolidation, mass or nodule",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 胸部X光片，吸氣充分、無明顯旋轉，影像右上角可見 L 標記。右側肋膈角變鈍，呈半月狀均勻密度，符合少量右側肋膜積液，估計高度約 2–3 公分；左側肋膈角銳利，未見積液。心臟大小正常、縱膈居中，主動脈弓略為突出，兩側肺野未見明顯實質化、結節或氣胸，肺紋理略增。未見胸管、引流管或任何置入裝置；右肩上方可見一斜行細線狀體外偽影，影像下緣右側另有衣物類偽影。"
+}

@@ -1,0 +1,362 @@
+[
+ {
+  "id": "ptbxl-SVTAC-10034",
+  "ecg_id": "10034",
+  "selected_code": "SVTAC",
+  "language": "en",
+  "source_report": "initially there is sinus rhythm (rate = approx. 75/min) with atrial premature beats and bigeminy. this is followed by a run of rapid, regular paroxysmal supraventricular tachycardia (rate = 180/min). t waves are flat throughout.",
+  "source_report_zh": "起始為竇性心律（心率約 75/min），伴心房早期收縮及二聯律；隨後出現一陣快速、規則之陣發性上心室頻脈（心率 180/min）。全程 T 波平坦。",
+  "statements_zh": [
+   {
+    "code": "ISC_",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性缺血性變化"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SVTAC-3505",
+  "ecg_id": "3505",
+  "selected_code": "SVTAC",
+  "language": "en",
+  "source_report": "rapid regular supraventricular tachycardia. this is probably atrial flutter with 2:1 av block. non-specific st-t wave changes.",
+  "source_report_zh": "快速且規則之上心室頻脈，很可能為心房撲動合併 2:1 房室傳導阻滯。非特異性 ST-T 波變化。",
+  "statements_zh": [
+   {
+    "code": "ISC_",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性缺血性變化"
+   },
+   {
+    "code": "2AVB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "二度房室傳導阻滯"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "修正：「probably」原譯「可能」，改為「很可能」以符合 probable 之強度。註：代碼 2AVB（二度房室傳導阻滯，100）對應報告所述心房撲動之 2:1 房室傳導，並非獨立之二度房室傳導阻滯，教學時宜留意；ISC_ 對應報告之非特異性 ST-T 變化，無矛盾。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-SVTAC-10356",
+  "ecg_id": "10356",
+  "selected_code": "SVTAC",
+  "language": "de",
+  "source_report": "supraventrikulÄre tachykardie lagetyp normal sonst normales ekg",
+  "source_report_zh": "上心室頻脈，電軸正常，其餘為正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SVTAC-14286",
+  "ecg_id": "14286",
+  "selected_code": "SVTAC",
+  "language": "en",
+  "source_report": "a rapid, regular supraventricular tachycardia is present. p waves are not evident. non-specific st-t wave changes.",
+  "source_report_zh": "快速、規則之上心室頻脈，未見明顯 P 波。非特異性 ST-T 波變化。",
+  "statements_zh": [
+   {
+    "code": "PSVT",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "陣發性上心室頻脈"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PSVT-1299",
+  "ecg_id": "1299",
+  "selected_code": "PSVT",
+  "language": "de",
+  "source_report": "supraventrikulÄre tachykardie rechtstyp linksposteriorer hemiblock st & t abnormal, wahrscheinlich    anteriore ischÄmie oder linksbelastung    inferolaterale ischÄmie oder linksbelastung",
+  "source_report_zh": "上心室頻脈，電軸右偏，左後分支阻滯。ST 及 T 波異常，很可能為前壁缺血或左心負荷；下側壁缺血或左心負荷。",
+  "statements_zh": [
+   {
+    "code": "PSVT",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "陣發性上心室頻脈"
+   }
+  ],
+  "axis_zh": "電軸右偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "修正：「wahrscheinlich」原譯「可能」，改為「很可能」以區分 möglich（可能）；「Linksbelastung」（左心負荷／左心室 strain）原譯「左心室負荷過重」，依既有批次統一為「左心負荷」。報告所述左後分支阻滯、電軸右偏及 ST-T 異常未列入 SCP 代碼（代碼僅 PSVT 100），屬代碼省略而非矛盾；電軸右偏與 heart_axis=RAD 相符。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-PSVT-1919",
+  "ecg_id": "1919",
+  "selected_code": "PSVT",
+  "language": "en",
+  "source_report": "rapid regular supraventricular tachycardia without evident p waves. non-specific st-t wave changes.",
+  "source_report_zh": "快速且規則之上心室頻脈，未見明顯 P 波。非特異性 ST-T 波變化。",
+  "statements_zh": [
+   {
+    "code": "PSVT",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "陣發性上心室頻脈"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PSVT-2051",
+  "ecg_id": "2051",
+  "selected_code": "PSVT",
+  "language": "en",
+  "source_report": "trace only requested.",
+  "source_report_zh": "（僅要求心電圖描記，未提供判讀）",
+  "statements_zh": [
+   {
+    "code": "PSVT",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "陣發性上心室頻脈"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "修正：原文「trace only requested」意為僅要求描記、未附判讀，原譯「原始判讀未提供描述」語意偏離，改為忠實表述。報告無任何判讀內容，無法與代碼（PSVT 100）核對，無矛盾；不宜作為有文字判讀的範例。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-PSVT-8461",
+  "ecg_id": "8461",
+  "selected_code": "PSVT",
+  "language": "en",
+  "source_report": "trace only requested.",
+  "source_report_zh": "（僅要求心電圖描記，未提供判讀）",
+  "statements_zh": [
+   {
+    "code": "PSVT",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "陣發性上心室頻脈"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "修正：原文「trace only requested」意為僅要求描記、未附判讀，原譯「原始判讀未提供描述」語意偏離，改為忠實表述。報告無任何判讀內容，無法與代碼（PSVT 100）核對，無矛盾；不宜作為有文字判讀的範例。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-PSVT-12537",
+  "ecg_id": "12537",
+  "selected_code": "PSVT",
+  "language": "en",
+  "source_report": "rhythm strip shows sinus rhythm (rate = 99/min.), ventricular premature beats, including a couplet and  a run of paroxysmal supraventricular tachycardia, (rate = 170/min.) otherwise no definite pathology. suggest cardiological review.",
+  "source_report_zh": "節律條圖顯示竇性心律（心率 99/min），心室早期收縮（含成對出現 couplet），並有一陣陣發性上心室頻脈（心率 170/min）；其餘無明確病變。建議心臟科評估。",
+  "statements_zh": [
+   {
+    "code": "PSVT",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "陣發性上心室頻脈"
+   },
+   {
+    "code": "PVC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心室早期收縮"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PSVT-14286",
+  "ecg_id": "14286",
+  "selected_code": "PSVT",
+  "language": "en",
+  "source_report": "a rapid, regular supraventricular tachycardia is present. p waves are not evident. non-specific st-t wave changes.",
+  "source_report_zh": "快速、規則之上心室頻脈，未見明顯 P 波。非特異性 ST-T 波變化。",
+  "statements_zh": [
+   {
+    "code": "PSVT",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "陣發性上心室頻脈"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "譯者清單未含此筆（ptbxl-PSVT-14286），惟其原文與 ptbxl-SVTAC-14286 為同一筆 ecg_id=14286，審核者直接沿用該筆已核對之譯文補入。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-TRIGU-816",
+  "ecg_id": "816",
+  "selected_code": "TRIGU",
+  "language": "en",
+  "source_report": "premature atrial contraction(s), trigeminy. sinus rhythm. prolonged pr interval. left axis deviation.",
+  "source_report_zh": "竇性心律，心房早期收縮呈三聯律，PR 間期延長，電軸左偏。",
+  "statements_zh": [
+   {
+    "code": "LAFB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "左前分支阻滯"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "報告僅寫「電軸左偏」，SCP 代碼則為左前分支阻滯（LAFB 100）；電軸左偏為 LAFB 之主要特徵，代碼較報告具體，屬省略而非矛盾。heart_axis=LAD 與報告相符。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-TRIGU-2188",
+  "ecg_id": "2188",
+  "selected_code": "TRIGU",
+  "language": "en",
+  "source_report": "premature atrial contraction(s), trigeminy. sinus rhythm. otherwise no definite pathology.",
+  "source_report_zh": "竇性心律，心房早期收縮呈三聯律，其餘無明確病變。",
+  "statements_zh": [
+   {
+    "code": "IMI",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "下壁心肌梗塞"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "報告稱「其餘無明確病變」，但 SCP 代碼含下壁心肌梗塞（IMI，可能性 50，infarction_stadium1=unknown）；可能性 50 屬「可能」等級，與「無明確病變」非直接矛盾，惟報告完全未提及梗塞，教學使用時宜以報告為主並留意此差異。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-TRIGU-12285",
+  "ecg_id": "12285",
+  "selected_code": "TRIGU",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s), trigeminy. prolonged pr interval. qs complexes in v2 suggesting old anteroseptal infarct. non-specific t wave flattening in i and inversion in    avl.",
+  "source_report_zh": "心室早期收縮呈三聯律，PR 間期延長。V2 呈 QS 波，提示陳舊性前間壁梗塞。導程 I 非特異性 T 波平坦，aVL T 波倒置。",
+  "statements_zh": [
+   {
+    "code": "ASMI",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前間壁心肌梗塞"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-TRIGU-4126",
+  "ecg_id": "4126",
+  "selected_code": "TRIGU",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s), trigeminy. sinus tachycardia. otherwise no definite pathology.",
+  "source_report_zh": "竇性心搏過速，心室早期收縮呈三聯律，其餘無明確病變。",
+  "statements_zh": [
+   {
+    "code": "NDT",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非診斷性 T 波異常"
+   },
+   {
+    "code": "PVC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心室早期收縮"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "報告稱「其餘無明確病變」，但 SCP 代碼含非診斷性 T 波異常（NDT 100）；NDT 本身即為非診斷性之輕微所見，與「無明確病變」不矛盾，惟報告未提及 T 波變化，供參考。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-TRIGU-4227",
+  "ecg_id": "4227",
+  "selected_code": "TRIGU",
+  "language": "de",
+  "source_report": "supraventrikulÄre extrasystole(n), trigeminus sinustachykardie lagetyp normal periphere niederspannung qrs(t) abnormal    inferiorer infarkt     wahrscheinlich alt",
+  "source_report_zh": "竇性心搏過速，心房早期收縮呈三聯律，電軸正常，肢體導程低電壓，QRS(T) 型態異常，下壁梗塞，很可能為陳舊性。",
+  "statements_zh": [
+   {
+    "code": "IMI",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "下壁心肌梗塞"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "亞急性期至陳舊性",
+  "consistent_with_codes": true,
+  "issues": "修正：「wahrscheinlich alt」原譯「可能為陳舊性」，改為「很可能為陳舊性」。infarction_stadium1 為「Stadium II-III」，stadium_zh 譯為「亞急性期至陳舊性」，與報告「很可能為陳舊性」相容。extra_beats=SVES 與報告之心房早期收縮三聯律相符。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-TRIGU-13102",
+  "ecg_id": "13102",
+  "selected_code": "TRIGU",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s), trigeminy. sinus rhythm. non-specific t wave flattening in v2,3.",
+  "source_report_zh": "竇性心律，心室早期收縮呈三聯律，V2、V3 非特異性 T 波平坦。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   },
+   {
+    "code": "PVC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心室早期收縮"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ }
+]

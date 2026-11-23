@@ -1,0 +1,72 @@
+{
+ "view": "AP portable frontal chest radiograph (marker \"AP PORTABLE\", L marker on image right = patient's left; conventional orientation)",
+ "technical_quality": "Suboptimal: image tilted/rotated a few degrees counter-clockwise, low lung volumes, chin/mandible and scapulae overlap the apices, patient slightly rotated; penetration adequate; both costophrenic angles included; supine/semi-erect AP magnification of the mediastinum expected.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Tracheostomy tube (round flange with cannula projecting into the trachea)",
+   "location": "Midline lower neck / upper trachea, tip well above the carina"
+  },
+  {
+   "type": "Thin tubular line (probable enteric/nasogastric or feeding tube; central venous catheter less likely) descending along the right paratracheal / right paramediastinal region toward the lower mediastinum and upper abdomen",
+   "location": "Right paramediastinal, from neck level down to the diaphragm"
+  },
+  {
+   "type": "ECG electrode with lead wire (rectangular clip)",
+   "location": "Patient's right shoulder / upper chest soft tissue"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Patient's left mid-chest, about the 4th-5th anterior rib level, lateral to the heart border"
+  },
+  {
+   "type": "ECG electrode with lead wire (round)",
+   "location": "Patient's right lower chest, over the right lower zone / hemidiaphragm"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Patient's left lower chest / upper abdomen at the costal margin"
+  },
+  {
+   "type": "Small metallic snap/clip (external, probably gown snap or lead connector)",
+   "location": "Patient's left supraclavicular soft tissue, lateral to the trachea"
+  },
+  {
+   "type": "External tubing (probable IV line / lead wire), outside the thorax",
+   "location": "Lateral to the patient's left arm at the image edge"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy, hazy perihilar and basal airspace/interstitial infiltrates, most conspicuous on this side; right hemidiaphragm partially obscured, costophrenic angle roughly preserved",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Patchy perihilar and lower-zone infiltrates, less extensive than the right; left costophrenic angle preserved",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent / widened cardiomediastinal silhouette, borderline cardiomegaly (partly attributable to AP portable magnification and low lung volumes)",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Low lung volumes with crowding of the bronchovascular markings",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Gracile, somewhat demineralized-appearing long bones (humeri) and slender ribs, suggesting a chronically ill / non-ambulatory child (consistent with the presence of a tracheostomy); no acute fracture seen",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "AP 攜帶式胸部X光，影像略有傾斜且肺容積偏低，下頜與肩胛骨重疊於上肺野。頸部正中可見氣切管，另見多枚心電圖電極與導線，右側縱膈旁另有一條細管影（疑為鼻胃/餵食管）向下延伸至橫膈附近。雙側肺門周圍及中下肺野可見斑片狀模糊浸潤，以右側中下肺野較為明顯，右側橫膈部分被遮蔽，雙側肋膈角大致仍可辨識。心縱膈影偏寬（AP 投照放大效應需納入考量），骨骼顯得纖細，未見明顯氣胸或大量肋膜積液，亦無胸管。"
+}

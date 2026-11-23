@@ -1,0 +1,49 @@
+{
+ "id": "nih-effusion-00007830_013",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "Frontal chest radiograph, paediatric (recorded PA; appearance more consistent with AP, likely supine/semi-erect); L side marker at image upper right confirms conventional orientation (image-left = patient-right)",
+ "technical_quality": "Suboptimal: marked patient rotation and tilt with the head turned to the patient's right (mandible/teeth projected over the right upper thorax), cervicothoracic spine obliquely oriented, clavicles markedly asymmetric (right clavicle projected much lower than left); apices and costophrenic angles included; penetration adequate (vertebral bodies visible through the mediastinum); rotation limits assessment of cardiac size and mediastinal position",
+ "target": {
+  "finding": "pleural effusion",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "multiple",
+  "size_cm": 16,
+  "confidence": 0.9
+ },
+ "laterality_sources": {
+  "bbox": "right",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External side marker 'L' with technologist initials",
+   "location": "Image upper right corner, lateral to the patient's left shoulder",
+   "zh": "體外L側別標記（含技師縮寫）"
+  },
+  {
+   "type": "Small angular (L-shaped) linear radiopaque density, ~2 cm, probably external artifact / small foreign body; not a chest tube or pigtail",
+   "location": "Projected over the lateral right mid zone near the right lateral chest wall, approximately 5th-6th rib level",
+   "zh": "右側中肺野外側小段角狀線形高密度影，疑為體外偽影或小異物（非引流管）"
+  }
+ ],
+ "other_findings": [
+  "右側橫膈與肋膈角完全被遮蔽，右心緣及右縱膈緣消失（silhouette sign）",
+  "疑合併右下肺實變或塌陷（被積液遮蔽，無法排除）",
+  "右上肺野殘餘通氣區見斑片狀模糊浸潤，並沿右上縱膈呈分葉狀軟組織輪廓（受壓／實變之上葉或積液向上延伸；此年齡殘餘胸腺較不可能）",
+  "氣管與縱膈／心臟向左側偏移（部分受病人旋轉影響）",
+  "左肺相對透亮，呈代償性過度充氣",
+  "心臟大小無法評估（右心緣被遮蔽且明顯旋轉）",
+  "右側肋骨間距擁擠、胸椎斜向傾斜（擺位旋轉／傾斜 vs 脊椎側彎；可能右側容積減少）",
+  "病人明顯旋轉且頭部轉向右側，下頜骨與牙齒投影於右上胸，鎖骨高度明顯不對稱",
+  "左橫膈下可見正常胃泡"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "右側大量肋膜積液清楚可見，未見胸管、豬尾巴導管、引流管或引流後變化，影像上無任何與初次就診相牴觸之治療痕跡；右側中野外側之小段角狀高密度影為體外偽影，不影響判讀。病童明顯旋轉使品質受限，但不妨礙作為初次就診（右側大量肋膜積液）之教學影像。",
+ "description_zh": "小兒胸部正面X光（登錄為PA，影像特徵較符合AP臥位或半坐位攝影），病童明顯旋轉且頭部轉向右側，下頜骨與牙齒投影於右上胸，影像品質受限。右側胸腔中、下肺野呈大範圍均質性緻密不透光影（約佔右側胸腔下三分之二，上下範圍約16公分），上緣於外側較高呈弧形（meniscus sign），右側橫膈、肋膈角及右心緣皆被遮蔽，最符合大量右側肋膜積液，底下可能合併右下肺實變或塌陷。右上肺野殘餘通氣區可見斑片狀模糊影及沿右上縱膈之分葉狀軟組織輪廓（受壓或實變之肺組織，或積液向上延伸），氣管與縱膈向左側偏移（部分受旋轉影響），左肺相對透亮、呈代償性過度充氣，心臟大小無法評估。未見胸管、豬尾巴導管或其他引流裝置；影像右上方為體外L側別標記，右側中肺野外側另見一小段角狀線形高密度影，疑為體外偽影或小異物，左橫膈下可見正常胃泡。",
+ "label_concern": ""
+}

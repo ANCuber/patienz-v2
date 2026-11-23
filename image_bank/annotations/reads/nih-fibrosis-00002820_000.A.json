@@ -1,0 +1,56 @@
+{
+ "view": "PA (frontal), L marker at image upper-right, conventional orientation",
+ "technical_quality": "Adequate: full lung fields and both costophrenic angles included, adequate inspiration, minimal rotation (trachea midline, clavicles roughly symmetric), penetration adequate with thoracic spine faintly visible through the heart. Right hilum partly obscured by pacemaker lead loop.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Cardiac pacemaker pulse generator (dual-chamber pacemaker; no shock coil seen)",
+   "location": "Patient's right infraclavicular chest wall, with redundant lead loop coiled adjacent to the generator"
+  },
+  {
+   "type": "Pacing lead 1 (atrial)",
+   "location": "Enters via right subclavian vein / SVC, tip projects over the right atrium (just right of the spine at mid-cardiac level)"
+  },
+  {
+   "type": "Pacing lead 2 (ventricular)",
+   "location": "Courses through right atrium across the tricuspid valve, tip projects over the right ventricular apex near the inferior cardiac border, left of midline"
+  },
+  {
+   "type": "Side marker 'L'",
+   "location": "Upper right corner of the image (patient's left shoulder region)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Coarse reticular / linear interstitial opacities, most conspicuous at the lung bases and adjacent to the heart borders; consistent with fibrotic interstitial change (labelled finding), differential includes chronic interstitial edema in this cardiac patient",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Borderline cardiomegaly (cardiothoracic ratio approximately 0.48-0.50)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Unfolded / tortuous thoracic aorta with prominent aortic knob and widened upper mediastinum (age-related)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Prominent bilateral hilar shadows, suggestive of enlarged central pulmonary arteries (right hilum partly overlapped by lead loop)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Rounded retrocardiac / left subdiaphragmatic gas lucency, most likely gastric fundal air; small hiatal hernia not excluded",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 正面胸部X光，吸氣尚可、旋轉輕微、穿透度適中。病人右側鎖骨下區可見雙腔心律調節器發電機，兩條導線經右側上腔靜脈進入心臟，末端分別投影於右心房及右心室心尖區；未見胸管、引流管或其他治療痕跡。雙側下肺野（尤以肺底及心緣旁）可見粗網狀線狀間質性增厚，與標籤「肺纖維化」相符，惟需與慢性間質性肺水腫鑑別。另見心影邊緣性擴大（心胸比約0.5）、胸主動脈迂曲伴主動脈弓突出、雙側肺門陰影稍顯著，心後方圓形透亮影較可能為胃底氣體；未見明顯肋膜積液、氣胸或局部腫塊。"
+}

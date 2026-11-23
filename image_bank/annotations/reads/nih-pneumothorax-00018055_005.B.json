@@ -1,0 +1,33 @@
+{
+ "view": "PA (frontal) chest radiograph, upright; L marker projected over the patient's left shoulder (image upper right), conventional orientation",
+ "technical_quality": "Adequate inspiration (about 9-10 posterior ribs), no significant rotation (medial clavicular ends roughly symmetric about the spinous processes), adequate penetration with vertebral bodies visible behind the heart; whole thorax and both costophrenic angles included",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Chest tube (thoracostomy drain, radiopaque stripe visible)",
+   "location": "Patient's right hemithorax: enters via the right lower lateral chest wall, runs superiorly along the lateral chest wall, then curves medially with the tip in the right mid zone at about the anterior 3rd-4th rib level"
+  },
+  {
+   "type": "Side marker (L)",
+   "location": "Projected over the patient's left shoulder (image upper right corner)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Right chest tube in situ (post-thoracostomy state); right lung appears largely re-expanded with markings reaching the periphery",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Possible small residual apical/lateral pneumothorax - the right lung looks slightly more lucent than the left and a faint visceral pleural line cannot be excluded at the apex; no large pneumothorax, no mediastinal shift",
+   "laterality": "right",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.6,
+ "description_zh": "正面直立胸部X光，吸氣充分、無明顯旋轉，穿透度適中。右側胸壁置有胸管，自右下外側胸壁進入，沿外側胸壁向上走行，末端彎曲朝向內側，位於右中肺野約前肋第3-4肋高度。右肺大致復張，肺紋理可延伸至周邊，惟右肺較左肺略顯透亮，右肺尖不排除少量殘餘氣胸，無縱隔偏移；左肺清澈。心臟大小正常、縱隔居中、氣管在中線，兩側肋膈角銳利，左橫膈下可見胃泡，骨骼及軟組織無明顯異常。"
+}

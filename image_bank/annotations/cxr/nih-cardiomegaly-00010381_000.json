@@ -1,0 +1,35 @@
+{
+  "id": "nih-cardiomegaly-00010381_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (as recorded); scapulae overlap the lateral lung fields and clavicles project high over the apices, so an AP projection cannot be excluded. L side marker at image upper right confirms conventional orientation (patient's right on image left).",
+  "technical_quality": "Adequate penetration and contrast (vertebral bodies visible through the heart); no significant rotation (medial clavicular ends roughly equidistant from spinous processes). Poor inspiratory effort: both hemidiaphragms elevated to about the anterior 4th-5th rib level, right markedly higher than left, low lung volumes - this magnifies the cardiomediastinal silhouette, obscures the right heart border and crowds the basal vessels, limiting assessment of heart size and lung bases. Large body habitus with thick lateral chest wall soft tissues; scapulae partly overlap the upper lateral lung fields; costophrenic angles included. Only external artifact is the lead L side marker at the image upper-right corner (outside the thorax, not a medical device).",
+  "target": {
+    "finding": "cardiomegaly",
+    "visible": "uncertain",
+    "laterality": "none",
+    "zone": "lower",
+    "size_cm": 16,
+    "confidence": 0.55
+  },
+  "laterality_sources": {
+    "bbox": "patient-left, middle zone (455x360 px box over the cardiac silhouette; midline structure, no true side)",
+    "reader_a": "bilateral, lower zone (label-aware; target uncertain, transverse diameter ~15 cm, CTR not reliably measurable)",
+    "reader_b": "bilateral, lower zone (blind; found borderline-to-mildly enlarged globular cardiac silhouette, ~17 cm, CTR ~0.5)",
+    "adjudicator": "none (midline cardiac silhouette), lower zone; transverse cardiac diameter ~16 cm, CTR ~0.5, borderline and confounded by poor inspiration and elevated right hemidiaphragm"
+  },
+  "agreement": "full",
+  "devices": [],
+  "other_findings": [
+    "右側橫膈明顯上抬（頂端約在前第5肋高度，高於左側），遮蔽右心緣及右下肺野內側；成因不明（膈膨升／膈神經麻痺／肺下積液／肝腫大均有可能）",
+    "雙側橫膈上抬、吸氣不足、肺容積偏小，兩側下肺野血管擁擠，無明確實變",
+    "右側肺門旁／右心緣旁（右中下肺野）模糊增高密度，右肺門略顯突出；以血管擁擠或被動性肺塌陷為主，早期浸潤或右中葉部分塌陷不能完全排除（左肺門大小密度正常）",
+    "雙側肺門及下肺野支氣管血管紋理輕度增加，無明確肺水腫或 Kerley B 線",
+    "未見肋膜積液或氣胸，兩側肋膈角銳利；縱膈與氣管居中；骨骼無明顯骨折",
+    "左橫膈下胃泡氣體、右橫膈下結腸（肝曲）氣體，無游離氣體；上腹部陰影大，體型壯碩、兩側胸壁軟組織厚"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標的病灶（心臟肥大）僅屬臨界（心胸比約 0.5、橫徑約 16 cm），且受吸氣不足、右側橫膈明顯上抬遮蔽右心緣及可能之 AP 放大效應影響，無法可靠判定；片上主要異常反而是右側橫膈上抬與右肺門旁模糊影，會分散教學重點，故不適合作為心臟肥大之初次就診教學影像。全片無任何導管、引流管或治療裝置。",
+  "description_zh": "胸部正面像（記錄為 PA，惟肩胛骨重疊於外側肺野、鎖骨投影偏高，不排除 AP 投照），吸氣不足，兩側橫膈上抬，右側橫膈明顯高於左側（頂端約在前第 5 肋高度），遮蔽右心緣及右下肺野內側，肺容積偏小。心影呈球狀、左心緣圓鈍，橫徑估計約 16 cm，心胸比約 0.5，屬臨界至輕度心臟擴大，惟因吸氣不足、右心緣被上抬橫膈遮蔽及可能之投照放大效應，心臟肥大之判定為不確定。右側肺門旁／右心緣旁見模糊增高密度、右肺門略顯突出，以下肺野血管擁擠或被動性肺塌陷為主，早期浸潤或右中葉部分塌陷不能完全排除；兩側肺門及下肺野支氣管血管紋理輕度增加，無 Kerley B 線、肺實質實變、肋膜積液或氣胸，肋膈角銳利，縱膈與氣管居中。左橫膈下見胃泡、右橫膈下見結腸氣體，無游離氣體；體型壯碩、胸壁軟組織厚，骨骼無明顯骨折。全片未見任何導管、引流管、心律調節器或手術夾，僅影像右上角（病人左側肩部外上方）有 L 側別標記，無治療後之證據。",
+  "label_concern": "心臟肥大僅屬臨界（心胸比約 0.5、橫徑約 16 cm），受吸氣不足與右側橫膈明顯上抬遮蔽右心緣影響而無法可靠確認；本片最顯著的異常為右側橫膈上抬，標籤之可信度有限，不宜作為典型心臟肥大範例。"
+}

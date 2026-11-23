@@ -1,0 +1,48 @@
+{
+ "view": "PA (frontal, upright); conventional orientation — lead marker at image upper right (patient's left), heart apex and aortic knob on image right",
+ "technical_quality": "Adequate inspiration; minimal rotation; lower zones, retrocardiac area and subdiaphragmatic region underpenetrated (bright), limiting assessment of the lung bases; apices and both costophrenic angles included",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "lead side marker (mirrored 'L' with additional letters, likely technologist initials)",
+   "location": "image upper right corner, outside the thorax, over the patient's left shoulder region"
+  },
+  {
+   "type": "small faint round/curvilinear opacities, possibly garment snaps or skin-surface artifacts (uncertain)",
+   "location": "inferior image edge, below both hemidiaphragms, midline and slightly to the patient's left"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Prominent, plump hila with slightly hazy margins — possible mild pulmonary vascular congestion / interstitial edema; no Kerley B lines or alveolar consolidation seen",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly increased bronchovascular markings in the lower zones (assessment limited by underpenetration)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Unfolded/tortuous thoracic aorta with prominent aortic knob (age-related)",
+   "laterality": "left (mediastinal)",
+   "zone": "upper"
+  },
+  {
+   "finding": "Borderline enlarged cardiomediastinal silhouette (CTR approximately 0.5)",
+   "laterality": "midline",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right hemidiaphragm elevated relative to the left (likely normal variant / hepatic); costophrenic angles preserved, no definite pleural effusion or pneumothorax",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "胸部正面（PA）X光片，吸氣度尚可，下肺野、心後及橫膈下區域穿透不足，影響肺底評估。心縱膈影稍寬（心胸比約0.5），胸主動脈迂曲且主動脈弓突出；雙側肺門血管影增粗、邊緣略模糊，雙下肺野支氣管血管紋理略增加，疑似輕度肺血管充血或間質性肺水腫，但未見明顯Kerley B線或肺泡性實變，無法確定為肺水腫。雙側肋膈角尚清，未見明顯肋膜積液或氣胸；右側橫膈較左側高。影像右上角（病人左側）可見鉛字標記，未見其他導管、導線、胸管或植入裝置。"
+}

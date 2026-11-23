@@ -1,0 +1,51 @@
+{
+ "id": "nih-pleural-thickening-00001894_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate PA film. Lead side marker 'L' with technologist initials projected mirror-imaged at the image-right upper corner (marker placed face-down; cardiac apex and aortic knob on image right confirm conventional orientation, patient left = image right). Good inspiration (about 9-10 posterior ribs), no significant rotation (medial clavicular ends symmetric about the spinous processes), adequate penetration (thoracic spine visible through the heart). Apices and both costophrenic angles included; the lower image edge cuts through the upper abdomen. Scapulae partly project over the lateral upper zones; bilateral breast shadows overlie the lower zones. A thick curvilinear external radiopaque band at the lower-left image corner and a tiny S-shaped metallic mark over the left upper abdomen lie outside the lung fields.",
+ "target": {
+  "finding": "pleural thickening",
+  "visible": "uncertain",
+  "laterality": "right",
+  "zone": "upper",
+  "size_cm": 3,
+  "confidence": 0.3
+ },
+ "laterality_sources": {
+  "bbox": "none (NLP-mined label, no radiologist box)",
+  "reader_a": "right (upper; uncertain)",
+  "reader_b": "not found (blind reader saw no pleural thickening; its left-lower entry is a different finding)",
+  "adjudicator": "right (upper; uncertain, apices essentially symmetric)"
+ },
+ "agreement": "conflict",
+ "devices": [
+  {
+   "type": "External thick curvilinear radiopaque band with a short denser bar at its medial end (bra underwire vs. lead-shield / cable edge); not intrathoracic, no chest tube",
+   "location": "Lower-left image corner, projected over the patient's right flank / right upper abdomen below the right hemidiaphragm, outside the lung fields",
+   "zh": "影像左下角（病人右側脅腹／右上腹、右橫膈下方）之體外粗弧形高密度帶，內側端有一短粗條狀影（內衣鋼圈或鉛遮蔽物／電線邊緣），非胸腔內裝置"
+  },
+  {
+   "type": "Tiny S-shaped / coiled metallic-density mark (about 0.5 cm), most likely external artifact (clothing, jewelry or detector); a tiny clip is less likely",
+   "location": "Left upper abdomen / epigastrium, just below the medial left hemidiaphragm, left of midline",
+   "zh": "左上腹（左橫膈內側下方）約0.5公分之微小S形／螺旋狀金屬密度影，最可能為體外飾品或雜訊，小夾子可能性較低"
+  },
+  {
+   "type": "Lead side marker 'L' with initials 'SH', mirror-imaged",
+   "location": "Image-right upper corner, over the patient's left shoulder region, outside the thorax",
+   "zh": "影像右上角（病人左肩區）之鏡像鉛字左側標記「L」及技術師縮寫"
+  }
+ ],
+ "other_findings": [
+  "右上肺野一條細銳斜行線狀影跨越肋間，最可能為體外偽影（髮辮或皮膚皺褶），非肋膜線或肺實質病灶",
+  "左中肺野主動脈弓外側約0.3–0.4公分之緻密小結節，最符合鈣化性肉芽腫",
+  "左側肺門較對側顯著且密度較高，主動脈弓結以34歲而言略突出，多為血管性／正常變異，未見明確腫塊",
+  "左中下肺野心臟外側（舌葉區）約6公分範圍之模糊網狀結節狀密度增加，主要為乳房陰影重疊，較對側略明顯，無明確實質浸潤",
+  "雙側乳房陰影重疊於下肺野；雙側肋膈角銳利，無肋膜積液或氣胸",
+  "心臟大小正常，氣管居中，骨骼結構完整"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標記之肋膜增厚在影片上並無明確影像證據：標籤知情讀者僅疑右肺尖有極輕微帽狀密度（不確定），盲讀者完全未發現，仲裁者放大比對後認為雙側肺尖大致對稱，未見明確肋膜增厚或肋膜帽，外側肋膜面亦無明確增厚。雖然無胸管、引流管或其他治療痕跡，體外鋼圈與微小金屬偽影亦不與首次就診相矛盾，但目標病灶本身不可靠，不適合作為肋膜增厚首次就診之教學代表影像。",
+ "description_zh": "胸部正位（PA）X光片，吸氣深度足夠、無明顯旋轉、穿透度適當，氣管居中，心臟大小正常。標記之「肋膜增厚」影像證據薄弱：右肺尖僅疑有寬約3公分、厚度不足1公分之極輕微帽狀軟組織密度，與左肺尖比較大致對稱，判讀不確定；雙側外側肋膜面與肋膈角未見明確肋膜增厚，雙側肋膈角銳利，無肋膜積液或氣胸。左側肺門較對側顯著、密度較高，主動脈弓結以此年齡而言略突出（多為血管性），左中肺野主動脈弓外側見約0.3–0.4公分之緻密小結節（疑鈣化性肉芽腫），左中下肺野心臟外側約6公分範圍之模糊網狀結節狀密度主要為乳房陰影重疊；右上肺野一條細銳斜行線狀影跨越肋間，為體外偽影（髮辮或皮膚皺褶）。體外物件：影像左下角（病人右上腹／脅腹）見粗弧形高密度帶伴短粗條狀影（內衣鋼圈或鉛遮蔽物邊緣），左上腹橫膈下方見一約0.5公分之微小S形金屬密度影，右上角有鏡像之左側鉛字標記；胸腔內未見胸管、引流管、導管或任何治療器材。",
+ "label_concern": "標籤「肋膜增厚」為NLP自動擷取、無放射科醫師框選，影片上未見明確之肋膜增厚：盲讀者未發現，標籤知情讀者與仲裁者僅將右肺尖極輕微帽狀密度判為不確定，雙側肺尖大致對稱。標籤可能對應原報告中極輕微之肺尖肋膜帽，或為誤標；側別亦無法確定（另一候選為左側外側胸壁中段之薄層軟組織帶，較可能為胸壁／乳房軟組織重疊）。"
+}

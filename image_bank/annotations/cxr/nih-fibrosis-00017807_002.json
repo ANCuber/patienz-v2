@@ -1,0 +1,52 @@
+{
+  "id": "nih-fibrosis-00017807_002",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate: erect PA frontal film, 'L' side marker at image upper right confirming conventional orientation. Good inspiration (about 9-10 posterior ribs), no significant rotation, adequate penetration (thoracic spine visible through the cardiac shadow). Whole thorax and both costophrenic angles included; the left scapula partly overlaps the left upper lateral lung field.",
+  "target": {
+    "finding": "pulmonary fibrosis (diffuse chronic interstitial / reticular change)",
+    "visible": "yes",
+    "laterality": "bilateral",
+    "zone": "whole",
+    "size_cm": -1,
+    "confidence": 0.7
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "bilateral",
+    "reader_b": "bilateral",
+    "adjudicator": "bilateral"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Implanted subcutaneous venous access port reservoir (Port-A-Cath): round radiopaque housing with central lucent septum and peripheral suture holes",
+      "location": "Left lower anterior chest wall, projected over the left cardiophrenic region just above the left hemidiaphragm (unusually low port position)",
+      "zh": "植入式靜脈輸液港（Port-A-Cath）儲液槽，位於左下前胸壁、投影於左心橫膈角上方"
+    },
+    {
+      "type": "Tunneled port catheter",
+      "location": "Runs superiorly and medially from the reservoir along the left cardiac border, forms a redundant loop in the left upper zone (about 2nd-3rd anterior rib level) and crosses the upper mediastinum toward the SVC; distal tip not confidently identified on this film",
+      "zh": "輸液港導管，自儲液槽沿左心緣向內上方走行、於左上肺野形成迴圈後橫越上縱膈，末端位置無法確切辨識"
+    },
+    {
+      "type": "External 'L' side marker",
+      "location": "Image upper right corner, over the patient's left shoulder region (outside the thorax)",
+      "zh": "外置「L」側別標記，位於影像右上角（病人左肩區域）"
+    }
+  ],
+  "other_findings": [
+    "雙側支氣管壁增厚，並見數個環狀影／軌道線，呈支氣管擴張型態，以肺門周圍及上、中肺野較明顯（16歲合併植入式輸液港，須考慮囊狀纖維化）",
+    "雙側肺門略顯突出、輪廓稍呈結節狀（血管性或淋巴結腫大待鑑別）",
+    "肺容積保留至略增加",
+    "右側橫膈較左側略高約2公分，多屬生理性範圍",
+    "心臟大小正常，縱膈不寬，氣管居中",
+    "兩側肋膈角銳利，未見肋膜積液、氣胸、局部實質化或腫塊",
+    "骨骼與軟組織無明顯異常；左側肩胛骨部分重疊於左上外側肺野（技術性）"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標記病灶（雙側瀰漫性網狀／網狀結節狀間質變化）確實可見，且無胸管或肋膜引流等針對病灶之處置裝置；但左下胸壁有植入式靜脈輸液港（Port-A-Cath）及導管，代表病人已為已知慢性疾病接受長期靜脈治療（16歲合併支氣管擴張型態，極可能為囊狀纖維化），與「首次因此病灶就診」的情境明顯矛盾，故不適合作為首次就診之教學影像。",
+  "description_zh": "胸部正面（PA）直立片，吸氣量足夠、無明顯旋轉、穿透度適當，影像右上角可見「L」側別標記。雙側肺野呈瀰漫性粗糙網狀／網狀結節狀間質浸潤，遍及全肺、以肺門周圍及上中肺野較為明顯，並見支氣管壁增厚與數個環狀影／軌道線，符合慢性間質性／纖維化變化合併支氣管擴張型態，雙側肺門略顯突出且輪廓稍呈結節狀，肺容積保留至略增加。左下前胸壁可見一植入式靜脈輸液港儲液槽，投影於左心橫膈角區、左橫膈上方（位置偏低），其導管沿左心緣向內上方走行，於左上肺野形成迴圈後橫越上縱膈朝上腔靜脈方向，末端於本片無法確切辨識。心臟大小正常、縱膈不寬、氣管居中，兩側肋膈角銳利，右側橫膈較左側略高約2公分，未見肋膜積液、氣胸、局部實質化或腫塊。",
+  "label_concern": "影像確有雙側瀰漫性慢性間質／網狀變化，但型態以支氣管壁增厚、環狀影等支氣管擴張表現為主，且16歲女性合併植入式輸液港，臨床上較符合囊狀纖維化（cystic fibrosis）而非一般意義的肺纖維化（間質性肺病）；NIH「Fibrosis」標籤為NLP自報告擷取，可能來自「cystic fibrosis」字樣，教學上宜標示為囊狀纖維化／支氣管擴張之慢性肺變化。"
+}

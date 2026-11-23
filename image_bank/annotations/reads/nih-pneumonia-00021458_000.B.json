@@ -1,0 +1,56 @@
+{
+ "view": "Frontal chest radiograph, probably AP (scapulae project over the lateral lung fields), L marker at image upper right consistent with conventional orientation",
+ "technical_quality": "Adequate penetration (thoracic spine visible through the heart), slightly low contrast; inspiration fair (about 8-9 posterior ribs); minimal rotation; lung apices and costophrenic angles included; external necklace projects over the lower face/upper neck but does not obscure the lungs",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 12,
+ "devices": [
+  {
+   "type": "Implanted venous access port (triangular PowerPort-type reservoir) with attached catheter looping cephalad over the left upper zone; catheter tip not confidently traced into the SVC",
+   "location": "Patient's left infraclavicular / anterior upper chest"
+  },
+  {
+   "type": "Metallic necklace/chain with pendant (external artifact)",
+   "location": "Projected over the lower face, mandible and upper neck"
+  },
+  {
+   "type": "Metallic dental restorations",
+   "location": "Mandible / dentition, superior edge of film"
+  },
+  {
+   "type": "Side marker 'L'",
+   "location": "Image upper right corner (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Heterogeneous airspace/patchy opacity in the right lower zone with loss of the right hemidiaphragm outline and blunting of the right costophrenic angle - consolidation with probable small pleural effusion or basal atelectasis",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Coarse, increased bronchovascular/interstitial markings in the right middle zone with partial silhouetting of the right heart border",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild retrocardiac and left basal haziness; left costophrenic angle slightly indistinct - possible small left effusion or basal atelectasis",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Borderline to mildly enlarged cardiac silhouette (CTR approximately 0.5-0.55) with prominent bilateral perihilar vascular markings",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Implanted port catheter loops cephalad over the left upper chest and its distal course/tip cannot be confidently followed into the SVC - possible catheter kink or malposition, correlate with prior films",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面(疑似AP)胸部X光，穿透度尚可、吸氣稍淺，左側前上胸壁可見植入式人工血管(Port-A)裝置，導管向上繞行於左上肺野，遠端走向及尖端無法確認；頸部及下顏面有金屬項鍊與牙科填補物等體外/牙科偽影。右下肺野可見不均勻之肺實質浸潤，右側橫膈輪廓消失、右肋膈角鈍化，考慮右下葉肺炎/實變合併少量肋膜積液或肺底塌陷；右中肺野支氣管血管紋理粗糙增加並部分遮蔽右心緣。左下肺野心後區及左肺底輕度模糊，左肋膈角略不清，不排除少量積液或肺底塌陷。心影邊緣性偏大，兩側肺門血管紋理增加；骨骼及軟組織無明顯異常，未見胸管或引流管。"
+}

@@ -1,0 +1,43 @@
+{
+ "view": "PA (frontal, erect)",
+ "technical_quality": "Frontal PA film, minimal rotation (medial clavicle ends roughly symmetric about the spinous processes). Shallow inspiration with high diaphragms (about 7 posterior ribs visible), which exaggerates the cardiac and mediastinal silhouette. Obese habitus with large bilateral breast soft-tissue shadows obscuring both lung bases; the chin/mandible with dental work projects over the upper mediastinum. Apices, lateral chest walls and both costophrenic regions included; penetration adequate centrally. Diagnostic but suboptimal for the lung bases.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 19,
+ "devices": [
+  {
+   "type": "Metallic dental restorations / dental prosthesis (multiple crowns or bridge work)",
+   "location": "Oral cavity, superimposed over the maxilla/mandible at the top-centre of the film, above the cervical spine"
+  },
+  {
+   "type": "Radiographic side marker (check-mark-shaped, probably a partially imaged L marker)",
+   "location": "Upper right corner of the image, i.e. patient's left shoulder region, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Cardiomegaly: enlarged, globular cardiac silhouette with the left heart border displaced toward the left chest wall; estimated transverse cardiac diameter ~19 cm with CTR approximately 0.55-0.6 (partly accentuated by shallow inspiration)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Marked elevation of the right hemidiaphragm with a dense homogeneous right basal opacity having a smooth convex upper margin; favours eventration or subpulmonic effusion, but right lower lobe collapse/consolidation cannot be excluded on this single view",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded/tortuous thoracic aorta with a bulging aortic knob and widened superior mediastinum, consistent with age-related aortic ectasia/unfolding",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mild central pulmonary vascular prominence / hilar fullness, likely accentuated by low lung volumes; no frank interstitial edema, no focal consolidation in the left lung, no pneumothorax",
+   "laterality": "bilateral",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.8,
+ "description_zh": "正面（PA）胸部X光，吸氣不足、橫膈位置偏高，雙側乳房軟組織陰影重疊於下肺野，影像上緣可見金屬假牙。心臟陰影明顯擴大，心胸比約0.55–0.6（橫徑約19公分），左心緣向左側胸壁延伸，主動脈弓突出且迂曲、上縱膈增寬，符合心臟擴大合併主動脈迂曲。右側橫膈明顯抬高，右下肺野呈均質緻密影、上緣平滑呈弧形，考慮橫膈膨升或肺底積液，無法完全排除右下葉實質病灶；左肺野大致清晰，未見明顯肺水腫或氣胸。未見心律調節器、中央靜脈導管、氣管內管或胸管等裝置，僅影像右上角見側別標記。"
+}

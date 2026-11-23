@@ -1,0 +1,34 @@
+{
+ "view": "PA (frontal), pediatric, arms raised; L marker at image upper right confirms conventional orientation",
+ "technical_quality": "Adequate inspiration (~8-9 posterior ribs); mild rotation with head turned and both arms abducted; penetration adequate; no significant motion blur",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "middle",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "external side marker (L)",
+   "location": "image upper right corner, outside patient, patient's left"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "mild perihilar peribronchovascular prominence, slightly more on the right; no definite alveolar edema, Kerley B lines, or pleural effusion",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "slightly wide superior mediastinum, most likely normal thymic shadow in a 3-year-old",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "mild rotation / head turned (positioning), not a true pathology",
+   "laterality": "none",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.4,
+ "description_zh": "正面胸部X光（左側標記位於影像右上角，符合常規擺位），吸氣量尚可，病童頭部轉向、雙臂上舉，有輕微旋轉。雙側肺門周圍支氣管血管紋理略增加，以右側稍明顯，但未見明確肺泡性浸潤、Kerley B線或肋膜積液，兩側肋膈角銳利。心臟大小在幼童正常範圍內，上縱膈略寬，可能為胸腺影。未見任何導管、引流管或其他醫療裝置；資料集標示之肺水腫在本片上並不明確。"
+}

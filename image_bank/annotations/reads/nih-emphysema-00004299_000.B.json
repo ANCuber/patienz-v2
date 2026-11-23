@@ -1,0 +1,48 @@
+{
+ "view": "PA (frontal) erect chest radiograph; 'L' marker at image upper right confirms conventional orientation (patient right on image left)",
+ "technical_quality": "Adequate. Good/deep inspiration (>10 posterior ribs visible, hyperinflated), minimal rotation (clavicular heads roughly symmetric about the spinous processes), adequate penetration (vertebral bodies visible through the cardiac shadow), both costophrenic angles and apices included. Mild soft-tissue/positioning noise of the shoulders only.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External side marker 'L' and technologist/ID tag (reads 'DG', mirrored)",
+   "location": "Image upper right corner, over the left shoulder region (external, not on patient)"
+  },
+  {
+   "type": "Possible tiny metallic density (surgical clip?) - uncertain, could be an artifact",
+   "location": "Left upper abdomen, medial wall of the gastric fundal air bubble, below the left hemidiaphragm"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hyperinflation with increased lucency and attenuated peripheral vascular markings, most marked in the upper zones; flattened hemidiaphragms and narrow vertical heart - pattern consistent with emphysema/COPD",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Prominent/bulky right hilum with coarse peribronchovascular and reticular markings extending into the right lower zone (chronic bronchitic/interstitial change; no discrete consolidation or mass identified)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent aortic knob with tortuous/unfolded thoracic aorta (ectatic descending aorta bowing to the left); trachea midline, no mediastinal mass",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Large gas-filled gastric fundus under the left hemidiaphragm (prominent gastric air bubble; no free air, no obvious hiatal hernia above the diaphragm)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative changes of both shoulder girdles (acromioclavicular/glenohumeral joints); no acute rib fracture, no lytic lesion",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面（PA）X光，吸氣良好、無明顯旋轉、穿透度適當，右側為影像左側（可見 L 標記）。雙側肺野過度充氣、透亮度增加，以上肺野最明顯，周邊肺血管紋理稀疏，橫膈略平坦，心影狹長、心胸比未增大，影像表現符合肺氣腫變化；右肺門顯著且右下肺野支氣管血管及網狀紋理增粗，未見明確實變、腫塊、肋膜積液或氣胸，肋膈角尚清晰。主動脈弓突出、胸主動脈迂曲延長，氣管居中；左上腹可見大型胃底氣泡，其內側疑似一小點狀金屬密度（可能為手術夾或雜訊）。未見胸管、引流管、中心靜脈導管或心律調節器；雙側肩關節有退化性變化，骨骼未見急性骨折。"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "nih-no-finding-00000022_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal, erect) chest radiograph; 'L' side marker at image upper right confirms conventional orientation (image-left = patient-right)",
+  "technical_quality": "Adequate. Good inspiration (approx. 9-10 posterior ribs), no significant rotation (clavicular heads roughly equidistant from spinous processes), adequate penetration (vertebral bodies faintly visible through the heart). Both apices and costophrenic angles included. Edge-enhanced post-processing makes the bronchovascular markings look coarse/busy. Black rectangular blocker artifact at far image-left edge and thin collimation line at image-right edge are technical only.",
+  "target": {
+    "finding": "no acute cardiopulmonary finding (normal chest radiograph)",
+    "visible": "yes",
+    "laterality": "none",
+    "zone": "none",
+    "size_cm": -1,
+    "confidence": 0.8
+  },
+  "laterality_sources": {
+    "bbox": "none (NLP-mined label; no radiologist box)",
+    "reader_a": "none",
+    "reader_b": "none",
+    "adjudicator": "none"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "External radiographic side marker 'L' (lead letter)",
+      "location": "Image upper-right corner, projected over the patient's left shoulder / lateral to the left clavicle, outside the lung field",
+      "zh": "體外「L」側別鉛字標記（投影於左肩外側，肺野外）"
+    },
+    {
+      "type": "Round radiopaque disc (~1.5 cm) external marker adjacent to the L marker",
+      "location": "Just below the L marker, over the patient's left shoulder / humeral head region, outside the lung field",
+      "zh": "圓形不透光體外標記圓片（L 標記下方，左肩部，肺野外）"
+    },
+    {
+      "type": "Black rectangular digital blocker / collimation artifact (not on the patient)",
+      "location": "Far image-left edge, upper third, lateral to the patient's right shoulder, outside the thorax",
+      "zh": "影像左緣黑色矩形遮擋／準直偽影（體外，非病患裝置）"
+    }
+  ],
+  "other_findings": [
+    "雙肺支氣管血管紋理瀰漫性略粗、對稱分布，無局部實質化、結節、腫塊、肋膜積液或氣胸；最可能為影像邊緣強化後處理所致，臨床意義不大",
+    "右側橫膈略高於左側，屬正常變異",
+    "心臟大小正常（心胸比 < 0.5），縱膈不寬，氣管居中，主動脈弓正常",
+    "骨性胸廓（肋骨、鎖骨、脊椎）及軟組織未見異常"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "本片為基本正常之胸部 X 光：雙肺野清晰、肋膈角銳利、心縱膈輪廓正常，未見胸管、引流管、中心靜脈導管、心律調節器或任何治療後跡象，僅有體外側別標記與遮擋偽影。適合作為「無急性心肺異常」的首次就診正常對照片；唯支氣管血管紋理因後處理略顯粗糙，教學時可提醒學生辨識為技術因素而非病灶。",
+  "description_zh": "胸部正面（PA）站立位 X 光片，吸氣量足夠、無明顯旋轉、穿透適當；影像右上角可見體外「L」側別標記及其下方一枚約 1.5 公分的圓形不透光標記圓片，投影於左肩部肺野外，影像左緣另有黑色矩形遮擋偽影，均為體外物，未見胸管、引流管、中心靜脈導管、心律調節器或其他植入裝置。氣管居中，心臟大小正常（心胸比 < 0.5），縱膈不寬，主動脈弓及雙側肺門輪廓正常。雙側肺野上、中、下各區透亮度對稱，支氣管血管紋理因邊緣強化後處理而瀰漫性略顯粗糙，但呈對稱分布，未見局部實質浸潤、結節、腫塊或間質性病變。雙側橫膈輪廓平滑、肋膈角銳利，右側橫膈略高於左側屬正常，未見肋膜積液或氣胸；肋骨、鎖骨、脊椎及軟組織未見異常。結論：無急性心肺異常之正常胸部 X 光片，無側別或分區之標的病灶。",
+  "label_concern": "雙肺支氣管血管紋理瀰漫性略粗，最可能為影像後處理所致，未見明確病灶；「No Finding」標籤可接受，但若作為「完全乾淨」的正常對照片，宜留意此紋理粗糙表現。"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "nih-infiltration-00003333_002",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal); L marker at image upper right confirms conventional orientation",
+  "technical_quality": "Adequate penetration, minimal rotation, but low lung volumes with poor inspiratory effort (both hemidiaphragms elevated); large bilateral breast shadows overlie both lower zones and partly obscure the lung bases and costophrenic angles.",
+  "target": {
+    "finding": "pulmonary infiltrate",
+    "visible": "yes",
+    "laterality": "left",
+    "zone": "middle",
+    "size_cm": 10,
+    "confidence": 0.75
+  },
+  "laterality_sources": {
+    "bbox": "left",
+    "reader_a": "left",
+    "reader_b": "left",
+    "adjudicator": "left"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "L side marker with radiographer initials (external)",
+      "location": "image upper right corner, over the patient's left shoulder region",
+      "zh": "左側（L）標記，附技師縮寫"
+    },
+    {
+      "type": "curvilinear tubing / line, external (oxygen or IV tubing lying on the patient; not a chest tube, outside the thorax)",
+      "location": "image lower left corner, over the patient's right flank / upper abdomen below the right hemidiaphragm",
+      "zh": "體外管線（疑氧氣或點滴管線），位於病人右側側腹部、胸廓之外"
+    },
+    {
+      "type": "small metallic clip-like density (surgical clip vs external artifact)",
+      "location": "projecting over the left hilum / medial left mid zone",
+      "zh": "左肺門處小金屬密度影（夾子或體外異物）"
+    },
+    {
+      "type": "small radiopaque dot-like densities (possible clips or external artifact)",
+      "location": "upper abdomen near the midline, projected below the left hemidiaphragm",
+      "zh": "上腹部中線附近小點狀高密度影（可能為夾子或體外異物）"
+    }
+  ],
+  "other_findings": [
+    "模糊浸潤影自左肺門周圍向下延伸至左下肺野，部分與乳房陰影重疊",
+    "左肺門輪廓不清且較顯著，部分遮蔽左心緣；NLP 標籤所列之「腫塊」未經證實，肺門腫塊無法完全排除",
+    "雙側橫膈上抬、肺容積偏低（吸氣不足）",
+    "雙側大範圍乳房陰影重疊於下肺野（軟組織，非肺部病灶）",
+    "右肺野相對清晰，未見氣胸或明顯肋膜積液；心影大小正常、縱膈居中"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "左側中肺野浸潤影清楚可見，胸腔內無胸管、引流管或其他治療裝置；影像下緣的彎曲管狀影位於胸廓之外，應為體外氧氣或點滴管線，與初次就診情境不衝突。左肺門處小金屬密度影可能為夾子或體外異物，即使為既往手術夾子，也不影響以肺部浸潤為主訴之初次表現。",
+  "description_zh": "胸部正面（PA）X光片，影像右上角有 L 側標記，吸氣量不足、雙側橫膈上抬，雙側大範圍乳房陰影重疊於下肺野並部分遮蔽肋膈角。左側中肺野以肺門周圍為中心可見斑片狀模糊浸潤影，範圍約 10 公分，向外側及下方延伸至左下肺野，左肺門輪廓不清並部分遮蔽左心緣；右肺野相對清晰，未見氣胸或明顯肋膜積液，心影大小正常、縱膈居中。左肺門內側投影處可見一小金屬樣密度影（夾子或體外異物），上腹部中線附近另見數個小點狀高密度影。影像左下角（病人右側側腹部）可見一彎曲管狀高密度影，位於胸廓之外，應為體外管線（如氧氣或點滴管線）而非胸管；未見胸管、引流管或其他治療裝置。",
+  "label_concern": ""
+}

@@ -1,0 +1,40 @@
+{
+ "id": "nih-infiltration-00000468_041",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (frontal, upright); L marker at image upper right confirming conventional orientation (image-left = patient-right)",
+ "technical_quality": "Suboptimal: shallow inspiration with low lung volumes (both hemidiaphragms high, right slightly higher than left), mild leftward rotation / mild thoracic scoliosis so the mediastinum and trachea appear displaced to the left, scapulae projected over the upper lateral lung fields, large body habitus with much of the upper abdomen included; penetration adequate (thoracic spine visible through the heart); apices and both costophrenic angles included.",
+ "target": {
+  "finding": "pulmonary infiltrate",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "lower",
+  "size_cm": 5,
+  "confidence": 0.55
+ },
+ "laterality_sources": {
+  "bbox": "right",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' (film marker, not a patient device; no line, tube, drain, pacemaker or surgical clip on the film)",
+   "location": "Image upper right corner, over the patient's left shoulder region, outside the thorax",
+   "zh": "影像右上角之左側標記「L」（體外片標記，非病人身上裝置）"
+  }
+ ],
+ "other_findings": [
+  "左肺門及左下肺野內側（心後區）支氣管血管紋理增粗併輕微模糊影，部分可歸因於旋轉及吸氣不足，無法完全排除第二處輕微浸潤（低信心度）",
+  "心影邊界性偏大（心胸比約0.53–0.58），受旋轉與吸氣不足影響，真實心臟擴大程度不確定",
+  "病人輕度向左旋轉併輕度胸椎側彎，縱膈與氣管略向左偏，最可能為體位性而非真正縱膈移位",
+  "吸氣不足、雙側橫膈偏高（右側略高於左側），左橫膈下可見胃泡及大量結腸氣體；肩胛骨投影於雙側上外側肺野，體型較胖",
+  "雙側肋膈角銳利，無肋膜積液或氣胸；骨骼結構無明顯異常，未見胸管、引流管、中心靜脈導管、心律調節器或手術夾"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記之右下肺野浸潤影在影片上可見（右肺門外下方淡薄、邊界不清之斑片狀模糊影，盲讀者亦獨立於右下肺野發現模糊浸潤影），三方側別一致；影片上無胸管、引流管或任何治療裝置，亦無手術痕跡或既往治療證據，與首次就診情境不相矛盾。惟病灶較細微，且影片因旋轉與吸氣不足而品質受限，教學時宜提示學生注意右肺門外下方及右心緣旁區域。",
+ "description_zh": "胸部正位（PA）X光片，吸氣不足、雙側橫膈偏高，病人輕度向左旋轉併輕度胸椎側彎，肩胛骨重疊於上外側肺野，體型較胖，影像品質受限。右肺門外下方、右中下肺野交界處可見一淡薄、邊界不清之斑片狀模糊浸潤影，範圍約4–5公分，並向內側延伸至右心緣旁及右肺門周圍，該區支氣管血管紋理增粗，未見葉性實質化、空氣支氣管徵或空洞；左肺門及左下肺野內側心後區亦見紋理增加與輕微模糊影，部分可歸因於旋轉與低通氣，無法完全排除第二處輕微浸潤。心影邊界性偏大（心胸比約0.53–0.58），但受旋轉及吸氣不足影響，真實心臟擴大程度不確定；縱膈與氣管略向左偏，最可能為體位性。雙側肋膈角銳利，無肋膜積液或氣胸，右橫膈略高於左側，左橫膈下可見胃泡及大量結腸氣體；骨骼結構無明顯異常，未見胸管、引流管、中心靜脈導管、心律調節器或其他體內裝置，僅於影像右上角見體外「L」側別標記。",
+ "label_concern": "標籤大致合理但病灶細微：放射科框選位置（右肺門外下方、右中下肺野交界處）較兩位判讀者描述之右心緣旁／肺門旁內側區域略偏外側，惟同屬右下肺野之連續性模糊影；標籤知情讀者判為不確定，盲讀者則獨立發現右下肺野輕度浸潤影，影像證據屬輕度。"
+}

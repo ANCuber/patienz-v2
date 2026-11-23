@@ -1,0 +1,352 @@
+[
+ {
+  "id": "ptbxl-RVH-3980",
+  "ecg_id": "3980",
+  "selected_code": "RVH",
+  "language": "en",
+  "source_report": "trace only requested.",
+  "source_report_zh": "（僅要求心電圖描記，未提供判讀）",
+  "statements_zh": [
+   {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+   {"code": "1AVB", "likelihood": 100.0, "kind": "diagnostic", "zh": "一度房室傳導阻滯"},
+   {"code": "RVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心室肥厚"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原始判讀僅為「trace only requested」（僅要求描記），無任何判讀內容；不完全性右束支傳導阻滯、一度房室傳導阻滯、右心室肥厚等診斷僅來自 SCP 代碼，無法與判讀文字互相核對。譯文由佔位文字改為忠實翻譯。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-RVH-10279",
+  "ecg_id": "10279",
+  "selected_code": "RVH",
+  "language": "de",
+  "source_report": "sinusrhythmus unvollstÄndiger rechtsschenkelblock linkshypertrophie mÖglich",
+  "source_report_zh": "竇性心律，不完全性右束支傳導阻滯，可能左心室肥厚。",
+  "statements_zh": [
+   {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+   {"code": "RVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心室肥厚"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "判讀文字為「可能左心室肥厚」（linkshypertrophie möglich），但 SCP 代碼為右心室肥厚（RVH 100）且未含 LVH；心室肥厚的左右方向不一致，判讀亦完全未提及 RVH。譯文本身忠實，未更動。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-RVH-21050",
+  "ecg_id": "21050",
+  "selected_code": "RVH",
+  "language": "de",
+  "source_report": "sinusrhythmus p-dextrocardiale ueberdrehter rechtstyp r-s Übergang in v ableitungen nach rechts verschoben linksposteriorer hemiblock rechtshypertrophie mÖglich qrs(t) abnorm    inferiorer infarkt     alter unbest. 4.46                          unbestÄtig",
+  "source_report_zh": "竇性心律，右心房負荷，電軸極度右偏，胸前導程 R/S 移行帶向右偏移，左後分支阻滯，可能右心室肥厚，QRS(T) 型態異常，下壁梗塞（年代不明，未經證實）。",
+  "statements_zh": [
+   {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+   {"code": "LPFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左後分支阻滯"},
+   {"code": "RVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心室肥厚"},
+   {"code": "RAO/RAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心房負荷／擴大"}
+  ],
+  "axis_zh": "電軸極度右偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "判讀未提及不完全性右束支傳導阻滯（IRBBB 100；判讀較簡略，非矛盾）；下壁梗塞判讀註明未經證實，與 IMI 15 一致。此判讀文字與 ptbxl-RAO-RAE-19686（ecg 19686，同為 33 歲男性）完全相同，應為同一病人不同次紀錄，兩者 SCP 代碼不同。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ANEUR-234",
+  "ecg_id": "234",
+  "selected_code": "ANEUR",
+  "language": "de",
+  "source_report": "sinusrhythmus a-v block i steillage    anteriorer infarkt  mit vorderwandaneurysma    inferiorer infarkt pathologische repolarisation",
+  "source_report_zh": "竇性心律，一度房室傳導阻滯，電軸垂直位，前壁梗塞併前壁心室瘤，下壁梗塞，再極化異常。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "ANEUR", "likelihood": 100.0, "kind": "diagnostic", "zh": "ST-T 變化符合心室瘤"},
+   {"code": "1AVB", "likelihood": 100.0, "kind": "diagnostic", "zh": "一度房室傳導阻滯"}
+  ],
+  "axis_zh": "電軸右偏(?)",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "判讀直述「下壁梗塞」，但 SCP 代碼 IMI 僅 15（低於門檻），確定度不一致；判讀「前壁梗塞」對應代碼為前間壁梗塞（ASMI 100），屬相容。電軸：判讀為垂直位（Steillage），代碼 AXR（右偏?），相容。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ANEUR-2833",
+  "ecg_id": "2833",
+  "selected_code": "ANEUR",
+  "language": "de",
+  "source_report": "sinusrhythmus vollstÄndiger linksschenkelblock linksventrikulÄre hypertrophie st-hebung in v1,3 neg. t in i,ii,v4-6 dd: anteriorer infarkt fehlende r-progression in v1-3",
+  "source_report_zh": "竇性心律，完全性左束支傳導阻滯，左心室肥厚，V1、V3 ST 段上升，I、II、V4-6 T 波倒置，鑑別診斷：前壁梗塞，V1-3 R 波遞增不良。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "ANEUR", "likelihood": 100.0, "kind": "diagnostic", "zh": "ST-T 變化符合心室瘤"},
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"},
+   {"code": "IVCD", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性心室內傳導障礙（阻滯）"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "判讀為「完全性左束支傳導阻滯」，但 SCP 代碼僅標非特異性心室內傳導障礙（IVCD 100）而未標 CLBBB；特異性不同，非直接矛盾。ST 段上升原文「v1,3」依字面譯為 V1、V3（亦可能為 V1-3 之簡寫）。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ANEUR-6218",
+  "ecg_id": "6218",
+  "selected_code": "ANEUR",
+  "language": "de",
+  "source_report": "vorhofflimmern normokard intraventr. leitungsstörung l,f sicher, anteroseptaler,chronischer infarkt kammerhypertrophie, lvh möglich st-hebung v1-3, st-senkung l,ll,v5/6 pathologisches ekg fehlende r-progression v1-4",
+  "source_report_zh": "心房顫動，心率正常，心室內傳導障礙（I、aVF），前間壁陳舊性梗塞（確定），心室肥厚，可能為左心室肥厚，V1-3 ST 段上升，I、II、V5/6 ST 段壓低，異常心電圖，V1-4 R 波遞增不良。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "ANEUR", "likelihood": 100.0, "kind": "diagnostic", "zh": "ST-T 變化符合心室瘤"},
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "原文「l,f」依 PTB-XL 德文簡寫慣例（l=I、ll=II、f=aVF）解讀為導程 I、aVF，仍有不確定性；「sicher」（確定）依代碼 ASMI 100 判定為修飾前間壁梗塞，已將譯文「確定之前間壁…」改為「前間壁陳舊性梗塞（確定）」以避免誤讀，並將「異常心電圖」還原至原文位置。判讀所述心室內傳導障礙無對應 SCP 代碼。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-ANEUR-8624",
+  "ecg_id": "8624",
+  "selected_code": "ANEUR",
+  "language": "de",
+  "source_report": "sinusrhythmus linkstyp qrs(t) abnorm    anteroseptaler infarkt     alter unbest. st & t abnorm, wahrscheinlich    inferiore ischÄmie oder linksbelastung t abnorm in anterioren ableitungen    lateralen ableitungen 4.46                          unbestÄtigte",
+  "source_report_zh": "竇性心律，電軸左偏，QRS(T) 型態異常，前間壁梗塞（年代不明），ST 及 T 波異常，很可能為下壁缺血或左心負荷，前壁及側壁導程 T 波異常（未經證實）。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "INJAL", "likelihood": 100.0, "kind": "diagnostic", "zh": "前側壁導程心內膜下損傷"},
+   {"code": "ANEUR", "likelihood": 100.0, "kind": "diagnostic", "zh": "ST-T 變化符合心室瘤"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-RAO-RAE-199",
+  "ecg_id": "199",
+  "selected_code": "RAO/RAE",
+  "language": "de",
+  "source_report": "sinusrhythmus qrs(t) abnormal    anteroseptaler myokardschaden",
+  "source_report_zh": "竇性心律，QRS(T) 型態異常，前間壁心肌損傷。",
+  "statements_zh": [
+   {"code": "RAO/RAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心房負荷／擴大"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-RAO-RAE-6285",
+  "ecg_id": "6285",
+  "selected_code": "RAO/RAE",
+  "language": "de",
+  "source_report": "sinusrhythmus linkstyp p-pulmonale angedeutet t flach lateral",
+  "source_report_zh": "竇性心律，電軸左偏，隱約可見 P pulmonale（右心房負荷），側壁導程 T 波低平。",
+  "statements_zh": [
+   {"code": "IMI", "likelihood": 50.0, "kind": "diagnostic", "zh": "下壁心肌梗塞"},
+   {"code": "AMI", "likelihood": 50.0, "kind": "diagnostic", "zh": "前壁心肌梗塞"},
+   {"code": "RAO/RAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心房負荷／擴大"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "SCP 代碼含下壁梗塞（IMI 50）及前壁梗塞（AMI 50），但判讀文字完全未提及任何梗塞；非直接矛盾，但差異顯著。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-RAO-RAE-943",
+  "ecg_id": "943",
+  "selected_code": "RAO/RAE",
+  "language": "en",
+  "source_report": "sinus tachycardia. low limb lead voltage. poor progression of r waves in anterior chest leads suggesting old anteroseptal infarct.",
+  "source_report_zh": "竇性心搏過速，肢體導程低電壓，前胸導程 R 波遞增不良，疑為陳舊性前間壁梗塞。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LAO/LAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心房負荷／擴大"},
+   {"code": "RAO/RAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心房負荷／擴大"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-RAO-RAE-1611",
+  "ecg_id": "1611",
+  "selected_code": "RAO/RAE",
+  "language": "de",
+  "source_report": "ventrikulÄre extrasystole(n) uniform sinustachykardie llt vorhofsueberlastung rechts st-senkung in v3-6 pathologisches ekg",
+  "source_report_zh": "單形性心室早期收縮，竇性心搏過速，電軸左偏，右心房負荷，V3-6 ST 段壓低，異常心電圖。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "RAO/RAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心房負荷／擴大"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-RAO-RAE-2952",
+  "ecg_id": "2952",
+  "selected_code": "RAO/RAE",
+  "language": "en",
+  "source_report": "sinus tachycardia. right atrial enlargement. Edit: RAO, (RAO)",
+  "source_report_zh": "竇性心搏過速，右心房擴大。",
+  "statements_zh": [
+   {"code": "RAO/RAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心房負荷／擴大"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-RAO-RAE-14448",
+  "ecg_id": "14448",
+  "selected_code": "RAO/RAE",
+  "language": "en",
+  "source_report": "sinus rhythm. right atrial enlargement. st segments are depressed in ii, iii, avf, v5,6. this may be due to lv strain or ischaemia.",
+  "source_report_zh": "竇性心律，右心房擴大，II、III、aVF、V5、V6 ST 段壓低，可能為左心室勞損或缺血所致。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"},
+   {"code": "RAO/RAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心房負荷／擴大"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-RAO-RAE-19686",
+  "ecg_id": "19686",
+  "selected_code": "RAO/RAE",
+  "language": "de",
+  "source_report": "sinusrhythmus p-dextrocardiale ueberdrehter rechtstyp r-s Übergang in v ableitungen nach rechts verschoben linksposteriorer hemiblock rechtshypertrophie mÖglich qrs(t) abnorm    inferiorer infarkt     alter unbest. 4.46                          unbestÄtig",
+  "source_report_zh": "竇性心律，右心房負荷，電軸極度右偏，胸前導程 R/S 移行帶向右偏移，左後分支阻滯，可能右心室肥厚，QRS(T) 型態異常，下壁梗塞（年代不明，未經證實）。",
+  "statements_zh": [
+   {"code": "IPMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "下後壁心肌梗塞"},
+   {"code": "LPFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左後分支阻滯"},
+   {"code": "RVH", "likelihood": 50.0, "kind": "diagnostic", "zh": "右心室肥厚"},
+   {"code": "RAO/RAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心房負荷／擴大"}
+  ],
+  "axis_zh": "電軸極度右偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "判讀為「下壁梗塞（年代不明，未經證實）」，但 SCP 代碼為下後壁梗塞（IPMI 100）；部位相容（下後壁含下壁），惟確定度不一致（判讀未經證實 vs 代碼 100）。判讀未提及前壁梗塞（AMI 35，低於門檻）。此判讀文字與 ptbxl-RVH-21050（ecg 21050，同為 33 歲男性）完全相同，應為同一病人不同次紀錄。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-RAO-RAE-16895",
+  "ecg_id": "16895",
+  "selected_code": "RAO/RAE",
+  "language": "de",
+  "source_report": "sinustachykardie extrem ueberdrehter rechtstyp vorhofsueberbelastung rechts,  low voltage verzoegerte r- progression ueber der vorderwand ekg pathologisch Edit: RAO, (IMI 50, RVH 50, RAO)",
+  "source_report_zh": "竇性心搏過速，電軸極度右偏（程度極端），右心房負荷，低電壓，前壁導程 R 波遞增延遲，異常心電圖。",
+  "statements_zh": [
+   {"code": "IMI", "likelihood": 50.0, "kind": "diagnostic", "zh": "下壁心肌梗塞"},
+   {"code": "RVH", "likelihood": 50.0, "kind": "diagnostic", "zh": "右心室肥厚"},
+   {"code": "RAO/RAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心房負荷／擴大"}
+  ],
+  "axis_zh": "電軸極度右偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "SCP 代碼含下壁梗塞（IMI 50）及右心室肥厚（RVH 50），判讀文字均未提及（極度右偏加右心房負荷與 RVH 相容，非矛盾）。原文「extrem ueberdrehter rechtstyp」的「extrem」原譯漏掉，已補為「電軸極度右偏（程度極端）」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-EL-1068",
+  "ecg_id": "1068",
+  "selected_code": "EL",
+  "language": "en",
+  "source_report": "sinus rhythm. borderline left axis deviation. st segments are slightly depressed in v5,6. t waves are generally rather low. prolonged qt. suggest exclude hypokalaemia.",
+  "source_report_zh": "竇性心律，電軸臨界左偏，V5、V6 ST 段輕度壓低，T 波普遍低平，QT 間期延長，建議排除低血鉀。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"},
+   {"code": "EL", "likelihood": 100.0, "kind": "diagnostic", "zh": "電解質異常或藥物作用"}
+  ],
+  "axis_zh": "電軸左偏(?)",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-EL-3456",
+  "ecg_id": "3456",
+  "selected_code": "EL",
+  "language": "en",
+  "source_report": "sinus rhythm. t waves are generally low and qt is prolonged. suggest exclude hypokalaemia.",
+  "source_report_zh": "竇性心律，T 波普遍低平，QT 間期延長，建議排除低血鉀。",
+  "statements_zh": [
+   {"code": "EL", "likelihood": 100.0, "kind": "diagnostic", "zh": "電解質異常或藥物作用"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-EL-13096",
+  "ecg_id": "13096",
+  "selected_code": "EL",
+  "language": "en",
+  "source_report": "sinus rhythm. minor non-specific st-t wave changes. prolonged qt, suggest exclude hypokalaemia.",
+  "source_report_zh": "竇性心律，輕微非特異性 ST-T 波變化，QT 間期延長，建議排除低血鉀。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"},
+   {"code": "EL", "likelihood": 100.0, "kind": "diagnostic", "zh": "電解質異常或藥物作用"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-EL-17648",
+  "ecg_id": "17648",
+  "selected_code": "EL",
+  "language": "en",
+  "source_report": "sinus rhythm. prolonged qt, this may be due to a drug effect or an    electrolyte disturbance.",
+  "source_report_zh": "竇性心律，QT 間期延長，可能為藥物作用或電解質異常所致。",
+  "statements_zh": [
+   {"code": "EL", "likelihood": 80.0, "kind": "diagnostic", "zh": "電解質異常或藥物作用"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-WPW-2145",
+  "ecg_id": "2145",
+  "selected_code": "WPW",
+  "language": "en",
+  "source_report": "trace only requested.",
+  "source_report_zh": "（僅要求心電圖描記，未提供判讀）",
+  "statements_zh": [
+   {"code": "WPW", "likelihood": 100.0, "kind": "diagnostic", "zh": "Wolff-Parkinson-White（WPW）症候群"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原始判讀僅為「trace only requested」（僅要求描記），無任何判讀內容；WPW 症候群診斷僅來自 SCP 代碼，無法與判讀文字互相核對。譯文由佔位文字改為忠實翻譯。",
+  "corrected": true
+ }
+]

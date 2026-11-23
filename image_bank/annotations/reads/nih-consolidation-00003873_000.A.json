@@ -1,0 +1,38 @@
+{
+ "view": "PA (frontal); pediatric film, side marker at image upper right consistent with conventional orientation",
+ "technical_quality": "Adequate penetration and inspiration; mild rotation (medial clavicular ends asymmetric about the spine); film edge cropped with a black rectangular digitizer/film artifact at the image upper-left corner; no gross motion blur",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 7.5,
+ "devices": [
+  {
+   "type": "Radiographic side marker (L) - external",
+   "location": "image upper right corner, over patient's left shoulder region"
+  },
+  {
+   "type": "Black rectangular film/digitizer artifact - external",
+   "location": "image upper left corner, outside the patient"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy ill-defined airspace opacity (consolidation) medially, adjacent to the right heart border, extending from the perihilar region down to the right hemidiaphragm; suggests right middle lobe / medial right lower lobe involvement; approximately 7-8 cm",
+   "laterality": "right",
+   "zone": "lower (extends into middle zone)"
+  },
+  {
+   "finding": "Partial silhouetting of the right heart border by the adjacent opacity (silhouette sign)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right hilum appears somewhat dense/prominent - likely contiguous with the consolidation, hilar adenopathy cannot be excluded (uncertain)",
+   "laterality": "right",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "正面胸部X光（PA），11歲男童，影像有輕度旋轉。右下肺野內側、緊鄰右心緣處可見片狀、邊緣不清之增加密度影，自右肺門周圍向下延伸至右橫膈上方，右心緣部分模糊（silhouette sign），符合右中葉／右下葉內側之肺實質化，範圍約7至8公分；右肺門略顯緻密，可能與實質化相連。左側肺野清晰，雙側肋膈角銳利，未見明顯肋膜積液或氣胸，心臟大小正常。未見任何導管、引流管、導線或體內裝置，僅見影像右上角之側標記及左上角之黑色膠片框邊偽影。"
+}

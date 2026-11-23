@@ -1,0 +1,52 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film; L marker at image upper right confirms conventional orientation. Good inspiration, slight rotation, lung apices partly obscured by clavicles/soft tissue. Mildly low contrast, but pleural surfaces and costophrenic angles are assessable.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "Median sternotomy wires (multiple metallic densities along the midline, from ~T3 to lower sternum), consistent with prior cardiac surgery",
+   "location": "Midline, over the sternum / mediastinum"
+  },
+  {
+   "type": "Small metallic density, likely surgical clip / retained wire fragment",
+   "location": "Midline, upper abdomen below the diaphragm at the bottom edge of the film"
+  },
+  {
+   "type": "External lead markers 'L' and 'HB' (radiographer side marker)",
+   "location": "Image upper right corner (patient's left upper chest, outside the thorax)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Band-like pleural thickening along the lateral chest wall with small irregular calcified densities (suggesting calcified pleural plaque); mild blunting of the costophrenic angle",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Pleural thickening along the lateral lower chest wall near the costophrenic angle with tiny calcific densities; mild costophrenic angle blunting",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild cardiomegaly (cardiothoracic ratio ~0.5-0.55) with prominent left ventricular contour",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Unfolded / tortuous thoracic aorta with prominent aortic knob, age-related",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Possible degenerative change of the right glenohumeral joint (irregular humeral head contour) - uncertain",
+   "laterality": "right",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部X光正面像（PA）顯示兩側下肺野外側胸壁沿線可見帶狀肋膜增厚，以左側較為明顯，並伴有數處小的不規則鈣化影，兩側肋膈角輕度鈍化，疑為鈣化性肋膜斑塊。心影略為擴大，胸主動脈迂曲且主動脈結突出，屬年齡相關變化。正中線可見多枚胸骨縫線，符合曾接受正中胸骨切開術（心臟手術）之病史；未見胸管或引流管。兩肺野未見明顯實質浸潤、結節或氣胸，右肩關節疑有退化性變化。"
+}

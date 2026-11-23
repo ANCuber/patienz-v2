@@ -1,0 +1,52 @@
+{
+ "view": "Frontal chest radiograph (PA/AP not determinable; scapulae partially project over the lateral lung fields, favouring AP or incomplete scapular rotation); L marker at image top-right confirms conventional orientation",
+ "technical_quality": "Adequate penetration; minimal rotation (medial clavicle ends roughly symmetric about the spinous processes). Suboptimal inspiration with low lung volumes and elevated hemidiaphragms (right higher than left), which exaggerates the cardiac and mediastinal size. Large body habitus with thick chest-wall soft tissue. Two round metallic-density snap-button (clothing fastener) artifacts overlie the midline at the mid-thoracic (approx. T7-8) and lower thoracic (approx. T11-12) levels. No lines, tubes, pacemaker or surgical clips.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 19,
+ "devices": [
+  {
+   "type": "external snap-button / clothing fastener artifact (round metallic density with central lucency)",
+   "location": "midline, projected over the mid-thoracic spine (approx. T7-T8 level)"
+  },
+  {
+   "type": "external snap-button / clothing fastener artifact (round metallic density with central lucency)",
+   "location": "midline, projected over the thoracolumbar spine just below the diaphragm (approx. T11-T12 level)"
+  },
+  {
+   "type": "L side marker",
+   "location": "image top-right corner (patient's left), with 'OG' technologist marking"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Cardiomegaly: globular enlarged cardiac silhouette, transverse cardiac diameter approx. 19 cm, cardiothoracic ratio approx. 0.53-0.55 (partly exaggerated by low lung volumes)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Widened superior mediastinum with a prominent aortic knob / main pulmonary artery segment on the left; may be accentuated by AP projection and poor inspiration",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Bilateral prominent (bulky) hila with increased perihilar and lower-zone reticular / bronchovascular interstitial markings, suggesting pulmonary vascular congestion or chronic interstitial change; no focal consolidation",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Low lung volumes with elevated hemidiaphragms (right more than left), consistent with suboptimal inspiration",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Two external round snap-button artifacts overlying the midline spine (mid-thoracic and thoracolumbar levels)",
+   "laterality": "none",
+   "zone": "multiple"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面X光片，吸氣不足、肺容積偏低，雙側橫膈上抬（右側較明顯），雙側肩胛骨部分重疊於肺野外側；正中線於胸椎中段及胸腰交界處各見一圓形金屬密度影，為體外衣物扣件偽影，未見管路、導線或節律器。心影呈球形擴大，心臟橫徑約19公分，心胸比約0.53–0.55，上縱膈增寬、左側主動脈弓／肺動脈段略顯突出，部分可能與投照技術及吸氣不足有關。雙側肺門增粗，肺門周圍及雙下肺野間質紋理增加，需考慮肺血管充血或慢性間質性變化；未見局部肺實變、氣胸或肋膜積液，雙側肋膈角尚清晰。骨骼結構未見明顯異常，左上腹可見胃泡。"
+}

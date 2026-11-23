@@ -1,0 +1,49 @@
+{
+ "view": "Frontal chest radiograph (PA/AP, erect), no clear R/L marker; a small external label at the image upper-right (not an R/L marker) - conventional orientation assumed",
+ "technical_quality": "Adequate. Inspiration adequate (about 8-9 posterior ribs visible), mild patient rotation, slight underpenetration of the mediastinum; lung apices and both costophrenic angles included. No lines, tubes, pacemaker or surgical clips.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Increased coarse bronchovascular / interstitial markings with a mild reticular pattern in the perihilar and lower zones, slightly more prominent on the right; suggests mild interstitial edema versus chronic bronchitic/interstitial change",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Prominent hila with mildly prominent central vascular markings",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent aortic knob with unfolded/tortuous thoracic aorta (age-related)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal (CTR approximately 0.45-0.5), borderline cardiomegaly",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Relative hyperlucency of the upper zones with slightly attenuated peripheral vessels, possible mild emphysematous change",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Degenerative changes of both glenohumeral joints and the thoracic spine",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Dense, protuberant upper abdomen (large body habitus / abdominal distension) elevating the hemidiaphragms slightly",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光，吸氣尚可、患者略有旋轉，未見任何管路、導線、節律器或手術夾。雙側肺門周圍及下肺野支氣管血管紋理增粗並呈輕度網狀，右側略明顯，疑為輕度間質性肺水腫或慢性支氣管／間質性變化；上肺野相對透亮，周邊血管略稀疏。心影大小約在正常上限，主動脈弓突出且胸主動脈迂曲，符合老年變化；雙側肋膈角銳利，未見氣胸或明顯肋膜積液。骨骼見雙肩關節及胸椎退化性變化，上腹部密度增高、腹部膨隆。"
+}

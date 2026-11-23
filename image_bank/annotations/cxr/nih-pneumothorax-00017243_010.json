@@ -1,0 +1,64 @@
+{
+ "id": "nih-pneumothorax-00017243_010",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (frontal), upright; L marker with small mirrored text at image top-right over the patient's left shoulder; conventional orientation confirmed by the gastric bubble on the patient's left. Upright position supported by a horizontal air-fluid level in the left hemithorax and fundal gas under the left hemidiaphragm.",
+ "technical_quality": "Adequate penetration and inspiration; mild rotation (asymmetric medial clavicle ends); right shoulder partly cut off at the image edge; both scapulae partially overlap the upper lateral lung fields; right apex partly obscured by clavicular hardware; a loop of external oxygen tubing projects over the upper mediastinum and left upper-to-middle zone; both costophrenic regions included; no significant motion blur.",
+ "target": {
+  "finding": "pneumothorax",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "whole",
+  "size_cm": 7,
+  "confidence": 0.85
+ },
+ "laterality_sources": {
+  "bbox": "right (radiologist box 125x565 px at x 22-146 / y 291-856 of the 1024 px image: a tall strip along the right lateral chest wall from about the 3rd rib to the costophrenic sulcus; the box does not cover the large left pneumothorax)",
+  "reader_a": "left (label-aware; large pneumothorax, whole zone, ~7 cm)",
+  "reader_b": "left (blind; found the large left pneumothorax independently, read it as a hydropneumothorax, ~8 cm)",
+  "adjudicator": "left (dominant finding: large left hydropneumothorax with lung collapsed to the hilum and an air-fluid level; on magnified crops only a questionable thin line with a narrow vessel-free band along the right lower lateral chest wall in the boxed region, so a small right-sided component / bilateral pneumothorax cannot be excluded but is not confirmed)"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "Orthopaedic fixation plate with 5 screws (clavicle ORIF); healed, thickened clavicle contour",
+   "location": "Right clavicle, mid-to-lateral third, right upper zone",
+   "zh": "右鎖骨中外三分之一骨折固定鋼板及5枚螺釘（術後，骨折已癒合）"
+  },
+  {
+   "type": "Two long cortical/cancellous screws, lateral-to-medial",
+   "location": "Right acromion / lateral scapula (shoulder, AC-joint region)",
+   "zh": "右肩峰／肩胛外側兩枚長螺釘"
+  },
+  {
+   "type": "Several tiny linear metallic fragments (postoperative debris or small clips)",
+   "location": "Right upper chest soft tissue just inferior to the clavicle plate",
+   "zh": "右鎖骨鋼板下方軟組織數枚細小線狀金屬碎片（術後殘留）"
+  },
+  {
+   "type": "External air-filled tubing forming a closed loop with a triangular slide adjuster (nasal cannula / oxygen supply tubing lying against the patient); the hollow air-filled lumen and looped course exclude an intrathoracic pigtail or chest drain (Reader A's 'pigtail catheter' is this same structure)",
+   "location": "Projected over the upper mediastinum, the left upper-to-middle zone lateral to the collapsed lung, and the mid-thoracic spine (adjuster at about T7-T9)",
+   "zh": "體外含氣管路（鼻導管／氧氣管，含三角形滑動調整扣）投影於上縱膈、左上中肺野及中段胸椎，形成封閉環狀，非胸管或豬尾巴引流管"
+  },
+  {
+   "type": "Laterality marker 'L' with small mirrored text",
+   "location": "Upper right corner of the image, above the patient's left shoulder, outside the thorax",
+   "zh": "影像右上角之左側標記「L」（患者體外）"
+  }
+ ],
+ "other_findings": [
+  "左側液氣胸：左下肺野氣胸下方見平直之氣液平面，其下約4公分厚均質緻密影遮蔽左橫膈與左肋膈角，符合合併肋膜積液／血胸；左下葉塌陷亦可能貢獻部分密度",
+  "左肺明顯塌陷並向肺門回縮，呈分葉狀軟組織影，臟層肋膜緣清楚；左中肺野塌陷肺外緣見約3.5公分薄壁環狀透亮影，疑為肺大泡或肺氣囊（可能為氣胸成因），亦可能為塌陷肺葉邊緣重疊",
+  "氣管居中，未見明顯縱膈移位；右心緣位置因輕度旋轉略難評估，無張力性氣胸徵象",
+  "右下肺野外側（肋膈角上方）約2公分邊界不清圓形結節狀陰影，為 NIH 放射科醫師另行框選之「結節」；乳頭陰影或肋骨與血管重疊亦需考慮",
+  "右肺擴張良好、血管紋理達周邊；右肋膈角銳利、外側肋膈溝偏深；右下外側胸壁旁可疑細線與窄透亮帶（對應 NIH 氣胸框選位置），微量右側氣胸無法完全排除，但無明確臟層肋膜線",
+  "右鎖骨陳舊性骨折術後（鋼板螺釘固定，骨皮質增厚癒合）及右肩峰／肩胛螺釘固定，鋼板下方數枚細小金屬碎片；右肩部分超出影像邊緣，未見其他急性骨折",
+  "雙側肩胛骨部分重疊於上外側肺野（右側較明顯）",
+  "左橫膈下見胃泡及含糞便樣內容之結腸（脾曲）氣體，位置正常，無膈下游離氣體；胃未疝入胸腔",
+  "心臟大小無法完整評估（左心緣被塌陷肺遮蔽），右心緣正常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "左側大量液氣胸清楚可見（左肺塌陷至肺門、肺門層面胸膜間距約7公分、下方有氣液平面），胸腔內無胸管、豬尾巴管等引流裝置——投影於左胸的管路為體外鼻導管／氧氣管（管腔含氣、走行成封閉環狀），急診首次就診時給氧屬合理情境，故可作為首次就診之氣胸教學影像。惟病例設定需納入：右鎖骨陳舊性骨折鋼板螺釘固定及右肩螺釘之手術病史、氣胸合併肋膜積液／血胸（外傷性或自發性皆可）、右下肺野結節狀陰影及右側可疑微量氣胸等附帶發現；NIH 框選位置在右側，與影像主要病灶側別不一致，教學時以左側為準。",
+ "description_zh": "胸部正面（記錄為PA）站立位X光片，吸氣深度與穿透度適當，輕度旋轉，右肩部分超出影像邊緣，影像右上角可見左側標記「L」，方位為常規（胃泡位於病人左側）。左側胸腔可見大量氣胸：自約第2–3肋層面至下肺野，左肺明顯塌陷並向肺門回縮呈分葉狀軟組織影、臟層肋膜緣清楚，外側上、中肺野完全無肺紋理，肺門層面胸膜間距約7公分；下方見平直的氣液平面，其下約4公分厚之均質緻密影遮蔽左橫膈與肋膈角，符合左側液氣胸（合併肋膜積液／血胸），左中肺野塌陷肺外緣另見約3.5公分薄壁環狀透亮影，疑為肺大泡或肺氣囊；氣管居中，未見明顯縱膈移位。一條體外含氣管路（鼻導管／氧氣管，含三角形滑動調整扣）自上縱膈繞經左上中肺野外側再回到中段胸椎形成封閉環狀，管腔含氣，非胸管或豬尾巴引流管，胸腔內未見任何引流裝置。另見右鎖骨中外三分之一陳舊性骨折以鋼板及5枚螺釘固定、右肩峰／肩胛外側兩枚長螺釘及鋼板下方數枚細小金屬碎片（術後變化）。右肺擴張良好、血管紋理達周邊，右肋膈角銳利、外側肋膈溝偏深，右下肺野外側約2公分邊界不清圓形結節狀陰影（NIH 框選之「結節」，乳頭陰影亦需考慮），右下外側胸壁旁可疑窄透亮帶但無明確臟層肋膜線，微量右側氣胸無法完全排除；左橫膈下胃泡及結腸氣體位置正常。",
+ "label_concern": "標籤「氣胸」本身正確（左側大量液氣胸清楚可見，盲讀者亦獨立發現），但 NIH 放射科醫師框選位置在右側外側胸壁（x 22–146、y 291–856），未涵蓋明顯的左側病灶；放大檢視右下外側肋膈溝旁僅見可疑細線與窄透亮帶，右側微量氣胸（即雙側氣胸）無法排除但亦無法確認。使用本片時側別應以左側為準。另 NLP 標籤「結節」對應右下肺野外側約2公分圓形陰影，乳頭陰影亦需考慮。"
+}

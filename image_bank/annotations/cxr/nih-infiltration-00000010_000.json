@@ -1,0 +1,41 @@
+{
+  "id": "nih-infiltration-00000010_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "PA 正面片，穿透度適當（心影後可見胸椎），無明顯旋轉（棘突約位於兩鎖骨頭中間），肺尖與雙側肋膈角均含入，下胸部／上腹部部分被裁切。吸氣略不足（約 6 前肋），兩側橫膈位置偏高，略誇大心影大小與肺底血管擁擠；體型較大使支氣管血管細節略模糊。左肩外側可見體外 L 側標記，方向為常規（影像左側＝患者右側）。",
+  "target": {
+    "finding": "pulmonary infiltrate",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 6,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "External radiopaque side/orientation marker (L)",
+      "location": "Projected over the patient's left shoulder soft tissue, upper corner of the image, outside the thorax",
+      "zh": "體外左側（L）方向標記，投影於患者左肩軟組織上"
+    }
+  ],
+  "other_findings": [
+    "雙側肺門略突出，肺門周圍支氣管血管紋理增加，右側較明顯，無明確實質化",
+    "心影邊緣性增大（心胸比約 0.53–0.57），部分因吸氣不足而被放大",
+    "主動脈弓突出、胸主動脈迂曲，符合老年性主動脈擴張",
+    "雙側肩關節退化性變化（關節腔狹窄、硬化、骨贅）併肱骨頭上移，右側較明顯，瀰漫性骨質減少",
+    "胸椎退化性變化併輕度脊柱側彎／後彎",
+    "吸氣略不足、兩側橫膈位置偏高併肺底血管擁擠；雙側肋膈角銳利，無肋膜積液或氣胸"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標記之右下肺浸潤可見（雖屬輕度、較細微，但盲讀者亦獨立發現），片中無任何胸管、引流管、導管或其他治療裝置，其餘所見（心影略大、主動脈迂曲、肩關節與脊椎退化、骨質減少）皆為與 84 歲年齡相符之慢性偶見變化，不與首次就診情境矛盾，適合作為首次就診之影像。",
+  "description_zh": "PA 正面胸部X光，84 歲女性，體型較大，吸氣略不足、兩側橫膈位置偏高，患者左肩外側可見體外 L 側標記。右下肺野內側（右肺門下方沿右心緣至右橫膈上方）可見粗糙網狀、斑片狀之支氣管周圍浸潤陰影，範圍約 6 公分，未見實質化、空氣支氣管徵或空洞；雙側肺門周圍支氣管血管紋理略增加，以右側較明顯。心影邊緣性增大（心胸比約 0.55，部分受吸氣不足影響），主動脈弓突出、胸主動脈迂曲，氣管居中。雙側肋膈角銳利，無肋膜積液或氣胸；雙側肩關節退化併肱骨頭上移（右側較明顯），胸椎退化性變化併輕度側彎、骨質減少。全片未見任何導管、引流管或心律調節器等治療裝置。",
+  "label_concern": ""
+}

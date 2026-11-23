@@ -1,0 +1,54 @@
+{
+ "view": "Frontal (PA) chest radiograph, erect; conventional orientation assumed (patient right = image left); a single external side marker projected over the patient's left shoulder region",
+ "technical_quality": "Adequate. Good inspiration (~9-10 posterior ribs), no significant rotation (spinous processes centred between medial clavicles), penetration adequate (thoracic spine visible through the cardiac shadow). Apices and both costophrenic angles included, the right costophrenic sulcus lying close to the inferior edge of the film. No lines, tubes, drains, clips or pacemaker.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 2,
+ "devices": [
+  {
+   "type": "external lead side marker (check/L-shaped), no internal device",
+   "location": "upper right corner of the image, projected over the patient's left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined patchy nodular opacity, approx. 2 cm, lateral to the left cardiac border overlying a rib (most salient lesion); indeterminate pulmonary nodule vs. vascular confluence - CT correlation advised",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Second ill-defined nodular opacity, approx. 1.5 cm, medial right mid zone just lateral to the right mediastinal/paratracheal border above the right hilum (2nd-3rd anterior rib level); nodule vs. vessel confluence",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Cluster of tiny (<0.5 cm) very dense, well-defined nodules consistent with calcified granulomas, with adjacent tram-line bronchial wall thickening",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Coarse reticular / prominent bronchovascular markings in both lower zones (chronic bronchitic or interstitial change); no consolidation, no Kerley B lines",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small rounded lucency (~1 cm) in the lateral left lower zone below the nodular opacity - possible small bulla vs. summation artefact",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded and tortuous aortic arch (age-related ectasia) widening the superior mediastinum, with slight rightward displacement of the trachea at arch level; heart size normal (CTR ~0.35-0.40)",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Degenerative changes of the thoracic spine and both shoulders (glenohumeral / acromioclavicular); ribs intact, no acute fracture",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面（PA）胸部X光，吸氣量足夠、無明顯旋轉，未見任何導管、引流管、外科夾或心律調節器，僅左上方見一外部側別標記。左下肺野心緣外側見一約2公分、邊緣模糊之結節狀陰影，右中肺野內側（縱膈旁、肺門上方）另見一約1.5公分邊緣模糊之結節狀陰影，均建議CT進一步評估；右下肺野另見數個小於0.5公分之緻密鈣化小結節（疑肉芽腫）並伴支氣管壁增厚，雙側下肺野支氣管血管紋粗糙增加。主動脈弓突出迂曲（老年性主動脈延長）使上縱膈略寬，心臟大小正常，兩側肋膈角銳利，無肋膜積液或氣胸；胸椎及雙肩呈退化性變化，未見急性骨折。"
+}

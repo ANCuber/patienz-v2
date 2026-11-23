@@ -1,0 +1,34 @@
+{
+  "id": "nih-atelectasis-00009619_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect PA film: good inspiration (about 9 posterior ribs), minimal rotation, adequate penetration (vertebral bodies faintly visible through the heart), apices and costophrenic angles included; scapulae partially project over the upper lateral lung fields. Conventional orientation confirmed by the technologist's external 'L' lead marker at the image upper right (patient's left). No patient devices.",
+  "target": {
+    "finding": "atelectasis",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 6,
+    "confidence": 0.65
+  },
+  "laterality_sources": {
+    "bbox": "right",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [],
+  "other_findings": [
+    "右肺門增大、密度增加，呈分葉狀腫塊樣陰影（疑右肺門腫塊或淋巴結腫大，可能為阻塞性肺塌陷之成因）",
+    "右側橫膈輕度上抬（約3–3.5公分），符合右側體積減少",
+    "左肺門略顯突出，呈圓形密度（約2.5–3公分；疑左肺動脈突出或肺門淋巴結腫大，未定）",
+    "主動脈弓突出／延展",
+    "上縱膈略寬伴右氣管旁區飽滿（輕度，未定）"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標記病灶（右下肺野內側肺塌陷）清楚可見，片上無任何導管、引流管或術後痕跡，亦無與初次就診情境相矛盾之表現；右肺門增大合併右中葉塌陷本身即為典型的初次就診影像（例如阻塞性肺塌陷），適合作為首次呈現之教學影像。",
+  "description_zh": "胸部正面X光（PA、直立），吸氣量足夠、無明顯旋轉、穿透度適當，影像右上角僅見技師放置之外部「L」側別標記，未見任何導管、引流管、手術夾或植入裝置。右肺門增大且密度增加，呈分葉狀腫塊樣影，並有一約6公分之緻密不規則陰影自右肺門向下內側延伸至右下肺野內側、緊貼右心緣並部分遮蔽右心緣下段，合併右側橫膈輕度上抬，符合右中葉肺塌陷（atelectasis）伴體積減少，需考慮右肺門腫塊或淋巴結腫大造成之阻塞性塌陷。左肺門亦略顯突出並有圓形密度，主動脈弓突出，上縱膈略寬伴右氣管旁區輕度飽滿。心臟大小在正常範圍，雙側肋膈角銳利，未見肋膜積液或氣胸，骨骼與軟組織無明顯異常。",
+  "label_concern": "肺塌陷確實可見，標籤正確；惟右肺門呈分葉狀腫塊樣增大，影像整體更像右肺門腫塊／淋巴結腫大合併右中葉阻塞性塌陷，教學使用時宜提示此為合併病灶而非單純肺塌陷。"
+}

@@ -1,0 +1,46 @@
+{
+ "view": "Frontal chest radiograph (AP projection, likely supine/standing pediatric technique; L side marker in image upper right confirming conventional orientation)",
+ "technical_quality": "Adequate penetration; film slightly tilted/rotated (patient's right clavicle projected higher than left, image obliquely cropped along the lower edge); scapulae overlie the lateral upper-mid lung fields bilaterally (arms not fully abducted); adequate inspiration with roughly 8-9 posterior ribs visible; costophrenic angles included; upper abdomen included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 2.5,
+ "devices": [
+  {
+   "type": "Round radiopaque snap/button with central hole (ECG electrode snap or garment snap), external",
+   "location": "Projected over left lateral chest wall at the level of the left mid-to-lower zone (image right, approximately 6th-7th rib laterally)"
+  },
+  {
+   "type": "Small round radiopaque density (ECG electrode / garment snap), external",
+   "location": "Right shoulder near the acromioclavicular region (image left)"
+  },
+  {
+   "type": "Small round radiopaque density (ECG electrode / garment snap), external",
+   "location": "Left shoulder near the acromioclavicular region (image right)"
+  },
+  {
+   "type": "Radiographic side marker (L marker with technologist initials)",
+   "location": "Image upper right corner, over patient's left shoulder soft tissues"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Subtle blunting/haziness of the lateral costophrenic angle with a thin band of increased density along the lower lateral pleural surface, suggesting minor pleural thickening or a small amount of pleural fluid; no definite meniscus",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent superior mediastinum / right paratracheal region, most likely due to AP projection, rotation and young age (residual thymic tissue possible); no discrete mass",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Slight patient rotation and film tilt (asymmetric clavicles), degrading assessment of mediastinal contours",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "胸部正面X光（AP投影），影像略有旋轉與傾斜，雙側肩胛骨重疊於外側肺野；左側胸壁外側及雙肩可見圓形外部金屬影（心電圖電極或衣物鈕扣），右上角有L側標記。雙肺野大致清晰，血管紋理正常，未見實質浸潤、結節或氣胸；右側肋膈角略呈鈍化並見下外側胸膜面細帶狀密度增加，疑為輕微胸膜增厚或少量肋膜積液，左側肋膈角銳利。心臟大小於AP投影下尚可，上縱膈略寬，考慮與投影方式、旋轉及年齡（殘餘胸腺）有關；骨骼結構完整，肱骨近端可見生長板，符合年齡，橫膈下可見胃泡。"
+}

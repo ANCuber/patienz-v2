@@ -1,0 +1,49 @@
+{
+  "id": "nih-edema-00005986_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate frontal film: L marker at patient's left confirms conventional orientation; minimal rotation (medial clavicles roughly symmetric about the spinous processes); adequate inspiration (~9-10 posterior ribs) and penetration; apices and both costophrenic angles included. Both scapulae partly project over the lateral lung fields (arms not fully rotated; AP technique not excluded). The right paramediastinal / right upper zone is partly obscured by the overlying catheter.",
+  "target": {
+    "finding": "pulmonary edema",
+    "visible": "uncertain",
+    "laterality": "bilateral",
+    "zone": "middle",
+    "size_cm": -1,
+    "confidence": 0.45
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "bilateral",
+    "reader_b": "bilateral",
+    "adjudicator": "bilateral"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "Tunneled central venous catheter, large-bore (probable dual-lumen hemodialysis catheter; Hickman-type / port not excluded)",
+      "location": "Right side: enters via right internal jugular vein, hairpin loop projected over the right apex / supraclavicular region; internal limb descends along the right mediastinal border (SVC course) with tip at the lower SVC / cavoatrial junction; external limb with cone-shaped hub lies on the right anterior chest wall, projected over the medial right mid-to-lower lung zone adjacent to the right heart border",
+      "zh": "右側隧道式中心靜脈導管（疑為大口徑雙腔透析導管），經右頸內靜脈置入，於右肺尖成環後沿右縱膈邊緣下行，尖端位於上腔靜脈下段／腔靜脈心房交界處；體外段與錐形接頭投影於右前胸壁（右中下肺野內側）"
+    },
+    {
+      "type": "Radiographic side marker 'L' with adjacent round radiopaque marker (external, not patient-attached)",
+      "location": "Upper right corner of the image (patient's left shoulder region), outside the thorax",
+      "zh": "影像右上角（病人左側）之「L」側別標記與圓形不透光標記，位於胸廓外"
+    }
+  ],
+  "other_findings": [
+    "雙側肺門突出且邊緣模糊，以左側較明顯（疑左肺動脈突出／肺門血管充血）",
+    "左肺門旁可見支氣管周圍套袖徵（peribronchial cuffing）",
+    "右上縱膈（氣管旁區）輕度增寬／密度增加，部分為導管重疊，可能為血管性（上腔靜脈）或投影因素",
+    "心臟大小正常（CTR 約 0.35–0.40），無心臟擴大",
+    "雙側肋膈角銳利，無肋膜積液；無氣胸",
+    "右心膈角區／前下肋見細曲線狀緻密影，考慮肋軟骨鈣化，無臨床意義",
+    "右橫膈下內側見小圓形透亮影，符合結腸（肝曲）腸氣；無橫膈下游離氣體",
+    "左上腹可見含糞便之腸氣",
+    "雙側肩胛骨部分投影於肺野外側；骨骼未見明顯骨折或破壞"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "不適合作為首次就診影像：右側隧道式中心靜脈導管（疑為透析導管）顯示病人已有慢性疾病（如末期腎病接受血液透析）並已在治療中，與「首次以肺水腫表現就診」的情境矛盾。此外肺水腫徵象僅為輕度且不明確（僅見肺門周圍血管紋理稍增加，無 Kerley B 線、肺泡浸潤、肋膜積液或心臟擴大），盲讀者亦未獨立判讀為肺水腫，教學辨識度不足。",
+  "description_zh": "PA 胸部X光，吸氣與穿透度尚可、旋轉輕微，雙側肩胛骨部分投影於肺野外側。右側可見隧道式中心靜脈導管（疑為大口徑透析導管）：導管於右肺尖／鎖骨上區形成迴圈，體內段沿右縱膈邊緣下行、尖端投影於上腔靜脈下段／腔靜脈心房交界處，體外段與錐形接頭投影於右前胸壁（右中下肺野內側、近右心緣）；未見胸管或肋膜引流管。雙側肺門突出且邊緣模糊，以左側較明顯，雙側肺門周圍（中肺野）血管紋理輕度增加、邊緣稍不清，左肺門旁可見支氣管周圍套袖徵，符合輕度肺血管充血／早期間質性肺水腫之可能，但無明顯 Kerley B 線或肺泡浸潤，範圍以雙側肺門周圍為主。心臟大小正常（CTR 約 0.35–0.40），雙側肋膈角銳利，無肋膜積液或氣胸，右上縱膈稍寬（部分為導管重疊，可能為血管性）。右心膈角區見曲線狀緻密影，考慮肋軟骨鈣化；右橫膈下見結腸腸氣、左上腹見含糞便腸氣，無游離氣體，骨骼未見明顯骨折。",
+  "label_concern": "肺水腫表現不明確：僅見雙側肺門周圍血管紋理輕度增加與肺門模糊，無 Kerley B 線、肺泡浸潤、肋膜積液或心臟擴大；盲讀者（Reader B）未獨立判讀為肺水腫，僅描述為輕度中央血管紋理增加。NLP 標籤可能反映臨床情境（透析導管、容積負荷）而非明確的影像學肺水腫，建議人工複核。"
+}

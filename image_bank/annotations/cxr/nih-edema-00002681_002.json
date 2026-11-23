@@ -1,0 +1,36 @@
+{
+  "id": "nih-edema-00002681_002",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate: inspiration adequate (about 8-9 posterior ribs), mild rotation, slight mediastinal underpenetration; both scapulae partially overlap the lateral lung fields; strong vignetting/dark-band artifact at the lateral image edges (dataset processing). An external radiographic side marker with mirrored/unreadable lettering projects at the upper-right corner of the image (over the patient's left shoulder) - it is not a patient device; conventional orientation (image-left = patient-right) assumed. Apices and both costophrenic angles included.",
+  "target": {
+    "finding": "pulmonary edema",
+    "visible": "uncertain",
+    "laterality": "bilateral",
+    "zone": "lower",
+    "size_cm": -1,
+    "confidence": 0.4
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "bilateral",
+    "reader_b": "bilateral",
+    "adjudicator": "bilateral"
+  },
+  "agreement": "full",
+  "devices": [],
+  "other_findings": [
+    "兩側肺門突出，右側肺門較緻密（以血管性／年齡相關為主，肺門淋巴結腫大無法完全排除）",
+    "主動脈弓突出、胸主動脈迂曲／展開（老年性變化）",
+    "心影大小正常至正常上限（CTR 約 0.45–0.5），無明確心臟擴大",
+    "上肺野相對透亮、周邊血管略稀疏，疑輕度肺氣腫變化",
+    "兩側肩關節（盂肱關節）及胸椎退化性變化",
+    "上腹部密度增高、腹部膨隆，兩側橫膈略抬高（體型因素）",
+    "兩側肋膈角銳利，未見肋膜積液或氣胸"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "片上無任何導管、引流管、心律調節器或手術夾，也無與首次就診矛盾的治療痕跡；但「肺水腫」徵象僅屬可疑——只見兩側肺門周圍及下肺野間質紋理輕度增粗（右側較明顯），無 Kerley B 線、無肺泡型實質化、無肋膜積液、心影不大，亦可解釋為慢性支氣管／間質性變化——因此不適合作為肺水腫首次表現的代表性教學影像。",
+  "description_zh": "胸部正面片（記錄為 PA），吸氣尚可、患者略有旋轉，兩側肩胛骨部分重疊於外側肺野，影像兩側邊緣有暗帶處理假影；影像右上角有一外部側標記，字體鏡像無法辨讀。兩側肺門周圍及下肺野支氣管血管紋理增粗並呈輕度網狀，右側較左側明顯，範圍瀰漫、無法量測，疑為輕度間質性肺水腫或慢性支氣管／間質性變化，但未見 Kerley B 線、肺泡型實質化或肋膜積液，兩側肋膈角銳利。兩側肺門突出，右側肺門較緻密（以血管性／年齡相關為主，淋巴結腫大無法完全排除）；上肺野相對透亮、周邊血管略稀疏，疑輕度肺氣腫變化。心影大小正常至正常上限（CTR 約 0.45–0.5），主動脈弓突出、胸主動脈迂曲，氣管居中，未見氣胸。全片未見任何導管、引流管、心律調節器或手術夾；另見兩側肩關節及胸椎退化性變化，上腹部密度增高、腹部膨隆使兩側橫膈略抬高。",
+  "label_concern": "肺水腫徵象僅屬可疑：僅見兩側肺門周圍及下肺野間質紋理輕度增粗（右>左），無 Kerley B 線、無肋膜積液、心影不大，亦可為慢性支氣管／間質性變化；此標籤為 NLP 自報告擷取、無放射科醫師框選確認，右側肺門較緻密亦宜留意淋巴結腫大之可能。"
+}

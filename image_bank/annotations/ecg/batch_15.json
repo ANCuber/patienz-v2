@@ -1,0 +1,342 @@
+[
+ {
+  "id": "ptbxl-ABQRS-1901",
+  "ecg_id": "1901",
+  "selected_code": "ABQRS",
+  "language": "de",
+  "source_report": "vorhofflimmern/-flattern lagetyp normal qrs(t) abnorm    anteroseptaler myokardschaden",
+  "source_report_zh": "心房顫動或撲動，電軸正常，QRS(T) 型態異常，前間壁心肌損傷。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 80.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ABQRS-7371",
+  "ecg_id": "7371",
+  "selected_code": "ABQRS",
+  "language": "de",
+  "source_report": "sinus arrhythmie unvollstÄndiger rechtsschenkelblock qrs(t) abnormal    septaler myokardschaden nicht auszuschliessen",
+  "source_report_zh": "竇性心律不整，不完全性右束支傳導阻滯，QRS(T) 型態異常，無法排除間隔心肌損傷。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "診斷碼為 NORM 100，但報告提及不完全性右束支傳導阻滯及「無法排除間隔心肌損傷」；18 歲患者之不完全性右束支傳導阻滯多屬正常變異，且損傷敘述為保留語氣，故不視為明確矛盾，惟建議人工複核。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PVC-170",
+  "ecg_id": "170",
+  "selected_code": "PVC",
+  "language": "de",
+  "source_report": "ventrikulÄre extrasystole(n) sinusrhythmus linkstyp st & t abnormal, wahrscheinlich    anteriore ischÄmie oder linksbelastung    inferiore ischÄmie oder linksbelastung",
+  "source_report_zh": "心室早期收縮，竇性心律，電軸左偏，ST 段及 T 波異常，很可能為前壁缺血或左心室勞損；下壁缺血或左心室勞損。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"},
+   {"code": "PVC", "likelihood": 100.0, "kind": "form", "zh": "心室早期收縮"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "「wahrscheinlich」（很可能）原譯為「可能」，語氣偏弱，已改為「很可能為」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-PVC-287",
+  "ecg_id": "287",
+  "selected_code": "PVC",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s). sinus rhythm. right bundle branch block.",
+  "source_report_zh": "心室早期收縮，竇性心律，右束支傳導阻滯。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 50.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "CLBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "完全性左束支傳導阻滯"},
+   {"code": "PVC", "likelihood": 100.0, "kind": "form", "zh": "心室早期收縮"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "原始報告寫「right bundle branch block」（右束支傳導阻滯），但 SCP 碼為 CLBBB 100（完全性左束支傳導阻滯），左右矛盾；譯文忠於原文未更動。另 ASMI 50 於報告中未提及。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PVC-975",
+  "ecg_id": "975",
+  "selected_code": "PVC",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s). sinus rhythm. right axis deviation. incomplete right bundle branch block.",
+  "source_report_zh": "心室早期收縮，竇性心律，電軸右偏，不完全性右束支傳導阻滯。",
+  "statements_zh": [
+   {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+   {"code": "LPFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左後分支阻滯"},
+   {"code": "PVC", "likelihood": 100.0, "kind": "form", "zh": "心室早期收縮"}
+  ],
+  "axis_zh": "電軸右偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PVC-1426",
+  "ecg_id": "1426",
+  "selected_code": "PVC",
+  "language": "sv",
+  "source_report": "ventrikulÄr(a) extrasystoli(er) interpolerade ventrikulÄr(a) extrasystoli(er) sinustachykardi misstÄnkt vÄnster kammarhypertrofi",
+  "source_report_zh": "心室早期收縮，插入性心室早期收縮，竇性心搏過速，疑似左心室肥厚。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISCIN", "likelihood": 100.0, "kind": "diagnostic", "zh": "下壁導程缺血性變化"},
+   {"code": "PVC", "likelihood": 100.0, "kind": "form", "zh": "心室早期收縮"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PVC-4126",
+  "ecg_id": "4126",
+  "selected_code": "PVC",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s), trigeminy. sinus tachycardia. otherwise no definite pathology.",
+  "source_report_zh": "心室早期收縮，呈三聯律，竇性心搏過速，其餘無明確異常。",
+  "statements_zh": [
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"},
+   {"code": "PVC", "likelihood": 100.0, "kind": "form", "zh": "心室早期收縮"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PVC-3092",
+  "ecg_id": "3092",
+  "selected_code": "PVC",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s). sinus rhythm. voltages are high in limb leads suggesting lvh. st segments are depressed in i, avl. this may be due to lv strain or ischaemia.",
+  "source_report_zh": "心室早期收縮，竇性心律，肢體導程電壓偏高，提示左心室肥厚；I、aVL 導程 ST 段壓低，可能為左心室勞損或缺血所致。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "PVC", "likelihood": 100.0, "kind": "form", "zh": "心室早期收縮"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PVC-818",
+  "ecg_id": "818",
+  "selected_code": "PVC",
+  "language": "de",
+  "source_report": "ventrikulÄre extrasystole(n) sinus arrhythmie",
+  "source_report_zh": "心室早期收縮，竇性心律不整。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 50.0, "kind": "diagnostic", "zh": "正常心電圖"},
+   {"code": "PVC", "likelihood": 100.0, "kind": "form", "zh": "心室早期收縮"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PVC-13711",
+  "ecg_id": "13711",
+  "selected_code": "PVC",
+  "language": "de",
+  "source_report": "ventrikulÄre extrasystole(n) sinusrhythmus p-sinistrocardiale lagetyp normal unvollstÄndiger rechtsschenkelblock",
+  "source_report_zh": "心室早期收縮，竇性心律，左心房負荷（P mitrale），電軸正常，不完全性右束支傳導阻滯。",
+  "statements_zh": [
+   {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+   {"code": "PVC", "likelihood": 100.0, "kind": "form", "zh": "心室早期收縮"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STD_-274",
+  "ecg_id": "274",
+  "selected_code": "STD_",
+  "language": "en",
+  "source_report": "sinus rhythm. possible left atrial enlargement. voltages are high in limb leads suggesting lvh. qs complexes in v2 suggesting old anteroseptal  myocardial infarction. st segments are depressed in i, avl, v5,6. t waves are inverted in i, avl, v3-6. this ma",
+  "source_report_zh": "竇性心律，可能左心房擴大，肢體導程電壓偏高，提示左心室肥厚；V2 呈 QS 波，提示陳舊性前間壁心肌梗塞；I、aVL、V5–6 導程 ST 段壓低，I、aVL、V3–6 導程 T 波倒置（原文末句截斷）。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"},
+   {"code": "LAO/LAE", "likelihood": 50.0, "kind": "diagnostic", "zh": "左心房負荷／擴大"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "原始報告末句於「this ma」處截斷，結論不完整；譯文已如實標註，未臆補。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STD_-271",
+  "ecg_id": "271",
+  "selected_code": "STD_",
+  "language": "en",
+  "source_report": "premature atrial contraction(s). sinus rhythm. left atrial enlargement. qs complexes in v2 and tiny r waves in v3. st segments are depressed and t waves inverted in i,    avl, v5,6. consistent with ischaemic heart disease with old anteroseptal myocardial ",
+  "source_report_zh": "心房早期收縮，竇性心律，左心房擴大；V2 呈 QS 波、V3 R 波極小；I、aVL、V5–6 導程 ST 段壓低且 T 波倒置，符合缺血性心臟病合併陳舊性前間壁心肌梗塞。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "原始報告末句於「old anteroseptal myocardial」處截斷，譯文之「梗塞」為依 SCP 碼 ASMI 100 與 Stadium III 之合理補全。另 LVH 100 於報告中未提及（報告較簡略，非矛盾）。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STD_-318",
+  "ecg_id": "318",
+  "selected_code": "STD_",
+  "language": "en",
+  "source_report": "atrial fibrillation. st segments are depressed in ii, iii, avf, v4,5,6. non-specific but consistent with myocardial ischaemia and digitalis effect.",
+  "source_report_zh": "心房顫動，II、III、aVF、V4–6 導程 ST 段壓低，屬非特異性變化，但符合心肌缺血及毛地黃效應。",
+  "statements_zh": [
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"},
+   {"code": "DIG", "likelihood": 80.0, "kind": "diagnostic", "zh": "毛地黃效應"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STD_-1009",
+  "ecg_id": "1009",
+  "selected_code": "STD_",
+  "language": "en",
+  "source_report": "sinus rhythm. st segments are depressed in v3-6. t waves are flat in v3,4. myocardial ischaemia is likely.",
+  "source_report_zh": "竇性心律，V3–6 導程 ST 段壓低，V3、V4 T 波平坦，很可能為心肌缺血。",
+  "statements_zh": [
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "「myocardial ischaemia is likely」原譯為「可能為心肌缺血」，語氣偏弱，已改為「很可能為心肌缺血」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-STD_-414",
+  "ecg_id": "414",
+  "selected_code": "STD_",
+  "language": "en",
+  "source_report": "sinus rhythm. voltages are high in limb leads suggesting lvh. st segments are depressed and t waves inverted in i,    ii, avl, v4,5,6. this is probably due to lv strain.",
+  "source_report_zh": "竇性心律，肢體導程電壓偏高，提示左心室肥厚；I、II、aVL、V4–6 導程 ST 段壓低且 T 波倒置，很可能為左心室勞損所致。",
+  "statements_zh": [
+   {"code": "INJAS", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁導程心內膜下損傷"},
+   {"code": "INJAL", "likelihood": 100.0, "kind": "diagnostic", "zh": "前側壁導程心內膜下損傷"},
+   {"code": "LVH", "likelihood": 50.0, "kind": "diagnostic", "zh": "左心室肥厚"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "「this is probably due to lv strain」原譯為「可能為」，語氣偏弱，已改為「很可能為」。另 SCP 碼將 ST-T 變化標為前間壁／前側壁心內膜下損傷（INJAS/INJAL），而報告歸因於左心室勞損，屬同一 ST-T 表現之不同解讀，非明確矛盾。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-STD_-8926",
+  "ecg_id": "8926",
+  "selected_code": "STD_",
+  "language": "en",
+  "source_report": "sinus rhythm. minor non-specific st segment depression in iii, avf, of doubtful significance.",
+  "source_report_zh": "竇性心律，III、aVF 導程輕微非特異性 ST 段壓低，臨床意義不明確。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STD_-2949",
+  "ecg_id": "2949",
+  "selected_code": "STD_",
+  "language": "en",
+  "source_report": "sinus rhythm. st segments are depressed in ii, iii, avf, v3-6. t waves are low or flat in v2,3,4. non-specific but consistent with myocardial ischaemia.",
+  "source_report_zh": "竇性心律，II、III、aVF、V3–6 導程 ST 段壓低，V2–4 T 波低平，屬非特異性變化，但符合心肌缺血。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STD_-4624",
+  "ecg_id": "4624",
+  "selected_code": "STD_",
+  "language": "en",
+  "source_report": "sinus rhythm. st segments are depressed in i, avl. t waves are inverted in i, avl and flat in ii, v4,5,6. rather prominent q waves in i, ii, avl. consistent with lateral myocardial ischaemia or old infarction.",
+  "source_report_zh": "竇性心律，I、aVL 導程 ST 段壓低；I、aVL T 波倒置，II、V4–6 T 波平坦；I、II、aVL 可見明顯 Q 波，符合側壁心肌缺血或陳舊性梗塞。",
+  "statements_zh": [
+   {"code": "ALMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前側壁心肌梗塞"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-VCLVH-274",
+  "ecg_id": "274",
+  "selected_code": "VCLVH",
+  "language": "en",
+  "source_report": "sinus rhythm. possible left atrial enlargement. voltages are high in limb leads suggesting lvh. qs complexes in v2 suggesting old anteroseptal  myocardial infarction. st segments are depressed in i, avl, v5,6. t waves are inverted in i, avl, v3-6. this ma",
+  "source_report_zh": "竇性心律，可能左心房擴大，肢體導程電壓偏高，提示左心室肥厚；V2 呈 QS 波，提示陳舊性前間壁心肌梗塞；I、aVL、V5–6 導程 ST 段壓低，I、aVL、V3–6 導程 T 波倒置（原文末句截斷）。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"},
+   {"code": "LAO/LAE", "likelihood": 50.0, "kind": "diagnostic", "zh": "左心房負荷／擴大"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "原始報告末句於「this ma」處截斷，結論不完整；譯文已如實標註，未臆補。（與 ptbxl-STD_-274 為同一筆 ECG 274。）",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-VCLVH-1219",
+  "ecg_id": "1219",
+  "selected_code": "VCLVH",
+  "language": "en",
+  "source_report": "sinus tachycardia. voltages are high in chest leads suggesting lvh. otherwise normal ecg.",
+  "source_report_zh": "竇性心搏過速，胸前導程電壓偏高，提示左心室肥厚；其餘為正常心電圖。",
+  "statements_zh": [],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ }
+]

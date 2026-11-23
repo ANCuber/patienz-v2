@@ -1,0 +1,42 @@
+{
+  "id": "nih-pneumonia-00002980_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate. Erect PA frontal projection; trachea midline with symmetric medial clavicular ends (no significant rotation). Inspiration adequate (~9-10 posterior ribs visible); penetration adequate with the lower thoracic vertebral bodies faintly seen through the cardiac shadow. Both lung apices and both costophrenic angles included; shoulders and proximal humeri in the field. External side marker (checkmark / L-type) at the image upper right corner.",
+  "target": {
+    "finding": "Pneumonia: patchy, ill-defined airspace opacity in the medial left lower zone extending from the left perihilar region to the retrocardiac area and medial left hemidiaphragm, with partial silhouetting of the lower left heart border and the medial left hemidiaphragm (left lower lobe / lingular pneumonia pattern)",
+    "visible": "yes",
+    "laterality": "left",
+    "zone": "lower",
+    "size_cm": 10,
+    "confidence": 0.65
+  },
+  "laterality_sources": {
+    "bbox": "left",
+    "reader_a": "left",
+    "reader_b": "left",
+    "adjudicator": "left"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "External radiographic side marker (checkmark / L-type); not a patient-borne device. No lines, tubes, drains, clips, pacemaker or ECG leads.",
+      "location": "Image upper right corner, lateral to the patient's left shoulder, outside the thorax",
+      "zh": "外置側別標記（影像右上角，非病人身上之裝置）"
+    }
+  ],
+  "other_findings": [
+    "右下肺野沿右心緣可見較輕微之支氣管周圍網狀／小結節狀陰影，無融合性實變；右橫膈及右肋膈角仍清晰",
+    "兩側支氣管血管紋理粗糙增加，以下肺野較明顯（慢性支氣管炎型態或支氣管周圍感染）",
+    "左肺門飽滿、緻密，可能為同一肺門周圍浸潤之一部分；無法完全排除肺門淋巴結腫大或血管突出",
+    "胸主動脈迂曲、主動脈弓突出（年齡相關／動脈硬化性變化）；上縱膈其餘無異常，氣管居中",
+    "心胸比約 0.46–0.48，心臟大小於正常上限，無明確心臟擴大",
+    "兩側肋膈角銳利，未見肋膜積液或氣胸",
+    "胃泡位於左橫膈下正常位置；骨骼及軟組織無明顯異常"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標的病灶（左下肺野肺炎浸潤）於片上清楚可見，放射科框選、知標籤讀片者與盲讀者三方皆定位於左下肺野；片上無胸管、引流管、中心靜脈導管或任何治療性裝置，僅有外置側別標記。其餘所見（兩側支氣管血管紋理粗糙、主動脈迂曲、心臟大小正常上限）皆為年齡相關或慢性背景變化，不與病人初次因肺炎就診之情境矛盾，適合作為首次就診之影像。",
+  "description_zh": "胸部X光正位（PA）直立片，吸氣量與穿透度尚可，氣管居中、無明顯旋轉；除影像右上角之外置側別標記外，未見任何導管、引流管、心律調節器或外科夾。左下肺野內側自左肺門周圍延伸至心後區及左橫膈內側，可見範圍約 10 公分之斑片狀、邊緣模糊的肺泡性浸潤，部分遮蔽左下心緣及左橫膈內側輪廓（silhouette sign），符合左下葉／舌葉肺炎表現；左肺門亦顯得飽滿緻密。右下肺野沿右心緣可見較輕微之支氣管周圍網狀陰影，兩側支氣管血管紋理粗糙增加、以下肺野為主，但右橫膈及右肋膈角仍清晰，無融合性實變。心胸比約 0.46–0.48、心臟大小於正常上限，胸主動脈迂曲、主動脈弓突出，兩側肋膈角銳利，未見肋膜積液或氣胸，胃泡位置正常，骨骼與軟組織無明顯異常。",
+  "label_concern": ""
+}

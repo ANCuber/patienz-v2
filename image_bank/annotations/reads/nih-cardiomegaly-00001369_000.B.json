@@ -1,0 +1,28 @@
+{
+ "view": "PA erect frontal chest radiograph (probable PA; upright, gastric bubble present). Adequate inspiration, minimal rotation, adequate penetration.",
+ "technical_quality": "Adequate. Good inspiration (about 9-10 posterior ribs), no significant rotation (clavicular heads roughly equidistant from spinous processes), acceptable penetration with vertebral bodies faintly visible through the cardiac shadow. Breast shadows overlie both lower zones. A black rectangular bar along the left image edge is a processing/collimation artifact.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 20,
+ "devices": [
+  {
+   "type": "External film marker: 'L' side marker with adjacent round radiopaque marker",
+   "location": "Upper right corner of image, projected over the patient's left shoulder soft tissue, outside the thorax"
+  },
+  {
+   "type": "Image processing / collimation artifact (black rectangular bar)",
+   "location": "Left image edge, upper third (outside the patient)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild cardiomegaly: cardiothoracic ratio approximately 0.55-0.57, with a rounded left ventricular contour displaced laterally; no pulmonary venous congestion or interstitial edema",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面立位攝影，吸氣深度足夠，無明顯旋轉，穿透度適中。心臟輪廓略呈擴大，心胸比約0.55–0.57，左心緣圓鈍並向外側偏移；氣管及縱膈居中，主動脈弓不明顯，肺門血管無明顯增粗。兩側肺野清晰，無實質化、結節或肋膜積液，兩側肋膈角銳利；兩側下肺野可見乳房軟組織陰影重疊。骨骼結構未見明顯異常；影像右上角見L側標記及圓形標記物，影像左緣黑色邊框為處理偽影，未見任何管路或治療裝置。"
+}

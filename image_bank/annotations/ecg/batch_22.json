@@ -1,0 +1,439 @@
+[
+ {
+  "id": "ptbxl-SARRH-1061",
+  "ecg_id": "1061",
+  "selected_code": "SARRH",
+  "language": "en",
+  "source_report": "sinus arrhythmia. voltages in chest leads are at upper limit. no definite pathology.",
+  "source_report_zh": "竇性心律不整，胸前導程電壓達正常上限，無明確病理變化。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SARRH-122",
+  "ecg_id": "122",
+  "selected_code": "SARRH",
+  "language": "de",
+  "source_report": "sinus arrhythmie linkstyp sonst normales ekg",
+  "source_report_zh": "竇性心律不整，電軸左偏，其餘為正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SARRH-3603",
+  "ecg_id": "3603",
+  "selected_code": "SARRH",
+  "language": "de",
+  "source_report": "sinus arrhythmie lagetyp normal wahrscheinlich linksventrikel hypertrophie pathologisches ekg",
+  "source_report_zh": "竇性心律不整，電軸正常，很可能為左心室肥厚，異常心電圖。",
+  "statements_zh": [],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原文「wahrscheinlich」意為「很可能」，語氣強於「möglich（可能）」，原譯「可能為左心室肥厚」已改為「很可能為左心室肥厚」。另 LVH 代碼可能性僅 35%（<50，未列入 statements_zh），與報告「很可能左心室肥厚」的把握度不同，但無直接矛盾。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-SARRH-440",
+  "ecg_id": "440",
+  "selected_code": "SARRH",
+  "language": "en",
+  "source_report": "sinus arrhythmia. normal ecg.",
+  "source_report_zh": "竇性心律不整，正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SARRH-1200",
+  "ecg_id": "1200",
+  "selected_code": "SARRH",
+  "language": "en",
+  "source_report": "sinus arrhythmia. incomplete right bundle branch block. q waves in ii, iii, avf consistent with old inferior    myocardial infarction.",
+  "source_report_zh": "竇性心律不整，不完全性右束支傳導阻滯，II、III、aVF 導程出現 Q 波，符合陳舊性下壁心肌梗塞。",
+  "statements_zh": [
+   {
+    "code": "IRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "不完全性右束支傳導阻滯"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SARRH-7414",
+  "ecg_id": "7414",
+  "selected_code": "SARRH",
+  "language": "de",
+  "source_report": "sinus arrhythmie lagetyp normal unvollstÄndiger rechtsschenkelblock sonst normales ekg",
+  "source_report_zh": "竇性心律不整，電軸正常，不完全性右束支傳導阻滯，其餘為正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   },
+   {
+    "code": "IRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "不完全性右束支傳導阻滯"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SARRH-1843",
+  "ecg_id": "1843",
+  "selected_code": "SARRH",
+  "language": "de",
+  "source_report": "sinus arrhythmie lagetyp normal sonst normales ekg",
+  "source_report_zh": "竇性心律不整，電軸正常，其餘為正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SBRAD-2494",
+  "ecg_id": "2494",
+  "selected_code": "SBRAD",
+  "language": "de",
+  "source_report": "sinusbradykardie amplitudenkriterien f#r linkshypertrophie",
+  "source_report_zh": "竇性心搏過緩，符合左心室肥厚之電壓（振幅）標準。",
+  "statements_zh": [
+   {
+    "code": "LVH",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "左心室肥厚"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SBRAD-1166",
+  "ecg_id": "1166",
+  "selected_code": "SBRAD",
+  "language": "en",
+  "source_report": "sinus bradycardia. otherwise normal ecg. the cause of the bradycardia is not evident.",
+  "source_report_zh": "竇性心搏過緩，其餘為正常心電圖；心搏過緩原因不明。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SBRAD-69",
+  "ecg_id": "69",
+  "selected_code": "SBRAD",
+  "language": "de",
+  "source_report": "sinusbradykardie unspezifisches abnormales t",
+  "source_report_zh": "竇性心搏過緩，非特異性 T 波異常。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "翻譯忠於原文。報告提及「非特異性 T 波異常」，但診斷代碼標為正常心電圖（NORM 100%）而非 NDT；同批 ptbxl-SBRAD-9394 相同原文則標為 NDT，資料集標註不一致。非特異性 T 波變化於 20 歲女性可視為正常變異，判為相容而非矛盾，但若用作「正常心電圖」範例宜留意。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SBRAD-612",
+  "ecg_id": "612",
+  "selected_code": "SBRAD",
+  "language": "en",
+  "source_report": "sinus bradycardia. low limb lead voltage. t waves are low or flat throughout. myocardial ischaemia is likely. suggest exclude hypokalaemia. the cause of the bradycardia is not evident.",
+  "source_report_zh": "竇性心搏過緩，肢體導程低電壓，各導程 T 波低平，很可能為心肌缺血，建議排除低血鉀；心搏過緩原因不明。",
+  "statements_zh": [
+   {
+    "code": "NDT",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非診斷性 T 波異常"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原譯「可能為心肌缺血」弱化了原文 \"myocardial ischaemia is likely\" 的程度，已改為「很可能為心肌缺血」。報告另提及肢體導程低電壓，代碼未含 LVOLT，屬報告較詳細，不構成矛盾。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-SBRAD-823",
+  "ecg_id": "823",
+  "selected_code": "SBRAD",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s). sinus bradycardia. incomplete right bundle branch block. st segments are depressed in v2-6. t waves are low in v4,5,6. this may be due to lv strain or ischaemia. the cause of the bradycardia is not evident.",
+  "source_report_zh": "心室早期收縮，竇性心搏過緩，不完全性右束支傳導阻滯，V2–V6 ST 段壓低，V4–V6 T 波低平，可能為左心室勞損（LV strain）或心肌缺血所致；心搏過緩原因不明。",
+  "statements_zh": [
+   {
+    "code": "NDT",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非診斷性 T 波異常"
+   },
+   {
+    "code": "IRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "不完全性右束支傳導阻滯"
+   },
+   {
+    "code": "PVC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心室早期收縮"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SBRAD-240",
+  "ecg_id": "240",
+  "selected_code": "SBRAD",
+  "language": "de",
+  "source_report": "sinusbradykardie lagetyp normal qrs(t) abnormal    inferiorer infarkt     wahrscheinlich alt",
+  "source_report_zh": "竇性心搏過緩，電軸正常，QRS(T) 型態異常，下壁梗塞，很可能為陳舊性。",
+  "statements_zh": [
+   {
+    "code": "IMI",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "下壁心肌梗塞"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "亞急性期至陳舊性",
+  "consistent_with_codes": true,
+  "issues": "原文「wahrscheinlich alt」意為「很可能為陳舊性」，原譯「可能為陳舊性」語氣偏弱，已改為「很可能為陳舊性」。梗塞分期欄位為 Stadium II-III（亞急性期至陳舊性），與報告「很可能陳舊性」相容。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-SBRAD-658",
+  "ecg_id": "658",
+  "selected_code": "SBRAD",
+  "language": "de",
+  "source_report": "sinusbradykardie unspezifische intraventrikulÄre leitungsstÖrung",
+  "source_report_zh": "竇性心搏過緩，非特異性心室內傳導障礙。",
+  "statements_zh": [
+   {
+    "code": "IVCD",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性心室內傳導障礙（阻滯）"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SBRAD-8111",
+  "ecg_id": "8111",
+  "selected_code": "SBRAD",
+  "language": "de",
+  "source_report": "sinusbradykardie lagetyp normal unvollstÄndiger rechtsschenkelblock sonst normales ekg",
+  "source_report_zh": "竇性心搏過緩，電軸正常，不完全性右束支傳導阻滯，其餘為正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   },
+   {
+    "code": "IRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "不完全性右束支傳導阻滯"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SBRAD-2423",
+  "ecg_id": "2423",
+  "selected_code": "SBRAD",
+  "language": "de",
+  "source_report": "sinusbradykardie p-verbreiterung",
+  "source_report_zh": "竇性心搏過緩，P 波增寬。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "翻譯忠於原文。報告提及「P 波增寬」，但診斷代碼標為正常心電圖（NORM 100%），未含 P 波相關代碼；輕度 P 波增寬於 18 歲男性可視為臨界正常，判為相容而非矛盾，但若用作「正常心電圖」範例宜留意。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SBRAD-9394",
+  "ecg_id": "9394",
+  "selected_code": "SBRAD",
+  "language": "de",
+  "source_report": "sinusbradykardie linkstyp unspezifisches abnormales t",
+  "source_report_zh": "竇性心搏過緩，電軸左偏，非特異性 T 波異常。",
+  "statements_zh": [
+   {
+    "code": "NDT",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非診斷性 T 波異常"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PACE-144",
+  "ecg_id": "144",
+  "selected_code": "PACE",
+  "language": "de",
+  "source_report": "pacemaker ekg",
+  "source_report_zh": "節律器心電圖。",
+  "statements_zh": [
+   {
+    "code": "PACE",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "人工節律器功能正常"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PACE-190",
+  "ecg_id": "190",
+  "selected_code": "PACE",
+  "language": "de",
+  "source_report": "pacemaker ekg",
+  "source_report_zh": "節律器心電圖。",
+  "statements_zh": [
+   {
+    "code": "PACE",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "人工節律器功能正常"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PACE-1596",
+  "ecg_id": "1596",
+  "selected_code": "PACE",
+  "language": "de",
+  "source_report": "steiltyp                                                wandernder schrittmacher                                av- block 1. grades                                     intraventr. leitungsstoerung avl                        st- hebung v2                  ",
+  "source_report_zh": "電軸垂直位，遊走性節律點（wandering pacemaker），一度房室傳導阻滯，aVL 導程心室內傳導障礙，V2 ST 段上升。",
+  "statements_zh": [
+   {
+    "code": "PACE",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "人工節律器功能正常"
+   }
+  ],
+  "axis_zh": "電軸垂直位",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "翻譯忠於原文；譯者標記不確定的「wandernder Schrittmacher」即 wandering (atrial) pacemaker，譯為「遊走性節律點」正確。但此為自身心律之遊走性起搏點現象，並非人工節律器；報告全文（電軸垂直位、一度房室傳導阻滯、aVL 心室內傳導障礙、V2 ST 段上升）亦未提及任何植入式節律器或節律訊號。SCP 代碼 PACE（人工節律器功能正常，100%）與 pacemaker 欄位「ja, pacemaker」疑為將「Schrittmacher」一詞誤對應為人工節律器，與報告內容矛盾，不宜作為 PACE（節律器心律）範例。另 heart_axis=AXR 對應報告之 steiltyp（電軸垂直位；先前 batch_00、batch_04 兩筆 AXR 亦皆為 Steiltyp/Steillage），故 axis_zh 採「電軸垂直位」而非「電軸右偏(?)」。",
+  "corrected": false
+ }
+]

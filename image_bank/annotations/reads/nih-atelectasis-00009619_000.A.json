@@ -1,0 +1,39 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration (about 9 posterior ribs), minimal rotation (medial clavicles roughly symmetric about the spinous processes), adequate penetration; L side marker present at image upper right confirming conventional orientation; costophrenic angles and apices included.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "external radiographic side marker (L with circle / technologist ID marker)",
+   "location": "image upper right corner, over the patient's left shoulder soft tissues"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Dense irregular/lobulated opacity extending from the right hilum inferomedially along the right heart border (partially silhouetting the lower right heart border), ~6 cm; consistent with right middle lobe atelectasis with volume loss, but a hilar/perihilar mass or consolidation cannot be excluded",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild elevation of the right hemidiaphragm relative to the left (~3.5 cm), supporting right-sided volume loss",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left hilar prominence, rounded (~2.5-3 cm) - possibly prominent left pulmonary artery versus hilar nodule/adenopathy; uncertain",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent/unfolded aortic knob",
+   "laterality": "none",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.65,
+ "description_zh": "PA 胸部X光，吸氣量尚可、無明顯旋轉，影像右上角可見「L」側別標記。右側下肺野內側（右肺門下方、緊鄰右心緣）可見一約6公分之緻密不規則陰影，部分遮蔽右心緣下段，並伴右側橫膈輕度上抬，符合右中葉肺塌陷（atelectasis）合併體積減少之表現，惟不能完全排除肺門腫塊或實質化。左肺門略顯突出，疑為左肺動脈突出或肺門結節，建議進一步評估。未見肋膜積液、氣胸，亦無任何導管、引流管或植入裝置。"
+}

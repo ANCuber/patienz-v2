@@ -1,0 +1,34 @@
+{
+ "view": "PA (frontal), \"L\" marker at upper right of image confirms conventional orientation",
+ "technical_quality": "Adequate: full inspiration (right hemidiaphragm at ~9th-10th posterior rib), minimal rotation, adequate penetration (thoracic spine visible through mediastinum); bilateral breast shadows overlie the lower zones and add mild lower-zone haze; lung apices and both costophrenic regions included",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "External side marker (\"L\")",
+   "location": "Upper right corner of the image (patient's left upper corner, outside the thorax)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Blunting of the costophrenic angle with homogeneous veil-like opacity and loss of the hemidiaphragm contour, consistent with a small-to-moderate pleural effusion (approximately 3-5 cm meniscus height); the left lung base sits higher than the right, so a subpulmonic component cannot be excluded",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent / mildly unfolded aortic knob (likely age-related aortic tortuosity)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly increased bronchovascular markings, no focal consolidation, nodule or pneumothorax; right costophrenic angle sharp and right hemidiaphragm well defined",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "胸部正面（PA）X光，影像右上方可見「L」標記，患者左側位於影像右側。左側肋膈角變鈍，左下肺野呈均質性霧狀增加密度並伴有外側上揚之弧形邊緣，左側橫膈輪廓模糊，符合左側少量至中量肋膜積液（估計約4公分）；右側橫膈與肋膈角清晰，右肺野未見明顯病灶。心臟大小正常，主動脈弓略為突出，氣管居中；雙側乳房陰影重疊於下肺野。未見胸管、中央靜脈導管、心律調節器或手術夾等裝置，無已接受治療之證據。"
+}

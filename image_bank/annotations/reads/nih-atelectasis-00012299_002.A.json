@@ -1,0 +1,28 @@
+{
+ "view": "PA (as recorded); frontal erect film, scapulae partially projected over the upper lateral lung fields",
+ "technical_quality": "Adequate: good inspiration (about 9-10 posterior ribs), minimal rotation, adequate penetration (spine visible through the heart), both costophrenic angles and lung apices included. An L side marker is present in the upper right corner of the image, confirming conventional orientation.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "External thin line / wire (most likely ECG lead or monitoring cable/tubing; smooth thin metallic-density line, course not compatible with an intravascular catheter, chest tube or NG tube)",
+   "location": "Projected over the left hemithorax: from the left upper paramediastinal region, running inferolaterally along the left mediastinal border, across the left hilum and left lower zone, to the left lateral lower chest wall and continuing into the left flank soft tissues"
+  },
+  {
+   "type": "Side marker (L)",
+   "location": "Upper right corner of the image (patient's left side)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined band-like increased opacity in the medial right lower zone along the right heart border, with slight blurring of the right heart border; possible subsegmental atelectasis (right middle lobe / medial right lower lobe) versus prominent basal vessels and pericardial fat pad. No lobar volume loss: trachea midline, hemidiaphragms at normal level, hila normal in position.",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.4,
+ "description_zh": "PA 胸部X光，吸氣充分、無明顯旋轉，氣管居中，心臟大小及縱膈輪廓正常，雙側肺門位置正常。右下肺野內側、沿右心緣可見一界線不清的帶狀密度增加影，右心緣局部略模糊，疑為右中葉／右下肺葉內側的亞肺節性肺塌陷，但亦可能僅為基底血管與心包脂肪墊重疊，且未見肺葉體積減少之徵象。左肺野清晰，雙側肋膈角銳利，未見肋膜積液或氣胸。另見一條細長線狀高密度影自左上縱膈旁斜向外下，橫越左肺門及左下肺野延伸至左側胸壁外，走向不符合血管內導管，判斷為體外導線（如心電圖導線或管路）之投影；未見胸管或其他治療性裝置。"
+}

@@ -1,0 +1,67 @@
+{
+ "view": "PA frontal chest radiograph (L marker on image right, conventional orientation)",
+ "technical_quality": "Adequate: no significant rotation (medial clavicles roughly symmetric about the spinous processes), adequate inspiration (~9 posterior ribs), penetration adequate with thoracic spine faintly visible through the heart. Large body habitus with bulky chest-wall/axillary soft tissue; scapulae largely projected clear of the lung fields. Mild noise/blur consistent with a processed dataset image.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 1.5,
+ "devices": [
+  {
+   "type": "Multiple small midline metallic densities (sternotomy wires / mediastinal surgical clips), suggesting prior cardiac surgery",
+   "location": "midline mediastinum, projected over T4-T9 levels"
+  },
+  {
+   "type": "Small V/Y-shaped metallic density (surgical clip vs external artifact)",
+   "location": "left upper abdomen, just below the diaphragm near midline"
+  },
+  {
+   "type": "External side marker 'L' with technologist initials",
+   "location": "image upper right corner (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Irregular pleural-based calcific density along the lateral chest wall, ~1.5 cm, suspicious for calcified pleural plaque / focal pleural thickening",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Apical pleural thickening (apical capping), left slightly more than right",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Borderline enlarged cardiac silhouette (CTR ~0.5); cardiomediastinal contour prominent",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Unfolded / ectatic thoracic aorta with prominent, calcified aortic knob; ascending aorta bulging to the right of the upper mediastinum",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Midline metallic densities (sternotomy wires / surgical clips) consistent with prior median sternotomy / cardiac surgery",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly increased central bronchovascular / interstitial markings with prominent hila, likely chronic/age-related; no focal consolidation, no pneumothorax, no lung nodule",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Costophrenic angles essentially preserved; no definite pleural effusion (right lateral CP angle slightly obscured by chest wall soft tissue)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative changes of the right glenohumeral joint (sclerosis, joint space narrowing) and thoracic spine spondylosis",
+   "laterality": "right",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光（PA），吸氣量尚可，無明顯旋轉，體型壯碩。心影邊界性擴大（心胸比約0.5），主動脈迂曲擴張並見主動脈弓鈣化；縱膈中線可見多枚細小金屬影，疑為胸骨縫合鋼線／手術夾，提示曾接受心臟手術。雙側肺尖胸膜增厚（apical cap），左側中肺野外側胸壁可見約1.5公分不規則鈣化性胸膜密度影，疑為鈣化胸膜斑／局部胸膜增厚；雙側肺紋增加，未見實質化、結節或氣胸，雙側肋膈角大致銳利。骨骼見右側肩關節及胸椎退化性變化；左上腹近中線另見一小金屬影（手術夾或體外異物）。"
+}

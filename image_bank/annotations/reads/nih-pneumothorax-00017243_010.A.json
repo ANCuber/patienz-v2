@@ -1,0 +1,60 @@
+{
+ "view": "Frontal chest radiograph, labelled PA (scapulae project over the lung fields and a chest tube is in place, so likely AP/semi-erect); L marker on image right confirms conventional orientation",
+ "technical_quality": "Adequate exposure and inspiration; apices and costophrenic angles included; mild rotation possible; right upper thorax partly obscured by clavicular hardware",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "whole",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "Chest tube (pleural drain), hollow tube with parallel walls and lucent lumen",
+   "location": "Left hemithorax, coursing from the inferomedial left chest (projecting over the left mediastinal/cardiac border at about T8-T9) obliquely upward and laterally, tip at the left lung apex"
+  },
+  {
+   "type": "Orthopedic fixation plate with multiple screws (clavicle ORIF)",
+   "location": "Right clavicle, along its mid/lateral shaft"
+  },
+  {
+   "type": "Two long screws",
+   "location": "Lateral right clavicle / acromion (right shoulder), directed medially"
+  },
+  {
+   "type": "Small metallic density (possible suture anchor or small hook, uncertain)",
+   "location": "Just inferior to the right clavicular plate, right upper chest"
+  },
+  {
+   "type": "External L side marker with technologist initials",
+   "location": "Image upper right corner, patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large pneumothorax: lateral hemithorax completely lucent with no lung markings from apex to near the base, visible visceral pleural (lung) edge, maximal interpleural distance about 8 cm at hilar level; persists despite the chest tube",
+   "laterality": "left",
+   "zone": "whole"
+  },
+  {
+   "finding": "Collapsed/retracted left lung lying against the mediastinum, with a rounded lucency within the collapsed lung medially (hilar structure vs bulla/cyst, uncertain)",
+   "laterality": "left",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Hazy increased density of the lower zone near the costophrenic angle, possible small pleural fluid (hydropneumothorax) or compressed lower lobe, uncertain",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Clavicle fracture status post plate-and-screw fixation (extra-thoracic)",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "No definite mediastinal shift or tension features: trachea near midline, hemidiaphragms at similar levels; right lung normally aerated without pneumothorax",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.9,
+ "description_zh": "正面胸部X光（標示為PA，但肩胛骨重疊於肺野且已置入胸管，較可能為AP攝影），影像右上角可見L側別標記。左側胸腔可見大量氣胸，自肺尖至近橫膈之外側肺野完全透亮、無肺紋理，內側可見塌陷之左肺邊緣，肋膜分離最寬約8公分；左側已置入一條胸管，管尖位於左肺尖，但氣胸仍持續存在。右肺擴張良好、未見氣胸，右鎖骨可見骨板及多枚螺釘固定（骨折術後），外側另有兩枚長螺釘。氣管大致居中、未見明顯縱膈偏移或張力性氣胸徵象；左下肺野近肋膈角處略模糊，不排除少量肋膜積液。"
+}

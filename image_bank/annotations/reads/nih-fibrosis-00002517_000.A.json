@@ -1,0 +1,29 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate exposure and inspiration; slight rotation (mild asymmetry of clavicles); arms at sides with humeral heads projected over upper thorax; L marker with technologist initials at upper left of patient.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "radiographic side marker (L) with technologist initials 'DMD'",
+   "location": "upper corner of image on the patient's left, over soft tissue lateral to the left shoulder"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "coarse reticular / linear interstitial opacities in the medial basal lung adjacent to the right heart border, extending from the right hilum toward the base; possible fibrotic change",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "mildly prominent / dense right hilum compared with the left",
+   "laterality": "right",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面X光片：右下肺野內側（心臟右緣旁）可見粗網狀及線狀間質性陰影，自右肺門向下延伸至肺底，範圍約8公分，疑為纖維化變化；右肺門較左側稍顯著。左肺野清晰，雙側肋膈角銳利，心臟大小及縱膈輪廓正常，左橫膈下可見胃泡。未見氣胸、肋膜積液、管路或其他置入裝置，僅見左側標記（L）及技師縮寫。"
+}

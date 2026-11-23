@@ -1,0 +1,53 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: L marker at patient's left confirms conventional orientation; no significant rotation (medial clavicles roughly symmetric about the spinous processes); adequate inspiration (~9-10 posterior ribs); adequate penetration; both costophrenic angles included. The right paramediastinal region is partly obscured by the overlying catheter.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Tunneled central venous catheter (large-bore, probably dual-lumen hemodialysis-type; Hickman not excluded)",
+   "location": "Enters via right internal jugular vein (loop projected over right apex above clavicle), descends along right paramediastinum; tip projects at lower SVC / cavoatrial junction. External segment with cone-shaped hub lies on the right anterior chest wall, projected over the right mid-to-lower lung zone."
+  },
+  {
+   "type": "Radiographic side marker 'L' with round radiopaque marker",
+   "location": "Upper right corner of image (patient's left shoulder region), outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Increased perihilar and lower-zone interstitial (reticular) markings with hazy, indistinct vessels, left more than right - mild to moderate interstitial pulmonary edema pattern",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Prominent, ill-defined bilateral hila (hilar haze / vascular congestion)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Peribronchial cuffing (ring shadow) adjacent to the left hilum",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Thin curvilinear densities at the right cardiophrenic angle / anterior lower ribs, most likely costochondral calcification; no clinical significance suspected",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small rounded lucency just below the medial right hemidiaphragm, most consistent with colonic (hepatic flexure) bowel gas; no free subdiaphragmatic air",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Heart size within normal limits (CTR approx 0.35-0.4); no pleural effusion (sharp costophrenic angles) and no pneumothorax",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 胸部X光：右側經頸內靜脈置入之隧道式中心靜脈導管（疑為大口徑雙腔透析導管），導管於右肺尖處成環後沿右側縱膈旁下行，尖端投影於上腔靜脈下段／腔靜脈心房交界處，體外段與錐形接頭投影於右前胸壁（右中下肺野），非胸管或肋膜引流。雙側肺門增粗且模糊，肺門周圍及雙下肺野間質性紋理增加、血管邊緣不清，左肺門旁可見支氣管周圍套袖徵，以左側較明顯，符合輕至中度間質性肺水腫表現。心臟大小未見明顯擴大，雙側肋膈角銳利，無明顯肋膜積液或氣胸；右心膈角區見少許曲線狀緻密影，考慮肋軟骨鈣化，右橫膈下另見腸氣，無游離氣體。"
+}

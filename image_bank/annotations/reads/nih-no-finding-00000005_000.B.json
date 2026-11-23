@@ -1,0 +1,24 @@
+{
+ "view": "Frontal chest radiograph, likely PA upright (L marker in upper right corner of image confirms conventional orientation)",
+ "technical_quality": "Adequate: good inspiration (approx. 9 posterior ribs visible), adequate penetration (thoracic vertebral bodies seen through the upper mediastinum), no significant rotation (medial clavicles roughly symmetric about the spinous processes), lung apices and both costophrenic angles included. Left scapula partially overlaps the lateral left upper lung field (positioning). Bilateral breast shadows and lateral soft tissue of the arms project over the lower zones. Gastric air bubble seen under the left hemidiaphragm.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "external side marker 'L' with 'BVB' text (not a medical device)",
+   "location": "upper right corner of the image, patient's left, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild prominence / unfolding of the aortic knob, age-appropriate, no mediastinal widening",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "胸部正面X光片（推測為PA站立位），吸氣深度足夠、曝光適當、無明顯旋轉，左側肩胛骨部分重疊於左上肺野外側。雙側肺野清晰、通氣良好，未見實質浸潤、結節或腫塊；雙側肋膈角銳利，無肋膜積液或氣胸。心臟大小正常（心胸比<0.5），縱隔不寬、氣管居中，主動脈弓略顯突出／延展，符合年齡相關變化。骨骼與軟組織未見明顯異常，未見任何導管、引流管、起搏器或手術夾等植入物。"
+}

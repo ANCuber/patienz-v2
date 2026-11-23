@@ -1,0 +1,42 @@
+{
+ "view": "PA (frontal) chest radiograph, erect; L marker present at upper right of image, so conventional orientation (patient's right on image left)",
+ "technical_quality": "Adequate. Inspiration adequate (~9 posterior ribs above the right hemidiaphragm). Minimal rotation (medial clavicular ends roughly equidistant from the spinous processes). Penetration adequate (vertebral bodies visible through the cardiac silhouette). Both costophrenic angles and lung apices included; scapulae partially project over the lateral upper lung fields. Bilateral breast shadows overlie the lower zones.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External side marker (L)",
+   "location": "Upper right corner of the image, over the patient's left shoulder region"
+  },
+  {
+   "type": "Small irregular radiopaque density, likely external/skin artifact (not a surgical clip in the chest)",
+   "location": "Left axillary / lateral chest wall soft tissue, about the level of the 4th-5th rib"
+  },
+  {
+   "type": "Clothing/film-edge artifact",
+   "location": "Inferior edge of the image, patient's right side, below the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Questionable mild blunting of the right costophrenic angle with a laterally-peaked, slightly flattened right hemidiaphragm contour - possible small right pleural effusion (subpulmonic pattern); low certainty, breast shadow overlaps the region",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly increased bronchovascular / interstitial markings in the lower zones, right more than left; no consolidation, nodule or mass",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small irregular radiopaque density in the left axillary / lateral chest wall soft tissue, most likely external artifact or skin lesion",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面（PA）胸部X光，吸氣量足夠、無明顯旋轉，未見任何管路、導線、心律調節器或手術夾，僅左側腋下軟組織可見一小型不規則不透X光影，疑為體外物或皮膚病灶。雙肺野大致清晰，未見實質化、結節或腫塊；雙下肺野支氣管血管紋理略增多（右側較明顯）。右側肋膈角疑似輕微鈍化，右側橫膈頂點偏外側且輪廓略平，不排除少量右側肋膜積液（肺下型），左側肋膈角銳利；心臟大小正常（CTR約0.4），縱膈無增寬、氣管居中，左橫膈下可見胃泡，骨骼未見骨折或破壞性病灶。"
+}

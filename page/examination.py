@@ -180,6 +180,48 @@ def process_examination_result(full_items, result_json):
     return html_table, has_abnormal
 
 
+def _fixed_reports():
+    """Reports the case itself fixes in advance, keyed by the exam's Chinese
+    item name (「心電圖」「胸部X光」…).
+
+    A case may carry ``Problem.檢查預期所見``: the exact report text for an
+    imaging exam, written once (by the template author, or by the case
+    generator bound to a real film) and then served verbatim. Serving it
+    verbatim — instead of asking the examiner model to reproduce it — is what
+    makes the report deterministic, and therefore what lets the paired image be
+    guaranteed to match: the text the retrieval gate sees is the text the case
+    was written against.
+    """
+    try:
+        fixed = ss.data.get("Problem", {}).get("檢查預期所見") or {}
+    except (AttributeError, TypeError):
+        return {}
+    if not isinstance(fixed, dict):
+        return {}
+    return {str(k).strip(): str(v) for k, v in fixed.items() if isinstance(v, str) and v.strip()}
+
+
+def _norm_exam_key(name):
+    """Fold an exam name for matching: no whitespace, case-insensitive.
+
+    ``examination.csv`` spells the same study both 「胸部X光」 and 「胸部 X 光」,
+    and a case author may write either; an exact compare would silently drop the
+    fixed report and fall back to the model, which is the one thing this path
+    exists to prevent.
+    """
+    return "".join(str(name or "").split()).lower()
+
+
+def _fixed_report_for(cart_item, fixed):
+    """The fixed text for one cart item, matched by Chinese then English name."""
+    folded = {_norm_exam_key(k): v for k, v in fixed.items()}
+    for key in (cart_item.get("chinese"), cart_item.get("eng")):
+        key = _norm_exam_key(key)
+        if key and key in folded:
+            return folded[key]
+    return None
+
+
 def _patient_demo():
     """Virtual patient (age, sex) for demographic-proximity image ranking; either
     may be None. Sex is passed through verbatim (image_bank normalizes 男/女)."""
@@ -403,6 +445,7 @@ with column[1]:
                 # so a re-curated/relabelled bank or a reloaded session can never
                 # pair a report with a now-mismatched film.
                 man = image_bank.load_manifest()
+                img_age, img_sex = _patient_demo()   # for the mismatch notice below
                 for h in ss.examination_history:
                     ref = h.get("image_ref")
                     if not ref or not h.get("normality_known"):
@@ -419,6 +462,26 @@ with column[1]:
                     st.markdown(f"**{'、'.join(h.get('items_chinese') or [])} — 影像判讀**")
                     st.image(meta["path"], caption=meta["caption"], use_container_width=True)
                     st.caption(meta["badge"])
+                    # The gates upstream removed the images that would mislead;
+                    # what is left is the mismatch inherent to showing another
+                    # real patient's film, so it is spelled out rather than left
+                    # for the student to infer.
+                    notes = image_bank.risk_notes(
+                        match, report_text=h.get("result_html", "") or "",
+                        patient_age=img_age, patient_sex=img_sex)
+                    if notes:
+                        body = "\n".join(f"- {n}" for n in notes)
+                        # A film whose label nobody has checked gets the loudest
+                        # treatment available, not the same box as a film that is
+                        # merely from a different patient.
+                        status = image_bank.review_status(match)
+                        if status == "nlp-mined":
+                            st.error("**🔴 這張圖的標籤未經醫師確認，請勿當作標準答案**\n\n" + body)
+                        elif status in ("radiologist-bbox", "unknown"):
+                            st.warning("**🟠 這張圖的標籤未經獨立覆核，判讀時請以文字報告為準**\n\n"
+                                       + body)
+                        else:
+                            st.warning("**⚠️ 這張圖與本病例可能不一致之處**\n\n" + body)
                     if meta["provenance"]:
                         line = f"來源：{meta['provenance']}"
                         if meta["source_url"]:
@@ -535,6 +598,40 @@ with column[1]:
                             for c in value_cart:
                                 ss.ordered_exam_set.add(c["eng"])
                                 completed.add(c["eng"])
+
+                    # === 文字型（固定報告）：病例已寫死的檢查直接照本宣科，不呼叫模型 ===
+                    fixed_reports = _fixed_reports() if text_cart else {}
+                    fixed_done = []
+                    if text_cart and fixed_reports and not exam_failed:
+                        for c in text_cart:
+                            text = _fixed_report_for(c, fixed_reports)
+                            if text is None:
+                                continue
+                            result_html, has_abnormal = parse_text_result(text)
+                            _upper = text.upper()
+                            normality_known = ("[NORMAL]" in _upper) or ("[ABNORMAL]" in _upper)
+                            ss.examination_result.append((c["chinese"], result_html))
+                            hist_entry = {
+                                "order_number": len(ss.examination_history) + 1,
+                                "category": c["category"],
+                                "subcategory": c["subcategory"],
+                                "items": [c["eng"]],
+                                "items_chinese": [c["chinese"]],
+                                "result_type": "text",
+                                "result_html": result_html,
+                                "has_abnormal": has_abnormal,
+                                "normality_known": normality_known,
+                                "interpretation": "",
+                                # provenance: this text came from the case, not the model
+                                "fixed_report": True,
+                            }
+                            _attach_image_ref(hist_entry)
+                            ss.examination_history.append(hist_entry)
+                            ss.ordered_exam_set.add(c["eng"])
+                            completed.add(c["eng"])
+                            fixed_done.append(c["eng"])
+                            util.record(ss.log, f"[EXAM] fixed report served for {c['eng']}")
+                        text_cart = [c for c in text_cart if c["eng"] not in fixed_done]
 
                     # === 文字型：每個子類別各自一次 text examiner 呼叫 ===
                     if text_cart and not exam_failed:

@@ -1,0 +1,49 @@
+{
+ "view": "PA (frontal), L marker at image upper right = patient's left; conventional orientation",
+ "technical_quality": "Adequate: PA upright, no significant rotation, adequate inspiration (~9 posterior ribs), apices and both costophrenic angles included; slight under-penetration retrocardiac region owing to the large heart shadow",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "External side marker 'L' with small annotation text (radiographic marker only)",
+   "location": "Image upper-right corner, patient's left shoulder region, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy veil-like increased opacity lateral to the cardiac apex, partially silhouetting the lower left heart border; possible lingular / left lower lobe pneumonia or basal atelectasis (non-specific, candidate for the labelled finding)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild blunting / haziness of the costophrenic angle; small pleural effusion cannot be excluded",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Marked cardiomegaly (cardiothoracic ratio clearly >0.5, left ventricular contour prominent)",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded / tortuous thoracic aorta with prominent aortic knob (age-related)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Coarse bronchovascular / interstitial markings in the perihilar and basal region; no definite consolidation, right hemidiaphragm and costophrenic angle sharp",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Tiny dense nodular focus near the right hilum, likely vessel end-on or small calcified granuloma",
+   "laterality": "right",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.45,
+ "description_zh": "PA 胸部正面片，吸氣量尚可，無明顯旋轉；心影明顯擴大（心胸比顯著大於 0.5），主動脈弓突出且迂曲，符合老年人主動脈延展。左下肺野於心尖外側可見模糊之霧狀密度增加，左心緣下段輪廓部分被遮蔽，左側肋膈角略呈鈍化，可能為舌葉／左下葉肺炎或肺底塌陷，少量肋膜積液亦無法排除，但影像表現不具特異性。右下肺野支氣管血管紋理略為粗糙，未見明確實質化，右側橫膈與肋膈角清晰。未見導管、引流管或心律調節器等裝置，僅見左側 L 標記，無已接受治療之證據。"
+}

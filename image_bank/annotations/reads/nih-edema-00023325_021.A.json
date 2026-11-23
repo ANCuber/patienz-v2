@@ -1,0 +1,90 @@
+{
+ "view": "AP portable (supine/semi-erect), L marker on image right confirms conventional orientation",
+ "technical_quality": "Limited: low lung volumes (poor inspiration), patient's chin/mandible projected over the upper mediastinum and trachea, multiple overlying ECG leads and external tubing, AP magnification of the cardiomediastinal silhouette. Penetration adequate. No gross rotation.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "patient's left upper-mid zone, lateral lung field (image right, ~x685,y390)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "patient's right parasternal, middle zone (image left of midline, ~x395,y485)"
+  },
+  {
+   "type": "ECG lead clip/connector",
+   "location": "patient's right lower zone near the cardiophrenic region (~x380,y600)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "patient's right lower chest / right upper abdomen (image bottom left, ~x345,y905)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "patient's left lower chest / left upper abdomen (image bottom right, ~x715,y905)"
+  },
+  {
+   "type": "Cluster of surgical clips (~10 small metallic clips)",
+   "location": "patient's left upper zone, lateral, projected over lung / axillary region (image right, ~x720-805,y270-370)"
+  },
+  {
+   "type": "Possible small metallic clips (uncertain)",
+   "location": "patient's right upper quadrant abdomen / right costophrenic region (image bottom left, ~x185-195,y900-915)"
+  },
+  {
+   "type": "External tubing/cable (likely oxygen tubing or lead cable)",
+   "location": "coursing over the patient's left shoulder and obliquely across the lower chest/abdomen"
+  },
+  {
+   "type": "External lead wire",
+   "location": "over the patient's right shoulder and right upper chest wall"
+  },
+  {
+   "type": "Side marker 'L' and 'AP PORTABLE' annotation",
+   "location": "image right, patient's left, mid-lower"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Diffuse hazy perihilar and interstitial opacities with vascular indistinctness, more prominent on the right, consistent with pulmonary edema",
+   "laterality": "bilateral",
+   "zone": "middle and lower (perihilar)"
+  },
+  {
+   "finding": "Cardiomegaly (enlarged cardiomediastinal silhouette, partly exaggerated by AP supine projection)",
+   "laterality": "midline",
+   "zone": "middle-lower"
+  },
+  {
+   "finding": "Marked elevation of the right hemidiaphragm with large homogeneous dome-shaped opacity obscuring the right heart border (elevated hemidiaphragm/hepatomegaly vs subpulmonic effusion/atelectasis)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Elevated left hemidiaphragm with distended gas- and stool-containing bowel/stomach beneath it",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Low lung volumes with crowding of bronchovascular markings",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Widened upper mediastinum, likely projectional (AP supine, chin overlap) - indeterminate",
+   "laterality": "midline",
+   "zone": "upper"
+  },
+  {
+   "finding": "Degenerative changes of both shoulders; no acute rib fracture identified",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "AP portable 胸部X光，吸氣不足，下巴影像重疊於上縱膈，且有多條導線重疊，影像品質受限。雙側肺野呈瀰漫性肺紋增加及肺門周圍模糊霧狀陰影，右側較明顯，伴心影擴大，符合肺水腫表現。右側橫膈明顯上抬，右下肺野呈大片均質圓頂狀緻密陰影並遮蔽右心緣（橫膈上抬／肝臟影或肋膜下積水、肺塌陷待鑑別）；左側橫膈亦上抬，其下可見含氣擴張之腸胃道。可見多枚心電圖電極及導線、左上肺野外側一叢手術夾，未見胸管、引流管、中心靜脈導管或氣管內管。"
+}

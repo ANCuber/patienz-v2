@@ -1,0 +1,55 @@
+{
+  "id": "nih-effusion-00030634_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate. Good inspiration (~9-10 posterior ribs), minimal rotation (medial clavicular ends roughly equidistant from the spinous processes), adequate penetration (vertebral bodies visible through the cardiac silhouette). Both costophrenic angles and apices included. Scapulae partially project over the lateral upper lung fields; bilateral breast shadows overlie the lower zones and partly obscure the right costophrenic region. L marker in the image upper-right corner confirms conventional orientation.",
+  "target": {
+    "finding": "pleural effusion",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 3,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "right (box 317x97 px sits in the image middle-third by pixel rows, i.e. along the right hemidiaphragm / costophrenic region - anatomically the right lung base)",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "External side marker (L)",
+      "location": "image upper-right corner, over the patient's left shoulder region",
+      "zh": "L 側別標記（體外）"
+    },
+    {
+      "type": "Thin oblique linear external artifact (gown tie / skin fold; not a medical device)",
+      "location": "patient's right shoulder / axilla, projecting across the right upper chest wall toward the medial clavicle",
+      "zh": "右肩斜行細線狀體外偽影（疑衣物繫帶或皮膚皺褶）"
+    },
+    {
+      "type": "Small irregular radiopaque density, likely external / skin artifact (not a surgical clip)",
+      "location": "left axillary / lateral chest wall soft tissue, about the 4th-5th rib level",
+      "zh": "左腋下軟組織小型不規則不透光影（疑體外物或皮膚病灶）"
+    },
+    {
+      "type": "Clothing / waistband artifact (external, serrated)",
+      "location": "inferior edge of the image, patient's right lower abdomen",
+      "zh": "影像下緣右側鋸齒狀衣物偽影"
+    }
+  ],
+  "other_findings": [
+    "右側橫膈頂點偏外側、輪廓略平，疑合併肺下型（subpulmonic）積液成分；右橫膈略高於左側",
+    "主動脈弓略為突出（可能與年齡相關）；縱膈居中、氣管居中，心胸比正常（約 0.4–0.45）",
+    "雙下肺野支氣管血管紋理略增（右側較明顯），未見實質化、結節、腫塊或氣胸",
+    "左側腋下軟組織小型不規則不透光影，疑為體外偽影或皮膚病灶",
+    "雙側乳房陰影重疊於下肺野，肩胛骨部分投影於上外側肺野；左橫膈下可見胃泡，骨骼未見骨折或破壞性病灶"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標的病灶（少量右側肋膜積液）在片上可辨識：右側肋膈角鈍化並有小的半月狀密度，右橫膈輪廓略平、頂點偏外側，雖然量少且被乳房陰影部分重疊，仍屬可見；盲讀者亦獨立發現同側同區病灶。片上未見胸管、引流管、豬尾導管或任何抽液後徵象，也沒有導線、心律調節器、手術夾等會與初次就診相矛盾的置入裝置或術後改變，適合作為首次就診之影像。",
+  "description_zh": "PA 正面胸部X光片，吸氣充分、無明顯旋轉、穿透度適中，影像右上角可見 L 側別標記，雙側乳房陰影重疊於下肺野。右側肋膈角變鈍並可見小的半月狀均勻密度，右側橫膈頂點偏外側、輪廓略平，符合少量右側肋膜積液（可能含肺下型成分），估計積液高度約 2–3 公分；左側肋膈角銳利，左橫膈下可見胃泡。心臟大小正常（心胸比約 0.4–0.45）、縱膈與氣管居中，主動脈弓略為突出，可能與年齡相關。雙下肺野支氣管血管紋理略增（右側較明顯），未見實質化、結節、腫塊或氣胸，骨骼未見骨折或破壞性病灶。未見胸管、引流管、導線、心律調節器或手術夾等置入裝置；右肩至右上胸壁可見一斜行細線狀體外偽影（疑衣物繫帶或皮膚皺褶），左側腋下軟組織可見一小型不規則不透光影（疑體外物或皮膚病灶），影像下緣右側另有鋸齒狀衣物偽影。",
+  "label_concern": ""
+}

@@ -1,0 +1,42 @@
+{
+ "id": "nih-mass-00001075_024",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (frontal, upright; 'L' marker at image upper right confirms conventional orientation)",
+ "technical_quality": "Adequate. Large body habitus with abundant chest-wall and upper-abdominal soft tissue; slightly shallow inspiration (right hemidiaphragm at about the anterior 5th-6th rib), minimal rotation, moderate penetration with a mildly under-penetrated upper abdomen. Apices and both costophrenic angles included; scapulae partly overlap the upper lateral lung fields. No lines, tubes, clips, pacemaker or other devices; the only external artifact is the L side marker.",
+ "target": {
+  "finding": "pulmonary mass",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "middle",
+  "size_cm": 4,
+  "confidence": 0.65
+ },
+ "laterality_sources": {
+  "bbox": "right",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Laterality marker 'L' (external radiographic side marker, not a medical device)",
+   "location": "Image upper right corner, patient's left side, outside the patient",
+   "zh": "影像右上角之左側標記「L」（患者體外之攝影標記，非醫療裝置）"
+  }
+ ],
+ "other_findings": [
+  "左肺門輕度突出（程度明顯小於右側），可能為血管性",
+  "右側橫膈較左側抬高，輪廓平滑",
+  "雙側橫膈位置偏高，伴龐大而緻密之上腹部（體型壯碩，不排除肝腫大）；左側可見正常胃底氣泡",
+  "吸氣略淺，肺底血管略顯擁擠",
+  "心臟大小約在正常上限，氣管及縱膈居中",
+  "兩側肋膈角銳利，無肋膜積液、氣胸或其他肺野實變；肩胛骨部分重疊於雙上肺野外側，骨骼結構完整",
+  "未見胸管、引流管、心律調節器、手術夾或任何治療器材"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標示之右側肺部腫塊清楚可見，盲讀者亦獨立於同側發現同一病灶，放射科定位框、兩位讀者與仲裁者側別一致。影像上無胸管、引流管、手術夾或任何治療裝置，亦無術後或治療後變化；體型壯碩與橫膈抬高並不與首次就診相矛盾，適合作為首次就診之肺部腫塊教學影像。",
+ "description_zh": "胸部正位（PA）X光片，體型壯碩、吸氣略淺（右側橫膈約在前第5–6肋），無明顯旋轉，穿透度適中，影像右上角可見體外「L」側別標記，未見任何管路、引流管、心律調節器或手術夾等治療器材。右側肺門及其內下方（右中肺野為主，向下延伸至下肺野內側、緊鄰右心緣）可見一邊界不清、略呈分葉狀之腫塊樣緻密影，最大徑約4公分，右肺門較左側明顯增大且緻密，符合標示之右側肺部腫塊（中央型腫塊，不排除合併肺門淋巴結腫大）；左肺門輕度突出，可能為血管性。右側橫膈較左側抬高、輪廓平滑，雙側橫膈位置偏高並伴有龐大緻密之上腹部（體型因素，不排除肝腫大），左側可見正常胃底氣泡，肺底血管因吸氣淺而略顯擁擠。心臟大小約在正常上限，氣管及縱膈居中，兩側肋膈角銳利，無肋膜積液、氣胸或其他肺野實變；肩胛骨部分重疊於雙上肺野外側，骨骼結構完整，建議胸部CT進一步評估右肺門病灶。",
+ "label_concern": ""
+}

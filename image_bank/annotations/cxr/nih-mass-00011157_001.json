@@ -1,0 +1,53 @@
+{
+ "id": "nih-mass-00011157_001",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate upright PA film; L marker at image top-right over the patient's left shoulder (conventional orientation). Adequate inspiration and penetration, mild rotation not significant; apices and both costophrenic angles included. Both scapulae partially project over the lateral upper zones. The left supraclavicular region / left shoulder is partly overlapped by an external film label and the L marker.",
+ "target": {
+  "finding": "pulmonary mass",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "lower",
+  "size_cm": 3.5,
+  "confidence": 0.85
+ },
+ "laterality_sources": {
+  "bbox": "right",
+  "reader_a": "right (largest lesion; reader reported overall laterality 'bilateral' because of multiple lesions)",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Cluster of small linear metallic densities, probable surgical clips (post lymph node excision / biopsy); external artifact not completely excluded",
+   "location": "Left supraclavicular fossa, just above the medial-to-mid left clavicle, medial to the L marker",
+   "zh": "左鎖骨上區成簇細小線狀金屬密度影，疑為手術夾（淋巴結切片／切除術後），不完全排除體外偽影"
+  },
+  {
+   "type": "Laterality marker 'L' (external)",
+   "location": "Image top-right corner, projected over the patient's left shoulder, outside the thorax",
+   "zh": "影像右上角之左側標記「L」（患者體外）"
+  },
+  {
+   "type": "Rectangular film label / identifier marker with ring emblem (external)",
+   "location": "Image top-right corner, lateral to the L marker over the left shoulder",
+   "zh": "影像右上角之矩形片籤／識別標記（含環形圖案，患者體外）"
+  }
+ ],
+ "other_findings": [
+  "左中下肺野外側、左肺門外側另一顆約3公分、邊界清楚之圓形腫塊",
+  "疑另有數顆約1公分之小結節（右中肺野、左肺門周圍），整體呈雙側多發性腫塊／結節，需考慮轉移性病灶",
+  "雙側肺門增大、呈分葉狀，疑肺門淋巴結腫大；右氣管旁縱膈稍飽滿，無法排除縱膈淋巴結腫大，但縱膈無明顯增寬、氣管居中",
+  "雙側病灶位置偏外側、密度高且大小不對稱，乳頭陰影之可能性低",
+  "心臟大小正常",
+  "兩側肋膈角銳利，無肋膜積液或氣胸；無實質浸潤",
+  "雙側肩胛骨部分重疊於上肺野外側（技術因素）；骨骼未見明顯病灶",
+  "未見胸管、引流管、中央靜脈導管或心律調節器"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標記之右側肺腫塊清楚可見（右下肺野外側貼近胸壁，約3.5公分），亦無胸管或引流管等治療器材。但左鎖骨上區可見成簇手術夾，暗示患者先前已接受鎖骨上淋巴結切片或切除手術，與「首次因肺腫塊就診」之情境相矛盾；且本片並非單一肺腫塊，而是雙側多發腫塊／結節合併雙側肺門淋巴結腫大之表現（23歲男性需考慮生殖細胞腫瘤、淋巴瘤等轉移性疾病）。較適合用於「已知或疑似轉移性疾病之分期／追蹤」情境，不宜作為首次就診單一肺腫塊之代表影像。",
+ "description_zh": "胸部正位（PA）站立X光片，吸氣深度與穿透度足夠、輕度旋轉，氣管居中，影像右上角有左側標記「L」與外部片籤，左鎖骨上區可見成簇細小線狀金屬密度影，疑為淋巴結切片術後之手術夾。右下肺野外側（中下肺野交界偏下、約第7至8後肋高度）貼近側胸壁處可見一顆邊界清楚之橢圓形腫塊，約3.5公分（範圍約3至4公分），為本片最大病灶；左中下肺野外側、左肺門外側另見一顆約3公分邊界清楚之圓形腫塊，另於右中肺野及左肺門周圍疑有數顆約1公分之小結節，整體呈雙側多發性腫塊／結節。雙側肺門增大且呈分葉狀，疑肺門淋巴結腫大，右氣管旁區稍飽滿但縱膈無明顯增寬。心臟大小正常，兩側肋膈角銳利，無肋膜積液、氣胸或實質浸潤，雙側肩胛骨部分重疊於上肺野外側，骨骼未見明顯病灶，未見胸管、引流管、導管或心律調節器等治療器材。",
+ "label_concern": "標籤「肺腫塊」正確，右側腫塊確實可見；但本片並非單一腫塊，而是雙側多發腫塊／結節合併雙側肺門淋巴結腫大，較符合轉移性病灶或淋巴瘤之表現。另放射科框選之「中肺野」係依影像高度三等分換算，解剖上病灶位於右下肺野外側（中下肺野交界），兩位讀片者皆判為下肺野。"
+}

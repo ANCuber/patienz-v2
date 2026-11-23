@@ -1,0 +1,47 @@
+{
+ "view": "PA (frontal) chest radiograph, erect; L side marker at image upper right confirms conventional orientation",
+ "technical_quality": "Adequate. No significant rotation (spinous processes midline between clavicular heads). Inspiration slightly shallow (approx. 8-9 posterior ribs visible). Penetration adequate with thoracic spine faintly visible through the heart. Both costophrenic angles and lung apices included. Scapulae partially project over the upper lateral lung fields. A black vertical bar at the far left image edge is a digital/collimation artifact.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "External round radiopaque marker (lead disc/button)",
+   "location": "Image upper right, over the patient's left shoulder/axillary soft tissue, outside the lung field"
+  },
+  {
+   "type": "Side marker 'L' with small annotation",
+   "location": "Image upper right, patient's left shoulder region"
+  },
+  {
+   "type": "Digital image artifact (black collimation/edge bar)",
+   "location": "Far left image edge, outside the patient"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Prominent, dense left hilum with a somewhat lobulated contour, larger than the right hilum; likely prominent left pulmonary artery but a hilar mass or lymphadenopathy cannot be excluded on this single view",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent and tortuous aortic knob / unfolded thoracic aorta, consistent with age-related aortic ectasia and atherosclerosis",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly increased bronchovascular / reticular markings in the right perihilar and mid zone; no frank consolidation, air bronchogram or nodule identified",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Bilateral large breast shadows overlying the lower zones, producing mild symmetric increased density at both lung bases (soft-tissue overlap, not a parenchymal lesion)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面站立胸部X光，攝影品質尚可，無明顯旋轉，吸氣稍淺；片右上方可見L側標記與一圓形金屬外部標記，片左緣黑色遮蔽帶為影像偽影，未見任何胸管、導管或心律調節器。心臟大小正常，氣管居中，主動脈弓突出且迂曲；左側肺門較右側飽滿緻密、輪廓略呈分葉狀，以肺動脈突出為可能，但無法完全排除肺門腫塊或淋巴結腫大，建議與臨床及CT對照。右側中肺野支氣管血管紋理輕度增加，未見明確肺實質化、結節、氣胸或肋膜積液，兩側肋膈角銳利，橫膈輪廓清楚，左側橫膈下可見胃泡。雙側乳房陰影重疊於下肺野，骨骼結構未見明顯骨折或破壞性病灶。"
+}

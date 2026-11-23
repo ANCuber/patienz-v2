@@ -1,0 +1,59 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film; L marker present at image top-right confirming conventional orientation; minimal rotation, adequate penetration (spine visible through the mediastinum); right hemidiaphragm elevated with reduced right lung volume, left side adequately inspired.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 10,
+ "devices": [
+  {
+   "type": "Median sternotomy wires (approximately 6, double loop at the manubrium)",
+   "location": "Midline, projected over the sternum/upper-mid thoracic spine"
+  },
+  {
+   "type": "Multiple surgical staple lines (lung resection)",
+   "location": "Right lung, upper, middle and lower zones, including a curved line from right upper lateral lung toward the hilum and lines along the right lower lateral lung and right cardiac border"
+  },
+  {
+   "type": "Surgical vascular clips (several short linear clips)",
+   "location": "Right hilum"
+  },
+  {
+   "type": "Three short linear metallic densities (skin staples / clips)",
+   "location": "Right upper lateral chest wall soft tissue, near axilla"
+  },
+  {
+   "type": "Tiny irregular metallic-density speck, uncertain significance (possible small clip or film artifact)",
+   "location": "Left costophrenic angle, lateral"
+  },
+  {
+   "type": "Radiographic side marker 'L' with lead marker",
+   "location": "Image top-right, over patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Band of pleural thickening (about 1 cm thick) along the lateral chest wall with blunting of the costophrenic angle",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Reduced right lung volume with elevated right hemidiaphragm",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Post-surgical changes: multiple parenchymal staple lines and hilar clips consistent with prior right lung resection; sternotomy wires",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Mild hazy increased density in the right lower zone adjacent to the elevated hemidiaphragm (post-operative/pleural)",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.78,
+ "description_zh": "PA 正面胸部X光,影像右上可見 L 側標記。可見胸骨正中切開術鋼絲約 6 條,右肺上、中、下區有多條手術釘合線及右肺門血管夾,右上側胸壁軟組織另見三枚線狀金屬密度(皮膚釘或夾),顯示右側曾接受肺部手術。右側肺容積減少、右橫膈上抬,右肋膈角變鈍,右下側胸壁沿肋骨內緣可見約 1 公分寬的帶狀軟組織密度,符合右側胸膜增厚,以下肺區為主並向中肺區延伸,縱向範圍約 10 公分。左肺清晰、左肋膈角銳利(僅肋膈角處一微小金屬密度點,意義不明),心臟大小在正常範圍,未見氣胸、肋膜積液或胸管。"
+}

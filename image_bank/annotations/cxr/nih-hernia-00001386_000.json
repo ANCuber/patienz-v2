@@ -1,0 +1,43 @@
+{
+  "id": "nih-hernia-00001386_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate: upright PA, 'L' side marker at image upper-right confirms conventional orientation; no significant rotation (clavicular heads roughly symmetric about the spinous processes); penetration adequate (thoracic spine faintly seen through the heart); apices and both costophrenic regions included; scapulae partly project over the lateral lung fields. Inspiration adequate on the left (about 9 posterior ribs) but not assessable on the right because of the markedly elevated right hemidiaphragm; lower thoracic spine obscured by the dense upper abdomen.",
+  "target": {
+    "finding": "diaphragmatic hernia",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 15,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "External 'L' side marker with technologist initials 'GA' (external artifact, not a patient device)",
+      "location": "Image upper-right corner, over the patient's left shoulder soft tissues",
+      "zh": "外置左側（L）標記牌及技師縮寫（影像右上角，非病人體內裝置）"
+    }
+  ],
+  "other_findings": [
+    "右心緣被抬高之右橫膈遮蔽（silhouette sign），心影邊緣性擴大（心胸比約0.55），惟受右橫膈上抬影響不易準確評估",
+    "主動脈弓突出、迂曲，主動脈結明顯，左上縱膈輪廓增寬（年齡相關性擴張）",
+    "左橫膈位置正常，其下方見胃及結腸脾曲明顯脹氣，內容呈斑駁狀（糞便／食物殘渣）",
+    "左心後脊椎旁近橫膈處圓形氣體透亮影，最可能為胃底，未見明確心後氣液面，惟裂孔疝氣不能完全排除（建議側面片）",
+    "右側抬高橫膈下方近脊椎處小片不規則氣體透亮影，為腸氣（肝曲／十二指腸），Chilaiditi徵象不能排除",
+    "右外側肋膈角尚尖銳，但因橫膈抬高評估受限，少量肺下積液無法完全排除",
+    "右下肺野被遮蔽，可能合併右下肺壓迫性肺擴張不全",
+    "兩側其餘肺野清晰，無實質化、氣胸或肺結節；骨骼未見急性病變"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "右側橫膈明顯抬高並伴大片圓頂狀均勻軟組織影，符合右側橫膈疝氣（可能含肝臟）之影像表現，清楚可見；全片無任何導管、引流管、心臟裝置或手術後變化，影像上亦無與初次就診相矛盾之線索。惟單張PA片無法與橫膈膨升或膈神經麻痺區分，案例設計時宜以報告文字或CT確認診斷。",
+  "description_zh": "站立PA正面胸部X光，無明顯旋轉、穿透度適當，僅見外置左側（L）標記牌，未見任何導管、引流管、導線或植入裝置。右側橫膈明顯抬高，較左側高約5公分，右下肺野可見大片邊緣平滑之圓頂狀均勻軟組織密度影，橫徑約15公分，上緣約達右肺門／第4–5前肋高度，右心緣因此被遮蔽，右外側肋膈角尚尖銳；影像表現符合右側橫膈疝氣（可能含肝臟）或橫膈膨升，單張PA片難以區分。心影邊緣性擴大（心胸比約0.55，受右橫膈上抬影響不易準確評估），主動脈弓突出迂曲。左橫膈位置正常，其下方見胃及結腸脾曲脹氣並呈斑駁狀內容，左心後脊椎旁近橫膈處見圓形氣體透亮影，最可能為胃底，未見明確心後氣液面；右抬高橫膈下方近脊椎處另見小片腸氣。兩側其餘肺野清晰，無實質化、氣胸、肋膜積液或結節，骨骼無急性病變。",
+  "label_concern": "右側橫膈明顯抬高伴均勻軟組織影，符合橫膈疝氣（可能含肝臟），但單張PA片無法與橫膈膨升或膈神經麻痺區分（盲讀者B以膨升／膈神經麻痺為首要考量）；另NIH「Hernia」標籤多指裂孔疝氣，本片心後左側僅見疑似胃底氣體影、無明確心後氣液面，標籤所指部位無法確定。"
+}

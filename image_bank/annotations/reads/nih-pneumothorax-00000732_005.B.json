@@ -1,0 +1,61 @@
+{
+ "view": "AP portable frontal chest radiograph (supine/semi-erect), L marker on the image right confirming conventional orientation",
+ "technical_quality": "Limited: portable AP projection in a large-habitus patient with low inspiratory lung volumes; bilateral breast shadows overlie the lower zones; slight rotation; multiple external leads/tubing overlie the thorax. Both apices and lateral chest walls are included; costophrenic angles partly obscured by soft tissue.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "lower",
+ "size_cm": 20,
+ "devices": [
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "patient's right anterolateral chest wall, projected over the right mid/lower zone"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "patient's left upper chest wall, projected over the left upper zone"
+  },
+  {
+   "type": "External lead wires / tubing (oxygen tubing or monitor cable)",
+   "location": "coursing over the left mediastinal border and left lateral hemithorax, and looping over the right lower chest and upper abdomen"
+  },
+  {
+   "type": "Side marker 'L' (AP PORTABLE annotation)",
+   "location": "image right upper corner, patient's left shoulder"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Cardiomegaly (cardiothoracic ratio approx 0.58 on AP projection; partly magnified by technique)",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Widened/prominent upper mediastinum with tortuous (unfolded) aorta, likely age- and projection-related",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Increased bibasilar interstitial/vascular markings, more prominent in the right perihilar and lower zone (mild vascular congestion or bibasilar atelectasis)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Hazy left basal opacity with obscured left costophrenic angle and partially obscured left hemidiaphragm, suspicious for small left pleural effusion and/or basal atelectasis",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Low lung volumes with elevated hemidiaphragms",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative changes of both glenohumeral joints and diffuse osteopenia",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "AP portable 胸部X光，病人體型較大、吸氣量不足，雙側乳影重疊於下肺野，影像品質受限；可見雙側胸壁心電圖電極及導線、上腹部與左側胸壁外來管線，未見胸管、中央靜脈導管、氣管內管或心律調節器。心影擴大（AP 投影下 CTR 約 0.58），上縱膈稍寬且主動脈迂曲，可能與年齡及投影方式有關。雙側下肺野血管及間質紋理增加，以右側肺門周圍較明顯；左下肺野呈模糊陰影並伴左側肋膈角不清，疑似少量肋膜積液或肺底塌陷。未見明確氣胸線、實質性腫塊或肋骨骨折，雙側肩關節呈退化性變化。"
+}

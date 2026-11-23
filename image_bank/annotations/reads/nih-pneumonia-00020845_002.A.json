@@ -1,0 +1,63 @@
+{
+ "view": "Frontal chest radiograph (recorded PA; appearance suggests AP/portable technique — scapulae projected over lung fields, multiple monitoring cables; left-side marker at image upper right with mirrored lettering, heart apex to image right, conventional orientation)",
+ "technical_quality": "Limited. Both scapulae overlie the upper/mid lung fields; numerous ECG cables/external tubing coil over the thorax; large bilateral breast shadows obscure the lower zones and costophrenic angles. Mild rotation, roughly adequate inspiration and penetration (spine visible through upper mediastinum).",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "ECG electrode",
+   "location": "right lower anterior chest wall (image left, ~x235/y545)"
+  },
+  {
+   "type": "ECG electrode",
+   "location": "lower midline / precordial over lower sternum-spine (~x485/y560)"
+  },
+  {
+   "type": "ECG electrode",
+   "location": "left mid chest over cardiac apex region (~x625/y550)"
+  },
+  {
+   "type": "ECG lead cables (multiple, coiled)",
+   "location": "loops projected over the cardiac silhouette and left lower hemithorax, plus vertical cables over right lower chest / upper abdomen (image left)"
+  },
+  {
+   "type": "external tubing / cable (straight, likely oxygen tubing or lead wire)",
+   "location": "runs diagonally from the right upper chest (near right clavicle) down and laterally off the right lower chest / abdomen (image left), external to the patient"
+  },
+  {
+   "type": "external cable",
+   "location": "curving along the left lateral lower chest wall / axillary soft tissue (image right)"
+  },
+  {
+   "type": "side marker",
+   "location": "image upper right (patient left), mirrored 'L' with mirrored lettering"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined patchy airspace opacity in the medial right lower zone, adjacent to the right heart border and above the right hemidiaphragm — consistent with the labelled pneumonia (approx. 8 cm)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild cardiomegaly / prominent cardiac silhouette (CTR roughly 0.55-0.58); may be partly exaggerated by AP projection",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Large bilateral breast shadows overlying both lower zones; costophrenic angles not clearly assessable, small effusion cannot be excluded",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Possible subtle retrocardiac density in the left lower zone, indeterminate given overlying cable loop",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光，雙側肩胛骨重疊於肺野，胸前可見三枚心電圖電極貼片、多條纏繞之導線及一條斜行外部管線，影像判讀受限。右下肺野內側（近右心緣、橫膈上方）可見邊界不清之斑片狀實質浸潤，範圍約8公分，符合肺炎表現；左肺野大致清晰，左下後心區密度略增但因導線重疊難以確認。心影略為擴大（心胸比約0.55–0.58，可能部分為AP投照放大所致），雙側乳房陰影重疊於下肺野，肋膈角顯示不清，無法完全排除少量肋膜積液。未見胸管、中心靜脈導管、氣管內管或心律調節器。"
+}

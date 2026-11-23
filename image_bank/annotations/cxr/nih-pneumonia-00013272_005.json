@@ -1,0 +1,47 @@
+{
+ "id": "nih-pneumonia-00013272_005",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate upright PA film; 'L' side marker with technologist initials over the patient's left shoulder confirms conventional orientation. Adequate penetration and inspiration, mild rotation/tilt with the left shoulder elevated, scapulae partially overlap the upper lateral lung fields. A metallic necklace pendant projects over the left mid zone and partially obscures that region; slight burn-out at the right image margin (patient's left axilla).",
+ "target": {
+  "finding": "pneumonia",
+  "visible": "uncertain",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 6,
+  "confidence": 0.45
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "left"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "Necklace with ring-shaped metallic pendant (bail with two eyelets, thin chain extending superiorly toward the left neck); external artifact, not a medical device. ECG snap electrode was raised as a differential but the chain and bail favour a pendant.",
+   "location": "Projected over the patient's left mid zone, lateral and slightly inferior to the left hilum, at about the 5th-6th anterior rib level",
+   "zh": "項鍊金屬環形墜飾（體外異物，細鍊向上延伸至左頸），投影於左中肺野、左肺門外下方"
+  },
+  {
+   "type": "Radiographic side marker 'L' with technologist initials (external marker)",
+   "location": "Upper right corner of the image, over the patient's left shoulder soft tissue",
+   "zh": "「L」側別標記（含技師縮寫），位於影像右上角、患者左肩軟組織上方"
+  }
+ ],
+ "other_findings": [
+  "右側橫膈明顯抬高（約高於左側 4 公分），輪廓平滑，頂點略偏外側；鑑別包括橫膈膨出／膈神經無力、肺下積液或右下肺容積減少",
+  "右下肺野內側、抬高之橫膈上方見血管紋理擠壓伴輕度朦朧密度，右心緣稍顯不清；較可能為橫膈抬高造成之擠壓或次節段性肺不張，早期浸潤不能完全排除（低信心）",
+  "右肺門較左側略顯突出／密度增加（可能為血管性，低信心）",
+  "雙側肺門周圍支氣管血管紋理略增粗，右側較左側明顯",
+  "主動脈弓略顯突出／延展，可能與年齡相關；氣管居中，縱膈未增寬",
+  "輕度旋轉／傾斜，左肩略抬高；兩側肩胛骨部分重疊於上肺野外側（擺位因素）",
+  "心臟大小正常，兩側肋膈角銳利，無氣胸或肋膜積液"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標記之左下肺浸潤僅淡薄可疑，需局部對比強化才勉強可辨；兩位獨立讀片者皆未於左側辨識出病灶，反而將較明顯之異常（右橫膈抬高伴右下肺野血管擠壓）定位於對側，初學者極易被誤導。項鍊墜飾亦部分遮蔽左中肺野。雖無胸管、引流管或任何治療裝置，但因目標病灶能見度不足且對側有更醒目的干擾性異常，不適合作為肺炎初次就診之教學影像。",
+ "description_zh": "胸部正面（PA）站立片，「L」側別標記（含技師縮寫）位於患者左肩上方，穿透與吸氣量足夠，輕度旋轉且左肩略抬高，兩側肩胛骨部分重疊於上肺野外側；左中肺野外側（左肺門外下方、約第 5-6 前肋處）投影一枚環形金屬項鍊墜飾及向上延伸之細鍊，屬體外異物，部分遮蔽該區。左下肺野外側基底部（左側橫膈上方）可見淡薄、邊界不清之斑片狀模糊密度增加伴支氣管血管紋理增粗，範圍約 5-6 公分，表現輕微，左側橫膈輪廓與左肋膈角仍清晰，符合早期／輕度左下肺浸潤。右側橫膈明顯抬高（約高於左側 4 公分），輪廓平滑，右下肺野內側橫膈上方見血管紋理擠壓與輕度朦朧密度，右心緣稍顯不清，較可能為橫膈抬高造成之擠壓或次節段性肺不張；右肺門略顯突出，雙側肺門周圍支氣管血管紋理略增粗。心臟大小正常，主動脈弓略顯突出，氣管居中、縱膈未增寬，無氣胸或肋膜積液，未見胸管、引流管或其他治療裝置。",
+ "label_concern": "標記為左下肺野肺炎，但病灶淡薄、僅在局部對比強化下可辨；兩位獨立讀片者（含未被告知標籤者）皆將較明顯之異常定位於右下肺野（右橫膈抬高伴血管擠壓／可能次節段性肺不張）。標籤方向依放射科醫師框選判為左側，惟能見度低，建議人工複核。"
+}

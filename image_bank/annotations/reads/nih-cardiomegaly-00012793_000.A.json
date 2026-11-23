@@ -1,0 +1,44 @@
+{
+ "view": "PA (frontal), erect; lead marker in upper-right image corner (rotated \"M2\"-type film marker, not an L/R side marker) - conventional orientation assumed",
+ "technical_quality": "Adequate penetration and centring, no significant rotation. Inspiration is shallow (only ~5-6 anterior ribs visible), with both hemidiaphragms elevated - this magnifies the cardiac silhouette and crowds the perihilar vessels, so cardiac size should be judged with caution. Scapulae partially overlap the upper lateral lung fields.",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 16,
+ "devices": [
+  {
+   "type": "radiographic lead film marker (rotated 'M2'-style; not an L/R marker)",
+   "location": "upper-right corner of the image, over patient's left shoulder region, outside the lung field"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Borderline / mildly enlarged, horizontally oriented, globular cardiac silhouette (transverse cardiac diameter ~16 cm, CTR ~0.48-0.50); may be partly accentuated by shallow inspiration",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent / unfolded aortic knob with mild widening of the upper mediastinum (likely aortic ectasia/tortuosity, accentuated by low lung volumes)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Shallow inspiration with elevated hemidiaphragms; right hemidiaphragm higher than left by roughly 2-3 cm (probably positional/low-volume, no focal contour abnormality)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly accentuated perihilar / bronchovascular markings, more evident at the right hilum; no focal consolidation, mass, nodule, or interstitial oedema",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Costophrenic angles sharp - no pleural effusion; no pneumothorax; gastric fundal air bubble under the left hemidiaphragm is normal",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 胸部正面片，吸氣不足（前肋約可見 5-6 根），雙側橫膈上抬，右側橫膈較左側高約 2-3 公分。心影呈橫位、輪廓略呈球形，心胸比約 0.48-0.50，屬臨界至輕度擴大，但可能因吸氣不足而被放大；主動脈結突出，上縱膈略寬，疑主動脈迂曲。雙側肺門血管紋理略增加（右側較明顯），肺野未見明確浸潤、結節或實質病灶，雙側肋膈角銳利，無胸腔積液或氣胸，左橫膈下可見正常胃泡。未見任何導管、引流管、節律器或手術夾，僅影像右上角有一鉛字標記。"
+}

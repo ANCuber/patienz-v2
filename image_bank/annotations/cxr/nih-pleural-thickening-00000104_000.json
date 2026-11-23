@@ -1,0 +1,52 @@
+{
+  "id": "nih-pleural-thickening-00000104_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect PA film: full inspiration, minimal rotation, adequate penetration, apices and both costophrenic angles included with field of view extending into the upper abdomen. Large bilateral breast shadows overlie the lower zones and reduce conspicuity of both bases, particularly the lateral costophrenic angles. Side marker with technologist initials and an L-type element projected over the upper corner on the patient's left, supporting conventional orientation.",
+  "target": {
+    "finding": "pleural thickening",
+    "visible": "yes",
+    "laterality": "left",
+    "zone": "lower",
+    "size_cm": 7,
+    "confidence": 0.65
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "left",
+    "reader_b": "left",
+    "adjudicator": "left"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "multiple metallic surgical clips (cholecystectomy-type cluster)",
+      "location": "right upper quadrant of the abdomen, subhepatic, just below the right hemidiaphragm to the right of the spine",
+      "zh": "右上腹肝下區多枚金屬手術夾（膽囊切除術型）"
+    },
+    {
+      "type": "multiple metallic surgical clips",
+      "location": "left upper quadrant of the abdomen, medial to the gastric fundus near the gastro-oesophageal junction, to the left of the spine",
+      "zh": "左上腹胃底內側（近胃食道交界）多枚金屬手術夾"
+    },
+    {
+      "type": "external radiographic side marker with technologist initials (L)",
+      "location": "upper corner of the image on the patient's left, above the left shoulder (external, not on patient)",
+      "zh": "影像左上方（病人左側肩部上方）外部鉛字側別標記（L）與技師縮寫"
+    }
+  ],
+  "other_findings": [
+    "右側下外側胸壁可疑極薄的胸膜密度，遠不如左側明顯，右側肋膈角銳利；多為乳房軟組織重疊所致，無法完全排除輕微胸膜增厚",
+    "雙側肺尖疑有極輕微胸膜帽狀增厚，左側略明顯（低信心，可能為年齡相關變化）",
+    "主動脈弓略為突出、胸主動脈輕度迂曲，氣管居中，縱膈無增寬（符合年齡變化）",
+    "上腹部術後變化：橫膈下雙側脊椎旁多枚手術夾（右上腹肝下區及左上腹胃底附近），符合先前膽囊切除及上腹部／胃食道交界手術",
+    "雙側大型乳房陰影重疊於下肺野，降低雙側肺底的判讀清晰度",
+    "心臟大小正常（CTR約0.4），雙側肺野未見實質浸潤、結節、腫塊或氣胸，未見明顯肋膜積液",
+    "左橫膈下可見正常胃泡，骨骼未見急性病灶"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標的病灶（左側下外側胸壁胸膜增厚）於影像上可見，雖屬輕度且部分被乳影遮蔽，但兩位判讀者皆獨立於同側同區找到。片上無胸管、引流管或任何針對胸膜病灶的治療裝置。上腹部手術夾為既往腹部手術之痕跡，與首次因胸膜增厚就診的情境並不矛盾，故適合作為首次就診的影像。",
+  "description_zh": "胸部正面X光（PA），吸氣充足、無明顯旋轉、穿透度適當，影像右上角可見「L」側別標記與技師縮寫，方向為常規擺位；雙側大型乳房陰影重疊於下肺野。左側外側胸壁自中肺野延伸至下肺野可見平滑帶狀的輕度胸膜增厚，厚約0.5公分、上下範圍約7公分，左側肋膈角部分被乳影遮蔽而略顯模糊；右側下外側胸壁僅有極不明顯的類似薄層密度，右側肋膈角銳利，雙側肺尖疑有極輕微的胸膜帽狀增厚。心臟大小正常，氣管居中，主動脈弓略為突出迂曲，符合年齡變化；雙側肺野未見實質浸潤、結節、腫塊、氣胸或明顯肋膜積液。橫膈下方雙側上腹部（右上腹肝下區及左上腹胃底附近）可見多枚金屬手術夾，左橫膈下見正常胃泡，骨骼未見急性病灶；未見胸管、引流管或其他治療裝置。",
+  "label_concern": ""
+}

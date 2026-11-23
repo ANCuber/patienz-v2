@@ -1,0 +1,43 @@
+{
+ "view": "PA (frontal, erect); L side marker at image upper right confirms conventional orientation",
+ "technical_quality": "Adequate inspiration (~8-9 posterior ribs), minimal rotation, adequate penetration; image somewhat grainy/noisy with low contrast; both costophrenic angles and apices included; marker text partially cut off at upper-right corner",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "Radiographic side marker 'L' (external lettering, not a medical device)",
+   "location": "Image upper right, over patient's left shoulder soft tissue"
+  },
+  {
+   "type": "Rotated/partially cut-off lettering marker ('LDMD'-like, external artifact)",
+   "location": "Extreme upper-right corner of image, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined patchy airspace opacity along the lower left heart border extending toward the medial left hemidiaphragm, partially obscuring the lower left cardiac border (lingular / left lower lobe distribution) - the labelled pneumonia; left costophrenic angle remains clear",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left perihilar increased density / hazy hilar prominence contiguous with the lower zone opacity",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Coarse, increased bronchovascular / reticulonodular markings without dense consolidation (peribronchial thickening pattern); right hemidiaphragm and costophrenic angle sharp",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Upper mediastinum appears mildly broad for age - likely residual thymic tissue or mild projection effect; no discrete mass",
+   "laterality": "none",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "胸部正面(PA)X光片,右上方可見「L」側別標記,方位正常。左下肺野心臟旁可見邊界不清之斑片狀浸潤陰影,部分模糊左下心緣及左橫膈內側,範圍約7公分,分布符合舌葉/左下葉肺炎;左肺門區亦稍顯模糊增濃,左肋膈角尚清晰。右肺野支氣管血管紋理粗糙增加,但未見明確實質化,右橫膈及右肋膈角清晰。心臟大小正常、氣管居中,未見氣胸、肋膜積液,亦未見任何導管、引流管或植入物。"
+}

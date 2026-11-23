@@ -1,0 +1,47 @@
+{
+ "view": "PA (erect frontal), conventional orientation confirmed by anatomy (higher right hemidiaphragm, cardiac apex/aortic knob to patient's left, gastric bubble under left hemidiaphragm); lead R marker at right shoulder has mirror-imaged lettering (marker placed backwards, not a flipped image)",
+ "technical_quality": "Adequate: good inspiration (~9 posterior ribs), adequate penetration (spine visible through heart), no significant rotation. Large body habitus with bilateral breast shadows overlying the lower zones and partially obscuring the right costophrenic angle.",
+ "target_finding_visible": "no",
+ "laterality": "right",
+ "zone": "uncertain",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Small-bore pleural drainage catheter (thin ~1.5-2 mm radiopaque line, straight tapered tip, no pigtail coil seen); course is typical of an apically directed right chest drain, although an overlying external lead cannot be completely excluded on a single view",
+   "location": "Right hemithorax: appears to enter at the right lower lateral chest wall near the costophrenic angle level, runs obliquely superomedially across the right lower and middle zones (briefly obscured by the right hilar shadow), tip at the right medial apex / right paratracheal region at about T3-T4 abutting the right upper mediastinal border; the external segment continues over the right breast and right upper abdomen to exit the image at the lower-left corner"
+  },
+  {
+   "type": "Lead side marker 'R' with technologist initials (JFC) on a paper-clip holder, lettering mirror-imaged",
+   "location": "Right shoulder region (image upper left), over the acromioclavicular area"
+  },
+  {
+   "type": "Two short (~1.5-2 cm) vertical linear radiopaque densities, likely external artifacts (staple/clip-like), indeterminate",
+   "location": "Right flank / lateral right upper abdomen, below the right hemidiaphragm and lateral to the rib cage"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "No visceral pleural line identified on either side; lung markings extend to the chest wall in all zones. No residual pneumothorax is discernible on this film (the right-sided drain implies a treated right pneumothorax)",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Mildly prominent/dense right hilar shadow, most likely vascular with overlap of the catheter; no discrete mass",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent, unfolded aortic knob, age-appropriate; trachea and mediastinum midline, no mediastinal shift, heart size normal (CTR < 0.5)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "No consolidation, pleural effusion or pulmonary edema; costophrenic angles sharp (right partly obscured by breast shadow); no rib fracture seen",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.35,
+ "description_zh": "PA 直立胸部X光，吸氣深度及曝光適當，無明顯旋轉，右肩處可見 R 側標記（字樣呈鏡像，為標記放置方向所致，解剖結構證實為常規方位）。右側胸腔可見一細口徑肋膜引流導管，自右下側胸壁斜向上內走行，末端位於右肺尖內側／右氣管旁約 T3–T4 高度，體外段延伸至影像左下角；兩側肺紋理皆延伸至胸壁，未見明確臟層肋膜線，本片無法辨識殘餘氣胸。心臟大小正常，氣管與縱膈居中，主動脈弓稍顯突出（與年齡相符），兩側肋膈角銳利，未見肺實變或肋膜積液；右側腰部另見兩枚短線狀高密度影，疑為體外物。"
+}

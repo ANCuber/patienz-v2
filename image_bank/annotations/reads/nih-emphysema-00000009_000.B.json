@@ -1,0 +1,57 @@
+{
+ "view": "Frontal (PA) chest radiograph, erect; 'L' side marker with technologist initials 'DG' projected over the patient's left shoulder (image upper right), confirming conventional orientation",
+ "technical_quality": "Adequate inspiration with apices and both costophrenic angles included. Mildly rotated (sternotomy wires/sternum project to the patient's right of the thoracic spine, mediastinal contours accentuated). High-contrast/relatively penetrated processing: lungs render very dark while bones are bright, which limits assessment of subtle lung parenchymal detail. Scapulae partly overlap the lateral upper lung fields. Overall diagnostic.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "whole",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Median sternotomy cerclage wires (8 wires: 4 upper loop wires and 4 lower twisted wires), intact, no fracture or displacement",
+   "location": "Anterior midline chest / sternum, projecting slightly to the patient's right of the thoracic spine due to rotation, from the manubrium to the lower sternum"
+  },
+  {
+   "type": "Ring-shaped metallic marker ~0.9-1.0 cm (consistent with coronary bypass graft marker or surgical clip)",
+   "location": "Projected over the right hilum / medial right middle zone, adjacent to the right cardiomediastinal border, just to the patient's right of the sternotomy wires"
+  },
+  {
+   "type": "External radiographic side marker 'L' with initials 'DG'",
+   "location": "Over the patient's left shoulder / acromioclavicular region (image upper right)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Bilateral hyperlucent lungs with attenuated, sparse peripheral vascular markings, most marked in the upper zones, suggestive of emphysema; diaphragmatic doming preserved so frank hyperinflation is not marked. No focal consolidation, mass or pneumothorax.",
+   "laterality": "bilateral",
+   "zone": "whole (upper-zone predominant)"
+  },
+  {
+   "finding": "Prominent, bulging aortic knob / unfolded thoracic aorta with widening of the upper-left mediastinal contour (likely tortuous/ectatic aorta in an elderly patient; partly accentuated by rotation). Trachea midline.",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Heart size borderline/upper limit of normal (estimated CTR ~0.48-0.50), left heart border reaching far laterally; assessment limited by rotation. Post median sternotomy / probable prior CABG.",
+   "laterality": "midline (left heart border prominent)",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild coarse reticular/interstitial markings at the medial right lung base near the cardiophrenic angle, possibly scarring or minor subsegmental atelectasis; right costophrenic angle sharp, no effusion.",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left glenohumeral joint: humeral head appears superiorly positioned relative to the glenoid with possible narrowing of the acromiohumeral interval / degenerative change; limited by positioning. Right shoulder grossly intact.",
+   "laterality": "left",
+   "zone": "upper (extrathoracic, shoulder)"
+  },
+  {
+   "finding": "Patient rotation: sternum/sternotomy wires projected to the patient's right of the spine (technical).",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面（PA）站立胸部X光，可見左側「L」標記，影像稍有旋轉且對比偏強。胸骨正中可見8條完整之胸骨鋼絲，右肺門內側緊鄰右心縱膈緣處另見一約1公分之環狀金屬標記，符合冠狀動脈繞道手術後之移植血管標記或手術夾，未見胸管或引流管。雙肺透亮度增加、周邊血管紋理稀疏（以上肺野較明顯），懷疑肺氣腫；橫膈仍呈圓頂狀、無明顯過度充氣，未見肺實質浸潤、腫塊、肋膜積液或氣胸，雙側肋膈角銳利。主動脈弓突出、上縱膈左側輪廓增寬（疑為老年性主動脈迂曲，部分受旋轉影響），心影大小約在正常上限（CTR約0.48–0.50）；右肺底內側有輕微粗網狀紋理，左肩盂肱關節疑有退化性變化。"
+}

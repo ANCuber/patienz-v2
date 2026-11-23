@@ -1,0 +1,36 @@
+{
+ "id": "nih-effusion-00000076_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate. Erect PA frontal film, L marker on image right (conventional orientation, no L/R reversal). Trachea midline with minimal rotation, adequate inspiration (about 6 anterior ribs) and adequate penetration (spine faintly visible through the heart). Apices and both costophrenic angles included; the scapulae partially project over the upper lateral lung fields. No external artifacts.",
+ "target": {
+  "finding": "pleural effusion",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 7.0,
+  "confidence": 0.85
+ },
+ "laterality_sources": {
+  "bbox": null,
+  "reader_a": null,
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [],
+ "other_findings": [
+  "左肺底於積液後方疑有伴隨之肺塌陷／實質化（肺底與積液無法分離），信心度中等",
+  "心影擴大，心胸比約0.55–0.60",
+  "胸主動脈迂曲、主動脈結突出，屬年齡相關變化，主動脈壁可能有鈣化",
+  "右肺門略顯突出且邊緣稍不清（肺動脈擴大或肺門淋巴結腫大），不確定",
+  "右下肺野支氣管血管紋理增加、輕度擁擠，右側肋膈角大致保留，無明顯右側肋膜積液",
+  "右上肺野外側靠近肋骨處見一約1.5公分之小片環狀／弧形鈣化影，多為良性（鈣化肉芽腫或肋軟骨鈣化）",
+  "未見氣胸、肺部腫塊或明顯骨折"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記所見（左側中等量肋膜積液）於影像上清楚可見，側別與盲讀者一致；片中無胸管、引流管或任何治療性裝置，亦無引流後徵象。心影擴大與主動脈迂曲屬慢性背景變化，不與初次以肋膜積液就診的情境衝突，適合作為初次表現之影像。",
+ "description_zh": "正面胸部X光（PA），氣管居中，吸氣深度與穿透度適當，未見任何管路、導線、節律器或體外裝置。左下肺野見均質性緻密影，外側上緣呈新月狀沿胸壁向上延伸，左側肋膈角消失、左橫膈面完全模糊，符合中等量左側肋膜積液，於側胸壁量測垂直高度約7公分，其後方之左下肺可能合併肺塌陷或實質化。右側肋膈角大致保留，右下肺野支氣管血管紋理略增加並輕度擁擠，未見右側積液或氣胸。心影擴大（心胸比約0.55–0.60），胸主動脈迂曲、主動脈結突出，右肺門略顯突出且邊緣稍不清。右上肺野外側近肋骨處另見一約1.5公分之環狀鈣化影，多為良性肉芽腫或肋軟骨鈣化，骨骼結構未見明顯骨折或溶骨病灶。",
+ "label_concern": ""
+}

@@ -1,0 +1,38 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration (~9 posterior ribs), minimal rotation, adequate penetration, apices and both costophrenic angles included; an L-type side marker with initials is present at the image upper right, consistent with conventional orientation.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 3,
+ "devices": [
+  {
+   "type": "oblique linear density (probable skin fold or external line/tubing artifact; not a chest tube)",
+   "location": "projected over the left hemithorax, running from the medial left clavicle obliquely down to the left lateral lower chest wall"
+  },
+  {
+   "type": "side marker (L-type marker with technologist initials)",
+   "location": "image upper right corner, outside the patient"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "blunting of the costophrenic angle with hazy basal density, consistent with a small pleural effusion",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "mildly elevated hemidiaphragm with prominent gastric air bubble and colonic gas beneath it",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "oblique linear opacity crossing the hemithorax, favoured to be a skin fold or external line artifact rather than intrathoracic pathology",
+   "laterality": "left",
+   "zone": "multiple"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "PA 正面胸部X光，吸氣量足夠，氣管與縱膈居中，心臟大小正常。左側肋膈角變鈍並伴有左下肺野輕微模糊密度，左側橫膈略為抬高，其下可見明顯胃泡及結腸氣體，符合少量左側肋膜積液（約3公分）。左側胸廓可見一條由左鎖骨內側斜向外下方延伸至左下側胸壁的細線狀影，較可能為皮膚皺褶或體外線路之假影，未見胸管或引流管。右肺清晰，右側肋膈角銳利，未見氣胸或肺實質病灶。"
+}

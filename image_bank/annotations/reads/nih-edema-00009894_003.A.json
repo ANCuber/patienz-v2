@@ -1,0 +1,29 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration, no significant rotation, adequate penetration, L side marker present in the image upper right corner confirming conventional orientation.",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "middle",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "L side marker (external radiographic marker, not a medical device)",
+   "location": "image upper right corner, over patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mildly increased perihilar bronchovascular markings, possible mild pulmonary vascular congestion; no Kerley B lines, peribronchial cuffing, or alveolar opacity",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent / full left hilum, possibly enlarged left pulmonary artery",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.4,
+ "description_zh": "PA 正位胸部X光，影像右上角可見「L」側別標記，吸氣量尚可，無明顯旋轉。心臟大小約在正常範圍，縱膈未見增寬，氣管居中；兩側肺門周圍支氣管血管紋理輕度增粗，左側肺門稍顯飽滿，但未見明確 Kerley B 線、支氣管周圍套袖徵或肺泡型浸潤。兩側肋膈角銳利，未見肋膜積液或氣胸，橫膈輪廓清晰，左側橫膈下可見胃泡氣體。未見任何管路、導線、心律調節器或手術夾等植入物；標籤所述之肺水腫在本片僅有輕微且不確定的肺門血管增粗表現，無法確認。"
+}

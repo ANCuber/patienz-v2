@@ -1,0 +1,38 @@
+{
+ "view": "Frontal chest radiograph (PA presumed), erect; L marker present on image right confirming conventional orientation",
+ "technical_quality": "Adequate. Inspiration adequate (~9 posterior ribs visible), penetration adequate (thoracic spine faintly visible behind the heart), minimal rotation, costophrenic angles and lung apices included. Scapulae partially project over the upper lateral lung fields.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' with radiographer initials ('HS', mirrored text)",
+   "location": "Image upper right corner, projected over the patient's left shoulder region"
+  },
+  {
+   "type": "Round radiopaque disc (external marker/identification tag artifact, not an implanted device)",
+   "location": "Adjacent to the L marker, projected over the patient's left shoulder lateral to the acromioclavicular joint"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined hazy airspace opacity with accentuated bronchovascular markings in the medial/perihilar and basal right lung, partially obscuring the right heart border; right hilum appears prominent",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Hazy retrocardiac / medial basal opacity with partial loss of the medial outline of the left hemidiaphragm (left lower lobe opacity)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded aortic knob (tortuous/ectatic thoracic aorta); cardiac silhouette at the upper limit of normal (CTR approximately 0.47-0.50)",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光片，吸氣量與穿透度尚可，無明顯旋轉；未見任何管路、導線或節律器，僅有左上角之L側標記及圓形外部標記物投影於左肩。雙上肺野及右中肺野清晰；右下肺野內側（肺門周圍至肺底）可見邊界不清之淡霧狀浸潤，支氣管血管紋理增加並部分遮蔽右心緣；左下肺野心後方及內側肺底亦見淡霧狀增加密度，左橫膈內側輪廓部分模糊。雙側肋膈角銳利，無肋膜積液或氣胸；心影大小約在正常上限，主動脈弓突出且迂曲，氣管居中；骨骼結構無急性骨折，左橫膈下可見胃泡。"
+}

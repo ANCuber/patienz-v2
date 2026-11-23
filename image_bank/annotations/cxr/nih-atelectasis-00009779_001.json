@@ -1,0 +1,46 @@
+{
+ "id": "nih-atelectasis-00009779_001",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "AP 正面胸部X光（資料庫紀錄為AP；影像左上角R側標記附技師縮寫，常規擺位，患者右側在影像左側）",
+ "technical_quality": "穿透度適當（心影後可見胸椎）；旋轉輕微（氣管與棘突居中、鎖骨大致對稱）；吸氣稍淺、肺容積偏低（約8根後肋位於橫膈上方、雙側橫膈偏高），致基底血管擁擠並使心影與上縱膈顯得稍大；雙側肺尖與肋膈角皆納入；無明顯動態模糊。肩胛骨僅部分移出肺野。",
+ "target": {
+  "finding": "atelectasis",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 4.0,
+  "confidence": 0.6
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "left"
+ },
+ "agreement": "conflict",
+ "devices": [
+  {
+   "type": "External radiographic side marker 'R' with technologist initials (not a medical device)",
+   "location": "Image upper-left corner, projected above the patient's right shoulder",
+   "zh": "體外R側標記（附技師縮寫，非醫療裝置）"
+  },
+  {
+   "type": "External coiled / spring-like metallic artifact (clothing zipper pull, snap or cable; not an implanted device)",
+   "location": "Image lower-right edge, lateral to the patient's left lower chest wall / flank, projected outside the thorax",
+   "zh": "影像右下緣患者左側腰腹部外側之螺旋狀金屬體外偽影（衣物拉鍊／扣件或線材，非體內裝置）"
+  }
+ ],
+ "other_findings": [
+  "右下肺野內側鄰近右心緣處輕度模糊密度增加與基底血管紋理聚集，右心緣下段略不清晰；兩位讀片者疑為右基底亞肺段肺擴張不全，仲裁者認為多為吸氣淺所致之血管擁擠，未見明確實質病灶或浸潤",
+  "吸氣稍淺、肺容積偏低，雙側橫膈位置偏高（技術因素，造成基底血管擁擠）",
+  "心影大小於正常上限（CTR約0.50–0.55），多因AP投影放大與吸氣淺所致",
+  "上縱膈於AP投影下稍寬，主動脈弓小，符合17歲青少年之投影放大／殘餘胸腺，非病理性",
+  "雙側肺門對稱、周圍血管紋理稍顯著，可見分支血管，符合年齡之血管性表現而非淋巴腺腫大",
+  "雙側肋膈角銳利，未見肋膜積液或氣胸；骨骼（鎖骨、肋骨、肩關節、脊椎）與軟組織未見明顯異常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標的病灶（左下肺野盤狀／板狀亞肺段肺擴張不全）於放射科醫師標註框位置可辨識，雖細微但走向橫過肋骨、非肋骨或血管影；無胸管、引流管、導管或任何治療裝置，亦無手術夾或既往治療痕跡，影像與初次就診情境相容。惟兩位AI讀片者皆未於左側辨識此病灶而判於右下肺，與標註框及仲裁結果相反，病灶細微，建議教學使用前由人工複核。",
+ "description_zh": "胸部AP正面片，影像左上角可見R側標記（附技師縮寫），擺位為常規方向；吸氣稍淺、肺容積偏低，雙側橫膈位置偏高，氣管與縱膈居中，未見胸管、引流管、中心靜脈導管或心律調節器等體內裝置，僅於影像右下緣患者左側腰腹部外側體外見一螺旋狀金屬偽影（衣物或線材）。左下肺野外側、緊鄰左橫膈上方處可見一條約4公分長、約1公分寬之橫向帶狀線性密度，走向與肋骨不平行且跨越肋間，符合左下肺盤狀（板狀）亞肺段肺擴張不全，病灶細微、需放大觀察。右下肺野內側鄰近右心緣處血管紋理稍聚集、右心緣下段略不清晰，多為吸氣淺所致之基底血管擁擠，未見明確實質浸潤。心影大小於正常上限（CTR約0.50–0.55），上縱膈於AP投影下稍寬，符合青少年之投影放大／殘餘胸腺；雙側肺門對稱、血管性稍顯著。雙側肋膈角銳利，未見肋膜積液或氣胸，骨骼與軟組織未見明顯異常。",
+ "label_concern": ""
+}

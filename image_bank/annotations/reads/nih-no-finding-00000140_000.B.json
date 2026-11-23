@@ -1,0 +1,28 @@
+{
+ "view": "frontal (PA-type) erect chest radiograph; L marker at image top-right (patient's left), conventional orientation",
+ "technical_quality": "Adequate. Minimal rotation (clavicular heads roughly symmetric about the spinous processes). Inspiration adequate (~9 posterior ribs). Slightly soft-tissue prominent / mildly under-penetrated but thoracic vertebrae faintly visible through the heart. Scapulae partly overlap the lateral lung fields. Mandible/chin projects at the top of the film without obscuring the apices. Bilateral breast shadows overlie both lower zones and partially obscure the lung bases and left costophrenic region.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 2,
+ "devices": [
+  {
+   "type": "side marker (L) with small annotation text",
+   "location": "top-right corner of the image, i.e. patient's left upper corner"
+  },
+  {
+   "type": "possible external ring-shaped radiopaque artifact (e.g. nipple piercing ring) - uncertain, differential is gastric content",
+   "location": "projected over the left lower zone / left hemidiaphragm, overlapping the gastric fundal gas bubble"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Rounded ring-shaped radiopaque density ~2 cm with central lucency projected over the left lower zone at the level of the left hemidiaphragm, overlapping gastric fundal air; most likely an external artifact (nipple piercing ring) or intragastric content rather than a pulmonary lesion - incidental, not clearly pathological",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "胸部正面X光片，吸氣量尚可，無明顯旋轉，兩側乳房陰影重疊於下肺野，肩胛骨部分重疊於外側肺野。雙肺野清晰，未見實質化、結節、腫塊或氣胸；兩側肋膈角銳利，無肋膜積液。心臟大小正常，縱膈輪廓正常且無增寬，氣管居中，橫膈輪廓平滑，左側橫膈下可見胃泡；肋骨、鎖骨及胸椎未見骨折或骨質病變。左下肺野於左側橫膈高度、投影於胃底氣體處可見一約2公分之環狀緻密影，考慮為體外異物（如乳頭環）或胃內容物，並非肺部病灶。整體而言無明顯胸腔異常，未見管路、引流管或心律調節器。"
+}

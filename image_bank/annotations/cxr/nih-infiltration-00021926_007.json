@@ -1,0 +1,43 @@
+{
+ "id": "nih-infiltration-00021926_007",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate. Frontal film recorded as PA; scapulae partially project over the upper lateral lung fields bilaterally (arms at sides/slightly abducted), so an AP projection is not excluded. Inspiration adequate (about 8-9 posterior ribs above the diaphragm), minimal rotation (spinous processes roughly midway between the clavicular heads), penetration adequate (vertebral bodies visible through the cardiac shadow). Pediatric skeleton (open proximal humeral physes). Radiopaque 'L' side marker in the top right corner of the image, partly cut off. Small lucent focus in the lower midline below the diaphragm is the umbilicus (skin), not a device.",
+ "target": {
+  "finding": "pulmonary infiltrate",
+  "visible": "yes",
+  "laterality": "bilateral",
+  "zone": "middle",
+  "size_cm": 6.0,
+  "confidence": 0.6
+ },
+ "laterality_sources": {
+  "bbox": "right (NIH box x324-476, y273-464 on the 1024 px image = right perihilar upper-to-mid zone)",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "bilateral (left mid zone patchy opacity is the more conspicuous infiltrate; right perihilar upper-to-mid zone reticulonodular/peribronchial infiltrate corresponds to the radiologist box)"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "radiopaque laterality marker (L)",
+   "location": "top right corner of the image, outside the thorax lateral to the patient's left shoulder; partly cut off",
+   "zh": "體外側別（L）標記（影像右上角，非體內裝置）"
+  }
+ ],
+ "other_findings": [
+  "兩側肺門周圍支氣管血管紋理增粗、支氣管周圍套袖徵（peribronchial cuffing），以左側較明顯",
+  "兩側肺門輕度突出（疑為支氣管周圍反應性變化，非明確淋巴結腫大）",
+  "右肺門旁條狀紋理略向右中下肺野延伸，未見融合性實變",
+  "未見空洞、團塊、空氣支氣管徵或體積減少",
+  "兩側肋膈角銳利，無肋膜積液或氣胸",
+  "心臟大小及縱膈輪廓在小兒範圍內正常",
+  "左橫膈下可見胃泡及含糞便之腸氣；骨骼結構完整，肱骨近端生長板為年齡相符之正常表現",
+  "肚臍於下方中線呈小透亮影（皮膚皺褶，非裝置）"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "影像上可見浸潤影（兩側肺門周圍，左中肺野較明顯，右上－中肺野為放射科醫師框選處），無胸管、引流管、導管或任何治療裝置，亦無手術後或慢性病變跡象；符合11歲男童首次因下呼吸道感染症狀就診之情境。惟側別判讀不一致（放射科框選在右側、兩位讀片員皆判為左側），本片以「兩側」描述，病例報告宜寫成兩側肺門周圍浸潤、左側較顯著，勿寫成單側。",
+ "description_zh": "正面胸部X光片（記錄為PA，兩側肩胛骨部分重疊於上外側肺野），11歲男童，吸氣深度足夠、無明顯旋轉、穿透度適中，僅影像右上角見體外「L」側別標記，未見任何導管、引流管、心律調節器或其他體內裝置。兩側肺門周圍支氣管血管紋理增粗並有支氣管周圍套袖徵，呈兩側肺門周圍浸潤型態：左肺門旁向外延伸至左中肺野（上－中肺野交界）可見片狀、邊界不清之模糊浸潤影，範圍約5－7公分，為最明顯之病灶；右肺門旁上－中肺野（放射科醫師框選處，約5公分）則見網狀結節狀、支氣管周圍型之浸潤，密度較左側淡，無融合性實變、空洞、團塊、空氣支氣管徵或體積減少。心臟大小與縱膈輪廓在小兒範圍內正常，兩側橫膈輪廓平滑、肋膈角銳利，無肋膜積液或氣胸；左橫膈下可見胃泡及含糞便之腸氣，骨骼結構完整，肱骨近端生長板為年齡相符之正常表現。整體影像符合兩側肺門周圍（支氣管周圍）浸潤，左側較顯著，臨床上以病毒性或非典型下呼吸道感染型態為主。",
+ "label_concern": "「浸潤」標籤本身正確，但側別定位不一致：NIH放射科邊框位於右肺門旁上－中肺野（該處確有網狀結節狀支氣管周圍浸潤，較淡），而知標籤讀片員與盲讀讀片員均將最明顯之片狀浸潤判在左中肺野。仲裁後以「兩側肺門周圍浸潤、左側較顯著」描述；使用本片時應以兩側描述，勿寫成單純右側或單純左側浸潤。"
+}

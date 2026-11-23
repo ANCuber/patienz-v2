@@ -1,0 +1,348 @@
+[
+ {
+  "id": "ptbxl-IMI-1391",
+  "ecg_id": "1391",
+  "selected_code": "IMI",
+  "language": "sv",
+  "source_report": "sinusrytm extrem vÄnster el-axel ospecifikt inkomplett skÄnkelblock avvikande qrs(t) fÖrlopp    anteroseptal infarkt     sannolikt Äldre    inferior infarkt     sannolikt Äldre st-t sÄnkning, sÅsom vid    hÖg lateral ischemi eller vÄnster belastning      ",
+  "source_report_zh": "竇性心律，電軸極度左偏，非特異性不完全性束支傳導阻滯，QRS(T) 型態異常。前間壁梗塞，可能為陳舊性；下壁梗塞，可能為陳舊性。ST-T 壓低，如高側壁缺血或左心負荷所見。",
+  "statements_zh": [
+   {"code": "IMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "下壁心肌梗塞"},
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-IMI-281",
+  "ecg_id": "281",
+  "selected_code": "IMI",
+  "language": "en",
+  "source_report": "trace only requested.",
+  "source_report_zh": "僅要求描記，未要求判讀。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "ALMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前側壁心肌梗塞"},
+   {"code": "IMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "下壁心肌梗塞"},
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "亞急性期",
+  "consistent_with_codes": true,
+  "issues": "原始報告僅註明「trace only requested」，無任何判讀內容，無法與代碼比對；所有診斷資訊（前間壁、前側壁、下壁梗塞，左前分支阻滯，亞急性期）僅來自 SCP 代碼與 stadium 欄位。譯文已改為直譯原句。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-IMI-3582",
+  "ecg_id": "3582",
+  "selected_code": "IMI",
+  "language": "de",
+  "source_report": "sinustachykardie extrem ueberdrehter rechtstyp unspezifischer intraventrikulÄrer block rechtshypertrophie mÖglich qrs(t) abnormal    inferiorer infarkt     mÖgl. akut",
+  "source_report_zh": "竇性心搏過速，電軸極度右偏，非特異性心室內傳導阻滯，可能右心室肥厚，QRS(T) 型態異常。下壁梗塞，可能為急性。",
+  "statements_zh": [
+   {"code": "IMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "下壁心肌梗塞"},
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "CRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "完全性右束支傳導阻滯"}
+  ],
+  "axis_zh": "電軸極度右偏",
+  "stadium_zh": "急性期；陳舊性",
+  "consistent_with_codes": true,
+  "issues": "代碼為完全性右束支傳導阻滯（CRBBB 100），報告僅寫「非特異性心室內傳導阻滯」，特異度不同但非矛盾；報告亦未提及前間壁梗塞（ASMI 100）。stadium1=急性期對應報告「可能為急性」的下壁梗塞，stadium2=陳舊性推測對應前間壁梗塞。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-IMI-544",
+  "ecg_id": "544",
+  "selected_code": "IMI",
+  "language": "sv",
+  "source_report": "sinustachykardi hypertrofi av vÄnster fÖrmak vÄnster el-axel ospecifikt skÄnkelblock vÄnster kammarhypertrofi",
+  "source_report_zh": "竇性心搏過速，左心房肥大，電軸左偏，非特異性束支傳導阻滯，左心室肥厚。",
+  "statements_zh": [
+   {"code": "IMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "下壁心肌梗塞"},
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "報告完全未提及下壁梗塞（IMI 100，為選定代碼）及非特異性缺血性變化（ISC_ 100）；無直接矛盾，但選定代碼在報告文字中無依據，建議人工複核。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-IMI-3052",
+  "ecg_id": "3052",
+  "selected_code": "IMI",
+  "language": "de",
+  "source_report": "sinusrhythmus ueberdrehter linkstyp qrs(t) abnormal    inferiorer infarkt mÖglich t abnormal in hochlateralen ableitungen",
+  "source_report_zh": "竇性心律，電軸極度左偏，QRS(T) 型態異常。可能下壁梗塞。高側壁導程 T 波異常。",
+  "statements_zh": [
+   {"code": "IMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "下壁心肌梗塞"}
+  ],
+  "axis_zh": "電軸極度左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-IMI-1853",
+  "ecg_id": "1853",
+  "selected_code": "IMI",
+  "language": "en",
+  "source_report": "sinus rhythm left axis deviation, left anterior fascicular block. probable old inferior infarct. qs in lead v2: possible causes include previous infarct                and v1/v2 lead interchange.",
+  "source_report_zh": "竇性心律，電軸左偏，左前分支阻滯。可能為陳舊性下壁梗塞。V2 導程呈 QS 波：可能原因包括陳舊性梗塞及 V1/V2 導程接反。",
+  "statements_zh": [
+   {"code": "IMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "下壁心肌梗塞"},
+   {"code": "AMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前壁心肌梗塞"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-IMI-4166",
+  "ecg_id": "4166",
+  "selected_code": "IMI",
+  "language": "de",
+  "source_report": "sinusrhythmus extrem ueberdrehter rechtstyp r-s #bergang in v ableitungen nach links verschoben qrs(t) abnorm    inferiorer infarkt     wahrscheinlich alt st & t abnorm, wahrscheinlich    hochlaterale ischÄmie oder linksbelastung Edit: IMI 100, (m,31) , (IMI 100)",
+  "source_report_zh": "竇性心律，電軸極度右偏，胸前導程 R/S 移行帶向左偏移，QRS(T) 型態異常。下壁梗塞，可能為陳舊性。ST 及 T 波異常，可能為高側壁缺血或左心負荷。",
+  "statements_zh": [
+   {"code": "IMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "下壁心肌梗塞"}
+  ],
+  "axis_zh": "電軸極度右偏",
+  "stadium_zh": "急性期",
+  "consistent_with_codes": true,
+  "issues": "infarction_stadium1 標為 Stadium I（急性期），但原始報告明寫下壁梗塞「wahrscheinlich alt」（可能為陳舊性），兩者矛盾；SCP 代碼（IMI 100）與電軸本身無矛盾。建議以報告為準或人工複核 stadium 欄位。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ASMI-184",
+  "ecg_id": "184",
+  "selected_code": "ASMI",
+  "language": "sv",
+  "source_report": "sinusrytm extrem vÄnster el-axel avvikande qrs(t) fÖrlopp    anterior infarkt     sannolikt Äldre    inferior infarkt     sannolikt Äldre                       !",
+  "source_report_zh": "竇性心律，電軸極度左偏，QRS(T) 型態異常。前壁梗塞，可能為陳舊性；下壁梗塞，可能為陳舊性。",
+  "statements_zh": [
+   {"code": "ILMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "下側壁心肌梗塞"},
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ASMI-1261",
+  "ecg_id": "1261",
+  "selected_code": "ASMI",
+  "language": "de",
+  "source_report": "sinusrhythmus verdacht auf p-sinistrocardiale ueberdrehter linkstyp linksanteriorer hemiblock qrs(t) abnorm    anteroseptaler infarkt     wahrscheinlich alt Edit: ASMI 100, LAFB,ANEUR 50, (m,42), (ASMI 100, IRBBB, LAFB)",
+  "source_report_zh": "竇性心律，疑似左心房負荷（P mitrale），電軸極度左偏，左前分支阻滯，QRS(T) 型態異常。前間壁梗塞，可能為陳舊性。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"},
+   {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"}
+  ],
+  "axis_zh": "電軸極度左偏",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ASMI-274",
+  "ecg_id": "274",
+  "selected_code": "ASMI",
+  "language": "en",
+  "source_report": "sinus rhythm. possible left atrial enlargement. voltages are high in limb leads suggesting lvh. qs complexes in v2 suggesting old anteroseptal  myocardial infarction. st segments are depressed in i, avl, v5,6. t waves are inverted in i, avl, v3-6. this ma",
+  "source_report_zh": "竇性心律。可能左心房擴大。肢體導程電壓偏高，提示左心室肥厚。V2 導程呈 QS 波，提示陳舊性前間壁心肌梗塞。I、aVL、V5-6 導程 ST 段壓低；I、aVL、V3-6 導程 T 波倒置。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"},
+   {"code": "LAO/LAE", "likelihood": 50.0, "kind": "diagnostic", "zh": "左心房負荷／擴大"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "原始報告末尾「this ma」為截斷句（推測為 this may…），內容不明，未翻譯。「suggesting」已由「符合」改為「提示」以保留原文的推測語氣。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-ASMI-537",
+  "ecg_id": "537",
+  "selected_code": "ASMI",
+  "language": "sv",
+  "source_report": "sinusrytm vÄnster kammarhypertrofi avvikande qrs(t) fÖrlopp    anterolateral myokardskada bÖr ÖvervÄgas",
+  "source_report_zh": "竇性心律，左心室肥厚，QRS(T) 型態異常。應考慮前側壁心肌損傷。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "部位不一致：報告寫「前側壁（anterolateral）心肌損傷應考慮」，代碼卻為前間壁心肌梗塞（ASMI 100）而非前側壁（ALMI）；且報告語氣為「應考慮」，代碼為 100% 確定。另 extra_beats=1ES（單一期外收縮）報告未提及。譯文本身忠實，未更動。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ASMI-943",
+  "ecg_id": "943",
+  "selected_code": "ASMI",
+  "language": "en",
+  "source_report": "sinus tachycardia. low limb lead voltage. poor progression of r waves in anterior chest leads suggesting old anteroseptal infarct.",
+  "source_report_zh": "竇性心搏過速。肢體導程低電壓。前胸導程 R 波遞增不良，提示陳舊性前間壁梗塞。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LAO/LAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心房負荷／擴大"},
+   {"code": "RAO/RAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心房負荷／擴大"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "報告未提及左、右心房負荷／擴大（LAO/LAE 100、RAO/RAE 100）；無矛盾，僅報告較代碼簡略。「suggesting」已由「符合」改為「提示」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-ASMI-20362",
+  "ecg_id": "20362",
+  "selected_code": "ASMI",
+  "language": "de",
+  "source_report": "sinus arrhythmie lagetyp normal unspezifisches abnormales t",
+  "source_report_zh": "竇性心律不整，電軸正常，非特異性 T 波異常。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "報告完全未提及前間壁梗塞（ASMI 100，為選定代碼且為唯一診斷代碼）；報告僅描述竇性心律不整、電軸正常及非特異性 T 波異常（28 歲女性）。無直接矛盾，但選定代碼在報告文字中毫無依據，強烈建議人工複核。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ASMI-1440",
+  "ecg_id": "1440",
+  "selected_code": "ASMI",
+  "language": "sv",
+  "source_report": "sinusrytm hÖger el-axel avvikande qrs(t) fÖrlopp    anterior infarkt     Ålder ej bestÄmmbar",
+  "source_report_zh": "竇性心律，電軸右偏，QRS(T) 型態異常。前壁梗塞，時期無法判定。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ASMI-1901",
+  "ecg_id": "1901",
+  "selected_code": "ASMI",
+  "language": "de",
+  "source_report": "vorhofflimmern/-flattern lagetyp normal qrs(t) abnorm    anteroseptaler myokardschaden",
+  "source_report_zh": "心房顫動或撲動，電軸正常，QRS(T) 型態異常。前間壁心肌損傷。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 80.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ASMI-2446",
+  "ecg_id": "2446",
+  "selected_code": "ASMI",
+  "language": "de",
+  "source_report": "vorhofflimmern/-flattern ueberdrehter rechtstyp qrs(t) abnorm    lateraler myokardschaden t abnorm in anterioren ableitungen",
+  "source_report_zh": "心房顫動或撲動，電軸極度右偏，QRS(T) 型態異常。側壁心肌損傷。前壁導程 T 波異常。",
+  "statements_zh": [
+   {"code": "ALMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前側壁心肌梗塞"},
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"}
+  ],
+  "axis_zh": "電軸極度右偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "報告僅寫「側壁心肌損傷」及「前壁導程 T 波異常」，可對應前側壁梗塞（ALMI 100）；但選定代碼前間壁梗塞（ASMI 100）在報告中無明確依據（報告未提及間壁）。無直接矛盾，建議人工複核。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LVH-30",
+  "ecg_id": "30",
+  "selected_code": "LVH",
+  "language": "de",
+  "source_report": "sinusrhythmus unspezifischer intraventrikulÄrer block linkshypertrophie",
+  "source_report_zh": "竇性心律，非特異性心室內傳導阻滯，左心室肥厚。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LVH-274",
+  "ecg_id": "274",
+  "selected_code": "LVH",
+  "language": "en",
+  "source_report": "sinus rhythm. possible left atrial enlargement. voltages are high in limb leads suggesting lvh. qs complexes in v2 suggesting old anteroseptal  myocardial infarction. st segments are depressed in i, avl, v5,6. t waves are inverted in i, avl, v3-6. this ma",
+  "source_report_zh": "竇性心律。可能左心房擴大。肢體導程電壓偏高，提示左心室肥厚。V2 導程呈 QS 波，提示陳舊性前間壁心肌梗塞。I、aVL、V5-6 導程 ST 段壓低；I、aVL、V3-6 導程 T 波倒置。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"},
+   {"code": "LAO/LAE", "likelihood": 50.0, "kind": "diagnostic", "zh": "左心房負荷／擴大"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "與 ptbxl-ASMI-274 為同一筆 ECG（ecg_id 274）。原始報告末尾「this ma」為截斷句（推測為 this may…），內容不明，未翻譯。「suggesting」已由「符合」改為「提示」以保留原文的推測語氣。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-LVH-173",
+  "ecg_id": "173",
+  "selected_code": "LVH",
+  "language": "sv",
+  "source_report": "sinusrytm p fÖrlÄngd vÄnster el-axel vÄnster kammarhypertrofi",
+  "source_report_zh": "竇性心律，P 波時限延長，電軸左偏，左心室肥厚。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LVH-516",
+  "ecg_id": "516",
+  "selected_code": "LVH",
+  "language": "sv",
+  "source_report": "sinusrytm ospecifikt skÄnkelblock vÄnster kammarhypertrofi Edit: LVH 100, ISC, Sokolow 9(LVH 100, ISC_)",
+  "source_report_zh": "竇性心律，非特異性束支傳導阻滯，左心室肥厚。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ }
+]

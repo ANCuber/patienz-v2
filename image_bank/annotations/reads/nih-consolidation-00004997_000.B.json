@@ -1,0 +1,38 @@
+{
+ "view": "Frontal chest radiograph, probably AP (scapulae project over the lateral lung fields, cardiac/mediastinal silhouette magnified); L marker at image upper right confirms conventional orientation (patient's left on image right)",
+ "technical_quality": "Suboptimal but diagnostic. Moderate/slightly shallow inspiration; mandible and lower cervical spine superimposed on the upper mediastinum/apices (chin not raised); no significant rotation (medial clavicle ends roughly equidistant from the spinous processes); both scapulae overlap the lateral lung fields; large breast shadows and generous soft tissue overlie both lower zones; penetration adequate (thoracic spine faintly visible behind heart); costophrenic angles included; black rectangular collimation/edge artifact at the left image border.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "middle",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' with radiopaque clip-type holder (external artifact, not a medical device)",
+   "location": "Image upper right, projected over the patient's left shoulder / acromioclavicular region"
+  },
+  {
+   "type": "Small round radiopaque object, likely jewellery (earring/pendant/piercing) - external artifact",
+   "location": "Top edge of the image, midline, just above the mandible"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild prominence of the hila and perihilar bronchovascular markings without a definite focal consolidation, mass, nodule or air-bronchogram; right hilum slightly more bulky than left",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Borderline enlarged cardiac silhouette (CTR approximately 0.50-0.52), most likely magnification on AP projection with modest inspiration rather than true cardiomegaly; normal cardiac contour",
+   "laterality": "midline (none)",
+   "zone": "lower"
+  },
+  {
+   "finding": "Broad-appearing superior mediastinum, probably technical (AP projection, shallow inspiration, superimposed mandible/cervical spine) in a young woman; trachea midline, no discrete mass",
+   "laterality": "midline (none)",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面X光（疑為AP投影，吸氣稍淺，下頷骨與頸椎重疊於上縱膈，雙側肩胛骨重疊於外側肺野，雙側乳房陰影覆蓋下肺野）。雙側肺門及肺門周圍支氣管血管紋理輕度增加，右側肺門略顯飽滿，但未見明確局部實質化、腫塊、結節或肋膜積液，雙側肋膈角銳利，未見氣胸。心影邊界大小（CTR約0.5）及上縱膈顯得較寬，推測多為AP投影放大及吸氣不足所致，氣管居中；骨骼結構未見明顯骨折或破壞。無任何體內導管、引流管或節律器，僅見左側標記「L」及頂端中線一小圓形金屬異物（疑為飾品）。"
+}

@@ -1,0 +1,57 @@
+{
+ "id": "nih-atelectasis-00002350_001",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (frontal), erect chest radiograph with a wide field of view including the upper abdomen; 'LT GV' side marker projected over the patient's left shoulder confirms conventional orientation (image-left = patient-right)",
+ "technical_quality": "Adequate for interpretation: good inspiration (~9-10 posterior ribs), no significant rotation (spinous processes midway between the clavicular heads), penetration adequate for the lungs with the mediastinum slightly under-penetrated (thoracic spine only faintly seen behind the heart), both lungs and costophrenic angles fully included. Scapulae partially overlap the upper lateral lung fields and bilateral breast shadows overlie the lower zones; external tubing/cables project over both flanks but do not obscure the lungs.",
+ "target": {
+  "finding": "atelectasis",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 6,
+  "confidence": 0.65
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "bilateral",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Small-bore chest drain / pleural catheter (approx. 3 mm calibre, radiopaque walls) with a tight hairpin fold at its tip; kinked/malpositioned",
+   "location": "Right hemithorax: enters through the right lateral lower chest wall (about the 6th-7th rib, mid-axillary line), runs cephalad along the lateral right pleural space to the right apex, doubles back in a tight hairpin, and the redundant distal limb descends along the right paramediastinal pleura with its tip projecting over the medial right mid-zone at about the right hilar level",
+   "zh": "右側小口徑胸管／肋膜引流管（於右肺尖髮夾狀反摺，末端位於右肺門高度）"
+  },
+  {
+   "type": "External drainage connecting tubing with connectors (segmented appearance) plus 1-2 additional thin external tubes/wires",
+   "location": "Outside the thorax along the right lateral chest wall and right flank/abdominal wall, continuous with the chest-drain exit site and running to the lower edge of the film",
+   "zh": "右側胸壁及側腹體外引流連接管路／導線"
+  },
+  {
+   "type": "Thin external tubing / monitoring cable (no intrathoracic course; a skin fold is not entirely excluded)",
+   "location": "Along the left lateral chest wall from the left axilla/shoulder down to the left flank, outside the rib cage",
+   "zh": "左側胸壁體外管線／導線"
+  },
+  {
+   "type": "Radiographic side marker 'LT GV'",
+   "location": "Upper image-right corner, projected over the patient's left shoulder",
+   "zh": "側別標記「LT GV」"
+  }
+ ],
+ "other_findings": [
+  "右側胸腔引流管於右肺尖呈髮夾狀緊密反摺，多餘末段（約10公分）沿右縱膈旁向下走行，尖端投影於右肺門高度：引流管打折／位置不良",
+  "右下肺野橫膈上方細微斜行線狀影，伴右基底及下肺門血管紋理略擁擠：可能為皮膚／乳房皺褶，或輕微次節段性肺擴張不全（兩位讀片員意見不一，不確定）",
+  "左側橫膈較右側略高約1公分（與常態相反），其下可見脹氣之胃泡及含糞便氣體之結腸；可能為輕微左下肺容積減少或胃腸脹氣所致",
+  "右肺尖未見臟層肋膜線，無明確氣胸；兩側肋膈角銳利，無明顯肋膜積液",
+  "心臟大小正常（心影狹長直立）、縱膈輪廓正常、氣管居中、兩側肺門正常",
+  "上腹部多處含氣腸襻，無膈下游離氣體",
+  "雙側乳房陰影投影於下肺野，肩胛骨部分重疊於上外側肺野（技術性因素，非病灶）；未見皮下氣腫或骨骼異常"
+ ],
+ "treatment_evidence": true,
+ "first_presentation_suitable": false,
+ "suitability_reason": "右側已置入胸腔引流管（且於肺尖反摺、位置不良），並有體外引流管路，顯示此片為處置／治療後之追蹤影像而非初次就診片；左下肺盤狀肺擴張不全本身細微，且多為術後、臥床或引流後之次發變化，不適合作為初次就診之典型呈現。",
+ "description_zh": "胸部正面（PA）立位片，吸氣度足夠、無明顯旋轉，左肩處可見「LT GV」側別標記。右側可見一條小口徑胸腔引流管自右下側胸壁進入，沿右側肋膜腔外側上行至右肺尖後呈髮夾狀緊密反摺，末段沿右縱膈旁向下走行、尖端投影於右肺門高度（引流管打折／位置不良）；右側胸壁及側腹另見體外引流連接管路，左側胸壁外側亦有細線狀體外管線投影。左下肺野橫膈正上方可見一斜行帶狀（盤狀）線狀陰影，自心尖附近向外側肋膈角延伸，長約6公分、厚約0.5公分，伴基底血管紋理略擁擠，符合左下肺次節段性（盤狀）肺擴張不全；右下肺野橫膈上方另有細微線狀影，皮膚／乳房皺褶或輕微肺擴張不全皆有可能。右肺尖未見臟層肋膜線，無明確氣胸，兩側肋膈角銳利、無肋膜積液，心臟大小與縱膈輪廓正常、氣管居中。左側橫膈較右側略高約1公分，其下見脹氣之胃泡及含糞便氣體之結腸，上腹部另有多處含氣腸襻，無膈下游離氣體。",
+ "label_concern": ""
+}

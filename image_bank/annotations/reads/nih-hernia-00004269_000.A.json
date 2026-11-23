@@ -1,0 +1,28 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration (about 9-10 posterior ribs visible), no significant rotation (medial clavicle ends roughly symmetric about the spinous processes), adequate penetration with lower thoracic vertebrae faintly visible through the heart, both costophrenic angles included. An \"L\" marker is present in the upper right corner of the image, confirming conventional orientation (patient's left on image right).",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "Side marker 'L' (external annotation)",
+   "location": "upper right corner of the image, i.e. patient's left upper region, outside the thorax"
+  },
+  {
+   "type": "Tiny faint bright linear density of uncertain nature (possible external artifact / debris; not a clip or line with certainty)",
+   "location": "right upper zone, lateral chest wall projection at about the 3rd rib level"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Rounded, well-circumscribed retrocardiac lucency/soft-tissue structure with a curvilinear margin projecting through the left lower cardiac silhouette, above the expected level of the left hemidiaphragm, roughly 6 cm across - compatible with a gas-containing hiatal (diaphragmatic) hernia; no definite air-fluid level seen on this upright film",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正位（PA）片，吸氣充分、無明顯旋轉，影像右上角可見「L」標記，方位為常規。心臟後方、脊椎左側之左下肺野心影內可見一個邊緣清楚、略呈圓形的透亮影，上緣高於左側橫膈預期高度，直徑約 6 公分，符合含氣之食道裂孔疝（橫膈疝）表現，本片未見明顯氣液面。兩側肺野清晰，未見實質浸潤、肋膜積液或氣胸，心臟大小正常，骨骼結構完整；右上肺野外側胸壁投影處有一極小之線狀亮影，性質不明（疑為外在雜訊），未見胸管、引流管或其他治療痕跡。"
+}

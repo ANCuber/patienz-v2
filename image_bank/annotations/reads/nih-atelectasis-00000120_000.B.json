@@ -1,0 +1,39 @@
+{
+ "view": "Frontal chest radiograph, PA projection (L marker at image right confirms conventional orientation, patient's left on image right), erect",
+ "technical_quality": "Adequate. Inspiration adequate (about 9 posterior ribs visible), minimal rotation (clavicles roughly symmetric about the spinous processes), penetration adequate (thoracic spine faintly visible through the cardiac silhouette). Scapulae largely rotated out of the lung fields. Large body habitus with abundant lateral chest-wall soft tissue and bilateral breast shadows overlying both lower zones, which slightly reduce lower-zone detail. Both costophrenic angles and apices included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Subtle ill-defined increased opacity with crowding of bronchovascular markings in the right mid-to-lower zone (medial and basal), relative to the clear left lung; right heart border and right hemidiaphragm outline preserved. Suggests minor volume loss / subsegmental atelectasis or early infiltrate rather than consolidation.",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, dense right hilum (rounded perihilar density approx 2.5-3 cm) - likely the interlobar pulmonary artery en face, but hilar adenopathy or mass cannot be confidently excluded on this single view.",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Unfolded, tortuous thoracic aorta with a prominent aortic knob and mild widening of the superior mediastinum, consistent with age-related aortic unfolding; trachea remains midline.",
+   "laterality": "none (mediastinal, projects to the left)",
+   "zone": "upper"
+  },
+  {
+   "finding": "Heart size at the upper limit of normal / borderline cardiomegaly (cardiothoracic ratio approximately 0.5).",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Degenerative (spondylotic) changes of the visualised cervical spine; no acute osseous abnormality, no rib fracture seen.",
+   "laterality": "none",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面（PA）胸部X光，吸氣深度尚可、無明顯旋轉，雙側乳房陰影及豐厚的胸壁軟組織重疊於下肺野。右側中下肺野較左側透亮度減低並見支氣管血管紋理擁擠，右肺門較為飽滿（約2.5–3公分之圓形密度，肺動脈與肺門病灶難以區分），需考慮次節段性肺不張／輕微體積減少或早期浸潤；左肺清晰，雙側肋膈角銳利，未見肋膜積液或氣胸。心臟大小約於上限（CTR約0.5），主動脈弓突出且胸主動脈迂曲呈老年性變化，氣管居中；頸椎可見退化性變化，骨骼無急性病變。未見任何導管、引流管、心律調節器或其他植入裝置。"
+}

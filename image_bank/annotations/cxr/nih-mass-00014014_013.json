@@ -1,0 +1,62 @@
+{
+ "id": "nih-mass-00014014_013",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "AP (frontal; L marker at image upper right, conventional orientation; supine/AP technique with abdominal lead shield and monitoring leads)",
+ "technical_quality": "Adequate but suboptimal: penetration adequate, no significant rotation, inspiration about 8-9 posterior ribs; mandible/chin projects over the upper mediastinum and partly obscures the apices; both scapulae overlap the upper-lateral lung fields; mild lordotic projection; image noisy/low contrast with dense chest-wall soft tissue. Lower thorax/upper abdomen covered by a lead shield; an external monitoring lead overlies the right hemithorax. The right hemidiaphragm, right heart border and right costophrenic angle are obscured by the large right lower opacity, so cardiac size cannot be reliably assessed on this AP film.",
+ "target": {
+  "finding": "pulmonary mass",
+  "visible": "uncertain",
+  "laterality": "left",
+  "zone": "middle",
+  "size_cm": 6,
+  "confidence": 0.35
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "left"
+ },
+ "agreement": "conflict",
+ "devices": [
+  {
+   "type": "External monitoring lead / tubing (thin linear radiopaque line that crosses anatomical boundaries; external, not intravascular)",
+   "location": "Enters at the right axilla and courses obliquely across the right hemithorax over the lower thoracic spine to the left paraspinal region",
+   "zh": "體外監測導線（心電圖導線／管線），自右腋下斜跨右胸至脊椎左側"
+  },
+  {
+   "type": "Small rectangular external electrode / clip",
+   "location": "Right upper lateral chest wall, about 3rd anterior rib level, medial to the scapula, adjacent to the lead",
+   "zh": "右上外側胸壁小型長方形電極片／夾具"
+  },
+  {
+   "type": "Metallic external object: arrow-shaped positioning marker / clasp",
+   "location": "Projected over the left shoulder / humeral head soft tissue",
+   "zh": "左肩處金屬箭頭形定位標記／扣環"
+  },
+  {
+   "type": "Lead side marker 'L' with technologist initials 'DG'",
+   "location": "Image upper right corner (patient left), above the left shoulder",
+   "zh": "「L DG」側別鉛字標記"
+  },
+  {
+   "type": "Lead shield (abdominal/gonadal shielding)",
+   "location": "Lower portion of image, covering the upper abdomen below the diaphragms",
+   "zh": "腹部／性腺鉛板遮蔽"
+  }
+ ],
+ "other_findings": [
+  "右下胸腔大片均質、上緣平滑圓凸之緻密影（橫徑約14公分，頂點約第4–5前肋），遮蔽右側橫膈與右心緣，右側「橫膈」較左側高出約7公分；鑑別：右側橫膈明顯抬高（膨出／膈神經麻痺）、肺下積液、右下胸腔／橫膈或肝臟來源之大型腫塊",
+  "右側肋膈角未清楚顯示（可能少量肋膜積液；不確定）",
+  "右肺門增大、輪廓分葉狀，肺門旁約4公分類圓形密度影（肺門腫塊或淋巴結腫大 vs 血管重疊）",
+  "左肺門略顯著、輪廓呈結節狀",
+  "雙側肺門旁支氣管血管／間質紋理增加",
+  "右上縱膈旁／氣管旁輪廓稍飽滿（不確定；部分受下頜及此年齡可能殘留之胸腺重疊影響）",
+  "左下肺野整體密度較上肺野瀰漫性略增，以一條上凸弧形線為上界（最可能為乳房軟組織重疊，仰臥位少量積液無法排除；不確定）"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標記之左側中肺野「腫塊」僅為邊界不清之淡薄密度影，可見度不確定，無法作為肺部腫塊之明確示範；且本片以右下胸腔大片圓頂狀緻密影（橫膈抬高／肺下積液／大型基底腫塊待鑑別）及雙側肺門增大為主要異常，與單純以「肺部腫塊」初次就診之情境不符。另有體外心電監測導線，提示為監測中之病人。無胸管、引流管等治療裝置。",
+ "description_zh": "AP 正面胸部X光（12歲女性），吸氣尚可、無明顯旋轉，但下頜與上縱膈重疊、雙側肩胛骨部分投影於肺野，下胸及上腹部為鉛板遮蔽，影像雜訊偏高。依放射科標註框，標記之「肺部腫塊」位於左側中肺野（左心緣外側、約第5–6前肋間），該處僅見一片邊界不清、約5–7公分的淡薄增加密度影，其下緣為一條上凸弧形線，無法與乳房軟組織重疊或浸潤明確區分，故腫塊之可見度判為不確定。本片最顯著之異常為右下胸腔一大片均質、上緣平滑圓凸之緻密影，橫徑約14公分、頂點約在第4–5前肋，遮蔽右側橫膈與右心緣，右側「橫膈」較左側高出約7公分，鑑別包括右側橫膈明顯抬高（膨出／膈神經麻痺）、肺下積液或右下胸腔／橫膈／肝臟來源之大型腫塊，右側肋膈角亦未清楚顯示。另見雙側肺門增大且輪廓呈結節狀（右肺門旁約4公分類圓形密度影，肺門腫塊或淋巴結腫大待鑑別），雙側肺門旁支氣管血管紋理增加，右上縱膈旁輪廓稍飽滿（不確定，部分為下頜與胸腺重疊）；氣管居中，左側橫膈與胃泡位置正常，心臟大小因右心緣被遮蔽而無法可靠評估。裝置方面：一條體外監測導線自右腋下斜跨右胸至下段脊椎左側，右上外側胸壁有一小型長方形電極片／夾具，左肩處有金屬箭頭形定位標記／扣環，影像右上角為「L DG」側別標記，上腹部覆蓋鉛板；未見胸管、引流管或其他治療裝置。",
+ "label_concern": "放射科標註框位於左側中肺野（患者左側），但該處僅見邊界不清之淡薄密度影（可能為乳房軟組織重疊或浸潤），無明確腫塊；兩位判讀者皆將主要異常定位於右側（A：右下胸腔大片圓頂狀緻密影；B：右肺門腫大），與標註框側別相反，三者所指非同一病灶。本片「肺部腫塊」標籤未能可靠證實，且右下胸腔異常較可能為橫膈抬高或肺下積液而非肺實質腫塊，建議由放射科醫師人工複審，不宜作為肺部腫塊教學片。"
+}

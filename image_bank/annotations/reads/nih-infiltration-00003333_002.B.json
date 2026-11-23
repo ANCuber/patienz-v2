@@ -1,0 +1,47 @@
+{
+ "view": "Frontal (PA) chest radiograph; L marker on image right confirms conventional orientation",
+ "technical_quality": "Adequate penetration, minimal rotation, but low lung volumes with poor inspiratory effort (hemidiaphragms elevated to roughly the 8th posterior rib); large bilateral breast shadows overlie and partially obscure both lower zones and lung bases.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 10,
+ "devices": [
+  {
+   "type": "Small metallic density (possible surgical clip or external artifact)",
+   "location": "Projecting over the left hilum / medial left mid zone"
+  },
+  {
+   "type": "Tubing / line, likely external (oxygen or IV tubing lying on patient)",
+   "location": "Curvilinear tubular density at the inferior image edge projecting over the patient's right upper abdomen / flank"
+  },
+  {
+   "type": "L side marker with radiographer initials",
+   "location": "Upper right corner of image (patient's left shoulder)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy hazy airspace opacity / infiltrate centred on the perihilar region, partially obscuring the left heart border",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Hazy opacity extending inferiorly from the left perihilar region into the lower zone (partly overlapped by breast shadow)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Low lung volumes with elevated hemidiaphragms (poor inspiration)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small metallic density projecting over the left hilum (clip vs external artifact)",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "正面胸部X光，影像右側有L標記，為常規方向；吸氣不足、雙側橫膈上抬，雙側大範圍乳房陰影重疊於下肺野。左側中肺野及肺門周圍可見片狀模糊浸潤影，向下延伸至左下肺野並部分遮蔽左心緣；右肺野相對清晰，未見明顯實變或氣胸。心臟大小正常、縱膈居中，雙側肋膈角大致銳利，骨骼結構未見明顯異常。左肺門處另見一小金屬密度影（可能為夾子或體外異物），影像下緣右上腹處可見管狀影，疑為體外管線；未見胸管或引流管。"
+}

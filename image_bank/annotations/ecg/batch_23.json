@@ -1,0 +1,506 @@
+[
+ {
+  "id": "ptbxl-PACE-3793",
+  "ecg_id": "3793",
+  "selected_code": "PACE",
+  "language": "de",
+  "source_report": "pacemaker ekg",
+  "source_report_zh": "節律器心電圖。",
+  "statements_zh": [
+   {
+    "code": "PACE",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "人工節律器功能正常"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SVARR-4498",
+  "ecg_id": "4498",
+  "selected_code": "SVARR",
+  "language": "de",
+  "source_report": "supraventrikulÄre arrhythmie lagetyp normal sonst normales ekg 4.46                          unbestÄtigter bericht Edit: NORM 80, (NORM 100)",
+  "source_report_zh": "上心室性心律不整，電軸正常，其餘為正常心電圖。（未經確認報告）",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SVARR-4586",
+  "ecg_id": "4586",
+  "selected_code": "SVARR",
+  "language": "de",
+  "source_report": "supraventrikulÄre arrhythmie a-v block i extrem ueberdrehter rechtstyp linksanteriorer hemiblock rechtsschenkelblock bifaszikulÄrer block qrs(t) abnorm    anteroseptaler myokardschaden mÖglich 4.46                          unbestÄtigter bericht",
+  "source_report_zh": "上心室性心律不整，一度房室傳導阻滯，電軸極度右偏，左前分支阻滯，右束支傳導阻滯，雙分支阻滯，QRS(T) 型態異常，可能有前間壁心肌損傷。（未經確認報告）",
+  "statements_zh": [
+   {
+    "code": "ASMI",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "前間壁心肌梗塞"
+   },
+   {
+    "code": "CRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "完全性右束支傳導阻滯"
+   },
+   {
+    "code": "LAFB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "左前分支阻滯"
+   },
+   {
+    "code": "1AVB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "一度房室傳導阻滯"
+   }
+  ],
+  "axis_zh": "電軸極度右偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SVARR-5343",
+  "ecg_id": "5343",
+  "selected_code": "SVARR",
+  "language": "de",
+  "source_report": "ventrikulÄre extrasystole(n) supraventrikulÄre arrhythmie verdacht auf p-sinistrocardiale lagetyp normal periphere niederspannung qrs(t) abnorm    anteroseptaler infarkt     wahrscheinlich alt    inferiorer infarkt     alter unbest. t abnorm in anterolate",
+  "source_report_zh": "心室早期收縮，上心室性心律不整，疑似左心房負荷（P mitrale），電軸正常，肢體導程低電壓，QRS(T) 型態異常，前間壁梗塞（很可能為陳舊性），下壁梗塞（年代不明），前側壁導程 T 波異常。",
+  "statements_zh": [
+   {
+    "code": "IMI",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "下壁心肌梗塞"
+   },
+   {
+    "code": "ASMI",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前間壁心肌梗塞"
+   },
+   {
+    "code": "1AVB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "一度房室傳導阻滯"
+   },
+   {
+    "code": "LAO/LAE",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "左心房負荷／擴大"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原文「wahrscheinlich alt」為「很可能為陳舊性」（強於 möglich＝可能），已修正。原文末「t abnorm in anterolate」遭截斷，依 PTB-XL 慣用語補為「前側壁導程」。SCP 碼另含一度房室傳導阻滯（1AVB 100），報告未提及；報告較精簡，不構成矛盾。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-SVARR-9282",
+  "ecg_id": "9282",
+  "selected_code": "SVARR",
+  "language": "de",
+  "source_report": "supraventrikulÄre arrhythmie ueberdrehter linkstyp qrs(t) abnorm    inferiorer infarkt mÖglich 4.46                          unbestÄtigter bericht",
+  "source_report_zh": "上心室性心律不整，電軸極度左偏，QRS(T) 型態異常，可能有下壁梗塞。（未經確認報告）",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "電軸極度左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "SCP 碼為正常心電圖（NORM 100），但（未經確認之）報告描述電軸極度左偏、QRS(T) 型態異常及可能下壁梗塞，兩者矛盾；推測機器判讀已被審核者覆寫為正常，報告內容不宜作為本圖之診斷依據。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SVARR-13186",
+  "ecg_id": "13186",
+  "selected_code": "SVARR",
+  "language": "de",
+  "source_report": "supraventrikulÄre extrasystole(n), bigeminus supraventrikulÄre ersatzsystole(n) supraventrikulÄre arrhythmie lagetyp normal st & t abnorm, wahrscheinlich    anterolaterale ischÄmie oder linksbelastung    inferolaterale ischÄmie oder linksbelastung 4.46   ",
+  "source_report_zh": "心房早期收縮呈二聯律，上心室性逸脫搏動，上心室性心律不整，電軸正常，ST 及 T 波異常，很可能為前側壁缺血或左心室勞損、下側壁缺血或左心室勞損。",
+  "statements_zh": [
+   {
+    "code": "PSVT",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "陣發性上心室性心搏過速"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原文「wahrscheinlich」為「很可能」，已將「可能為」修正為「很可能為」。SCP 碼為陣發性上心室性心搏過速（PSVT 100），報告僅述心房早期收縮二聯律、上心室性逸脫搏動與上心室性心律不整，未提及心搏過速；非直接矛盾，但報告未反映主要心律診斷。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-SVARR-15427",
+  "ecg_id": "15427",
+  "selected_code": "SVARR",
+  "language": "de",
+  "source_report": "supraventrikulÄre arrhythmie lagetyp normal unvollstÄndiger rechtsschenkelblock qrs(t) abnorm    inferiorer myokardschaden mÖglich st & t abnorm, wahrscheinlich    hochlaterale ischÄmie oder linksbelastung 4.46                          unbestÄtigter beric",
+  "source_report_zh": "上心室性心律不整，電軸正常，不完全性右束支傳導阻滯，QRS(T) 型態異常，可能有下壁心肌損傷，ST 及 T 波異常，很可能為高側壁缺血或左心室勞損。（未經確認報告）",
+  "statements_zh": [
+   {
+    "code": "ASMI",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前間壁心肌梗塞"
+   },
+   {
+    "code": "ALMI",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前側壁心肌梗塞"
+   },
+   {
+    "code": "IRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "不完全性右束支傳導阻滯"
+   },
+   {
+    "code": "WPW",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "WPW 症候群（預激症候群）"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "原文「wahrscheinlich」為「很可能」，已將「可能為」修正為「很可能為」（「möglich」維持「可能」）。SCP 碼為前間壁心肌梗塞、前側壁心肌梗塞及 WPW 症候群（各 100），報告則稱「可能有下壁心肌損傷」且完全未提及預激；梗塞部位不一致、WPW 缺漏，判定為矛盾（推測前壁假性梗塞波形實為 WPW 所致，報告為未經確認之機器判讀）。不完全性右束支傳導阻滯與碼一致。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-SVARR-17214",
+  "ecg_id": "17214",
+  "selected_code": "SVARR",
+  "language": "de",
+  "source_report": "supraventrikulÄre arrhythmie p-verbreiterung lagetyp normal 4.46                          unbestÄtigter bericht",
+  "source_report_zh": "上心室性心律不整，P 波增寬，電軸正常。（未經確認報告）",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-BIGU-8872",
+  "ecg_id": "8872",
+  "selected_code": "BIGU",
+  "language": "de",
+  "source_report": "ventrikulÄre extrasystole(n) sinus arrhythmie verdacht auf p-sinistrocardiale linkstyp unspezifische intraventrikulÄre leitungsstÖrung st & t abnorm, wahrscheinlich    anterolaterale ischÄmie oder linksbelastung 4.46                          unbestÄtigter",
+  "source_report_zh": "心室早期收縮，竇性心律不整，疑似左心房負荷（P mitrale），電軸左偏，非特異性心室內傳導障礙，ST 及 T 波異常，很可能為前側壁缺血或左心室勞損。（未經確認報告）",
+  "statements_zh": [
+   {
+    "code": "PVC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心室早期收縮"
+   },
+   {
+    "code": "BIGU",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "二聯律（起源不明，上心室性或心室性）"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原文「wahrscheinlich」為「很可能」，已將「可能為」修正為「很可能為」。報告提及心室早期收縮但未提及二聯律（BIGU 100 為本圖選定碼）；報告較精簡，不構成矛盾。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-BIGU-2160",
+  "ecg_id": "2160",
+  "selected_code": "BIGU",
+  "language": "de",
+  "source_report": "linkslagetyp sinustachykardie >5/min, vorhof-es, z.t. in bigeminie intraventr. leitungsstÖrung in iii,avf st-hebung in v1 st-senkung in i,v2-v5 t neg in avl path. ekg",
+  "source_report_zh": "電軸左偏，竇性心搏過速，心房早期收縮 >5/min，部分呈二聯律，III、aVF 導程心室內傳導障礙，V1 導程 ST 段上升，I、V2–V5 導程 ST 段壓低，aVL 導程 T 波倒置，異常心電圖。",
+  "statements_zh": [
+   {
+    "code": "ISCAL",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "前側壁導程缺血變化"
+   }
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-BIGU-14501",
+  "ecg_id": "14501",
+  "selected_code": "BIGU",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s), bigeminy. sinus rhythm. otherwise normal ecg.",
+  "source_report_zh": "心室早期收縮，呈二聯律；竇性心律，其餘為正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 80.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-BIGU-6075",
+  "ecg_id": "6075",
+  "selected_code": "BIGU",
+  "language": "en",
+  "source_report": "premature atrial contractions, bigeminy. sinus rhythm. otherwise normal ecg.",
+  "source_report_zh": "心房早期收縮，呈二聯律；竇性心律，其餘為正常心電圖。",
+  "statements_zh": [
+   {
+    "code": "NORM",
+    "likelihood": 50.0,
+    "kind": "diagnostic",
+    "zh": "正常心電圖"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-BIGU-16361",
+  "ecg_id": "16361",
+  "selected_code": "BIGU",
+  "language": "de",
+  "source_report": "vorhofflimmern/-flattern ueberdrehter linkstyp linksschenkelblock",
+  "source_report_zh": "心房顫動或撲動，電軸極度左偏，左束支傳導阻滯。",
+  "statements_zh": [
+   {
+    "code": "PVC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心室早期收縮"
+   },
+   {
+    "code": "BIGU",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "二聯律（起源不明，上心室性或心室性）"
+   }
+  ],
+  "axis_zh": "電軸極度左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "SCP 碼為心室早期收縮與二聯律（各 100），且 AFIB 可能性為 0；報告卻描述心房顫動或撲動及左束支傳導阻滯，碼中亦無任何束支阻滯。心律判讀明顯矛盾（推測審核者判定為心室早期收縮二聯律，機器將寬 QRS 早期收縮誤讀為心房顫動合併左束支傳導阻滯）。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-BIGU-4637",
+  "ecg_id": "4637",
+  "selected_code": "BIGU",
+  "language": "de",
+  "source_report": "interponierte ventrikulÄre extrasystole(n) supraventrikulÄre extrasystole(n), bigeminus sinusrhythmus a-v block i p-sinistrocardiale ueberdrehter linkstyp rechtsschenkelblock",
+  "source_report_zh": "插入性心室早期收縮，心房早期收縮呈二聯律，竇性心律，一度房室傳導阻滯，左心房負荷（P mitrale），電軸極度左偏，右束支傳導阻滯。",
+  "statements_zh": [
+   {
+    "code": "PVC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心室早期收縮"
+   },
+   {
+    "code": "BIGU",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "二聯律（起源不明，上心室性或心室性）"
+   }
+  ],
+  "axis_zh": "電軸極度左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-AFLT-17",
+  "ecg_id": "17",
+  "selected_code": "AFLT",
+  "language": "de",
+  "source_report": "vorhof:hf  280 tachykardes vorhofflimmern ueberdrehter linkstyp qrs(t) abnormal    inferiorer infarkt     alter unbest.",
+  "source_report_zh": "心房頻率 280/min，心房顫動合併快速心室反應，電軸極度左偏，QRS(T) 型態異常，下壁梗塞（年代不明）。",
+  "statements_zh": [
+   {
+    "code": "AFLT",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "心房撲動"
+   }
+  ],
+  "axis_zh": "電軸極度左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "SCP 碼為心房撲動（AFLT 100，AFIB 為 0），報告原文卻寫「tachykardes vorhofflimmern」（心房顫動）；心房頻率 280/min 較符合心房撲動，報告用語與碼矛盾。譯文忠於原文保留「心房顫動」，使用時應以碼（心房撲動）為準。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-AFLT-5252",
+  "ecg_id": "5252",
+  "selected_code": "AFLT",
+  "language": "de",
+  "source_report": "regelmÄssiger rhythmus, keine p-welle erkannt lagetyp normal st & t abnormal, wahrscheinlich    anteriore ischÄmie oder linksbelastung    laterale ischÄmie oder linksbelastung    inferolaterale ischÄmie oder linksbelastung",
+  "source_report_zh": "規則心律，未見 P 波，電軸正常，ST 及 T 波異常，很可能為前壁、側壁及下側壁缺血或左心室勞損。",
+  "statements_zh": [
+   {
+    "code": "AFLT",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "心房撲動"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原文「wahrscheinlich」為「很可能」，已將「可能為」修正為「很可能為」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-AFLT-449",
+  "ecg_id": "449",
+  "selected_code": "AFLT",
+  "language": "sv",
+  "source_report": "supraventrikulÄr(a) extrasystoli(er) supraventrikulÄr(a) escape beat(s) interpolerade supraventrikulÄr(a) extrasystoli(er) supraventrikulÄr tachykardi vÄnster el-axel st-t sÄnkning, sÅsom vid    anterior ischemi eller vÄnster belastning    lateral ischemi",
+  "source_report_zh": "心房早期收縮，上心室性逸脫搏動，插入性心房早期收縮，上心室性心搏過速，電軸左偏，ST-T 壓低，如前壁缺血或左心室勞損、側壁缺血所見。",
+  "statements_zh": [
+   {
+    "code": "AFLT",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "心房撲動"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-AFLT-20085",
+  "ecg_id": "20085",
+  "selected_code": "AFLT",
+  "language": "de",
+  "source_report": "vorhofflimmern/-flattern lagetyp normal st & t abnormal, wahrscheinlich    inferiore ischÄmie oder linksbelastung",
+  "source_report_zh": "心房顫動或撲動，電軸正常，ST 及 T 波異常，很可能為下壁缺血或左心室勞損。",
+  "statements_zh": [
+   {
+    "code": "AFLT",
+    "likelihood": 100.0,
+    "kind": "rhythm",
+    "zh": "心房撲動"
+   }
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原文「wahrscheinlich」為「很可能」，已將「可能為」修正為「很可能為」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-SVTAC-336",
+  "ecg_id": "336",
+  "selected_code": "SVTAC",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s) a rapid, regular supraventricular tachycardia is present. rhythm is probably atrial flutter with 2:1 av block. left ventricular hypertrophy. non-specific st-t wave changes.",
+  "source_report_zh": "心室早期收縮；快速且規則之上心室性心搏過速，心律可能為心房撲動合併 2:1 房室傳導阻滯。左心室肥厚，非特異性 ST-T 波變化。",
+  "statements_zh": [
+   {
+    "code": "LVH",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "左心室肥厚"
+   },
+   {
+    "code": "ISC_",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "非特異性缺血變化"
+   },
+   {
+    "code": "PVC",
+    "likelihood": 100.0,
+    "kind": "form",
+    "zh": "心室早期收縮"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SVTAC-7075",
+  "ecg_id": "7075",
+  "selected_code": "SVTAC",
+  "language": "en",
+  "source_report": "rapid, regular supraventricular tachycardia. rightward axis. right bundle branch block. suggest repeat when patient has reverted to sinus    rhythm.",
+  "source_report_zh": "快速且規則之上心室性心搏過速，電軸右偏，右束支傳導阻滯。建議待病人恢復竇性心律後重做心電圖。",
+  "statements_zh": [
+   {
+    "code": "IRBBB",
+    "likelihood": 100.0,
+    "kind": "diagnostic",
+    "zh": "不完全性右束支傳導阻滯"
+   }
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "SCP 碼為不完全性右束支傳導阻滯（IRBBB 100），報告僅述「右束支傳導阻滯」未註明完全性；非直接矛盾，但呈現時宜以碼之「不完全性」為準。",
+  "corrected": false
+ }
+]

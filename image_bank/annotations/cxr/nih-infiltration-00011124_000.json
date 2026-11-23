@@ -1,0 +1,43 @@
+{
+  "id": "nih-infiltration-00011124_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal, erect); 'L' side marker over the patient's left shoulder confirms conventional orientation (patient-right on image-left)",
+  "technical_quality": "Adequate. Good inspiration (about 9-10 posterior ribs), no significant rotation, adequate penetration (thoracic spine visible through the heart). Scapular medial borders project over the lateral upper lung fields bilaterally; costophrenic angles and both hemidiaphragms fully included.",
+  "target": {
+    "finding": "pulmonary infiltrate (NIH label Infiltration)",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "middle",
+    "size_cm": 5,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "right",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "External radiographic side marker ('L' with technologist initials 'DG'); not a patient device",
+      "location": "Image upper-right corner, over the patient's left shoulder soft tissue",
+      "zh": "外部側別標記（L 及技師縮寫 DG），非病人身上裝置"
+    }
+  ],
+  "other_findings": [
+    "右肺門較左側突出、密度增加，與浸潤影相連",
+    "兩側下肺野間質／網狀紋理輕度增加，無實質化",
+    "主動脈弓突出、胸主動脈迂曲（年齡相關主動脈延展），上縱膈輕度增寬，氣管居中",
+    "心臟大小正常（心胸比約0.45），呈狹長垂直型；兩側肺野相對透亮，疑有輕度過度充氣（軟性發現）",
+    "兩側肩胛骨內緣投影於上外側肺野，略影響該區判讀",
+    "兩側肋膈角銳利，無肋膜積液或氣胸",
+    "左橫膈下可見胃泡及含糞便之腸氣，橫膈下無游離氣體",
+    "骨骼未見急性骨折或破壞性病變"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標記之右中肺野浸潤影在影像上清楚可見，且獲三方（放射科標框、知情讀片者A、盲讀者B）一致定位於右側中肺野。影像上無任何胸管、引流管、導管、導線或植入裝置，亦無術後或治療後變化；其餘發現（主動脈迂曲、輕度間質紋理增加、疑輕度過度充氣）皆為慢性或年齡相關背景，不與「首次因此發現就診」之情境矛盾，適合作為初次表現之教學影像。",
+  "description_zh": "胸部正位（PA）直立X光片，吸氣程度足夠、無明顯旋轉、穿透適當，僅兩側肩胛骨內緣略投影於上外側肺野，影像品質尚可。右側中肺野肺門周圍及肺門下方向外側延伸可見邊界不清、斑片狀之網狀結節樣浸潤影，範圍約4-5公分，右肺門較左側突出且密度增加，未見氣管支氣管徵象或葉性實質化；兩側下肺野間質紋理輕度增加，左肺野其餘部分清晰。心臟大小正常但呈狹長垂直型，主動脈弓突出、胸主動脈迂曲，上縱膈輕度增寬，氣管居中；兩側肺野相對透亮，疑有輕度過度充氣。兩側橫膈輪廓平滑、肋膈角銳利，無肋膜積液或氣胸；左橫膈下可見胃泡及含糞便之腸氣，橫膈下無游離氣體，骨骼無急性病變。影像上未見任何導管、導線、引流管或植入裝置，僅患者左肩上方有外部「L」側別標記。",
+  "label_concern": ""
+}

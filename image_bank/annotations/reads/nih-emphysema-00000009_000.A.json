@@ -1,0 +1,52 @@
+{
+ "view": "PA (frontal, erect); \"L\" side marker projected at image upper right confirms conventional orientation (patient left on image right)",
+ "technical_quality": "Adequate. Good inspiration (lungs hyperinflated), apices and both costophrenic angles included, minimal rotation, penetration adequate for lungs; upper abdomen and lower thorax relatively bright (windowing). Scapulae partly project over the lateral upper zones; shoulders/humeral heads elevated.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "whole",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Multiple surgical clips (metallic, chain-like, post-operative)",
+   "location": "Mediastinum / right paravertebral region, projected over and just right of the thoracic spine from about T3 to T9 (upper to middle zone, midline-right)"
+  },
+  {
+   "type": "Small ring-shaped metallic density (probable surgical clip seen en face)",
+   "location": "Projected over the right hilum, medial right middle zone"
+  },
+  {
+   "type": "External L side marker with 'DG' label",
+   "location": "Image upper right corner, over the patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hyperinflated, hyperlucent lungs with attenuated peripheral vascular markings (more marked in the upper zones) - consistent with emphysema",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Flattened hemidiaphragms (hyperinflation)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Narrow, elongated vertical (tubular) cardiac silhouette secondary to hyperinflation",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Post-operative change: multiple mediastinal / right paravertebral surgical clips indicating prior mediastinal or thoracic surgery (nature of surgery not determinable)",
+   "laterality": "right",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Mildly prominent right hilum (uncertain, may be vascular/positional)",
+   "laterality": "right",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "胸部X光正面(PA)像，吸氣度良好，兩側肺野透亮度增加、周邊血管紋理減少，兩側橫膈變平、心影狹長呈垂直管狀，符合肺過度充氣及肺氣腫之表現，以上肺野較為明顯。縱膈腔及右側脊椎旁區域可見多枚手術夾沿縱膈縱向排列(約T3至T9高度)，右肺門處另見一小環狀金屬影，顯示曾接受縱膈或胸腔手術，手術性質無法由本片判定。兩側肋膈角銳利，未見明顯肋膜積液、氣胸或局部實質病灶；未見胸管、引流管或其他導管。影像右上角可見「L」側別標記。"
+}

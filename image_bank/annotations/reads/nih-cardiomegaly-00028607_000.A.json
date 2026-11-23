@@ -1,0 +1,18 @@
+{
+ "view": "PA (frontal, erect); consistent with recorded view",
+ "technical_quality": "Adequate: good inspiration (~9-10 posterior ribs visible), minimal rotation (medial clavicles roughly symmetric about spinous processes), adequate penetration with vertebral bodies faintly visible behind the heart, both apices and costophrenic angles included. Side marker at the top-right image corner is partially cropped.",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 17,
+ "devices": [
+  {
+   "type": "radiopaque side marker (angled / L-shaped, partially cropped at image edge) - external artifact, not a medical device",
+   "location": "top-right corner of the image, i.e. patient's left upper corner, outside the thorax above the left shoulder"
+  }
+ ],
+ "abnormalities": [],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面 PA 片，吸氣度良好，無明顯旋轉，穿透度適當。心影大小屬邊緣性：心影橫徑約 410 px（以胸廓 35 cm 估算約 17 cm），心胸比約 0.49，左心緣略顯圓鈍且向外側突出，但在 12 歲男童尚未達到明確心臟擴大之標準，故對「心臟擴大」此標記持保留態度。雙側肺野清晰，無實質化、肋膜積液或氣胸，肋膜角銳利，橫膈輪廓平滑，左橫膈下可見正常胃泡及左上腹腸氣。未見任何導管、引流管、起搏器或手術夾，僅影像右上角（病人左側）可見部分被裁切之放射不透 X 光側別標記。"
+}

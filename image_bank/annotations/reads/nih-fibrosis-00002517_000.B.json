@@ -1,0 +1,29 @@
+{
+ "view": "PA frontal chest radiograph (erect), L marker at image top-right (patient's left) confirming conventional orientation",
+ "technical_quality": "Adequate. Fair inspiration (approximately 9 posterior ribs), no significant rotation (medial clavicle ends roughly equidistant from spinous processes), trachea midline. Penetration slightly low with the abdomen and retrocardiac area under-exposed. Arms at the sides so both scapulae project over the upper-lateral lung fields; humeri and soft tissue of the upper arms included in the field. No motion blur.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Coarse reticular / linear (interstitial-type) opacities in the medial right lower zone, adjacent to the right heart border and extending down to the right hemidiaphragm, partially silhouetting the right heart border; suggests chronic fibrotic / bronchiectatic change of the right middle or lower lobe",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent right hilum with increased peri-hilar markings, likely related to the adjacent lower-zone reticular change",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Subtle increase in peri-hilar / lower-zone interstitial markings on the left, much less than the right (equivocal)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光（PA站立），吸氣尚可、無明顯旋轉，氣管居中；未見任何導管、導線、心律調節器或體外裝置。右下肺野內側（右心緣旁延伸至右橫膈上方）可見粗糙網狀及條索狀高密度影，使右心緣輪廓部分模糊，右肺門略顯突出；左肺野大致清晰，僅左下肺野肺門周圍紋理略增。雙側肋膈角銳利，未見肋膜積液或氣胸；心影大小正常、縱隔未增寬，左橫膈下可見胃泡，骨骼與軟組織未見明顯異常。"
+}

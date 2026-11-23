@@ -1,0 +1,44 @@
+{
+ "view": "PA frontal chest radiograph (erect), conventional orientation with an external \"L\" marker at the upper right of the image (patient's left)",
+ "technical_quality": "Adequate: fair inspiration (~9 posterior ribs), acceptable penetration with vertebral bodies faintly visible through the heart, minimal rotation, scapulae partially projected over the upper lateral lung fields. No lines, tubes, clips or pacemaker; only an external side marker.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "multiple",
+ "size_cm": 7,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Enlarged, dense right hilum with a lobulated mass-like opacity (hilar mass or lymphadenopathy)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Ill-defined lobulated opacity extending from the right hilum into the medial right lower zone, partially obscuring the right heart border (suggesting right middle lobe atelectasis/consolidation or infrahilar mass extension)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild elevation of the right hemidiaphragm (possible right-sided volume loss)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent left hilum with rounded density (possible hilar lymphadenopathy or enlarged pulmonary artery)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild superior mediastinal widening with right paratracheal fullness",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Prominent aortic knob",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面X光（PA），吸氣量尚可、無明顯旋轉，未見任何導管、引流管、手術夾或心律調節器，僅見外部L標記。右側肺門增大且密度增加，並有分葉狀緻密影自肺門向下延伸至右中下肺野內側，部分遮蔽右心緣，需考慮右肺門腫塊或淋巴結腫大合併右中葉塌陷／實變；左側肺門亦略顯突出。右側橫膈輕度上抬，上縱膈略寬伴右氣管旁飽滿、主動脈弓突出；雙側肋膈角銳利，未見氣胸或肋膜積液，心臟大小尚在正常範圍，骨骼與軟組織未見明顯病灶。"
+}

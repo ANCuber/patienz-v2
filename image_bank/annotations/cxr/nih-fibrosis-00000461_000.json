@@ -1,0 +1,58 @@
+{
+  "id": "nih-fibrosis-00000461_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal), upright",
+  "technical_quality": "Adequate inspiration (about 9 posterior ribs), minimal rotation, adequate penetration (vertebral bodies faintly seen through the heart). Right lateral chest-wall soft-tissue folds partly project over the right lung base; an external lead marker at the top-right image corner is partly cut off. Moderate soft-copy processing noise. Diagnostic quality.",
+  "target": {
+    "finding": "Pulmonary fibrosis: coarse reticular / linear interstitial opacities with peribronchial thickening, bilateral lower zones and perihilar regions, right-predominant, with a fibrotic band at the medial right lung base",
+    "visible": "yes",
+    "laterality": "bilateral",
+    "zone": "lower",
+    "size_cm": 9,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "right",
+    "reader_b": "bilateral",
+    "adjudicator": "bilateral"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "Multiple small linear metallic surgical clips (approx. 15-20), consistent with prior axillary lymph-node dissection",
+      "location": "Patient right axilla / right upper lateral chest wall soft tissue (extra-thoracic)",
+      "zh": "右腋窩／右上外側胸壁軟組織多枚線狀手術夾（既往腋窩淋巴結廓清）"
+    },
+    {
+      "type": "Additional short linear metallic densities (surgical clips)",
+      "location": "Patient right lateral chest wall soft tissue, lower level (mid-height, far lateral)",
+      "zh": "右側胸壁外側軟組織較低位置之線狀金屬影（手術夾）"
+    },
+    {
+      "type": "External radiographic lead marker / positioning marker (round dense object with a small bar, partly cut off)",
+      "location": "Top-right image corner, over the patient's left shoulder soft tissue",
+      "zh": "影像右上角外置鉛字標記／定位標記（部分被切邊）"
+    },
+    {
+      "type": "Small oblong radiopaque density (~1 cm), surgical clip vs external artifact vs calcification - indeterminate",
+      "location": "Right upper quadrant of abdomen, projected below the right hemidiaphragm over the liver",
+      "zh": "右上腹橫膈下約1公分小片狀高密度影（手術夾、外來物或鈣化待鑑別）"
+    }
+  ],
+  "other_findings": [
+    "右肺基部近右心緣可見帶狀線狀影，疑為纖維帶或次節段性肺塌陷",
+    "兩側肺門略顯突出且密度增高，疑有鈣化肺門淋巴結",
+    "主動脈弓迂曲突出、主動脈結緻密（動脈硬化），左側上縱膈輕度增寬，符合年齡相關之主動脈延展",
+    "心臟大小在正常上限（心胸比約0.5），無明確心臟擴大，氣管居中",
+    "右腋窩多枚手術夾，符合既往右側腋窩淋巴結廓清術後（疑右側乳房手術）",
+    "右上腹橫膈下小片狀高密度影（手術夾、外來物或鈣化待鑑別）",
+    "胸椎骨質疏鬆併輕度退化性變化，未見肋骨骨折",
+    "兩側肋膈角清晰，未見肋膜積液或氣胸"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標記之肺纖維化（粗網狀、線狀間質性變化，以右側中下肺野及肺門周圍為主，左下肺野較輕）在片上可見，且無胸管、引流管或任何針對此病灶之治療裝置。片中右腋窩及右側胸壁之手術夾為既往腋窩淋巴結廓清（疑乳癌手術）之痕跡，與肺纖維化本身無關，不妨礙作為首次因呼吸道症狀就診之影像；但病例設定須納入既往右側乳房／腋窩手術史，且主動脈迂曲、骨質疏鬆等為高齡相關變化，與81歲女性相符。",
+  "description_zh": "正面（PA）站立胸部X光，吸氣充分、旋轉輕微、穿透適當，右側胸壁軟組織皺褶部分重疊於右下肺野，影像右上角有一枚部分被切邊的外置鉛字標記。兩側肺門周圍及下肺野可見粗網狀、線狀之間質性陰影併支氣管周圍增厚，以右側為主，自右肺門向右中下肺野放射分布，範圍約9公分，右肺基部近右心緣另見一帶狀線狀影（纖維帶或次節段性肺塌陷），左下肺野僅有較輕微的粗線狀紋路增加，整體符合慢性間質性變化／肺纖維化。兩側肺門略顯突出且密度增高，疑有鈣化淋巴結；主動脈弓迂曲突出、主動脈結緻密（動脈硬化），左側上縱膈輕度增寬，心臟大小在正常上限，氣管居中。右腋窩及右側胸壁外側軟組織可見多枚（約15-20枚）線狀手術夾，符合既往右側腋窩淋巴結廓清術後；右上腹橫膈下另見一約1公分之小片狀高密度影（手術夾、外來物或鈣化待鑑別）。兩側肋膈角清晰，未見肋膜積液或氣胸，無胸管或引流管；胸椎骨質疏鬆併輕度退化性變化，未見肋骨骨折。",
+  "label_concern": ""
+}

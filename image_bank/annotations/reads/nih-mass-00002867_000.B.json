@@ -1,0 +1,47 @@
+{
+ "view": "Frontal chest radiograph (PA/AP, erect); no legible L/R marker, conventional orientation assumed",
+ "technical_quality": "Adequate penetration. Slight rotation/tilt (patient's right clavicle projects higher, spine slightly obliqued). Suboptimal inspiration (~8 posterior ribs, low lung volumes). Centred low with the upper abdomen included. Bright vertical collimation/cassette-edge band along the image's left edge (patient's right) and a white label block at the image top-right corner; both lungs and costophrenic angles still fully included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 3,
+ "devices": [
+  {
+   "type": "external artifact - anatomic/text marker tag with small round lead marker",
+   "location": "image top-right, projected over the patient's left shoulder / acromioclavicular region"
+  },
+  {
+   "type": "external artifact - white rectangular label block",
+   "location": "image top-right corner, outside the thorax"
+  },
+  {
+   "type": "external artifact - collimation / cassette-edge bright band",
+   "location": "vertical band along the image's left edge, lateral to the patient's right chest wall"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Enlarged right hilum with a lobulated, well-defined rounded soft-tissue density (~3 cm) - hilar mass or hilar lymphadenopathy; denser and more lobulated than the contralateral hilum",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Widened right paratracheal stripe / convex right paratracheal soft-tissue density above the hilum - possible right paratracheal lymphadenopathy (thymic remnant / SVC less likely given age but possible)",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mild left hilar prominence, mostly vascular in configuration - equivocal, could be normal for age",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Low lung volumes with suboptimal inspiration and mild bronchovascular crowding at both bases (technical)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光，吸氣略不足並有輕度旋轉，未見任何導管、引流管、金屬夾或心律調節器，僅影像右上方見體外標記與標籤。右側肺門可見約3公分、邊緣分葉狀之軟組織密度增加，肺門輪廓明顯增大，需考慮肺門腫塊或淋巴結腫大；右側氣管旁條紋亦略增寬呈外凸，左側肺門僅輕度突出、多為血管影。雙側肺野未見明確浸潤、結節或肋膜積液，肋膈角銳利，無氣胸；心臟大小正常，氣管居中，骨骼與軟組織無明顯異常，左橫膈下可見正常胃泡。"
+}

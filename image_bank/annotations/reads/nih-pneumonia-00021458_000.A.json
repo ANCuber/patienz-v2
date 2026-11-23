@@ -1,0 +1,66 @@
+{
+ "view": "PA (recorded); frontal chest radiograph, scapulae partially projected over the upper lateral lung fields",
+ "technical_quality": "Adequate penetration (spine visible through heart), roughly centred with minimal rotation, inspiration adequate. Large body habitus with bilateral breast shadows overlying the lower zones and a necklace artifact over the neck/mandible; scapulae not fully cleared from the lung fields. L marker visible at image upper right, consistent with conventional orientation.",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 9,
+ "devices": [
+  {
+   "type": "small implanted device with curved catheter/lead (probable subcutaneous venous port with looped catheter, or loop-recorder type device; exact type uncertain)",
+   "location": "patient's left upper chest, parasternal, projecting over the medial left upper zone at about the level of the aortic arch"
+  },
+  {
+   "type": "necklace / beaded chain with pendant (external artifact)",
+   "location": "over the mandible and anterior neck, upper midline of the image"
+  },
+  {
+   "type": "metallic dental restorations",
+   "location": "teeth/mandible, top centre of the image"
+  },
+  {
+   "type": "L side marker (external)",
+   "location": "image upper right corner, patient's left"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "patchy, partly confluent air-space opacity with coarse reticular markings, partially obscuring the hemidiaphragm; the more conspicuous of the two bases (~8-10 cm)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "patchy opacity with coarse reticulonodular markings at the medial lung base, hemidiaphragm outline indistinct medially (~6-8 cm)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "mild cardiomegaly, CTR approximately 0.54",
+   "laterality": "none",
+   "zone": "whole"
+  },
+  {
+   "finding": "prominent / unfolded thoracic aorta with widened upper mediastinal contour",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "diffusely coarse bronchovascular / interstitial markings, most marked in the perihilar and basal regions",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "possible mild blunting of the costophrenic angle (small pleural effusion cannot be excluded)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "bilateral breast shadows overlying the lower zones (may contribute to basal haziness); no pneumothorax",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "胸部正面X光片（記錄為PA），肩胛骨部分重疊於上肺野，頸部及下頜處可見項鍊等外來金屬異物影及牙科補綴物；左上胸胸骨旁（約主動脈弓高度）可見一小型植入裝置併彎曲導管/導線影，性質待查（疑為皮下靜脈輸液港或植入式紀錄器）。雙側下肺野可見斑片狀及粗網狀增加之肺紋理與模糊浸潤影，以左下肺野較為明顯且較融合（約8–10公分），左側橫膈及肋膈角部分模糊；右下肺野內側基底部亦見斑片狀密度增加，惟雙側乳房陰影重疊可能造成部分下肺野之霧狀影。心影略為擴大（心胸比約0.54），胸主動脈迂曲突出；未見氣胸，亦無胸管或引流管等治療後之證據。"
+}

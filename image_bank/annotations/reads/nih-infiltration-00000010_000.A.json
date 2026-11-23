@@ -1,0 +1,49 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate penetration, no significant rotation (clavicles roughly symmetric about the spinous processes), apices and both costophrenic angles included. Mild under-inspiration with elevated hemidiaphragms (~6 anterior ribs), which somewhat exaggerates cardiac size and basal crowding. L side marker present over the left shoulder, confirming conventional orientation.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "Radiopaque 'L' side marker (external artifact)",
+   "location": "Projected over the patient's left acromion / shoulder, upper right corner of the image"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Reticulonodular / patchy peribronchial infiltrate extending from below the right hilum along the right heart border to the medial base (labelled finding)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Increased perihilar bronchovascular markings without discrete consolidation, more prominent on the right",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Borderline cardiomegaly (CTR approximately 0.55-0.57), partly exaggerated by shallow inspiration",
+   "laterality": "midline",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent / unfolded tortuous aortic arch, consistent with age-related aortic ectasia",
+   "laterality": "midline",
+   "zone": "upper"
+  },
+  {
+   "finding": "Bilateral glenohumeral degenerative change with superior migration of the humeral heads (rotator cuff arthropathy pattern), right more than left",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Elevated hemidiaphragms with basal crowding from under-inspiration; costophrenic angles sharp, no pleural effusion or pneumothorax",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "PA 正面胸部X光，左肩處可見 L 側標記，患者吸氣略不足、兩側橫膈位置偏高。右下肺野內側（右肺門下方沿右心緣至右側橫膈上方）可見網狀結節狀及斑片狀浸潤陰影，範圍約 7 公分；雙側肺門周圍支氣管血管紋理增加，但未見明確實質化或肋膈角鈍化。心影略增大（心胸比約 0.55），主動脈弓突出迂曲，氣管居中。雙側肩關節退化性變化併肱骨頭上移（右側較明顯），未見任何管路、引流裝置或節律器。"
+}

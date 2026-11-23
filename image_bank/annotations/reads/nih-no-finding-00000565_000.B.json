@@ -1,0 +1,60 @@
+{
+ "view": "Frontal chest radiograph, likely AP (scapulae over lung fields, head flexed with mandible/teeth projected over upper mediastinum); L marker at image upper right confirms conventional orientation",
+ "technical_quality": "Limited. Hypoinflated film with high hemidiaphragms; the mandible and dentition overlap the upper mediastinum/thoracic inlet because of neck flexion; extensive posterior spinal instrumentation obscures the spine, trachea and much of the central mediastinum; probable rotation/thoracic deformity (asymmetric rib cage). Penetration adequate for lung fields; lung bases partly obscured by abdominal contents and adjacent soft tissue (arms/breast).",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "whole",
+ "size_cm": 27,
+ "devices": [
+  {
+   "type": "Posterior spinal fusion instrumentation: two paraspinal rods with multiple hooks/screws and a transverse cross-connector (scoliosis construct), approx 27 cm long",
+   "location": "Midline, projected over the mediastinum from the cervicothoracic junction (about T1) to the upper lumbar spine, extending below the diaphragm"
+  },
+  {
+   "type": "Side marker 'L' with a number (30)",
+   "location": "Image upper right, i.e. patient's left shoulder region, outside the body"
+  },
+  {
+   "type": "Round metallic marker (calibration ball / BB)",
+   "location": "Adjacent to the L marker, projected lateral to the patient's left shoulder, external"
+  },
+  {
+   "type": "Earrings (bilateral)",
+   "location": "Both ear lobes, projected at the top of the image on either side of the mandible"
+  },
+  {
+   "type": "Curved thick dense external objects, probably wheelchair armrests / positioning frame",
+   "location": "Bilateral lower corners of the image, lateral to the lower thorax/abdomen, outside the patient"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Posterior spinal instrumentation (bilateral rods with hooks/screws and cross-link) from cervicothoracic junction to upper lumbar spine, consistent with prior scoliosis fusion surgery",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Asymmetric, deformed thoracic cage with crowded, steeply sloping right ribs and relatively reduced right lung lucency, consistent with residual scoliosis/rotational chest wall deformity (restrictive thorax)",
+   "laterality": "right",
+   "zone": "whole"
+  },
+  {
+   "finding": "Hypoinflation with elevated hemidiaphragms and small lung volumes",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent cardiomediastinal silhouette (CTR appears >0.5), probably exaggerated by AP projection, low lung volumes and thoracic deformity; true cardiomegaly not established",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Hazy increased density in the right perihilar / mid zone, most likely overlapping ribs, hilar vessels and rotation rather than true consolidation; low confidence",
+   "laterality": "right",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "胸部正面（疑為AP）X光片，吸氣不足、頸部前屈致下頜與牙齒重疊於上縱膈，且脊椎後路固定器遮蔽脊椎及中央縱膈，影像品質受限。可見雙側後路脊椎固定桿（含多枚鉤/螺釘及一橫向連接器）自頸胸交界延伸至上腰椎，符合脊椎側彎矯正術後；胸廓不對稱，右側肋骨擁擠、右肺透亮度相對減低，兩側橫膈上抬，肺容積小。雙肺可見範圍內未見明確實質化、氣胸或明顯肋膜積液，右肺門旁區域略呈模糊增厚，較可能為肋骨與血管重疊所致；心縱膈輪廓顯得寬大，可能與AP攝影及吸氣不足有關。另見雙側耳環、左側L標記與圓形金屬校正球，以及影像下方兩側外部彎曲致密物（疑為輪椅或擺位裝置）。"
+}

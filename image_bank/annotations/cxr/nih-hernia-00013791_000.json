@@ -1,0 +1,47 @@
+{
+ "id": "nih-hernia-00013791_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate upright PA film; 'L' marker with technologist initials 'DG' at the image top-right confirms conventional orientation (patient's left on image right). Good inspiration (about 9-10 posterior ribs), minimal rotation (clavicles roughly equidistant from the spinous processes), adequate penetration (thoracic spine visible through the heart), apices and costophrenic angles included. Large bilateral breast shadows overlie both lower zones, hemidiaphragms and the retrocardiac region and reduce conspicuity at the bases; the scapulae partly project over the upper lateral lung fields.",
+ "target": {
+  "finding": "diaphragmatic hernia",
+  "visible": "uncertain",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": -1,
+  "confidence": 0.25
+ },
+ "laterality_sources": {
+  "bbox": "none (NLP-mined label, no radiologist box)",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Several small, thin linear metallic densities consistent with surgical clips (prior upper-abdominal surgery; faint, seen only on magnification)",
+   "location": "Left upper abdominal quadrant below the left hemidiaphragm, inferomedial to the gastric bubble, about 5 cm to the left of the midline",
+   "zh": "左上腹橫膈下、胃泡內下方數枚細小線狀金屬手術夾（曾接受上腹部手術；影像上淡薄，放大後可辨）"
+  },
+  {
+   "type": "External laterality marker 'L' with technologist initials 'DG'",
+   "location": "Image upper-right corner, outside the patient (patient's left side)",
+   "zh": "影像右上角之左側標記「L」及技師縮寫「DG」（患者體外）"
+  }
+ ],
+ "other_findings": [
+  "左下肺野外側、約前第5-6肋高度、橫膈頂上方約4公分處見一約4×2.5公分邊界清楚之均質橢圓形結節／腫塊狀陰影，與橫膈不相連；對側同高度無對稱陰影，傾向真正肺內病灶而非乳頭陰影",
+  "右中肺野肺門外側、前第4肋投影處見一約2-2.5公分邊界清楚之圓形肺結節",
+  "右肺門緻密圓鈍（約3.5公分）並含多發點狀鈣化，符合鈣化肺門淋巴結／肉芽腫性變化；左肺門旁另見一單發點狀鈣化",
+  "左上縱膈於主動脈弓／主肺動脈窗處輪廓對28歲患者而言略顯突出，不排除縱膈或左肺門淋巴結腫大（低信心度）",
+  "左橫膈與右側約等高或僅略高（≤1公分），其下方胃泡擴張並含斑駁食物殘渣影；心後區未見氣液面或含氣疝囊，胃泡位於橫膈下正常位置",
+  "雙側大範圍乳房軟組織陰影重疊於下肺野、橫膈及心後區（技術限制，非病變）",
+  "心臟大小正常、氣管居中，雙側肋膈角大致銳利，無肋膜積液或氣胸；骨骼結構完整，未見胸管、引流管、中心靜脈導管或心律調節器"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標記之橫膈疝氣在本片無明確影像證據：心後區無氣液面或含氣疝囊，胃泡位於左橫膈下正常位置，盲讀者亦未能確認，僅左橫膈略高與擴張含食物之胃可作為間接線索。左上腹另可見手術夾，提示曾接受上腹部手術（不排除為疝氣修補或胃底摺疊術後），與「首次就診」情境相矛盾。且本片最顯著之異常為多發肺結節（左下肺野約4×2.5公分腫塊、右中肺野約2-2.5公分結節）與鈣化右肺門淋巴結，會主導判讀。雖無胸管、引流管等治療器材，仍不適合作為橫膈疝氣首次就診之教學代表影像。",
+ "description_zh": "胸部後前位（PA）直立片，吸氣深度足夠（約可見9-10根後肋）、無明顯旋轉、穿透度適當；雙側大範圍乳房軟組織陰影重疊於雙下肺野、橫膈及心後區，肩胛骨部分投影於上外側肺野；影像右上角可見「L」側別標記及技師縮寫「DG」，左上腹橫膈下、胃泡內下方另見數枚細小線狀金屬手術夾，提示曾接受上腹部手術。標記之左側橫膈疝氣（食道裂孔疝氣）在本片未能明確辨識：心後區未見氣液面或含氣疝囊，胃泡位於左橫膈下正常位置，左橫膈與右側約等高或僅略高（≤1公分），其下方之胃呈擴張並含斑駁食物殘渣，小型裂孔疝氣需以側面片或CT才能排除。本片最顯著之異常為多發肺結節：左下肺野外側、約前第5-6肋高度、橫膈頂上方約4公分處見一約4×2.5公分邊界清楚之均質橢圓形腫塊狀陰影（對側無對稱之乳頭陰影，傾向肺內病灶），右中肺野肺門外側、前第4肋投影處另見一約2-2.5公分邊界清楚之圓形結節，建議胸部CT進一步評估。右肺門緻密圓鈍並含多發點狀鈣化（鈣化肺門淋巴結／肉芽腫性變化），左肺門旁亦見一點狀鈣化；左上縱膈主動脈弓／主肺動脈窗處輪廓對年齡而言略顯突出，不排除淋巴結腫大。心臟大小正常、氣管居中，雙側肋膈角大致銳利，無肋膜積液或氣胸，未見胸管、引流管或心律調節器，骨骼未見明顯異常。",
+ "label_concern": "「Hernia」標籤在本片未獲明確影像支持：心後區無氣液面或含氣疝囊，胃泡位於左橫膈下正常位置，僅左橫膈略高與擴張含食物之胃可作為間接線索（盲讀者亦僅列為「不能排除」）。本片實際主要異常為左下肺野約4×2.5公分腫塊、右中肺野約2-2.5公分結節及右肺門鈣化淋巴結，與另一NLP標籤「Mass」較相符；左上腹手術夾亦提示可能為疝氣修補術後而非現存疝氣。"
+}

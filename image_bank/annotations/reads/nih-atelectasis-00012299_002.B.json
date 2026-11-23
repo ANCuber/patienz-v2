@@ -1,0 +1,42 @@
+{
+ "view": "PA (frontal, erect) chest radiograph; L marker in upper right of image confirms conventional orientation (image left = patient right)",
+ "technical_quality": "Adequate. Good inspiration (about 9-10 posterior ribs), adequate penetration (vertebral bodies visible through the mediastinum), no significant rotation (spinous processes midline between medial clavicles). Costophrenic angles and both apices included; scapulae partly project over the lateral upper zones; high-contrast post-processing with dark collimation corners at the top of the film.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 3.5,
+ "devices": [
+  {
+   "type": "Thin radiopaque catheter line, most consistent with the radiopaque stripe of a small-bore left chest tube / pleural drainage catheter (alternative: external wire or tubing, considered less likely because the intrathoracic end tapers to a catheter tip without an electrode)",
+   "location": "Left hemithorax: enters from the left lateral lower chest wall near the costophrenic region, courses obliquely superomedially across the left lower and middle zones, crosses the left hilum and ends with its tip at the left apex, paramediastinal, at about the level of the left 1st-2nd posterior rib; the external segment runs down along the left lateral chest wall to the inferior edge of the film"
+  },
+  {
+   "type": "Side marker 'L' with technologist initials",
+   "location": "Upper right corner of the image (patient's left shoulder region)"
+  },
+  {
+   "type": "Faint dark linear skin-fold / external tubing shadow (minor external artifact)",
+   "location": "Left supraclavicular / lower neck soft tissue, above the left clavicle"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Thin, well-defined linear (plate-like) opacity running roughly parallel to and about 2-3 cm above the right hemidiaphragm, approximately 3-4 cm long, extending from the lateral chest wall medially - probable minor discoid / subsegmental atelectasis",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Subtle ill-defined hazy increased density in the left lower zone adjacent to the lower left heart border / above the left hemidiaphragm, traversed by the catheter; left heart border and left hemidiaphragm outline preserved - possible minor basal atelectasis or post-drainage change, low confidence (may partly represent overlapping anterior rib ends and cardiac apex)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left-sided pleural drainage catheter in situ implies a treated left pleural process (pneumothorax or effusion); no residual visceral pleural line, apical lucency or pleural fluid is identified on this film - lung markings reach the chest wall bilaterally",
+   "laterality": "left",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.6,
+ "description_zh": "胸部正面（PA）X光，吸氣深度、穿透度尚可，無明顯旋轉，影像右上角可見 L 標記。左側胸腔可見一條細長不透X光的導管影，疑為左側小口徑胸管／肋膜引流管之顯影條：自左下外側胸壁進入後向內上方斜行越過左肺門，末端位於左肺尖近縱膈處，體外段沿左側胸壁向下延伸。兩側肺尖及外周未見明顯氣胸線，兩側肋膈角銳利，無明顯肋膜積液；右下肺野橫膈上方約2–3公分處可見一條長約3.5公分的細線狀陰影，疑為輕微盤狀（次節段性）肺擴張不全；左下肺野心緣旁另有輕微模糊密度增加，意義不確定。心臟大小正常（CTR約0.4），縱膈不寬，氣管居中，骨骼與軟組織無明顯異常。"
+}

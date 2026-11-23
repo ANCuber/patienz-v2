@@ -1,0 +1,33 @@
+{
+  "id": "nih-no-finding-00000029_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate. Erect PA frontal film; good inspiration (about 9-10 posterior ribs), no significant rotation (medial clavicular ends roughly equidistant from the spinous processes), adequate penetration (thoracic spine and retrocardiac vessels faintly visible through the heart). Lung apices and both costophrenic angles included. Scapulae partially overlie the lateral upper zones; bilateral breast shadows overlie the lower zones. External artifacts only: radiopaque L side marker with a small 'DG' technologist tag and a blacked-out de-identification rectangle at the image upper right (patient's left).",
+  "target": {
+    "finding": "no acute cardiopulmonary finding (normal film)",
+    "visible": "yes",
+    "laterality": "none",
+    "zone": "none",
+    "size_cm": -1,
+    "confidence": 0.9
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "none",
+    "reader_b": "none",
+    "adjudicator": "none"
+  },
+  "agreement": "full",
+  "devices": [],
+  "other_findings": [
+    "雙側乳房軟組織陰影重疊於下肺野（正常軟組織影，非病灶）",
+    "雙側肩胛骨部分投影於外側上肺野（正常體位重疊）",
+    "左橫膈下可見正常胃泡",
+    "影像右上角（病人左側）可見外部 L 側別標記與去識別化黑框，非病人身上裝置"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "本片為乾淨的正常胸部X光：雙側肺野清晰、肋膈角銳利、心臟大小與縱膈輪廓正常，且胸腔內無任何導管、引流管、心律調節器或手術夾等治療裝置，亦無陳舊病灶或術後改變。標籤『無急性心肺異常』與影像相符，三位判讀者一致，適合作為初次就診時的正常對照片。",
+  "description_zh": "胸部正面 PA 立位X光片，吸氣深度足夠（約可見 9-10 根後肋），無明顯旋轉，穿透度適中，影像右上角（病人左側）可見 L 側別標記及去識別化黑框。氣管居中，縱膈與主動脈弓輪廓正常，心臟大小正常（心胸比未超過 0.5），雙側肺門位置與大小對稱且無腫大。雙側肺野上、中、下區透亮度對稱，未見局部實質化、結節、腫塊、間質性病變、肋膜積液或氣胸，雙側肋膈角銳利，右橫膈略高於左側屬正常範圍，左橫膈下可見正常胃泡。骨骼結構（肋骨、鎖骨、肩胛骨與胸椎）未見骨折或溶骨性病灶，雙側乳房軟組織陰影重疊於下肺野、肩胛骨部分投影於外側上肺野，均為正常重疊。胸腔內未見任何導管、引流管、心律調節器或其他植入裝置，整體為正常胸部X光片，無急性心肺異常。",
+  "label_concern": ""
+}

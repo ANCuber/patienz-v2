@@ -1,0 +1,53 @@
+{
+ "view": "Frontal chest radiograph, PA projection (L side marker at patient's upper left; left arm abducted/raised)",
+ "technical_quality": "Adequate. Minimal rotation (medial clavicles roughly symmetric about the spinous processes), adequate inspiration (right hemidiaphragm at about the 9th-10th posterior rib), adequate penetration (vertebral bodies faintly visible behind the heart). Large body habitus with prominent bilateral breast shadows overlying both lower zones; left arm raised so axillary/scapular soft tissue overlaps the left upper lateral chest, which slightly limits assessment of the left upper zone. Lung apices and costophrenic angles are included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "Surgical clips (three small linear metallic densities, one paired)",
+   "location": "Right upper zone, medial/infraclavicular region overlying the right 1st-2nd anterior ribs (post-surgical change)"
+  },
+  {
+   "type": "Side marker 'L' (with mirrored L)",
+   "location": "External, image top-right = patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large (approx. 6.5 x 8-9 cm) well-defined, homogeneous, dense mass-like opacity in the lateral left mid zone, abutting the lateral chest wall with a convex/lobulated medial margin; aerated lung remains between it and the hilum/mediastinum, ribs pass through it intact - peripheral lung or pleural-based mass (loculated pleural collection less likely)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Elevated left hemidiaphragm relative to the right (dome roughly 2-3 cm higher than the right), suggesting left-sided volume loss or phrenic dysfunction; gastric bubble beneath",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Subtle veil-like hazy increased density of the left upper zone compared with the right, with vessels still visible - possible mild volume loss / partial collapse, though overlap of raised-arm soft tissue may contribute",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Hazy increased density in the left lower zone with partial obscuration of the lower left heart border and left costophrenic angle; largely attributable to breast shadow overlap, but a small effusion or pleural thickening cannot be excluded",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Three surgical clips projected over the right upper zone (medial, infraclavicular) - post-surgical change, e.g. prior lymph node biopsy or thoracic surgery",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly prominent / unfolded aortic knob",
+   "laterality": "none",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "正面胸部X光（PA），吸氣尚可、無明顯旋轉，左上臂上舉，雙側乳房軟組織陰影明顯重疊於下肺野。左側中肺野外側可見一約8公分、邊界清楚、密度均勻之腫塊狀陰影，緊貼側胸壁，內側緣呈凸狀，與縱膈之間仍有含氣肺組織；左側橫膈較右側抬高，左上肺野呈輕度薄紗狀霧影，左下肺野亦有霧狀密度增加並部分遮蔽左心緣與左肋膈角（部分為乳房重疊所致）。右上肺野內側可見三枚手術夾（術後變化），右肺其餘清晰、右肋膈角銳利；心臟大小大致正常，氣管居中，主動脈弓稍顯著，骨骼無急性病灶，未見胸管、引流管或其他導管。"
+}

@@ -1,0 +1,62 @@
+{
+ "view": "Frontal chest radiograph, likely AP projection (scapulae project over the lateral lung fields); 'L' side marker present at the image upper right = patient's left, confirming conventional orientation. Erect/semi-erect (air-fluid level present).",
+ "technical_quality": "Suboptimal. Low lung volumes / poor inspiration with elevated hemidiaphragms and basal crowding. Upper mediastinum and lung apices partly obscured by the flexed head/mandible and cervical spine hardware; lower thorax and upper abdomen obscured by extensive thoracolumbar instrumentation and large bilateral breast shadows overlying the lower zones. Exposure adequate for the lungs, abdomen relatively underpenetrated. Rotation difficult to judge because the spinous processes are hidden by hardware; costophrenic angles not clearly profiled.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "lower",
+ "size_cm": 8.5,
+ "devices": [
+  {
+   "type": "Cervical spine fixation hardware (screws with rod/plate), post-fusion",
+   "location": "midline top of film, projecting over the neck / upper mediastinum, overlapped by the mandible"
+  },
+  {
+   "type": "Long-segment posterior thoracolumbar spinal fusion instrumentation (bilateral pedicle screws and rods with cross-connector)",
+   "location": "midline, from about the lower thoracic spine (T10-T11 level, behind the heart) extending inferiorly through the lumbar spine"
+  },
+  {
+   "type": "Radiographic side marker 'L'",
+   "location": "image upper right corner (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Rounded retrocardiac gas-containing lucency with a horizontal air-fluid level projecting over the lower thoracic spine (~8-9 cm wide), consistent with a hiatal hernia (intrathoracic stomach)",
+   "laterality": "none (midline, retrocardiac)",
+   "zone": "lower"
+  },
+  {
+   "finding": "Low lung volumes with elevated hemidiaphragms and bibasilar increased density / linear atelectasis (bronchovascular crowding), accentuated by overlying breast shadows",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Costophrenic angles obscured by soft tissue; small bilateral pleural effusions cannot be excluded, no large effusion, no pneumothorax",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiac silhouette at upper limit of normal / borderline enlarged (CTR about 0.5), assessment limited by AP projection and low inspiration",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent perihilar bronchovascular markings and bulky-appearing hila, most likely vascular crowding from low volumes; prominent unfolded aortic knob consistent with age",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Thoracolumbar scoliosis (lumbar curve convex to the patient's right) with long-segment posterior spinal instrumentation; post-surgical cervical spine fusion",
+   "laterality": "none (spine)",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Diffuse osteopenia with degenerative changes of the spine and shoulders (age-related)",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "正面胸部X光（疑為AP投照，患者左側有L標記），吸氣量不足、雙側肺容積偏低，上縱膈受下頷與頸椎固定器重疊，下胸部受胸腰椎長節段後路固定器及雙側乳房陰影遮蔽，影像品質受限。心影後方中線可見一圓形含氣透亮區並伴有水平氣液面（寬約8–9公分），投影於下胸椎，符合食道裂孔疝氣（胃疝入胸腔）。雙側肺底密度增加並見線狀肺擴張不全，考量為低肺容積所致之肺底塌陷合併乳房陰影重疊；雙側肋膈角受軟組織遮蔽，無法排除少量肋膜積液，未見氣胸或大量積液；心影約於正常上限，肺門血管紋理增加、主動脈弓突出，符合年齡相關變化。骨骼方面可見頸椎固定螺釘及自下胸椎延伸至腰椎之椎弓根螺釘與連接桿，合併胸腰椎側彎及瀰漫性骨質減少。"
+}

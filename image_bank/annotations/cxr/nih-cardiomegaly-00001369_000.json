@@ -1,0 +1,46 @@
+{
+ "id": "nih-cardiomegaly-00001369_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate PA erect film (gastric bubble present). No significant rotation (medial clavicles roughly symmetric about the spinous processes); penetration acceptable with thoracic vertebrae faintly visible through the cardiac shadow. Inspiration adequate but slightly shallow (about 8-9 posterior ribs, hemidiaphragms mildly elevated), which may marginally exaggerate cardiac size. Breast shadows overlie both lower zones. A black rectangular bar along the left image edge is a collimation/processing artifact and does not affect interpretation.",
+ "target": {
+  "finding": "cardiomegaly",
+  "visible": "yes",
+  "laterality": "none",
+  "zone": "lower",
+  "size_cm": 16.5,
+  "confidence": 0.8
+ },
+ "laterality_sources": {
+  "bbox": "patient-left, middle zone (radiologist box 554x387 px centred over the cardiac silhouette; cardiomegaly has no side)",
+  "reader_a": "bilateral / lower (label-aware; CTR ~0.56)",
+  "reader_b": "bilateral / lower (blind; independently reported mild cardiomegaly, CTR ~0.55-0.57)",
+  "adjudicator": "none / lower (midline cardiac silhouette; measured cardiac transverse diameter ~480 px vs inner thoracic width ~845 px, CTR ~0.57)"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External film marker: 'L' side marker with technologist initials plus round radiopaque lead disc (outside the patient)",
+   "location": "Upper right corner of the image, lateral to the patient's left shoulder soft tissue, outside the thorax",
+   "zh": "「L」側別標記(含技術員縮寫)及圓形鉛標記，位於影像右上角、病人左肩外側，體外物件"
+  },
+  {
+   "type": "Image artifact: black rectangular collimation/processing bar (not a medical device)",
+   "location": "Extreme left edge of the image (patient's right), upper third, outside the patient",
+   "zh": "影像左緣黑色長條狀準直/處理偽影，位於病人體外，非醫療裝置"
+  }
+ ],
+ "other_findings": [
+  "雙側橫膈略高，吸氣深度略不足(約8–9根後肋)，屬技術因素，非真正病變",
+  "兩側下肺野有乳房軟組織陰影重疊(正常女性表現)",
+  "左上腹可見胃泡及腸氣(正常)",
+  "雙側肺野清晰，無實質浸潤、結節、間質性水腫或肋膜積液，雙側肋膈角銳利",
+  "縱膈與氣管居中，主動脈弓小(年輕病人)，肺門血管無明顯充血",
+  "骨骼結構無明顯異常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標的病灶(輕度心臟擴大，心胸比約0.55–0.57)清楚可見；片上無任何導管、引流管、心律調節器或其他治療裝置，亦無術後變化。肺野清晰、無肺水腫或肋膜積液，適合作為初次就診之影像(例如心肌病變、瓣膜性心臟病或高血壓性心臟病的早期表現)，但不適合用於急性失代償性心衰竭合併肺水腫的情境。",
+ "description_zh": "胸部正面(PA)立位攝影，吸氣深度尚可但略顯不足(約8–9根後肋)，無明顯旋轉，穿透度適中。心影輕度擴大，心胸比約0.55–0.57(心臟橫徑估計約16–17公分)，左心緣圓鈍並向左外側突出，右心緣亦稍為凸出，心影位於中下縱膈、無側別之分；縱膈與氣管居中，主動脈弓小(年輕病人)，肺門血管無明顯充血。雙側肺野清晰，未見實質浸潤、結節、間質性水腫或肋膜積液，雙側肋膈角銳利，雙側橫膈略高，兩側下肺野可見乳房軟組織陰影重疊，左上腹可見胃泡及腸氣。骨骼結構無明顯異常。影像右上角(病人左肩外側)可見「L」側別標記(含技術員縮寫)及圓形鉛標記，影像左緣有一黑色長條狀準直/處理偽影，均為體外物件；未見任何導管、引流管、心律調節器或其他治療裝置。",
+ "label_concern": ""
+}

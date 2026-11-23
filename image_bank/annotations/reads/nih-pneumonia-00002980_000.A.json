@@ -1,0 +1,49 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: PA upright, midline trachea with symmetric clavicles (minimal rotation), adequate inspiration (~9 posterior ribs), adequate penetration; both costophrenic angles and lung apices included. Side marker (probable L) present at image upper right, consistent with conventional orientation.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "Radiographic side marker (probable 'L')",
+   "location": "Image upper right corner, lateral to patient's left shoulder (external, not on patient)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy ill-defined airspace opacity extending from the left hilum to the left hemidiaphragm, partially silhouetting the medial left hemidiaphragm and left heart border margin (left lower lobe / lingular pneumonia pattern)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Milder patchy peribronchial / reticulonodular opacities along the right heart border in the right lower zone; right hemidiaphragm and right costophrenic angle remain sharp",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Coarse, prominent bronchovascular markings bilaterally, more so in the lower zones (chronic bronchitic pattern vs. peribronchial infection)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent / dense left hilum",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, somewhat tortuous aortic knob (unfolded aorta), age-related",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Cardiothoracic ratio borderline (~0.48); no definite cardiomegaly",
+   "laterality": "none",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部X光正位（PA）片，吸氣量與穿透度尚可，氣管居中。左側下肺野可見自左肺門延伸至橫膈的斑片狀、邊緣模糊之肺實質浸潤，內側左橫膈及部分左心緣輪廓變得不清（silhouette sign），範圍約8公分，符合左下葉/舌葉肺炎表現。右側下肺野內側亦見較輕微之支氣管周圍斑片狀陰影，兩側支氣管血管紋理粗糙增加，右橫膈及肋膈角仍清晰。主動脈弓稍突出、迂曲，心胸比約0.48，未見明顯胸水或氣胸，亦無胸管、導管、節律器等植入物。"
+}

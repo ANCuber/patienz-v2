@@ -1,0 +1,39 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: PA frontal projection, L marker at image upper right (conventional orientation), good inspiration (right hemidiaphragm at about the 9th-10th posterior rib), no significant rotation (clavicular heads roughly symmetric about the spinous processes), adequate penetration (vertebral bodies visible through the heart), scapulae partially projected over the upper lateral lung fields, whole thorax including both costophrenic angles included.",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 0.6,
+ "devices": [
+  {
+   "type": "L side marker with technologist initials (mirrored 'SML')",
+   "location": "image upper right corner, over the patient's left shoulder soft tissue, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Small rounded density (~0.6 cm) at the left hilum just above the end-on left upper lobe bronchus ring, below the aortic knob; most likely the left pulmonary artery / vessel seen end-on rather than a true nodule - indeterminate, this is the only candidate for the labelled nodule",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Left hilum appears mildly bulky/dense compared with the right (probable vascular prominence, not clearly pathological)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Several 2-3 mm punctate densities in the left mid zone, left perihilar region and right lower/perihilar region, consistent with end-on vessels or tiny calcified granulomas",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Mildly prominent/unfolded aortic knob, likely age-appropriate",
+   "laterality": "none",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.35,
+ "description_zh": "PA 胸部X光，吸氣充分、無明顯旋轉、曝光適當，右上角可見 L 側別標記。兩側肺野大致清晰，未見明確之離散性肺結節；僅於左側肺門（左中肺野、主動脈弓下方，緊鄰左上葉支氣管之環狀影）可見一約 0.6 cm 之圓形微密度，較可能為左肺動脈或端面血管影，是否為真正結節無法確定；另於兩側肺門周圍及左中肺野可見數個 2–3 mm 之點狀密度，多為端面血管或微小鈣化肉芽腫。心影大小正常（CTR 約 0.4），主動脈弓略為突出，氣管與縱膈居中，兩側肋膈角銳利，無肋膜積液或氣胸，左側橫膈下可見胃泡。未見任何導管、引流管、心律調節器或手術夾，無已接受治療之證據。"
+}

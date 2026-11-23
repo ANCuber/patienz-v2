@@ -1,0 +1,18 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA frontal film: good inspiration, minimal rotation, no motion blur, apices and costophrenic angles included; field extends well into the upper abdomen. External lead marker present in the upper-right image corner (patient's left).",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External radiographic lead marker (circular clip with letter block reading 'CA', likely technologist/side marker)",
+   "location": "Upper-right corner of the image = patient's left upper lateral chest, over axillary soft tissue, outside the lung field"
+  }
+ ],
+ "abnormalities": [],
+ "treatment_evidence": false,
+ "confidence": 0.85,
+ "description_zh": "PA 胸部正面片，吸氣量足夠，縱膈未見明顯偏移。雙側肺野清晰，未見實質化、結節、腫塊、肋膜積液或氣胸，雙側肋膈角銳利，橫膈輪廓平滑。心臟大小及縱膈輪廓正常，雙側肺門形態及位置正常。骨骼未見明顯異常；影像右上角（病人左側腋窩外）可見外置鉛字標記，未見其他導管、引流管或植入裝置，整體為無急性心肺異常之正常胸片。"
+}

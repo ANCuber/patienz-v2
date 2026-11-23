@@ -1,0 +1,42 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film, L marker upper image-right confirms conventional orientation, no rotation, adequate inspiration, right shoulder abducted with humerus/scapula overlapping right upper chest wall, mild soft-tissue overlap laterally",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 2.5,
+ "devices": [
+  {
+   "type": "surgical clips (approx. 12, curvilinear chain)",
+   "location": "right axilla and right upper lateral chest wall, projecting partly over right upper zone (prior axillary lymph node dissection)"
+  },
+  {
+   "type": "external L side marker",
+   "location": "image upper right corner, over patient's left shoulder"
+  },
+  {
+   "type": "external film/annotation marker (alphanumeric, e.g. '8H')",
+   "location": "image upper right corner, over patient's left shoulder below L marker"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "small rounded gas lucency in the retrocardiac left paraspinal region at the level of the medial left hemidiaphragm, questionable small hiatal hernia versus gastric fundus below the diaphragm",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "absent right breast shadow with markedly increased lucency of the right hemithorax compared with the left, consistent with prior right mastectomy (with right axillary surgical clips)",
+   "laterality": "right",
+   "zone": "whole"
+  },
+  {
+   "finding": "prominent, unfolded aortic knob / tortuous thoracic aorta (age-related)",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "PA正面胸部X光，L標記位於影像右側，投照方位正常，吸氣程度尚可。心影後方、左側脊柱旁靠近左橫膈內側處可見一小型含氣透亮區，疑似小型食道裂孔疝氣，但影像上並不明確，無法排除為橫膈下之胃底氣體。右側腋下及右上胸壁可見多枚呈弧形排列之手術夾，右側乳房陰影消失且右側胸腔透亮度明顯較左側增加，符合右側乳房切除及腋下淋巴結廓清術後變化。主動脈弓突出、迂曲，雙肺無明顯實質病灶，未見肋膜積液或氣胸，亦未見胸管或引流管。"
+}

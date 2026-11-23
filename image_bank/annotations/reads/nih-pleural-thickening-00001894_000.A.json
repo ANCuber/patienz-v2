@@ -1,0 +1,47 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration (about 9 posterior ribs), no significant rotation (clavicles roughly symmetric about the spinous processes), adequate penetration. Lead side marker 'L' with technologist initials projected mirror-image at the image-right upper corner (marker placed face-down; anatomy confirms conventional orientation, patient left = image right). Bilateral breast shadows over the lower zones; a bra underwire and a small metallic object project over the upper abdomen without obscuring the lungs.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "upper",
+ "size_cm": 3,
+ "devices": [
+  {
+   "type": "bra underwire (curved metallic-density band, external)",
+   "location": "projected over the right upper abdomen / lower right corner of the film, below the right hemidiaphragm"
+  },
+  {
+   "type": "small coiled/spiral metallic-density object (likely external jewelry/piercing or clip; indeterminate)",
+   "location": "projected over the left upper abdomen / epigastrium, below the left hemidiaphragm, left of midline"
+  },
+  {
+   "type": "lead side marker 'L' with initials, mirror-imaged",
+   "location": "image-right upper corner (patient's left shoulder region)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Subtle hazy soft-tissue density capping the lung apex with a slightly irregular inferior margin (possible mild apical pleural cap / apical pleural thickening), approx. 3 cm wide and under 1 cm thick; subtle, left apex comparatively clear",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Thin smooth band of soft-tissue density between lung and inner rib margin along the lateral chest wall (approx. 0.5-0.9 cm), possible mild lateral pleural thickening vs. overlying breast/chest-wall soft tissue; subtle",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Thin sharp oblique linear opacity crossing rib spaces over the upper zone, most likely external artifact (skin fold / hair) rather than a pleural or parenchymal line",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Tiny dense punctate opacity in the perihilar region, most likely a vessel seen end-on or a small calcified granuloma",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.45,
+ "description_zh": "正位胸部X光，吸氣量足夠、無明顯旋轉；右肺尖見輕微帽狀軟組織密度影，下緣略不規則，疑為輕度肺尖肋膜增厚（apical cap），左側外側胸壁中段肺與肋骨之間亦見一薄層均勻軟組織帶，不排除輕度肋膜增厚或乳房／胸壁軟組織重疊，兩者皆屬細微變化。雙側肋膈角銳利，心臟大小與縱膈輪廓正常，未見肺實質浸潤、結節或氣胸；左肺門旁一小點狀高密度影，多為血管切面或小鈣化肉芽腫。外在物件：右上腹投影處見弧形金屬密度影（內衣鋼圈），左上腹投影處見一小螺旋狀金屬影（疑外部飾品），左上角鉛字標記呈鏡像。未見胸管、引流管等治療痕跡。"
+}

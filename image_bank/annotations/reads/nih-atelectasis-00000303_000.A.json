@@ -1,0 +1,67 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: PA upright, near-full inspiration, minimal rotation (clavicles roughly symmetric about the spinous processes), adequate penetration (thoracic spine faintly visible through the cardiac shadow). Left ('L') side marker projected over the patient's left shoulder region, confirming conventional orientation. Costophrenic angles and both apices included.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "Median sternotomy wires (approx. 7, loop- and twisted-type)",
+   "location": "Midline, along the sternum from the manubrium to the lower sternal body"
+  },
+  {
+   "type": "Prosthetic heart valve / annuloplasty ring (D-shaped), mitral position",
+   "location": "Projecting just to the patient's left of the spine over the lower-middle cardiac silhouette"
+  },
+  {
+   "type": "External 'L' side marker",
+   "location": "Upper corner of the image on the patient's left (over the left shoulder soft tissues)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy wedge/band-like opacity along the right heart border extending from the right hilum inferiorly, partially silhouetting the right heart border - suspicious for right middle lobe / right basal subsegmental atelectasis (the probable labelled finding)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiomegaly (cardiothoracic ratio approx. 0.56) with a prominent/straightened left heart border, suggesting left atrial enlargement in a post-mitral-valve-surgery patient",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, unfolded/tortuous aortic knob with probable wall calcification (ectatic aging aorta)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Streaky linear/patchy opacities in the left lower zone adjacent to the left heart border (subsegmental atelectasis vs fibrotic scarring)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Coarse, increased bronchovascular/interstitial markings in both lower zones (chronic bronchitic change vs mild interstitial/venous congestion)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Small (~5 mm) nodular density in the right mid zone near the hilum, most likely a vessel seen end-on",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Large gastric air bubble with air-fluid level beneath the left hemidiaphragm (gastric distension, incidental)",
+   "laterality": "left",
+   "zone": "none"
+  },
+  {
+   "finding": "No pleural effusion, no pneumothorax, no consolidation with air bronchograms, no chest tube or drain",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "後前位胸部X光：正中胸骨鋼絲約7條及二尖瓣位置之D形人工瓣環，顯示曾接受心臟手術；心影擴大（心胸比約0.56），左心緣平直突出，主動脈弓突出迂曲並疑有鈣化。右側中下肺野沿右心緣可見楔形／帶狀模糊緻密影，部分遮蔽右心緣，考慮右中葉或右下肺基底部之肺塌陷（約5公分），但影像不十分確定。兩側下肺野支氣管血管紋理粗糙增加，左下肺野近左心緣亦有條狀影。未見肋膜積液、氣胸、胸管或引流管；左橫膈下可見大量胃泡氣體。"
+}

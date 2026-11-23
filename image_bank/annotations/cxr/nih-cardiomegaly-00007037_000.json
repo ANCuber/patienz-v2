@@ -1,0 +1,59 @@
+{
+  "id": "nih-cardiomegaly-00007037_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate: good inspiration (~9-10 posterior ribs), adequate penetration (thoracic spine visible through the heart), minimal rotation, apices and both costophrenic angles included; scapulae partly overlap the upper lateral lung fields; L marker at image upper right confirms conventional orientation.",
+  "target": {
+    "finding": "Cardiomegaly",
+    "visible": "yes",
+    "laterality": "none",
+    "zone": "lower",
+    "size_cm": 21.5,
+    "confidence": 0.9
+  },
+  "laterality_sources": {
+    "bbox": "left (patient-left, lower zone; 500x385 px box over the enlarged cardiac silhouette)",
+    "reader_a": "bilateral",
+    "reader_b": "bilateral",
+    "adjudicator": "none"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Median sternotomy wires (about 7 twisted-loop wires)",
+      "location": "Midline, projected over the sternum / upper-to-mid thoracic spine (approx. T2-T7), upper and middle zones",
+      "zh": "正中胸骨切開鋼絲"
+    },
+    {
+      "type": "Prosthetic mitral valve / mitral annuloplasty ring (oval radiopaque ring, approx. 2.5 x 1.3 cm in oblique projection)",
+      "location": "Over the central cardiac silhouette just to the patient's left of the spine, approx. T8-T9 level, mitral valve position, lower-middle zone",
+      "zh": "人工二尖瓣或二尖瓣瓣環成形環"
+    },
+    {
+      "type": "Faint thin curvilinear metallic density adjacent to the valve ring, possible retained epicardial pacing wire fragment (uncertain)",
+      "location": "Immediately to the patient's right of the valve ring, over the cardiac silhouette near midline",
+      "zh": "疑似殘留心外膜節律導線片段（不確定）"
+    },
+    {
+      "type": "External 'L' side marker with technologist initials",
+      "location": "Image upper right corner (patient's left upper corner), outside the thorax",
+      "zh": "體外 L 側標記"
+    }
+  ],
+  "other_findings": [
+    "心臟手術後變化：正中胸骨切開鋼絲及二尖瓣位置之人工瓣膜／瓣環成形環",
+    "左心緣肺動脈段下方隆起，疑左心房擴大",
+    "主動脈結突出、胸主動脈延展迂曲（老年性主動脈延展），氣管於主動脈弓處輕微右偏",
+    "兩側肺門鈣化淋巴結，左側較明顯",
+    "右上肺野小鈣化結節，符合陳舊性肉芽腫",
+    "兩下肺野支氣管血管及間質紋理輕度增加，無明顯肺泡性水腫或肺實質化",
+    "左橫膈下明顯胃泡（偶然發現），左橫膈大部分被擴大之心影遮蔽",
+    "兩側肩關節（盂肱／肩鎖關節）退化性變化，左側較明顯；胸椎退化性變化",
+    "未見肋膜積液或氣胸，兩側肋膈角銳利；未見胸管或引流管"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "心臟擴大清楚可見（心胸比約 0.62），片上亦無胸管或肋膜引流管；但正中胸骨切開鋼絲與二尖瓣位置之人工瓣膜／瓣環成形環顯示病人已有已知且經手術治療之心臟疾病，與「首次因心臟擴大就診」之情境矛盾，故不適合作為初次就診案例，較適合用於心臟手術後追蹤或已知瓣膜性心臟病之案例。",
+  "description_zh": "PA 正面胸部X光，右上角可見 L 側標記，吸氣量足、穿透度適當、僅輕微旋轉，兩側肩胛骨部分重疊於上外側肺野。心影明顯擴大，心胸比約 0.62（心臟橫徑約 21-22 cm），心影呈球狀、左心緣圓鈍並向左下外側延伸至近左側胸壁，以左心室型擴大為主，肺動脈段下方左心緣隆起疑合併左心房擴大；主動脈結突出、胸主動脈延展迂曲，氣管於主動脈弓處輕微右偏。正中可見多枚胸骨切開鋼絲，心影中央脊椎左側約 T8-T9 高度（二尖瓣位置）見一橢圓形環狀金屬影，符合人工二尖瓣或瓣環成形環，其右側鄰近另有一可疑細線狀金屬影（不確定是否為殘留心外膜節律導線），整體為心臟手術後變化。兩側肺門可見鈣化淋巴結（左側較明顯），右上肺野有一小鈣化結節（陳舊性肉芽腫），兩下肺野支氣管血管及間質紋理輕度增加，但無明顯肺泡性水腫或肺實質化。未見肋膜積液或氣胸，兩側肋膈角銳利，左橫膈下胃泡明顯，兩側肩關節及胸椎有退化性變化，未見胸管或引流管。",
+  "label_concern": ""
+}

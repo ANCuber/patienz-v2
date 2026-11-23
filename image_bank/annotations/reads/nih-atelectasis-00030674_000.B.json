@@ -1,0 +1,54 @@
+{
+ "view": "Frontal (PA/AP) chest radiograph, upright; L marker in image upper-right (patient's left) confirms conventional orientation",
+ "technical_quality": "Adequate penetration and inspiration (about 9 posterior ribs on the right). Mild rotation (asymmetric medial clavicles, left hemithorax projected smaller). Scapulae partially overlie the upper lateral lung fields. Both costophrenic angles and lung apices included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 9.5,
+ "devices": [
+  {
+   "type": "External L side marker (radiopaque)",
+   "location": "Image upper-right corner, over the patient's left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined increased opacity in the left lower zone (retrocardiac/basal) with loss of the left hemidiaphragm outline and blunting of the left costophrenic angle; vascular crowding - suggests left lower lobe atelectasis or consolidation, possibly with a small pleural effusion",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Elevated left hemidiaphragm (dome projects roughly 2 cm above the right), consistent with left basal volume loss",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded/tortuous aortic knob with a bulging left upper mediastinal contour and a prominent left hilum (ectatic thoracic aorta likely; hilar mass not excluded)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Dense nodular/calcified opacities projecting over the right hilum, most consistent with calcified hilar lymph nodes",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild leftward displacement of the cardiomediastinal silhouette (little cardiac shadow to the right of the spine), at least partly attributable to rotation; trachea remains near midline",
+   "laterality": "left",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Relative hyperlucency of the right lung with a larger right hemithorax (hyperinflation/compensatory or emphysematous change)",
+   "laterality": "right",
+   "zone": "whole"
+  },
+  {
+   "finding": "Degenerative changes of the cervicothoracic spine; no acute rib fracture or lytic lesion seen",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光，輕度旋轉，肩胛骨部分重疊於肺野，吸氣深度尚可；未見任何管路、引流管、心律調節器或其他植入物，僅右上角可見L側標記。左下肺野可見邊界不清之增加密度影，左側橫膈輪廓模糊且位置上抬，左側肋膈角變鈍，疑左下葉肺塌陷（atelectasis）或實質化，不排除合併少量肋膜積液。主動脈弓突出且迂曲，左肺門較顯著；右肺門可見鈣化結節狀密度，疑為鈣化淋巴結。心臟大小在正常範圍，縱膈輕度左移（部分可歸因於旋轉），右肺相對過度透亮，頸胸椎有退化性變化，骨骼未見急性病灶。"
+}

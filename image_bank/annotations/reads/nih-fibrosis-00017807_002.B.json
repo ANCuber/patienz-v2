@@ -1,0 +1,43 @@
+{
+ "view": "Frontal (PA) erect chest radiograph; L marker at image upper right confirms conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate: full inspiration (about 9-10 posterior ribs), no significant rotation, adequate penetration (thoracic spine visible through the cardiac shadow), whole thorax including both costophrenic angles included; left scapula partly projects over the left upper lateral lung field",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "whole",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Implanted venous access port (port-a-cath reservoir, round metallic ring with suture holes) with attached catheter coursing medially and superiorly; catheter tip not confidently traceable on this film",
+   "location": "Left lower anterior chest wall, projected over the left lower zone at the left cardiophrenic region, just above the left hemidiaphragm"
+  },
+  {
+   "type": "External 'L' side marker",
+   "location": "Image upper right corner (patient's left shoulder region)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Diffuse coarse reticular / reticulonodular interstitial opacities with peribronchial thickening and ring shadows (bronchiectasis-type pattern), most conspicuous in the perihilar and upper-middle zones; lung volumes preserved to mildly increased",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Prominent, somewhat nodular bilateral hila (hilar enlargement - vascular vs adenopathy)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mild elevation of the right hemidiaphragm relative to the left (about 2-2.5 cm, borderline)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Implanted venous port device projected over the left lower zone / cardiophrenic region (device, low chest-wall placement)",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "正面胸部X光（PA，右上方可見L標記），吸氣量足夠、無明顯旋轉，穿透度適當。左下前胸壁可見一植入式靜脈注射座（port-a-cath），投影於左側心橫膈角區域、左橫膈上方，導管向內上方走行，尖端於本片無法明確追蹤。雙側肺野呈瀰漫性粗糙網狀／網狀結節狀間質增加，伴支氣管壁增厚及環狀影，以肺門周圍與上中肺野較明顯，符合支氣管擴張／慢性間質性肺病變之表現；雙側肺門增大且輪廓略呈結節狀。心臟大小正常、縱膈居中，雙側肋膈角清晰、無肋膜積液或氣胸，右側橫膈較左側輕度抬高，骨骼與軟組織無明顯異常。"
+}

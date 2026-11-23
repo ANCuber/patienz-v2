@@ -1,0 +1,39 @@
+{
+ "id": "nih-no-finding-00000140_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate PA erect film: good inspiration (about 9-10 posterior ribs), no significant rotation (clavicular heads symmetric about the spinous processes), penetration adequate with thoracic vertebral bodies faintly visible through the heart. Apices and costophrenic angles included. Left-side lead marker 'L' with circular upright/position indicator and technologist initials in the image upper-right corner confirms conventional orientation. Bilateral breast shadows overlie both lower zones and partly obscure the lung bases; scapulae partly overlap the lateral lung fields; mandible projects at the top of the film without obscuring the apices.",
+ "target": {
+  "finding": "no acute cardiopulmonary finding (normal film)",
+  "visible": "yes",
+  "laterality": "none",
+  "zone": "none",
+  "size_cm": -1,
+  "confidence": 0.9
+ },
+ "laterality_sources": {
+  "bbox": "none (NLP-mined label, no radiologist box)",
+  "reader_a": "none",
+  "reader_b": "none (B recorded left/lower, but that refers to the incidental ring-shaped density over the gastric fundus; B read the chest as normal)",
+  "adjudicator": "none"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External lead side marker ('L' with circular upright/position indicator and technologist initials); no internal or therapeutic device",
+   "location": "Image upper-right corner, over the patient's left shoulder region, outside the thorax",
+   "zh": "影像右上角外在鉛製左側標記（L，附圓形直立指示器與技術員縮寫），非體內裝置"
+  }
+ ],
+ "other_findings": [
+  "左側橫膈下胃泡內約1公分圓形軟組織密度影，周圍有薄層氣體暈環，最符合胃內容物（食物團或藥錠），非肺部或肋膜病灶；曾考慮體外乳頭環等金屬異物，但其密度為軟組織而非金屬，且位於胃泡氣體內，故不支持",
+  "雙側乳房陰影重疊於下肺野，部分遮蔽肺底與左側肋膈區（正常軟組織，非病灶）",
+  "肩胛骨部分重疊於外側肺野、下頜骨投影於片頂（擺位相關，非病灶）",
+  "心臟大小正常、縱膈輪廓正常、氣管居中、肺門無異常，肋骨、鎖骨及胸椎未見骨折或骨質病變"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "本片為乾淨的正常胸片：雙肺野清晰，無實質浸潤、結節、肋膜積液或氣胸，心縱膈正常，亦無胸管、引流管、中央靜脈導管、心律調節器或任何治療性裝置。僅見左側標記與胃泡內約1公分之胃內容物影（偶然發現，非胸腔病灶），皆不與24歲女性首次就診之情境衝突，適合作為「無急性心肺病灶」之初次就診影像。",
+ "description_zh": "正面站立（PA）胸部X光，吸氣深度足夠、無明顯旋轉、穿透適當，左側標記位於影像右上角，為傳統擺位。雙側肺野清晰，未見局部實質浸潤、結節、腫塊、肋膜積液或氣胸，雙側肋膈角銳利、橫膈輪廓平滑；心臟大小正常，縱膈輪廓正常且無增寬，氣管居中，雙側肺門血管紋理正常。骨骼方面肋骨、鎖骨及胸椎未見骨折或骨質病變，肩胛骨部分重疊於外側肺野，下頜骨投影於片頂。雙側乳房陰影重疊於下肺野，左側橫膈下胃泡內可見一約1公分之圓形軟組織密度影，周圍有薄層氣體暈環，最符合胃內容物（食物團或藥錠），屬偶然發現，非肺部或肋膜病灶。未見胸管、引流管、中央靜脈導管、心律調節器或任何體內植入裝置，整體為無急性心肺病灶之正常胸片。",
+ "label_concern": ""
+}

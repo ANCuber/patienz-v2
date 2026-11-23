@@ -1,0 +1,36 @@
+{
+  "id": "nih-atelectasis-00000120_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate. PA erect frontal film; external 'L' side marker (with technologist initials) at image upper right confirms conventional orientation. Inspiration adequate (~9 posterior ribs), minimal rotation, penetration adequate (spine faintly visible through the heart). Apices and both costophrenic angles included; scapulae mostly out of the lung fields. Large body habitus with abundant lateral chest-wall soft tissue and bilateral breast shadows overlying both lower zones, slightly reducing lower-zone detail.",
+  "target": {
+    "finding": "atelectasis",
+    "visible": "yes",
+    "laterality": "left",
+    "zone": "lower",
+    "size_cm": 7,
+    "confidence": 0.5
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "left",
+    "reader_b": "right",
+    "adjudicator": "left"
+  },
+  "agreement": "conflict",
+  "devices": [],
+  "other_findings": [
+    "右下肺野內側支氣管血管紋理擁擠、略粗，伴輕度密度增加，可能為次節段性肺不張／輕微體積減少或支氣管周圍增厚；右橫膈與右肋膈角銳利",
+    "右肺門飽滿，其上投影一約1–1.5公分圓形密度，較可能為血管端面像；單張正面片無法完全排除小結節或肺門淋巴結腫大",
+    "胸主動脈迂曲、主動脈結突出，上縱膈輕度增寬，符合老年性主動脈變化；氣管於主動脈弓高度輕度偏右",
+    "心臟大小約於正常上限（CTR約0.5）",
+    "頸椎退化性（脊椎病變）變化，無急性骨骼病變或肋骨骨折",
+    "雙側乳房陰影及豐厚胸壁軟組織重疊於下肺野",
+    "未見肋膜積液或氣胸"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標的病灶（左下肺野舌葉肺不張）可見但表現細微；片上無任何胸管、引流管、心律調節器或其他植入裝置，亦無手術後或治療後變化，與初次就診情境不相矛盾。惟盲讀者未於同側辨識此病灶，且標籤為NLP擷取，建議人工核實後再作為教學影像使用。",
+  "description_zh": "正面（PA）站立胸部X光，吸氣深度尚可、旋轉輕微，病人體型豐滿，雙側乳房陰影及胸壁軟組織重疊於下肺野。左下肺野沿左心緣下段外側可見一帶狀／楔形淡薄增加密度影，自肺門高度向下延伸至左橫膈，長徑約7公分、寬約2–3公分，左心緣下段輪廓模糊（silhouette sign）而左側外側肋膈角仍清晰，符合舌葉（lingula）肺不張／輕微體積減少。右下肺野內側支氣管血管紋理擁擠且略粗、伴輕度密度增加，可能為次節段性肺不張或支氣管周圍增厚；右肺門飽滿，其上投影一約1–1.5公分圓形密度，較可能為血管端面像，右橫膈與肋膈角銳利。心臟大小約於正常上限（CTR約0.5），胸主動脈迂曲、主動脈結突出，氣管於主動脈弓高度輕度偏右，頸椎可見退化性變化。未見肋膜積液或氣胸；除影像右上角之外置「L」側別標記外，未見任何導管、引流管、心律調節器或其他植入裝置。",
+  "label_concern": "標籤為NLP擷取且無放射科醫師框選，病灶細微：A讀者（知標籤）判為左下舌葉肺不張，B讀者（盲讀）判為右下內側次節段性肺不張並認為左肺清晰。仲裁者依左心緣下段silhouette sign及帶狀密度支持左側舌葉肺不張，但無法完全排除心包脂肪墊或雙側基底輕微肺不張，建議人工核實。"
+}

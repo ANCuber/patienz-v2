@@ -29,13 +29,22 @@ evidenced in the exam report. Pass --unverified to require your own manual revie
 (entries land verified:false and stay hidden until you flip them).
 """
 import argparse
-import json
 import os
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import render_ptbxl_ecg as rp  # noqa: E402  (sibling tool; reuse render/parse)
+sys.path.insert(0, ROOT)
+# The attribute vocabulary (territory / completeness / lesion) lives with the
+# retrieval that enforces it, so a builder can never disagree with the gate.
+from util import image_bank as ib  # noqa: E402
+# Shared with build_nih_cxr_bank.py so the two builders can never drift apart on
+# age banding / sex normalization / manifest I/O. Re-exported under the names
+# this module has always used, so callers and tests see no change.
+from bank_common import (age_band, band_labels, cells_total,  # noqa: E402,F401
+                         coverage_status, load_manifest, norm_sex as _sex_mf,
+                         parse_bands, save_manifest, summarize, write_report)
 
 SOURCE = "PTB-XL (PhysioNet)"
 SOURCE_URL = "https://physionet.org/content/ptb-xl/1.0.3/"
@@ -102,16 +111,21 @@ def umbrella_terms(code, sub, desc):
 
 
 def findings_for(code, meta):
+    """What the film claims, and the broader terms that only widen recall.
+
+    ``findings`` is the statement itself -- the caption shows it, so it is what
+    the film *asserts* to the student. The umbrella terms go in their own field:
+    they let a Chinese report evidence the film, but retrieval treats them as too
+    coarse to choose between films, so "心肌梗塞" alone can no longer surface a
+    film captioned "anteroseptal myocardial infarction".
+    """
     desc = meta["description"] or code
-    umb = umbrella_terms(code, meta["subclass"], desc)
-    findings, seen = [], set()
-    for term in [desc] + umb:
-        k = term.lower()
-        if k not in seen:
-            seen.add(k)
-            findings.append(term)
+    umb = [t for t in umbrella_terms(code, meta["subclass"], desc)
+           if t.lower() != desc.lower()]
     return {
-        "findings": findings,
+        "findings": [desc],
+        "umbrella_terms": umb,
+        "attributes": ib.claim_attributes(desc),
         "disease_keywords": umb,
         "normality": meta["normality"],
         "caption": f"12-lead ECG — {desc}",
@@ -119,35 +133,6 @@ def findings_for(code, meta):
 
 
 # ---------- selection across sex x age-band cells (pure) ----------
-def parse_bands(spec):
-    bounds = sorted({int(x) for x in str(spec).split(",") if str(x).strip() != ""})
-    bounds = [b for b in bounds if b >= 0]
-    if not bounds or bounds[0] != 0:
-        bounds = [0] + bounds
-    return bounds  # e.g. [0,40,60] -> bands [0,40),[40,60),[60,inf)
-
-
-def age_band(age, bounds):
-    try:
-        a = float(age)
-    except (TypeError, ValueError):
-        return None
-    idx = 0
-    for i, b in enumerate(bounds):
-        if a >= b:
-            idx = i
-    return idx
-
-
-def _sex_mf(v):
-    s = str(v).strip()
-    if s in ("0", "0.0", "M", "male", "Male"):
-        return "M"
-    if s in ("1", "1.0", "F", "female", "Female"):
-        return "F"
-    return None
-
-
 def _is_clean(codes):
     """No diagnostic/abnormal statement carried with meaningful likelihood — so a
     NORM/SR tracing is genuinely a clean normal, not a normal rhythm co-existing
@@ -240,38 +225,9 @@ def select_for_code(recs, code, meta, per_cell, bounds, min_likelihood):
     return selected, {
         "n_available": n_available,
         "cells_available": len(bycell),
-        "cells_total": 2 * len(bounds),
+        "cells_total": cells_total(bounds),
         "n_selected": len(selected),
     }
-
-
-def coverage_status(info):
-    if info["n_available"] == 0:
-        return "none"
-    if info["cells_available"] >= info["cells_total"]:
-        return "ok"
-    return "partial"
-
-
-# ---------- manifest I/O ----------
-def load_manifest(bank_dir):
-    path = os.path.join(bank_dir, "manifest.json")
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        if not isinstance(data.get("entries"), list):
-            data["entries"] = []
-        return data
-    except (OSError, ValueError):
-        return {"schema_version": 1, "entries": []}
-
-
-def save_manifest(bank_dir, data):
-    path = os.path.join(bank_dir, "manifest.json")
-    tmp = path + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    os.replace(tmp, path)
 
 
 def make_entry(code, meta, sel, verified):
@@ -287,6 +243,8 @@ def make_entry(code, meta, sel, verified):
         "modality": "ECG",
         "normality": fm["normality"],
         "findings": fm["findings"],
+        "umbrella_terms": fm["umbrella_terms"],
+        "attributes": fm["attributes"],
         "disease_keywords": fm["disease_keywords"],
         "source": SOURCE,
         "source_url": SOURCE_URL,
@@ -295,6 +253,10 @@ def make_entry(code, meta, sel, verified):
         "deidentified": True,
         "synthetic": False,
         "verified": bool(verified),
+        # PTB-XL statements are cardiologist annotations carrying an explicit
+        # likelihood and a validated_by_human flag -- a real label validation,
+        # unlike NIH's text-mined labels. Recorded so the UI can say which.
+        "label_verification": "cardiologist-validated",
         "statement_code": code,
         "statement_category": meta["category"],
         "diagnostic_subclass": meta["subclass"],
@@ -307,41 +269,34 @@ def make_entry(code, meta, sel, verified):
 
 
 def write_coverage_report(path, rows, bounds):
-    band_lbl = []
-    for i, b in enumerate(bounds):
-        hi = bounds[i + 1] if i + 1 < len(bounds) else None
-        band_lbl.append(f"{b}-{hi}" if hi else f"{b}+")
-    n_ok = sum(1 for r in rows if r["status"] == "ok")
-    n_any = sum(1 for r in rows if r["info"]["n_selected"] > 0)
+    band_lbl = "/".join(band_labels(bounds))
+    s = summarize(rows)
+    grid = s["n_classes"] * cells_total(bounds)
     subs = {r["meta"]["subclass"] for r in rows if r["meta"]["subclass"]}
     subs_cov = {r["meta"]["subclass"] for r in rows
                 if r["meta"]["subclass"] and r["info"]["n_selected"] > 0}
-    lines = [
-        "# PTB-XL 影像庫覆蓋報告（§6-A）",
-        "",
-        f"- 目標分層：性別(2) × 年齡帶({'/'.join(band_lbl)}) = {2*len(bounds)} 個 cell/statement",
-        f"- 有 ≥1 張影像的 statement：**{n_any} / {len(rows)}**",
-        f"- 各分層全覆蓋(ok)的 statement：**{n_ok} / {len(rows)}**",
-        f"- 有涵蓋的診斷子類別：**{len(subs_cov)} / {len(subs)}**",
-        "",
-        "| code | 類別 | 子類別 | 說明 | 可用筆數 | 已選 | cell 覆蓋 | 狀態 |",
-        "|---|---|---|---|---:|---:|---|---|",
+    summary_lines = [
+        f"目標分層：性別(2) × 年齡帶({band_lbl}) = {cells_total(bounds)} 個 cell/statement",
+        f"有 ≥1 張影像的 statement：**{s['n_any']} / {s['n_classes']}**",
+        f"各分層全覆蓋(ok)的 statement：**{s['n_ok']} / {s['n_classes']}**",
+        f"有涵蓋的診斷子類別：**{len(subs_cov)} / {len(subs)}**",
+        f"總選入影像：**{s['n_images']}** 張（cell 覆蓋率 {s['cells_filled']}/{grid} = "
+        f"{100.0 * s['cells_filled'] / max(1, grid):.1f}%）",
     ]
-    order = {"none": 0, "partial": 1, "ok": 2}
-    for r in sorted(rows, key=lambda x: (order[x["status"]], -x["info"]["n_available"])):
-        i = r["info"]
-        lines.append(
-            f"| `{r['code']}` | {r['meta']['category']} | {r['meta']['subclass'] or '—'} | "
-            f"{r['meta']['description']} | {i['n_available']} | {i['n_selected']} | "
-            f"{i['cells_available']}/{i['cells_total']} | {r['status']} |")
-    lines += [
-        "",
-        "> `none` = 全庫無合格(人工複核＋信心達標)紀錄，資料不足；`partial` = 只覆蓋部分",
-        "> 分層；`ok` = 每個 (性別×年齡帶) cell 至少一張。稀有 statement 的 `none/partial`",
-        "> 是 PTB-XL 資料本身的限制，非工具缺陷。",
+    table_rows = [
+        (r["status"], -r["info"]["n_available"], [
+            f"`{r['code']}`", r["meta"]["category"], r["meta"]["subclass"] or "—",
+            r["meta"]["description"], r["info"]["n_available"], r["info"]["n_selected"],
+            f"{r['info']['cells_available']}/{r['info']['cells_total']}", r["status"],
+        ]) for r in rows
     ]
-    with open(path, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines) + "\n")
+    write_report(
+        path, "PTB-XL 影像庫覆蓋報告（§6-A）", summary_lines,
+        ["code", "類別", "子類別", "說明", "可用筆數", "已選", "cell 覆蓋", "狀態"],
+        table_rows,
+        ["`none` = 全庫無合格(人工複核＋信心達標)紀錄，資料不足；`partial` = 只覆蓋部分",
+         "分層；`ok` = 每個 (性別×年齡帶) cell 至少一張。稀有 statement 的 `none/partial`",
+         "是 PTB-XL 資料本身的限制，非工具缺陷。"])
 
 
 def main():
@@ -350,7 +305,10 @@ def main():
     ap.add_argument("--scp", required=True, help="scp_statements.csv")
     ap.add_argument("--bank-dir", default=os.path.join(ROOT, "image_bank"),
                     help="image bank dir (default repo image_bank/)")
-    ap.add_argument("--age-bands", default="0,40,60", help="age-band lower bounds, e.g. 0,40,60")
+    ap.add_argument("--age-bands", default="0,19,36,51,66",
+                    help="age-band lower bounds. Default 0,19,36,51,66 -> 0-18 (成長發育期，"
+                         "PTB-XL 僅 301 筆) / 19-35 (基線最穩定) / 36-50 (LVH 初現) / "
+                         "51-65 (CAD、缺血性 ST-T 上升) / 66+ (AFib、束支阻滯、纖維化)")
     ap.add_argument("--per-cell", type=int, default=1, help="images per (sex,age-band) cell")
     ap.add_argument("--min-likelihood", type=float, default=80.0,
                     help="min cardiologist likelihood for abnormal statements")
@@ -407,7 +365,10 @@ def main():
                 rec = rp.load_record(s["rec"]["row"], args.sampling, args.source_dir)
                 if rec is None:
                     print(f"    ! {entry['id']}: no waveform"); continue
-                rp.render(rec, out_path, f"PTB-XL #{entry['ecg_id']} — {code} ({meta['description']})")
+                # The film title must NOT carry the statement: students read the
+                # image to practise interpretation, and a caption saying
+                # "IMI (inferior myocardial infarction)" is the answer key.
+                rp.render(rec, out_path, rp.neutral_title(entry["ecg_id"]))
             except Exception as e:
                 print(f"    ! {entry['id']}: {e}"); continue
             manifest["entries"].append(entry)

@@ -1,0 +1,28 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: good inspiration, no significant rotation, well penetrated; L marker in the upper right corner of the image confirms conventional orientation. Slight neck flexion; costophrenic angles included.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "upper",
+ "size_cm": 2.2,
+ "devices": [
+  {
+   "type": "Radiographic side marker (L) with technologist initials",
+   "location": "Upper right corner of the image, projected lateral to the patient's left shoulder / acromioclavicular region"
+  },
+  {
+   "type": "Multiple small linear metallic foreign bodies (probable retained acupuncture-needle fragments / gold-thread implants)",
+   "location": "Soft tissues of the right lower neck / supraclavicular region, lateral to the cervical spine, above the right clavicle"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Well-circumscribed round solid nodule, about 2 cm, no visible calcification or cavitation, partly overlapped by an anterior rib; sits above the aortic knob at about the level of the 2nd anterior rib (upper/middle zone junction)",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.8,
+ "description_zh": "PA 胸部正面片，吸氣充分、無明顯旋轉，L 標記位於影像右上角，符合常規擺位。左上肺野（主動脈弓上方、約第 2 前肋高度）可見一顆邊緣清楚的圓形結節狀陰影，直徑約 2 公分，內部未見明顯鈣化或空洞，部分與前肋重疊。右肺野清晰，雙側肋膈角銳利，心臟大小及縱膈輪廓正常，未見肋膜積液、氣胸或肺門腫大。另於右側下頸部軟組織內見多枚細小線狀金屬密度影，疑為殘留針灸針或埋線異物；未見胸管、引流管或其他治療相關裝置。"
+}

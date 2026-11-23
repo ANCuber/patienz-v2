@@ -1,0 +1,51 @@
+{
+ "id": "nih-infiltration-00021710_003",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (frontal); 'L' marker at image top right confirms conventional orientation (patient's left = image right)",
+ "technical_quality": "Adequate inspiration (about 9 posterior ribs), adequate penetration, no significant rotation (medial clavicles roughly symmetric about the spinous processes); apices and both costophrenic angles included; scapulae not fully cleared from the upper lateral lung fields; slight collimation cut-off at the film edges. 1024-px downsampled image limits fine detail (e.g. port catheter tip).",
+ "target": {
+  "finding": "pulmonary infiltrate",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 7.5,
+  "confidence": 0.55
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "left",
+  "reader_b": "not identified (blind read reported only bilateral lower-zone coarse interstitial markings, more on the right; principal finding was left hilar / middle zone)",
+  "adjudicator": "left"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "Dual-lumen implanted subcutaneous venous port (port-a-cath) reservoir with two circular septa and a top connector stem",
+   "location": "Left upper anterior chest wall (patient's left, image right), projected over the left anterior 2nd-3rd ribs lateral to the aortic arch",
+   "zh": "左上前胸壁雙腔式植入式人工血管注射座（Port-A）"
+  },
+  {
+   "type": "Port catheter",
+   "location": "Faintly traced from the reservoir stem superiorly toward the left clavicle / left subclavian-jugular venous access; course along the left mediastinum toward the SVC and tip not confidently identified at this resolution",
+   "zh": "人工血管導管（自注射座向上朝左鎖骨下／頸靜脈走行，末端於本片無法確認）"
+  },
+  {
+   "type": "External 'L' side marker (film marker, not on the patient)",
+   "location": "Image top right corner (patient's left)",
+   "zh": "影像左側標記 L marker（膠片標記，非病人身上裝置）"
+  }
+ ],
+ "other_findings": [
+  "左肺門可見分葉狀、成簇結節狀高密度影，約 3–4 公分，左肺門增大；需考慮鈣化淋巴結／陳舊性肉芽腫病灶，或肺門淋巴結腫大／肺門腫塊",
+  "雙側下肺野支氣管血管紋理及粗網狀間質紋理增加（右側基底亦明顯），未見緻密實質化",
+  "主動脈弓突出、迂曲（unfolded aorta），左上縱膈輪廓略寬，考慮主動脈迂曲／擴張",
+  "心臟大小在正常上限",
+  "雙側肺尖輕度肋膜增厚（apical capping）",
+  "兩側肋膈角銳利，未見肋膜積液或氣胸；骨骼未見明顯異常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記所見（左下肺野浸潤）可見，且無針對該所見的治療裝置（無胸管、引流管或引流後變化）。惟左上胸壁有植入式人工血管（Port-A），代表病人有需長期靜脈治療的背景（如惡性腫瘤化療），且左肺門另有分葉狀結節影；病例設定須納入相應病史（例如癌症治療中的免疫低下病人以發燒、咳嗽首次就診而發現左下肺浸潤），不宜用於完全無過去病史的單純病人。",
+ "description_zh": "胸部正面（PA）X光，吸氣深度足夠、曝露適當、無明顯旋轉，兩側肩胛骨部分重疊於上外側肺野。左上前胸壁皮下可見雙腔式植入式人工血管注射座（Port-A），導管自注射座向上朝左鎖骨下／頸靜脈方向走行，末端於本片解析度下無法確認；未見胸管、引流管或其他導管。左下肺野內側至中部（左肺門下方沿左心緣至舌葉／左肺基底）可見邊界不清的模糊斑片狀合併網狀浸潤影，範圍約 7–8 公分，左心緣下段部分模糊，未見緻密實質化或空氣支氣管徵；雙側下肺野（右側基底亦明顯）支氣管血管紋理與粗網狀間質紋理增加。左肺門另見分葉狀、成簇結節狀高密度影約 3–4 公分，左肺門增大，需考慮鈣化淋巴結／陳舊性肉芽腫病灶或肺門淋巴結腫大／腫塊；主動脈弓突出迂曲、左上縱膈輪廓略寬，心臟大小在正常上限。雙側肺尖輕度肋膜增厚，兩側肋膈角銳利，未見肋膜積液或氣胸，骨骼未見明顯異常。",
+ "label_concern": "標籤大致合理，但左下肺浸潤為邊界不清的淡薄斑片／網狀影，疊加於雙側下肺野粗糙間質紋理之上，盲讀者未能獨立辨識；本片最醒目的異常其實是左肺門分葉狀結節影（淋巴結腫大／腫塊或鈣化淋巴結），加上植入式人工血管，出題時需一併說明。"
+}

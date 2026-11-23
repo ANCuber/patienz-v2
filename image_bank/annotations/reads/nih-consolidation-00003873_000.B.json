@@ -1,0 +1,38 @@
+{
+ "view": "Frontal (PA/AP) chest radiograph, paediatric; L lead marker in the image upper-right corner confirms conventional orientation (patient's left on image right; gastric bubble under left hemidiaphragm)",
+ "technical_quality": "Digitised film with slight overall tilt/rotation of the image and a dark cassette/collimation bar along the image left edge; wide field including both shoulders and upper abdomen. Adequate inspiration (approx. 8-9 posterior ribs), adequate penetration (thoracic spine visible through the heart), no significant patient rotation, scapulae partially overlap the upper lateral lung fields. Diagnostic quality.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 7,
+ "devices": [
+  {
+   "type": "Lead side marker (rotated 'L' with additional characters), external artifact",
+   "location": "Image upper-right corner, over the patient's left shoulder/soft tissue, outside the lung fields"
+  },
+  {
+   "type": "Film/cassette edge artifact (black rectangular bar), external artifact",
+   "location": "Image left edge, outside the patient"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy ill-defined airspace opacity (consolidation) in the medial right lower zone, extending from the right hilum inferiorly toward the right heart border and diaphragm, approx. 7 cm; no volume loss, no cavitation",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Partial obscuration of the right heart border (silhouette sign), suggesting right middle lobe involvement; right costophrenic angle and right hemidiaphragm outline remain preserved",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly increased right perihilar/peribronchial density adjacent to the consolidation",
+   "laterality": "right",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.8,
+ "description_zh": "胸部正面X光片（11歲男童）：右下肺野內側自右肺門向下延伸可見片狀邊界不清之肺實質浸潤陰影，大小約7公分，並部分遮蔽右心緣（silhouette sign），符合右中葉／右下肺野實變（consolidation），未見明顯體積縮小或空洞。左肺野清晰，雙側肋膈角銳利，未見肋膜積液或氣胸。心臟大小與縱膈正常，氣管居中，橫膈輪廓完整，左橫膈下可見胃泡。骨骼與軟組織無明顯異常；未見任何導管、引流管或植入裝置，僅見L側標記與片緣偽影。"
+}

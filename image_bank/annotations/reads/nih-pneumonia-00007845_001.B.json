@@ -1,0 +1,44 @@
+{
+ "view": "Frontal (PA/AP) erect chest radiograph; \"L\" side marker at image upper-right (patient's left) confirms conventional orientation",
+ "technical_quality": "Adequate. Apices, both costophrenic angles and lateral chest walls fully included. Inspiration adequate (~9-10 posterior ribs). Penetration adequate (thoracic spine visible through the cardiac shadow). Mild rotation at most (medial clavicles roughly symmetric about the spinous processes). Scapulae partially project over the lateral upper lung fields (arms not fully rotated / likely AP-type positioning). Image is soft/slightly blurred (dataset downsampling), limiting fine interstitial detail.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "Radiographic side marker 'L' (with small text label beneath)",
+   "location": "Image upper-right corner, over the patient's left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Patchy hazy opacity with coarse reticular / peribronchovascular interstitial markings in the medial right lower zone and right perihilar region, partially blurring the lower right heart border; suggests right middle/lower lobe infiltrate (infective vs chronic interstitial change); no air bronchogram seen",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Tortuous, ectatic (unfolded) thoracic aorta with a prominent, rounded aortic knob projecting to the left of the spine, displacing the trachea slightly to the right at the arch level; consistent with age-related aortic ectasia (aneurysm not excluded)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Borderline / mild cardiomegaly (cardiothoracic ratio approximately 0.54), left ventricular contour prominent; may be partly exaggerated by AP projection",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly increased coarse interstitial / bronchovascular markings in the left lower zone lateral to the heart (bilateral basal interstitial prominence, milder than the right)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Diffuse osteopenia of the thoracic skeleton in keeping with age; no rib fracture or lytic lesion identified",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "站立正面胸部X光，影像右上角可見「L」側別標記，吸氣量足夠、穿透度適中，肩胛骨部分重疊於兩側上肺野外側；未見任何導管、導線、引流管或心臟節律器。右下肺野內側及右肺門周圍見粗糙網狀間質紋理增加合併斑片狀模糊陰影（約6公分），右心緣下段局部略不清晰，不排除右中葉/右下葉浸潤；左下肺野亦有輕度間質紋理增加。胸主動脈迂曲擴張、主動脈弓明顯突出，氣管於弓部略向右偏移，心臟大小為臨界至輕度擴大（心胸比約0.54）。雙側肋膈角銳利，無肋膜積液或氣胸，骨質疏鬆，未見明顯肋骨骨折。"
+}

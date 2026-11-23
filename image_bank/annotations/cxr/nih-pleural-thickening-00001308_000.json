@@ -1,0 +1,44 @@
+{
+  "id": "nih-pleural-thickening-00001308_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate PA film of a 12-year-old: good inspiration (about 9-10 posterior ribs), no significant rotation, adequate penetration (thoracic vertebrae visible through the heart). Post-processed image with dark collimation borders and blurred periphery; apices and both costophrenic angles included; L marker on the patient's left confirms conventional orientation.",
+  "target": {
+    "finding": "pleural thickening",
+    "visible": "uncertain",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 3.5,
+    "confidence": 0.45
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "right",
+    "reader_b": "none",
+    "adjudicator": "right"
+  },
+  "agreement": "conflict",
+  "devices": [
+    {
+      "type": "Lead side marker 'L' (external, radiographer's marker)",
+      "location": "Upper corner of the film on the patient's left, projected over the left shoulder soft tissue, outside the lung fields",
+      "zh": "左側「L」鉛字側別標記（體外）"
+    },
+    {
+      "type": "Round radiopaque disc about 1.5 cm (external marker disc or clothing button/snap), not intrathoracic",
+      "location": "Patient's left shoulder / axillary soft tissue just below the L marker, lateral to the proximal left humerus, outside the rib cage",
+      "zh": "左肩外側約1.5公分圓形不透光體外物（標記片或鈕扣）"
+    }
+  ],
+  "other_findings": [
+    "心臟大小與縱膈輪廓正常，氣管居中，雙側肺門形態正常",
+    "雙側肺尖清晰，雙側肋膈角銳利，無肋膜積液、氣胸或肺實質浸潤",
+    "雙側肱骨近端生長板尚未閉合，與12歲年齡相符",
+    "左橫膈下可見胃泡；骨骼結構完整"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標示的肋膜增厚僅為右側橫膈內側上方一小段不規則波浪狀線狀密度（約3-4公分），極為細微且不確定，亦可能為橫膈肌束正常變異；盲讀者判為正常片，無放射科醫師標記框佐證。雖無胸管或任何治療裝置、亦無與初次就診矛盾之處，但目標病灶無法明確辨識，不適合作為肋膜增厚的教學示範影像。",
+  "description_zh": "胸部X光正面（PA）像，12歲男童，吸氣深度足夠、無明顯旋轉、穿透度適當，心臟大小與縱膈輪廓正常，氣管居中。右下肺野緊貼右側橫膈內側上方可見一段不規則、波浪狀的細線狀密度增加，範圍約3-4公分，疑為右側橫膈面輕微肋膜增厚／胸膜牽拉或基底部纖維條索，但亦不排除橫膈肌束之正常變異；右側肋膈角仍銳利。左肺清晰，雙側肺尖及左側肋膈角銳利，未見肺實質浸潤、結節、肋膜積液或氣胸，雙側肱骨近端生長板尚未閉合，左橫膈下可見胃泡。未見胸管、引流管或任何體內裝置；影像右上方（病人左肩）可見「L」側別鉛字標記及其下方一約1.5公分之圓形體外不透光物（標記片或鈕扣），位於胸廓之外。",
+  "label_concern": "NLP標籤「肋膜增厚」證據薄弱：盲讀者判為正常片，標籤知情讀者與仲裁者僅在右側橫膈內側上方見到一段細微、不確定的波浪狀線狀密度，可能只是橫膈肌束正常變異；無放射科醫師標記框。建議人工複核，若確認為正常片可改列為正常。"
+}

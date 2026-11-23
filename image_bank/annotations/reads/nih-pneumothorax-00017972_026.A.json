@@ -1,0 +1,64 @@
+{
+ "view": "AP frontal (portable, supine/semi-erect); L marker at image top-right, conventional orientation",
+ "technical_quality": "Adequate penetration but patient rotated to the left with tilted/oblique collimation; apices included, costophrenic angles partly cut off and obscured; multiple overlying ECG electrodes, cables and a pleural catheter limit assessment of the left lateral pleural space",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Pigtail pleural drainage catheter (coiled tip)",
+   "location": "Left hemithorax; coil projected over the lateral left mid zone, tube runs down the lateral left chest wall to a hub/connector at the left lower lateral chest / upper abdomen level, then continues off the film"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Right upper anterior chest (infraclavicular); wire courses inferomedially across the right lung toward the lower mediastinum"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Left upper anterior chest (infraclavicular); wire courses downward along the left axilla / lateral chest wall"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "Right lateral chest / right upper arm region (image far left), wire looping outside the thorax"
+  },
+  {
+   "type": "External ECG cables / monitoring wires",
+   "location": "One crossing the right shoulder-upper chest, one curving across the lower chest / upper abdomen from right to left, and coiled cables at the left lower corner of the film outside the patient"
+  },
+  {
+   "type": "Side marker (L, two markers)",
+   "location": "Image top-right, over the left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Diffuse coarse reticulonodular and patchy airspace opacities throughout both lungs, right more than left",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Increased homogeneous density of the right lower zone with obscured right hemidiaphragm and costophrenic angle, suggesting consolidation and/or layering pleural effusion",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Possible thin lucent rim without lung markings lateral to the lung adjacent to the pigtail coil, but no definite visceral pleural line; cannot be separated from an adjacent broad soft-tissue/skin-fold band along the left lateral chest wall (pneumothorax mimic)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Broad smooth soft-tissue density band curving from below the left clavicle down the lateral left chest wall, most consistent with a skin fold",
+   "laterality": "left",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Right heart border partially obscured by adjacent lung opacity; cardiomediastinal contour otherwise difficult to assess on rotated AP film",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.55,
+ "description_zh": "AP 胸部X光，病人有旋轉且照野歪斜。左側胸腔可見一條 pigtail 引流導管，其捲曲末端投影於左中肺野外側，導管沿左側胸壁外側向下走行至左下胸／上腹部之接頭，顯示左側氣胸已置管引流；目前未見明確臟層肋膜線，僅於 pigtail 附近之左側外側肺野疑有薄層無肺紋透亮區，但與沿左側胸壁的軟組織／皮膚皺褶帶影難以區分，殘餘氣胸無法確認。兩側肺野瀰漫性粗網狀結節及斑片狀浸潤，右側較明顯，右下肺野密度增加並使右橫膈及肋膈角模糊，疑為實質化合併肋膜積液。另見雙側前胸心電圖電極貼片及多條導線投影於胸部。"
+}

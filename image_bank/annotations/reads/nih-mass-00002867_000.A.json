@@ -1,0 +1,38 @@
+{
+ "view": "PA (recorded), frontal chest radiograph; conventional orientation confirmed by cardiac apex and gastric bubble on image right",
+ "technical_quality": "Adequate: good inspiration (~9 posterior ribs), minimal rotation, adequate penetration with spine visible through the heart, costophrenic angles included. Scapulae partially project over the lateral lung fields. Bright vertical band artifact along the far left image edge and a radiopaque side marker at the upper-right image corner.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 3,
+ "devices": [
+  {
+   "type": "radiopaque side marker with metallic pin/clip (letters not confidently legible)",
+   "location": "upper-right image corner, over the patient's left shoulder/axillary soft tissue"
+  },
+  {
+   "type": "external artifact: bright vertical band (likely cassette/detector edge or lead shielding)",
+   "location": "far left image edge, lateral to the patient's right chest wall / arm"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "lobulated, bulky right hilar opacity with a rounded ~2-3 cm soft-tissue component adjacent to the hilum; suspicious for right hilar mass / lymphadenopathy but not confidently separable from prominent hilar vessels (the labelled 'mass' candidate)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "two tiny bright dots in the right perihilar region, most likely end-on vessels or small calcified granulomas (indeterminate)",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "no pleural effusion, pneumothorax, consolidation or discrete parenchymal nodule elsewhere; heart size at upper limit of normal; left hilum shows normal vascular branching; gastric bubble under left hemidiaphragm",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.45,
+ "description_zh": "胸部正面X光片（記錄為PA view），吸氣量足夠、旋轉不明顯、穿透度適當，兩側肩胛骨部分投影於肺野外側。右側肺門呈分葉狀增寬且密度增加，於中肺野肺門旁可見約2-3公分之圓形軟組織影，疑為右側肺門腫塊或淋巴結腫大，惟無法完全排除為突出之肺門血管；左側肺門呈正常血管分支型態。兩側肺野餘無明顯實質浸潤或結節，肋膈角銳利，無肋膜積液或氣胸，心臟大小於正常上限，左橫膈下可見胃泡。影像右上角可見金屬側標記，影像左緣有一垂直亮帶為體外偽影；未見任何管路、引流管或治療後跡象。"
+}

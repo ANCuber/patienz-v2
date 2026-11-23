@@ -1,0 +1,72 @@
+{
+ "view": "Frontal chest radiograph, most likely AP (clavicles projected high, scapulae overlapping the lateral lung fields, large body habitus); no L/R marker seen, conventional orientation assumed",
+ "technical_quality": "Adequate but limited: shallow inspiration (about 7 anterior ribs), minimal rotation, lung bases and costophrenic regions partly obscured by bilateral pendulous breast/soft-tissue shadows and slight under-penetration of the lower zones; apices included. Note the skeletal maturity and body habitus appear adult, which is discordant with the stated age of 13 y.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "right anterior chest, mid zone (image left, over 4th-5th anterior rib)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "left anterior chest, mid zone (image right)"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "right lower chest projecting over the elevated right hemidiaphragm / right heart border"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "right upper abdomen / lower right chest wall"
+  },
+  {
+   "type": "ECG electrode with lead wire",
+   "location": "left upper abdomen / lower left chest wall"
+  },
+  {
+   "type": "ECG lead wires (external)",
+   "location": "multiple curvilinear lines overlying both lungs, from the neck region to the electrodes and down over the abdomen"
+  },
+  {
+   "type": "Linear tubular density, probably external cable (nasogastric tube not entirely excluded)",
+   "location": "midline, projecting over the lower thoracic spine and abdomen"
+  },
+  {
+   "type": "External line / tubing",
+   "location": "along the right lateral chest wall and right breast shadow"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Elevated right hemidiaphragm (dome about one intercostal space higher than the left)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Hazy opacity in the medial right lower zone adjacent to the right heart border and hemidiaphragm with volume loss, consistent with right lower lobe/basal atelectasis; right heart border partly silhouetted",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right costophrenic angle obscured (breast/soft-tissue overlap vs small pleural effusion)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Relative hyperlucency / compensatory expansion of the left lung",
+   "laterality": "left",
+   "zone": "whole"
+  },
+  {
+   "finding": "Mild hazy density at the left base medially, probably breast/soft-tissue overlap rather than consolidation",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光（疑為AP攝影），吸氣量略不足，兩側下肺野受乳房及軟組織影重疊；胸腹部可見多枚心電圖電極貼片及導線投影，另有一線狀密度沿中線投影於下胸椎及腹部，疑為體外導線（無法完全排除鼻胃管）。右側橫膈明顯上抬，右下肺野內側鄰近右心緣及橫膈處呈現模糊緻密影並伴隨容積減少，右側肋膈角受遮蔽，符合右下肺葉／右肺底肺擴張不全（atelectasis）；左肺相對透亮，左側肋膈角尚清晰，左肺底內側僅見輕微軟組織重疊之模糊影。心臟大小於此攝影條件下大致正常，氣管居中，未見氣胸、胸管或其他引流裝置，骨骼無明顯異常。"
+}

@@ -1,0 +1,44 @@
+{
+ "view": "PA (L marker in the upper-right corner of the image confirms conventional orientation: patient's left on image right)",
+ "technical_quality": "Adequate. Deep inspiration (hyperinflated, >10 posterior ribs visible), adequate penetration (thoracic spine visible through the cardiac silhouette), no significant rotation (medial clavicular ends roughly symmetric about the spinous processes), full lung fields and costophrenic angles included. Contrast appears somewhat window-stretched (NIH preprocessing).",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' with technologist initials 'HB' (lead marker, not a medical device)",
+   "location": "Upper-right corner of the image, i.e. over the patient's left shoulder/upper-left field, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hyperinflation: flattened, low-lying hemidiaphragms with horizontal ribs and increased lung volumes (secondary sign of emphysema)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Hyperlucent upper lung fields with attenuated/paucity of peripheral vascular markings (emphysematous change, upper-zone predominant)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Narrow, vertically oriented (tubular) cardiac silhouette, consistent with hyperinflation rather than cardiomegaly",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly coarse/prominent bronchovascular markings in the lower zones ('dirty chest' appearance often seen with COPD/chronic bronchitis); no focal consolidation",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent aortic knob/unfolded thoracic aorta",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.65,
+ "description_zh": "PA 胸部X光，影像右上角可見 L 標記，方向為標準投照（病人左側在影像右側）。兩側肺野明顯過度充氣，橫膈平坦下移、肋骨走向平直，心影狹長呈垂直位；兩側上肺野透亮度增加且周邊血管紋理稀疏，符合肺氣腫表現，以雙側上肺野較為明顯，屬瀰漫性病變無法量測大小。兩下肺野支氣管血管紋理略為增粗，主動脈弓稍突出。未見氣胸、肋膜積液、實質化或肺結節，亦未見任何導管、引流管、夾子或植入裝置。"
+}

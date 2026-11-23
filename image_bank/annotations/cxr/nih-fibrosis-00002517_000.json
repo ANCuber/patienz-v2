@@ -1,0 +1,38 @@
+{
+ "id": "nih-fibrosis-00002517_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "曝光與吸氣尚可（約9對後肋），氣管居中、無明顯旋轉（鎖骨內端與棘突大致等距）；穿透度略低，腹部與心後區域偏白。手臂置於身側，雙側肩胛骨投影於上外側肺野，肱骨頭與上臂軟組織入鏡；無移動模糊。患者左上方可見 L 側標記與技師縮寫 DMD，方向為傳統擺位。",
+ "target": {
+  "finding": "pulmonary fibrosis",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "lower",
+  "size_cm": 8,
+  "confidence": 0.6
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "radiographic side marker (L) with technologist initials 'DMD' (external film marker, not an in-patient device)",
+   "location": "upper corner of image on the patient's left, over soft tissue lateral to the left shoulder",
+   "zh": "左側（L）側標記及技師縮寫 DMD，位於患者左肩外側軟組織上方（體外影像標記，非置入裝置）"
+  }
+ ],
+ "other_findings": [
+  "右肺門略顯突出、肺門周圍紋理增加（可能與鄰近右下肺網狀變化相關）",
+  "右心緣輪廓部分模糊，被內側右下肺陰影遮蔽（silhouette sign）",
+  "左下肺野肺門周圍間質紋理輕微增加（不明確，遠較右側輕微）"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標的病灶（右下肺內側粗網狀／條索狀纖維化樣陰影）可見，片上無胸管、引流管、導管或任何治療性裝置，亦無手術痕跡或其他與初次就診相矛盾之表現，適合作為以慢性咳嗽等症狀初次就診之病例。惟病灶為右下肺內側局部性而非瀰漫性，案例設定應對應局部肺纖維化／慢性瘢痕（或支氣管擴張性變化），而非瀰漫性間質性肺病。",
+ "description_zh": "胸部正面X光（PA站立）：吸氣尚可、無明顯旋轉、氣管居中，未見任何導管、導線、心律調節器或引流管，僅患者左上方有 L 側標記及技師縮寫。右下肺野內側（右心緣旁，自右肺門向下延伸至右橫膈上方）可見範圍約8公分的粗網狀及條索狀間質性陰影，使右心緣輪廓部分模糊，右肺門略顯突出、肺門周圍紋理增加，符合局部慢性纖維化／瘢痕或支氣管擴張性變化。左肺野大致清晰，僅左下肺門周圍紋理輕微增加。雙側肋膈角銳利，未見肋膜積液或氣胸；心影大小正常、縱隔未增寬，左橫膈下可見胃泡，骨骼與軟組織未見明顯異常。",
+ "label_concern": "標籤「pulmonary fibrosis」為 NLP 自報告擷取、無放射科定界框；影像僅見右下肺內側局部粗網狀／條索狀陰影，並非瀰漫性間質纖維化。於18歲患者此型態較可能為局部慢性瘢痕或支氣管擴張性變化，纖維化之判定屬中等信心（Reader A 判為不確定，Reader B 盲讀亦於同側同區發現相同變化）。"
+}

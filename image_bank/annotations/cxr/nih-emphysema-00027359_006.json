@@ -1,0 +1,65 @@
+{
+ "id": "nih-emphysema-00027359_006",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (recorded); frontal erect chest radiograph. Scapulae partly overlie the upper lateral lung fields, so an AP projection cannot be excluded.",
+ "technical_quality": "Adequate: inspiration about 8-9 posterior ribs, vertebral bodies visible through the cardiac shadow, no significant rotation, apices and costophrenic angles included. Bilateral breast shadows overlie the lower zones and the scapulae overlap the upper lateral lung fields. Upper zones look somewhat hyperlucent (thin 18-year-old habitus / exposure). The left costophrenic angle is partly obscured by overlapping drainage tubing and gastric fundus air. 1024x1024 downsampled image, fine detail limited.",
+ "target": {
+  "finding": "pulmonary emphysema (dataset label, NIH 'Emphysema', NLP-mined) - NOT seen; the only 'emphysema' on this film is subcutaneous emphysema of the left axilla / upper lateral chest wall (~3 x 5 cm), the likely source of the mined label",
+  "visible": "no",
+  "laterality": "left",
+  "zone": "upper",
+  "size_cm": 5,
+  "confidence": 0.8
+ },
+ "laterality_sources": {
+  "bbox": "none (NLP-mined label only, no radiologist box)",
+  "reader_a": "left / upper (label-aware; found no pulmonary emphysema, identified left axillary subcutaneous emphysema as the label correlate)",
+  "reader_b": "left / multiple (blind; independently found left lateral chest wall and axillary subcutaneous emphysema, did not report pulmonary emphysema)",
+  "adjudicator": "left / upper (subcutaneous emphysema confirmed on magnified crop in the left axilla and upper lateral chest wall; no bullae, hyperinflation or diaphragm flattening - pulmonary emphysema absent)"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "chest tube (large-bore, tram-track appearance)",
+   "location": "left lateral hemithorax; tip at the left mid zone (about the anterior 4th rib level), runs vertically down along the lateral chest wall to below the left hemidiaphragm dome (posterior costophrenic sulcus)",
+   "zh": "左側外側大口徑胸管（尖端於左中肺野約前第4肋高度，沿外側胸壁下行至左橫膈頂下方）"
+  },
+  {
+   "type": "chest tube (large-bore, tram-track appearance, second tube)",
+   "location": "left paravertebral / paramediastinal, about 2-3 cm lateral to the spine along the left heart border (posterior course); blunt tip at the level of the aortic arch / left hilum, extends inferiorly past the left hemidiaphragm dome",
+   "zh": "左側脊椎旁（後位）第二條大口徑胸管，沿左心緣走行，鈍端位於主動脈弓／左肺門高度，向下越過左橫膈頂"
+  },
+  {
+   "type": "small-bore pleural catheter / thin radiopaque drain (pigtail- or Blake-type)",
+   "location": "enters the low left lateral chest wall (about the 8th-9th rib), runs superiorly along the inner lateral pleural margin with its tip at the left apex (about the anterior 2nd rib); the external segment continues over the left flank and exits the image inferolaterally",
+   "zh": "左側細口徑肋膜引流管（自左下外側胸壁約第8-9肋進入，沿外側肋膜緣上行，尖端於左肺尖；體外段沿左側腹延伸出影像）"
+  },
+  {
+   "type": "surgical staple line / clips (metallic, angulated chain)",
+   "location": "left apex, paramediastinal (left upper zone, about T2-T4 level) - post-VATS apical wedge resection / bullectomy appearance",
+   "zh": "左肺尖縱膈旁（約T2-T4）手術釘線／金屬夾，符合胸腔鏡肺尖楔狀切除後"
+  },
+  {
+   "type": "external chevron side / orientation marker",
+   "location": "top right corner of the image, over the patient's left shoulder, outside the chest",
+   "zh": "影像右上角（病人左肩上方）之體外V形標記"
+  }
+ ],
+ "other_findings": [
+  "左側腋窩及上外側胸壁軟組織內條紋狀線形透亮影，符合皮下氣腫，範圍約3×5公分（右側無）；此為片中唯一的「氣腫」所見，應為NIH「Emphysema」標籤之來源",
+  "左肺尖縱膈旁手術釘線併鄰近輕度縱膈旁密度增加，符合胸腔鏡手術後變化",
+  "未見肺實質性肺氣腫徵象：無肺泡、無過度充氣、雙側橫膈圓頂保留；雙上肺野略透亮應為年輕瘦小體型／曝光所致",
+  "引流後左側未見明確臟層肋膜線或氣胸；左肺尖少量殘餘氣胸無法完全排除",
+  "左心緣旁之垂直管狀影判定為脊椎旁大口徑胸管（雙壁、鈍端），非縱膈氣腫之縱膈肋膜線；惟合併皮下氣腫，少量縱膈氣腫無法完全排除",
+  "左肺容積輕度減少，左橫膈約與右橫膈同高（相對略偏高）",
+  "左肋膈角部分被管路及胃底氣體遮蔽，未見明確肋膜積液",
+  "右肺清晰，氣管居中，心臟大小及縱膈正常",
+  "雙側乳影重疊於下肺野；雙側肩胛骨部分重疊於上外側肺野；左橫膈下胃底氣體",
+  "骨骼結構未見骨折或破壞"
+ ],
+ "treatment_evidence": true,
+ "first_presentation_suitable": false,
+ "suitability_reason": "左側胸腔有三條肋膜引流管（兩條大口徑胸管及一條細口徑引流管）與左肺尖手術釘線，屬胸腔鏡手術後／引流後狀態；且片中並無肺實質性肺氣腫，實際所見為術後皮下氣腫，因此不適合作為「肺氣腫」初次就診之影像。",
+ "description_zh": "胸部正面直立片（記錄為PA），吸氣度與曝光適當，無明顯旋轉，雙側肩胛骨部分重疊於上外側肺野、雙側乳影重疊於下肺野。左側胸腔可見三條引流裝置：一條大口徑胸管沿左外側胸壁走行、尖端約在左中肺野（前第4肋高度）並向下延伸至左橫膈頂下方；第二條大口徑胸管位於左脊椎旁沿左心緣走行、鈍端位於主動脈弓／左肺門高度並向下越過左橫膈頂；另一條細口徑引流管自左下外側胸壁（約第8-9肋）進入、沿外側肋膜緣上行至左肺尖（前第2肋高度），其體外段沿左側腹延伸出影像；左肺尖縱膈旁（約T2-T4）並見手術釘線／金屬夾，符合胸腔鏡肺尖切除後狀態。左側腋窩及上外側胸壁軟組織內可見條紋狀透亮影，範圍約3×5公分，符合皮下氣腫（右側無），此為本片與「emphysema」標籤相對應之唯一所見；肺實質未見肺氣腫徵象（無肺泡、無過度充氣、橫膈圓頂保留），雙上肺野略透亮應為年輕瘦小體型所致。引流後左側未見明確臟層肋膜線或氣胸，左肺尖少量殘餘氣胸無法完全排除；左肺容積輕度減少，左肋膈角部分被管路與胃底氣體遮蔽但未見明確積液。右肺清晰，氣管居中，心臟大小與縱膈正常，影像右上角有體外V形標記。",
+ "label_concern": "此片無肺實質性肺氣腫徵象（18歲女性，無肺泡、無過度充氣、橫膈圓頂保留）；NIH「Emphysema」標籤極可能由報告中「皮下氣腫（subcutaneous emphysema）」經NLP誤判而來。片中實際所見為左側腋窩／上外側胸壁皮下氣腫，併左側胸腔鏡手術後（肺尖釘線）及三條引流管之引流後狀態；不應作為肺氣腫教學影像。"
+}

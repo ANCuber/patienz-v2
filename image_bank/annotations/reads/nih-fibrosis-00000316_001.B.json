@@ -1,0 +1,19 @@
+{
+ "view": "PA frontal chest radiograph (L marker on image right; conventional orientation)",
+ "technical_quality": "Adequate: good inspiration (about 9-10 posterior ribs), no significant rotation (medial clavicular ends equidistant from spinous processes), appropriate penetration (vertebral bodies faintly visible through the mediastinum), apices and both costophrenic angles included. Scapulae are only partially retracted and overlap the lateral lung fields.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Subtle accentuation of linear/reticular interstitial markings at the lung bases, slightly more conspicuous on the right; no consolidation, nodule, mass or volume loss",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面（PA）攝影，吸氣量足夠、無明顯旋轉、穿透度適中，雙側肩胛骨部分重疊於外側肺野；未見任何管路、導線或體外裝置。氣管居中，心臟大小正常（心胸比約0.4），縱膈及雙側肺門輪廓正常；雙側肺尖與上、中肺野清晰。雙下肺野可見輕微線狀／網狀間質紋理增加，右側略明顯，但未見實質浸潤、結節或腫塊。雙側肋膈角銳利，無肋膜積液或氣胸，橫膈輪廓平滑，左橫膈下可見胃泡氣體；骨骼與軟組織無明顯異常。"
+}

@@ -1,0 +1,46 @@
+{
+ "view": "Frontal chest radiograph (likely AP/PA erect; L marker at upper right of image, conventional orientation; scapulae partly overlap the lateral upper lung fields)",
+ "technical_quality": "Adequate inspiration (about 9 posterior ribs), minimal rotation, slightly underpenetrated through the lower mediastinum; bilateral breast shadows overlie the lower zones; whole thorax included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "middle",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "ECG monitoring electrode (round, external)",
+   "location": "right upper anterior chest, over the right shoulder / infraclavicular region"
+  },
+  {
+   "type": "ECG monitoring electrode (round, external)",
+   "location": "left upper anterior chest, infraclavicular region near the left clavicle"
+  },
+  {
+   "type": "ECG electrode with looped lead wire (external)",
+   "location": "left lower lateral chest wall, wire coursing inferiorly over the left flank / upper abdomen"
+  },
+  {
+   "type": "Side marker 'L' with technologist initials",
+   "location": "upper right corner of image (patient's left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Prominent bilateral hila with mild superior mediastinal / right paratracheal fullness; possibly vascular or projection-related, no discrete mass",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly increased bronchovascular/interstitial markings at the right lung base, partly accentuated by overlying breast tissue; no consolidation",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Borderline cardiac size (CTR approximately 0.48-0.50), heart contours otherwise normal",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "胸部正面X光片，吸氣量足夠、旋轉輕微，雙側乳房陰影重疊於下肺野；兩上胸壁各見一枚圓形心電圖電極貼片，左下側胸壁另見一枚電極及迴繞之導線，無胸管或引流管。雙側肺野透亮度大致對稱，肺紋理延伸至胸壁，於本解析度下未見明確之臟層胸膜線或氣胸，右下肺野支氣管血管紋理輕度增加，部分為乳房陰影重疊所致，未見實質化或結節。雙側肺門略顯突出，上縱膈及右氣管旁區輕度飽滿，可能與投影或血管性因素有關；心臟大小約在正常上限（CTR約0.48–0.50）。雙側肋膈角銳利，橫膈輪廓清楚，左橫膈下可見胃泡，骨骼結構未見明顯異常。"
+}

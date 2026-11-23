@@ -1,0 +1,56 @@
+{
+  "id": "nih-consolidation-00018884_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (recorded); frontal chest, L marker in upper image-right corner confirming conventional orientation; scapulae partly project over the lateral lung fields (positioning suboptimal / possibly AP)",
+  "technical_quality": "Adequate: adequate inspiration and penetration (thoracic spine visible through the cardiac silhouette), mild rotation, scapulae overlapping the upper/lateral lung fields, pacemaker generator overlying the left upper zone; apices and both costophrenic angles included.",
+  "target": {
+    "finding": "consolidation",
+    "visible": "yes",
+    "laterality": "left",
+    "zone": "lower",
+    "size_cm": 10,
+    "confidence": 0.65
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "left",
+    "reader_b": "left",
+    "adjudicator": "left"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Cardiac pacemaker generator (dual-chamber pulse generator; no shock coils, i.e. pacemaker rather than ICD)",
+      "location": "Left infraclavicular / pectoral pocket, overlying the left upper zone",
+      "zh": "心臟節律器主機（左鎖骨下區）"
+    },
+    {
+      "type": "Transvenous atrial pacing lead with redundant loop",
+      "location": "Via left subclavian vein and SVC; redundant loop projected over the right atrium, tip over the right atrium just to the patient's right of midline at mid-thorax",
+      "zh": "經靜脈心房導線（尖端位於右心房，右心房處有多餘環狀迂迴）"
+    },
+    {
+      "type": "Transvenous ventricular pacing lead",
+      "location": "Via left subclavian vein and SVC through the right atrium; tip projected over the right ventricular apex at the inferior cardiac silhouette near the left hemidiaphragm",
+      "zh": "經靜脈心室導線（尖端位於右心室心尖近左橫膈處）"
+    },
+    {
+      "type": "Radiographic side marker 'L' with technician initials 'AM' (external artifact, not a medical device)",
+      "location": "Upper image-right corner over the patient's left shoulder",
+      "zh": "左側「L」標記及技師縮寫（外部標記）"
+    }
+  ],
+  "other_findings": [
+    "雙肺瀰漫性粗網狀間質紋理增加，以右下肺野及左肺門周圍較明顯（慢性間質變化或間質性肺水腫），右肺未見局部實質化",
+    "心影約在正常上限至輕度擴大（心胸比約0.5），左心緣受浸潤遮蔽而難以精確評估",
+    "胸主動脈迂曲、主動脈弓突出，符合年齡相關變化",
+    "兩側肋膈角大致銳利，左側略模糊但無明確肋膜積液；未見氣胸",
+    "胸椎輕度側彎併退化性變化；全身性骨質疏鬆；雙側肩關節退化性變化",
+    "雙側肩胛骨投影於上外側肺野（擺位因素）"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標籤病灶（左肺中下野實質化）可見，且片中無胸管、引流管或針對此病灶之治療證據。左鎖骨下心臟節律器與雙導線為慢性心臟裝置，並不與肺炎初次就診相牴觸，但病例設定須納入節律器病史（如病竇症候群或房室傳導阻滯）及年長、心影偏大、雙肺間質紋理增加等背景；浸潤呈斑片狀而非緻密大葉性，出題時宜考慮與心衰竭間質性肺水腫的鑑別。",
+  "description_zh": "胸部正面片（記錄為PA），吸氣及穿透度尚可，輕微旋轉，雙側肩胛骨部分投影於外側肺野，影像右上角可見「L」標記。左鎖骨下區可見心臟節律器主機，兩條經靜脈導線經左鎖骨下靜脈及上腔靜脈進入心臟：心房導線於右心房處呈多餘環狀迂迴、尖端位於右心房，心室導線尖端投影於右心室心尖近左橫膈處，導線走行連續，未見斷裂或移位。左肺中下野自肺門周圍延伸至下肺野及心後區可見斑片狀、邊緣不清之融合性肺泡浸潤（實質化），範圍約8×12公分（最大徑約10公分），部分遮蔽左心緣；雙肺另呈瀰漫性粗網狀間質紋理增加，以右下肺野及左肺門周圍較明顯，右肺未見局部實質化。心影約在正常上限至輕度擴大（左心緣受遮蔽，心胸比約0.5），胸主動脈迂曲、主動脈弓突出。兩側肋膈角大致銳利，左側略模糊但無明確肋膜積液，未見氣胸；胸椎輕度側彎併退化性變化，雙側肩關節退化、骨質疏鬆；未見胸管、引流管或其他治療後證據。",
+  "label_concern": "左肺中下野浸潤呈斑片狀、模糊且與雙側粗網狀間質紋理混合，實質化程度不若典型大葉性肺炎緻密，須與間質性肺水腫／慢性間質變化鑑別；標籤大致合理但屬中等信心。"
+}

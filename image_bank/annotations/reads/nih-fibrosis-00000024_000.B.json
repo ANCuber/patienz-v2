@@ -1,0 +1,34 @@
+{
+ "view": "PA frontal chest radiograph, erect",
+ "technical_quality": "Adequate: full inspiration (about 9-10 posterior ribs), no significant rotation (clavicles roughly symmetric about the spinous processes), adequate penetration (vertebral bodies visible through the cardiac silhouette), apices and both costophrenic angles included. Side marker present at the image's upper right (patient's left), consistent with conventional orientation.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "external radiographic side marker (L marker)",
+   "location": "projected over the left upper chest wall / infraclavicular soft tissue, patient's left (image upper right)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Diffuse coarse reticular / reticulonodular interstitial opacities throughout both lungs, more marked on the left and in the middle and lower zones, with peribronchovascular thickening; no lobar consolidation, mass, or cavitation",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Prominent, dense-appearing right hilum with accentuated perihilar interstitial markings",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent aortic knob / unfolded thoracic aorta",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "正面站立胸部X光，吸氣充足、無明顯旋轉，穿透度適當。雙側肺野可見瀰漫性粗網狀間質性陰影，以左肺及雙側中下肺野較為明顯，右側肺門較為緻密且肺門周圍紋理增加，未見實質化、腫塊或空洞。雙側肋膈角銳利，未見肋膜積液或氣胸；心臟大小約在正常範圍上限，主動脈弓稍顯突出，氣管居中、縱膈無增寬。骨骼與軟組織未見明顯異常，無管路、引流管或植入裝置，僅見左上胸之側別標記。"
+}

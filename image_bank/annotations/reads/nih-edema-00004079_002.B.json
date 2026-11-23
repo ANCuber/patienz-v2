@@ -1,0 +1,29 @@
+{
+ "view": "Frontal chest radiograph (PA/AP not definitively determinable; scapulae partially projected over the upper lateral lung fields suggest AP). Side marker 'L' with technologist initials at image upper right confirms conventional orientation (patient right on image left).",
+ "technical_quality": "Adequate. Inspiration adequate (approximately 9 posterior ribs visible). No significant rotation (spinous processes midway between clavicular heads). Penetration adequate (thoracic vertebral bodies faintly visible through the cardiac silhouette). Apices and both lateral costophrenic angles are included; lower cervical spine included at the top. Large body habitus with thick chest-wall soft tissue reduces lung-field contrast slightly. No lines, tubes, clips, pacemaker or other internal devices; the only external artifact is the L marker/initials.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "middle",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' with technologist initials (artifact only, no medical device)",
+   "location": "Image upper right corner, over the patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild bilateral hilar/perihilar vascular prominence with slightly increased lower-zone vascular markings, somewhat more conspicuous on the right; no Kerley B lines, peribronchial cuffing, alveolar consolidation or effusion identified - borderline, could represent mild pulmonary vascular congestion or simply prominent vasculature in a large-habitus patient",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, mildly unfolded/tortuous aortic knob and descending thoracic aorta, consistent with age-related aortic unfolding; no focal mediastinal mass",
+   "laterality": "none",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光片，吸氣量足夠、無明顯旋轉，影像右上角可見L側標記，未見任何導管、引流管、心律調節器或其他體內裝置。雙側肺野大致清晰，兩側肺門及肺門周圍血管紋理輕度增粗（右側較明顯），未見明確肺實質浸潤、Kerley B線、肋膜積液或氣胸，兩側肋膈角銳利。心臟大小在正常範圍內，主動脈弓略為突出並迂曲（年齡相關之主動脈延展），氣管及縱膈居中；骨骼及胸壁軟組織無明顯異常，左橫膈下可見正常胃泡氣體。整體為接近正常之胸片，僅有輕度肺門周圍血管紋理增加，建議結合臨床評估是否有輕度肺血管充血。"
+}

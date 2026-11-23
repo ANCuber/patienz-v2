@@ -1,0 +1,44 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration (hyperinflated, >10 posterior ribs), no significant rotation, adequate penetration (vertebral bodies visible through the heart). Scapulae partially overlap the upper lateral lung fields; costophrenic angles included at the lower image edge.",
+ "target_finding_visible": "uncertain",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 1,
+ "devices": [
+  {
+   "type": "radiopaque side marker (L, check-mark shaped)",
+   "location": "upper right corner of the image, over the patient's left shoulder soft tissue"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Faint, slightly ill-defined round nodular opacity ~1 cm, medial/parahilar, at the level of the aortic arch (between anterior 2nd and 3rd ribs) - probable nodule, end-on vessel not excluded",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Faint hazy rounded density ~1 cm laterally, overlapping a rib - possible second nodular opacity, uncertain (vessel/rib overlap possible)",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Hyperinflation with flattened hemidiaphragms and hyperlucent lungs - emphysema/COPD pattern",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Increased coarse bronchovascular/reticular markings, more marked on the right perihilar and basal region; possible thin-walled rounded lucency (bulla) in the right mid zone, uncertain",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded aortic knob with tortuous/ectatic thoracic aorta; trachea mildly deviated to the right at the arch level. Heart size normal, no pleural effusion",
+   "laterality": "left",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.45,
+ "description_zh": "PA胸部X光，吸氣充分、無明顯旋轉，未見引流管、導管或其他醫療裝置。右肺內側靠近肺門、約主動脈弓高度（第2至3前肋間）可見一約1公分、邊緣略模糊的圓形結節狀陰影，疑為肺結節，需與血管端面影鑑別；左下肺野外側另有一處淡薄的類結節狀密度增加，與肋骨重疊，性質較不確定。雙肺過度充氣、橫膈平坦、透亮度增加，符合肺氣腫/慢性阻塞性肺病變化，雙下肺野支氣管血管紋理增粗（右側較明顯），右中肺野疑有薄壁圓形透亮區（可能為肺大泡）。主動脈弓突出、胸主動脈迂曲，氣管於主動脈弓高度輕度右偏；心臟大小正常，兩側肋膈角銳利，無肋膜積液。"
+}

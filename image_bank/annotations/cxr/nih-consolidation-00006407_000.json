@@ -1,0 +1,47 @@
+{
+ "id": "nih-consolidation-00006407_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate erect PA film; 'L' laterality marker with an adjacent round marker disc at the image upper right (over the patient's left shoulder) confirms conventional orientation. Minimal rotation (medial clavicular ends roughly equidistant from the spinous processes), adequate inspiration (about 9 posterior ribs), penetration adequate with vertebral bodies faintly seen through the heart; slight over-penetration of the mediastinum. Apices and both costophrenic angles included; scapulae partly projected over the lateral upper zones. Black rectangular collimation/processing band along the image left (patient's right) edge, outside the thorax.",
+ "target": {
+  "finding": "consolidation",
+  "visible": "uncertain",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 6,
+  "confidence": 0.5
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External laterality marker 'L' (with arrow) and adjacent round metallic-density marker disc / clip artifact (not a medical device)",
+   "location": "Image upper right corner, projected over the patient's left shoulder soft tissues, outside the lung",
+   "zh": "影像右上角之左側標記「L」（附箭頭）及鄰近圓形金屬密度標記盤／夾狀偽影，投影於患者左肩軟組織，為體外物，非醫療裝置"
+  },
+  {
+   "type": "Black rectangular collimation / image-edge processing artifact",
+   "location": "Image left edge (patient's right side), outside the thorax",
+   "zh": "影像左緣（患者右側）胸腔外之黑色長方形準直／影像邊緣處理偽影"
+  }
+ ],
+ "other_findings": [
+  "左肺門腫大且緻密，見成簇結節狀（疑鈣化）陰影，位於左中肺野，鈣化肺門淋巴結與肺門腫塊／肺門突出需鑑別，高齡病人須排除腫瘤",
+  "左下肺心後區密度增加，內側左橫膈輪廓部分模糊，可能為下葉肺泡性陰影或肺擴張不全",
+  "主動脈弓突出、迂曲並鈣化，弓部上縱膈輕度增寬，符合老年動脈硬化性／擴張性胸主動脈",
+  "心臟大小在正常上限（邊緣性）",
+  "雙側支氣管血管紋理粗糙、輕度增加，以下肺野及右肺基底較明顯，屬慢性支氣管炎型變化",
+  "胸椎骨刺（退化性變化）及雙側盂肱關節退化性變化，無骨折或骨質破壞",
+  "兩側肋膈角銳利，無肋膜積液或氣胸；左橫膈下可見正常胃泡"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "本片無胸管、引流管或任何治療性裝置，且骨骼與軟組織無手術痕跡，就治療證據而言不與首次就診矛盾；但標籤之「實變」僅為 NLP 自報告擷取、無放射科醫師框選，影像上左肺門周圍至左下肺野之陰影邊界不清、密度不均，標籤知情讀者判為不確定，盲讀者雖於同側發現此陰影，卻認為實變與肺門腫塊合併鄰近肺泡性變化難以區分。加上左肺門腫大並見成簇疑鈣化結節，提示慢性或腫瘤性肺門病變之可能，並非單純急性肺炎之典型表現，故不適合作為首次就診之實變教學代表影像。",
+ "description_zh": "胸部正位（PA）立位X光片，吸氣深度足夠、無明顯旋轉、穿透度適當，影像右上角可見左側標記「L」及鄰近之圓形金屬密度標記盤（體外物），影像左緣另有胸腔外之黑色準直偽影。左肺門腫大、緻密，見成簇結節狀（疑鈣化）陰影；自左肺門向下外側延伸至左下肺野、左心緣外側及左橫膈上方，可見一片邊界不清、密度不均之模糊斑片狀陰影並伴粗糙網狀結節狀紋理，範圍約6×5公分，可能為輕度實變／肺泡性浸潤，但需與鈣化肺門淋巴結、肺門腫塊合併阻塞性變化及慢性肺紋理增粗鑑別，判讀不確定；左下肺心後區密度亦略增，內側左橫膈輪廓部分模糊。主動脈弓突出、迂曲並鈣化，弓部上縱膈輕度增寬，心臟大小在正常上限；雙側支氣管血管紋理粗糙且輕度增加，以下肺野及右肺基底較明顯，其餘右肺清晰。兩側肋膈角銳利，無肋膜積液或氣胸，左橫膈下見正常胃泡；胸椎及雙側肩關節見退化性變化，無骨折。胸腔內未見任何管路、導線、心律調節器或其他治療性裝置。",
+ "label_concern": "標籤「實變」為 NLP 擷取、無放射科醫師框選。影像上左肺門周圍至左下肺野確有邊界不清之不均勻陰影（兩位讀者皆判為左側；分區意見為下肺野與中肺野之差異，實際自肺門延伸至下肺野），但最顯著之異常為左肺門腫大伴成簇疑鈣化結節，鈣化淋巴結或肺門腫塊合併鄰近肺泡性變化不能排除；實變之影像證據屬不確定，建議人工複核。"
+}

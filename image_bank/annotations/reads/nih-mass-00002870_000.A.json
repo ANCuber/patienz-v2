@@ -1,0 +1,38 @@
+{
+ "view": "PA (frontal), L marker at patient's left shoulder confirms conventional orientation",
+ "technical_quality": "Adequate inspiration and penetration, minimal rotation, costophrenic angles included; left shoulder partly cut off at the image edge. Retrocardiac and hilar detail moderately limited by the soft image contrast.",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "middle",
+ "size_cm": 3.5,
+ "devices": [
+  {
+   "type": "Left shoulder arthroplasty (metallic humeral head prosthesis with stem, hemiarthroplasty)",
+   "location": "left glenohumeral joint / left shoulder, upper image right corner"
+  },
+  {
+   "type": "Radiographic side marker 'L'",
+   "location": "over left clavicle / left shoulder region, image upper right"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Rounded, slightly lobulated perihilar opacity at the right hilum (~3-4 cm) with an enlarged, dense right hilum compared with the left; consistent with the labelled right hilar/perihilar mass",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, rounded aortic knob with a tortuous/unfolded thoracic aorta (age-related ectasia; aneurysm not excluded)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mild widening of the superior mediastinum secondary to the unfolded aorta",
+   "laterality": "none",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.65,
+ "description_zh": "胸部正面（PA）X光：右側肺門區可見一約3–4公分、邊緣略呈分葉狀的圓形高密度陰影，右肺門較左側增大且密度增加，位於右肺中野內側，符合標註之右肺門／肺門旁腫塊。主動脈弓明顯突出且走向迂曲（老年性主動脈延長），上縱膈輕度增寬。雙側肋膈角銳利，未見肋膜積液或氣胸，心臟大小約在正常上限。左肩可見金屬肱骨頭人工關節（左肩關節置換），左肩區另有L側別標記；未見胸管、引流管或其他已治療之證據。"
+}

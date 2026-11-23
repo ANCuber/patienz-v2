@@ -1,0 +1,44 @@
+{
+ "id": "nih-mass-00002870_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate. Good inspiration (about 9-10 posterior ribs), no significant rotation, adequate penetration with the thoracic spine faintly visible through the heart. Apices and both costophrenic angles included; the left shoulder sits at the edge of the field. Soft image contrast mildly limits hilar and retrocardiac detail.",
+ "target": {
+  "finding": "pulmonary mass (right hilar / perihilar mass)",
+  "visible": "yes",
+  "laterality": "right",
+  "zone": "middle",
+  "size_cm": 4.0,
+  "confidence": 0.8
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "right",
+  "reader_b": "right",
+  "adjudicator": "right"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Left shoulder hemiarthroplasty (metallic humeral head prosthesis with stem into the humeral shaft)",
+   "location": "left glenohumeral joint / proximal left humerus, outside the thorax (image upper right)",
+   "zh": "左肩人工肱骨頭半關節置換植入物"
+  },
+  {
+   "type": "Radiographic side marker 'L'",
+   "location": "over the left clavicle / left shoulder region (image upper right)",
+   "zh": "左側（L）側別標記"
+  }
+ ],
+ "other_findings": [
+  "主動脈弓明顯突出，胸主動脈迂曲延長（老年性主動脈延長／擴張，動脈瘤不能完全排除）",
+  "上縱膈輕度增寬，右氣管旁略顯飽滿，可能為迂曲之頭臂血管所致，但縱膈淋巴結腫大不能完全排除",
+  "心胸比約0.47–0.50，心臟大小在正常上限，未明確擴大",
+  "雙肩關節（右側盂肱關節／肩鎖關節）及胸椎退化性變化（骨贅）"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標註之右肺門腫塊清楚可見，片上無胸管、引流管或任何針對此病灶之治療證據；左肩人工關節為與胸部無關之舊有骨科手術，主動脈迂曲與退化性變化均為84歲之年齡相關表現，不影響以右肺門腫塊初次就診之情境設定。",
+ "description_zh": "胸部正面（PA）X光，吸氣充足、無明顯旋轉，左肩上方可見L側別標記。右側肺門區可見一約4公分、邊緣清楚且略呈分葉狀的圓形高密度腫塊影，位於右肺中野內側、緊鄰右心緣，使右肺門較左側明顯增大且密度增加，需考慮右肺門腫塊或肺門淋巴結腫大（84歲男性應優先考慮原發性肺癌）。主動脈弓突出且胸主動脈迂曲延長，上縱膈輕度增寬、右氣管旁略顯飽滿，可能為迂曲血管所致；心臟大小約在正常上限，氣管居中。其餘雙側肺野清晰，無實質浸潤或氣胸，雙側肋膈角銳利、無肋膜積液，橫膈輪廓平滑。左肩可見金屬肱骨頭半關節置換植入物，雙肩及胸椎有退化性變化；未見胸管、引流管或其他治療裝置。",
+ "label_concern": ""
+}

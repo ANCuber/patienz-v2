@@ -1,0 +1,29 @@
+{
+ "view": "PA frontal chest radiograph (L marker at image upper right = patient's left; conventional orientation)",
+ "technical_quality": "Adequate: good inspiration (about 9-10 posterior ribs), adequate penetration (vertebral bodies faintly visible through the heart), no significant rotation (clavicles roughly symmetric about the spinous processes), scapulae partly overlapping the upper lateral lung fields. Both costophrenic angles and both apices are included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 0.4,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Small (~0.4 cm) well-circumscribed round dense focus in the medial right lower zone just below the hilum; density similar to hilar vessels - vessel seen end-on vs tiny nodule/granuloma; no definite mass",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Tiny (~0.3 cm) similar dense dot in the left perihilar lower zone, most consistent with an end-on vessel",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent / unfolded aortic knob, likely age-related; mediastinum otherwise not widened, trachea midline",
+   "laterality": "left",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光（PA），吸氣度足夠、曝光適當、無明顯旋轉，未見任何導管、引流管、心律調節器或其他植入物。雙側肺野大致清晰，右下肺野近肺門處見一約0.4公分邊緣清楚之小圓形緻密影，左下肺野肺門旁亦見類似小點狀影，多考慮為血管斷面或小肉芽腫，無明確結節腫塊、實質浸潤或肺門腫大。心臟大小正常（CTR約0.45），主動脈弓略為突出（年齡相關），縱隔無變寬，氣管居中；雙側肋膈角銳利，無肋膜積液或氣胸，左橫膈下可見胃泡，骨骼及軟組織無明顯異常。"
+}

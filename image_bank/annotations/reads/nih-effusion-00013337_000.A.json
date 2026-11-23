@@ -1,0 +1,38 @@
+{
+ "view": "PA (frontal), L marker at image upper-right confirms conventional orientation",
+ "technical_quality": "Adequate penetration and inspiration; mild rotation possible; bright collimation/processing band along the image left edge and lower right (abdomen) does not obscure the lungs",
+ "target_finding_visible": "yes",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 15,
+ "devices": [
+  {
+   "type": "Implanted venous access port (Port-A-Cath) reservoir with catheter coursing superolaterally toward the left subclavian region; catheter tip not clearly traced",
+   "location": "Left anterior chest wall, left middle zone (about 3rd-4th anterior rib level)"
+  },
+  {
+   "type": "Side marker (L, with small mirrored R)",
+   "location": "Image upper-right corner (patient left)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large homogeneous pleural effusion obscuring the hemidiaphragm and right heart border, lateral meniscus rising along the chest wall; extends from the base into the middle zone",
+   "laterality": "right",
+   "zone": "lower (extending into middle)"
+  },
+  {
+   "finding": "Rounded/lobulated opacity adjacent to the right hilum at the superior margin of the effusion, suspicious for a mass or loculated fluid component",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Trachea midline, no significant mediastinal shift; left lung clear with sharp left costophrenic angle",
+   "laterality": "left",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.9,
+ "description_zh": "正面胸部X光（PA），左側標記位於影像右上角，符合常規擺位。右側下肺野延伸至中肺野可見大範圍均質性緻密影，右側橫膈及右心緣被遮蔽，外側緣沿胸壁向上呈弧形（meniscus），符合大量右側肋膜積液；右肺門旁中肺野另見圓形分葉狀緻密影，需考慮腫塊或局部包裹性積液。左前胸壁可見植入式靜脈注射港（Port-A-Cath）儲液槽，導管朝左鎖骨下方向延伸；左肺野相對清晰，左肋膈角銳利，氣管居中，無明顯縱膈偏移。未見胸管或引流管等治療痕跡。"
+}

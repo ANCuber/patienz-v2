@@ -1,0 +1,45 @@
+{
+ "id": "nih-pleural-thickening-00000187_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate PA erect film; L marker with technologist initials 'SC' at image upper right (conventional orientation, patient's left on image right). Deep inspiration (right hemidiaphragm dome at about the anterior 7th-8th rib), minimal rotation (clavicular heads roughly equidistant from the spinous processes), adequate penetration (vertebral bodies visible through the heart), trachea midline. Scapulae partly overlap the upper lateral lung fields; both costophrenic angles included but close to the inferior film edge. A round external radiopaque disc projects over the left acromioclavicular region.",
+ "target": {
+  "finding": "pleural thickening",
+  "visible": "yes",
+  "laterality": "bilateral",
+  "zone": "lower",
+  "size_cm": 10,
+  "confidence": 0.55
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "right",
+  "reader_b": "left",
+  "adjudicator": "bilateral (left-predominant)"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "Laterality marker 'L' with technologist initials 'SC'",
+   "location": "Image upper right corner, patient's left, outside the patient",
+   "zh": "影像右上角之左側標記「L」（附技師縮寫 SC，患者體外）"
+  },
+  {
+   "type": "External round radiopaque disc (~1.5-2.4 cm; lead positioning marker bead or clothing snap/button)",
+   "location": "Projected over the left clavicle / acromioclavicular region, lateral to the left clavicle (image upper right)",
+   "zh": "投影於左側鎖骨／肩鎖關節區之圓形不透X光體外物（約1.5–2.4公分，疑為鉛珠定位標記或衣物釦），非體內裝置"
+  }
+ ],
+ "other_findings": [
+  "右側橫膈較左側略高約3公分，輪廓平滑，屬非特異性表現（在正常變異範圍內）",
+  "雙側橫膈相對平坦、肺野偏長、心影狹長直立，疑輕度過度充氣，惟亦可為瘦高體型與深吸氣所致（低信心度）",
+  "肩胛骨部分重疊於雙上肺野外側（技術性因素，非病灶）",
+  "心臟大小正常、心胸比正常，縱膈與肺門無異常，氣管居中",
+  "兩側肋膈角銳利，無肋膜積液、氣胸、實質浸潤或結節；骨骼結構完整無骨折"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記之肋膜增厚在影片上可見：雙下肺野外側胸壁沿肋骨內緣可見帶狀軟組織密度，左側較明顯（厚約0.5–1公分、縱向約10公分），右側較細薄；盲讀者亦獨立發現同一表現。影片上無胸管、引流管或任何胸腔內裝置，僅有體外圓形標記物與側別標記，無治療或手術痕跡，亦無與首次就診相矛盾之表現。惟此發現細微且需與胸膜外脂肪鑑別，作為教學影像時宜提示學生注意側胸壁條紋。",
+ "description_zh": "站立正面（PA）胸部X光片，吸氣充分、旋轉輕微、穿透度適當，氣管居中。雙下肺野外側胸壁可見沿肋骨內緣平行走行之平滑帶狀軟組織密度，符合局部側肋膜增厚：左側較明顯，厚約0.5–1公分、縱向延伸約10公分，自中下肺野向下延伸至肋膈角上方；右側亦有類似但較細薄之肋膜條紋（厚約3–4毫米），兩側肋膈角大致銳利，需與胸膜外脂肪鑑別。雙肺野透亮，無實質浸潤、結節、肺水腫、肋膜積液或氣胸；心影狹長直立、心胸比正常，縱膈與肺門無明顯異常。右側橫膈較左側略高約3公分、輪廓平滑；雙側橫膈相對平坦、肺野偏長，不排除輕度過度充氣，惟亦可為體型與深吸氣所致。影像右上角可見「L」側別標記（附技師縮寫）及投影於左側鎖骨／肩鎖區之圓形不透X光體外物（疑鉛珠標記或衣物釦），未見胸管、引流管、心律調節器等任何治療器材；肩胛骨部分重疊於雙上肺野外側。",
+ "label_concern": "標籤與影像相符（雙下肺野外側肋膜條紋，左側為主），但表現細微且呈雙側對稱分布，胸膜外脂肪為主要鑑別診斷；兩位讀者對主要側別意見不一（A：右，B盲讀：左），仲裁判為雙側、左側較明顯。"
+}

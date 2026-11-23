@@ -1,0 +1,51 @@
+{
+ "view": "PA frontal chest radiograph (R marker projected at the image upper-left = patient's right; conventional orientation)",
+ "technical_quality": "Adequate. No significant rotation (medial clavicular ends symmetric about the spinous processes), adequate inspiration (right hemidiaphragm at roughly the anterior 6th rib), adequate penetration (vertebral bodies faintly visible through the heart). Apices and both costophrenic angles included; scapulae largely projected clear of the lung fields. Image is heavily processed/contrast-stretched. Multiple metallic artifacts overlie the upper zones and an external object overlies the right mid zone, slightly limiting evaluation of those areas.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "upper",
+ "size_cm": 1,
+ "devices": [
+  {
+   "type": "External artifact: figure-of-8 shaped metallic ring/pendant with a thin cord or chain extending superiorly toward the right shoulder (pendant / zipper pull / cord toggle); projected over the lung, not intrathoracic",
+   "location": "Right mid zone, approximately at the level of the anterior 3rd rib, medial to the mid-clavicular line"
+  },
+  {
+   "type": "Multiple short linear metallic foreign bodies (retained acupuncture-needle fragments vs surgical clips), clustered",
+   "location": "Soft tissues of the right shoulder girdle / axilla and lateral chest wall, several projecting over the right upper zone"
+  },
+  {
+   "type": "Multiple short linear/rod-like metallic foreign bodies (retained acupuncture-needle fragments vs shrapnel), scattered, the longest about 1 cm",
+   "location": "Soft tissues of the left shoulder / supraclavicular region, left axilla and left lateral chest wall, some projecting over the left upper zone"
+  },
+  {
+   "type": "R side marker",
+   "location": "Image upper-left corner (patient's right)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Multiple short linear metallic foreign bodies in the soft tissues of both shoulder girdles / axillae and lateral chest walls, partly projecting over the upper lung zones; more clustered and clip-like on the right, more scattered and longer on the left. Most consistent with retained acupuncture-needle fragments (right-sided cluster could alternatively be surgical clips). Largest fragment about 1 cm; distribution spans roughly 8-10 cm on each side.",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Figure-of-8 metallic ring with a cord/chain extending superiorly, projected over the right mid zone - external artifact (pendant / zipper pull), not an intrathoracic device; should be removed and film repeated if it obscures a region of interest.",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, tortuous aortic knob with an unfolded, visible descending thoracic aorta - age-related aortic ectasia/tortuosity; superior mediastinum otherwise not widened, trachea midline.",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Left hemidiaphragm at or slightly above the level of the right (loss of the normal right-higher relationship) with gas-filled haustrated colon (splenic flexure) beneath it, and mildly increased retrocardiac density. Possible mild left lower lobe volume loss / basal atelectasis versus eventration with colonic interposition - low confidence; no definite consolidation, no air bronchogram, no effusion.",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正位胸部X光（PA），吸氣深度足夠、無明顯旋轉、穿透度適當。雙側肩帶／腋窩及側胸壁軟組織可見多枚短線狀金屬異物（右側較密集、左側較分散且較長，最長約1公分），部分投影於雙上肺野，疑為殘留針灸針斷片或手術夾；右中肺野另見一「8」字形金屬環伴向上延伸之細線，為體外物品（吊飾／拉鍊頭）之投影，非胸腔內裝置。心臟大小正常，主動脈弓突出且迂曲；左側橫膈與右側等高或略高，其下方見含氣之結腸脾曲，心後區密度稍增，不排除輕微左下肺容積減少或橫膈膨升，信心度較低。雙肺野餘無明顯實質浸潤、腫塊或氣胸，肋膈角銳利，無肋膜積液，骨骼結構完整，未見胸管、引流管或心律調節器等治療器材。"
+}

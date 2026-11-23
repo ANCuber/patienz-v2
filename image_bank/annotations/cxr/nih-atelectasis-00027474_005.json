@@ -1,0 +1,72 @@
+{
+  "id": "nih-atelectasis-00027474_005",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (recorded); frontal chest radiograph, arms down with both scapulae projected over the upper lung fields (AP-type positioning cannot be excluded)",
+  "technical_quality": "Suboptimal: large body habitus with large bilateral breast shadows obscuring both lower zones; poor inspiration with low lung volumes (about 7 posterior ribs); scapulae overlie the upper lateral lung fields; multiple ECG electrodes and lead wires project over both lungs and the abdomen; minimal rotation; apices and costophrenic angles included; no side marker visible - conventional orientation assumed.",
+  "target": {
+    "finding": "Right basal atelectasis (right lower lobe +/- middle lobe volume loss): wedge-shaped increased density in the medial right lower zone above a markedly elevated right hemidiaphragm, with obscured right heart border and rightward mediastinal shift",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 7,
+    "confidence": 0.7
+  },
+  "laterality_sources": {
+    "bbox": "right (radiologist box in the middle zone, 101x64 px - the atelectatic right base projects at mid-zone level because the right hemidiaphragm is elevated)",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "ECG monitoring electrode with lead wire",
+      "location": "right mid zone, lateral to the right hilum, over the anterior chest wall (approx 3rd-4th anterior rib level)",
+      "zh": "心電圖監測電極及導線（右中肺野）"
+    },
+    {
+      "type": "ECG monitoring electrode with lead wire",
+      "location": "left mid zone, lateral to the left hilum, over the anterior chest wall",
+      "zh": "心電圖監測電極及導線（左中肺野）"
+    },
+    {
+      "type": "ECG monitoring electrode with lead wire",
+      "location": "medial right lower zone at the right cardiophrenic angle, at/just below the dome of the elevated right hemidiaphragm",
+      "zh": "心電圖監測電極及導線（右心膈角）"
+    },
+    {
+      "type": "ECG monitoring electrode with lead wire",
+      "location": "right upper abdomen / right hypochondrium, below the costal margin",
+      "zh": "心電圖監測電極及導線（右上腹）"
+    },
+    {
+      "type": "ECG monitoring electrode with lead wire",
+      "location": "left upper abdomen / left flank, below the diaphragm",
+      "zh": "心電圖監測電極及導線（左上腹／左側腹）"
+    },
+    {
+      "type": "Multiple external ECG lead wires / cables",
+      "location": "coursing along the right lateral chest wall from the axilla to the right flank, along the left lateral lower chest and abdomen, obliquely across the right upper hemithorax toward the mediastinum, and along the midline over the spine down to the lower abdomen; all external, no central venous catheter identified",
+      "zh": "多條體外心電圖導線／外接線（右側胸壁、左下胸腹部、斜跨右上胸及沿脊椎中線）"
+    },
+    {
+      "type": "Short linear metallic densities (external lead-wire segments / artifact)",
+      "location": "projected over the right paratracheal region and over the mid-thoracic spine; no intravascular device identified",
+      "zh": "短小線狀金屬密度（右側氣管旁及中胸椎投影處，應為體外導線片段／假影）"
+    }
+  ],
+  "other_findings": [
+    "右側橫膈明顯上抬（較左側高約4–5公分，約兩個肋間），圓頂平滑，符合右下肺容積減少",
+    "心臟及縱膈向右偏移，左側縱膈緣緊貼脊椎，支持右側容積減少",
+    "右側肋膈角模糊／變鈍，少量右側肋膜積液與乳房陰影重疊無法區分（不確定）",
+    "雙側肺容積偏低、吸氣不足，支氣管血管紋理擁擠，肺門周圍及下肺野紋理略增加（可能為低肺容積所致）",
+    "雙側大型乳房陰影及肥胖體型重疊於雙側下肺野，限制判讀",
+    "左下肺野內側輕微模糊，較可能為乳房陰影重疊，輕微左肺底塌陷無法排除（不確定）",
+    "未見氣胸；左側肋膈角尚銳利；氣管居中；骨骼結構未見明顯異常"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標記之右肺底肺塌陷（右下肺葉±中葉容積減少，伴右側橫膈上抬及縱膈右偏）於影像上清楚可見；片上僅有心電圖監測電極與體外導線，未見胸管、引流管、中央靜脈導管或心律調節器等治療性裝置，與初次就診（如急診監測中）之情境不衝突。惟影像品質受乳房陰影與吸氣不足限制，且右側橫膈上抬程度明顯、亦可能為較慢性之變化，出題時宜以急性或亞急性呼吸道症狀情境呈現。",
+  "description_zh": "胸部正面X光（記錄為PA；雙側肩胛骨重疊於上肺野，體型肥胖，雙側大型乳房陰影遮蔽雙側下肺野，吸氣不足、肺容積偏低，影像品質受限）。右側橫膈明顯上抬（較左側高約4–5公分），其上方右下肺野內側可見楔狀密度增加，右心緣與右側橫膈輪廓模糊、右側肋膈角變鈍，心臟與縱膈向右偏移，符合右肺底（右下肺葉±中葉）肺塌陷／容積減少，範圍約7公分（因橫膈上抬，病灶投影於中肺野高度）；少量右側肋膜積液無法排除。左肺野大致清晰，左側肋膈角尚銳利，未見氣胸，氣管居中，骨骼結構未見明顯異常。胸腹部可見五個心電圖監測電極（右中肺野、左中肺野、右心膈角、右上腹、左上腹／左側腹）及多條體外導線（沿右側胸壁、左下胸／腹部、斜跨右上胸並沿脊椎中線向下），右側氣管旁另見短小線狀金屬密度，應為體外導線片段；未見胸管、引流管、中央靜脈導管或心律調節器。",
+  "label_concern": ""
+}

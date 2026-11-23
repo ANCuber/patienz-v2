@@ -1,0 +1,24 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate: good inspiration (posterior ribs 9-10 visible), no significant rotation (clavicular heads symmetric about the spinous processes), adequate penetration with vertebral bodies faintly visible behind the heart; left-side lead marker with position indicator in the image's upper right corner confirms conventional orientation. Breast shadows overlie both lower zones.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External lead side marker ('L' with circular position/upright indicator and technologist initials)",
+   "location": "Image upper right corner, i.e. over the patient's left shoulder region, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Incidental ~1 cm round soft-tissue-density opacity surrounded by gas within the gastric fundus bubble, most consistent with gastric contents (food/tablet); not a pulmonary or pleural lesion",
+   "laterality": "left",
+   "zone": "subdiaphragmatic (left upper quadrant, below the lower zone)"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.9,
+ "description_zh": "PA 正面胸部X光，吸氣充分、無明顯旋轉，左側標記位於影像右上方，為傳統擺位。兩側肺野清晰，未見實質浸潤、結節、肋膜積液或氣胸，雙側肋膈角銳利；心臟大小與縱膈輪廓正常，氣管居中，肺門無異常。雙側乳房陰影重疊於下肺野，左側橫膈下胃泡內可見一約 1 公分之圓形軟組織密度影，應為胃內容物，屬偶然發現。未見任何管路、導線或植入裝置，亦無治療痕跡。"
+}

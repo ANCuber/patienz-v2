@@ -1,0 +1,66 @@
+{
+ "view": "PA (frontal), L marker at image upper right confirms conventional orientation",
+ "technical_quality": "Adequate: good inspiration (~9-10 posterior ribs), adequate penetration (spine visible through heart), minimal rotation, no cut-off of lung fields; left scapula partly overlies the left upper lung field.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": 21.5,
+ "devices": [
+  {
+   "type": "Median sternotomy wires (about 7 twisted-loop wires)",
+   "location": "Midline, projected over the sternum / upper-to-mid thoracic spine, upper and middle zones"
+  },
+  {
+   "type": "Oval ring-shaped metallic prosthesis, most consistent with a mitral annuloplasty ring or prosthetic mitral valve sewing ring (approx. 2.5 x 1.3 cm in oblique projection)",
+   "location": "Over the central cardiac silhouette just to the patient's left of the spine, middle-lower zone (about T8-T9 level), mitral valve position"
+  },
+  {
+   "type": "Faint thin curvilinear wire adjacent to the ring - possible retained epicardial pacing wire fragment (uncertain)",
+   "location": "Immediately to the patient's right of the valve ring, over the cardiac silhouette near midline"
+  },
+  {
+   "type": "'L' side marker with technologist initials (external)",
+   "location": "Image upper right corner (patient's left upper corner), outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Cardiomegaly, cardiothoracic ratio about 0.62 (cardiac transverse diameter ~21-22 cm on a 35 cm thorax); globular cardiac contour with rounded left heart border and apex displaced laterally and inferiorly (left-ventricular-type enlargement, left-predominant)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent, unfolded aortic arch with tortuous descending thoracic aorta; trachea minimally displaced to the right at arch level",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Small dense calcified hilar lymph nodes (left hilum more conspicuous)",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Small calcified nodule / old granuloma in the right upper lung field",
+   "laterality": "right",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mildly increased bronchovascular and interstitial markings at both lung bases; no overt alveolar edema, no pleural effusion, costophrenic angles sharp",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent gastric fundal gas bubble beneath the left hemidiaphragm (incidental, subdiaphragmatic); left hemidiaphragm largely obscured by the enlarged heart",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mild degenerative changes of the shoulders (glenohumeral / acromioclavicular) and thoracic spondylosis",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.85,
+ "description_zh": "PA 正面胸部X光，右上角可見 L 側標記，吸氣量足、旋轉輕微。心臟明顯擴大，心胸比約 0.62，左心緣圓鈍呈球狀、心尖向左下外側移位，以左心室型擴大為主；主動脈弓突出且胸主動脈迂曲。正中可見多枚胸骨鋼絲，心影中央偏左（二尖瓣位置）另見一橢圓形環狀金屬影，符合二尖瓣人工瓣環或人工瓣膜縫合環，顯示曾接受心臟手術。兩側肺門可見鈣化淋巴結，右上肺野一小鈣化結節，兩下肺野支氣管血管紋理輕度增加；未見肋膜積液或氣胸，兩側肋膈角清晰，左橫膈下胃泡明顯。"
+}

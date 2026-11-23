@@ -1,0 +1,66 @@
+{
+ "view": "Frontal chest radiograph (probably PA; \"L\" side marker projected over the patient's left upper chest, conventional orientation)",
+ "technical_quality": "Adequate penetration (thoracic spine visible through the upper mediastinum, less so behind the heart). Mildly shallow inspiration with small lung volumes, more so on the right where the hemidiaphragm is markedly elevated. Minimal rotation. Scapular margins partly overlie the lateral upper lung fields. Costophrenic angles included; upper abdomen cropped. Pacemaker generator and redundant lead loops obscure part of the right upper zone.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Cardiac pacemaker generator (dual-chamber transvenous system) with redundant lead loops coiled around the can",
+   "location": "Right infraclavicular / right pectoral region, projecting over the right upper zone"
+  },
+  {
+   "type": "Transvenous pacing lead (atrial)",
+   "location": "Enters via right subclavian vein, courses down the SVC; tip projects over the right atrium"
+  },
+  {
+   "type": "Transvenous pacing lead (ventricular)",
+   "location": "Via right subclavian vein / SVC, crosses the right atrium; tip projects over the right ventricular apex (left of midline, lower cardiac silhouette)"
+  },
+  {
+   "type": "Radiographic side marker (L)",
+   "location": "Patient's left upper chest / left shoulder region (image upper right)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Coarse reticular / reticulonodular interstitial opacities in both lower zones (left more than right) with reduced lung volumes - pattern of basal pulmonary fibrosis / chronic interstitial lung disease; superimposed interstitial edema not excluded",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Cardiac silhouette upper-normal to mildly enlarged (CTR approximately 0.5), in an 83-year-old with a pacemaker",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Widened upper mediastinum with tortuous, unfolded/ectatic thoracic aorta and prominent aortic knob",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Marked elevation of the right hemidiaphragm contour (dome roughly 5-6 cm above the left) - eventration / phrenic palsy / basal volume loss versus subpulmonic effusion",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Blunted right costophrenic angle - small right pleural effusion or pleural thickening",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent bilateral hila (right more than left) - enlarged central pulmonary arteries or hilar adenopathy",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Degenerative arthropathy of both glenohumeral joints and degenerative change of the thoracic spine",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.7,
+ "description_zh": "正面胸部X光（疑為PA），吸氣稍淺、肺容積偏小；右前胸壁可見心臟節律器主機並伴導線迴圈，導線經右鎖骨下靜脈進入上腔靜脈，尖端分別投影於右心房及右心室心尖，未見胸管或氣胸。雙側下肺野可見粗網狀／網狀結節狀間質性陰影，以左側較明顯，符合基底部肺纖維化／慢性間質性肺病表現，雙側肺門亦顯增大。心影邊緣偏大（CTR約0.5），上縱隔增寬伴胸主動脈迂曲擴張；右側橫膈明顯上提且右肋膈角變鈍，需考慮橫膈膨升或肺下積液。雙側肩關節及胸椎呈退化性變化。"
+}

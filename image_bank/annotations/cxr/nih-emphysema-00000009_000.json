@@ -1,0 +1,54 @@
+{
+  "id": "nih-emphysema-00000009_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal, erect); external 'L' side marker with technologist initials 'DG' projected over the patient's left shoulder (image upper right) confirms conventional orientation (patient left on image right)",
+  "technical_quality": "Adequate and diagnostic. Erect PA with apices and both costophrenic angles included; adequate inspiration. Mild rotation (sternotomy wires project to the patient's right of the thoracic spine, accentuating the mediastinal contours). High-contrast, relatively penetrated processing: lungs render very dark and bones bright, which limits assessment of subtle parenchymal detail; lower thorax / upper abdomen rendered bright. Scapulae partly overlap the lateral upper lung fields; shoulders elevated.",
+  "target": {
+    "finding": "Pulmonary emphysema: bilateral hyperlucent lungs with attenuated, sparse peripheral vascular markings, most marked in the upper zones; diaphragmatic doming largely preserved (only mild flattening), so hyperinflation is not marked",
+    "visible": "yes",
+    "laterality": "bilateral",
+    "zone": "whole",
+    "size_cm": -1,
+    "confidence": 0.65
+  },
+  "laterality_sources": {
+    "bbox": "none (NLP-mined label only, no radiologist box)",
+    "reader_a": "bilateral",
+    "reader_b": "bilateral",
+    "adjudicator": "bilateral"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Median sternotomy cerclage wires (8: 4 upper loop-shaped wires, 4 lower twisted wires), intact, no fracture or displacement (Reader A had interpreted these as a chain of surgical clips)",
+      "location": "Anterior midline sternum from manubrium to lower sternum (about T3-T9 level), projecting slightly to the patient's right of the thoracic spine because of rotation",
+      "zh": "胸骨正中鋼絲（8條，完整無斷裂）"
+    },
+    {
+      "type": "Ring-shaped metallic marker about 0.9-1.0 cm (coronary bypass graft marker, or a surgical clip seen en face)",
+      "location": "Projected over the right hilum / medial right middle zone, adjacent to the right cardiomediastinal border, just to the patient's right of the sternotomy wires",
+      "zh": "右肺門處約1公分環狀金屬標記（疑冠狀動脈繞道移植血管標記或手術夾）"
+    },
+    {
+      "type": "External radiographic side marker 'L' with technologist initials 'DG'",
+      "location": "Image upper right corner, over the patient's left shoulder / acromioclavicular region",
+      "zh": "外部「L」側別標記（附DG字樣）"
+    }
+  ],
+  "other_findings": [
+    "胸骨正中切開術後（8條胸骨鋼絲）併右肺門環狀移植血管標記，符合冠狀動脈繞道手術後之變化；手術本身無法自本片確認，但為最可能之解釋",
+    "主動脈弓突出、上縱膈左側輪廓稍寬，疑老年性主動脈迂曲／擴張，部分受旋轉影響；氣管居中",
+    "心影大小約在正常上限（CTR約0.45–0.50），左心緣偏外側，非管狀狹長心影；評估受旋轉影響",
+    "兩側橫膈圓頂大致保留、僅輕度變平，過度充氣程度不明顯",
+    "右肺底內側近心膈角處輕微粗網狀／間質紋理，疑纖維化或輕微次節段性肺擴張不全；右肋膈角銳利，無積液",
+    "右肺門略顯突出（不確定，可能為血管性或旋轉所致）",
+    "左側盂肱關節肱骨頭位置偏上、肩峰肱骨間距疑變窄，疑退化性變化（胸腔外，受擺位限制）；右肩大致正常",
+    "病人略有旋轉（胸骨鋼絲投影於脊椎右側），縱膈輪廓受其影響（技術性）",
+    "未見肋膜積液、氣胸、局部實質浸潤或腫塊；兩側肋膈角銳利；未見胸管、引流管或其他導管"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標籤病灶（肺氣腫）可見：兩側肺野透亮度增加、周邊血管紋理稀疏，以上肺野較明顯，兩位判讀者（含未知標籤之盲讀者）皆獨立指出。片上無胸管、引流管或任何針對肺氣腫之治療裝置，亦無氣胸或積液等急性併發症，故可作為肺氣腫／COPD首次就診之影像。惟須注意：胸骨鋼絲與右肺門環狀移植血管標記顯示曾接受胸骨正中切開術（最可能為冠狀動脈繞道手術），病例設定應納入此心臟手術既往史，且應描述此等裝置；此外橫膈變平不明顯，肺氣腫之X光徵象屬中度、非典型顯著之過度充氣。",
+  "description_zh": "胸部X光正面（PA）站立像，影像右上角可見「L」側別標記，吸氣度尚可，病人略有旋轉（胸骨鋼絲投影於脊椎右側），影像對比偏強、肺野呈現偏暗。兩側肺野透亮度增加、周邊血管紋理稀疏，以上肺野較明顯，符合肺氣腫之表現，範圍為雙側全肺野（瀰漫性，無法以公分量測）；兩側橫膈圓頂大致保留、僅輕度變平，未見局部實質浸潤、腫塊、肋膜積液或氣胸，兩側肋膈角銳利。胸骨正中可見8條完整之胸骨鋼絲（上方4條呈環狀、下方4條呈扭結狀），右肺門內側、右心縱膈緣旁另見一約1公分之環狀金屬標記，符合冠狀動脈繞道手術後之移植血管標記或手術夾；未見胸管、引流管或其他導管。主動脈弓突出、上縱膈左側輪廓稍寬（疑為老年性主動脈迂曲，部分受旋轉影響），心影大小約在正常上限，右肺門略顯突出。右肺底內側近心膈角處有輕微粗網狀紋理（疑為纖維化或輕微肺擴張不全），左側盂肱關節疑有退化性變化。",
+  "label_concern": ""
+}

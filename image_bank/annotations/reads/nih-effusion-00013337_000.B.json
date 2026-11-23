@@ -1,0 +1,52 @@
+{
+ "view": "Frontal (PA/AP) chest radiograph, erect; \"L\" side marker at the upper right corner of the image confirms conventional orientation (patient's right on image left)",
+ "technical_quality": "Adequate for interpretation. Minimal rotation (trachea and spinous processes midline). Inspiration acceptable on the left (~8-9 posterior ribs); cannot be judged on the right because of the dense opacity. Slightly high-contrast/edge-enhanced processing; the right lower hemithorax is completely white so underlying detail is lost. Scapulae partly overlap the upper lung fields. Bright vertical bands at both lateral image margins are cassette/processing artifacts.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 15,
+ "devices": [
+  {
+   "type": "Implanted venous access port reservoir (Port-A-Cath) - round radiopaque ring with suture-hole dots; a short catheter segment leads superomedially, distal course not confidently traced to the SVC",
+   "location": "Left anterior chest wall, projected over the lateral left mid zone at about the 3rd-4th anterior rib level"
+  },
+  {
+   "type": "Radiographic side marker 'L'",
+   "location": "Upper right corner of the image (patient's left)"
+  },
+  {
+   "type": "Bright vertical band artifact (cassette/processing edge)",
+   "location": "Both lateral image margins, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Large pleural effusion: homogeneous dense opacity filling the lower half of the hemithorax with a laterally rising meniscus, obscuring the hemidiaphragm, costophrenic angle and right heart border",
+   "laterality": "right",
+   "zone": "lower (extending into middle zone)"
+  },
+  {
+   "finding": "Rounded/lobulated perihilar opacity at the upper medial margin of the effusion - possible underlying hilar mass, loculated fluid or adjacent consolidation; cannot be separated from the effusion on this film",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Cardiac size and right mediastinal contour not assessable (silhouetted by the effusion); trachea remains midline, no definite mediastinal shift",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent bronchovascular markings without focal consolidation; left costophrenic angle sharp",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "No chest tube or pleural drain present; no pneumothorax; bones (ribs, clavicles, shoulders, spine) and soft tissues unremarkable; gastric air bubble under the left hemidiaphragm",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.85,
+ "description_zh": "正面胸部X光，「L」標記位於影像右上方，方位為常規。左前胸壁可見植入式靜脈輸液港（Port-A）貯槽投影於左中肺野外側，未見胸管或引流管。右側中下肺野呈大片均質緻密影，上緣為外高內低之新月形（meniscus sign），右側橫膈、右肋膈角及右心緣均被遮蔽，符合大量右側肋膜積液；右肺門旁積液上內緣呈圓弧狀，無法排除合併肺門腫塊或包裹性積液。左肺大致清晰、左肋膈角銳利，氣管居中、無明顯縱膈偏移，心臟大小因右側病灶無法評估，骨骼及軟組織無明顯異常。"
+}

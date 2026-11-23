@@ -1,0 +1,42 @@
+{
+ "id": "nih-edema-00015137_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (recorded); frontal chest radiograph, L marker at image upper-right (patient left) confirming conventional orientation. Scapulae over the upper lateral lung fields, wide superior mediastinum and low volumes could also fit an AP or poorly positioned projection.",
+ "technical_quality": "Adequate but limited: low lung volumes (shallow inspiration, hemidiaphragms high, right markedly so), under-penetrated lower zones and upper abdomen, scapulae not cleared from the lung fields, minimal rotation, large body habitus adding chest-wall soft-tissue density to both lower zones.",
+ "target": {
+  "finding": "pulmonary edema",
+  "visible": "yes",
+  "laterality": "bilateral",
+  "zone": "multiple",
+  "size_cm": -1,
+  "confidence": 0.55
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "bilateral",
+  "reader_b": "bilateral",
+  "adjudicator": "bilateral"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' with technologist initials (not a medical device)",
+   "location": "Image upper-right corner, patient's left upper chest, outside the thorax",
+   "zh": "外置左側鉛字標記（L）及技師縮寫，位於影像右上角、胸廓外，非醫療裝置"
+  }
+ ],
+ "other_findings": [
+  "心影邊緣性增大（心胸比約0.5–0.55），部分受吸氣不足與投照放大影響",
+  "右側橫膈明顯上抬、圓頂平滑，右下肺野血管聚集；橫膈下方可見透亮弧帶，可能為後肋膈隱窩或結腸間置（Chilaiditi 徵象）",
+  "右側肋膈角顯示不佳／輕度變鈍，不排除少量右側肋膜積液（可能為肺下型）；左側肋膈角大致清晰",
+  "上縱膈增寬、主動脈結突出，較可能為投照及主動脈迂曲所致而非腫塊",
+  "肺容積低（吸氣不足），肩胛骨重疊於雙側上外側肺野",
+  "體型較大，雙側胸壁軟組織豐厚使下肺野密度增加",
+  "未見局部實質化、腫塊、空洞或氣胸；氣管居中；骨骼無急性病變；未見任何管路、引流管、心律調節器或手術夾"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "片中可見雙側肺門增粗模糊、肺門周圍及下肺野間質／血管紋理增加，合併心影邊緣性增大及疑似少量右側肋膜積液，符合輕度間質性肺水腫／肺血管充血之初次表現；未見任何治療性裝置（無氣管內管、中央靜脈導管、引流管），亦無術後或慢性治療痕跡，故適合作為初次就診之影像。惟水腫程度輕微且受吸氣不足干擾，判讀時需注意。",
+ "description_zh": "正面胸部X光（記錄為PA，影像右上角有L標記），吸氣量偏低、肩胛骨部分重疊於肺野，下肺野及上腹部穿透不足。雙側肺門陰影增粗且邊緣模糊，肺門周圍及雙側中下肺野間質與血管紋理增加（右側較左側明顯），並延伸至肺底，符合輕度間質性肺水腫／肺血管充血表現，惟低肺容積造成之血管聚集為干擾因素；未見肺泡性實質化或明確Kerley B線。心影邊緣性增大（心胸比約0.5–0.55），上縱膈增寬、主動脈結突出。右側橫膈明顯上抬，右側肋膈角顯示不佳／輕度變鈍，疑有少量右側肋膜積液；左側肋膈角清晰，未見氣胸或腫塊。影像上除外置的L標記外，未見任何導管、引流管或植入裝置。",
+ "label_concern": "肺水腫表現輕微（間質性／血管充血型），且受吸氣不足與右側橫膈上抬造成之血管聚集干擾；標籤方向合理但屬邊緣性，建議人工確認。"
+}

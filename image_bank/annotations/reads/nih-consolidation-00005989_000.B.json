@@ -1,0 +1,34 @@
+{
+ "view": "Frontal chest radiograph, probable PA (erect); L marker on the image right confirms conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate. Inspiration fair (about 9 posterior ribs), penetration adequate (thoracic spine visible through the heart), trachea midline with no significant rotation. Scapulae partially overlap the lateral upper lung fields. Bottom edge of the film slightly crops the costophrenic sulci. No lines, tubes, pacemaker, clips or other devices; only a technologist 'L' side marker (upper-right corner of the image).",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Ill-defined patchy hazy opacity in the medial right lower zone (perihilar-basal / paracardiac region), partly blurring the lower right heart border - suspicious for early consolidation (pneumonia) or subsegmental atelectasis; right hemidiaphragm still well defined",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Bilateral increased perihilar and lower-zone bronchovascular / reticular markings with peribronchial cuffing (bronchitic or mild interstitial pattern)",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Prominent, unfolded aortic arch (age-related ectasia / tortuosity), with mild right paratracheal upper mediastinal fullness most likely from tortuous brachiocephalic vessels",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal (CTR roughly 0.45-0.5), no definite cardiomegaly",
+   "laterality": "none",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "胸部正面X光（疑為PA站立位），吸氣程度尚可、無明顯旋轉，未見任何管路、導線、節律器或引流管，僅影像右上角有L側別標記。雙側肺門及下肺野支氣管血管紋理增加，右下肺野內側（心旁區）可見邊界不清之斑片狀模糊影，部分使右心緣下段模糊，疑似早期實變（肺炎）或次節段性肺塌陷；左肺以間質性紋理增加為主，無明顯實變。心臟大小約在正常上限，主動脈弓突出迂曲（老年性變化），上縱膈右側略顯飽滿，應為迂曲之頭臂血管所致；雙側肋膈角銳利，未見肋膜積液或氣胸，骨骼與軟組織無明顯異常。"
+}

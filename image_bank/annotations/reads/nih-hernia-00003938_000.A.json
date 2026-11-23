@@ -1,0 +1,42 @@
+{
+ "view": "PA (frontal), L marker present at image top-right confirming conventional orientation",
+ "technical_quality": "Adequate penetration, minimal rotation; low lung volumes with high-riding hemidiaphragms (shallow inspiration / large body habitus), lower zones partly obscured by abdominal soft tissue; scapulae partly overlie the upper lateral lung fields; de-identification black box at image top-right",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 8,
+ "devices": [
+  {
+   "type": "Multiple surgical clips (about 8-10 linear metallic clips), no tube/line/pacemaker",
+   "location": "Epigastrium / left upper quadrant, subdiaphragmatic, patient left of midline - suggests prior upper abdominal (possibly gastric/hiatal) surgery"
+  },
+  {
+   "type": "Side marker 'L' with 'DOT' ID tag (external)",
+   "location": "Image top-right, over the patient's left shoulder"
+  },
+  {
+   "type": "De-identification black rectangle (external artifact)",
+   "location": "Image top-right corner"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Gas- and stool-containing bowel loop (mottled fecal pattern, likely splenic flexure of colon) lying directly beneath the left hemidiaphragm with an adjacent rounded lucency (stomach/bowel gas) at the left cardiophrenic region; on this single PA view it appears subdiaphragmatic - no definite supradiaphragmatic herniation and no retrocardiac air-fluid level identified",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Low lung volumes with high-riding hemidiaphragms; cardiomediastinal silhouette appears mildly prominent/widened, likely technical (shallow inspiration, body habitus)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "No focal consolidation, pleural effusion or pneumothorax; hila and pulmonary vasculature within normal limits",
+   "laterality": "none",
+   "zone": "none"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.4,
+ "description_zh": "胸部正面 PA 片，右上角有 L 標記，吸氣量偏淺，雙側橫膈位置偏高，心縱膈影因而顯得略為寬大。左側橫膈正下方可見含氣及糞便樣混合密度之腸道影（疑為脾曲結腸），並於左側心橫膈角附近見一圓形透亮區（胃或腸道氣體），但於本張正面片上未見明確突入胸腔之橫膈疝氣或心後方氣液面，標記之疝氣無法確認。上腹部及左上腹可見多枚線狀金屬手術夾，提示曾接受上腹部手術。雙肺未見明確實質病灶、肋膜積液或氣胸。"
+}

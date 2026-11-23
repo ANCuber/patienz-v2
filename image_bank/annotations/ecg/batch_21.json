@@ -1,0 +1,322 @@
+[
+ {
+  "id": "ptbxl-AFIB-7221",
+  "ecg_id": "7221",
+  "selected_code": "AFIB",
+  "language": "de",
+  "source_report": "vorhofflimmern/-flattern lagetyp normal periphere niederspannung t abnorm in inferioren ableitungen 4.46                          unbestÄtigter bericht",
+  "source_report_zh": "心房顫動或撲動，電軸正常，肢體導程低電壓，下壁導程 T 波異常。（未經確認之報告）",
+  "statements_zh": [
+   {"code": "AFIB", "likelihood": 100.0, "kind": "rhythm", "zh": "心房顫動"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-AFIB-4761",
+  "ecg_id": "4761",
+  "selected_code": "AFIB",
+  "language": "de",
+  "source_report": "tachykardes vorhofflimmern lagetyp normal ves st-senkung in avf,ii,v5-6 t neg in iii",
+  "source_report_zh": "快速型心房顫動，電軸正常，心室早期收縮，aVF、II、V5-6 導程 ST 段壓低，III 導程 T 波倒置。",
+  "statements_zh": [
+   {"code": "NST_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性 ST 段變化"},
+   {"code": "AFIB", "likelihood": 100.0, "kind": "rhythm", "zh": "心房顫動"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-AFIB-1901",
+  "ecg_id": "1901",
+  "selected_code": "AFIB",
+  "language": "de",
+  "source_report": "vorhofflimmern/-flattern lagetyp normal qrs(t) abnorm    anteroseptaler myokardschaden",
+  "source_report_zh": "心房顫動或撲動，電軸正常，QRS(T) 型態異常，前間壁心肌損傷。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 80.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-AFIB-11921",
+  "ecg_id": "11921",
+  "selected_code": "AFIB",
+  "language": "de",
+  "source_report": "vorhofflimmern/-flattern lagetyp normal",
+  "source_report_zh": "心房顫動或撲動，電軸正常。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-AFIB-2446",
+  "ecg_id": "2446",
+  "selected_code": "AFIB",
+  "language": "de",
+  "source_report": "vorhofflimmern/-flattern ueberdrehter rechtstyp qrs(t) abnorm    lateraler myokardschaden t abnorm in anterioren ableitungen",
+  "source_report_zh": "心房顫動或撲動，電軸極度右偏，QRS(T) 型態異常，側壁心肌損傷，前壁導程 T 波異常。",
+  "statements_zh": [
+   {"code": "ALMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前側壁心肌梗塞"},
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"}
+  ],
+  "axis_zh": "電軸極度右偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-AFIB-15796",
+  "ecg_id": "15796",
+  "selected_code": "AFIB",
+  "language": "de",
+  "source_report": "vorhofflimmern/-flattern lagetyp normal",
+  "source_report_zh": "心房顫動或撲動，電軸正常。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-AFIB-4117",
+  "ecg_id": "4117",
+  "selected_code": "AFIB",
+  "language": "de",
+  "source_report": "slt tachykardes vorhofflimmern sves hohes t in v2-4 pathologisches ekg",
+  "source_report_zh": "電軸垂直位，快速型心房顫動，心房早期收縮，V2-4 導程 T 波高尖，異常心電圖。",
+  "statements_zh": [
+   {"code": "AFIB", "likelihood": 100.0, "kind": "rhythm", "zh": "心房顫動"}
+  ],
+  "axis_zh": "電軸右偏(?)",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "原文縮寫「slt」判讀為 Steiltyp（電軸垂直位），譯文採此解讀；heart_axis=AXR 於 PTB-XL 中與 Steiltyp 相容（偏右之電軸），不視為矛盾。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STACH-2387",
+  "ecg_id": "2387",
+  "selected_code": "STACH",
+  "language": "de",
+  "source_report": "sinustachykardie steiltyp muldenfÖrmige st-senkung inferior t negativ in iii,v1,avf",
+  "source_report_zh": "竇性心搏過速，電軸垂直位，下壁導程凹槽狀 ST 段壓低，III、V1、aVF 導程 T 波倒置。",
+  "statements_zh": [],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STACH-892",
+  "ecg_id": "892",
+  "selected_code": "STACH",
+  "language": "en",
+  "source_report": "premature ventricular contraction(s). sinus tachycardia. otherwise normal ecg.",
+  "source_report_zh": "心室早期收縮。竇性心搏過速。其餘為正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 80.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STACH-1219",
+  "ecg_id": "1219",
+  "selected_code": "STACH",
+  "language": "en",
+  "source_report": "sinus tachycardia. voltages are high in chest leads suggesting lvh. otherwise normal ecg.",
+  "source_report_zh": "竇性心搏過速。胸前導程電壓偏高，提示左心室肥厚。其餘為正常心電圖。",
+  "statements_zh": [],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STACH-849",
+  "ecg_id": "849",
+  "selected_code": "STACH",
+  "language": "en",
+  "source_report": "sinus tachycardia. st segments are depressed in i, ii, v4,5,6. this may be due to lv strain or ischaemia.",
+  "source_report_zh": "竇性心搏過速。I、II、V4-6 導程 ST 段壓低，可能為左心室勞損（strain）或缺血所致。",
+  "statements_zh": [
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STACH-2277",
+  "ecg_id": "2277",
+  "selected_code": "STACH",
+  "language": "en",
+  "source_report": "sinus tachycardia. otherwise normal ecg.",
+  "source_report_zh": "竇性心搏過速。其餘為正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 80.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STACH-943",
+  "ecg_id": "943",
+  "selected_code": "STACH",
+  "language": "en",
+  "source_report": "sinus tachycardia. low limb lead voltage. poor progression of r waves in anterior chest leads suggesting old anteroseptal infarct.",
+  "source_report_zh": "竇性心搏過速。肢體導程低電壓。前胸導程 R 波遞增不良，提示陳舊性前間壁梗塞。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LAO/LAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心房負荷／擴大"},
+   {"code": "RAO/RAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "右心房負荷／擴大"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STACH-6031",
+  "ecg_id": "6031",
+  "selected_code": "STACH",
+  "language": "de",
+  "source_report": "sinustachykardie unspezifisches abnormales t",
+  "source_report_zh": "竇性心搏過速，非特異性 T 波異常。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STACH-9417",
+  "ecg_id": "9417",
+  "selected_code": "STACH",
+  "language": "de",
+  "source_report": "sinustachykardie lagetyp normal sonst normales ekg",
+  "source_report_zh": "竇性心搏過速，電軸正常，其餘為正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 80.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STACH-7954",
+  "ecg_id": "7954",
+  "selected_code": "STACH",
+  "language": "en",
+  "source_report": "sinus tachycardia. otherwise normal ecg.",
+  "source_report_zh": "竇性心搏過速。其餘為正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 80.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STACH-3818",
+  "ecg_id": "3818",
+  "selected_code": "STACH",
+  "language": "de",
+  "source_report": "sinustachykardie rechtstyp sonst normales ekg Edit: NORM 80",
+  "source_report_zh": "竇性心搏過速，電軸右偏，其餘為正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 80.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "電軸右偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SARRH-100",
+  "ecg_id": "100",
+  "selected_code": "SARRH",
+  "language": "de",
+  "source_report": "sinus arrhythmie linkstyp sonst normales ekg",
+  "source_report_zh": "竇性心律不整，電軸左偏，其餘為正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 80.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SARRH-378",
+  "ecg_id": "378",
+  "selected_code": "SARRH",
+  "language": "de",
+  "source_report": "sinus arrhythmie rechtstyp linksposteriorer hemiblock",
+  "source_report_zh": "竇性心律不整，電軸右偏，左後分支阻滯。",
+  "statements_zh": [
+   {"code": "LPFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左後分支阻滯"}
+  ],
+  "axis_zh": "電軸右偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SARRH-76",
+  "ecg_id": "76",
+  "selected_code": "SARRH",
+  "language": "de",
+  "source_report": "sinus arrhythmie linkstyp sonst normales ekg",
+  "source_report_zh": "竇性心律不整，電軸左偏，其餘為正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 80.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ }
+]

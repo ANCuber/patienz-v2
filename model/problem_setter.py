@@ -79,6 +79,18 @@ _RESPONSE_SCHEMA = llm.Schema(
                 "確認正確疾病之診斷": llm.Schema(type=llm.Type.STRING),
                 "處置方式": llm.Schema(type=llm.Type.STRING),
                 "englishDiseaseName": llm.Schema(type=llm.Type.STRING),
+                # Fixed imaging reports, written once here with full context and
+                # served verbatim at exam time (page/examination.py), so the
+                # ECG / chest-film report is deterministic and can be bound to a
+                # real film (util/case_imaging.py). Optional: only for exams the
+                # disease would plausibly change or that a student must order.
+                "檢查預期所見": llm.Schema(
+                    type=llm.Type.OBJECT,
+                    properties={
+                        "心電圖": llm.Schema(type=llm.Type.STRING),
+                        "胸部X光": llm.Schema(type=llm.Type.STRING),
+                    },
+                ),
             },
         ),
     },

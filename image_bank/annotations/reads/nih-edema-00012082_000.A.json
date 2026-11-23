@@ -1,0 +1,39 @@
+{
+ "view": "PA (frontal) chest radiograph; L marker at image top-right confirms conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate penetration but low overall contrast due to abundant overlying soft tissue (large body habitus with breast/chest-wall shadows over the lower zones). Low inspiratory volume with elevated hemidiaphragms (~7 posterior ribs). No significant rotation; apices and costophrenic angles included, left costophrenic angle partly obscured by soft tissue. Cardiomediastinal silhouette appears narrow/small. Note: skeletal maturity and soft-tissue habitus are not typical for a 10-year-old male; recorded demographics may be inaccurate.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": 12,
+ "devices": [
+  {
+   "type": "External side marker (lead letter 'L' with technologist initials 'DMD')",
+   "location": "Image top-right corner, i.e. patient's left upper corner, outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Increased perihilar and lower-zone interstitial (reticular/bronchovascular) markings with hilar indistinctness, more conspicuous on the right; consistent with mild interstitial edema pattern",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Right hilar prominence / ill-defined hilar margin",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Low lung volumes with bilateral elevated hemidiaphragms",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Abundant overlying chest-wall/breast soft tissue reducing contrast over the lower zones; left costophrenic angle partly obscured, no definite pleural effusion",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "正面胸部X光，左側(L)標記位於影像右上角，方向為常規擺位；吸氣量偏低、雙側橫膈上抬，體型豐厚之軟組織重疊使下肺野對比度偏低。雙側肺門周圍及中下肺野可見間質性紋理增加、支氣管血管束增粗與肺門邊緣模糊，以右側較為明顯，符合輕度間質性肺水腫之表現；心影不大，未見明確肋膜積液（左側肋膈角部分被軟組織遮蔽）。未見任何導管、導線、節律器、手術夾或胸管等裝置，無已接受治療之影像證據。"
+}

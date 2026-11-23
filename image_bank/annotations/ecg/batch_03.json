@@ -1,0 +1,341 @@
+[
+ {
+  "id": "ptbxl-LVH-299",
+  "ecg_id": "299",
+  "selected_code": "LVH",
+  "language": "en",
+  "source_report": "sinus rhythm. left ventricular hypertrophy. possible left atrial enlargement. widespread st segment depression and t wave inversion. this may be due to lv strain or ischaemia.",
+  "source_report_zh": "竇性心律，左心室肥厚，可能合併左心房擴大。廣泛性 ST 段壓低及 T 波倒置，可能為左心室勞損（strain）或缺血所致。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"},
+   {"code": "LAO/LAE", "likelihood": 50.0, "kind": "diagnostic", "zh": "左心房負荷／擴大"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LVH-383",
+  "ecg_id": "383",
+  "selected_code": "LVH",
+  "language": "sv",
+  "source_report": "sinusbradykardi avvikande qrs(t) fÖrlopp    inferior myokardskada bÖr ÖvervÄgas st-t sÄnkning, sÅsom vid    anterolateral ischemi eller vÄnster belastning",
+  "source_report_zh": "竇性心搏過緩，QRS(T) 型態異常，應考慮下壁心肌損傷。ST-T 壓低，如前側壁缺血或左心室負荷（勞損）所見。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LVH-10562",
+  "ecg_id": "10562",
+  "selected_code": "LVH",
+  "language": "mixed",
+  "source_report": "sinusrhythmus lagetyp normal normales ekg 4.46                          unbestÄtigter bericht Edit: NORM 100, Sokolow 4,2(LVH 100)",
+  "source_report_zh": "竇性心律，電軸正常，正常心電圖。（未經確認之報告；後續修訂：Sokolow 指數 4.2，改判為左心室肥厚）",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "報告本文為「正常心電圖」，與 SCP 代碼 LVH 100 相反；僅靠附註之後續修訂（Sokolow 指數 4.2 改判為左心室肥厚）才與代碼相符。譯文已保留修訂說明，使用時應以修訂後結論（左心室肥厚）為準。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LVH-1370",
+  "ecg_id": "1370",
+  "selected_code": "LVH",
+  "language": "mixed",
+  "source_report": "sinusrytm vÄnster kammarhypertroficonsensus label derived from: {'LVH': 100.0, 'ISC_': 100.0, 'SR': 0.0},{'LVH': 100.0, 'SR': 0.0}",
+  "source_report_zh": "竇性心律，左心室肥厚。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LVH-13322",
+  "ecg_id": "13322",
+  "selected_code": "LVH",
+  "language": "de",
+  "source_report": "sinusrhythmus p-verbreiterung",
+  "source_report_zh": "竇性心律，P 波增寬。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "LAO/LAE", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心房負荷／擴大"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LAFB-41",
+  "ecg_id": "41",
+  "selected_code": "LAFB",
+  "language": "de",
+  "source_report": "sinusrhythmus ueberdrehter linkstyp linksanteriorer hemiblock",
+  "source_report_zh": "竇性心律，電軸極度左偏，左前分支阻滯。",
+  "statements_zh": [
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"}
+  ],
+  "axis_zh": "電軸極度左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LAFB-157",
+  "ecg_id": "157",
+  "selected_code": "LAFB",
+  "language": "sv",
+  "source_report": "sinusrytm extrem vÄnster el-axel sÅsom vid vÄnster frÄmre hemiblock ofÖrÄndrat jmf med ekg 910220",
+  "source_report_zh": "竇性心律，電軸極度左偏，如左前分支阻滯所見；與 910220 之心電圖相比無變化。",
+  "statements_zh": [
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LAFB-172",
+  "ecg_id": "172",
+  "selected_code": "LAFB",
+  "language": "sv",
+  "source_report": "sinusrytm svÅrbestÄmmbar el-axel lÅga qrs amplituder i extremitetsavledningarna hÖgersidigt skÄnkelblock",
+  "source_report_zh": "竇性心律，電軸難以判定，肢體導程 QRS 低電壓，右束支傳導阻滯。",
+  "statements_zh": [
+   {"code": "CRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "完全性右束支傳導阻滯"},
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LAFB-238",
+  "ecg_id": "238",
+  "selected_code": "LAFB",
+  "language": "de",
+  "source_report": "sinusrhythmus ueberdrehter linkstyp",
+  "source_report_zh": "竇性心律，電軸極度左偏。",
+  "statements_zh": [
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"}
+  ],
+  "axis_zh": "電軸極度左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LAFB-2345",
+  "ecg_id": "2345",
+  "selected_code": "LAFB",
+  "language": "de",
+  "source_report": "sinusrhythmus ueberdrehter linkstyp vollstÄndiger linksschenkelblock t-verÄnderungen avl pathologisches ekg",
+  "source_report_zh": "竇性心律，電軸極度左偏，完全性左束支傳導阻滯，aVL 導程 T 波變化，異常心電圖。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 50.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"}
+  ],
+  "axis_zh": "電軸極度左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "報告明述「完全性左束支傳導阻滯」，但 SCP 代碼未含 CLBBB，而是標註左前分支阻滯（LAFB 100）及前間壁心肌梗塞（ASMI 50）；報告亦未提及梗塞。完全性左束支阻滯與左前分支阻滯為不同之傳導診斷（存在 CLBBB 時通常不另判 LAFB），報告與代碼之診斷不一致，建議人工確認。譯文本身忠實於原文。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LAFB-3356",
+  "ecg_id": "3356",
+  "selected_code": "LAFB",
+  "language": "de",
+  "source_report": "sinusrhythmus ueberdrehter linkstyp",
+  "source_report_zh": "竇性心律，電軸極度左偏。",
+  "statements_zh": [
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"}
+  ],
+  "axis_zh": "電軸極度左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-LAFB-726",
+  "ecg_id": "726",
+  "selected_code": "LAFB",
+  "language": "en",
+  "source_report": "sinus rhythm. incomplete right bundle branch block. otherwise normal ecg. Edit: NORM 50, IRBBB, (NORM 100, IRBBB, LAFB)",
+  "source_report_zh": "竇性心律，不完全性右束支傳導阻滯，其餘為正常心電圖。（後續修訂：原標註為正常心電圖 50、不完全性右束支傳導阻滯；改為正常心電圖 100、不完全性右束支傳導阻滯，並加註左前分支阻滯）",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"},
+   {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "譯者之修訂註記省略了原文數值（NORM 50 → NORM 100），已補齊。另注意 SCP 代碼同時標註正常心電圖（NORM 100）與左前分支阻滯（LAFB 100），代碼本身互相矛盾；報告本文述「其餘為正常心電圖」，左前分支阻滯僅見於修訂註記，未見於報告本文。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-LAFB-2094",
+  "ecg_id": "2094",
+  "selected_code": "LAFB",
+  "language": "de",
+  "source_report": "sinusrhythmus lagetyp normal unvollstÄndiger rechtsschenkelblock sonst normales ekg",
+  "source_report_zh": "竇性心律，電軸正常，不完全性右束支傳導阻滯，其餘為正常心電圖。",
+  "statements_zh": [
+   {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"},
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "報告與 heart_axis 皆為電軸正常（lagetyp normal / MID），且報告述「其餘為正常心電圖」，但 SCP 代碼標註左前分支阻滯（LAFB 100）。左前分支阻滯之診斷須有電軸左偏，與電軸正常相矛盾，建議人工確認。譯文本身忠實於原文。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISC_-162",
+  "ecg_id": "162",
+  "selected_code": "ISC_",
+  "language": "sv",
+  "source_report": "sinusrytm extrem vÄnster el-axel ospecifikt skÄnkelblock",
+  "source_report_zh": "竇性心律，電軸極度左偏，非特異性束支傳導阻滯。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 50.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"},
+   {"code": "LVH", "likelihood": 50.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISC_-173",
+  "ecg_id": "173",
+  "selected_code": "ISC_",
+  "language": "sv",
+  "source_report": "sinusrytm p fÖrlÄngd vÄnster el-axel vÄnster kammarhypertrofi",
+  "source_report_zh": "竇性心律，P 波延長（增寬），電軸左偏，左心室肥厚。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISC_-299",
+  "ecg_id": "299",
+  "selected_code": "ISC_",
+  "language": "en",
+  "source_report": "sinus rhythm. left ventricular hypertrophy. possible left atrial enlargement. widespread st segment depression and t wave inversion. this may be due to lv strain or ischaemia.",
+  "source_report_zh": "竇性心律，左心室肥厚，可能合併左心房擴大。廣泛性 ST 段壓低及 T 波倒置，可能為左心室勞損（strain）或缺血所致。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"},
+   {"code": "LAO/LAE", "likelihood": 50.0, "kind": "diagnostic", "zh": "左心房負荷／擴大"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISC_-383",
+  "ecg_id": "383",
+  "selected_code": "ISC_",
+  "language": "sv",
+  "source_report": "sinusbradykardi avvikande qrs(t) fÖrlopp    inferior myokardskada bÖr ÖvervÄgas st-t sÄnkning, sÅsom vid    anterolateral ischemi eller vÄnster belastning",
+  "source_report_zh": "竇性心搏過緩，QRS(T) 型態異常，應考慮下壁心肌損傷。ST-T 壓低，如前側壁缺血或左心室負荷（勞損）所見。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISC_-516",
+  "ecg_id": "516",
+  "selected_code": "ISC_",
+  "language": "mixed",
+  "source_report": "sinusrytm ospecifikt skÄnkelblock vÄnster kammarhypertrofi Edit: LVH 100, ISC, Sokolow 9(LVH 100, ISC_)",
+  "source_report_zh": "竇性心律，非特異性束支傳導阻滯，左心室肥厚。（後續修訂：Sokolow 指數 9，左心室肥厚合併非特異性缺血性變化）",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISC_-11681",
+  "ecg_id": "11681",
+  "selected_code": "ISC_",
+  "language": "de",
+  "source_report": "sinusrhythmus lagetyp normal mÄssige amplitudenkriterien fÜr linkshypertrophie st & t abnorm, wahrscheinlich    anterolaterale ischÄmie oder linksbelastung    inferolaterale ischÄmie oder linksbelastung 4.46                          unbestÄtigter bericht",
+  "source_report_zh": "竇性心律，電軸正常，左心室肥厚之電壓標準達中度；ST 及 T 波異常，可能為前側壁缺血或左心室負荷、下側壁缺血或左心室負荷。（未經確認之報告）",
+  "statements_zh": [
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"},
+   {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-ISC_-10115",
+  "ecg_id": "10115",
+  "selected_code": "ISC_",
+  "language": "de",
+  "source_report": "sinusbradykardie t abnormal, wahrscheinlich    anterolateraler myokardschaden",
+  "source_report_zh": "竇性心搏過緩，T 波異常，可能為前側壁心肌損傷。",
+  "statements_zh": [
+   {"code": "LVH", "likelihood": 50.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ }
+]

@@ -1,0 +1,50 @@
+{
+ "id": "nih-mass-00018623_001",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate PA film; R marker with small alphanumeric label at image top-left (conventional orientation, image-left = patient-right). Adequate inspiration (~9-10 posterior ribs), minimal rotation (spinous processes about midway between the clavicular heads), adequate penetration (vertebral bodies faintly visible through the heart). Apices and both costophrenic angles included; scapulae partly overlap the upper lateral lung fields.",
+ "target": {
+  "finding": "pulmonary mass",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "middle",
+  "size_cm": 3.5,
+  "confidence": 0.8
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "bilateral",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Subcutaneous implanted venous access port (Port-A-Cath) reservoir",
+   "location": "Right upper anterior chest wall, below the right clavicle over about the 2nd-3rd anterior interspace",
+   "zh": "右前上胸壁（右鎖骨下方，約第2–3前肋間）之皮下植入式靜脈注射座（Port-A-Cath）"
+  },
+  {
+   "type": "Port catheter (tunnelled central venous catheter)",
+   "location": "Loops cranially over the right clavicle (right internal jugular approach), descends along the right paratracheal mediastinum / SVC; tip projects at the lower SVC / cavoatrial junction",
+   "zh": "注射座導管經右鎖骨上方繞行（右頸內靜脈路徑）後沿右側縱膈／上腔靜脈下行，末端位於上腔靜脈下段／腔房交界處"
+  },
+  {
+   "type": "Laterality marker 'R' with small alphanumeric label",
+   "location": "Image top-left corner, over the right shoulder, outside the patient",
+   "zh": "影像左上角之右側標記「R」與小型文字標籤（患者體外）"
+  }
+ ],
+ "other_findings": [
+  "右肺門下方、右中下肺野內側緊鄰右心緣可見一邊界不清之腫塊樣陰影（約3–4公分），右肺門亦顯緻密；需鑑別肺腫塊、實質化病灶或右肺門淋巴結腫大",
+  "主動脈弓下方之左側縱膈輪廓略顯飽滿、主肺動脈窗疑似填滿，不排除縱膈淋巴結腫大或主動脈迂曲（低信心度，盲讀者未提及）",
+  "心臟大小正常（心胸比小於0.5），氣管居中，上縱膈未明顯增寬",
+  "兩側肋膈角銳利，無肋膜積液或氣胸；骨骼結構完整，未見肋骨骨折或溶骨性病灶",
+  "左側橫膈下可見含氣之結腸脾曲，屬正常表現；兩側肩胛骨部分重疊於上外側肺野"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標記之左中肺野腫塊清楚可見（左肺門分葉狀腫塊約3–3.5公分，外側另有約2公分邊界清楚之結節），三方側別一致。然而右前上胸壁已植入 Port-A-Cath 靜脈注射座，提示病人已接受或正在接受化學治療等全身性治療；且病灶為多發（左肺門腫塊、左中野結節、右肺門下方腫塊樣陰影），較符合已確診惡性腫瘤／轉移或淋巴瘤之追蹤影像，與「首次因肺腫塊就診」之情境相矛盾。雖無胸管或肋膜引流管，仍不適合作為首次就診之教學影像。",
+ "description_zh": "胸部正位（PA）X光片，吸氣深度足夠、無明顯旋轉、穿透度適當；右前上胸壁可見皮下植入式靜脈注射座（Port-A-Cath），導管經右鎖骨上方繞行（右頸內靜脈路徑）後沿右側縱膈下行，末端位於上腔靜脈下段／腔房交界處。左肺中野肺門區可見一分葉狀腫大之肺門腫塊（約3–3.5公分），其外側另見一邊界清楚之圓形結節（約2公分），為本片標記之目標病灶；主動脈弓下方之左側縱膈輪廓略顯飽滿，不排除縱膈淋巴結腫大。右肺門下方、右中下肺野內側緊鄰右心緣另見一邊界不清之腫塊樣陰影（約3–4公分），右肺門亦顯緻密，需鑑別腫塊、實質化或肺門淋巴結腫大。心臟大小正常、氣管居中，兩側肋膈角銳利，無肋膜積液或氣胸，骨骼結構完整，左側橫膈下可見含氣之結腸脾曲。未見胸管或引流管，但植入式注射座提示病人已接受或正在接受全身性治療。",
+ "label_concern": "標籤「腫塊」成立（左中野肺門區腫塊與結節清楚可見，盲讀者亦獨立發現），但本片為多發病灶（左肺門腫塊、左中野結節、右肺門下方腫塊樣陰影），並非單一孤立腫塊；NIH 標註框寬達 612 px，可能同時涵蓋左肺門腫塊與其外側結節。"
+}

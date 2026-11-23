@@ -1,0 +1,46 @@
+{
+  "id": "nih-nodule-00017346_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect PA film: good inspiration (about 9-10 posterior ribs), no significant rotation, adequate penetration, apices and both costophrenic angles included, scapulae largely clear of the lung fields. No formal L/R lead marker; only an arrow-shaped annotation icon at the top-right corner of the image, so conventional orientation is assumed.",
+  "target": {
+    "finding": "pulmonary nodule",
+    "visible": "yes",
+    "laterality": "left",
+    "zone": "middle",
+    "size_cm": 0.4,
+    "confidence": 0.55
+  },
+  "laterality_sources": {
+    "bbox": "left (NIH box x=873, y=615, 28x34 px: far lateral left lung, middle zone near the mid/lower junction)",
+    "reader_a": "left (but localized a different lesion: a tiny dense dot over the left cardiac silhouette, lower zone, not the boxed nodule)",
+    "reader_b": "right (top-level value refers to the axillary clip cluster; no definite nodule called - a tiny left mid-zone punctate dot lateral to the hilum was noted as probable end-on vessel/granuloma, also not the boxed nodule)",
+    "adjudicator": "left"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "surgical clips (cluster of roughly 10-12 small metallic clips, consistent with prior axillary lymph node dissection)",
+      "location": "right axilla / right lateral chest wall soft tissue, projected lateral to the right upper ribs, outside the lung",
+      "zh": "右腋窩及右側胸壁軟組織多枚金屬手術夾（符合先前右腋窩淋巴結廓清）"
+    },
+    {
+      "type": "arrow-shaped image annotation icon (non-anatomic digitizer/orientation marker, not an L/R lead marker)",
+      "location": "top-right corner of the image, outside the patient",
+      "zh": "影像右上角外加之箭頭標記（非病人身上裝置）"
+    }
+  ],
+  "other_findings": [
+    "右腋窩及右側側胸壁軟組織多枚金屬手術夾，符合先前右腋窩淋巴結廓清之術後變化，無伴隨之肺部或骨骼病灶",
+    "雙側乳房陰影皆存在，右側乳房陰影略小於左側，可能與先前右側乳房手術有關（無乳房切除之影像證據）",
+    "左心緣旁投影一極小（約 0.3 cm）高密度點狀影，多考慮為鈣化性肉芽腫或血管端面，非標記之結節",
+    "左中肺野肺門外側一極小（約 0.1–0.2 cm）點狀緻密影，多考慮為血管端面或微小鈣化肉芽腫，非標記之結節",
+    "心臟大小正常，縱膈與雙側肺門輪廓正常，氣管居中",
+    "雙側肋膈角銳利，無肋膜積液、氣胸或實質化；骨骼未見骨折或破壞性病灶"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標記之左側中肺野小結節於方框位置可見（雖然極為細微），本片無任何針對此結節之治療裝置，亦無胸管、引流管或引流後痕跡。右腋窩之手術夾為既往手術殘留，與「初次因肺結節就診」並不牴觸，但病例設定必須包含既往右側腋窩／乳房手術史（例如乳癌術後），此時新發現之小結節可作為轉移與原發病灶之鑑別教學；惟結節過小且淡薄，作為教學影像難度偏高。",
+  "description_zh": "PA 正面胸部X光，吸氣充分、無明顯旋轉、穿透度適當，肺尖與雙側肋膈角皆包含在內。於左側中肺野外側周邊（緊鄰側胸壁、約與左肺門下緣同一水平、近中下肺野交界處）可見一顆約 0.3–0.4 cm、邊緣略模糊之淡薄圓形結節狀陰影，為本片標記之肺結節，極為細微且容易遺漏；另於左心緣旁及左肺門外側各見一極小高密度點狀影，多考慮為血管端面或微小鈣化性肉芽腫。右腋窩及右側側胸壁軟組織可見多枚金屬手術夾，符合先前右腋窩淋巴結廓清之術後變化；雙側乳房陰影皆存在，右側略小於左側。心臟大小及縱膈輪廓正常，氣管居中，雙側肺門正常，未見實質化、肋膜積液或氣胸，骨骼未見骨折或破壞性病灶。影像右上角有外加之箭頭標記，未見胸管、中心靜脈導管或心律調節器等其他裝置。",
+  "label_concern": "標籤「肺結節」與方框內所見相符（左側中肺野外側一約 0.3–0.4 cm 淡薄圓形結節），但病灶極小且對比度低，兩位獨立判讀者皆未在方框位置辨識出此結節，而各自指出左心緣旁及左肺門外側之其他點狀鈣化影；本片屬高難度、易漏診之細微病灶，不適合作為典型肺結節之示範影像，較適合進階判讀練習。"
+}

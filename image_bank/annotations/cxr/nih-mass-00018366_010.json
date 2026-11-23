@@ -1,0 +1,48 @@
+{
+ "id": "nih-mass-00018366_010",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate PA film; L marker at image top-right confirms conventional orientation (image-left = patient-right). Adequate inspiration (right hemidiaphragm at about the 9th-10th posterior rib), adequate penetration (vertebral bodies faintly visible through the mediastinum), minimal rotation. Large body habitus with prominent bilateral breast shadows overlying both lower zones; the left arm is raised so axillary/scapular soft tissue overlaps the left upper lateral chest, slightly limiting assessment of the left upper zone and left costophrenic angle. Apices and costophrenic angles are included.",
+ "target": {
+  "finding": "pulmonary mass",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "middle",
+  "size_cm": 8,
+  "confidence": 0.85
+ },
+ "laterality_sources": {
+  "bbox": "left",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Surgical clips (three small linear metallic densities, one paired/folded) - post-surgical change",
+   "location": "Right upper zone, medial/infraclavicular region overlying the right 1st-2nd anterior ribs (patient right apex)",
+   "zh": "右上肺野內側（鎖骨下、右第1－2前肋處／右肺尖）三枚小型線狀金屬手術夾，屬既往手術變化"
+  },
+  {
+   "type": "Laterality marker 'L' with technologist initials / mirrored L",
+   "location": "External, image top-right corner (patient's left shoulder region), outside the thorax",
+   "zh": "影像右上角之左側標記「L」（患者體外，左肩區域）"
+  }
+ ],
+ "other_findings": [
+  "左肺門較為飽滿、外側緣呈分葉狀，不排除合併左肺門淋巴結腫大（不確定，需CT確認）",
+  "左側橫膈較右側抬高約2－3公分，其下可見胃泡，提示左側容積減少或膈神經功能異常",
+  "左上肺野呈輕度薄紗狀霧影，血管紋理仍可見，可能為輕微容積減少／部分塌陷，亦可能部分由上舉手臂之軟組織重疊所致",
+  "左下肺野密度增加並部分遮蔽左心緣下段及左肋膈角，主要為乳房陰影重疊，但少量肋膜積液、肋膜增厚或左下肺輕微容積減少無法排除",
+  "右上肺野內側三枚手術夾（陳舊術後變化，如既往淋巴結切片或胸腔手術）；右肺其餘清晰，右肋膈角銳利",
+  "主動脈弓稍顯突出／延展，心臟大小大致正常，氣管居中",
+  "雙側大型乳房軟組織陰影重疊於下肺野；骨骼結構完整，無急性病灶",
+  "除主要腫塊外未見其他明確之肺結節（資料集NLP標籤「Nodule」無獨立對應病灶）"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記之左側肺腫塊清楚可見（左中肺野外側、向上延伸至上肺野，約6×8－9公分之邊界清楚均勻腫塊，緊貼側胸壁），盲讀者亦獨立發現同一病灶且側別一致；影片上無胸管、引流管、豬尾導管或其他針對此病灶之治療器材。左側橫膈抬高、左上及左下肺野霧影可與腫塊本身相關（如容積減少或膈神經受侵犯），不與首次就診相矛盾。右上肺野三枚手術夾為對側之陳舊術後變化，來源不明（如既往淋巴結切片或其他手術），並非此腫塊之治療證據；案例設定時宜於病史中交代既往右側手術，或於報告中描述為與本次病灶無關之陳舊術後變化。",
+ "description_zh": "胸部正位（PA）X光片，左側標記位於影像右上角，吸氣深度與穿透度足夠、無明顯旋轉；患者體型較大，雙側乳房軟組織陰影明顯重疊於下肺野，左上臂上舉使腋下軟組織與左上外側胸部重疊。左側中肺野外側（向上延伸至上肺野）可見一約6×8－9公分、邊界清楚、密度均勻之腫塊影，緊貼左側胸壁，內側緣呈凸狀／分葉狀，肋骨穿越其間結構完整，腫塊與左肺門之間仍有含氣肺組織，符合周邊型肺腫塊（肋膜為基底之腫塊亦需考慮）。左肺門較為飽滿、外緣呈分葉狀，不排除合併肺門淋巴結腫大；左上肺野呈輕度薄紗狀霧影，左側橫膈較右側抬高約2－3公分，左下肺野密度增加並部分遮蔽左心緣下段及左肋膈角，主要為乳房陰影重疊，但輕微左下肺容積減少、少量肋膜積液或肋膜增厚無法排除。右上肺野內側（鎖骨下、第1－2前肋處）可見三枚小型線狀手術夾，屬陳舊術後變化，右肺其餘清晰、右肋膈角銳利；心臟大小大致正常、氣管居中、主動脈弓稍顯突出，骨骼無急性病灶，未見胸管、引流管、心律調節器或中心靜脈導管。",
+ "label_concern": ""
+}

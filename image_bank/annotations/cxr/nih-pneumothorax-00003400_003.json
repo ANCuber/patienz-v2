@@ -1,0 +1,62 @@
+{
+ "id": "nih-pneumothorax-00003400_003",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Upright PA film; 'L DG' lead marker at image top-right over the patient's left shoulder (conventional orientation, image-left = patient-right). Adequate penetration, minimal rotation (clavicles roughly symmetric about the spinous processes); inspiration mildly reduced (about 7 anterior ribs). Both apices and lateral lung margins are well seen; both lower zones are partly obscured by overlying bilateral breast soft tissue, limiting assessment of the costophrenic angles. De-identification black rectangle and a partly cut-off round marker at the image top-right corner.",
+ "target": {
+  "finding": "pneumothorax",
+  "visible": "uncertain",
+  "laterality": "left",
+  "zone": "upper",
+  "size_cm": 2,
+  "confidence": 0.4
+ },
+ "laterality_sources": {
+  "bbox": "left (upper zone, radiologist box 241x229 px)",
+  "reader_a": "uncertain (label-aware; no visceral pleural line or vessel-free zone identified at either apex)",
+  "reader_b": "not found (blind read reported no pneumothorax; B's 'right / lower' referred to the post-surgical opacity around the clips, not to a pneumothorax)",
+  "adjudicator": "left (per bbox; on magnified CLAHE / high-pass crops only a questionable narrow vessel-free band lateral to the left upper zone, no definite visceral pleural line, no mediastinal shift)"
+ },
+ "agreement": "conflict",
+ "devices": [
+  {
+   "type": "Cluster of metallic surgical clips (several crossing linear clips, X-shaped) with an adjacent trail of granular / staple-line metallic density, indicating prior right thoracic surgery",
+   "location": "Patient right lower zone, medial / infrahilar, adjacent to the right heart border just above the right hemidiaphragm",
+   "zh": "右下肺野內側、肺門下方近右心緣之金屬手術夾群（數枚交叉之線狀夾呈X形），其下方伴顆粒狀縫合釘樣高密度影，顯示曾接受右側胸腔手術"
+  },
+  {
+   "type": "Two to three small linear metallic surgical clips",
+   "location": "Patient left hilar / left paramediastinal region, middle zone",
+   "zh": "左肺門旁／左縱膈旁中肺野二至三枚小型線狀金屬手術夾"
+  },
+  {
+   "type": "Lead laterality marker 'L DG' (technologist initials)",
+   "location": "Image top-right corner, over the patient's left shoulder region (external)",
+   "zh": "影像右上角、患者左肩區之「L DG」鉛字側別標記（體外）"
+  },
+  {
+   "type": "De-identification black rectangle and a partly cut-off round marker",
+   "location": "Image top-right corner (external annotation artifact)",
+   "zh": "影像右上角之去識別化黑色方塊及被裁切之圓形標記（體外偽影）"
+  },
+  {
+   "type": "Few punctate metallic-density dots, probable external / detector artifact",
+   "location": "Projected over the patient's right shoulder near the glenohumeral / acromioclavicular region (outside the lung field)",
+   "zh": "右肩關節區數個點狀高密度小點，疑為體外或偵測器偽影（肺野外）"
+  }
+ ],
+ "other_findings": [
+  "右下肺野內側（右心緣旁、肺門下方）圍繞手術夾之網狀／線狀增加密度及模糊影，部分遮蔽右心緣，符合右側胸腔術後變化（纖維化／局部肺不張），未見明確空氣支氣管徵",
+  "右肺門較左側略為突出，可能與鄰近術後陰影及吸氣不足之血管聚集有關",
+  "左肺門旁二至三枚小型金屬夾及右下肺野內側手術夾群，顯示曾接受胸腔（可能含縱膈）手術",
+  "左側橫膈略高於右側（正常關係反轉），其下方見明顯之大型胃泡",
+  "吸氣量略不足，雙側支氣管血管紋理略顯擁擠；雙側乳房軟組織影重疊於雙下肺野",
+  "右肋膈角因乳房軟組織重疊而顯示不清，未見明確肋膜積液；左肋膈角銳利",
+  "心臟大小正常，氣管及縱膈居中，無縱膈偏移；骨骼未見骨折；未見胸管、引流管、中心靜脈導管或心律調節器"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標記之左側肺尖／左上肺野氣胸在原片上無法明確辨識：盲讀者未能發現、標籤知情讀者判為不確定，仲裁者僅在影像強化放大後於左上肺野外側見到可疑之狹窄無肺紋理透亮帶，未見明確臟層肋膜線。雖無胸管、引流管等針對氣胸之治療器材，但右下肺野內側之手術夾群、左肺門旁小型手術夾及右下肺術後陰影顯示曾接受胸腔手術，與「首次就診、無胸腔手術史」之病人設定相矛盾；加上目標病灶影像證據薄弱，不適合作為首次就診自發性氣胸之教學影像。",
+ "description_zh": "胸部正位（PA）直立X光片，「L DG」鉛字標記位於患者左肩區（影像右上），穿透度適當、無明顯旋轉、吸氣量略不足，雙下肺野受雙側乳房軟組織重疊影響，影像右上角另有去識別化黑色方塊及被裁切之圓形標記。放射科標記框位於左上肺野；於強化放大影像下，左上肺野外側、約第2－4後肋間可疑有一寬約1－2公分之狹窄無肺紋理透亮帶，但未見明確之臟層肋膜線，若為左側肺尖氣胸則屬極少量，判讀為不確定；縱膈與氣管居中，無張力性徵象。右下肺野內側、肺門下方近右心緣可見一群交叉呈X形之金屬手術夾及其下方顆粒狀縫合釘樣高密度影，周圍伴網狀／線狀增加密度及模糊影，部分遮蔽右心緣，符合右側胸腔術後變化（纖維化或局部肺不張）；左肺門旁／左縱膈旁另見二至三枚小型線狀金屬手術夾，右肺門較左側略突出。心臟大小正常，左側橫膈略高於右側且其下方見大型胃泡，右肋膈角因乳房軟組織重疊顯示不清但未見明確肋膜積液，左肋膈角銳利，骨骼未見骨折；除上述手術夾外，未見胸管、引流管、中心靜脈導管或心律調節器，右肩關節區另有數個點狀體外偽影。",
+ "label_concern": "標記為左上肺野氣胸，但三位判讀者均未見明確之臟層肋膜線；僅於強化影像下左上肺野外側有可疑之狹窄無肺紋理帶，與放射科標記框位置相符。標籤可能正確但影像證據薄弱；且本片另有右下肺野及左肺門旁手術夾與右下肺術後陰影，非單純之自發性氣胸影像。"
+}

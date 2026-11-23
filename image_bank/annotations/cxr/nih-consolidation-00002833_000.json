@@ -1,0 +1,52 @@
+{
+  "id": "nih-consolidation-00002833_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal, erect); L marker at image upper right over the patient's left shoulder, conventional orientation",
+  "technical_quality": "Adequate: good inspiration, adequate penetration (vertebral bodies visible through the heart), no significant rotation. Scapulae partially overlap the lateral upper zones bilaterally; peripheral vignetting/collimation artifact at the film edges. Both costophrenic angles and hemidiaphragms included.",
+  "target": {
+    "finding": "consolidation",
+    "visible": "uncertain",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 4.0,
+    "confidence": 0.45
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Radiographic side marker 'L' (external)",
+      "location": "Image upper right, projected over the patient's left shoulder / left upper lateral chest wall soft tissue, outside the lung",
+      "zh": "左側「L」放射標記（體外）"
+    },
+    {
+      "type": "Round radiopaque disc (marker BB or clothing snap, external)",
+      "location": "Adjacent to and just below the L marker, over the patient's left shoulder soft tissue, outside the thorax",
+      "zh": "圓形金屬密度（標記珠或衣物鈕扣，體外）"
+    },
+    {
+      "type": "Curved tubular radiopaque external artifact (positioning frame / shield edge or tubing)",
+      "location": "Both lower image corners below the diaphragms, projected over the upper abdomen/flanks, bilateral, outside the thorax",
+      "zh": "雙側下緣弧形管狀體外裝置偽影"
+    }
+  ],
+  "other_findings": [
+    "右側中肺野約0.6公分邊界清楚之小圓形結節狀密度，最可能為血管端面影，無鈣化或空洞",
+    "雙側肺門周圍支氣管血管紋理略為增加（支氣管周圍增厚型態），右側較左側明顯",
+    "雙側肩胛骨部分重疊於外上肺野（技術性，手臂未完全外旋），可能遮蔽外上肺野細微病灶",
+    "心臟大小及縱膈輪廓正常，氣管居中",
+    "雙側肋膈角銳利，無肋膜積液或氣胸",
+    "左橫膈下可見胃泡",
+    "骨骼結構無明顯異常，未見肋骨骨折"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "影像上無任何胸管、引流管或治療裝置，臨床情境上與初次就診並無衝突；但標籤所指之肺實變僅在右側肺門下方內側呈現淡薄、邊界不清之密度增加，未見明確融合性實變、空氣支氣管徵或心緣／橫膈輪廓消失，可見度屬「不確定」。三位讀片者皆無法確認為典型實變，作為初次呈現之肺炎教學影像，學生難以可靠辨識，故不建議直接使用；若報告文字明確描述為「右下肺野內側輕微浸潤／早期實變」，可考慮作為輕症或早期肺炎之進階判讀案例。",
+  "description_zh": "正面（PA）胸部X光，吸氣深度與穿透度適當，無明顯旋轉，雙側肩胛骨部分重疊於外上肺野，影像周邊有暈影處理偽影。右側肺門下方內側（右下肺野內側）可見範圍約4公分之淡薄、邊界不清密度增加，伴隨支氣管血管紋理增加，疑似早期或輕微實變，但未見明確空氣支氣管徵，右心緣與右橫膈輪廓仍清晰；另於右側中肺野見一約0.6公分小圓形結節狀密度，最可能為血管端面影。雙側肺門周圍支氣管血管紋理略為增加，右側較明顯，其餘肺野清晰。心臟大小及縱膈輪廓正常，氣管居中，雙側肋膈角銳利，無肋膜積液或氣胸，左橫膈下可見胃泡，骨骼無明顯異常。患者左肩部外側可見「L」側標記及一圓形金屬密度，影像下緣雙側可見弧形管狀體外裝置偽影，未見胸管、引流管或其他治療裝置。",
+  "label_concern": "標籤為 consolidation，但影像僅見右側肺門下方內側淡薄、邊界不清之密度增加，無明確融合性實變或空氣支氣管徵；可能為早期／輕微浸潤、支氣管周圍增厚或血管重疊，NLP標籤可能過度判讀，建議人工覆核。"
+}

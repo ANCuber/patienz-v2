@@ -1,0 +1,39 @@
+{
+  "id": "nih-fibrosis-00000316_001",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal, erect); L marker at image right upper corner confirms conventional orientation",
+  "technical_quality": "Adequate: good inspiration (about 9-10 posterior ribs), no significant rotation (medial clavicular ends equidistant from the spinous processes), appropriate penetration (vertebral bodies faintly visible through the mediastinum). Apices and both costophrenic angles included; lateral chest walls slightly cropped at the image edges; scapulae only partially retracted and overlapping the lateral lung fields; a large portion of the upper abdomen is included inferiorly. Diagnostic quality.",
+  "target": {
+    "finding": "pulmonary fibrosis",
+    "visible": "uncertain",
+    "laterality": "bilateral",
+    "zone": "lower",
+    "size_cm": 8,
+    "confidence": 0.45
+  },
+  "laterality_sources": {
+    "bbox": "none",
+    "reader_a": "right",
+    "reader_b": "bilateral",
+    "adjudicator": "bilateral"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "External radiographic side marker 'L' with technologist initials 'DG' (not a medical device)",
+      "location": "Image right upper corner, over the patient's left shoulder soft tissue outside the lung",
+      "zh": "體外左側 L 側別標記（含技師縮寫 DG），位於右上角、病人左肩軟組織外，非醫療裝置"
+    }
+  ],
+  "other_findings": [
+    "雙側肺門及支氣管血管紋路輕度顯著（可能屬年齡正常範圍）",
+    "雙側肩胛骨部分重疊於外側肺野（技術性）",
+    "左橫膈下胃泡氣體，上腹部中等量腸氣及糞便影（胸腔外偶見）",
+    "心影大小正常，氣管與縱隔居中，雙側肋膈角銳利，無肋膜積液、氣胸、實質化、結節或腫塊"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": false,
+  "suitability_reason": "標籤之肺纖維化在本片僅見輕微雙下肺野線狀／細網狀紋路增加（右側較明顯），無蜂窩狀變化、牽引性支氣管擴張或容積減少，兩位判讀者皆無法確定，此表現於 29 歲男性亦可能只是正常的支氣管血管紋路。雖然全片無任何導管、引流管或治療裝置，但因目標病灶不明確，不適合作為肺纖維化初次表現的教學影像。",
+  "description_zh": "PA 胸部正面片，吸氣量足夠、無明顯旋轉、穿透度適中，雙側肩胛骨部分重疊於外側肺野，影像下緣納入大範圍上腹部。雙下肺野可見輕微線狀／細網狀間質紋路增加，以右下肺野自肺門延伸至內側肺底、橫膈上方約 8 公分範圍最為明顯，左下肺野於心尖外側僅有輕微變化；未見蜂窩狀變化、牽引性支氣管擴張或容積減少，與肺纖維化僅為可能相符，亦可能只是較顯著的支氣管血管紋路。雙側肺尖與上、中肺野清晰，雙側肺門及支氣管血管紋路輕度顯著，未見實質化、結節或腫塊。心影大小正常（心胸比約 0.4），氣管與縱隔居中，雙側肋膈角銳利，無肋膜積液或氣胸，橫膈輪廓平滑，左橫膈下可見胃泡，上腹部有中等量腸氣與糞便影。除右上角體外 L 側別標記（技師縮寫 DG）外，未見任何導管、導線、引流管或植入裝置，無治療證據。",
+  "label_concern": "NLP 擷取之「肺纖維化」標籤證據薄弱：僅見輕微雙側基底網狀紋路增加（右>左），無蜂窩狀、牽引性支氣管擴張或容積減少，29 歲男性亦可為正常變異，兩位判讀者皆判為不確定；建議人工複核，或視為近乎正常的胸片。"
+}

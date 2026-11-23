@@ -1,0 +1,13 @@
+{
+ "view": "Frontal (PA) chest radiograph, upright; \"L\" side marker (with mirrored \"SH\" text) at the image's upper right confirms conventional orientation (patient's left on image right)",
+ "technical_quality": "Adequate. Inspiration adequate (hemidiaphragm domes at about the 6th anterior rib), minimal rotation (spinous processes roughly midway between the medial clavicular ends), penetration adequate (thoracic spine visible through the cardiac shadow). Scapulae projected partly over the lateral upper chest but largely clear of the lung fields; bilateral breast shadows overlie the lower zones. Whole thorax and both costophrenic angles included.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [],
+ "abnormalities": [],
+ "treatment_evidence": false,
+ "confidence": 0.75,
+ "description_zh": "站立正面(PA)胸部X光，吸氣深度足夠、無明顯旋轉，未見任何管路、導線或體外裝置。雙側肺野各區清晰，未見實質浸潤、結節、氣胸或肋膜積液，雙側肋膈角銳利，雙側橫膈輪廓平滑，左橫膈下可見位置正常的胃泡；心臟後方未見異常軟組織影或氣液面。心臟大小正常，縱膈及氣管居中且未增寬，肺門形態正常。骨骼未見骨折或破壞性病灶，雙側乳房陰影重疊於下肺野屬正常軟組織影；整體判讀為無明顯異常的胸部X光。"
+}

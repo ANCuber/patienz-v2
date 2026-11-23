@@ -1,0 +1,51 @@
+{
+ "id": "nih-hernia-00003938_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate penetration, no significant rotation. Poor inspiratory effort with low lung volumes (about 5-6 anterior ribs above the diaphragm) and bilateral high-riding hemidiaphragms (right more than left); large body habitus with dense upper abdomen partly obscuring the lower zones; scapulae not fully rotated out and overlap the upper lateral lung fields; costophrenic angles included. External L/DOT side marker and a de-identification black rectangle at the image top-right corner.",
+ "target": {
+  "finding": "diaphragmatic hernia",
+  "visible": "uncertain",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 8,
+  "confidence": 0.45
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Multiple metallic surgical clips (approx. 8-10, linear/laparoscopic-type)",
+   "location": "Epigastrium / left upper quadrant, subdiaphragmatic, left of midline; one clip projects within a small gas-containing loop lower down",
+   "zh": "上腹部／左上腹多枚金屬手術夾（約8-10枚）"
+  },
+  {
+   "type": "External side marker (L with DOT marker block)",
+   "location": "Image top-right corner, over the patient's left shoulder",
+   "zh": "外部左側標記（L／DOT，投影於左肩上方）"
+  },
+  {
+   "type": "De-identification black rectangle (external image artifact)",
+   "location": "Image top-right corner",
+   "zh": "影像右上角去識別化黑框（非體內裝置）"
+  }
+ ],
+ "other_findings": [
+  "吸氣不足、肺容積偏低，雙側橫膈明顯上抬（右側較左側高，右側橫膈頂約達前第5肋），體型壯碩、上腹部密度高",
+  "雙下肺野支氣管血管紋理擁擠，屬吸氣不足之技術性因素",
+  "心縱膈影與上縱膈／右氣管旁帶略顯寬大，最可能為肺容積低之技術性因素，未見明確腫塊",
+  "上腹部／左上腹多枚手術夾，提示曾接受上腹部（可能為胃或食道裂孔）手術",
+  "肩胛骨部分重疊於上外側肺野",
+  "雙肺未見實質化、結節、肋膜積液或氣胸，肋膈角銳利，肺門與肺血管正常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標記之橫膈疝氣於此單張正面片僅為疑似、無法確認：左側橫膈下方之含氣糞便樣腸道影似位於橫膈下，未見明確突入胸腔之疝囊或心後氣液面。此外左上腹多枚手術夾提示曾接受上腹部（可能為抗逆流／裂孔疝）手術，與初次就診之情境不符。雖無胸管或引流管，仍不適合作為初次表現之教學影像。",
+ "description_zh": "胸部正面 PA 片，右上角有 L 側標記與去識別化黑框，吸氣量不足、肺容積偏低，雙側橫膈明顯上抬（右側較左側高，右側橫膈頂約達前第5肋），體型壯碩，肩胛骨部分重疊於上外側肺野。左下肺野緊貼上抬之左側橫膈下方、左心緣旁可見一約 8 × 5 公分含氣且呈斑駁糞便樣之腸道／胃底影，上緣圓鈍，於本張正面片上似位於橫膈下，未見明確心後氣液面或突入胸腔之疝囊，標記之左側橫膈疝氣（可能為食道裂孔疝或含結腸之橫膈疝）無法於單張正面片確認，建議加做側面像或 CT。上腹部至左上腹可見約 8-10 枚線狀金屬手術夾，提示曾接受上腹部（可能為胃或食道裂孔）手術。因吸氣不足，心縱膈影與上縱膈略顯寬大，雙下肺野支氣管血管紋理擁擠，屬技術性因素；雙肺未見實質化、結節、肋膜積液或氣胸，肋膈角銳利，未見胸管或引流管。",
+ "label_concern": "標記之橫膈疝氣於單張正面片無法確認：左側橫膈下方之含氣糞便樣腸道影於本片上似位於橫膈下，未見明確疝囊或心後氣液面，可能僅為上抬橫膈下之結腸／胃底；需側面像或 CT 才能確認。左上腹手術夾提示曾接受上腹部手術。"
+}

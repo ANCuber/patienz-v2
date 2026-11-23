@@ -1,0 +1,43 @@
+{
+ "view": "PA (frontal), upright",
+ "technical_quality": "Adequate. Well penetrated (vertebral bodies visible through the cardiac silhouette), no significant rotation (medial clavicle ends roughly equidistant from the spinous processes), deep inspiration with approximately 10-11 posterior ribs visible above the right hemidiaphragm. Both costophrenic angles and lung apices included; a de-identification black bar occupies the top-right corner of the image. Left-side lead marker present in the upper right of the image, confirming conventional orientation (image right = patient left).",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "whole",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External side marker: lead 'L' marker with initials 'CA' on a paperclip-type holder",
+   "location": "Projected over the patient's left shoulder / upper-right corner of the image, outside the thorax"
+  },
+  {
+   "type": "External artifact: black rectangular de-identification bar",
+   "location": "Top-right corner of the image, outside the patient"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Mild hyperinflation / increased lung volumes: approximately 10-11 posterior ribs above the diaphragm, narrow vertically oriented cardiac silhouette, relatively hyperlucent upper zones; diaphragm domes are preserved (not clearly flattened)",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Relative hyperlucency of the left upper zone compared with the right, with slightly attenuated vascular markings; no definite bulla wall, cavity or pneumothorax line seen (possible early emphysematous change, low confidence)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Small well-defined dense (probably calcified) elongated nodular opacity, roughly 0.5-1 cm, projected over the left hilum just below the aortic knob level; most likely a calcified lymph node or granuloma, differential end-on vessel",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent / coarse bronchovascular markings at both lung bases without consolidation, effusion or air bronchograms",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面X光（PA），吸氣充足、無明顯旋轉，右上角見左側鉛字標記（L/CA）及去識別化黑框，無任何管路、導線或引流管。雙肺容積偏大、上肺野相對透亮（右橫膈上方約可數到10-11根後肋），心影狹長呈垂直型，符合輕度肺過度充氣；左上肺野較右側稍透亮且血管紋路略減少，未見明確肺大泡壁或氣胸線。左肺門處見一約0.5-1公分邊緣清楚之高密度（疑鈣化）小結節影，以鈣化淋巴結或肉芽腫為最可能，須與血管端影鑑別；雙下肺野支氣管血管紋路略增粗，無實質化。心臟大小正常（CTR約0.42），縱隔與氣管居中，雙側肋膈角銳利，橫膈輪廓平滑，左橫膈下見正常胃泡，骨骼及軟組織無明顯異常。"
+}

@@ -1,0 +1,52 @@
+{
+ "view": "Frontal chest radiograph (likely AP), upright; L marker at image upper right confirms conventional orientation",
+ "technical_quality": "Adequate penetration and inspiration (about 8-9 posterior ribs on the left); mild rotation with shoulder asymmetry (right shoulder lower) secondary to scoliosis; mediastinum and paraspinal regions substantially obscured by extensive spinal instrumentation; bilateral breast shadows overlie both lower zones; lower thoracic/upper abdominal field included, lower lumbar hardware cut off at the bottom edge",
+ "target_finding_visible": "not_applicable",
+ "laterality": "right",
+ "zone": "lower",
+ "size_cm": 6,
+ "devices": [
+  {
+   "type": "Posterior spinal fusion instrumentation: two longitudinal rods with multiple pedicle screws/hooks (about 10 levels per rod) and one transverse cross-link connector",
+   "location": "Midline thoracolumbar spine, from upper thoracic (~T2-T3) to lower lumbar (~L4-L5), projecting over the mediastinum; cross-link at approximately T5-T6"
+  },
+  {
+   "type": "External L side marker",
+   "location": "Image upper right, over the patient's left shoulder"
+  },
+  {
+   "type": "Small square external radiopaque label/tag",
+   "location": "Image upper right, adjacent to the L marker over the patient's left shoulder"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Hazy increased opacity with accentuated bronchovascular markings in the medial/basal right lower zone (paracardiac, right heart border and hemidiaphragm still largely traceable) - possible pneumonic infiltrate/early consolidation; partly overlapped by breast soft tissue and crowded ribs, so not definite",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right hemidiaphragm mildly elevated relative to the left (~2 cm)",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Right costophrenic angle slightly hazy/indistinct due to overlying soft tissue; small effusion not excluded",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Thoracolumbar scoliosis status post long instrumented posterior fusion with mild residual curvature; asymmetric thoracic cage (right hemithorax narrower with crowded ribs, left hemithorax wider)",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Shoulder girdle asymmetry with right shoulder lower than left (positional/scoliosis related)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光（疑為AP），可見雙側後路脊椎融合固定器（雙桿、多節椎弓根螺釘及一橫向連接器）自上胸椎延伸至腰椎，胸廓不對稱、右側肋骨較擁擠，符合脊椎側彎術後併輕度殘餘彎曲。右下肺野內側／基底部可見模糊增加之陰影並伴支氣管血管紋理增加，需考慮肺炎浸潤，惟與乳房軟組織及擁擠肋骨重疊，判讀受限；右側橫膈較左側輕度上抬，右側肋膈角略模糊，不排除少量肋膜積液。左肺清晰，左肋膈角銳利，胃泡位於左橫膈下；心臟大小尚在正常範圍（CTR約0.46），縱膈受固定器遮蔽，氣管大致居中；未見氣胸、胸管或其他導管。"
+}

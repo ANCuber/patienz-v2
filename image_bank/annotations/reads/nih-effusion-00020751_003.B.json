@@ -1,0 +1,33 @@
+{
+ "view": "Frontal (PA) erect chest radiograph; \"L\" side marker at image upper right confirms conventional orientation (patient left on image right)",
+ "technical_quality": "Adequate: ~9 posterior ribs visible (good inspiration), minimal rotation (spinous processes roughly midway between medial clavicle ends), penetration adequate with thoracic vertebrae visible through the heart, lung apices and both costophrenic angles included; scapulae partly project over the upper lateral lung fields.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "Chest tube (thoracostomy tube / pleural drain)",
+   "location": "Left hemithorax: enters through the lateral lower left chest wall (approx. 8th-9th rib laterally), courses obliquely superomedially along the lateral chest wall and lung, tip at the left apex at about the level of the 1st-2nd rib; no kink, side hole appears intrathoracic"
+  },
+  {
+   "type": "Radiographic side marker (external, 'L' with 'DMD' text)",
+   "location": "Image upper right corner, patient's left shoulder region"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Left pleural effusion, small-to-moderate: homogeneous opacity at the left base with blunting of the left costophrenic angle and a lateral meniscus tracking up the lateral chest wall",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Left hemidiaphragm and lower left heart border obscured (silhouette sign); increased distance between gastric fundus gas and lung base suggests a subpulmonic component; associated left basal atelectasis/consolidation cannot be excluded",
+   "laterality": "left",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": true,
+ "confidence": 0.85,
+ "description_zh": "正面直立胸部X光，吸氣充足、旋轉輕微。左側胸腔可見一條胸管，自左下外側胸壁進入，斜向上內走行，尖端位於左肺尖約第1-2肋水平；未見明顯氣胸。左下肺野呈均質性混濁，左側肋膈角變鈍並見外側彎月徵，左側橫膈及左下心緣輪廓消失，符合左側少至中量肋膜積液，不排除合併肺底下積液或左下葉部分塌陷。右肺清晰、右側肋膈角銳利，心臟大小正常、縱膈及氣管居中，骨骼及軟組織無明顯異常。"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "nih-hernia-00004269_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate frontal (recorded PA) film: good inspiration (about 9-10 posterior ribs), no significant rotation, adequate penetration with lower thoracic vertebrae visible through the heart, both costophrenic angles included. 'L' side marker at image upper right confirms conventional orientation. Scapulae not fully cleared from the upper lateral lung fields (right more than left). Small black collimation/cropping wedges at the top corners are digitization artifacts.",
+ "target": {
+  "finding": "hiatal (diaphragmatic) hernia",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 5,
+  "confidence": 0.65
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "Small linear metallic densities in a row (probable surgical clips; metallic foreign body or external artifact not excluded)",
+   "location": "right upper zone, lateral chest wall projecting over the lateral 3rd-4th ribs",
+   "zh": "右上胸壁外側數個排成一列之小線狀金屬影（疑手術夾，不排除金屬異物或體外偽影）"
+  },
+  {
+   "type": "Side marker 'L' with technologist characters (external annotation, not a medical device)",
+   "location": "image upper right corner, over the patient's left shoulder region, outside the thorax",
+   "zh": "影像右上角「L」側別標記及技師字樣（外在標記，非醫療裝置）"
+  }
+ ],
+ "other_findings": [
+  "右上胸壁外側（第3-4肋外側投影處）數個小線狀金屬密度影，疑為手術夾或體外偽影，鄰近肺野及骨骼無異常",
+  "兩側肩胛骨未完全旋出上外側肺野（右側較明顯），屬技術因素",
+  "兩側肺野清晰，無實質浸潤、結節、肋膜積液或氣胸；兩側肋膈角銳利",
+  "心臟大小正常（CTR 約 0.4），氣管與縱膈居中，上縱膈未增寬",
+  "骨骼結構（鎖骨、肋骨、胸椎、肩關節）及軟組織無明顯異常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記病灶（左下縱膈心臟後方之含氣食道裂孔疝）於本片可見，無胸管、引流管或裂孔疝修補相關之手術痕跡，肺野與心臟大小正常。右上胸壁外側之小金屬影位置遠離橫膈裂孔，與本病灶無關，不影響以「首次以此病灶就診」情境使用本片。",
+ "description_zh": "胸部正位（PA）片，吸氣充分、無明顯旋轉，影像右上角可見「L」側別標記，方位為常規；兩側肩胛骨未完全旋出上外側肺野。於心臟後方、左下縱膈（脊椎左側與左心緣之間）可見一約 5 公分、邊緣清楚之圓形相對透亮影，其弧形上緣高於左側橫膈頂，未見明確氣液面，符合含氣之食道裂孔疝（橫膈疝）表現，建議加照側面片或進一步影像確認。右上胸壁外側（第3-4肋外側投影處）可見數個排成一列之小線狀金屬密度影，疑為手術夾，亦不排除體外偽影。兩側肺野清晰，無實質浸潤、結節、肋膜積液或氣胸，兩側肋膈角銳利，橫膈輪廓正常；心臟大小正常，氣管與縱膈居中，骨骼及軟組織無明顯異常，未見胸管、引流管、導線或其他治療裝置。",
+ "label_concern": ""
+}

@@ -1,0 +1,38 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film, well penetrated, no significant rotation, adequate inspiration; L marker present at upper image right confirming conventional orientation. Bilateral breast shadows overlap the lower zones.",
+ "target_finding_visible": "yes",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 5,
+ "devices": [
+  {
+   "type": "multiple metallic surgical clips (prior upper abdominal surgery)",
+   "location": "upper abdomen, bilateral paravertebral - right upper quadrant below right hemidiaphragm and left upper quadrant near gastric fundus"
+  },
+  {
+   "type": "external lead side marker (L)",
+   "location": "upper right corner of image (patient's left shoulder region)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Lateral pleural thickening along the lower lateral chest wall with blunting of the costophrenic angle",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly unfolded / prominent aortic knob (age-related)",
+   "laterality": "none",
+   "zone": "upper"
+  },
+  {
+   "finding": "Mild hazy density at lateral costophrenic angle, likely overlapping breast soft tissue; minimal pleural thickening cannot be excluded",
+   "laterality": "right",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面X光（PA），影像右上角可見「L」鉛字標記，方向為常規擺位。左側下肺野外側胸壁可見帶狀軟組織密度沿肋骨內緣分布，左側肋膈角變鈍，符合左下側胸膜增厚，範圍約5公分；右側肋膈角區有輕微模糊，多為乳房陰影重疊所致，無法完全排除輕微胸膜增厚。心臟大小正常，主動脈弓略為突出（老年性變化），兩側肺野未見明顯實質浸潤、結節或氣胸。上腹部雙側脊椎旁可見多枚金屬手術夾（先前上腹部手術），未見胸管、引流管或其他治療裝置。"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "nih-emphysema-00001547_003",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal) chest radiograph; external 'L' lead side marker with technologist initials at the image upper right confirms conventional orientation (patient's left on image right).",
+  "technical_quality": "Adequate. Inspiration adequate (about 9-10 posterior ribs), minimal rotation, penetration adequate with the thoracic spine faintly visible through the heart; processing slightly high-contrast with soft tissues saturated. Scapulae not fully cleared and overlie the upper lateral lung fields. Abundant lateral chest wall and breast soft tissue overlies the lower zones and costophrenic angles, mildly limiting evaluation there.",
+  "target": {
+    "finding": "Pulmonary emphysema / hyperinflation: bilateral hyperlucency with attenuated peripheral vascular markings, most conspicuous in the upper zones, elongated lung fields and a narrow vertical (tubular) cardiac silhouette; no discrete bulla",
+    "visible": "yes",
+    "laterality": "bilateral",
+    "zone": "upper",
+    "size_cm": -1,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "none (NLP-mined label, no radiologist box)",
+    "reader_a": "bilateral / whole",
+    "reader_b": "bilateral / upper (found blind)",
+    "adjudicator": "bilateral / upper-zone predominant, with diffuse hyperinflation"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "External radiographic lead side marker 'L' with technologist initials (not a medical device)",
+      "location": "Image upper right corner, over the patient's left shoulder soft tissue",
+      "zh": "外部「L」側別鉛字標記（含技師縮寫），非醫療裝置"
+    }
+  ],
+  "other_findings": [
+    "雙側肺門影粗大、呈圓鈍狀（右側略大於左側），疑為中央肺動脈增粗；未見明確肺門腫塊",
+    "主動脈弓突出、呈迂曲／延展狀",
+    "雙下肺野支氣管血管紋理略增粗、稍呈粗糙線狀（右側較明顯），未見融合性實質化",
+    "心影狹長直立、心胸比偏小（<0.5），縱膈居中",
+    "大量側胸壁及乳房軟組織重疊於雙下肺野與肋膈角，部分遮蔽該區域；橫膈輪廓大致完整，肋膈角大致尖銳",
+    "兩側肩胛骨未完全移出，重疊於上外側肺野",
+    "未見肋膜積液、氣胸、肺結節或肺大泡；骨骼未見急性病灶",
+    "未見任何導管、引流管、心律調節器或其他醫療裝置"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "影像可見符合肺氣腫／過度充氣之徵象（雙側上肺野透亮度增加、周邊肺血管紋理稀疏、肺野拉長、心影狹長直立），且盲讀者亦獨立辨認出相同表現。片中無任何胸管、引流管或其他治療裝置，亦無術後或治療後變化。雙側肺門略粗大與主動脈弓迂曲屬慢性伴隨變化，不與初次就診情境相衝突，適合作為肺氣腫初次表現之教學影像。",
+  "description_zh": "胸部正面（PA）X光，吸氣度與穿透度尚可、無明顯旋轉，惟兩側肩胛骨未完全移出而重疊於上外側肺野，且大量側胸壁及乳房軟組織重疊於雙下肺野與肋膈角，稍限制該區判讀；影像右上角可見外部「L」側別鉛字標記（含技師縮寫），全片未見任何導管、引流管、心律調節器或其他醫療裝置。雙側肺野透亮度增加、以上肺野最為明顯，周邊肺血管紋理稀疏、肺野拉長，心影狹長直立、心胸比偏小（<0.5），整體型態符合雙側肺氣腫／肺過度充氣之表現，未見明確肺大泡，病灶為瀰漫性、無法量測特定大小。雙側肺門影粗大、呈圓鈍狀（右側略大於左側），疑為中央肺動脈增粗，未見明確肺門腫塊；主動脈弓突出、呈迂曲延展狀。雙下肺野支氣管血管紋理略增粗（右側較明顯），未見融合性實質化、肺結節、肋膜積液或氣胸；橫膈輪廓大致完整，肋膈角在軟組織重疊下大致尖銳，縱膈居中，骨骼未見急性病灶。",
+  "label_concern": ""
+}

@@ -1,0 +1,53 @@
+{
+ "view": "Frontal chest radiograph (PA/AP unspecified), erect; side marker projected at image upper-right corner consistent with conventional orientation",
+ "technical_quality": "Suboptimal: poor inspiratory effort with low lung volumes (both hemidiaphragms elevated, right higher than left), which crowds the basal vessels and exaggerates the cardiomediastinal width. Patient not rotated (clavicles symmetric, spinous processes midline). Adequate penetration in the upper zones but the lower chest/upper abdomen is dense due to large body habitus and overlying breast shadows, limiting evaluation of the lung bases and retrocardiac region. No lines, tubes or medical devices present.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "multiple",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Side marker (L-type marker, letters appear mirrored/rotated)",
+   "location": "Image upper-right corner, outside the patient"
+  },
+  {
+   "type": "External artifact: small round radiopaque object (likely clothing button/snap or piercing), not a medical device",
+   "location": "Lower midline of image, projected over the upper abdomen below the cardiac silhouette"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Prominent bilateral hila with increased, ill-defined perihilar and bibasal vascular/interstitial markings - suggests mild pulmonary vascular congestion, though partly attributable to vascular crowding from poor inspiration",
+   "laterality": "bilateral",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Low lung volumes with elevated hemidiaphragms bilaterally, right higher than left; upper zones relatively hyperlucent",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Globular, mildly widened cardiomediastinal silhouette / borderline cardiomegaly (cardiothoracic ratio at upper limit, likely exaggerated by low volumes and possible AP projection)",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent / unfolded aortic knob suggesting tortuous or ectatic thoracic aorta",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Possible mild blunting of the right costophrenic angle - small right pleural effusion cannot be excluded; left costophrenic angle sharp",
+   "laterality": "right",
+   "zone": "lower"
+  },
+  {
+   "finding": "Large body habitus with dense upper abdomen and bilateral breast shadows obscuring the lung bases",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "正面胸部X光，吸氣不足、肺容積偏低，兩側橫膈上抬（右側較高），腹部軟組織及乳房陰影密度高使雙下肺野評估受限。心縱膈影輪廓偏寬、心臟呈球狀，疑似輕度心臟擴大，主動脈弓略顯突出；兩側肺門突出，雙側肺門周圍及下肺野血管紋理增加且邊緣模糊，需考慮輕度肺血管充血，惟部分可能為吸氣不足造成之血管擁擠。右側肋膈角疑似輕度鈍化，不排除少量肋膜積液；左側肋膈角清晰，無氣胸。骨骼結構未見明顯異常，影像中未見任何導管、引流管、胸管或心律調節器等醫療裝置。"
+}

@@ -1,0 +1,53 @@
+{
+ "view": "PA (frontal, erect); \"L\" side marker at image upper-right confirms conventional orientation (patient left = image right)",
+ "technical_quality": "Adequate: good inspiration (~9-10 posterior ribs), adequate penetration (spine visible through the heart), no significant rotation, both costophrenic angles included; scapulae partially overlap the upper lateral lung fields; inferior edge of film cuts the upper abdomen.",
+ "target_finding_visible": "uncertain",
+ "laterality": "uncertain",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "Probable surgical clips: small cluster (2-3) of tiny metallic-density fragments, plus a faint nearby linear metallic density; nature uncertain (could be clips from prior upper-abdominal surgery; cannot confirm relation to any hernia repair)",
+   "location": "Epigastrium / left upper quadrant, just left of midline, below the left hemidiaphragm at the inferior edge of the film (image approx x 565-645, y 980-1010)"
+  },
+  {
+   "type": "Radiographic side marker 'L' with small adjacent identification squares (external artifact)",
+   "location": "Image upper-right corner, over the patient's left shoulder soft tissue / outside the thorax"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "No definite retrocardiac air-fluid level or well-defined rounded retrocardiac soft-tissue opacity identified on windowed/high-pass review; the labelled diaphragmatic (presumably hiatal) hernia cannot be confirmed on this PA film. Mottled gas seen medially at the left base projects below the left hemidiaphragm contour and is most consistent with gastric fundus / colonic gas.",
+   "laterality": "uncertain",
+   "zone": "lower"
+  },
+  {
+   "finding": "Prominent aortic knob with unfolded/tortuous descending thoracic aorta (age-related ectasia); no definite calcification confirmed",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Cardiac silhouette at the upper limit of normal (estimated CTR ~0.40); no definite cardiomegaly",
+   "laterality": "none",
+   "zone": "lower"
+  },
+  {
+   "finding": "Tiny well-defined calcific density (~1-2 mm), likely calcified granuloma or vessel end-on",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Thoracic spondylosis: marginal osteophytes along the mid-lower thoracic vertebral bodies; degenerative appearance of shoulder girdles",
+   "laterality": "none",
+   "zone": "multiple"
+  },
+  {
+   "finding": "Lungs otherwise clear: no focal consolidation, no pleural effusion, no pneumothorax, costophrenic angles sharp bilaterally; mildly prominent hila without mass",
+   "laterality": "bilateral",
+   "zone": "whole"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.3,
+ "description_zh": "PA 正面胸部X光片，吸氣量足夠、穿透度適當、無明顯旋轉，影像右上角可見「L」側別標記，肩胛骨部分重疊於上外側肺野。心影大小約在正常上限（CTR 約 0.4），主動脈弓突出、胸主動脈迂曲，符合年齡相關變化；雙側肺野未見明確實質浸潤、肋膜積液或氣胸，雙側肋膈角銳利。心影後方與橫膈上方未見明確之氣液平面或邊界清楚的圓形軟組織影，標記之橫膈疝氣（推測為食道裂孔疝氣）於本片無法確認；左側橫膈下方所見之斑駁氣體影較符合胃底/結腸氣體。上腹部中線偏左、橫膈下方（影像下緣）可見數個細小金屬密度影，疑為手術夾；另左上肺野見一微小鈣化點，胸椎可見退化性骨刺。"
+}

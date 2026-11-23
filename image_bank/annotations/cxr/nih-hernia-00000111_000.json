@@ -1,0 +1,52 @@
+{
+  "id": "nih-hernia-00000111_000",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "Frontal chest radiograph, recorded PA; 'L' marker at image upper right (patient's left) confirms conventional orientation. Scapulae partly overlie the lateral lung fields, so an AP projection cannot be excluded. Erect/semi-erect (air-fluid level present).",
+  "technical_quality": "Limited. Low lung volumes / poor inspiration with elevated hemidiaphragms and basal crowding. Upper mediastinum and apices partly obscured by the flexed mandible and cervical spine hardware; lower thorax and upper abdomen obscured by long-segment thoracolumbar instrumentation and large bilateral breast shadows. Exposure adequate for the lungs; costophrenic angles not cleanly profiled; rotation hard to judge because spinous processes are hidden by hardware.",
+  "target": {
+    "finding": "Hiatal hernia (diaphragmatic hernia, esophageal hiatus): rounded retrocardiac gas-containing lucency with a horizontal air-fluid level projecting over the lower thoracic spine, straddling the midline and bulging slightly beyond the right mediastinal border",
+    "visible": "yes",
+    "laterality": "none",
+    "zone": "lower",
+    "size_cm": 8.5,
+    "confidence": 0.8
+  },
+  "laterality_sources": {
+    "bbox": "none (NLP-mined label only, no radiologist box)",
+    "reader_a": "bilateral (midline/retrocardiac), lower zone, ~9 cm",
+    "reader_b": "none (midline/retrocardiac), lower zone, ~8.5 cm — found blind",
+    "adjudicator": "none (midline/retrocardiac, slight bulge to patient's right), lower zone, ~8.5 cm"
+  },
+  "agreement": "full",
+  "devices": [
+    {
+      "type": "Long-segment posterior thoracolumbar spinal instrumentation (bilateral pedicle screws and rods with cross-connector)",
+      "location": "Midline, from the lower thoracic spine (about T10-T11, behind the heart) extending inferiorly through the lumbar spine, projecting below the diaphragm",
+      "zh": "胸腰椎長節段後路椎弓根螺釘與雙側連桿固定器"
+    },
+    {
+      "type": "Cervical spine fixation hardware (screws with rod/plate), post-fusion",
+      "location": "Midline, lower cervical spine / cervicothoracic junction at the top edge of the film, overlapped by the mandible",
+      "zh": "頸椎固定器（螺釘與鋼板/連桿）"
+    },
+    {
+      "type": "Radiographic side marker 'L' (external, not a medical device)",
+      "location": "Image upper right corner (patient's left)",
+      "zh": "左側「L」外部標記"
+    }
+  ],
+  "other_findings": [
+    "胸腰椎側彎（腰椎曲線凸向病患右側）併長節段後路脊椎融合固定術後；頸椎融合固定術後",
+    "吸氣量不足、雙側肺容積偏低，雙側橫膈上抬，雙側肺底支氣管血管紋理增加並見線狀肺擴張不全（無明確實質化）",
+    "雙側肋膈角受軟組織（乳房陰影）遮蔽，無法完全排除少量肋膜積液；未見氣胸或大量積液",
+    "心影約於正常上限（CTR約0.5），因疝氣與脊椎固定器重疊及低肺容積，評估受限",
+    "上縱膈增寬併主動脈弓突出、胸主動脈迂曲，符合年齡相關變化並受脊椎後凸加重；肺門血管紋理增加，考量為低肺容積所致血管擁擠",
+    "瀰漫性骨質減少，脊椎與肩關節退化性變化",
+    "雙側大面積乳房陰影重疊於下肺野"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標籤病灶清楚可見：心影後方中線可見約8–9公分之圓形含氣透亮區併水平氣液面，符合食道裂孔疝氣。影像上無胸管、引流管或任何針對疝氣之治療裝置。頸椎與胸腰椎固定器為既往骨科手術遺留，與橫膈疝氣無關，不會與病患首次因該病灶就診之情境相矛盾（病例設定應納入脊椎手術病史）。其餘為低肺容積及年齡相關變化，亦不影響首次就診情境。",
+  "description_zh": "後前位（不排除為AP投照）胸部X光：吸氣量不足、雙側肺容積偏低，上縱膈受下頷及頸椎固定器重疊，下胸部受長節段胸腰椎後路固定器及雙側乳房陰影遮蔽，影像品質受限。心影後方中線、下胸椎前方可見一圓形含氣透亮區併水平氣液面，寬約8–9公分，橫跨中線並略向右側縱膈緣突出，符合食道裂孔疝氣（胃疝入胸腔）。雙側肺底支氣管血管紋理增加並見線狀肺擴張不全，未見明確實質化、氣胸或大量肋膜積液，惟雙側肋膈角受軟組織遮蔽，無法完全排除少量積液；心影約於正常上限，因疝氣與固定器重疊評估受限，主動脈弓突出、上縱膈增寬，符合年齡相關變化。骨骼可見頸椎固定螺釘及自下胸椎延伸至腰椎之椎弓根螺釘與雙側連桿，合併胸腰椎側彎與瀰漫性骨質減少；未見胸管或其他引流裝置。",
+  "label_concern": ""
+}

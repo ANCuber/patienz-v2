@@ -1,0 +1,40 @@
+{
+ "id": "nih-consolidation-00001957_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate: PA upright, good inspiration, minimal rotation, adequate penetration; apices and both costophrenic angles included. Both scapulae partially overlap the lateral lung fields. A mirrored/rotated side-marker sticker projects at the image top-right corner (patient's left shoulder), outside the thorax.",
+ "target": {
+  "finding": "consolidation",
+  "visible": "uncertain",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 5,
+  "confidence": 0.5
+ },
+ "laterality_sources": {
+  "bbox": "none",
+  "reader_a": "left",
+  "reader_b": "left",
+  "adjudicator": "left"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "External side-marker sticker (mirrored lettering); not a medical device",
+   "location": "Image top-right corner, over the patient's left shoulder soft tissue, outside the thorax",
+   "zh": "影像右上角外置鉛字側別標記（字母鏡像），非醫療裝置"
+  }
+ ],
+ "other_findings": [
+  "左側橫膈較右側略高約1公分（與正常關係相反）",
+  "左橫膈下胃泡擴張，內含斑駁食物殘渣影（偶然發現）",
+  "左上肺野內側（主動脈弓旁）疑似淡薄密度增加，最可能為肩胛骨、第一肋與縱膈結構重疊所致，低可信度",
+  "雙側肩胛骨部分重疊於外側肺野（技術性）",
+  "心臟大小正常、縱膈與氣管居中；雙側肋膈角銳利，未見肋膜積液或氣胸；骨骼與軟組織未見明顯異常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "無任何胸管、引流管或治療裝置，臨床情境亦不與初次就診矛盾；但標記的實變影僅為左下肺野緊鄰左心緣之淡薄模糊密度，顯影度低，盲讀者並未在該處辨識出病灶，且此標籤僅由報告文字探勘而來、無放射科醫師標註框，作為「實變」教學範例可能誤導學生，故暫不列入初次就診適用影像，建議人工確認。",
+ "description_zh": "PA 直立胸部X光，吸氣充分、曝光適中、無明顯旋轉，雙側肩胛骨部分重疊於外側肺野，影像右上角見鏡像鉛字側別標記；未見任何導管、引流管、夾子或植入裝置。左下肺野緊鄰左心緣外側（舌葉／左下葉區）可見一片淡薄、邊界不清之模糊密度增加，範圍約5公分，左心緣下段略顯模糊但輪廓大致仍可辨，顯影度低，需考慮早期或輕度實變。右肺野清晰，肺紋理正常；左上肺野內側主動脈弓旁有疑似淡薄密度增加，最可能為骨骼與縱膈結構重疊。左側橫膈較右側略高約1公分，其下胃泡擴張並含食物殘渣影；雙側肋膈角銳利，未見肋膜積液或氣胸。心臟大小正常，縱膈與氣管居中。",
+ "label_concern": "此「實變」標籤為報告文字探勘所得，無放射科醫師標註框；影像上僅見左下肺野緊鄰左心緣之低顯影度模糊影，盲讀者未於該處辨識出病灶，實變的存在與範圍不確定，建議人工確認。"
+}

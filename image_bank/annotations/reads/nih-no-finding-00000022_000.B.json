@@ -1,0 +1,22 @@
+{
+ "view": "Frontal (PA) erect chest radiograph; 'L' side marker present at image upper right, confirming conventional orientation (patient's right on image left)",
+ "technical_quality": "Adequate. Good inspiration (approximately 9-10 posterior ribs visible), no significant rotation (clavicular heads roughly equidistant from spinous processes), penetration adequate with vertebral bodies visible through the cardiac silhouette. Edge-enhanced processing gives the bronchovascular markings a somewhat coarse appearance. Whole thorax included; costophrenic angles and both apices within the field. A black rectangular blocker artifact at the far left edge of the image (outside the patient) and a thin bright collimation line along the right edge are technical only.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "none",
+ "zone": "none",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External radiographic side marker ('L' letter with adjacent round radiopaque disc)",
+   "location": "Image upper right corner, projected over the patient's left shoulder / lateral to the left clavicle (outside the lung field)"
+  },
+  {
+   "type": "Black rectangular digital blocker / collimation artifact (not on the patient)",
+   "location": "Far left edge of the image, upper third, lateral to the patient's right shoulder"
+  }
+ ],
+ "abnormalities": [],
+ "treatment_evidence": false,
+ "confidence": 0.78,
+ "description_zh": "正面（PA）站立胸部X光，吸氣量足夠、無明顯旋轉，影像品質尚可；影像右上角可見 L 側別標記及圓形金屬標記，影像左緣有黑色遮擋偽影，均為體外物，未見胸管、引流管、中心靜脈導管、心律調節器或其他植入裝置。雙側肺野上、中、下各區均清晰透亮，支氣管血管紋理因影像後處理而略顯粗糙，但仍在正常範圍，未見實質浸潤、結節、腫塊、肺門腫大或氣胸；雙側肋膈角銳利，橫膈輪廓平滑，右側橫膈略高於左側屬正常。心臟大小正常（心胸比 < 0.5），縱膈不寬，氣管居中，主動脈弓正常；肋骨、鎖骨、脊椎及軟組織未見異常。結論：未見明顯異常之胸部X光。"
+}

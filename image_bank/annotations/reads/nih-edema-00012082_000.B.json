@@ -1,0 +1,29 @@
+{
+ "view": "Frontal chest radiograph (likely AP, arms abducted/elevated); L marker at image right, conventional orientation",
+ "technical_quality": "Adequate. Whole thorax included, minimal rotation (medial clavicles roughly symmetric about the spinous processes), lungs adequately penetrated, adequate inspiration (~9 posterior ribs). Large body habitus with abundant chest-wall/arm soft tissue causes relative under-penetration of the lower chest and abdomen; scapulae partly project over the upper lateral lung fields. Skeletal appearance looks more mature than a typical 10-year-old, but no dedicated bone-age assessment possible.",
+ "target_finding_visible": "not_applicable",
+ "laterality": "bilateral",
+ "zone": "lower",
+ "size_cm": -1,
+ "devices": [],
+ "abnormalities": [
+  {
+   "finding": "Mildly increased perihilar and lower-zone bronchovascular/interstitial markings with slight haziness, more evident on the right; no frank consolidation",
+   "laterality": "bilateral (right > left)",
+   "zone": "lower/middle"
+  },
+  {
+   "finding": "Mildly prominent hilar shadows",
+   "laterality": "bilateral",
+   "zone": "middle"
+  },
+  {
+   "finding": "Large body habitus with abundant chest-wall soft tissue overlying and partly obscuring the lower lung zones",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.5,
+ "description_zh": "正面胸部X光（疑為AP投照，雙上臂外展），患者體型壯碩、胸壁軟組織豐厚，肺野穿透尚可但下胸及上腹部影像偏白；未見任何管路、導線、金屬夾、心律調節器或引流管等裝置。雙側肺門略顯突出，肺門周圍及雙下肺野支氣管血管紋理輕度增加、右下肺野稍見模糊，未見明確實質實變、氣胸或肋膜積液，雙側肋膈角尚銳利。心臟大小正常（CTR約0.36），縱膈與氣管居中，橫膈輪廓平滑；所見骨骼未見明顯異常。"
+}

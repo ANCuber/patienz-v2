@@ -1,0 +1,52 @@
+{
+ "id": "nih-effusion-00012174_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (recorded). Frontal film, L marker at image upper-right confirming conventional orientation (image-left = patient-right); heart apex and aortic knob project to image-right. Scapulae partially overlap the upper lateral lung fields, so an AP projection cannot be excluded.",
+ "technical_quality": "Adequate but limited: slightly under-penetrated over the lower zones; large body habitus with large bilateral breast shadows overlying both lower zones; minimal rotation, trachea midline; moderate to slightly shallow inspiration (approx. 7-8 posterior ribs). Marker present, no L/R reversal.",
+ "target": {
+  "finding": "pleural effusion",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 7,
+  "confidence": 0.8
+ },
+ "laterality_sources": {
+  "bbox": "right",
+  "reader_a": "left",
+  "reader_b": "right",
+  "adjudicator": "left"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "ECG monitoring lead wires (external)",
+   "location": "Bilateral lateral chest walls, running from the shoulder/axillary region down to the lower lateral chest (Reader A read the same lines as skin-fold/breast-contour lines; the paired thin lines with a small dense terminal dot on each side favour ECG leads)",
+   "zh": "心電圖監測導線（體外，雙側側胸壁）"
+  },
+  {
+   "type": "ECG electrodes (external)",
+   "location": "Bilateral lower lateral chest wall / upper abdomen, at the inferior ends of the lead wires",
+   "zh": "心電圖電極貼片（體外，雙側下外側胸壁／上腹部）"
+  },
+  {
+   "type": "L side marker",
+   "location": "Image upper-right corner (patient's left)",
+   "zh": "左側（L）標記"
+  }
+ ],
+ "other_findings": [
+  "心臟陰影擴大（CTR 約 0.55–0.58；左側心緣部分被積液遮蔽，且不排除 AP 投影，評估受限）",
+  "上縱隔增寬，主動脈弓突出，胸主動脈迂曲／展開（unfolded aorta）",
+  "右中肺野近肺門處邊界不清之片狀增加密度影（約 4–5 公分），需考慮實質化或肺血管擁擠，亦不能排除腫塊（NLP 標籤 Mass 可能對應此處，未經證實）",
+  "雙側肺門突出、中央肺血管紋理增加，疑肺靜脈鬱血",
+  "右下肺野網狀間質紋理增加",
+  "雙側肩盂肱關節退化性變化",
+  "雙側大乳房陰影重疊於下肺野，體型壯碩使雙下肺野密度增加"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標的所見（左側中等量肋膜積液，約 6–7 公分高）清楚可見；未見胸管、豬尾巴導管或引流後變化。體外心電圖導線僅為監測用途，不代表已針對積液治療，與急診或病房初次就診情境相容。惟出題時須注意：NIH 標註框與 Reader B 標為右側，實際影像積液位於左側，報告應以左側描述；另右中肺野近肺門模糊影（不排除腫塊）與心影擴大、主動脈迂曲為共存所見，病例設定需能容納。",
+ "description_zh": "正面胸部X光（登錄為 PA，肩胛骨部分重疊於上外側肺野，不排除 AP 投影），影像右上角有 L 標記，方向為常規（影像左側＝病人右側）。左下肺野可見均質緻密影，上緣沿側胸壁呈新月狀上升（meniscus sign），左側肋膈角鈍化、左側橫膈輪廓消失，符合左側中等量肋膜積液（高度約 6–7 公分）；右側橫膈輪廓清晰、肋膈角銳利，右側未見積液。心臟陰影擴大（CTR 約 0.55–0.58，左心緣部分被積液遮蔽），上縱隔增寬並見主動脈弓突出、胸主動脈迂曲；右中肺野近肺門處有一約 4–5 公分邊界不清之片狀增加密度影，需考慮實質化或腫塊，右下肺野網狀間質紋理增加，雙側肺門突出疑肺靜脈鬱血。雙側側胸壁可見體外心電圖監測導線，末端於下外側胸壁／上腹部各有一電極貼片；未見胸管、引流管、中心靜脈導管或心律調節器。雙側肩盂肱關節退化性變化，雙側大乳房陰影重疊於下肺野。",
+ "label_concern": "標籤「肋膜積液」本身正確，但側別有疑慮：NIH 放射科醫師標註框位於病人右側（影像左側，x 169–358、y 159–699，沿右側外側胸廓），Reader B 亦判為右側；然而影像上右側橫膈與肋膈角清晰、右下肺野通氣良好，實際的中等量積液（新月狀上緣、橫膈消失）位於左側，Reader A 與仲裁者一致。建議以左側為準。另 NLP 標籤 Mass 可能對應右中肺野近肺門之模糊影，未經證實。"
+}

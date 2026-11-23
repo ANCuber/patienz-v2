@@ -1,0 +1,57 @@
+{
+ "id": "nih-pleural-thickening-00001551_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA (recorded); frontal upright paediatric film, L side marker upper right confirms conventional orientation; scapulae partly overlie the lateral upper lung fields so AP-type technique cannot be excluded",
+ "technical_quality": "Adequate. Good inspiration (about 8-9 posterior ribs), adequate penetration, both apices and both costophrenic angles included. Film is slightly rotated and tilted (right clavicle projects higher than left, lower edge obliquely cropped) and the scapulae overlap the lateral upper-mid lung fields; no diagnostic area is cut off.",
+ "target": {
+  "finding": "pleural thickening",
+  "visible": "uncertain",
+  "laterality": "none",
+  "zone": "lower",
+  "size_cm": -1,
+  "confidence": 0.25
+ },
+ "laterality_sources": {
+  "bbox": "none (NLP-mined label, no radiologist box)",
+  "reader_a": "left",
+  "reader_b": "right",
+  "adjudicator": "none"
+ },
+ "agreement": "conflict",
+ "devices": [
+  {
+   "type": "Metallic ring-shaped snap fastener with lucent centre (garment snap / ECG electrode snap), external artifact, approx 1.5 cm",
+   "location": "Projected over the lateral left mid-to-lower zone (patient's left, image right), about the anterior 4th-5th / lateral 6th-7th rib level, outside the lung parenchyma",
+   "zh": "左側外側中下肺野投影之環狀金屬按扣（衣物按扣或心電圖電極扣），體外偽影"
+  },
+  {
+   "type": "Small round radiopaque density (possible ECG electrode / garment snap; coracoid apophysis not excluded in this age group), external",
+   "location": "Right shoulder near the acromioclavicular region (patient's right, image left)",
+   "zh": "右肩肩鎖關節附近小圓形不透光影（疑心電圖電極或衣物扣，亦不排除喙突骨骺）"
+  },
+  {
+   "type": "Small round radiopaque density (possible ECG electrode / garment snap; coracoid apophysis not excluded in this age group), external",
+   "location": "Left shoulder near the acromioclavicular region (patient's left, image right)",
+   "zh": "左肩肩鎖關節附近小圓形不透光影（疑心電圖電極或衣物扣，亦不排除喙突骨骺）"
+  },
+  {
+   "type": "Radiographic side marker plate with lead 'L' letter and technologist initials",
+   "location": "Upper right corner of the image, over the patient's left shoulder soft tissues (external)",
+   "zh": "影像右上角之鉛製 L 側標記板（含技師縮寫）"
+  }
+ ],
+ "other_findings": [
+  "影像輕度旋轉與傾斜（雙側鎖骨高度不對稱，下緣斜向裁切），影響縱膈輪廓判讀",
+  "雙側肩胛骨重疊於外側上中肺野（手臂未充分外展）",
+  "上縱膈／右氣管旁區域略顯寬，最可能為投影方式、旋轉及年齡（殘餘胸腺組織）所致，未見明確腫塊",
+  "雙側肺野清晰，肺紋理正常，未見實質浸潤、結節、氣胸或肺尖胸膜帽",
+  "心臟大小及縱膈輪廓在正常範圍，氣管居中",
+  "雙側肱骨近端可見生長板，與 12 歲年齡相符；骨骼結構完整",
+  "右側橫膈略高於左側（正常變異），左橫膈下可見胃泡，橫膈下腸氣分布正常"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": false,
+ "suitability_reason": "標記為「胸膜增厚」，但本片無放射科醫師標註框，兩位判讀者僅各自於相反側（A：左側肋膈角、B：右側肋膈角）看到不確定的輕微鈍化，裁判者放大檢視後雙側肋膈角均銳利、肺尖無胸膜帽，無法確認任何一側有胸膜增厚。目標病灶不可靠、側別衝突，且 12 歲病童胸膜增厚少見，不適合作為此診斷的初診教學影像。",
+ "description_zh": "12 歲女性胸部正面（記錄為 PA）X 光，吸氣充分、穿透適當，惟影像輕度旋轉傾斜，雙側肩胛骨重疊於外側上中肺野。雙側肺野清晰，肺紋理正常，未見實質浸潤、結節或氣胸，肺尖無胸膜帽狀增厚；心臟大小正常，氣管居中，上縱膈略寬，考慮與投影、旋轉及年齡（殘餘胸腺）有關。針對標記之胸膜增厚，兩位判讀者分別於左側及右側下肺野肋膈角看到不確定的輕微鈍化（無法量測大小），裁判者放大檢視後雙側肋膈角均銳利、肺與側胸壁貼合，未見明確胸膜增厚或肋膜積液，故此病灶判為不確定且側別未定。左側外側中下肺野投影一約 1.5 公分環狀金屬按扣（衣物按扣或心電圖電極扣），雙肩肩鎖關節附近各見一小圓形不透光影（疑電極或衣物扣），影像右上角有鉛製 L 側標記；未見胸管、引流管或任何治療痕跡。雙側肱骨近端可見生長板，左橫膈下可見胃泡，骨骼結構完整。",
+ "label_concern": "NLP 標籤「胸膜增厚」在本片上無法確認：無放射科醫師標註框，兩位判讀者於相反側各自看到僅屬可疑的肋膈角輕微鈍化，裁判者雙側均未見明確胸膜增厚。本片外觀接近正常，疑為報告文字被 NLP 誤判（例如否定句「無胸膜增厚」）所致的假陽性標籤。"
+}

@@ -1,0 +1,39 @@
+{
+ "view": "PA (L side marker seen at image upper right, conventional orientation)",
+ "technical_quality": "Adequate: frontal PA film, good inspiration (lungs appear hyperinflated), minimal rotation, adequate penetration. Scapulae partially project over the lateral upper lung fields and bilateral breast shadows overlie the lower zones, slightly reducing lower-zone detail.",
+ "target_finding_visible": "yes",
+ "laterality": "bilateral",
+ "zone": "whole",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "External side marker (L) with adjacent letters",
+   "location": "Image upper right, lateral to the patient's left shoulder (outside the thorax)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Diffuse hyperlucency of the lungs with paucity of peripheral vascular markings, more pronounced in the upper zones",
+   "laterality": "bilateral",
+   "zone": "whole"
+  },
+  {
+   "finding": "Hyperinflation: low-lying, relatively flattened hemidiaphragms",
+   "laterality": "bilateral",
+   "zone": "lower"
+  },
+  {
+   "finding": "Narrow, vertically oriented (small) cardiac silhouette consistent with hyperinflation",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly prominent hila (possible central pulmonary vascular prominence) - equivocal",
+   "laterality": "bilateral",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.6,
+ "description_zh": "胸部正面(PA)X光：雙側肺野透亮度普遍增加，以上肺野較明顯，周邊血管紋理減少；雙側橫膈位置偏低且略呈扁平，心影狹長呈垂直狀，符合肺部過度充氣及肺氣腫之表現。雙側肺門略顯突出，未見明確肺實質實質化、結節或大型肺大泡。雙側肋膈角銳利，未見肋膜積液或氣胸。未見任何導管、引流管、心律調節器或其他植入裝置，僅於病人左側肩外側見L側別標記；雙側乳影重疊於下肺野，肩胛骨部分投影於上外側肺野。"
+}

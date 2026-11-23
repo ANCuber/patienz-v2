@@ -1,0 +1,52 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration (~9-10 posterior ribs), no significant rotation, penetration adequate (vertebral bodies seen through the heart). Bilateral breast shadows overlie the lower zones. Black vertical band at the image left edge is a collimation/digitisation artifact, not patient-related.",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "middle",
+ "size_cm": 4,
+ "devices": [
+  {
+   "type": "L side marker (lead 'L' with technologist initials)",
+   "location": "image upper right, projected over the patient's left shoulder / lateral to left clavicle"
+  },
+  {
+   "type": "round radiopaque disc marker (external)",
+   "location": "image upper right, over the patient's left acromioclavicular / shoulder region"
+  },
+  {
+   "type": "collimation / digitisation edge artifact (black vertical band)",
+   "location": "extreme image left edge, outside the patient"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Bulky, rounded left hilum with ill-defined hazy perihilar opacity lateral to it (possible perihilar consolidation vs enlarged pulmonary artery / hilar adenopathy) - most likely correlate of the label",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Prominent, rounded aortic knob (unfolded aorta)",
+   "laterality": "left",
+   "zone": "upper"
+  },
+  {
+   "finding": "Patchy hazy density and crowded bronchovascular markings in the right perihilar / infrahilar region along the right heart border",
+   "laterality": "right",
+   "zone": "middle"
+  },
+  {
+   "finding": "Small dense nodule (~0.5 cm) just lateral to the left hilum - likely calcified granuloma or end-on vessel",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Mildly increased bilateral basal bronchovascular / reticular markings; no lobar consolidation, effusion or pneumothorax; costophrenic angles sharp; heart size normal",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.4,
+ "description_zh": "PA 胸部 X 光，吸氣量足夠、無明顯旋轉，兩側乳房陰影重疊於下肺野。左側肺門影增寬、輪廓圓鈍，其外側中肺野可見邊界不清的淡片狀增濃，主動脈弓突出；右側肺門周圍沿右心緣亦見支氣管血管紋理增粗與斑片狀淡影，但未見明確的大葉性實變。兩側肋膈角清晰，無肋膜積液或氣胸，心臟大小正常，縱膈居中。未見任何管路、導線、夾子或植入物，僅見左側「L」標記及圓形外部標記物。"
+}

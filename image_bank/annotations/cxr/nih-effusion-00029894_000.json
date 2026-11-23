@@ -1,0 +1,42 @@
+{
+ "id": "nih-effusion-00029894_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate. Erect PA frontal film, external 'L' side marker at the image upper-right corner (conventional orientation, no L/R reversal). Trachea midline with minimal rotation; inspiration adequate (about 9 posterior ribs on the right); penetration adequate with the lower thoracic spine faintly visible through the mediastinum. Apices and both costophrenic regions included, upper abdomen partly included. Both scapulae partially project over the lateral upper zones and bilateral breast shadows overlie the lower zones, adding mild lower-zone haze.",
+ "target": {
+  "finding": "pleural effusion",
+  "visible": "yes",
+  "laterality": "left",
+  "zone": "lower",
+  "size_cm": 6.0,
+  "confidence": 0.85
+ },
+ "laterality_sources": {
+  "bbox": "left (radiologist box 230x218 px recorded as middle zone by the image-thirds convention; the box sits over the upper margin / meniscus of a basal effusion, which is anatomically lower zone)",
+  "reader_a": "left / lower (label-aware; small-to-moderate effusion, ~4 cm)",
+  "reader_b": "left / lower (blind; independently reported a moderate left effusion with a subpulmonic component, ~8 cm)",
+  "adjudicator": "left / lower (homogeneous basal opacity with a lateral meniscus, obliterated left costophrenic angle and left hemidiaphragm; meniscus height about 6 cm on the lateral chest wall plus a subpulmonic component)"
+ },
+ "agreement": "full",
+ "devices": [
+  {
+   "type": "External radiographic side marker 'L' (film label, not a medical device)",
+   "location": "Image upper-right corner, above the patient's left shoulder soft tissue, outside the thorax",
+   "zh": "體外「L」側別標記（影像右上角，非醫療裝置）"
+  }
+ ],
+ "other_findings": [
+  "左側橫膈輪廓消失，其「假性橫膈圓頂」位置偏高、頂點偏外側，與下方胃泡／結腸氣體間距明顯增大（約7–8公分），提示合併肺下型（subpulmonic）積液",
+  "左心緣下段被基底積液遮蔽（輪廓徵），心胸比僅能估計；心影大小估計在正常範圍，未見明顯擴大",
+  "主動脈結突出、胸主動脈迂曲（年齡相關變化），上縱膈略寬，氣管居中",
+  "右下肺野支氣管血管紋理輕度增加，無局灶性實變；右側肋膈角銳利、右橫膈輪廓清楚，無右側肋膜積液",
+  "積液後方之左下肺是否伴隨肺塌陷或實變無法評估",
+  "雙側乳房陰影重疊於下肺野、兩側肩胛骨部分重疊於外側上肺野（技術性因素）",
+  "未見氣胸、肺結節、腫塊、骨折或溶骨性病灶"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標記所見（左側中等量肋膜積液，側胸壁量測約6公分並合併肺下型成分）於影像上清楚可見，盲讀者亦獨立於同側發現同一所見，放射科標記框亦位於左側。片中除體外「L」側別標記外，無胸管、引流管、豬尾導管或任何治療性裝置，亦無引流後徵象。主動脈迂曲屬年齡相關背景變化，不與初次以肋膜積液就診的情境衝突，適合作為初次表現之影像。",
+ "description_zh": "正面站立胸部X光（PA），影像右上角可見體外「L」側別標記，氣管居中，吸氣深度與穿透度適當，兩側肩胛骨部分重疊於外側上肺野、雙側乳房陰影重疊於下肺野；除側別標記外未見任何管路、引流管、導線或植入裝置。左下肺野可見均質性緻密影，上緣呈平滑向上凸之弧形、外側沿胸壁形成向上之半月徵，左側肋膈角及左側橫膈輪廓完全消失，於側胸壁量測積液高度約6公分，符合左側中等量肋膜積液；其假性橫膈圓頂位置偏高、頂點偏外側，且與下方胃泡／結腸氣體間距明顯增大，提示合併肺下型積液，積液後方之左下肺是否伴隨肺塌陷或實變無法評估。左心緣下段被積液遮蔽（輪廓徵），心影大小估計在正常範圍，主動脈結突出、胸主動脈迂曲使上縱膈略寬。右肺野清晰，右下肺紋理輕度增加但無局灶性實變，右側肋膈角銳利、右橫膈清楚，未見氣胸、肺結節或骨折。",
+ "label_concern": ""
+}

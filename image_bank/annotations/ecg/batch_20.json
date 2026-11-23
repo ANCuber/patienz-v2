@@ -1,0 +1,323 @@
+[
+ {
+  "id": "ptbxl-STE_-4822",
+  "ecg_id": "4822",
+  "selected_code": "STE_",
+  "language": "de",
+  "source_report": "sinustachykardie lagetyp normal st-hebung in v2,v3 st-senkung in v4,v5 neg t in iii path.ekg",
+  "source_report_zh": "竇性心搏過速，電軸正常，V2、V3 ST 段上升，V4、V5 ST 段壓低，III 導程 T 波倒置，異常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "SCP 代碼 NORM（正常心電圖，likelihood 100）與報告結論「異常心電圖」（path.ekg）直接矛盾；報告另記載 V2、V3 ST 段上升、V4、V5 ST 段壓低及 III 導程 T 波倒置（與 likelihood 0 之 STE_／STD_／STACH 相符）。翻譯本身忠實，未更動。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STE_-2886",
+  "ecg_id": "2886",
+  "selected_code": "STE_",
+  "language": "de",
+  "source_report": "vorhofflimmern normocard llt st-hebung in avr   st-senkung in i,ii,avl,v4-v6 digitalisveraenderung pathologisches ekg",
+  "source_report_zh": "心房顫動，心率正常，電軸左偏，aVR ST 段上升，I、II、aVL、V4–V6 ST 段壓低，毛地黃效應（Digitalis 變化），異常心電圖。",
+  "statements_zh": [
+   {"code": "DIG", "likelihood": 100.0, "kind": "diagnostic", "zh": "毛地黃效應"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STE_-4059",
+  "ecg_id": "4059",
+  "selected_code": "STE_",
+  "language": "de",
+  "source_report": "sinusbradykardie llt st-hebung v2,3 neg. t in v1 wahrscheinlich normales ekg",
+  "source_report_zh": "竇性心搏過緩，電軸左偏，V2、V3 ST 段上升，V1 T 波倒置，很可能為正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 50.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "翻譯修正：原文「wahrscheinlich」（很可能，對應 likelihood 50）原譯為「可能」，與「möglich」（可能，對應 likelihood 35）程度不同，改為「很可能為正常心電圖」。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-STE_-2868",
+  "ecg_id": "2868",
+  "selected_code": "STE_",
+  "language": "de",
+  "source_report": "ruhe-ekg zur belastung: kompleter lsb pathologisches ekg unter belastung st-senkung in v6 (wegen lsb nicht beurteilbar) st-hebung in v2 supraventrikulÄre tachyarrhythmie",
+  "source_report_zh": "運動負荷前靜態心電圖：完全性左束支傳導阻滯，異常心電圖。運動負荷中 V6 ST 段壓低（因左束支傳導阻滯無法判讀），V2 ST 段上升，上心室性心搏過速性心律不整。",
+  "statements_zh": [
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"},
+   {"code": "LVH", "likelihood": 100.0, "kind": "diagnostic", "zh": "左心室肥厚"},
+   {"code": "ISC_", "likelihood": 100.0, "kind": "diagnostic", "zh": "非特異性缺血性變化"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": false,
+  "issues": "SCP 代碼為 LAFB（左前分支阻滯）、LVH（左心室肥厚）與 ISC_（非特異性缺血性變化），但報告記載「完全性左束支傳導阻滯」，且完全未提及左前分支阻滯或左心室肥厚；完全性左束支傳導阻滯與左前分支阻滯／左心室肥厚是互不相同的 QRS 診斷，兩者不相符。另此報告為運動負荷測試紀錄（含負荷中之 ST 變化與上心室性快速心律不整），與一般靜態 12 導程報告格式不同。翻譯本身忠實，未更動。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-STE_-8025",
+  "ecg_id": "8025",
+  "selected_code": "STE_",
+  "language": "de",
+  "source_report": "sinusrhythmus linkstyp schlechte r-progression in v1-2 st-hebung in v2 u-wellen in v3-6",
+  "source_report_zh": "竇性心律，電軸左偏，V1–V2 R 波遞增不良，V2 ST 段上升，V3–V6 可見 U 波。",
+  "statements_zh": [
+   {"code": "AMI", "likelihood": 50.0, "kind": "diagnostic", "zh": "前壁心肌梗塞"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PRCS-4058",
+  "ecg_id": "4058",
+  "selected_code": "PRC(S)",
+  "language": "en",
+  "source_report": "sinus rhythm. frequent premature atrial contraction(s). indeterminate axis. incomplete right bundle branch block. qrs(t) contour abnormality    consider inferior myocardial damage. st & t abnormality, consider    anterior ischemia or left ventricular stra",
+  "source_report_zh": "竇性心律，頻發心房早期收縮，電軸不確定，不完全性右束支傳導阻滯，QRS(T) 型態異常，考慮下壁心肌損傷；ST-T 異常，考慮前壁缺血或左心室負荷過重（strain）。",
+  "statements_zh": [
+   {"code": "ASMI", "likelihood": 50.0, "kind": "diagnostic", "zh": "前間壁心肌梗塞"},
+   {"code": "IRBBB", "likelihood": 100.0, "kind": "diagnostic", "zh": "不完全性右束支傳導阻滯"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "代碼 ASMI（前間壁心肌梗塞，likelihood 50）對應報告「考慮前壁缺血或左心室負荷過重」，報告用語為缺血而非梗塞，屬用語差異而非矛盾；IMI（likelihood 15）對應「考慮下壁心肌損傷」，未達 50 故未列入。報告之「電軸不確定」在 heart_axis 欄位為空，axis_zh 依欄位留空。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-PRCS-17870",
+  "ecg_id": "17870",
+  "selected_code": "PRC(S)",
+  "language": "en",
+  "source_report": "frequent premature atrial contractions with a short run of svt. sinus rhythm. left axis deviation. left anterior fascicular block. minor non-specific t wave flattening in v5,6. holter monitor may be helpful.",
+  "source_report_zh": "竇性心律，頻發心房早期收縮並伴有短陣上心室性心搏過速，電軸左偏，左前分支阻滯，V5、V6 輕微非特異性 T 波平坦，Holter 心電圖監測可能有幫助。",
+  "statements_zh": [
+   {"code": "LAFB", "likelihood": 100.0, "kind": "diagnostic", "zh": "左前分支阻滯"},
+   {"code": "NDT", "likelihood": 100.0, "kind": "diagnostic", "zh": "非診斷性 T 波異常"}
+  ],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "翻譯修正：原譯「建議可考慮 Holter 24 小時心電圖監測」加入了原文沒有的「24 小時」，改為「Holter 心電圖監測可能有幫助」（holter monitor may be helpful）。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-PRCS-16641",
+  "ecg_id": "16641",
+  "selected_code": "PRC(S)",
+  "language": "en",
+  "source_report": "sinus rhythm. ventricular premature contraction. anterior and inferior st-wave changes suggestive of ischaemia or non-q wave infarction.",
+  "source_report_zh": "竇性心律，心室早期收縮，前壁及下壁 ST 段變化，疑似缺血或非 Q 波性梗塞。",
+  "statements_zh": [
+   {"code": "INJAS", "likelihood": 100.0, "kind": "diagnostic", "zh": "前間壁導程心內膜下損傷"},
+   {"code": "PVC", "likelihood": 100.0, "kind": "form", "zh": "心室早期收縮"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "翻譯修正：原譯「ST 波變化」改為標準用語「ST 段變化」（原文 st-wave changes 指 ST 段變化）。",
+  "corrected": true
+ },
+ {
+  "id": "ptbxl-SR-262",
+  "ecg_id": "262",
+  "selected_code": "SR",
+  "language": "en",
+  "source_report": "sinus rhythm. normal ecg.",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SR-51",
+  "ecg_id": "51",
+  "selected_code": "SR",
+  "language": "de",
+  "source_report": "sinusrhythmus normales ekg",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SR-57",
+  "ecg_id": "57",
+  "selected_code": "SR",
+  "language": "de",
+  "source_report": "sinusrhythmus normales ekg",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SR-10",
+  "ecg_id": "10",
+  "selected_code": "SR",
+  "language": "de",
+  "source_report": "sinusrhythmus normales ekg",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SR-115",
+  "ecg_id": "115",
+  "selected_code": "SR",
+  "language": "de",
+  "source_report": "sinusrhythmus normales ekg",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SR-9",
+  "ecg_id": "9",
+  "selected_code": "SR",
+  "language": "de",
+  "source_report": "sinusrhythmus normales ekg",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SR-8",
+  "ecg_id": "8",
+  "selected_code": "SR",
+  "language": "de",
+  "source_report": "sinusrhythmus linkstyp qrs(t) abnormal    inferiorer infarkt     alter unbest.",
+  "source_report_zh": "竇性心律，電軸左偏，QRS(T) 型態異常，下壁梗塞，時期不明。",
+  "statements_zh": [],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SR-365",
+  "ecg_id": "365",
+  "selected_code": "SR",
+  "language": "de",
+  "source_report": "sinusrhythmus normales ekg",
+  "source_report_zh": "竇性心律，正常心電圖。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SR-334",
+  "ecg_id": "334",
+  "selected_code": "SR",
+  "language": "en",
+  "source_report": "sinus rhythm. no definite pathology.",
+  "source_report_zh": "竇性心律，無明確異常。",
+  "statements_zh": [
+   {"code": "NORM", "likelihood": 100.0, "kind": "diagnostic", "zh": "正常心電圖"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-SR-155",
+  "ecg_id": "155",
+  "selected_code": "SR",
+  "language": "de",
+  "source_report": "sinusrhythmus linkstyp qrs(t) abnormal    inferiorer infarkt mÖglich",
+  "source_report_zh": "竇性心律，電軸左偏，QRS(T) 型態異常，可能為下壁梗塞。",
+  "statements_zh": [],
+  "axis_zh": "電軸左偏",
+  "stadium_zh": "陳舊性",
+  "consistent_with_codes": true,
+  "issues": "代碼 ILMI（下側壁心肌梗塞，likelihood 35）較報告「可能為下壁梗塞」多出側壁，但 likelihood < 50，未列入 statements_zh，不視為矛盾。infarction_stadium1 為 Stadium III（陳舊性），報告本身未述及時期。",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-AFIB-20406",
+  "ecg_id": "20406",
+  "selected_code": "AFIB",
+  "language": "de",
+  "source_report": "vorhofflimmern/-flattern lagetyp normal 4.46                          unbestÄtigter bericht",
+  "source_report_zh": "心房顫動或撲動，電軸正常。（報告未經確認）",
+  "statements_zh": [
+   {"code": "AFIB", "likelihood": 100.0, "kind": "rhythm", "zh": "心房顫動"}
+  ],
+  "axis_zh": "電軸正常",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ },
+ {
+  "id": "ptbxl-AFIB-8215",
+  "ecg_id": "8215",
+  "selected_code": "AFIB",
+  "language": "de",
+  "source_report": "normokardes vorhofflimmern                              linkstyp",
+  "source_report_zh": "心房顫動，心率正常，電軸左偏。",
+  "statements_zh": [
+   {"code": "AFIB", "likelihood": 100.0, "kind": "rhythm", "zh": "心房顫動"}
+  ],
+  "axis_zh": "",
+  "stadium_zh": "",
+  "consistent_with_codes": true,
+  "issues": "",
+  "corrected": false
+ }
+]

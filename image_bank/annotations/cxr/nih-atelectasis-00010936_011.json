@@ -1,0 +1,41 @@
+{
+  "id": "nih-atelectasis-00010936_011",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA",
+  "technical_quality": "Adequate erect PA film: good inspiration (about 9 posterior ribs above the right hemidiaphragm), minimal rotation (spinous processes roughly midway between the medial clavicular ends), adequate penetration (thoracic vertebrae visible through the cardiac shadow), apices and both costophrenic angles included. Scapular medial borders project slightly over the upper lateral lung fields; bilateral breast shadows overlie the lower zones. External L marker at image upper right confirms conventional orientation.",
+  "target": {
+    "finding": "atelectasis",
+    "visible": "yes",
+    "laterality": "right",
+    "zone": "lower",
+    "size_cm": 5,
+    "confidence": 0.6
+  },
+  "laterality_sources": {
+    "bbox": "right",
+    "reader_a": "left",
+    "reader_b": "right",
+    "adjudicator": "right"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "external radiographic L side marker (not a patient device)",
+      "location": "image upper-right corner, over the patient's left shoulder region outside the thorax",
+      "zh": "外置左側（L）方位標記，位於影像右上角，非醫療裝置"
+    }
+  ],
+  "other_findings": [
+    "左側縱膈輪廓於主動脈弓／肺動脈幹段略為突出，年輕女性常見之正常變異，無明確肺動脈高壓徵象",
+    "心影大小約在正常上限（CTR 約 0.50），心影偏向脊椎左側，右心緣被脊椎及內側右下肺野之密度部分遮蔽",
+    "左側橫膈與右側約等高（相對輕度抬高），可能為正常變異；左下橫膈下可見胃泡",
+    "左肺門位置略高於右肺門，屬正常解剖關係，無上肺野混濁或 luftsichel 徵象",
+    "兩側乳房陰影重疊於下肺野，肩胛骨內緣部分重疊於上外側肺野",
+    "兩側肋膈角銳利，無肋膜積液或氣胸；肋骨、鎖骨與脊椎無骨折，無皮下氣腫"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標的病灶（右下肺野內側、鄰近右心緣之次節段性肺擴張不全）在本片可辨識但較細微；片中無胸管、引流管、氣管內管或任何治療性裝置，亦無術後或引流後跡象，其餘所見（肺動脈幹段略突出、左橫膈相對輕度抬高）均屬輕微或正常變異，不與初次就診情境衝突。適合作為初次就診之影像，惟教學上宜提示學員注意右心緣旁之密度變化。",
+  "description_zh": "站立正面（PA）胸部X光片，吸氣量足夠、旋轉輕微、穿透度適當，影像右上角可見外置 L 方位標記，未見任何導管、引流管、起搏器或其他醫療裝置。右下肺野內側、緊鄰右心緣處可見範圍約 4×6 公分的模糊淡薄密度增加，伴支氣管血管紋理聚集、擁擠，右心緣局部輪廓變得不清，符合右下肺野內側之次節段性／線狀肺擴張不全，未見明確肺葉塌陷、肺門明顯移位或橫膈顯著上抬。左肺野透亮清晰，兩側未見實質化、腫塊、肋膜積液或氣胸，兩側肋膈角銳利。心影大小約在正常上限（CTR 約 0.50）且偏向脊椎左側，左側縱膈輪廓於主動脈弓／肺動脈幹段略為突出，左側橫膈與右側約等高呈相對輕度抬高，左肺門略高於右肺門屬正常關係。骨骼結構完整，兩側可見乳房陰影重疊於下肺野，肩胛骨內緣部分重疊於上外側肺野。",
+  "label_concern": ""
+}

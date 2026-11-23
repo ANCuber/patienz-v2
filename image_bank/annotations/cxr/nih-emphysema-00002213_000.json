@@ -1,0 +1,49 @@
+{
+ "id": "nih-emphysema-00002213_000",
+ "reviewed_by": "ai-vision-3reader",
+ "view": "PA",
+ "technical_quality": "Adequate. Penetration adequate (thoracic spine and retrocardiac region visible through the heart). Minimal rotation (medial clavicles roughly equidistant from the spinous processes; right medial clavicle projects slightly higher). Inspiration moderate (about 6-7 anterior ribs above the left dome); the right hemidiaphragm is elevated, so the right base is crowded. Apices and both costophrenic angles included; both lower zones partially overlaid by breast shadows. An 'L' lead marker with technologist initial at the upper right of the image confirms conventional orientation. No motion or collimation artefact.",
+ "target": {
+  "finding": "pulmonary emphysema",
+  "visible": "yes",
+  "laterality": "bilateral",
+  "zone": "upper",
+  "size_cm": -1,
+  "confidence": 0.55
+ },
+ "laterality_sources": {
+  "bbox": null,
+  "reader_a": "bilateral",
+  "reader_b": "left",
+  "adjudicator": "bilateral"
+ },
+ "agreement": "partial",
+ "devices": [
+  {
+   "type": "External 'L' side lead marker with adjacent technologist initial",
+   "location": "Upper right corner of the image, projecting over the patient's left shoulder soft tissue, outside the thorax",
+   "zh": "體外「L」左側鉛字標記（含技師縮寫）"
+  },
+  {
+   "type": "External corrugated / coiled tubing-like artefact (clothing zipper or external tubing; not intrathoracic, not a chest tube or drain)",
+   "location": "Lower right edge of the image, over the patient's left lateral lower chest wall / flank soft tissue, outside the pleural cavity",
+   "zh": "體外波紋狀管路／衣物拉鍊偽影（左側下胸壁外側，位於胸腔外）"
+  }
+ ],
+ "other_findings": [
+  "胸主動脈迂曲延長、主動脈結突出並向左側膨出，上縱膈因而增寬（弓部約4公分），沿脊柱左側可見降主動脈，符合老年性主動脈擴張／動脈硬化，疑有管壁鈣化",
+  "右側橫膈明顯上抬（較左側高約兩個肋間，頂點約在前第5–6肋高度），右下肺野支氣管血管紋理擁擠，考慮橫膈膨升或輕度右下肺容積減少",
+  "兩下肺野（右側較明顯）支氣管血管及網狀間質紋理粗糙增加，右中下肺野可見細橫向線狀影（增厚之水平裂或盤狀肺擴張不全），呈慢性支氣管炎型態，未見實質浸潤、實變或腫塊",
+  "雙側肺尖輕度肋膜增厚／肺尖帽（低信心，與第一肋及鎖骨重疊）",
+  "心臟大小約在正常上限（CTR約0.48–0.50），無特定心腔擴大，心影部分被迂曲主動脈遮蔽",
+  "兩側肋膈角大致銳利，未見肋膜積液或氣胸；右側肋膈角部分受乳房陰影遮蔽",
+  "左側橫膈下可見胃泡",
+  "胸椎退化性變化伴邊緣骨刺及輕度側彎，未見肋骨骨折或溶骨性病灶",
+  "雙側乳房陰影重疊於兩下肺野"
+ ],
+ "treatment_evidence": false,
+ "first_presentation_suitable": true,
+ "suitability_reason": "標籤病灶（肺氣腫變化：雙側肺野透亮度增加、周邊血管紋理稀疏，左側及上肺野較明顯）在片上可見，雖徵象輕微但盲讀者亦獨立指出；胸腔內無任何胸管、引流管或治療裝置，體外波紋狀偽影位於胸腔外。其餘發現（主動脈迂曲、右橫膈上抬、下肺野間質紋理增粗、退化性脊椎）皆為83歲女性常見之慢性／偶然發現，不與首次以肺氣腫相關症狀（如慢性呼吸困難）就診之情境衝突。",
+ "description_zh": "正面（PA）胸部X光，穿透度適當、輕度旋轉、吸氣深度中等，兩下肺野部分受雙側乳房陰影遮蔽，影像右上角可見體外「L」鉛字標記，右下緣可見體外波紋狀管路／衣物偽影投影於左側下胸壁外側，位於胸腔外。雙側肺野透亮度增加並見周邊血管紋理稀疏，以左側上、中肺野較右側明顯，屬瀰漫性、無法以公分量測之肺氣腫變化；兩下肺野（右側較明顯）支氣管血管及網狀間質紋理粗糙增加，右中下肺野有一細橫向線狀影（增厚水平裂或盤狀肺擴張不全），未見實質浸潤、腫塊、氣胸或肋膜積液，兩側肋膈角大致銳利。右側橫膈明顯上抬（較左側高約兩個肋間），右下肺野血管紋理擁擠，左側橫膈下可見胃泡。胸主動脈迂曲延長、主動脈結突出向左膨出致上縱膈增寬（弓部約4公分），符合老年性主動脈擴張／硬化，心臟大小約在正常上限（CTR約0.5）。胸椎退化性骨刺並輕度側彎，雙側肺尖疑有輕度肋膜增厚；胸腔內未見任何導管、引流管、心律調節器或其他治療裝置。",
+ "label_concern": "肺氣腫徵象輕微：僅見透亮度增加與周邊血管稀疏（左側較明顯），無典型過度充氣（橫膈未變平，右側橫膈反而上抬，前肋僅約6–7根），部分透亮度差異可能與乳房不對稱／輕度旋轉有關；標籤為NLP擷取，建議人工確認。"
+}

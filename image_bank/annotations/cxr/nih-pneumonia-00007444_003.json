@@ -1,0 +1,47 @@
+{
+  "id": "nih-pneumonia-00007444_003",
+  "reviewed_by": "ai-vision-3reader",
+  "view": "PA (frontal, erect); 'L' side marker with technologist initials at image upper-right = patient left, conventional orientation (cardiac apex, aortic knob and gastric bubble on image right)",
+  "technical_quality": "Adequate: good inspiration (9-10 posterior ribs), minimal rotation, adequate penetration; both scapulae partly overlap the lateral upper/mid lung fields; neck and both costophrenic angles included",
+  "target": {
+    "finding": "pneumonia",
+    "visible": "yes",
+    "laterality": "left",
+    "zone": "middle",
+    "size_cm": 7,
+    "confidence": 0.65
+  },
+  "laterality_sources": {
+    "bbox": "left",
+    "reader_a": "right",
+    "reader_b": "right",
+    "adjudicator": "left"
+  },
+  "agreement": "partial",
+  "devices": [
+    {
+      "type": "Tunneled dual-lumen central venous catheter (dialysis-type), right internal jugular approach, with a redundant hairpin loop at the right neck / supraclavicular region; shaft descends along the right paratracheal mediastinum / SVC; tip projects at the cavoatrial junction (about the level of the lower right hilum)",
+      "location": "Right neck / right paratracheal mediastinum, tip at SVC-right atrial junction",
+      "zh": "右內頸靜脈隧道式雙腔中心靜脈導管（疑為透析導管），右頸根部呈髮夾狀迴繞，尖端位於上腔靜脈與右心房交界處"
+    },
+    {
+      "type": "Radiographic side marker 'L' with technologist initials (external marker, not a patient device)",
+      "location": "Image upper-right corner (patient's left shoulder region)",
+      "zh": "「L」側別鉛字標記（外部標記）"
+    }
+  ],
+  "other_findings": [
+    "右側橫膈較左側上抬約3至4公分，右側肋膈角仍銳利，考慮輕度容積減少或膈肌抬高變異，肺底積液可能性低",
+    "右下肺野內側、右心緣旁淡薄模糊影，右心緣下段輪廓部分不清（兩位讀片者所見）；研判多為上抬之橫膈／肝臟與心影重疊或輕度基底肺膨脹不全，未見明確實變或空氣支氣管徵",
+    "心影大小約在正常上限（心胸比約0.5），無明確心臟擴大",
+    "雙側肺門血管紋理略增多，可能為輕度血管充血（低確定度）",
+    "右上縱膈／右氣管旁輪廓稍突出，多為中心靜脈導管與上腔靜脈投影所致，無明確腫塊或氣管偏移",
+    "雙側肩胛骨部分重疊於肺野外側（技術因素）",
+    "左橫膈下可見胃泡；無氣胸，無明顯肋膜積液，骨骼及軟組織無明顯異常"
+  ],
+  "treatment_evidence": false,
+  "first_presentation_suitable": true,
+  "suitability_reason": "標記之肺炎病灶（左中下肺野、左肺門下方心緣旁之斑片狀浸潤）可辨識，片中無胸管、引流管等針對該病灶之治療器材。右頸隧道式透析導管代表慢性病史（如末期腎病接受血液透析）而非肺炎之治療，只要病例設定中寫入透析與導管病史，即不與首次因肺炎就診之情境衝突。惟病灶較淡且呈斑片狀，且右側橫膈上抬與右心緣旁模糊影可能使學生誤判為右側病灶，教學時應以左側為標準答案並留意此陷阱。",
+  "description_zh": "正面胸部X光（PA），吸氣量足夠、旋轉輕微，雙側肩胛骨部分重疊於肺野外側。右內頸靜脈路徑可見一條隧道式雙腔中心靜脈導管（疑為透析導管），於右頸根部／鎖骨上區呈髮夾狀迴繞後沿右氣管旁縱膈下行，尖端投影於上腔靜脈與右心房交界處（約右肺門下緣高度）。左中下肺野於左肺門下方、左心緣旁可見約7公分範圍之斑片狀、邊界不清之肺泡性浸潤陰影，血管紋理模糊，左心緣下段輪廓稍不清，符合左側肺炎（與放射科框選位置一致）。右側橫膈較左側上抬約3至4公分，右心緣旁／右下肺野內側可見淡薄模糊影，研判多為橫膈上抬與心影重疊或輕度基底肺膨脹不全，右側肋膈角銳利。心影大小約在正常上限，雙側肺門血管紋理略增多；無氣胸、無明顯肋膜積液，未見胸管或引流管。",
+  "label_concern": "標記本身正確（左側肺炎，與放射科框選一致），但病灶較淡：兩位AI讀片者皆未指出左側病灶，而將右心緣旁因橫膈上抬造成之模糊影誤判為右下肺炎；使用本片時應以左中下肺野為標準答案。"
+}

@@ -1,0 +1,43 @@
+{
+ "view": "PA (frontal), L marker present at image upper right confirming conventional orientation",
+ "technical_quality": "Adequate penetration and inspiration; no significant rotation. Lung bases / costophrenic angles partially cropped at the inferior edge of the image; scapulae partially overlap the lateral upper lung fields.",
+ "target_finding_visible": "uncertain",
+ "laterality": "bilateral",
+ "zone": "upper",
+ "size_cm": -1,
+ "devices": [
+  {
+   "type": "L side marker (external)",
+   "location": "image upper right corner, over patient's left shoulder region"
+  },
+  {
+   "type": "round radiopaque disc, approx 1.5 cm (external artifact - likely marker button/clothing snap)",
+   "location": "patient's left upper chest / clavicular region, adjacent to the L marker"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Increased lucency with attenuated peripheral vascular markings (suggestive but subtle; features that may support emphysema)",
+   "laterality": "bilateral",
+   "zone": "upper"
+  },
+  {
+   "finding": "Narrow, vertical (tubular) cardiac silhouette with low-lying diaphragms suggesting mild hyperinflation",
+   "laterality": "none",
+   "zone": "middle"
+  },
+  {
+   "finding": "Possible mild prominence of the left hilum / main pulmonary artery segment (equivocal)",
+   "laterality": "left",
+   "zone": "middle"
+  },
+  {
+   "finding": "Costophrenic angles not fully included in the field of view (cannot exclude small effusion)",
+   "laterality": "bilateral",
+   "zone": "lower"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.55,
+ "description_zh": "PA 胸部X光，吸氣尚可，雙側肋膈角部分被裁切於影像下緣之外，兩側肩胛骨部分重疊於上肺野外側。兩側上肺野透亮度略增、周邊血管紋理稀疏，心影狹長呈垂直型，橫膈位置偏低，為可能符合肺氣腫之表現，惟變化輕微且非特異性。左側肺門／肺動脈幹輪廓略顯突出，未見明顯肺實質浸潤、腫塊或肋膜積液。影像右上角（病患左肩部）可見 L 側別標記及一圓形金屬外部異物，未見胸管、引流管或其他治療裝置。"
+}

@@ -1,0 +1,37 @@
+{
+ "view": "PA",
+ "technical_quality": "Adequate PA film: good inspiration (about 9-10 posterior ribs), no significant rotation, adequate penetration with vertebral bodies faintly visible behind the heart. Bilateral breast shadows overlie the lower zones and slightly reduce lower-zone conspicuity. Left upper corner of the image has a dark collimation/blanking bar outside the patient.",
+ "target_finding_visible": "uncertain",
+ "laterality": "left",
+ "zone": "lower",
+ "size_cm": 1.5,
+ "devices": [
+  {
+   "type": "L side marker with adjacent small text",
+   "location": "image upper-right corner, outside the patient (patient's left, above the left shoulder)"
+  },
+  {
+   "type": "round radiopaque disc marker / external artifact (coin- or lead-disc-like)",
+   "location": "image upper-right corner above the L marker, outside the patient (patient's left)"
+  },
+  {
+   "type": "rectangular collimation / digital blanking bar",
+   "location": "image left edge, upper portion, outside the patient (patient's right)"
+  }
+ ],
+ "abnormalities": [
+  {
+   "finding": "Subtle rounded soft-tissue density superimposed on the inferior left hilum / left perihilar region; may represent a small nodule but a vascular confluence cannot be excluded",
+   "laterality": "left",
+   "zone": "lower"
+  },
+  {
+   "finding": "Mildly prominent bilateral hilar vascular markings, likely normal variant / vascular in nature",
+   "laterality": "bilateral",
+   "zone": "middle"
+  }
+ ],
+ "treatment_evidence": false,
+ "confidence": 0.3,
+ "description_zh": "胸部X光正面（PA）片，吸氣量足夠、無明顯旋轉，雙側乳房陰影重疊於下肺野。心臟大小正常，縱膈輪廓無明顯異常，雙側橫膈平滑、肋膈角銳利，無肋膜積液或氣胸。左側肺門下方／左下肺野內側可見一疑似約1.5公分的圓形淡薄密度影，與肺門血管重疊，無法排除為血管交會影，建議與舊片比較或以胸部CT進一步評估；其餘肺野未見明確結節、實質化或腫塊。未見胸管、中心靜脈導管、心律調節器或手術夾等植入物，僅見影像右上角的L側別標記及一圓形外部標記物。"
+}
