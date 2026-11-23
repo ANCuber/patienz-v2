@@ -271,3 +271,169 @@ python tools/fetch_image_bank.py --max 2        # 實際下載（ECG/CXR/XR/CT/U
 **測試**：新增 `tests/test_build_ptbxl_bank.py`（19 tests：分層/年齡帶/性別/clean-normal/門檻/cell 分桶/覆蓋狀態/findings 映射）、image bank 人口學 tiebreak 3 tests、grading ECG 同義 12 tests → 全套 **139 passed**；所有新檔 py_compile 通過。
 
 **你要操作的**：下載兩個 CSV（開放存取免登入）後跑 `build_ptbxl_bank.py`（見 `docs/image_bank.md` A 節）。渲染需 `pip install wfdb`。`--list-only` 可先看覆蓋不下載。
+
+### §6-A 擴充：ECG 年齡分層改為五個生理帶（已完成）
+
+原本的 `0/40/60`（3 帶 = 6 cells/statement）改為 **`0,19,36,51,66` → 0-18／19-35／36-50／51-65／66+（5 帶 = 10 cells/statement）**，切點取在心電圖本身的生理轉折上，讓同一帶內的正常變異最小化：`0-18` 成長發育期（幼年型 T 波倒置、胸壁薄致電壓偏高）／`19-35` 基線最穩定／`36-50` LVH 初步跡象浮現／`51-65` CAD 與缺血性 ST-T 顯著上升／`66+` AFib、束支阻滯、纖維化與多重病理疊加。
+
+**用實際資料重跑（`--list-only`，真實 21,799 筆）**：**71/71 statements 皆有影像、23/23 診斷子類別覆蓋、8 ok／63 partial／0 none**，共 **496 張**（cell 覆蓋 496/710 = **69.9%**）。百分比比 3 帶時的 84.0% 低是**分母變大**（目標格數 426 → 710）所致，絕對張數是 358 → 496，覆蓋是變好不是變差；`66+` 的 M/F 兩格 **71/71 全滿**，`0-18` 僅約 22%——這是 PTB-XL 只有 301 筆未成年紀錄的人口結構限制，不是工具缺陷。PTB-XL 依去識別化規範把 >89 歲記為 `age=300`（293 筆），已用測試釘住它必須併入 `66+` 而非自成一帶。
+
+先前評估過的 9 層發展階段分法（新生兒／嬰幼兒／兒童／青少年…）**醫學上正確但 PTB-XL 撐不起來**：全庫 0 筆新生兒、3 筆嬰幼兒、20 筆兒童，切出來的帶會直接是空的，故不採用。
+
+### §6-A 擴充：NIH ChestX-ray14 胸部 X 光影像庫（已完成）
+
+以與 ECG 相同的架構新增胸部 X 光影像功能，年齡分層採 **`0,19,40,60,80` → 0-18／19-39／40-59／60-79／80+**（5 帶 × 2 性別 = **10 cells/finding**），切點取在胸片判讀基準的轉折：`0-18` 胸廓仍在發育（心胸比與縱膈影標準和成人不同）／`19-39` 成人基線、異常率最低／`40-59` 吸菸與職業暴露累積，結節/腫塊出現／`60-79` COPD、心衰竭、肺炎盛行率高峰／`80+` 脊柱後凸與肺纖維化改變基礎外觀。
+
+| 產出 | 內容 | 檔案 |
+|---|---|---|
+| 建庫工具 | 對 14 個 NIH 所見＋乾淨的 `No Finding` 正常片，在 性別×年齡帶 各 cell 挑一張最佳影像 → 複製進 `image_bank/cxr/` → 寫 manifest → 產覆蓋報告。純 stdlib（`csv`，不需 pandas），Pillow 只在 `--max-px` 縮圖時延遲載入。 | `tools/build_nih_cxr_bank.py`（新） |
+| 共用底層 | 兩支建庫工具共用的年齡分帶／性別正規化／覆蓋統計／報告輸出／manifest 原子寫入，避免 ECG 與 CXR 兩邊各自漂移。`build_ptbxl_bank.py` 已改為改用它（原函式名以 re-export 保留，測試不受影響）。 | `tools/bank_common.py`（新） |
+| CXR 同義詞 | 新增 11 組胸片所見中英同義（肺不張／心臟肥大／肺實變／肺水腫／肺氣腫／肺纖維化／橫膈疝／肺浸潤／肺腫塊／肺結節／肋膜增厚），讓中文 X 光報告能對到影像所見。 | `util/grading_normalize.py` |
+
+**四個關鍵的安全決策（與 ECG 不同之處）**
+
+1. **`verified` 預設相反，是刻意的。** PTB-XL 是心臟科醫師標註＋`validated_by_human`，故寫 `verified:true`；ChestX-ray14 的 14 個標籤是**用 NLP 從報告文字探勘**而來，作者自陳約 90% 準確度（Wang et al., CVPR 2017），Oakden-Rayner 等人 2020 的人工稽核（*Acad Radiol*）更指出 Pneumonia／Infiltration／Consolidation 雜訊最大。十張錯一張放在「要學生判讀」的影像上不可接受，因此預設 `--verify bbox`：**只有 `BBox_List_2017.csv` 裡放射科專科醫師實際畫過框的影像**（984 框／880 張／涵蓋 8 個所見）寫 `verified:true`，其餘一律 `verified:false`，在你逐張複核前**完全不會被檢索到**。
+2. **只採計「這一張自己被確認的所見」。** 某片同時帶 `Mass|Effusion` 但醫師只框了 Mass 時，`findings` 只寫 `pulmonary mass`，另一個放進 `co_findings` 僅供追溯——**未確認的共存標籤永遠不能成為這張片被叫出來的理由**。
+3. **`Cardiomegaly` 硬性只收 PA 片。** AP／床邊攜帶式攝影會放大心影、心胸比無法判讀，用 AP 片教「心臟肥大」等於教錯讀法。
+4. **同義詞刻意不收有歧義的裸英文。** 檢索是把片子的所見詞拿去報告裡做子字串比對，若收 `mass` 會被「massive effusion」誤觸、`effusion` 被「pericardial effusion」誤觸、`emphysema` 被「subcutaneous emphysema」、`hernia` 被「inguinal hernia」誤觸；中文型別才是主要比對路徑，捨棄這些裸字沒有實際召回損失。另有兩個資料面細節：`BBox_List_2017.csv` 把 Infiltration 拼成 `Infiltrate`（已做別名對應，否則沒有一張浸潤片能被確認）；年齡欄的已知轉錄錯誤（148–155、411–414）直接剔除——這與 PTB-XL 的 `age=300`（>89 歲去識別化代碼，須併入最高帶）性質不同。
+
+**App 端零改動**：`page/examination.py` 的取圖是 modality-generic 的，`resolve_modality` 早已把「Chest X-ray／胸部X光／CXR」對到 `CXR`，且 `CXR ∈ SINGLE_REGION_MODALITIES`（正常胸片不需部位比對）。所以建完庫即可用。
+
+**測試**：新增 `tests/test_build_nih_cxr_bank.py`（49 tests：年齡帶邊界、`058Y`/`003M`/`012D` 與資料錯誤剔除、標籤解析、bbox 別名、每 cell 選片、bbox 優先、PA 優先、共存所見越少越好、Cardiomegaly 拒收 AP、乾淨正常片、一人一片、去重後不謊報覆蓋、三種 `--verify` 政策、entry 結構、CSV 讀取、覆蓋報告）、`tests/test_bank_common.py`（23 tests：分帶／兩套性別編碼／覆蓋統計／報告排序／manifest 原子寫入與容錯）、`tests/test_image_bank.py` +11 tests（**直接用建庫工具產出的 entry 跑檢索**：中文報告能舉證六種所見、無關報告不顯示、`massive effusion` 不會叫出肺腫塊片、`pericardial effusion` 不會叫出肋膜積水片、未確認片不顯示、共存標籤不能叫片、正常/異常不互串、五個年齡帶的人口學 tiebreak、來源標示為真實非合成）、`tests/test_grading_normalize.py` +19 tests → 全套 **260 passed**；所有新檔 py_compile 通過。
+
+**端到端驗證（本機無 NIH 原始 CSV）**：以一份 20,000 列、依 ChestX-ray14 真實標籤頻率加權產生的合成 `Data_Entry_2017.csv`＋`BBox_List_2017.csv` 完整跑過 `--list-only` 與正式建庫兩條路徑：150 張全部選出並複製、manifest 可被 `util/image_bank.load_manifest` 正確載入、重跑不重複新增（冪等）、以「胸部X光：右側肋膜積水。」檢索得到肋膜積水片、以「兩側肺野清晰。」正確回傳 `None`。**真實數字（哪些 finding 會是 `partial`/`none`）必須由你下載官方 CSV 後執行 `--list-only` 才算數**——例如 Hernia 全庫僅 227 張，10 個 cell 很可能填不滿。
+
+**你要操作的**：到 <https://nihcc.app.box.com/v/ChestXray-NIHCC>（免登入）下載 `Data_Entry_2017.csv`、`BBox_List_2017.csv` 與 `images_001..012.tar.gz`（約 42 GB，NIH 未提供單檔 URL，無法串流），解壓後執行 `build_nih_cxr_bank.py`（指令見 `docs/image_bank.md`）。
+
+## §6-A 修正：影像不得主張報告沒說的事（互斥屬性閘，已完成）
+
+**發現經過**：實機測試一個 20 歲女性急性心肌梗塞的案例時，文字報告描述 II、III、aVF 導程 ST 段上升
+（下壁 STEMI），配出來的心電圖圖說卻寫 `ischemic in anteroseptal leads`（前間壁）。
+
+**根因（三個，皆以真實影像庫實測確認）**
+
+1. **上位詞可單獨過關，caption 卻顯示具體定位**：`build_ptbxl_bank.py` 為了讓中文報告比對得到，
+   把 `myocardial infarction` 這類上位詞和具體所見一起塞進 `findings`，而 `_evidence_count`
+   只要任一個成立就給分。報告寫「心肌梗塞」→ 上位詞成立 → 顯示一張 caption 寫著 anteroseptal 的片。
+   暴露面：476 張已審閱異常 ECG 中 236 張帶上位詞，其中 **117 張的具體所見帶定位**。
+2. **定位從未被檢查**：`surface_forms('inferior myocardial infarction')` 只有英文字串、沒有中文，
+   導程名稱（II、III、aVF）完全不在任何詞彙表；`STEMI`／`NSTEMI` 也不在。
+3. **人口學排序跨越不同所見**：符合安全閘的候選 91 張全部同分，勝負純由年齡性別決定，
+   於是一張 19 歲女性的 `sinus tachycardia` 打敗了報告的主診斷。
+
+**解法（五條規則，`util/image_bank.py`）**
+
+抽出四個互斥屬性族並比對：`territory`（心肌定位，由部位名**或 ECG 導程**推得）、
+`completeness`（完全性/不完全性）、`lesion`（梗塞/損傷/缺血）、`laterality`（左右側）。
+
+1. 矛盾即淘汰（定位以集合交集判斷，不相交才淘汰）
+2. 上位詞不能單獨成立（除非定位也相符）
+3. 人口學只在臨床同級之間排序
+4. 主要所見取自結論子句（「符合／考慮／impression…」），順帶提及的所見不能贏過結論
+5. 報告沒定位就不給帶定位的片
+
+對側性（reciprocal）子句的導程不計入定位，否則「aVL 呈對側性 ST 壓低」會把純下壁誤判成下側壁。
+
+**配套**
+
+- `util/grading_normalize.py`：補 `STEMI`/`NSTEMI`，新增 16 組定位所見的中英同義組
+- `tools/build_ptbxl_bank.py` / `tools/build_nih_cxr_bank.py`：`findings` 只放具體所見，
+  上位詞移到 `umbrella_terms`，屬性寫入 `attributes`（由 `image_bank.claim_attributes()` 算，
+  與檢索共用同一份詞彙，不可能對不上）
+- `instruction_file/examiner_instruction_text.txt`：ECG 出現 ST-T 變化或病理性 Q 波時**必須列出導程並標示心肌部位**，
+  對側性變化必須明講，傳導阻滯必須寫明完全性/不完全性；影像檢查病灶必須寫明左右側
+- `tools/annotate_image_bank.py`（新）：臨床審閱流程。`--export-csv` 產待審清單 →
+  逐張看圖填 `verified` 與 `laterality` → `--apply-csv` 寫回；`--backfill` 就地升級舊 manifest 免重建
+- `tools/check_image_bank.py`：情境由 17 擴到 24（新增定位正確性與三個定位安全閘）
+
+**驗證**
+
+| 情境 | 修正前 | 修正後 |
+|---|---|---|
+| 下壁 STEMI（中文完整報告）| sinus tachycardia [F/19] | **inferior myocardial infarction** |
+| 下壁 STEMI（英文導程）| non-specific ST elevation | **inferior myocardial infarction** |
+| 前間壁 STEMI | anterior MI | **anteroseptal MI** |
+| 側壁缺血 | ischemic in **infero**lateral leads | ischemic in **lateral** leads |
+| 僅寫心肌梗塞（無定位）| **anteroseptal** MI | non-specific ST elevation |
+| 僅寫心肌缺血（無定位）| ischemic in **anteroseptal** leads | non-specific ischemic |
+
+召回率（69 種所見各一份寫清楚的報告）：正確命中 62/69，另 2 張為「影像較寬但不矛盾」
+（paroxysmal SVT→SVT、voltage-criteria LVH→LVH），5 張不出圖是 PTB-XL 罕見措辭，修正前亦然。
+**整體出圖率不變，錯配轉為正確配對。**
+
+測試：316 通過（新增 45），`tools/check_image_bank.py` 24/24。
+
+**待辦（需臨床人力）**：`image_bank_review.csv` 已產出 140 筆待審——81 張 NIH 未審閱影像
+＋59 張有側性但尚未標註的影像。側性未標註前，該閘沒有東西可比對，行為與修正前相同。
+
+
+## §6-A 影像優先：寫死的報告、每張影像的完整標註、逐張三讀審閱（已完成）
+
+**問題**：examiner 每次即時生成報告，影像事後配對；manifest 每張只記一個 statement。實測發現
+71%（354/496）的心電圖帶有心臟科醫師驗證過、但 manifest 沒記的其他 statement；電軸、梗塞分期、
+原始判讀都沒進來；41 張 MI 類心電圖沒有一張編有 ST 上升 —— 第一版的兩個「急性 STEMI」模板配到的
+其實是陳舊性梗塞片。心電圖影像標題還直接印著診斷。
+
+**做法**
+
+1. **寫死報告**：`Problem.檢查預期所見`（examiner markdown 格式＋`[ABNORMAL]/[NORMAL]`）由 `page/examination.py`
+   逐字送出、不呼叫模型；`problem_setter` schema 與指令新增此欄位，隨機出題也一樣確定性。
+2. **影像優先綁定**（`util/case_imaging.py`）：出題後先選片、把影像完整標註交給改寫步驟；改寫版只在
+   「仍檢索到同一張、且影像每項驗證所見都已提到」時採用。改寫器失敗／無金鑰時保留原文，永不阻擋出題。
+3. **完整標註**（`tools/enrich_image_bank.py`）：PTB-XL 全部 statement／電軸／分期／原始判讀／訊號品質寫入
+   `annotation`；其他驗證 statement 成為 `co_findings_validated`，檢索視為影像主張（定位聯集）、排序偏好
+   「報告沒提的驗證所見最少」、風險提示逐一列出。
+4. **逐張視覺審閱 workflow**：149 張胸片 × 3 位獨立讀片員（知標籤／盲讀／仲裁）→ `image_bank/annotations/cxr/`；
+   496 筆原始判讀翻譯＋逐筆核對 → `image_bank/annotations/ecg/`。仲裁一致且與定位框相符時寫入**暫定**側別
+   （`laterality_source`，非 `laterality_reviewed`）。
+5. **重新渲染 496 張心電圖**（`tools/rerender_ecg_images.py`）為中性標題。
+6. **10 份模板全部依影像實際所見重寫**：ECG-1/2 改為陳舊性／年代不明梗塞、ECG-3 改為速率正常的 AF、
+   ECG-5 依原判讀（98/40、IRBBB）；整體印象只寫主要所見。
+
+**過程中修掉的檢索缺陷**：「間隔」誤判為中隔；括號被當句界（「第三度（完全性）房室傳導阻滯」對不到）；
+LBBB 型態描述的導程被讀成梗塞定位；co-finding 的「不完全性」污染影像主 statement 的 completeness；
+「整體印象：」冒號後的所見不算結論。
+
+**逐張審閱完成後的結果與回饋**（149/149 胸片 `ai-vision-3reader`、496/496 心電圖判讀翻譯核對）：
+
+- 仲裁者對「標籤所見在片上看得到嗎」：**105 yes／40 uncertain／4 no**。4 張 `no` 由 `find_image` 直接排除
+  （兩張 NIH「Emphysema」其實是 18 歲女性正常片與皮下氣腫、一張橫膈疝氣、一張引流後氣胸）；40 張 `uncertain`
+  排序落在所有看得清楚的片之後，圖下方 🔴 引述仲裁者疑慮；`label_concern`、`treatment_evidence` 進風險提示；
+  臨床教師 `clinician_reviewed` 壓過 AI 讀片。
+- 91 張胸片寫入暫定側別（定位框＋兩位讀片員一致），13 張側別衝突留空。
+- 讀片員把側別鉛字、技師縮寫、去識別遮蔽框也列為「裝置」（185 筆）—— `device_names()` 過濾掉，學生不會看到
+  「影像上可見 L 側別標記」。
+- **五份胸片模板全部依仲裁讀片逐句重寫**：CXR-1 刪掉片上沒有的「縱膈左移」、補上右肺門旁緻密影、port-A 導管走向
+  改為「無法追蹤」；CXR-2 的中心靜脈導管其實是**隧道式雙腔透析導管**，病人改為血液透析者、報告刪掉片上沒有的
+  空氣支氣管徵並寫進右橫膈上抬的讀片陷阱；CXR-3 心胸比 0.65→0.6、右肋膈角改為「被軟組織遮蔽、少量積水不排除」；
+  CXR-4 腫塊 5 公分→8×11 公分、鈕扣影 2→3 枚、補上鈣化肺門結節；CXR-5 原片 `nih-nodule-00002578_000` 被仲裁為
+  「框內僅隱約 1 公分淡影、能見度不確定」，**換片**為 `nih-nodule-00012374_000`（男 34，2.2 公分清楚結節），
+  病人人口學隨片改寫；ECG-4 附的胸片刪掉片上沒有的 Kerley B 線與血管重分布。
+- 檢索規則 4 修正：報告有「整體印象」標頭時只有該標頭算結論，具體發現裡的「研判為……或輕度肺膨脹不全」
+  不再把肺膨脹不全升格成主要所見（CXR-2 因此曾配錯到肺擴張不全片）。
+
+**對抗式程式碼審查（workflow，每條發現由 3 位獨立反駁者複核）修掉的 5 個缺陷**：
+
+1. **（高）PTB-XL 的束支阻滯 statement 不在受控詞彙裡**：`incomplete right bundle branch block` 等字串在
+   `grading_normalize` 沒有任何群組，`surface_forms` 只回傳英文原字，中文報告永遠對不上。後果有兩個：
+   模板 ECG-5 的圖下方竟寫「本圖另有不完全性右束支傳導阻滯，而本次報告**未提到**」——而報告正上方就寫著它；
+   且 `preselect_for_case` 對任何束支阻滯報告都回 `None`，影像優先綁定對這類案例形同失效。已新增
+   complete/incomplete 四個群組與中英形式。
+2. **（高）`--publish` 會把醫師退掉的片重新上線**：`verified=false` 沒有任何標記，與「還沒看」無法區分。
+   已改為記錄 `review_verdict: "rejected"`（不標 `clinician_reviewed`）、`--publish` 跳過、退件離開待審清單。
+3. **（中）側別提示謊報證據來源**：8 張片的側別只來自 AI 讀片（沒有放射科定位框），提示卻寫「由放射科醫師
+   定位框的位置與 AI 讀片推得」。已依 `laterality_source` 分別措辭。
+4. **（中）規則 5 只管定位，不管完全性／病灶型態**：報告只寫「右束支傳導阻滯」時，人口學 tiebreak 會在
+   完全性與不完全性之間替考官做決定。已把規則 5 擴到 completeness／lesion，並加入 QRS ≥120 ms 的判準例外。
+5. **（中）`_template_meta` 流進評分 prompt**：`page/grade.py` 用 `json.dumps(ss.data)`，等於把目標影像 id 與
+   預期報告全文交給評分表產生器與評分者。已改用 `case_imaging.prompt_json(ss.data)`（兩處）。
+
+另修：`examination.csv` 同一檢查有「胸部X光」與「胸部 X 光」兩種寫法，固定報告是精確比對鍵值，點到有空格的
+那一項會**靜默退回模型生成**；已改為忽略空白與大小寫的折疊比對。
+
+註：該次審查的 8 個分面找錯者全部因本機網路中斷（`ENOTFOUND`）失敗，上述 5 條全部來自完整性批評者，
+分面覆蓋尚未補跑。
+
+**驗證**：429 測試通過（新增 case_imaging 10、enrich 8、屬性 15、模板 36）；`check_image_bank.py` 24/24；
+十份模板對 enrich 後的實際 manifest 逐一檢索：20/20 命中（10 個指定目標＋10 個「任一正常片／任一相符片」）；
+AppTest 實機驅動：無金鑰下按「開始檢查」→ 固定報告逐字送出、目標影像命中、警示分級正確。
